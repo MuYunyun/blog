@@ -6,7 +6,11 @@
 
 ### 博文列表
 
+#### 2018
+
+* [MVVM 框架解析之双向绑定](http://muyunyun.cn/posts/384a97b3/)
 #### 2017
+* [2017 年终总结 —— 在路上](http://muyunyun.cn/posts/b9cd3f63/)
 * [尝试造了个工具类库，名为 Diana](https://github.com/MuYunyun/blog/issues/9)
 * [走近 Python (类比 JS)](https://github.com/MuYunyun/blog/issues/8)
 * [Node.js 异步异闻录](https://github.com/MuYunyun/blog/issues/7)
