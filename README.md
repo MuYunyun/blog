@@ -1,7 +1,5 @@
 ### 牧之
 
-[博客地址](http://muyunyun.cn)
-
 > **行远自迩，登高自卑；实践出真知，与君共勉**
 
 ### 博文列表
@@ -10,6 +8,7 @@
 
 ##### 白雪
 
+* [跨域二三事](https://github.com/MuYunyun/fe_cloud/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
 * [原生 JS 实现一个瀑布流插件](https://github.com/MuYunyun/fe_cloud/issues/12) <sub>[(相关项目)](https://github.com/MuYunyun/waterfall)
 * [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
 
