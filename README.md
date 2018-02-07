@@ -1,10 +1,14 @@
 ### 牧之
 
-> **行远自迩，登高自卑；实践出真知，与君共勉**
+> **knowledge from action**
 
-### 博文列表
+> 本项目为作者的 blog 集，喜欢的可以点下收藏(watch 或 star)，同时欢迎在 issue 里交流见解。
 
-#### 2018
+##### to write something
+
+- [ ](聊聊 Flux reflux mobx 架构模式)
+- [ ](动手实践一个状态管理机)
+- [ ](探索 React-router 源码)
 
 ##### 白雪
 
@@ -12,7 +16,8 @@
 * [原生 JS 实现一个瀑布流插件](https://github.com/MuYunyun/fe_cloud/issues/12) <sub>[(相关项目)](https://github.com/MuYunyun/waterfall)
 * [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
 
-#### 2017.5-2017.12
+##### 忆
+
 * [2017 年终总结 —— 在路上](https://github.com/MuYunyun/fe_cloud/issues/10)
 * [尝试造了个工具类库，名为 Diana](https://github.com/MuYunyun/blog/issues/9) <sub>[(相关项目)](https://github.com/MuYunyun/diana)
 * [走近 Python (类比 JS)](https://github.com/MuYunyun/blog/issues/8)
@@ -27,5 +32,5 @@
 * [读书笔记-你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
 * [hexo 摸爬滚打之进阶教程](https://github.com/MuYunyun/blog/issues/1)
 
-#### 2016-2017.5
+#### before 2017.5
 > **[旧博客](http://www.cnblogs.com/MuYunyun/)**
