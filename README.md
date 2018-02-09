@@ -8,15 +8,24 @@
 
 #### 框架篇
 
-- [ ] 聊聊 Flux reflux mobx 架构模式
+- [x] [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
+- [ ] 从 MVC 到 Flux 架构模式
+- [ ] 聊聊 Redux 架构模式
 - [ ] 撸一个状态管理机
 - [ ] 探索 React-router 源码
-- [x] [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
 
 #### 基础篇
 
-- [ ] 聊聊模块规范
 - [ ] xss 与 csrf 实践
+- [ ] 浅看 fetch 实现
+
+#### 浅看 ES6
+
+- [ ] 浅看 Module 规范与加载实现
+- [ ] ES6 继承与 ES5 继承实现的差异
+- [ ] 浅看 Decorator 实现
+- [ ] Reflect
+- [ ] 再看 Promise 对象
 
 ### timeline
 
