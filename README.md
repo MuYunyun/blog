@@ -9,7 +9,7 @@
 #### 框架篇
 
 - [x] [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
-- [ ] 从 MVC 到 Flux 架构模式
+- [x] [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)[(相关项目)](https://github.com/MuYunyun/stateManage)
 - [ ] 聊聊 Redux 架构模式
 - [ ] 撸一个状态管理机
 - [ ] 探索 React-router 源码
