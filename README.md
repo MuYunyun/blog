@@ -1,12 +1,10 @@
-### 牧之
+![](http://oqhtscus0.bkt.clouddn.com/2e172dced41f13fc3e9a4a481bb012d4.jpg-200)
 
 > **knowledge from action**
 
-> 本项目为作者的 blog 集，喜欢的可以点下 watch 或 star，同时欢迎在 issue 里交流见解。
+> 本项目为作者的 blog 集，喜欢的可以点下 watch 或 star，欢迎交流见解
 
-### to write something
-
-#### 框架篇
+### 框架篇
 
 - [x] [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
 - [x] [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
@@ -16,34 +14,39 @@
 - [ ] 撸一个状态管理机
 - [ ] 探索 React-router 源码
 
-#### 基础篇
+### 番外篇
 
+- [x] [跨域二三事](https://github.com/MuYunyun/fe_cloud/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
 - [ ] xss 与 csrf 实践
-- [ ] 浅看 fetch 实现
+- [ ] fetch 源码
 
-#### 看过 ES6
+### 看过 ES6
 
+- [ ] 迭代器 (Iterator) 与生成器（Generator）
 - [ ] 浅看 Module 规范与加载实现
 - [ ] ES6 继承与 ES5 继承实现的差异
-- [ ] 浅看 Decorator 实现
+- [ ] 实现一个 Decorator
 - [ ] Reflect
 - [ ] 再看 Promise 对象
 
-### timeline
+### 算法篇
 
-#### 阳春三月
+- [ ] 二分查找
+- [ ] 快速排序
+- [ ] 选择排序
+- [ ] 希尔排序
+- [ ] 堆栈
+- [ ] 队列
+- [ ] 链表
+- [ ] 递归
+
+### 时间线
 
 * [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
-
-#### 白雪
-
 * [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
 * [跨域二三事](https://github.com/MuYunyun/fe_cloud/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
 * [原生 JS 实现一个瀑布流插件](https://github.com/MuYunyun/fe_cloud/issues/12) <sub>[(相关项目)](https://github.com/MuYunyun/waterfall)
 * [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
-
-#### 忆
-
 * [2017 年终总结 —— 在路上](https://github.com/MuYunyun/fe_cloud/issues/10)
 * [尝试造了个工具类库，名为 Diana](https://github.com/MuYunyun/blog/issues/9) <sub>[(相关项目)](https://github.com/MuYunyun/diana)
 * [走近 Python (类比 JS)](https://github.com/MuYunyun/blog/issues/8)
