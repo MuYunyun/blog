@@ -22,16 +22,16 @@
 
 ### 看过 ES6
 
+- [x] [JS 装饰器解析](https://github.com/MuYunyun/blog/issues/17)
 - [ ] 迭代器 (Iterator) 与生成器（Generator）
 - [ ] 浅看 Module 规范与加载实现
 - [ ] ES6 继承与 ES5 继承实现的差异
-- [ ] 实现一个 Decorator
 - [ ] Reflect
 - [ ] 再看 Promise 对象
 
 ### 算法篇
 
-- [ ] 二分查找
+- [x] [二分查找](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.md)
 - [ ] 快速排序
 - [ ] 选择排序
 - [ ] 希尔排序
@@ -42,6 +42,7 @@
 
 ### 时间线
 
+* [JS 装饰器解析](https://github.com/MuYunyun/blog/issues/17)
 * [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
 * [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
 * [跨域二三事](https://github.com/MuYunyun/fe_cloud/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
