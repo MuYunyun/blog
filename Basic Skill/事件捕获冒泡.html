@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .list-box {
+      list-style: none;
+    }
+    .list {
+      position: relative;
+      width: 400px;
+      height: 50px;
+      line-height: 50px;
+      border: 1px solid blue;
+      margin-bottom: 10px;
+    }
+    .btn {
+      position: absolute;
+      top: 50%;
+      right: 2%;
+      margin-top: -10px;
+    }
+  </style>
+  <ul class="list-box" id="list-box">
+    <li class="list">1<button class="btn">x</button></li>
+    <li class="list">2<button class="btn">x</button></li>
+    <li class="list">3<button class="btn">x</button></li>
+    <li class="list">4<button class="btn">x</button></li>
+  </ul>
+  <script>
+    // 使用面向对象的方式维护一个列表，每个列表有一个删除按钮，点击删除按钮移除当前行。
+    const ul = document.getElementById('list-box')
+    ul.addEventListener('click', deleteList, false)
+
+    function deleteList (e) {
+      const currentList = (e.target).parentNode
+      currentList.remove()
+    }
+    // class List {
+    //   constructor(props) {
+    //     const ul = document.getElementById('list-box')
+    //     const self = this
+    //     ul.addEventListener('click', function(e) {
+    //       if (e.target.className.indexOf('btn') > -1) {
+    //         self.deleteList.call(self, e.target)
+    //       }
+    //     }, false)
+    //   }
+
+    //   deleteList(target) {
+    //     const findParent = function(node) {
+    //       const parentNode = node.parentNode
+    //       parentNode.remove()
+    //     }
+    //     findParent(target)
+    //   }
+    // }
+    // window.addEventListener('DOMContentLoaded', function () {
+    //   new List('list-box')
+    // })
+  </script>
+</body>
+</html>

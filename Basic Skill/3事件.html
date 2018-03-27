@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <section id='sec'>
+    <style>
+      #sec {
+        width: 200px;
+        height: 100px;
+        background: yellow;
+      }
+    </style>
+    <article>
+      测试文件
+    </article>
+  </section>
+  <script>
+    var ev = new CustomEvent('custom', {1: 1})
+    document.getElementById('sec').addEventListener('custom', function(obj) {
+      console.log(obj)
+    })
+    document.getElementById('sec').dispatchEvent(ev)
+  </script>
+</body>
+</html>

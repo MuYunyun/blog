@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .top-middle-bottom, .top-middle-bottom>div {
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  题目：假设宽度已知，请写出三栏布局，其中上、下栏高度各为 100 px，中间自适应。
+
+  <!-- float 布局 -->
+  <section>
+    <style>
+      .top-float {
+        float: left;
+        height: 100px;
+        background: green;
+      }
+
+      .middle-float {
+        float: left;
+        background: red;
+      }
+
+      .bottom-float {
+        float: left;
+        height: 100px;
+        background: yellow;
+      }
+    </style>
+    <article class="top-middle-bottom">
+      <div class="top-float"></div>
+      <div class="middle-float">1.float 布局 2.float 布局</div>
+      <div class="bottom-float"></div>
+    </article>
+  </section>
+</body>
+
+</html>

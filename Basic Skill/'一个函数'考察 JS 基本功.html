@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function Foo() {
+      getName = function () { console.log(1) }
+      return this
+    }
+    Foo.getName = function () { console.log(2) }
+    Foo.prototype.getName = function () { console.log(3) }
+    var getName = function () { console.log(4) }
+    function getName () { console.log(5) }
+
+    Foo.getName()
+    getName()
+    Foo().getName()
+    getName()
+    new Foo.getName()
+    new Foo().getName()
+    new new Foo().getName()
+    // 2
+    // 4 ※考察变量提升
+    // 1 考察作用域
+    // 1
+    // 2 ※后面三个考察运算符顺序
+    // 3 ※ p.fun = P.prototype.fun
+    // 3
+  </script>
+</body>
+</html>
