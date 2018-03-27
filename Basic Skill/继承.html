@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<ul>构造函数继承</ul>
+<li>缺点是只能继承父类函数的方法和属性，而不能继承原型对象的方法和属性</li>
+
+<ul>原型链继承</ul>
+<li>缺点是当在一个子类的实例上修改父类的属性和方法时，其它的子类也会受到影响。</li>
+
+<ul>组合继承</ul>
+<li>优点是解决上述两个缺点，缺点是父类方法调用了两次，而且不能判断实例的构造函数是子类还是父类</li>
+
+<ul>组合继承优化一</ul>
+<li>优点是解决了调用两次的问题，但是还存在一个缺点：不能判断实例的构造函数是子类还是父类</li>
+
+<ul>组合继承优化二</ul>
+<li>解决了不能判断实例的构造函数是子类还是父类的问题</li>
+
+<body>
+  <script>
+    // ①构造函数继承
+    function Parent1() {
+      this.parent1 = 'parent1'
+      this.arr = [1, 2, 3]
+    }
+
+    Parent1.prototype.walk = 'I can walk' // 这里的 walk 子类就获取不到
+
+    function Child1() {
+      Parent1.call(this) // 将父级函数的 this 指向子构造函数上去
+      this.child1 = 'child1'
+    }
+
+    const child11 = new Child1()
+    const child12 = new Child1()
+
+    // ②原型链继承
+    function Parent2() {
+      this.parent2 = 'parent2'
+      this.arr = [1, 2, 3]
+    }
+
+    Parent2.prototype.walk = 'I can walk'
+
+    function Child2() {
+      this.child2 = 'child2'
+    }
+
+    Child2.prototype = new Parent2()
+
+    const child21 = new Child2()
+    const child22 = new Child2()
+
+    // ③组合继承
+    function Parent3() {
+      this.parent3 = 'parent3'
+      this.arr = [1, 2, 3]
+    }
+
+    function Child3() {
+      Parent3.call(this)  // 这里执行第一次父类
+      this.child3 = 'child3'
+    }
+
+    Child3.prototype = new Parent3() // 这里执行第二次父类
+    const child31 = new Child3()
+    const child32 = new Child3()
+
+    // ④组合继承优化一
+    function Parent4() {
+      this.parent4 = 'parent4'
+      this.arr = [1, 2, 3]
+    }
+
+    function Child4() {
+      Parent4.call(this)
+      this.child4 = 'child4'
+    }
+
+    Child4.prototype = Parent4.prototype
+    const child41 = new Child4()
+    const child42 = new Child4()
+
+    // ⑤组合继承优化二
+    function Parent5() {
+      this.parent5 = 'parent5'
+      this.arr = [1, 2, 3]
+    }
+
+    function Child5() {
+      Parent5.call(this)
+      this.child5 = 'child5'
+    }
+
+    Child5.prototype = Object.create(Parent5.prototype) // Object.create() 创建了一个中间对象，起到隔离子类和父类的作用。
+    Child5.prototype.constructor = Child5
+    const child51 = new Child5()
+    const child52 = new Child5()
+  </script>
+</body>
+</html>
