@@ -27,6 +27,25 @@
 * [读书笔记-你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
 * [hexo 摸爬滚打之进阶教程](https://github.com/MuYunyun/blog/issues/1)
 
+### 设计模式系列
+
+最近比较懒散，也没有一个持续的学习激情点，因此给自己定个计划，这块设计模式系列知识点对于自己也是比较全新的盲区。计划 5 月 25 号能写完以下设计模式的读书笔记。
+
+- [ ] 单例模式
+- [ ] 策略模式
+- [ ] 代理模式
+- [ ] 迭代器模式
+- [ ] 发布-订阅模式
+- [ ] 命令模式
+- [ ] 组合模式
+- [ ] 模板方法模式
+- [ ] 享元模式
+- [ ] 职责链模式
+- [ ] 中介者模式
+- [ ] 装饰着模式
+- [ ] 状态模式
+- [ ] 适配者模式
+
 ### 框架篇
 
 - [x] [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)

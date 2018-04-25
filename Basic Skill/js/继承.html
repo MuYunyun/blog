@@ -67,7 +67,7 @@
       this.child3 = 'child3'
     }
 
-    Child3.prototype = new Parent3() // 这里执行第二次父类
+ Child3.prototype = new Parent3() // 这里执行第二次父类，原型继承发现只要把父子的原型对象绑定起来就好，可以写成 Child3.prototype = new Parent3()>__proto__ 也正常
     const child31 = new Child3()
     const child32 = new Child3()
 
