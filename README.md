@@ -34,7 +34,7 @@
 - [x] [单例模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
 - [x] [策略模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/策略模式.md)
 - [x] [代理模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/代理模式.md)
-- [ ] 迭代器模式
+- [x] [迭代器模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/迭代器模式.md)
 - [ ] 发布-订阅模式
 - [ ] 命令模式
 - [ ] 组合模式
