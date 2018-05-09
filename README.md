@@ -40,7 +40,7 @@
 - [x] [组合模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/组合模式.md)
 - [x] [模板方法模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/模板方法模式.md)
 - [x] [享元模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/享元模式.md)
-- [ ] 职责链模式
+- [x] [职责链模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/职责链模式.md)
 - [ ] 中介者模式
 - [ ] 装饰着模式
 - [ ] 状态模式
