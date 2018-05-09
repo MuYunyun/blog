@@ -2,7 +2,7 @@
 
 > **knowledge from action**
 
-> 本项目为作者的 blog 集，喜欢的可以点下 watch 或 star，欢迎交流见解
+> 喜欢的可以点下 watch 或 star
 
 ### Timeline
 
@@ -27,7 +27,7 @@
 * [读书笔记-你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
 * [hexo 摸爬滚打之进阶教程](https://github.com/MuYunyun/blog/issues/1)
 
-### 设计模式系列
+### 设计模式
 
 最近比较懒散，也没有一个持续的学习激情点，因此给自己定个计划，这块设计模式系列知识点对于自己也是比较全新的盲区。计划 5 月 25 号前能写完以下设计模式的读书笔记。
 
@@ -41,7 +41,7 @@
 - [x] [模板方法模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/模板方法模式.md)
 - [x] [享元模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/享元模式.md)
 - [x] [职责链模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/职责链模式.md)
-- [ ] 中介者模式
+- [x] [中介者模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/中介者模式.md)
 - [ ] 装饰着模式
 - [ ] 状态模式
 - [ ] 适配者模式
@@ -86,9 +86,3 @@
 
 ### before 2017.5
 > **[old blog](http://www.cnblogs.com/MuYunyun/)**
-
-### 他山之石可以攻玉
-
-收集他人已经整理好对自己有用的知识点
-
-[数组方法总结](http://yuren.space/blog/2017/01/15/array-function/#pop): 罗列方法返回值是什么，会不会对原始数组造成影响
