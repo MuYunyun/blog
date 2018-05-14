@@ -45,8 +45,6 @@
 - [x] [装饰者模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/装饰者模式.md)
 - [x] [状态模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/状态模式.md)
 - [x] [适配者模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/适配者模式.md)
-
-
 - [ ] 单一职责原则
 - [ ] 最少知识原则
 - [ ] 开发-封闭原则
