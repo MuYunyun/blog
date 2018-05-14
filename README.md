@@ -43,7 +43,7 @@
 - [x] [职责链模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/职责链模式.md)
 - [x] [中介者模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/中介者模式.md)
 - [x] [装饰者模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/装饰者模式.md)
-- [ ] 状态模式
+- [x] [状态模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/状态模式.md)
 - [ ] 适配者模式
 
 ### 框架篇
