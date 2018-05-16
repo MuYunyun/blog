@@ -29,7 +29,7 @@
 
 ### 设计模式
 
-最近比较懒散，也没有一个持续的学习激情点，因此给自己定个计划，这块设计模式系列知识点对于自己也是比较全新的盲区。计划 5 月 25 号前能写完以下设计模式的读书笔记。
+~~最近比较懒散，也没有一个持续的学习激情点，因此给自己定个计划，这块设计模式系列知识点对于自己也是比较全新的盲区。~~计划 5 月 25 号前能写完以下设计模式的读书笔记。
 
 - [x] [单例模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
 - [x] [策略模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/策略模式.md)
@@ -45,9 +45,6 @@
 - [x] [装饰者模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/装饰者模式.md)
 - [x] [状态模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/状态模式.md)
 - [x] [适配者模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/适配者模式.md)
-- [ ] 单一职责原则
-- [ ] 最少知识原则
-- [ ] 开发-封闭原则
 
 ### 框架篇
 
