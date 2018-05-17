@@ -29,7 +29,8 @@
 
 ### 设计模式
 
-~~最近比较懒散，也没有一个持续的学习激情点，因此给自己定个计划，这块设计模式系列知识点对于自己也是比较全新的盲区。~~计划 5 月 25 号前能写完以下设计模式的读书笔记。
+~~计划 5 月 25 号前能写完以下设计模式的读书笔记。~~
+计划 5 月 25 号前能产出相关总结篇
 
 - [x] [单例模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
 - [x] [策略模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/策略模式.md)
@@ -74,6 +75,8 @@
 - [ ] 再看 Promise 对象
 
 ### 算法篇
+
+计划 5 月 25 日前能写好堆栈、队列、列表
 
 - [x] [递归](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97%E4%BC%98%E5%8C%96.md)
 - [x] [二分查找](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.md)
