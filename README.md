@@ -81,8 +81,7 @@
 - [x] [快速排序](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.md)
 - [x] [选择排序](https://github.com/MuYunyun/blog/blob/master/LeetCode/选择排序.md)
 - [x] [栈](https://github.com/MuYunyun/blog/blob/master/LeetCode/栈.md)
-- [ ] 队列
+- [x] [队列](https://github.com/MuYunyun/blog/blob/master/LeetCode/队列.md)
 - [ ] 链表
 
-### before 2017.5
 > **[old blog](http://www.cnblogs.com/MuYunyun/)**
