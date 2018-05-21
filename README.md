@@ -27,6 +27,7 @@
 <sub>[(相关项目)](https://github.com/MuYunyun/reactSPA)
 * [读书笔记-你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
 * [hexo 摸爬滚打之进阶教程](https://github.com/MuYunyun/blog/issues/1)
+* [old blog](http://www.cnblogs.com/MuYunyun/)
 
 ### 设计模式
 
@@ -74,7 +75,7 @@
 
 ### 算法篇
 
-计划 5 月 25 日前能写好堆栈、队列、列表
+计划 5 月 25 日前能写好~~堆栈~~、~~队列~~、列表
 
 - [x] [递归](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97%E4%BC%98%E5%8C%96.md)
 - [x] [二分查找](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.md)
@@ -84,4 +85,7 @@
 - [x] [队列](https://github.com/MuYunyun/blog/blob/master/LeetCode/队列.md)
 - [ ] 链表
 
-> **[old blog](http://www.cnblogs.com/MuYunyun/)**
+### node.js
+
+- [ ] 实现一个简单版 express.js
+- [ ] 实现一个简单版 koa.js
