@@ -85,7 +85,7 @@
 
 ### node.js
 
-计划 31 号前完成简单版 express.js
+计划 31 号前完成简版 express.js，koa.js 的输出
 
-- [ ] 实现一个简单版 express.js
-- [ ] 实现一个简单版 koa.js
+- [ ] 简版 express.js 的实现
+- [ ] 简版 koa.js 的实现
