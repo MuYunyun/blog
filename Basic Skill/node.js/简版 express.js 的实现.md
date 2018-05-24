@@ -1,6 +1,13 @@
 ### express
 
-express 是一个基于 node.js 封装的框架，目前主要实现了路由板块和中间件板块，后续接着完善。
+express 是一个基于 node.js 封装的框架。
+
+该 [express demo](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/node.js/express/index.js) 主要实现的功能点：
+
+* 路由模块
+* 中间件模块
+* 正则匹配路由
+* 静态文件处理
 
 ### 路由和中间件
 
