@@ -166,3 +166,83 @@ const express = function() {
 }
 ```
 
+### 路由正则匹配
+
+```js
+// 测试用例
+app.get('/blog/:id', function (req, res) { // 扩展功能①：希望能匹配 /blog/123
+	console.log(req.param.id)                // 扩展功能②：希望能通过 req.param.id 获取到相应参数
+	res.end('test /blog/:id')
+})
+```
+
+上述功能简要实现如下：
+
+```js
+const hitRouting = function(routes, method, pathname) { // 将中间件也当作是路由
+	const lazy = generator(routes)
+	return function(req, res) {
+		(function next() {
+			const tmp = lazy.next().value
+			const reg = new RegExp(tmp.path.replace(/:id/g, '\\d+'))
+			if (tmp.method === method && reg.test(pathname)) {        // 匹配 /blog/:id，这里仅仅举个例子
+				const arr = tmp.path.split(':')
+				const pathNameArr = pathname.split('/')
+				const obj = {}
+				obj[arr[1]] = pathNameArr[pathNameArr.length - 1]
+				req.param = obj   // 实现 req.param.id 获取 id
+				tmp.cb(req, res)
+				next()
+			}
+      ...
+		}())
+	}
+}
+```
+
+### 静态资源的访问
+
+如果在浏览器中输入 http://127.0.0.1:3000/index.html，此时并不能处理这种情况，接着加上访问静态资源的逻辑，代码如下：
+
+```js
+const core = function(req, res) {
+	const method = req.method.toLocaleLowerCase()
+  const obj = url.parse(req.url, true)
+	const pathname = obj.pathname
+	const ext = path.extname(pathname).slice(1)
+	if (ext) { // 处理静态文件请求
+		handleStaticFile(res, staticPath, ext)
+	}
+  ...
+}
+
+// 处理静态文件类型
+const handleStaticFile = function (res, staticPath, ext) {
+	const mime = {
+		"html": "text/html",
+		"css": "text/css",
+		"js": "text/javascript",
+		"json": "application/json",
+		"gif": "image/gif",
+		"ico": "image/x-icon",
+		"jpeg": "image/jpeg",
+		"jpg": "image/jpeg",
+		"png": "image/png"
+	}
+	fs.exists(staticPath, (exist) => {
+		if (!exist) {
+			res.writeHead(404, {'Content-Type': 'text/plain'})
+			res.write('The request failed')
+			res.end()
+		} else {
+			fs.readFile(staticPath, (err, data) => {
+				if (err) throw err
+				res.writeHead(200, {'Content-Type': mime[ext] || 'text/plain'})
+				res.write('The request success')
+				res.end()
+			})
+		}
+	})
+}
+```
+
