@@ -31,20 +31,20 @@
 
 ### 设计模式
 
-- [x] [单例模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
-- [x] [策略模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/策略模式.md)
-- [x] [代理模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/代理模式.md)
-- [x] [迭代器模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/迭代器模式.md)
-- [x] [发布-订阅模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/发布订阅模式.md)
-- [x] [命令模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/命令模式.md)
-- [x] [组合模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/组合模式.md)
-- [x] [模板方法模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/模板方法模式.md)
-- [x] [享元模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/享元模式.md)
-- [x] [职责链模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/职责链模式.md)
-- [x] [中介者模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/中介者模式.md)
-- [x] [装饰者模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/装饰者模式.md)
-- [x] [状态模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/状态模式.md)
-- [x] [适配者模式](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/适配者模式.md)
+- [x] [单例模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/单例模式.md)
+- [x] [策略模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/策略模式.md)
+- [x] [代理模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/代理模式.md)
+- [x] [迭代器模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/迭代器模式.md)
+- [x] [发布-订阅模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/发布订阅模式.md)
+- [x] [命令模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/命令模式.md)
+- [x] [组合模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/组合模式.md)
+- [x] [模板方法模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/模板方法模式.md)
+- [x] [享元模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/享元模式.md)
+- [x] [职责链模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/职责链模式.md)
+- [x] [中介者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/中介者模式.md)
+- [x] [装饰者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/装饰者模式.md)
+- [x] [状态模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/状态模式.md)
+- [x] [适配者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/适配者模式.md)
 
 ### 算法篇
 
@@ -60,7 +60,7 @@
 
 计划 31 号前完成简版 ~~express.js~~，koa.js 的输出
 
-- [x] [简版 express.js 的实现](https://github.com/MuYunyun/blog/blob/master/Basic%20Skill/node.js/%E7%AE%80%E7%89%88%20express.js%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
+- [x] [简版 express.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node.js/%E7%AE%80%E7%89%88%20express.js%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
 - [ ] 简版 koa.js 的实现
 
 ### 框架篇
@@ -84,8 +84,9 @@
 ### 看过 ES6
 
 - [x] [JS 装饰器解析](https://github.com/MuYunyun/blog/issues/17)
-- [ ] 迭代器 (Iterator) 与生成器（Generator）
 - [ ] 浅看 Module 规范与加载实现
 - [ ] ES6 继承与 ES5 继承实现的差异
 - [ ] Reflect
 - [ ] 再看 Promise 对象
+- [ ] 迭代器 (Iterator) 与生成器（Generator）
+- [ ] 再看 async/await
