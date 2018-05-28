@@ -5,7 +5,7 @@ const response = require('./response')
 
 class Koa {
   constructor() {
-    this.callbackFn
+    this.middlewares = []
     this.context = context
     this.request = request
     this.response = response
@@ -16,14 +16,32 @@ class Koa {
   }
 
   use(fn) {
-    this.callbackFn = fn
+    this.middlewares.push(fn)
+  }
+
+  compose(ctx) {
+    const createAsync = function (fn, next) {
+      return async function () {
+        await fn(ctx, next)
+      }
+    }
+    let next = async function() {
+      return Promise.resolve()
+    }
+
+    for (let i = this.middlewares.length - 1; i >= 0; i--) {
+      next = createAsync(this.middlewares[i], next)
+    }
+
+    return next()
   }
 
   callback() {
     return (req, res) => {
       const ctx = this.createCtx(req, res)
       const handle = () => this.handleRes(ctx)
-      this.callbackFn(ctx).then(handle)
+      const fn = this.compose(ctx) // 引人中间件
+      fn.then(handle)
     }
   }
 
