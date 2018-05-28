@@ -209,7 +209,7 @@ const hitRouting = function(routes, method, pathname) { // 将中间件也当作
 
 ### 静态资源的访问
 
-如果在浏览器中输入 http://127.0.0.1:3000/index.html，此时并不能处理这种情况，接着加上访问静态资源的逻辑，代码如下：
+如果在浏览器中输入 `http://127.0.0.1:3000/index.html`，此时并不能处理这种情况，接着加上访问静态资源的逻辑，代码如下：
 
 ```js
 const core = function(req, res) {
