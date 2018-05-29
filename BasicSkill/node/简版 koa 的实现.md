@@ -1,8 +1,19 @@
 [项目实现源码](https://github.com/MuYunyun/blog/tree/master/BasicSkill/node/koa)
 
-### 路由模块
+该简版 koa 的实现包含以下 4 个步骤：
 
-koa2 的中间件是基于 async 实现的，所以一起来探究前置知识点:
+* http 模块的封装
+* 整合 Request、Response、Context 对象
+* 中间件
+* 错误捕获
+
+### http 模块的封装
+
+### 整合 Request、Response、Context 对象
+
+### 中间件
+
+koa2 的中间件是基于 async 实现的，所以一起来探究关于 async 前置知识点:
 
 ```js
 async function m1(next) {
@@ -62,3 +73,5 @@ for (let i = arr.length - 1; i > 0; i--) {
 
 next()
 ```
+
+### 错误捕获

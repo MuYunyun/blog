@@ -1,10 +1,12 @@
 const http = require('http')
+const EventEmitter = require('events')  // 引人错误机制
 const context = require('./context')
 const request = require('./request')
 const response = require('./response')
 
-class Koa {
+class Koa extends EventEmitter {
   constructor() {
+    super()
     this.middlewares = []
     this.context = context
     this.request = request
@@ -40,8 +42,9 @@ class Koa {
     return (req, res) => {
       const ctx = this.createCtx(req, res)
       const handle = () => this.handleRes(ctx)
+      const errHandle = (err) => this.handleErr(err, ctx)
       const fn = this.compose(ctx) // 引人中间件
-      fn.then(handle)
+      fn.then(handle).catch(errHandle)
     }
   }
 
@@ -56,10 +59,23 @@ class Koa {
 
   handleRes(ctx) {
     if (typeof(ctx.body) === 'string') {
+      ctx.statusCode && ctx.res.writeHead(ctx.statusCode)
       ctx.res.end(ctx.body)
     } else if (typeof(ctx.body) === 'object') {
+      ctx.statusCode && ctx.res.writeHead(ctx.statusCode)
       ctx.res.end(JSON.stringify(ctx.body))
     }
+  }
+
+  handleErr(err, ctx) {
+    if (err.code === 'ENOENT') {
+      ctx.statusCode = 404
+    } else {
+      ctx.statusCode = 500
+    }
+    const msg = err.message || 'Internal Error'
+    ctx.res.end(msg)
+    this.emit('error', err)
   }
 }
 

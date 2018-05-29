@@ -32,8 +32,8 @@ function get(type, property) {
 
 const setRequest = []
 const getRequest = ['query']
-const setResponse = ['body']
-const getResponse = ['body']
+const setResponse = ['body', 'statusCode']
+const getResponse = ['body', 'statusCode']
 
 getRequest.forEach(r => {
   get('request', r)
