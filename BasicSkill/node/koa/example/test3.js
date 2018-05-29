@@ -7,9 +7,8 @@ const responseData = {}
 // 第三版测试：测试中间件
 app.use(async (ctx, next) => {
   responseData.name = 'xiaoming'
-  ctx.body = responseData
   await next()
-  responseData.age = '14'
+  ctx.body = responseData
 })
 
 app.use(async (ctx, next) => {
