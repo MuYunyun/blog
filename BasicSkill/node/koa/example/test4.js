@@ -1,4 +1,4 @@
-// 完善的框架都有完善的错误捕获机制
+// 完善的框架都有相应的错误捕获机制
 const Koa = require('../application')
 
 const app = new Koa()
