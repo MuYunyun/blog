@@ -9,7 +9,27 @@
 
 ### http 模块的封装
 
+koa 区别于 express 的一个点是其采用了 ES6 语法进行书写。
+
+[相关代码](https://github.com/MuYunyun/blog/blob/7bdad6158a6d49bc3a99123a054b0934034cc598/BasicSkill/node/koa/application.js#L17)
+
 ### 整合 Request、Response、Context 对象
+
+koa 的用法区别于 express 的一点，是将 req，res 封装进 ctx 对象中
+
+```js
+// express
+app.get('/test/abc', function (req, res) {
+  res.end('hello express')
+})
+
+// koa
+app.use(async (ctx) => {
+  ctx.body = `hello koa`
+})
+```
+
+[相关代码](https://github.com/MuYunyun/blog/blob/7bdad6158a6d49bc3a99123a054b0934034cc598/BasicSkill/node/koa/application.js#L52)
 
 ### 中间件
 
@@ -74,4 +94,10 @@ for (let i = arr.length - 1; i > 0; i--) {
 next()
 ```
 
+在上篇 express 的实现中，[中间件](https://github.com/MuYunyun/blog/blob/7bdad6158a6d49bc3a99123a054b0934034cc598/BasicSkill/node/express/index.js#L55) 采用了 generator 来实现，而本篇 koa 则使用了上文所述的 async/await 知识点来完成。
+
+[相关代码](https://github.com/MuYunyun/blog/blob/7bdad6158a6d49bc3a99123a054b0934034cc598/BasicSkill/node/koa/application.js#L25)
+
 ### 错误捕获
+
+此外完善的框架都有相应的错误捕获机制，因此当程序 `throw new Error()` 抛错时，也进行了相应的错误捕获，[相关代码](https://github.com/MuYunyun/blog/blob/7bdad6158a6d49bc3a99123a054b0934034cc598/BasicSkill/node/koa/application.js#L70)
