@@ -4,8 +4,8 @@
 
 ```js
 function* gen() {
-	const a = yield 1
-	console.log(a)
+  const a = yield 1
+  console.log(a)
 }
 ```
 
@@ -13,11 +13,11 @@ function* gen() {
 
 ```js
 function step(gen) {
-	const it = gen()
-	let result
-	return function() {
-		result = it.next(result).value
-	}
+  const it = gen()
+  let result
+  return function() {
+    result = it.next(result).value
+  }
 }
 ```
 
@@ -41,44 +41,44 @@ a() // 1
 
 ```js
 function run(gen) {
-	it = gen()
+  it = gen()
 
-	return Promise.resolve()
-		.then(function handleNext(value) {
-			var next = it.next(value)
-			return (function handleResult(next) {
-				if (next.done) {
-					return next.value
-				}
-				else {
-					return Promise.resolve(next.value)
-						.then(
-							handleNext,
-							function handleErr(err) {
-								return Promise.resolve(
-									it.throw(err)
-								)
-								.then(handleResult)
-							}
-						)
-				}
-			})(next)
-		})
+  return Promise.resolve()
+    .then(function handleNext(value) {
+      var next = it.next(value)
+      return (function handleResult(next) {
+        if (next.done) {
+          return next.value
+        }
+        else {
+          return Promise.resolve(next.value)
+            .then(
+              handleNext,
+              function handleErr(err) {
+                return Promise.resolve(
+                  it.throw(err)
+                )
+                .then(handleResult)
+              }
+            )
+        }
+      })(next)
+    })
 }
 
 function foo(x, y) {
-	return request(
-		'http://some.url.1/?x=' + x + '&y=' + y
-	)
+  return request(
+    'http://some.url.1/?x=' + x + '&y=' + y
+  )
 }
 
 function* main() {
-	try {
-		var test = yield foo(11, 31)
-		console.log(test)
-	} catch(e) {
-		console.error(error)
-	}
+  try {
+    var test = yield foo(11, 31)
+    console.log(test)
+  } catch(e) {
+    console.error(error)
+  }
 }
 
 run(main)
@@ -87,18 +87,18 @@ run(main)
 ```js
 // 改成 async 实现，即
 function foo(x, y) {
-	return request(
-		'http://some.url.1/?x=' + x + '&y=' + y
-	)
+  return request(
+    'http://some.url.1/?x=' + x + '&y=' + y
+  )
 }
 
 async function main() {
-	try {
-		var test = await foo(11, 31)
-		console.log(test)
-	} catch(e) {
-		console.error(error)
-	}
+  try {
+    var test = await foo(11, 31)
+    console.log(test)
+  } catch(e) {
+    console.error(error)
+  }
 }
 
 main()
@@ -108,14 +108,14 @@ main()
 
 ```js
 function* foo(url) {
-	try {
-		console.log('requesting:', url)
-		var val = yield request(url)
-		console.log(val)
-	} catch (err) {
-		console.log('Oops', err)
-		return false
-	}
+  try {
+    console.log('requesting:', url)
+    var val = yield request(url)
+    console.log(val)
+  } catch (err) {
+    console.log('Oops', err)
+    return false
+  }
 }
 
 var it = foo('http://some.url.1')
@@ -131,56 +131,56 @@ var result = yield request(url)
 
 ```js
 function foo(url) {
-	var state
-	var val
-	function process(v) {
-		switch (state) {
-			case 1:
-				console.log('requesting:', url)
-				return request(url)
-			case 2:
-				val = v
-				console.log(val)
-				return
-			case 3:
-				var err = val
-				console.log('Oops:', err)
-				return false
-		}
-	}
-	return {
-		next: function(v) {
-			if (!state) {
-				state = 1
-				return {
-					done: false,
-					value: process()
-				}
-			} else if (state === 1) {
-				state = 2
-				return {
-					done: true,
-					value: process(v)
-				}
-			} else {
-				return {
-					done: true,
-					value: undefined
-				}
-			}
-		},
-		throw: function() {
-			if (state === 1) {
-				state = 3
-				return {
-					done: true,
-					value: process(e)
-				}
-			} else {
-				throw e
-			}
-		}
-	}
+  var state
+  var val
+  function process(v) {
+    switch (state) {
+      case 1:
+        console.log('requesting:', url)
+        return request(url)
+      case 2:
+        val = v
+        console.log(val)
+        return
+      case 3:
+        var err = val
+        console.log('Oops:', err)
+        return false
+    }
+  }
+  return {
+    next: function(v) {
+      if (!state) {
+        state = 1
+        return {
+          done: false,
+          value: process()
+        }
+      } else if (state === 1) {
+        state = 2
+        return {
+          done: true,
+          value: process(v)
+        }
+      } else {
+        return {
+          done: true,
+          value: undefined
+        }
+      }
+    },
+    throw: function() {
+      if (state === 1) {
+        state = 3
+        return {
+          done: true,
+          value: process(e)
+        }
+      } else {
+        throw e
+      }
+    }
+  }
 }
 
 var it = foo('http://some.url.1')
@@ -194,25 +194,25 @@ var it = foo('http://some.url.1')
 
 ```js
 co(function* () {
-	const result = yield Promise.resolve(true)
-	console.log(result) // true
+  const result = yield Promise.resolve(true)
+  console.log(result) // true
 })
 ```
 
 ```js
 // 简版 promise
 function co(gen) {
-	const it = gen()
-	const next = function(value) {
-		const result = it.next(value)
-		if (result.done) {
-			return result.value
-		}
-		result.value.then((data) => {
-			next(data)
-		})
-	}
-	next()
+  const it = gen()
+  const next = function(value) {
+    const result = it.next(value)
+    if (result.done) {
+      return result.value
+    }
+    result.value.then((data) => {
+      next(data)
+    })
+  }
+  next()
 }
 ```
 
