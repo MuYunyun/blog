@@ -1,5 +1,15 @@
 ### Promise
 
+促使去研究 Promise 的动机大体有以下几点：
+
+* 对其 api 的不太熟悉以及对实现机制的好奇;
+
+* 很多库(比如 fetch)是基于 Promise 封装的，那么要了解这些库的前置条件得先了解 Promise;
+
+* 要了解其它更加高级的异步操作(async)还是得先熟悉 Promise;
+
+基于这些目的，实现了一个符合 Promise/A+ 规范的 [super-promise](https://github.com/MuYunyun/super-promise)。本文的目的主要是熟悉其 api 以及适当聊聊代码思路。
+
 ### Promise.resolve()
 
 Promise.resolve() 括号内有 4 种情况
@@ -59,7 +69,7 @@ Promise.all([p1, p2])
 
 race 译为竞赛，同样是请求两个 url，当且仅当一个请求返还结果后，就请求第三个 url。
 
-### 回调转 Promise 实战
+### Promise.wrap() —— 回调函数转 Promise
 
 通过下面这个案例，提供回调函数 Promise 化的思路。
 
@@ -80,7 +90,7 @@ foo(1, 2, function(err, data) {
 })
 ```
 
-下面尝试将回调 (err, data) 转为 Promise，下面这段代码为日后如果要写相应回调转 Promise 的库有借鉴意义。
+下面尝试将回调 (err, data) 转为 Promise
 
 ```js
 Promise.wrap = function(fn) {
@@ -97,22 +107,4 @@ Promise.wrap = function(fn) {
     })
   }
 }
-
-function foo(a, b, cb) {
-  const request = Promise.wrap(ajax)
-  request(`http://some.url?a=${a}&b=${b}`)  // 对 ajax 进行 promise 化
-    .then((data) => {
-      cb(null, data)
-    }, cb)
-}
-
-const betterFoo = Promise.wrap(foo) // 对 foo 进行 promise 化
-
-// 转化完成的效果
-betterFoo(1, 2)
-  .then((msg) => {
-    console.log(msg)
-  }, (err) => {
-    console.log(err)
-  })
 ```
