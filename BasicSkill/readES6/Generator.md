@@ -203,16 +203,52 @@ co(function* () {
 // 简版 promise
 function co(gen) {
   const it = gen()
-  const next = function(value) {
-    const result = it.next(value)
+  const step = function(data) {
+    const result = it.next(data)
     if (result.done) {
       return result.value
     }
     result.value.then((data) => {
-      next(data)
+      step(data)
     })
   }
-  next()
+  step()
 }
 ```
 
+观察 co 库发现，co 函数后返回的是 promise，使用如下：
+
+```js
+// 期待
+co(function* () {
+  const result = yield Promise.resolve(true)
+  return result // 这里有个语法，it.next() 碰到 return 后，其值会变为 { value: result, done: true } 的形式
+}).then((data) => {
+  console.log(data) // true
+})
+```
+
+我们再对其稍加改造，使之更加添近 co 库：
+
+```js
+function co(gen) {
+  return new Promise((resolve, reject) => {
+    const it = gen()
+    let result
+    const step = function(fn) {
+      try {
+        result = fn()
+      } catch(e) {
+        return reject(e)
+      }
+      if (result.done) { return resolve(result.value) }
+      result.value.then((data) => {
+        step(() => it.next(data))
+      }, (err) => {
+        step(() => it.throw(err)) // 这里为了让抛错直接在 generator 消化，所以 step 内改传函数
+      })
+    }
+    step(() => it.next())
+  })
+}
+```
