@@ -1,10 +1,12 @@
-![](http://oqhtscus0.bkt.clouddn.com/2e172dced41f13fc3e9a4a481bb012d4.jpg-200)
+<div align="center">
+  <img src="http://oqhtscus0.bkt.clouddn.com/2e172dced41f13fc3e9a4a481bb012d4.jpg-200">
+</div>
 
 > **knowledge from action**
 
 > 喜欢的可以点下 watch 或 star
 
-### Timeline
+### 随笔
 
 * [JavaScript 常见设计模式](https://github.com/MuYunyun/blog/issues/20)
 * [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/issues/19)
