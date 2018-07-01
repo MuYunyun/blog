@@ -1,7 +1,6 @@
-# 杂
-[Async function](https://github.com/tc39/proposals/blob/master/finished-proposals.md) 在 2017 年已成为了标准 ES规范
+[Async function](https://github.com/tc39/proposals/blob/master/finished-proposals.md) 在 2017 年已到达了 stage 4。
 
-### 使用注意点
+### async/await 使用注意点
 
 * 为了不让程序挂掉，注意捕获错误
 
@@ -84,4 +83,8 @@ function fn {
 }
 ```
 
-关于简版 co，[Generator 函数的异步应用](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator.md#generator-%E5%87%BD%E6%95%B0%E7%9A%84%E5%BC%82%E6%AD%A5%E5%BA%94%E7%94%A8) 已实现过，
+关于简版 co，可以看在 [Generator 函数的异步应用](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator.md#generator-%E5%87%BD%E6%95%B0%E7%9A%84%E5%BC%82%E6%AD%A5%E5%BA%94%E7%94%A8) 的实现。
+
+### 异步遍历器
+
+[proposal-async-iteration](https://github.com/tc39/proposal-async-iteration)，异步遍历器也已经到了 stage 4，日后补充。

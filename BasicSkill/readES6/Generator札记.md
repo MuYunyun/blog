@@ -1,4 +1,4 @@
-### 杂
+### Generator 使用相关
 
 从一道简单的题目开始：
 
@@ -39,95 +39,72 @@ a() // 1
 * yield .. 后跟的值能通过 it.next().value 取到
 * it.next(..) 中 next 里的值又能作为 yield .. 的值返回
 
-```js
-function run(gen) {
-  it = gen()
-
-  return Promise.resolve()
-    .then(function handleNext(value) {
-      var next = it.next(value)
-      return (function handleResult(next) {
-        if (next.done) {
-          return next.value
-        }
-        else {
-          return Promise.resolve(next.value)
-            .then(
-              handleNext,
-              function handleErr(err) {
-                return Promise.resolve(
-                  it.throw(err)
-                )
-                .then(handleResult)
-              }
-            )
-        }
-      })(next)
-    })
-}
-
-function foo(x, y) {
-  return request(
-    'http://some.url.1/?x=' + x + '&y=' + y
-  )
-}
-
-function* main() {
-  try {
-    var test = yield foo(11, 31)
-    console.log(test)
-  } catch(e) {
-    console.error(error)
-  }
-}
-
-run(main)
-```
-
-```js
-// 改成 async 实现，即
-function foo(x, y) {
-  return request(
-    'http://some.url.1/?x=' + x + '&y=' + y
-  )
-}
-
-async function main() {
-  try {
-    var test = await foo(11, 31)
-    console.log(test)
-  } catch(e) {
-    console.error(error)
-  }
-}
-
-main()
-```
-
-### 翻译 yield
+### yield 暂停的位置
 
 ```js
 function* foo(url) {
   try {
-    console.log('requesting:', url)
-    var val = yield request(url)
+    const val = yield request(url)
     console.log(val)
   } catch (err) {
-    console.log('Oops', err)
-    return false
+    ...
   }
 }
 
-var it = foo('http://some.url.1')
+const it = foo('http://some.url.1')
 ```
 
-> 关于 yield 暂停的位置：yield 后面跟着的语句执行完再进入暂停状态的
+yield 后面跟着的语句执行完再进入暂停状态的，在如上代码中，当执行 it.next() 时，可以稍加转换为如下形式：
 
 ```js
-var result = yield request(url)
+function* foo(url) {
+  try {
+    const promise = request(url) // 当执行 it.next() 时，这里是被执行的
+    const val = yield promise // 这里被暂停
+    console.log(val)
+  } catch (err) {
+    ...
+  }
+}
 ```
 
-首先，我们先创造一个返回迭代器的函数
+### 遇到 return，throw
+
+* 遇到 return
+
+```js
+function* gen() {
+  yield 1
+  return 2
+  console.log('执行/不执行')
+}
+
+const it = gen()
+it.next() // {value: 1, done: false}
+it.next() // {value: 2, done: true}
+it.next() // {value: undefined, done: true}
+```
+
+总结：遇到 return，generator 函数结束中断，done 变为 true;
+
+* 遇到 iterator 的 throw
+
+```js
+function* gen() {
+  yield 1
+  console.log('执行/不执行')
+}
+
+var it = gen()
+it.throw(new Error('boom')) // Error: boom
+it.next()                   // {value: undefined, done: true}
+```
+
+总结：遇到 iterator 的 throw，generator 函数运行中断，done 变为 true;
+
+### 翻译下 generator
+
+Generator 是一个返回迭代器的函数，日后可以研究下 [regenerator](https://github.com/facebook/regenerator)，目前简单食用如下：
 
 ```js
 function foo(url) {
@@ -187,8 +164,6 @@ var it = foo('http://some.url.1')
 ```
 
 ### Generator 函数的异步应用
-
-本质：将 generator 的控制权移到 thunk 函数中
 
 以 co 库来说，现在已经统一为 Generator + Promise 的调用方式，下面进行简单的模拟：
 

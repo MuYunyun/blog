@@ -61,16 +61,16 @@
 - [x] [简版 express.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node/%E7%AE%80%E7%89%88%20express.js%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
 - [x] [简版 koa.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node/%E7%AE%80%E7%89%88%20koa%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
 
-### 看过 ES6
+### ES6 札记
 
 之前写的 [Node.js 异步异闻录](https://github.com/MuYunyun/blog/issues/7) 比较杂乱，现对其进行拆分，~~计划 6 月 12 号前再次梳理完 Promise\Generator\async~~。
 
 在 Promise 上的实现上效率低下，比较惭愧，致使计划延期。调整好心态，重新上路。计划 25 号前输出完整 Promise 文章，以及另外两篇短文。
 
 - [x] [JS 装饰器解析](https://github.com/MuYunyun/blog/issues/17)
-- [ ] [再看 Promise 对象](https://github.com/MuYunyun/super-promise)
-- [ ] 迭代器 (Iterator) 与生成器（Generator）
-- [ ] 深入 async
+- [ ] [Promise 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise札记.md)
+- [ ] [Generator 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator札记.md)
+- [ ] [Async 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async札记.md)
 - [ ] 浅看 Module 规范与加载实现
 - [ ] ES6 继承与 ES5 继承实现的差异
 - [ ] Reflect
