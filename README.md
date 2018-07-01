@@ -8,8 +8,9 @@
 
 ### 随笔
 
+* [Promise 札记](https://github.com/MuYunyun/blog/issues/23)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
 * [JavaScript 常见设计模式](https://github.com/MuYunyun/blog/issues/20)
-* [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/issues/19)
+* [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/issues/19)<sub>[(相关项目)](https://github.com/MuYunyun/analyze-webpack-plugin)
 * [JS 装饰器解析](https://github.com/MuYunyun/blog/issues/17)
 * [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
 * [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
@@ -65,13 +66,11 @@
 
 ### ES6 札记
 
-之前写的 [Node.js 异步异闻录](https://github.com/MuYunyun/blog/issues/7) 比较杂乱，现对其进行拆分，~~计划 6 月 12 号前再次梳理完 Promise\Generator\async~~。
-
-在 Promise 上的实现上效率低下，比较惭愧，致使计划延期。调整好心态，重新上路。计划 25 号前输出完整 Promise 文章，以及另外两篇短文。
+已延期o(╯□╰)o
 
 - [x] [JS 装饰器解析](https://github.com/MuYunyun/blog/issues/17)
-- [ ] [Promise 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise札记.md)
-- [ ] [Generator 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator札记.md)
+- [x] [Promise 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise札记.md)
+- [x] [Generator 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator札记.md)
 - [ ] [Async 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async札记.md)
 - [ ] 浅看 Module 规范与加载实现
 - [ ] ES6 继承与 ES5 继承实现的差异
