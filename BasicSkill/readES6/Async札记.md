@@ -83,7 +83,7 @@ function fn {
 }
 ```
 
-关于简版 co，可以看在 [Generator 函数的异步应用](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator.md#generator-%E5%87%BD%E6%95%B0%E7%9A%84%E5%BC%82%E6%AD%A5%E5%BA%94%E7%94%A8) 的实现。
+关于简版 co，可以看在 [Generator 函数的异步应用](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator%E6%9C%AD%E8%AE%B0.md#generator-%E5%87%BD%E6%95%B0%E7%9A%84%E5%BC%82%E6%AD%A5%E5%BA%94%E7%94%A8) 的实现。
 
 ### 异步遍历器
 
