@@ -32,6 +32,11 @@
 * [hexo 摸爬滚打之进阶教程](https://github.com/MuYunyun/blog/issues/1)
 * [old blog](http://www.cnblogs.com/MuYunyun/)
 
+### 从 0 到 1 实现 React
+
+- [ ] 前置准备
+- [x] [JSX 和 虚拟 DOM]()
+
 ### 设计模式
 
 - [x] [单例模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/单例模式.md)
@@ -49,16 +54,6 @@
 - [x] [状态模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/状态模式.md)
 - [x] [适配者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/适配者模式.md)
 
-### 算法篇
-
-- [x] [递归](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97%E4%BC%98%E5%8C%96.md)
-- [x] [二分查找](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.md)
-- [x] [快速排序](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.md)
-- [x] [选择排序](https://github.com/MuYunyun/blog/blob/master/LeetCode/选择排序.md)
-- [x] [栈](https://github.com/MuYunyun/blog/blob/master/LeetCode/栈.md)
-- [x] [队列](https://github.com/MuYunyun/blog/blob/master/LeetCode/队列.md)
-- [x] [链表](https://github.com/MuYunyun/blog/blob/master/LeetCode/队列.md)
-
 ### node.js
 
 - [x] [简版 express.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node/%E7%AE%80%E7%89%88%20express.js%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
@@ -71,7 +66,7 @@
 - [x] [JS 装饰器解析](https://github.com/MuYunyun/blog/issues/17)
 - [x] [Promise 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise札记.md)
 - [x] [Generator 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator札记.md)
-- [ ] [Async 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async札记.md)
+- [x] [Async 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async札记.md)
 - [ ] 浅看 Module 规范与加载实现
 - [ ] ES6 继承与 ES5 继承实现的差异
 - [ ] Reflect
@@ -93,3 +88,13 @@
 - [ ] 编写一个简单的 babel 插件
 - [ ] xss 与 csrf 实践
 - [ ] fetch 源码
+
+### 算法篇
+
+- [x] [递归](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97%E4%BC%98%E5%8C%96.md)
+- [x] [二分查找](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.md)
+- [x] [快速排序](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.md)
+- [x] [选择排序](https://github.com/MuYunyun/blog/blob/master/LeetCode/选择排序.md)
+- [x] [栈](https://github.com/MuYunyun/blog/blob/master/LeetCode/栈.md)
+- [x] [队列](https://github.com/MuYunyun/blog/blob/master/LeetCode/队列.md)
+- [x] [链表](https://github.com/MuYunyun/blog/blob/master/LeetCode/队列.md)
