@@ -38,6 +38,7 @@
 
 - [x] [前置准备](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/0.前置准备.md)
 - [x] [JSX 和 Virtual DOM](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/1.JSX%20%E5%92%8C%20%E8%99%9A%E6%8B%9F%20DOM.md)
+- [ ] [组件]
 
 ### 设计模式
 
