@@ -70,7 +70,7 @@
 - [x] [Generator 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator札记.md)
 - [x] [Async 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async札记.md)
 - [ ] [浅看 Module 规范与加载实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
-- [ ] ES6 继承与 ES5 继承实现的差异
+- [ ] [ES6 继承与 ES5 继承实现的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
 - [ ] Reflect
 
 ### 框架篇
