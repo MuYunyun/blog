@@ -4,58 +4,108 @@
 
 * 什么是 CSS 盒模型
 
+```
+包含 content，margin，border，padding
+```
+
 * 标准模型和 IE 模型有什么不同
+
+```
+是否将 padding 和 border 算进 content 的 width 中
+```
 
 * CSS 如何设置这两种模型
 
+```
+box-sizing: content-box; // 标准模型(默认)
+box-sizing: border-box;  // IE模型
+```
+
 * JS 如何设置获取盒模型对应的宽和高
+
+```
+dom.style.width             // 只支持内联样式
+dom.currentStyle.width      // 只有 IE 支持
+window.getComputedStyle
+dom.getBoundingClientRect
+```
 
 * 如何实现垂直居中
 
+见 [垂直居中](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.html)
+
 * Flex 布局居中
+
+```
+justify-content: center； // 水平居中
+align-item: center;       // 垂直居中
+```
 
 * BFC 的基本概念
 
 * BFC 的原理
 
-```
-1.BFC 中，元素的边距会发生重叠
-2.清除浮动
-3.BFC 不会与浮动元素重叠
-```
-
 * 如何创建 BFC
-
-```
-1.float 不为 none
-2.position 不为 static 以及 relative
-3.overflow 不为 visible
-4.display 为 inline-box、table-ceil、flex
-```
 
 ### DOM 事件类
 
 * DOM 事件的级别了解吗
 
+```
+
+```
+
 * DOM 事件模型了解吗
+
+```
+
+```
 
 * DOM 事件流了解吗
 
+```
+
+```
+
 * 描述 DOM 事件捕获的具体流程
+
+```
+
+```
 
 * 讲一下事件委托
 
+```
+
+```
+
 * 自定义事件了解吗
+
+```
+
+```
 
 ### 类型转换
 
 * 了解显式转换、隐式转换吗？
 
+```
+
+```
+
 * 了解显式转换的过程吗
+
+```
+
+```
 
 ### HTTP 相关
 
 * HTTP 协议主要特点
+
+```
+
+```
 
 * HTTP 报文组成部分
 
@@ -67,13 +117,33 @@
 
 * HTTP 协议类: POST 和 GET 的区别
 
+```
+
+```
+
 * HTTP 状态码
+
+```
+
+```
 
 * 强缓存和协商缓存 [资料](https://www.cnblogs.com/lyzg/p/5125934.html)
 
+```
+
+```
+
 * 持久连接
 
+```
+
+```
+
 * 管线化
+
+```
+
+```
 
 ### 原型链类
 
