@@ -170,7 +170,7 @@
 ```
 * overflow: hidden 先用好最常用的这个
 * position: absolute
-* float: 不问 none ?
+* float: 除了 none ?
 * display: flex
 ```
 
