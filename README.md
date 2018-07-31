@@ -6,35 +6,7 @@
 
 > 喜欢的可以点下 watch 或 star
 
-### 随笔
-
-* [Promise 札记](https://github.com/MuYunyun/blog/issues/23)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
-* [JavaScript 常见设计模式](https://github.com/MuYunyun/blog/issues/20)
-* [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/issues/19)<sub>[(相关项目)](https://github.com/MuYunyun/analyze-webpack-plugin)
-* [JS 装饰器解析](https://github.com/MuYunyun/blog/issues/17)
-* [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
-* [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
-* [跨域二三事](https://github.com/MuYunyun/fe_cloud/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
-* [原生 JS 实现一个瀑布流插件](https://github.com/MuYunyun/fe_cloud/issues/12) <sub>[(相关项目)](https://github.com/MuYunyun/waterfall)
-* [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
-* [2017 年终总结 —— 在路上](https://github.com/MuYunyun/fe_cloud/issues/10)
-* [尝试造了个工具类库，名为 Diana](https://github.com/MuYunyun/blog/issues/9) <sub>[(相关项目)](https://github.com/MuYunyun/diana)
-* [走近 Python (类比 JS)](https://github.com/MuYunyun/blog/issues/8)
-* [Node.js 异步异闻录](https://github.com/MuYunyun/blog/issues/7)
-<sub>[(相关项目)](https://github.com/MuYunyun/demos-of-node.js)
-* [用 Node.js 把玩一番 Alfred Workflow](https://github.com/MuYunyun/blog/issues/6) <sub>[(相关项目)](https://github.com/MuYunyun/commonSearch)
-* [从 JavaScript 到 TypeScript](https://github.com/MuYunyun/blog/issues/5)
-<sub>[(相关项目)](https://github.com/MuYunyun/TypeScript)
-* [React 在服务端渲染的实现](https://github.com/MuYunyun/blog/issues/4)
-* [使用 React 全家桶搭建一个后台管理系统](https://github.com/MuYunyun/blog/issues/3)
-<sub>[(相关项目)](https://github.com/MuYunyun/reactSPA)
-* [读书笔记-你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
-* [hexo 摸爬滚打之进阶教程](https://github.com/MuYunyun/blog/issues/1)
-* [old blog](http://www.cnblogs.com/MuYunyun/)
-
 ### 从 0 到 1 实现 React
-
-未完待续...
 
 - [x] [前置准备](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/0.前置准备.md)
 - [x] [JSX 和 Virtual DOM](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/1.JSX%20%E5%92%8C%20%E8%99%9A%E6%8B%9F%20DOM.md)
@@ -68,7 +40,8 @@
 ### ES6 札记
 
 - [x] [JS 装饰器解析](https://github.com/MuYunyun/blog/issues/17)
-- [x] [Promise 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise札记.md)
+- [x] [Promise 札记上](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise札记.md)
+- [ ] Promise 札记下 —— 升级 setTimeout
 - [x] [Generator 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator札记.md)
 - [x] [Async 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async札记.md)
 - [ ] [浅看 Module 规范与加载实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
@@ -107,3 +80,29 @@
 
 - [x] [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
 - [ ] CSS 揭秘
+
+### 随笔
+
+* [Promise 札记](https://github.com/MuYunyun/blog/issues/23)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
+* [JavaScript 常见设计模式](https://github.com/MuYunyun/blog/issues/20)
+* [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/issues/19)<sub>[(相关项目)](https://github.com/MuYunyun/analyze-webpack-plugin)
+* [JS 装饰器解析](https://github.com/MuYunyun/blog/issues/17)
+* [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
+* [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
+* [跨域二三事](https://github.com/MuYunyun/fe_cloud/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
+* [原生 JS 实现一个瀑布流插件](https://github.com/MuYunyun/fe_cloud/issues/12) <sub>[(相关项目)](https://github.com/MuYunyun/waterfall)
+* [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
+* [2017 年终总结 —— 在路上](https://github.com/MuYunyun/fe_cloud/issues/10)
+* [尝试造了个工具类库，名为 Diana](https://github.com/MuYunyun/blog/issues/9) <sub>[(相关项目)](https://github.com/MuYunyun/diana)
+* [走近 Python (类比 JS)](https://github.com/MuYunyun/blog/issues/8)
+* [Node.js 异步异闻录](https://github.com/MuYunyun/blog/issues/7)
+<sub>[(相关项目)](https://github.com/MuYunyun/demos-of-node.js)
+* [用 Node.js 把玩一番 Alfred Workflow](https://github.com/MuYunyun/blog/issues/6) <sub>[(相关项目)](https://github.com/MuYunyun/commonSearch)
+* [从 JavaScript 到 TypeScript](https://github.com/MuYunyun/blog/issues/5)
+<sub>[(相关项目)](https://github.com/MuYunyun/TypeScript)
+* [React 在服务端渲染的实现](https://github.com/MuYunyun/blog/issues/4)
+* [使用 React 全家桶搭建一个后台管理系统](https://github.com/MuYunyun/blog/issues/3)
+<sub>[(相关项目)](https://github.com/MuYunyun/reactSPA)
+* [读书笔记-你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
+* [hexo 摸爬滚打之进阶教程](https://github.com/MuYunyun/blog/issues/1)
+* [old blog](http://www.cnblogs.com/MuYunyun/)
