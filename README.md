@@ -13,7 +13,7 @@
 - [x] [组件 和 state|props](https://github.com/MuYunyun/blog/blob/master/BasicSkill/%E4%BB%8E0%E5%88%B01%E5%AE%9E%E7%8E%B0React/2.%E7%BB%84%E4%BB%B6%E5%92%8C%20state%7Cprops.md)
 - [x] [生命周期](https://github.com/MuYunyun/blog/blob/master/BasicSkill/%E4%BB%8E0%E5%88%B01%E5%AE%9E%E7%8E%B0React/3.生命周期.md)
 - [x] [diff 算法](https://github.com/MuYunyun/blog/issues/26)
-- [x] [setState](https://github.com/MuYunyun/blog/blob/master/BasicSkill/%E4%BB%8E0%E5%88%B01%E5%AE%9E%E7%8E%B0React/5.setState.md)
+- [x] [setState 优化](https://github.com/MuYunyun/blog/blob/master/BasicSkill/%E4%BB%8E0%E5%88%B01%E5%AE%9E%E7%8E%B0React/5.setState.md)
 - [ ] 测试之旅
 
 ### 设计模式
