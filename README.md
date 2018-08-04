@@ -67,15 +67,13 @@
 - [ ] xss 与 csrf 实践
 - [ ] fetch 源码
 
-### 算法篇
+### LeetCode
 
-- [x] [递归](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97%E4%BC%98%E5%8C%96.md)
-- [x] [二分查找](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.md)
-- [x] [快速排序](https://github.com/MuYunyun/blog/blob/master/LeetCode/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.md)
-- [x] [选择排序](https://github.com/MuYunyun/blog/blob/master/LeetCode/选择排序.md)
-- [x] [栈](https://github.com/MuYunyun/blog/blob/master/LeetCode/栈.md)
-- [x] [队列](https://github.com/MuYunyun/blog/blob/master/LeetCode/队列.md)
-- [x] [链表](https://github.com/MuYunyun/blog/blob/master/LeetCode/队列.md)
+[基础算法整理](https://github.com/MuYunyun/blog/blob/master/BasicSkill/算法/README.md)
+
+针对算法思维比较薄弱的痛点，进行如下计划：将题号 100 以内的 LeetCode 题目根据分类从易到难先过一遍。每个星期计划 10 道题目。
+
+[LeetCode 刷题进度](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
 
 ### CSS
 
