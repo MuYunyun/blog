@@ -2,6 +2,8 @@
 
 针对算法思维比较薄弱的痛点，进行如下计划：将题号 400 以内的 LeetCode 题目根据分类从易到难先过一遍。每个星期计划 10 道题目。
 
+> 知乎上看到的一个[刷题方法](https://www.zhihu.com/question/31092580/answer/453117660)，打算试用一段时间看看效果，逐步摸索形成自己的方式。
+
 | # | Title | Source Code | Explanation | Difficulty |
 |:---:|:---:|:---:|:---:|:---:|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | | | Easy |
