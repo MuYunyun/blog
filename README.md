@@ -50,6 +50,14 @@
 - [ ] [ES6 继承与 ES5 继承实现的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
 - [ ] Reflect
 
+### LeetCode
+
+[基础算法整理](https://github.com/MuYunyun/blog/blob/master/BasicSkill/算法/README.md)
+
+针对算法思维比较薄弱的痛点，进行如下计划：将题号 400 以内的 LeetCode 题目根据分类从易到难先过一遍。每个星期计划 10 道题目。
+
+[LeetCode 刷题进度](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
+
 ### 框架篇
 
 - [x] [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
@@ -67,14 +75,6 @@
 - [ ] 编写一个简单的 babel 插件
 - [ ] xss 与 csrf 实践
 - [ ] fetch 源码
-
-### LeetCode
-
-[基础算法整理](https://github.com/MuYunyun/blog/blob/master/BasicSkill/算法/README.md)
-
-针对算法思维比较薄弱的痛点，进行如下计划：将题号 400 以内的 LeetCode 题目根据分类从易到难先过一遍。每个星期计划 10 道题目。
-
-[LeetCode 刷题进度](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
 
 ### CSS
 
