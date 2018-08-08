@@ -7,3 +7,4 @@
 - [x] [栈](https://github.com/MuYunyun/blog/blob/master/算法/栈.md)
 - [x] [队列](https://github.com/MuYunyun/blog/blob/master/算法/队列.md)
 - [x] [链表](https://github.com/MuYunyun/blog/blob/master/算法/队列.md)
+- [ ] [树](https://github.com/MuYunyun/blog/blob/master/算法/树.md)
