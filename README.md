@@ -52,7 +52,7 @@
 
 ### LeetCode
 
-[基础算法整理](https://github.com/MuYunyun/blog/blob/master/BasicSkill/算法/README.md)
+[算法与数据结构整理](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/README.md)
 
 针对算法思维比较薄弱的痛点，进行如下计划：将题号 400 以内的 LeetCode 题目根据分类从易到难先过一遍。每个星期计划 10 道题目。
 
