@@ -18,7 +18,7 @@
 | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | | | Hard |
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/11.盛最多水的容器/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/11.盛最多水的容器/README.md) | Medium |
 | 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/12.整数转罗马数字/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/12.整数转罗马数字/README.md) | Medium |
-| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | | | Easy |
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/13.罗马数字转整数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/13.罗马数字转整数/README.md) | Easy |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | | | Easy |
 | 15 | [3Sum](https://leetcode.com/problems/3sum/) | | | Medium |
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | | | Medium |
@@ -26,7 +26,7 @@
 | 18 | [4Sum](https://leetcode.com/problems/4sum/) | | | Medium |
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | | | Medium |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | | | Easy |
-| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | | | Easy |
+| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/21.合并两个有序链表/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/21.合并两个有序链表/README.md) | Easy |
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | | | Medium |
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | | | Hard |
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | | | Medium |
