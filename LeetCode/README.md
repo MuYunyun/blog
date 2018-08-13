@@ -1,7 +1,5 @@
 ### LeetCode
 
-针对算法思维比较薄弱的痛点，进行如下计划：将题号 400 以内的 LeetCode 题目根据分类从易到难先过一遍。每个星期计划 10 道题目。
-
 > 知乎上看到的一个[刷题方法](https://www.zhihu.com/question/31092580/answer/453117660)，打算试用一段时间看看效果，逐步摸索形成自己的方式。
 
 | # | Title | Source Code | Explanation | Difficulty |
@@ -27,12 +25,12 @@
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | | | Medium |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | | | Easy |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/21.合并两个有序链表/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/21.合并两个有序链表/README.md) | Easy |
-| 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | | | Medium |
+| 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/22. 括号生成/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/22. 括号生成/README.md) | Medium |
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | | | Hard |
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | | | Medium |
 | 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | | | Hard |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | | | Easy |
-| 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | | | Easy |
+| 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/27.移除元素/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/27.移除元素/README.md) | Easy |
 | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | | | Easy |
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | | | Medium |
 | 30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | | | Hard |
