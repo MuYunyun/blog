@@ -25,7 +25,7 @@
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | | | Medium |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | | | Easy |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/21.合并两个有序链表/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/21.合并两个有序链表/README.md) | Easy |
-| 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/22. 括号生成/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/22. 括号生成/README.md) | Medium |
+| 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/22.括号生成/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/22.括号生成/README.md) | Medium |
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | | | Hard |
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | | | Medium |
 | 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | | | Hard |
