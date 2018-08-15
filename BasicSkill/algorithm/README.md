@@ -4,7 +4,7 @@
 - [x] [队列](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/队列.md)
 - [x] [链表](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/队列.md)
 - [x] [集合](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/集合.md)
-- [ ] [字典和散列表](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/字典和散列表.md)
+- [ ] [字典和哈希表](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/字典和哈希表.md)
 - [x] [二叉树](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/二叉树.md)
 - [ ] [图](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/图.md)
 
