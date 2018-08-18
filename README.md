@@ -15,6 +15,8 @@
 - [x] [diff 算法](https://github.com/MuYunyun/blog/issues/26)
 - [x] [setState 优化](https://github.com/MuYunyun/blog/blob/master/BasicSkill/%E4%BB%8E0%E5%88%B01%E5%AE%9E%E7%8E%B0React/5.setState.md)
 - [x] [ref 实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/%E4%BB%8E0%E5%88%B01%E5%AE%9E%E7%8E%B0React/6.ref.md)
+- [ ] pureComponent 探索
+- [ ] hoc 探索
 - [ ] 测试之旅
 
 ### 数据结构
