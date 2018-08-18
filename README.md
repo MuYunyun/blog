@@ -17,11 +17,18 @@
 - [x] [ref 实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/%E4%BB%8E0%E5%88%B01%E5%AE%9E%E7%8E%B0React/6.ref.md)
 - [ ] 测试之旅
 
-### LeetCode
+### 数据结构
 
-* [LeetCode 刷题进度](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
+* [栈](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/栈.md)
+* [队列](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/队列.md)
+* [链表](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/链表.md)
+* [集合](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/集合.md)
+* [字典](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/字典.md)
+* [哈希表](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/哈希表.md)
+* [二叉树](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/二叉树.md)
+* [图](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/图.md)
 
-* [常见数据结构与算法整理](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/README.md)
+> [LeetCode 刷题进度](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
 
 ### 设计模式
 

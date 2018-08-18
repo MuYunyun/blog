@@ -38,11 +38,16 @@
       return str
     }
 
-    Graph.prototype.bfs = function (v, callback) {
+    Graph.prototype.BFS = function (v) {
       const obj = {}
+
+      const d = {}    // 新加入的变量存储距离
+      const prev = {} // 新加入的变量存储最短路径上先前的点
 
       for (let i of this.topPointArr) { // 初始化颜色
         obj[i] = 'white'
+        d[i] = 0
+        prev[i] = null
       }
 
       const queue = new Queue()
@@ -60,13 +65,56 @@
           if (obj[i] === 'white') {
             obj[i] = 'gray'
             queue.push(i)
+            d[i] = d[shiftQueue] + 1  // 这个地方卡主了~~~，思路：第二行的点距离第一行的点相差为 1，第三行的点距离第二行的点相差为 1，以此类推。
+            prev[i] = shiftQueue
           }
         }
+      }
 
-        if (callback) {
-          callback(shiftQueue)
+      return {
+        distance: d,
+        prev: prev
+      }
+    }
+
+    Graph.prototype.logMinPath = function (v) {
+      const { distance, prev } = this.BFS(v)
+      let path = ''
+      const arr = []
+      Object.keys(distance).map(r => {
+        path = r
+        while (prev[r]) {
+          path = prev[r] + ' - ' + path
+          r = prev[r]
+        }
+        arr.push(path)
+      })
+      return arr.join('\n')
+    }
+
+    Graph.prototype.dfs = function (v, callback) {
+      const obj = {}
+
+      for (let i of this.topPointArr) { // 初始化颜色
+        obj[i] = 'white'
+      }
+
+      let neighbour
+      const that = this
+      const find = function (v, color, cb) {
+        color[v] = 'gred'
+        if (cb) {
+          cb(v)
+        }
+        neighbour = that.edgeMap.get(v)
+        for (let i of neighbour) {
+          if (color[i] === 'white') {
+            find(i, color, cb)
+          }
         }
       }
+
+      find(v, obj, callback)
     }
 
     function Queue() {
@@ -110,9 +158,9 @@
     graph.addEdge('D', 'H')
     graph.addEdge('E', 'I')
 
-    // graph.bfs('A', (shiftQueue) => {
-    //   console.log(shiftQueue)
-    // })
+    graph.dfs('A', (shiftQueue) => {
+      console.log(shiftQueue)
+    })
   </script>
 </body>
 </html>
