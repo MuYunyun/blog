@@ -9,13 +9,13 @@
 ### 从 0 到 1 实现 React
 
 - [x] [前置准备](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/0.前置准备.md)
-- [x] [JSX 和 Virtual DOM](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/1.JSX%20%E5%92%8C%20%E8%99%9A%E6%8B%9F%20DOM.md)
-- [x] [组件 和 state|props](https://github.com/MuYunyun/blog/blob/master/BasicSkill/%E4%BB%8E0%E5%88%B01%E5%AE%9E%E7%8E%B0React/2.%E7%BB%84%E4%BB%B6%E5%92%8C%20state%7Cprops.md)
-- [x] [生命周期](https://github.com/MuYunyun/blog/blob/master/BasicSkill/%E4%BB%8E0%E5%88%B01%E5%AE%9E%E7%8E%B0React/3.生命周期.md)
+- [x] [JSX 和 Virtual DOM](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/1.JSX和虚拟DOM.md)
+- [x] [组件 和 state|props](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/2.组件和state|props.md)
+- [x] [生命周期](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/3.生命周期.md)
 - [x] [diff 算法](https://github.com/MuYunyun/blog/issues/26)
-- [x] [setState 优化](https://github.com/MuYunyun/blog/blob/master/BasicSkill/%E4%BB%8E0%E5%88%B01%E5%AE%9E%E7%8E%B0React/5.setState.md)
-- [x] [ref 实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/%E4%BB%8E0%E5%88%B01%E5%AE%9E%E7%8E%B0React/6.ref.md)
-- [ ] pureComponent 探索
+- [x] [setState 优化](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/5.setState.md)
+- [x] [ref 实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/6.ref.md)
+- [ ] [pureComponent 探索实践](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/7.PureComponent.md)
 - [ ] hoc 探索
 - [ ] 测试之旅
 
