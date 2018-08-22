@@ -15,8 +15,8 @@
 - [x] [diff 算法](https://github.com/MuYunyun/blog/issues/26)
 - [x] [setState 优化](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/5.setState.md)
 - [x] [ref 实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/6.ref.md)
-- [x] [PureComponent 探索](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/7.PureComponent.md)
-- [ ] hoc 探索
+- [x] [PureComponent 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/7.PureComponent.md)
+- [ ] [hoc 探索](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/8.hoc组件探索.md)
 - [ ] 测试之旅
 
 ### 数据结构
