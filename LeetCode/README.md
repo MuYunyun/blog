@@ -42,15 +42,15 @@
 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | | | Medium |
 | 37 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | | | Hard |
 | 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | | | Easy |
-| 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | | | Medium |
-| 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | | | Medium |
+| 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/39.组合总和/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/39.组合总和/README.md) | Medium |
+| 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/40.组合总和II/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/40.组合总和II/README.md) | Medium |
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | | | Hard |
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | | | Hard |
 | 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | | | Medium |
 | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | | | Hard |
 | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | | | Hard |
-| 46 | [Permutations](https://leetcode.com/problems/permutations/) | | | Medium |
-| 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | | | Medium |
+| 46 | [Permutations](https://leetcode.com/problems/permutations/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/46.全排列/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/46.全排列/README.md) | Medium |
+| 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/47.全排列II/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/47.全排列II/README.md) | Medium |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | | | Medium |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | | | Medium |
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | | | Medium |
