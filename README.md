@@ -16,8 +16,8 @@
 - [x] [setState 优化](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/5.setState.md)
 - [x] [ref 实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/6.ref.md)
 - [x] [PureComponent 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/7.PureComponent.md)
+- [ ] [HOC 探索](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/9.HOC探索.md)
 - [ ] 事件机制探索
-- [ ] [HOC 探幽](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/9.HOC探索.md)
 
 You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find the corresponding code synced with the article.
 
@@ -64,7 +64,7 @@ You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find
 - [x] [Generator 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator札记.md)
 - [x] [Async 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async札记.md)
 - [ ] [浅看 Module 规范与加载实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
-- [ ] [ES6 继承与 ES5 继承实现的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
+- [x] [ES6 继承与 ES5 继承的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
 - [x] [扩展运算符](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/扩展运算符.md)
 - [ ] Reflect
 
