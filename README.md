@@ -16,7 +16,7 @@
 - [x] [setState 优化](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/5.setState.md)
 - [x] [ref 实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/6.ref.md)
 - [x] [PureComponent 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/7.PureComponent.md)
-- [ ] [HOC 探索](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/9.HOC探索.md)
+- [x] [HOC 探索](https://github.com/MuYunyun/blog/blob/master/BasicSkill/从0到1实现React/8.HOC探索.md)
 - [ ] 事件机制探索
 
 You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find the corresponding code synced with the article.
