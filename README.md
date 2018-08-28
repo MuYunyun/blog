@@ -31,6 +31,7 @@ You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find
 * [哈希表](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/哈希表.md)
 * [二叉树](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/二叉树.md)
 * [图](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/图.md)
+* [排序|查找](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/README.md)
 
 > [LeetCode 刷题进度](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
 
