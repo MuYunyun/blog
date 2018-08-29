@@ -7,6 +7,38 @@
   <title>Document</title>
 </head>
 <script src="./48.旋转图像/index.js"></script>
+<script>
+  var MinChange = function (changeType) {
+    this.changeType = changeType
+    this.cache = {}
+  }
+
+  MinChange.prototype.makeChange = function (amount) {
+    let min = []
+    if (!amount) {
+      return []
+    }
+    if (this.cache[amount]) {   // 读缓存
+      return this.cache[amount]
+    }
+
+    for (let i = 0; i < this.changeType.length; i++) {
+      const leftAmount = amount - this.changeType[i]
+      let newMin
+      if (leftAmount >= 0) {
+        newMin = this.makeChange(leftAmount)
+      }
+      if (leftAmount >= 0
+        && (newMin.length < min.length - 1 || !min.length)) {
+        min = [this.changeType[i]].concat(newMin)
+      }
+    }
+
+    return this.cache[amount] = min
+  }
+
+  var minChange = new MinChange([1, 5, 10, 20])
+</script>
 <body>
 </body>
 </html>
