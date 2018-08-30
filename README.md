@@ -33,6 +33,7 @@ You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find
 * [图](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/图.md)
 * [排序|查找](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/README.md)
 * [动态规划](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/动态规划.md)
+* [贪心算法](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/贪心算法.md)
 
 > [LeetCode 刷题进度](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
 
