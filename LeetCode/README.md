@@ -20,7 +20,7 @@
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | | | Easy |
 | 15 | [3Sum](https://leetcode.com/problems/3sum/) | | | Medium |
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | | | Medium |
-| 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | | | Medium |
+| 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/17.电话号码的字母组合/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/17.电话号码的字母组合/README.md) | Medium |
 | 18 | [4Sum](https://leetcode.com/problems/4sum/) | | | Medium |
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | | | Medium |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | | | Easy |

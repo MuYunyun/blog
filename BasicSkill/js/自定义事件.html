@@ -7,6 +7,43 @@
   <title>Document</title>
 </head>
 <body>
+  <input id="sec" />
+  <script>
+    var obj = {}
+    Object.defineProperty(obj, 'value', {
+      get: function() {
+        return value
+      },
+      set: function(newValue) {
+        console.log('newValue:', newValue)
+        // if (document.getElementById('sec')) {
+
+        // }
+      }
+    })
+
+    document.getElementById('sec').addEventListener('input', (e) => {
+      console.log('input')
+      obj.value = document.getElementById('sec').value
+    })
+
+    // var ev = new CustomEvent('custom', {1: 1})
+    // document.getElementById('sec').addEventListener('custom', function(obj) {
+    //   console.log(obj)
+    // })
+    // document.getElementById('sec').dispatchEvent(ev)
+  </script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
   <section id='sec'>
     <style>
       #sec {
@@ -27,4 +64,4 @@
     document.getElementById('sec').dispatchEvent(ev)
   </script>
 </body>
-</html>
+</html> -->
