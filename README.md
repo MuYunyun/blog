@@ -53,6 +53,7 @@ You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find
 * [装饰者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/装饰者模式.md)
 * [状态模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/状态模式.md)
 * [适配者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/适配者模式.md)
+* [观察者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/观察者模式.md)
 
 ### node.js
 
@@ -69,7 +70,7 @@ You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find
 - [ ] [浅看 Module 规范与加载实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
 - [x] [ES6 继承与 ES5 继承的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
 - [x] [扩展运算符](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/扩展运算符.md)
-- [ ] Reflect
+- [ ] [Reflect](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Reflect.md)
 
 ### 框架篇
 
