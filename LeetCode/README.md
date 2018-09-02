@@ -23,15 +23,15 @@
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/17.电话号码的字母组合/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/17.电话号码的字母组合/README.md) | Medium |
 | 18 | [4Sum](https://leetcode.com/problems/4sum/) | | | Medium |
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | | | Medium |
-| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | | | Easy |
+| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/20.有效的括号/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/20.有效的括号/README.md) | Easy |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/21.合并两个有序链表/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/21.合并两个有序链表/README.md) | Easy |
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/22.括号生成/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/22.括号生成/README.md) | Medium |
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | | | Hard |
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | | | Medium |
 | 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | | | Hard |
-| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | | | Easy |
+| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/26.删除排序数组中的重复项/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/26.删除排序数组中的重复项/README.md) | Easy |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/27.移除元素/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/27.移除元素/README.md) | Easy |
-| 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | | | Easy |
+| 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/28.实现strStr/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/28.实现strStr/README.md) | Easy |
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | | | Medium |
 | 30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | | | Hard |
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | | | Medium |
