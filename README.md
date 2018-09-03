@@ -12,12 +12,13 @@
 - [x] [JSX 和 Virtual DOM](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/1.JSX和虚拟DOM.md)
 - [x] [组件 和 state|props](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/2.组件和state|props.md)
 - [x] [生命周期](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/3.生命周期.md)
-- [x] [diff 算法](https://github.com/MuYunyun/blog/issues/26)
+- [x] [diff 算法](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/4.diff算法.md)
 - [x] [setState 优化](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/5.setState.md)
 - [x] [ref 实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/6.ref.md)
 - [x] [PureComponent 的实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/7.PureComponent.md)
 - [x] [HOC 探索](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/8.HOC探索.md)
-- [ ] 事件机制探索
+- [x] [onChange 事件的那点事](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/9.onChange事件的那点事.md)
+- [ ] 补充章节:babel插件实践——JSX转化
 
 You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find the corresponding code synced with the article.
 
@@ -86,7 +87,6 @@ You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find
 
 - [x] [跨域二三事](https://github.com/MuYunyun/fe_cloud/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
 - [x] [探寻 webpack 插件机制 || 编写一个 webpack 插件](https://github.com/MuYunyun/blog/issues/19)
-- [ ] 编写一个简单的 babel 插件
 - [ ] xss 与 csrf 实践
 - [ ] fetch 源码
 
