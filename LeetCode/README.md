@@ -38,10 +38,10 @@
 | 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | | | Hard |
 | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | | | Medium |
 | 34 | [Search for a Range](https://leetcode.com/problems/search-for-a-range/) | | | Medium |
-| 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | | | Easy |
+| 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/35.搜索插入位置/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/35.搜索插入位置/README.md) | Easy |
 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | | | Medium |
 | 37 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | | | Hard |
-| 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | | | Easy |
+| 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/38.报数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/38.报数/README.md) | Easy |
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/39.组合总和/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/39.组合总和/README.md) | Medium |
 | 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/40.组合总和II/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/40.组合总和II/README.md) | Medium |
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | | | Hard |

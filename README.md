@@ -85,8 +85,9 @@ You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find
 
 ### 番外篇
 
-- [x] [跨域二三事](https://github.com/MuYunyun/fe_cloud/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
+- [x] [跨域二三事](https://github.com/MuYunyun/blog/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
 - [x] [探寻 webpack 插件机制 || 编写一个 webpack 插件](https://github.com/MuYunyun/blog/issues/19)
+- [ ] [babel 执行机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/babel执行机制.md)
 - [ ] xss 与 csrf 实践
 - [ ] fetch 源码
 
