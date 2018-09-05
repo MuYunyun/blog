@@ -1,6 +1,6 @@
 ### LeetCode
 
-> 知乎上看到的一个[刷题方法](https://www.zhihu.com/question/31092580/answer/453117660)，打算试用一段时间看看效果，逐步摸索形成自己的方式。
+> 分享知乎上的一个[刷题方法](https://www.zhihu.com/question/31092580/answer/453117660)
 
 | # | Title | Source Code | Explanation | Difficulty |
 |:---:|:---:|:---:|:---:|:---:|
@@ -17,7 +17,7 @@
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/11.盛最多水的容器/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/11.盛最多水的容器/README.md) | Medium |
 | 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/12.整数转罗马数字/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/12.整数转罗马数字/README.md) | Medium |
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/13.罗马数字转整数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/13.罗马数字转整数/README.md) | Easy |
-| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | | | Easy |
+| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/14.最长公共前缀/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/14.最长公共前缀/README.md) | Easy |
 | 15 | [3Sum](https://leetcode.com/problems/3sum/) | | | Medium |
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | | | Medium |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/17.电话号码的字母组合/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/17.电话号码的字母组合/README.md) | Medium |
