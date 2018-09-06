@@ -18,9 +18,9 @@
 - [x] [PureComponent 的实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/7.PureComponent.md)
 - [x] [HOC 探索](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/8.HOC探索.md)
 - [x] [onChange 事件的那点事](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/9.onChange事件的那点事.md)
-- [ ] 补充章节:babel插件实践——JSX转化
+- [ ] babel插件实践——JSX转化（补充章节）
 
-You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find the corresponding code synced with the article.
+> 可以在 [release](https://github.com/MuYunyun/cpreact/releases) 中找到与各小节同步的代码
 
 ### 数据结构
 
@@ -56,6 +56,8 @@ You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find
 * [适配者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/适配者模式.md)
 * [观察者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/观察者模式.md)
 
+> [issue](https://github.com/MuYunyun/blog/issues/20)
+
 ### node.js
 
 * [简版 express.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node/%E7%AE%80%E7%89%88%20express.js%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
@@ -63,12 +65,12 @@ You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find
 
 ### ES6 札记
 
-- [x] [JS 装饰器解析](https://github.com/MuYunyun/blog/issues/17)
-- [x] [Promise 札记上](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise札记.md)
+- [x] [装饰器](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/装饰器.md)
+- [x] [Promise 札记上](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise札记.md)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
 - [ ] Promise 札记下 —— 升级 setTimeout
 - [x] [Generator 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator札记.md)
 - [x] [Async 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async札记.md)
-- [ ] [浅看 Module 规范与加载实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
+- [ ] [CommonJS 模块与 ES6 模块间的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
 - [x] [ES6 继承与 ES5 继承的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
 - [x] [扩展运算符](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/扩展运算符.md)
 - [ ] [Reflect](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Reflect.md)
@@ -85,8 +87,10 @@ You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find
 
 ### 番外篇
 
+- [x] [从 JavaScript 到 TypeScript](https://github.com/MuYunyun/blog/issues/5)
+<sub>[(相关项目)](https://github.com/MuYunyun/TypeScript)
 - [x] [跨域二三事](https://github.com/MuYunyun/blog/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
-- [x] [探寻 webpack 插件机制 || 编写一个 webpack 插件](https://github.com/MuYunyun/blog/issues/19)
+- [x] [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/探寻webpack插件机制.md)<sub>[(相关项目)](https://github.com/MuYunyun/analyze-webpack-plugin)
 - [ ] [babel 执行机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/babel执行机制.md)
 - [ ] xss 与 csrf 实践
 - [ ] fetch 源码
@@ -98,26 +102,13 @@ You can view the [release](https://github.com/MuYunyun/cpreact/releases) to find
 
 ### 随笔
 
-* [Promise 札记](https://github.com/MuYunyun/blog/issues/23)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
-* [JavaScript 常见设计模式](https://github.com/MuYunyun/blog/issues/20)
-* [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/issues/19)<sub>[(相关项目)](https://github.com/MuYunyun/analyze-webpack-plugin)
-* [JS 装饰器解析](https://github.com/MuYunyun/blog/issues/17)
-* [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
-* [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
-* [跨域二三事](https://github.com/MuYunyun/fe_cloud/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
 * [原生 JS 实现一个瀑布流插件](https://github.com/MuYunyun/fe_cloud/issues/12) <sub>[(相关项目)](https://github.com/MuYunyun/waterfall)
-* [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
-* [2017 年终总结 —— 在路上](https://github.com/MuYunyun/fe_cloud/issues/10)
 * [尝试造了个工具类库，名为 Diana](https://github.com/MuYunyun/blog/issues/9) <sub>[(相关项目)](https://github.com/MuYunyun/diana)
 * [走近 Python (类比 JS)](https://github.com/MuYunyun/blog/issues/8)
 * [Node.js 异步异闻录](https://github.com/MuYunyun/blog/issues/7)
 <sub>[(相关项目)](https://github.com/MuYunyun/demos-of-node.js)
 * [用 Node.js 把玩一番 Alfred Workflow](https://github.com/MuYunyun/blog/issues/6) <sub>[(相关项目)](https://github.com/MuYunyun/commonSearch)
-* [从 JavaScript 到 TypeScript](https://github.com/MuYunyun/blog/issues/5)
-<sub>[(相关项目)](https://github.com/MuYunyun/TypeScript)
 * [React 在服务端渲染的实现](https://github.com/MuYunyun/blog/issues/4)
 * [使用 React 全家桶搭建一个后台管理系统](https://github.com/MuYunyun/blog/issues/3)
 <sub>[(相关项目)](https://github.com/MuYunyun/reactSPA)
 * [读书笔记-你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
-* [hexo 摸爬滚打之进阶教程](https://github.com/MuYunyun/blog/issues/1)
-* [old blog](http://www.cnblogs.com/MuYunyun/)
