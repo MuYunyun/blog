@@ -70,7 +70,7 @@
 - [ ] Promise 札记下 —— 升级 setTimeout
 - [x] [Generator 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator札记.md)
 - [x] [Async 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async札记.md)
-- [ ] [CommonJS 模块与 ES6 模块间的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
+- [x] [CommonJS 模块与 ES6 模块间的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
 - [x] [ES6 继承与 ES5 继承的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
 - [x] [扩展运算符](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/扩展运算符.md)
 - [ ] [Reflect](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Reflect.md)
