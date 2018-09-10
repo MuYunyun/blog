@@ -19,7 +19,7 @@
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/13.罗马数字转整数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/13.罗马数字转整数/README.md) | Easy |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/14.最长公共前缀/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/14.最长公共前缀/README.md) | Easy |
 | 15 | [3Sum](https://leetcode.com/problems/3sum/) | | | Medium |
-| 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | | | Medium |
+| 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/16.最接近的三数之和/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/16.最接近的三数之和/README.md) | Medium |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/17.电话号码的字母组合/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/17.电话号码的字母组合/README.md) | Medium |
 | 18 | [4Sum](https://leetcode.com/problems/4sum/) | | | Medium |
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | | | Medium |
@@ -36,7 +36,7 @@
 | 30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | | | Hard |
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | | | Medium |
 | 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | | | Hard |
-| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | | | Medium |
+| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/33.搜索旋转排序数组/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/33.搜索旋转排序数组/README.md) | Medium |
 | 34 | [Search for a Range](https://leetcode.com/problems/search-for-a-range/) | | | Medium |
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/35.搜索插入位置/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/35.搜索插入位置/README.md) | Easy |
 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/36.有效的数独/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/36.有效的数独/README.md) | Medium |
