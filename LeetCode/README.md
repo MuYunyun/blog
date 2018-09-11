@@ -52,8 +52,8 @@
 | 46 | [Permutations](https://leetcode.com/problems/permutations/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/46.全排列/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/46.全排列/README.md) | Medium |
 | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/47.全排列II/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/47.全排列II/README.md) | Medium |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/48.旋转图像/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/48.旋转图像/README.md) | Medium |
-| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | | | Medium |
-| 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | | | Medium |
+| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/49.字母异位词分组/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/49.字母异位词分组/README.md) | Medium |
+| 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/50.Pow/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/50.Pow/README.md) | Medium |
 | 51 | [N-Queens](https://leetcode.com/problems/n-queens/) | | | Hard |
 | 52 | [N-Queens II](https://leetcode.com/problems/n-queens-ii/) | | | Hard |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | | | Easy |

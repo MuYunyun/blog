@@ -18,7 +18,6 @@
 - [x] [PureComponent 的实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/7.PureComponent.md)
 - [x] [HOC 探索](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/8.HOC探索.md)
 - [x] [onChange 事件的那点事](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/9.onChange事件的那点事.md)
-- [ ] babel插件实践——JSX转化（补充章节）
 
 > 可以在 [release](https://github.com/MuYunyun/cpreact/releases) 中找到与各小节同步的代码
 
