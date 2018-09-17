@@ -1,3 +1,5 @@
+Babel 是下一代 JavaScript 编译器。
+
 ### babel 执行机制
 
 babel 执行三部曲如下:
