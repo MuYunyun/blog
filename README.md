@@ -6,20 +6,19 @@
 
 > 喜欢的可以点下 watch 或 star
 
-### 从 0 到 1 实现 React
+### [cpreact](https://github.com/MuYunyun/cpreact)
 
-- [x] [前置准备](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/0.前置准备.md)
-- [x] [JSX 和 Virtual DOM](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/1.JSX和虚拟DOM.md)
-- [x] [组件 和 state|props](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/2.组件和state|props.md)
-- [x] [生命周期](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/3.生命周期.md)
-- [x] [diff 算法](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/4.diff算法.md)
-- [x] [setState 优化](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/5.setState.md)
-- [x] [ref 实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/6.ref.md)
-- [x] [PureComponent 的实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/7.PureComponent.md)
-- [x] [HOC 探索](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/8.HOC探索.md)
-- [x] [onChange 事件的那点事](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/9.onChange事件的那点事.md)
-
-> 可以在 [release](https://github.com/MuYunyun/cpreact/releases) 中找到与各小节同步的代码
+- [x] [0.前置准备](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/0.前置准备.md)
+- [x] [1.JSX 和 Virtual DOM](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/1.JSX和虚拟DOM.md)
+- [x] [2.组件 和 state|props](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/2.组件和state|props.md)
+- [x] [3.生命周期](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/3.生命周期.md)
+- [x] [4.diff 算法](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/4.diff算法.md)
+- [x] [5.setState 优化](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/5.setState.md)
+- [x] [6.ref 实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/6.ref.md)
+- [x] [7.PureComponent 的实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/7.PureComponent.md)
+- [x] [8.HOC 探索](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/8.HOC探索.md)
+- [x] [9.onChange 事件以及受控组件](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/9.onChange事件的那点事.md)
+- [ ] 未完待续
 
 ### 数据结构
 
@@ -74,6 +73,7 @@
 - [x] [ES6 继承与 ES5 继承的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
 - [x] [扩展运算符](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/扩展运算符.md)
 - [ ] [Reflect](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Reflect.md)
+- [ ] [箭头函数](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/箭头函数.md)
 
 ### 框架篇
 
@@ -104,7 +104,7 @@
 ### 随笔
 
 * [原生 JS 实现一个瀑布流插件](https://github.com/MuYunyun/fe_cloud/issues/12) <sub>[(相关项目)](https://github.com/MuYunyun/waterfall)
-* [尝试造了个工具类库，名为 Diana](https://github.com/MuYunyun/blog/issues/9) <sub>[(相关项目)](https://github.com/MuYunyun/diana)
+* [实现一个自定义工具类库](https://github.com/MuYunyun/blog/issues/9) <sub>[(相关项目)](https://github.com/MuYunyun/diana)
 * [走近 Python (类比 JS)](https://github.com/MuYunyun/blog/issues/8)
 * [Node.js 异步异闻录](https://github.com/MuYunyun/blog/issues/7)
 <sub>[(相关项目)](https://github.com/MuYunyun/demos-of-node.js)

@@ -9,7 +9,7 @@
 | 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/3.LongestSubstringWithoutRepeatingCharacters/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/3.LongestSubstringWithoutRepeatingCharacters/README.md) | Medium |
 | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/4.两个排序数组的中位数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/4.两个排序数组的中位数/README.md) | Hard |
 | 5 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/5.最长回文子串/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/5.最长回文子串/README.md) | Medium |
-| 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | | | Medium |
+| 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/6.Z字形变换/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/6.Z字形变换/README.md) | Medium |
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | | | Easy |
 | 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | | | Medium |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/9.回文数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/9.回文数/README.md) | Easy |
