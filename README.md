@@ -17,7 +17,7 @@
 - [x] [6.ref 实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/6.ref.md)
 - [x] [7.PureComponent 的实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/7.PureComponent.md)
 - [x] [8.HOC 探索](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/8.HOC探索.md)
-- [x] [9.onChange 事件以及受控组件](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/9.onChange事件的那点事.md)
+- [x] [9.onChange 事件以及受控组件](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/9.onChange事件以及受控组件.md)
 - [ ] 未完待续
 
 ### 数据结构
