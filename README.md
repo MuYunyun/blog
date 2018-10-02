@@ -95,6 +95,7 @@
 - [ ] xss 与 csrf 实践
 - [ ] fetch 源码
 - [ ] 源码映射
+- [x] [揭秘 JavaScript 中小数与整数的精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/JavaScript中小数与整数的精度问题.md)
 
 ### CSS
 
