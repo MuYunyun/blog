@@ -95,7 +95,7 @@
 - [ ] xss 与 csrf 实践
 - [ ] fetch 源码
 - [ ] 源码映射
-- [x] [探寻JavaScript精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/探寻JavaScript精度问题.md)
+- [x] [探寻JavaScript精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/JavaScript/探寻JavaScript精度问题.md)
 
 ### CSS
 
