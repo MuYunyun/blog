@@ -70,10 +70,10 @@
 | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | | | Medium |
 | 65 | [Valid Number](https://leetcode.com/problems/valid-number/) | | | Hard |
 | 66 | [Plus One](https://leetcode.com/problems/plus-one/) | | | Easy |
-| 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | | | Easy |
+| 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/67.二进制求和/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/67.二进制求和/README.md) | Easy |
 | 68 | [Text Justification](https://leetcode.com/problems/text-justification/) | | | Hard |
-| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | | | Easy |
-| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | | | Easy |
+| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/69.x的平方根) | | Easy |
+| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/70.爬楼梯/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/70.爬楼梯/README.md) | Easy |
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path/) | | | Medium |
 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | | | Hard |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | | | Medium |

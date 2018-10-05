@@ -1,6 +1,6 @@
 # 探寻 JavaScript 精度问题
 
-阅读完本文可以了解到 `0.1 + 0.2` 为什么等于 `0.30000000000000004` 以及 `JavaScript` 中最大安全数是如何来的。
+阅读完本文可以了解到 `0.1 + 0.2` 为什么等于 `0.30000000000000004` 以及 JavaScript 中最大安全数是如何来的。
 
 ### 十进制小数转为二进制小数方法
 
@@ -108,9 +108,24 @@ Math.pow(2, 53) === Math.pow(2, 53) + 1 // true
 
 > 最大的安全数为 `Math.pow(2, 53) - 1`，即 `9007199254740991`。
 
+### 业务中碰到的精度问题以及解决方案
+
+了解 JavaScript 精度问题对我们业务有什么帮助呢？举个业务场景：比如有个订单号后端 Java 同学定义的是 long 类型，但是当这个订单号转换成 JavaScript 的 Number 类型时候精度会丢失了，那没有以上知识铺垫那就理解不了精度为什么会丢失。
+
+解决方案大致有以下几种：
+
+1.针对大数的整数可以考虑使用 bigint 类型(目前在 stage 3 阶段)；
+
+2.使用 [bigNumber](https://github.com/MikeMcl/bignumber.js)，它的思想是转化成 string 进行处理，这种方式对性能有一定影响；
+
+3.可以考虑使用 [long.js](https://github.com/dcodeIO/long.js)，它的思想是将 long 类型的值转化成两个 32 位的双精度类型的值。
+
+4.针对小数可以考虑 [JavaScript 浮点数陷阱及解法](https://github.com/camsong/blog/issues/9) 里面提到的方案；
+
 ### 相关链接
 
 * [代码之谜系列](http://justjavac.com/codepuzzle/2012/11/11/codepuzzle-float-who-stole-your-accuracy.html)
-* [IEEE-754 进制转换图生成](http://www.binaryconvert.com/convert_double.html)
 * [JavaScript 浮点数陷阱及解法](https://github.com/camsong/blog/issues/9): 推荐阅读
 * [javascript 里最大的安全的整数为什么是2的53次方减一](https://www.zhihu.com/question/29010688)
+* [IEEE-754 进制转换图生成](http://www.binaryconvert.com/convert_double.html)：工具
+* [在线进制转换工具](https://www.sojson.com/hexconvert.html): 工具

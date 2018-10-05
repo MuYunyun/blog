@@ -222,6 +222,29 @@ class CallbackItem {
 }
 ```
 
-### more
+### next Step
 
-实践的更多过程可以参考[测试用例](https://github.com/MuYunyun/repromise/tree/master/test)。有好的意见欢迎交流。
+区分下宏任务和微任务，看如下例子：
+
+```js
+setTimeout(() => {
+  console.log('A')
+}, 1000)
+
+Promise.resolve(
+  console.log('B')
+).then(() => {
+  console.log('C')
+})
+
+console.log('D')
+```
+
+结果为 `B D C A`, 对应下宏任务和微任务，名词很高大上。
+
+```js
+macroTask: 这个例子中以 setTimeout 作为标志，产生了事件循环。那这里 `B D C A` 就可以当成是一个宏任务。
+microTask: `B D C` 就可以当成是一个 microTask;
+```
+
+> 未来会用 `setInterval` 替代 `setTimeout` 来区分宏任务和微任务，目前 promise 是用 setTimeout 实现的。
