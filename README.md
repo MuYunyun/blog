@@ -81,9 +81,10 @@
 - [x] [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
 - [x] [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
 - [ ] redux-saga 实践
-- [ ] 聊聊 Redux 架构模式
-- [ ] 撸一个状态管理机
+- [ ] Redux 与 Mobx 的异同
+- [ ] ~~撸一个状态管理机~~
 - [ ] 探索 React-router 源码
+- [ ] [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/BasicSkill/框架篇/在react使用immutable数据的优势.md)
 
 ### 番外篇
 
