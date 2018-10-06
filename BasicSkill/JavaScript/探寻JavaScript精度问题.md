@@ -118,9 +118,9 @@ Math.pow(2, 53) === Math.pow(2, 53) + 1 // true
 
 2.使用 [bigNumber](https://github.com/MikeMcl/bignumber.js)，它的思想是转化成 string 进行处理，这种方式对性能有一定影响；
 
-3.可以考虑使用 [long.js](https://github.com/dcodeIO/long.js)，它的思想是将 long 类型的值转化成两个 32 位的双精度类型的值。
+3.可以考虑使用 [long.js](https://github.com/dcodeIO/long.js)，它的思想是将 long 类型的值转化成两个精度为 32 位的双精度类型的值。
 
-4.针对小数可以考虑 [JavaScript 浮点数陷阱及解法](https://github.com/camsong/blog/issues/9) 里面提到的方案；
+4.针对小数的话可以使用 [number-precision](https://github.com/nefe/number-precision), 该库将小数转为整数后再作处理；
 
 ### 相关链接
 
