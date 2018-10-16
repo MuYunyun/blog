@@ -78,7 +78,7 @@
 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | | | Hard |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | | | Medium |
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | | | Medium |
-| 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | | | Medium |
+| 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/75.颜色分类) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/75.颜色分类/README.md) | Medium |
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | | | Hard |
 | 77 | [Combinations](https://leetcode.com/problems/combinations/) | | | Medium |
 | 78 | [Subsets](https://leetcode.com/problems/subsets/) | | | Medium |
