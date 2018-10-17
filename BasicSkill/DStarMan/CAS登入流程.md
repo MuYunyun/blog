@@ -13,7 +13,7 @@ CAS Server: 处理账号、密码的认证，需要独立部署 (部署在后端
 
 下面以 Batman 为例对 CAS(Central Authentication Service) 流程作个梳理。
 
-![](http://oqhtscus0.bkt.clouddn.com/89fccb6391b0697815078d6f725dc124.jpg)
+![](http://muyy.withyoufriends.com/89fccb6391b0697815078d6f725dc124.jpg)
 
 1. 在浏览器中输入 batman.dianwoda.cn;
 2. 如果没有登录(session 里没有相应信息)，则重定向到 `https://cas.nidianwo.com/login?service=http%3A%2F%2Fbatman.dianwoda.cn%2F`;
