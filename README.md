@@ -75,6 +75,16 @@
 - [ ] [Reflect](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Reflect.md)
 - [ ] [箭头函数](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/箭头函数.md)
 
+### 基础篇
+
+- [x] [探寻JavaScript精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
+- [x] [你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
+- [x] [跨域二三事](https://github.com/MuYunyun/blog/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
+- [ ] [数组字符串方法小结](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/数组字符串方法小结——是否对原值有影响.md)
+- [ ] [二刷高程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/二刷高程.md)
+- [x] [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
+- [ ] ~~CSS 揭秘~~
+
 ### 框架篇
 
 - [x] [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
@@ -90,19 +100,12 @@
 
 - [x] [从 JavaScript 到 TypeScript](https://github.com/MuYunyun/blog/issues/5)
 <sub>[(相关项目)](https://github.com/MuYunyun/TypeScript)
-- [x] [跨域二三事](https://github.com/MuYunyun/blog/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
 - [x] [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/探寻webpack插件机制.md)<sub>[(相关项目)](https://github.com/MuYunyun/analyze-webpack-plugin)
 - [ ] [babel 执行机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/babel执行机制.md)
 - [ ] xss 与 csrf 实践
 - [ ] fetch 源码
 - [ ] 源码映射
-- [x] [探寻JavaScript精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/JavaScript/探寻JavaScript精度问题.md)
 - [ ] [npm 与 yarn](npm和yarn的区别)
-
-### CSS
-
-- [x] [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
-- [ ] CSS 揭秘
 
 ### 随笔
 
@@ -115,4 +118,3 @@
 * [React 在服务端渲染的实现](https://github.com/MuYunyun/blog/issues/4)
 * [使用 React 全家桶搭建一个后台管理系统](https://github.com/MuYunyun/blog/issues/3)
 <sub>[(相关项目)](https://github.com/MuYunyun/reactSPA)
-* [读书笔记-你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
