@@ -222,14 +222,12 @@ class CallbackItem {
 }
 ```
 
-### next Step
-
-区分下宏任务和微任务，看如下例子：
+### 拓展延伸
 
 ```js
 setTimeout(() => {
   console.log('A')
-}, 1000)
+}, 0)
 
 Promise.resolve(
   console.log('B')
@@ -240,11 +238,9 @@ Promise.resolve(
 console.log('D')
 ```
 
-结果为 `B D C A`, 对应下宏任务和微任务，名词很高大上。
+正常情况下，此 demo 应该输出 `B D C A`, 这里涉及到宏任务和微任务的知识点，一个宏任务里可以有多个微任务。
 
-```js
-macroTask: 这个例子中以 setTimeout 作为标志，产生了事件循环。那这里 `B D C A` 就可以当成是一个宏任务。
-microTask: `B D C` 就可以当成是一个 microTask;
-```
+* 宏任务(macroTask)：setTimeout
+* 微任务(microTask)：promise
 
-> 未来会用 `setInterval` 替代 `setTimeout` 来区分宏任务和微任务，目前 promise 是用 setTimeout 实现的。
+> 由于此项目中的 promise 是用 setTimeout 实现的，所以在上述 demo 中，此项目输出的结果是 `B D A C`, 解决方法：可以使用 `setImmediate` 替代 `setTimeout`，可以参考 [setImmediate.js](https://github.com/YuzuJS/setImmediate)。它的本质用了一些 hack 的手段，比如借用了 postMessage 这个来操作事件循环。
