@@ -142,6 +142,8 @@ Get 请求通过 url 传递，Post 通过 request body 传递
 协商缓存相关字段(Last-Modified, If-Modified-Since，Etag, If-None-Match)
 ```
 
+> 针对这组 `Last-Modified, If-Modified-Since` 和另外一组 `Etag, If-None-Match` 个人觉得使用两者中的任意一组都可, 并不存在哪组更加精确的说法。这点和上述的资料持不同观点。
+
 * 持久连接
 
 ```
