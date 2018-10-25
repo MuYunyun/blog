@@ -54,6 +54,7 @@
 - [x] [适配者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/适配者模式.md)
 - [x] [观察者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/观察者模式.md)
 - [ ] [访问者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/访问者模式.md)
+- [ ] [loC 模式]()
 
 > [issue](https://github.com/MuYunyun/blog/issues/20)
 
