@@ -1,14 +1,11 @@
-### git 快捷键
+### 操作远程文件
 
 ```
-git push origin :gh-pages  删除远程分支
-
-git remote prune origin: 同步远程分支
-
-git rm -r --cached  */src/\*  删除远程文件
+git push origin :[branch]  删除远程分支
+git rm -r --cached [file]  删除远程文件
 ```
 
-### git 提交规范
+### git commit 提交规范
 
 ```
 feat: 新功能
@@ -20,4 +17,13 @@ perf: 提升性能
 reflactor: 重构，不影响当前逻辑
 style: 修改样式
 deps: 升级依赖
+```
+
+### PR 相关
+
+```
+git remote -v               列出远程仓库 url
+git remote add [name] [url] 添加远程仓库 url
+git fetch [name]            拉取远程仓库最新代码
+git merge [name]/master     合并远程分支最新代码到本地
 ```
