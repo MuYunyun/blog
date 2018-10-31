@@ -66,8 +66,7 @@
 ### ES6 札记
 
 - [x] [装饰器](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/装饰器.md)
-- [x] [Promise 札记上](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise札记.md)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
-- [ ] Promise 札记下 —— 升级 setTimeout
+- [x] [Promise 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise札记.md)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
 - [x] [Generator 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator札记.md)
 - [x] [Async 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async札记.md)
 - [x] [CommonJS 模块与 ES6 模块间的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
@@ -93,7 +92,6 @@
 - [x] [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
 - [ ] redux-saga 实践
 - [ ] [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/BasicSkill/框架篇/Redux与Mobx适用场景.md)
-- [ ] ~~撸一个状态管理机~~
 - [ ] 探索 React-router 源码
 - [ ] [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/BasicSkill/框架篇/在react使用immutable数据的优势.md)
 
@@ -110,8 +108,9 @@
 
 ### 系统篇
 
-- [x] [CAS登入流程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统篇/CAS登入流程.md)
-- [ ] [RPC在点我达网关项目的实践一](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统篇/RPC在点我达网关的实践一.md)
+- [x] [CAS 登入流程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统篇/CAS登入流程.md)
+- [ ] [RPC 在点我达网关项目的实践一](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统篇/RPC在点我达网关的实践一.md)
+- [ ] [解读 Inversity 与实践](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统篇/解读Inversity与实践.md)
 
 ### 随笔
 
