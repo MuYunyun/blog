@@ -109,8 +109,8 @@
 ### 系统篇
 
 - [x] [CAS 登入流程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统篇/CAS登入流程.md)
-- [ ] [RPC 在点我达网关项目的实践一](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统篇/RPC在点我达网关的实践一.md)
-- [ ] [解读 Inversity 与实践](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统篇/解读Inversity与实践.md)
+- [x] [RPC 在点我达网关项目的实践一](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统篇/RPC在点我达网关的实践一.md)
+- [ ] [InversityJS 源码解读与实践](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统篇/InversityJS源码解读与实践.md)
 
 ### 随笔
 
