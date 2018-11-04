@@ -77,13 +77,13 @@
 
 ### 基础篇
 
-- [x] [探寻JavaScript精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
+- [x] [探寻 JavaScript 精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
 - [x] [你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
 - [x] [跨域二三事](https://github.com/MuYunyun/blog/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
 - [ ] [数组字符串方法小结](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/数组字符串方法小结——是否对原值有影响.md)
 - [ ] [二刷高程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/二刷高程.md)
 - [x] [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
-- [ ] ~~CSS 揭秘~~
+- [ ] [http](https://github.com/MuYunyun/blog/blob/master/BasicSkill/http/http.md)
 
 ### 框架篇
 

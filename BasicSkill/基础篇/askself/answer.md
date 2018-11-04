@@ -104,57 +104,7 @@ dom.dispatch(event)
 
 ### HTTP 相关
 
-* HTTP 协议主要特点
-
-```
-无状态，无连接
-```
-
-* HTTP 报文组成部分
-
-```
-请求报文: 请求行 请求头 请求体
-
-响应报文: 响应行 响应头 响应体
-```
-
-* HTTP 协议类: POST 和 GET 的区别
-
-```
-Get 有长度限制，Post 没有
-Get 请求，倒退按钮是无害的，Post 会重新发起请求
-Get 会主动缓存，Post 不会
-Get 请求通过 url 传递，Post 通过 request body 传递
-```
-
-* HTTP 状态码
-
-```
-
-```
-
-* 强缓存和协商缓存 [资料](https://www.cnblogs.com/lyzg/p/5125934.html)
-
-```
-强缓存是不经过服务器的，协商缓存是经过服务器的
-
-强缓存相关字段(Expires, Cache-Control)
-协商缓存相关字段(Last-Modified, If-Modified-Since，Etag, If-None-Match)
-```
-
-> 针对这组 `Last-Modified, If-Modified-Since` 和另外一组 `Etag, If-None-Match` 个人觉得使用两者中的任意一组都可, 并不存在哪组更加精确的说法。这点和上述的资料持不同观点。
-
-* 持久连接
-
-```
-
-```
-
-* 管线化
-
-```
-
-```
+> 见 https://github.com/MuYunyun/blog/blob/master/BasicSkill/http/http.md
 
 ### 原型链类
 
