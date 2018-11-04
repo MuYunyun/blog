@@ -91,7 +91,7 @@
 | 85 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | | | Hard |
 | 86 | [Partition List](https://leetcode.com/problems/partition-list/) | | | Medium |
 | 87 | [Scramble String](https://leetcode.com/problems/scramble-string/) | | | Hard |
-| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | | | Easy |
+| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/88.合并两个有序数组/index.js) | | Easy |
 | 89 | [Gray Code](https://leetcode.com/problems/gray-code/) | | | Medium |
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii/) | | | Medium |
 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | | | Medium |
