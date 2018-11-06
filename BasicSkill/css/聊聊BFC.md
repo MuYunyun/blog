@@ -26,7 +26,7 @@
 </body>
 ```
 
-![](http://muyy.withyoufriends.com/4e86e658780009017a22bbb025043276.jpg-300)
+![](http://phrd9aiu0.bkt.clouddn.com/4e86e658780009017a22bbb025043276.jpg-300)
 
 可以看到此时两个 div 之间的间距并不是 200px，而是 100px
 
@@ -55,7 +55,7 @@
 </body>
 ```
 
-![](http://muyy.withyoufriends.com/ffa04ee49e9b4d221361929324236c05.jpg-300)
+![](http://phrd9aiu0.bkt.clouddn.com/ffa04ee49e9b4d221361929324236c05.jpg-300)
 
 此时，可以看到两个 div 之间的距离已变为期望的 200 px；
 
@@ -83,7 +83,7 @@
 
 加上 float: left 后，内容脱离了文档流，所以只看到一条 1px 的线条，如下：
 
-![](http://muyy.withyoufriends.com/6b657c7f8d985992c97269fb61bb8678.jpg-300)
+![](http://phrd9aiu0.bkt.clouddn.com/6b657c7f8d985992c97269fb61bb8678.jpg-300)
 
 此时加上 overflow: hidden 可以触发 BFC 从而消除浮动，代码如下：
 
@@ -108,7 +108,7 @@
 </body>
 ```
 
-![](http://muyy.withyoufriends.com/6bde303c9e6c57a7d1ce73543d4c8dcc.jpg-300)
+![](http://phrd9aiu0.bkt.clouddn.com/6bde303c9e6c57a7d1ce73543d4c8dcc.jpg-300)
 
 #### 案例三
 
@@ -136,7 +136,7 @@
 
 同样使用 float，使元素脱离文档流，从而两个 div 标签发生了重叠，
 
-![](http://muyy.withyoufriends.com/c7ebcfce5a7c58142fc9004a7d545852.jpg-300)
+![](http://phrd9aiu0.bkt.clouddn.com/c7ebcfce5a7c58142fc9004a7d545852.jpg-300)
 
 使用 overflow: hidden 触发 BFC，使 BFC 元素和浮动元素分离：
 
@@ -163,7 +163,7 @@
 </body>
 ```
 
-![](http://muyy.withyoufriends.com/cb83333e3e31f59d4946e0d3cdd2a56a.jpg-300)
+![](http://phrd9aiu0.bkt.clouddn.com/cb83333e3e31f59d4946e0d3cdd2a56a.jpg-300)
 
 ### 如何触发 BFC
 

@@ -2,8 +2,8 @@
 
 首先选择相应插件，这里以 git-remark 为例
 
-![](http://muyy.withyoufriends.com
-http://muyy.withyoufriends.com/
+![](http://phrd9aiu0.bkt.clouddn.com
+http://phrd9aiu0.bkt.clouddn.com/
 oqhtscus0.bkt.clouddn.com/642ef9638488d9d9b0857464b354f246.jpg-200)
 
 ```js
