@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="http://muyy.withyoufriends.com/2e172dced41f13fc3e9a4a481bb012d4.jpg-200">
+  <img src="http://phrd9aiu0.bkt.clouddn.com/2e172dced41f13fc3e9a4a481bb012d4.jpg-200">
 </div>
 
 > **knowledge from action**
@@ -108,9 +108,9 @@
 
 ### 系统篇
 
-- [x] [CAS 登入流程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统篇/CAS登入流程.md)
-- [x] [RPC 在点我达网关项目的实践一](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统篇/RPC在点我达网关的实践一.md)
-- [ ] [InversityJS 核心解读](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统篇/InversityJS核心解读.md)
+- [x] [CAS 登入流程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/CAS登入流程.md)
+- [x] [RPC 在点我达网关项目的实践一](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/RPC在点我达网关的实践一.md)
+- [ ] [解读 IoC 框架 —— InversifyJS](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/解读IoC框架InversifyJS.md)
 
 ### 随笔
 
