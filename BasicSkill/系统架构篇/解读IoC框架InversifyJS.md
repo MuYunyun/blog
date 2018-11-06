@@ -1,4 +1,4 @@
-### 解读 IoC 框架 —— InversifyJS
+### 解读 IoC 框架 InversifyJS
 
 InversityJS 是一个 IoC 框架。IoC(Inversion of Control) 译为控制反转，它包括依赖注入(Dependency Injection) 和依赖查询(Dependency Lookup)。
 
