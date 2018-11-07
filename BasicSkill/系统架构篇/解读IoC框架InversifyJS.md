@@ -1,14 +1,10 @@
 ### 解读 IoC 框架 InversifyJS
 
-InversityJS 是一个 IoC 框架。IoC(Inversion of Control) 译为控制反转，它包括依赖注入(Dependency Injection) 和依赖查询(Dependency Lookup)。
+InversityJS 是一个 IoC 框架。IoC(Inversion of Control) 包括依赖注入(Dependency Injection) 和依赖查询(Dependency Lookup)。
 
-相比于类继承的方式，控制反转可以解耦了父类和子类的联系。
+相比于类继承的方式，控制反转解耦了父类和子类的联系。
 
-### InversifyJS 架构图
-
----- 此处插入相应图 ----
-
-下面结合以下代码，代入架构图
+### 案例解析
 
 ```ts
 import 'reflect-metadata'
@@ -54,11 +50,24 @@ const music: any = container.get('Plan')
 console.log(music.getName()) // 流行音乐古典音乐
 ```
 
-#### 解析 inject
+上述案例可以抽象为下图：
+
+![](http://phrd9aiu0.bkt.clouddn.com/8a9ccba28d00ea0c752c3601d716ebcd.jpg-400)
+
+> 虚线表示可以注入，但在代码中没有表现出来。
+
+代码流程可概括如下：
+
+1.将所有相关类(这里指 Music、popMusic、classicMusic) 通过 `@injectable` 声明进 `container` 容器;
+2.通过 `container.get()` 获取 `container.bind().to(target)` 中的目标对象(这里指 Music);
+3.如果目标对象中的 constructor() 里有 `@inject()`, 则将相应的实例(这里指 PopMusic 与 classicalMusic 的实例)当作构造函数的参数'注入';
+
+### inject/injectable 相关源码
 
 inject 源码简化如下：
 
 ```js
+// 这是一个属性装饰器
 function inject(serviceIdentifier) {
   return function (target, targetKey) {
     const metadataValue = { [targetKey]: [Metadata { key: 'inject', value: serviceIdentifier })] }
@@ -67,13 +76,10 @@ function inject(serviceIdentifier) {
 }
 ```
 
-从 inject 的源码看到其只是结合属性装饰器对 `Reflect.defineMetadata()` 的一个使用(关于 Reflect.defineMetadata()，文末有解释)。在调用 `container.get()` 时，框架会在 inject() 相应的地方传入相应的实例(这是一个遍历的过程)。
-
-#### injectable、Container
-
 injectable 源码简化如下：
 
 ```js
+// 这是一个类装饰器
 function injectable() {
   return function (target) {
     const metadataValue = []
@@ -83,7 +89,7 @@ function injectable() {
 }
 ```
 
-Container 是 InversityJS 对外暴露的容器
+从简化版源码中可以看到 inject/injectable 最终是对 `Reflect.defineMetadata()` 的一个使用。可以将 metadata 看成是一种相对高效的数据结构。
 
 #### reflect-metadata
 
@@ -127,6 +133,6 @@ WeakMap {
 }
 ```
 
+### 相关文章
 
-
-<!-- #### inject 和 lazyInject 的区别 -->
+* [Architecture overview](https://github.com/inversify/InversifyJS/blob/master/wiki/architecture.md)
