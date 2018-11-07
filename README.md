@@ -19,6 +19,7 @@
 - [x] [8.HOC 探索](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/8.HOC探索.md)
 - [x] [9.onChange 事件以及受控组件](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/9.onChange事件以及受控组件.md)
 - [ ] 未完待续
+- [ ] react 16.x 版本进程梳理
 
 ### 数据结构
 
@@ -54,7 +55,6 @@
 - [x] [适配者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/适配者模式.md)
 - [x] [观察者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/观察者模式.md)
 - [ ] [访问者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/访问者模式.md)
-- [ ] [IoC 模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/IoC模式.md)
 
 > [issue](https://github.com/MuYunyun/blog/issues/20)
 
