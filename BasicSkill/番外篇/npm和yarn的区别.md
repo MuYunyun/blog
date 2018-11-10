@@ -83,3 +83,9 @@ npm 经历了 3 次升级：
 
 也就是说 yarn 结合了 npm 和 cnpm 的优点。
 
+### 写法
+
+```
+yarn add --dev xx
+```
+

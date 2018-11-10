@@ -19,7 +19,7 @@
 - [x] [8.HOC 探索](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/8.HOC探索.md)
 - [x] [9.onChange 事件以及受控组件](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/9.onChange事件以及受控组件.md)
 - [ ] 未完待续
-- [ ] react 16.x 版本进程梳理
+- [ ] react16.x 版本总结
 
 ### 数据结构
 
