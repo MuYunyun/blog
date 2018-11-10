@@ -59,7 +59,9 @@ console.log(music.getName()) // 流行音乐古典音乐
 代码流程可概括如下：
 
 1.将所有相关类(这里指 Music、popMusic、classicMusic) 通过 `@injectable` 声明进 `container` 容器;
+
 2.通过 `container.get()` 获取 `container.bind().to(target)` 中的目标对象(这里指 Music);
+
 3.如果目标对象中的 constructor() 里有 `@inject()`, 则将相应的实例(这里指 PopMusic 与 classicalMusic 的实例)当作构造函数的参数'注入';
 
 ### inject/injectable 相关源码
@@ -133,6 +135,6 @@ WeakMap {
 }
 ```
 
-### 相关文章
+### 相关链接
 
 * [Architecture overview](https://github.com/inversify/InversifyJS/blob/master/wiki/architecture.md)
