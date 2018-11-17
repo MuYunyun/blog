@@ -244,3 +244,13 @@ console.log('D')
 * 微任务(microTask)：promise
 
 > 由于此项目中的 promise 是用 setTimeout 实现的，所以在上述 demo 中，此项目输出的结果是 `B D A C`, 解决方法：可以使用 `setImmediate` 替代 `setTimeout`，可以参考 [setImmediate.js](https://github.com/YuzuJS/setImmediate)。它的本质用了一些 hack 的手段，比如借用了 postMessage 这个来操作事件循环。
+
+### 问题: promise.all 如何做到让多个 setTimeout 并发运行?
+
+这个就是 promise.all() 的本质了，浏览器内部提供了一个事件循环机制来模拟成伪'并发'
+
+```js
+var oldTime = Date.now()
+setTimeout(() => {console.log(Date.now() - oldTime)}, 1000) // 1001 ~ 1005(存在 4ms 的波动)
+setTimeout(() => {console.log(Date.now() - oldTime)}, 2000) // 2001 ~ 2005
+```
