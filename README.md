@@ -110,7 +110,7 @@
 
 - [x] [CAS 登入流程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/CAS登入流程.md)
 - [x] [RPC 在点我达网关项目的实践一](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/RPC在点我达网关的实践一.md)
-- [ ] [解读 IoC 框架 —— InversifyJS](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/解读IoC框架InversifyJS.md)
+- [x] [解读 IoC 框架 —— InversifyJS](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/解读IoC框架InversifyJS.md)
 
 ### 随笔
 
