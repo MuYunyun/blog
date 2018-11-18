@@ -20,7 +20,7 @@
 
 默认为 true，ele 移到屏幕中央; 若为 false, ele 移到屏幕底部;
 
-### HTML 5 事件
+### 事件相关
 
 1. contextmenu
 
@@ -69,3 +69,8 @@ document.body.appendChild(script)
 ```
 
 4. hashchange
+
+### 表单相关
+
+* input/textarea 里新增 autoFocus() 字段
+* 校验

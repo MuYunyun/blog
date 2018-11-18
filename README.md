@@ -2,6 +2,8 @@
   <img src="http://phrd9aiu0.bkt.clouddn.com/2e172dced41f13fc3e9a4a481bb012d4.jpg-200">
 </div>
 
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+
 > **knowledge from action**
 
 > 喜欢的可以点下 watch 或 star
@@ -123,3 +125,7 @@
 * [React 在服务端渲染的实现](https://github.com/MuYunyun/blog/issues/4)
 * [使用 React 全家桶搭建一个后台管理系统](https://github.com/MuYunyun/blog/issues/3)
 <sub>[(相关项目)](https://github.com/MuYunyun/reactSPA)
+
+### LICENCE
+
+本作品采用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">知识共享署名 4.0 国际许可协议</a>进行许可。
