@@ -73,4 +73,6 @@ document.body.appendChild(script)
 ### 表单相关
 
 * input/textarea 里新增 autoFocus() 字段
-* 校验
+* 表单校验 api
+
+使用 checkValidate() 校验 required、pattern="\d+" 属性
