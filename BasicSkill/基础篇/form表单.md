@@ -24,3 +24,10 @@
   })
 </script>
 ```
+
+### 富文本编辑
+
+1. 给元素上加上 `contenteditable` 属性
+2. 给选中元素执行 `document.execCommand()`
+
+> 另外一种方法是内嵌 iframe, 并将其 designmode 属性设置为 true。(有跨域问题，日后填坑)
