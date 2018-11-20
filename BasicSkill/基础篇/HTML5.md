@@ -1,6 +1,4 @@
-本篇文章整理和 HTML5 相关的点
-
-### DOM 相关
+### HTML5 DOM
 
 1. getElementsByClassName
 2. 遍历相关，如下左侧属性
@@ -20,7 +18,7 @@
 
 默认为 true，ele 移到屏幕中央; 若为 false, ele 移到屏幕底部;
 
-### 事件相关
+### HTML5 事件
 
 1. contextmenu
 
@@ -70,9 +68,73 @@ document.body.appendChild(script)
 
 4. hashchange
 
-### 表单相关
+### HTML5 表单
 
-* input/textarea 里新增 autoFocus() 字段
+* input/textarea 里新增 `autoFocus()` 字段
 * 表单校验 api
 
-使用 checkValidate() 校验 required、pattern="\d+" 属性
+使用 `checkValidate()` 校验 `required`、`pattern="\d+"` 属性
+
+### HTML5 脚本
+
+* 跨文档消息传输(XDM), 核心是 postMessage
+* 拖放 api
+
+<details>
+<summary>拖放 api 使用示例</summary>
+
+```html
+<head>
+	<style>
+		#draggable {
+			width: 200px;
+			height: 20px;
+			text-align: center;
+			background: white;
+		}
+
+		.dropzone {
+			width: 200px;
+			height: 20px;
+			background: blueviolet;
+			margin-bottom: 10px;
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="dropzone">
+		<div id="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+			This div is draggable
+		</div>
+	</div>
+	<div class="dropzone"></div>
+	<div class="dropzone"></div>
+	<div class="dropzone"></div>
+	<script>
+		window.onload = function () {
+			var dragged
+
+			document.addEventListener("dragstart", function (event) {
+				dragged = event.target
+			}, false)
+
+			document.addEventListener("dragover", function (event) {
+				// prevent default to allow drop
+				event.preventDefault()
+			}, false)
+
+			document.addEventListener("drop", function (event) {
+				// prevent default action (open as link for some elements)
+				event.preventDefault()
+				if (event.target.className == "dropzone") {
+					dragged.parentNode.removeChild(dragged)
+					event.target.appendChild(dragged)
+				}
+			}, false)
+		}
+	</script>
+</body>
+```
+</details>
