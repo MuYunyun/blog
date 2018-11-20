@@ -123,8 +123,42 @@ ReactDOM.render(<App />, appRoot);
 
 ### 16.7 Hooks
 
-在不使用类的情况下使用状态。
+在 React 16.7 之前，React 有两种形式的组件，有状态组件(类)和无状态组件(函数)。Hooks 的意义就是赋能先前的无状态组件，让之变为有状态。这样一来更加契合了 React 所推崇的函数式编程。
 
-###
+接下来梳理 Hooks 中最核心的 2 个 api, `useState` 和 `useEffect`
+
+#### useState
+
+useState 返回状态和一个更新状态的函数
+
+```js
+const [count, setCount] = useState(initialState)
+```
+
+使用 Hooks 相比之前用 class 的写法最直观的感受是更为简洁
+
+```js
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  )
+}
+```
+
+#### useEffect(fn)
+
+在每次 render 后都会执行这个钩子。可以将它当成是 `componentDidMount`、`componentDidUpdate`、`componentWillUnmount` 的合集。因此使用 useEffect 比之前优越的地方在于：
+
+1. 可以避免在 `componentDidMount、componentDidUpdate` 书写重复的代码;
+2. 可以将关联逻辑写进一个 `useEffect`;(在以前得写进不同生命周期里);
+
+### 相关资料
 
 [](https://deploy-preview-10824--reactjs.netlify.com/blog/2017/09/26/react-v16.0.html)
