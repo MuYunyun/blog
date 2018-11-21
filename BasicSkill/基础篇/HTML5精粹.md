@@ -77,7 +77,7 @@ document.body.appendChild(script)
 
 ### HTML5 脚本
 
-* 跨文档消息传输(XDM), 核心是 postMessage
+* 跨文档消息传输(XDM), 核心是 `postMessage`
 * 拖放 api
 
 <details>
@@ -138,3 +138,6 @@ document.body.appendChild(script)
 </body>
 ```
 </details>
+
+* 媒体元素 `<video>`、`<audio>`
+* 浏览器状态管理(history)
