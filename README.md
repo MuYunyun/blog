@@ -8,7 +8,7 @@
 
 > 喜欢的可以点下 watch 或 star
 
-### [cpreact](https://github.com/MuYunyun/cpreact)
+### 进击的 [cpreact](https://github.com/MuYunyun/cpreact)
 
 - [x] [前置准备](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/0.前置准备.md)
 - [x] [JSX 和 Virtual DOM](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/1.JSX和虚拟DOM.md)
@@ -20,7 +20,17 @@
 - [x] [PureComponent 的实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/7.PureComponent.md)
 - [x] [HOC 探索](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/8.HOC探索.md)
 - [x] [onChange 事件以及受控组件](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/9.onChange事件以及受控组件.md)
-- [ ] [react16.x 剧场版](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/react16.x剧场版.md)
+
+### React 周边
+
+- [x] [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
+- [x] [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
+- [x] [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
+- [ ] redux-saga 实践
+- [ ] [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/Redux与Mobx适用场景.md)
+- [ ] 探索 React-router 源码
+- [ ] [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/在react使用immutable数据的优势.md)
+- [ ] [react16.x 剧场版](https://github.com/MuYunyun/blog/blob/master/React周边/react16.x剧场版.md)
 
 ### 数据结构
 
@@ -64,6 +74,17 @@
 * [简版 express.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node/%E7%AE%80%E7%89%88%20express.js%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
 * [简版 koa.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node/%E7%AE%80%E7%89%88%20koa%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
 
+### 基础篇
+
+- [x] [探寻 JavaScript 精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
+- [x] [你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
+- [x] [跨域二三事](https://github.com/MuYunyun/blog/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
+- [ ] [数组字符串方法小结](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/数组字符串方法小结——是否对原值有影响.md)
+- [ ] [二刷高程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/二刷高程.md)
+- [x] [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
+- [ ] [http](https://github.com/MuYunyun/blog/blob/master/BasicSkill/http/http.md)
+- [ ] [HTML5 精粹](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/HTML5精粹.md)
+
 ### ES6 札记
 
 - [x] [装饰器](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/装饰器.md)
@@ -76,27 +97,6 @@
 - [ ] [Reflect](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Reflect.md)
 - [ ] [箭头函数](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/箭头函数.md)
 
-### 基础篇
-
-- [x] [探寻 JavaScript 精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
-- [x] [你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
-- [x] [跨域二三事](https://github.com/MuYunyun/blog/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
-- [ ] [数组字符串方法小结](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/数组字符串方法小结——是否对原值有影响.md)
-- [ ] [二刷高程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/二刷高程.md)
-- [x] [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
-- [ ] [http](https://github.com/MuYunyun/blog/blob/master/BasicSkill/http/http.md)
-- [ ] [HTML5](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/HTML5.md)
-
-### 框架篇
-
-- [x] [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
-- [x] [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
-- [x] [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
-- [ ] redux-saga 实践
-- [ ] [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/BasicSkill/框架篇/Redux与Mobx适用场景.md)
-- [ ] 探索 React-router 源码
-- [ ] [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/BasicSkill/框架篇/在react使用immutable数据的优势.md)
-
 ### 番外篇
 
 - [x] [从 JavaScript 到 TypeScript](https://github.com/MuYunyun/blog/issues/5)
@@ -104,7 +104,6 @@
 - [x] [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/探寻webpack插件机制.md)<sub>[(相关项目)](https://github.com/MuYunyun/analyze-webpack-plugin)
 - [ ] [babel 执行机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/babel执行机制.md)
 - [ ] xss 与 csrf 实践
-- [ ] fetch 源码
 - [ ] 源码映射
 - [ ] [npm 与 yarn](npm和yarn的区别)
 
