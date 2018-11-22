@@ -1,25 +1,27 @@
+## React16.x 特性剪辑
+
+本文整理了 React 16.x 出现的耳目一新的概念与 api 以及应用场景。
+
+> 更多 React 系列文章可以订阅[blog](https://github.com/MuYunyun/blog)
+
 ### 16.0 Fiber
 
-`此处插入图片`
+在 16 之前的版本的渲染过程可以想象成一次性潜水 30 米，在这期间做不了其它事情(Stack Reconciler);
 
-一次潜水 30 米，在这期间做不了其它事情(16 之前 Stack Reconciler);
+![](http://phrd9aiu0.bkt.clouddn.com/39db8e34ec1ce048695c3bde132a739e.jpg-200)
 
 痛点概括:
 
-* 同步渲染
-* 无优先级
+* 一次性渲染到底
+* 中途遇到优先级更高的事件无法调整相应的顺序
 
-`此处插入图片`
+在 16 版本上, React 带来了 Fiber 的架构, 接着拿上面的潜水例子为例，现在变为可以每次潜 10 米，分 3 个 chunk 进行; chunk 和 chunk 之间通过链表连接; chunk 间插入优先级更高的任务, 先前的任务被抛弃。
 
-* 可以每次潜 10 米，分 3 个 chunk 进行。
-* chunk 和 chunk 之间通过链表连接。
-* 可以在 chunk 间插入优先级更高的任务, 先前的任务被抛弃
+![](http://phrd9aiu0.bkt.clouddn.com/02a6b5ac36b12b3c676157ef3985fe4a.jpg-200)
 
 > 开启 Fiber 后，获取异步数据的方法应放到 render 后面的生命周期钩子里(phase 2 阶段)进行, 因为 render 前面的生命周期钩子(phase 1阶段)会被执行多次
 
 > 注意: 并没有缩短原先组件的渲染时间(甚至还加长了)，但用户却能感觉操作变流畅了。
-
-`此处可以插入 Dan 神演讲时候的那个例子`
 
 ### render()
 
@@ -41,6 +43,8 @@ const renderArray = () => [
   <div>B</div>
 ]
 ```
+
+> 个人认为 render() 支持返回数组完全可以取代 [Fragments](https://reactjs.org/docs/fragments.html)
 
 ### Portals(传送门)
 
@@ -71,9 +75,13 @@ componentDidCatch 并不会捕获以下几种错误
 
 在 React 16 版本中, 支持自定义属性(推荐 `data-xxx`), 因而 React 可以少维护一份 attribute 白名单, 这也是 React 16 体积减少的一个重要因素。
 
-### fragments
-
 ### life cycle
+
+在 React 16.3 的版本中，新加入了两个生命周期：
+
+* `getDerivedStateFromProps(nextProps, prevState)`: 更加语义化, 用来替代 componentWillMount、componentWillReceiveProps(nextProps);
+
+* `getSnapshotBeforeUpdate(prevProps, prevState)`: 可以将结果传入 componentDidUpdate 里, 从而达到 dom 数据统一。用来替代 componentWillUpdate()（缺点是 React 开启异步渲染后，componentWillUpdate() 与 componentDidUpdate() 间获取的 dom 会不统一;
 
 ### 16.7 Hooks
 
@@ -113,8 +121,4 @@ function App() {
 1. 可以避免在 `componentDidMount、componentDidUpdate` 书写重复的代码;
 2. 可以将关联逻辑写进一个 `useEffect`;(在以前得写进不同生命周期里);
 
-> 提问：在上述提到的生命周期钩子之外，其它的钩子是否在 hooks 也有对应的方案或者舍弃了其它生命周期钩子？
-
-### 相关资料
-
-* [react 16.0 优化内容](https://deploy-preview-10824--reactjs.netlify.com/blog/2017/09/26/react-v16.0.html)
+> 在上述提到的生命周期钩子之外，其它的钩子是否在 hooks 也有对应的方案或者舍弃了其它生命周期钩子, 后续进行观望。
