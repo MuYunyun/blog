@@ -2,13 +2,11 @@
   <img src="http://phrd9aiu0.bkt.clouddn.com/2e172dced41f13fc3e9a4a481bb012d4.jpg-200">
 </div>
 
-<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-
 > **knowledge from action**
 
 > 喜欢的可以点下 watch 或 star
 
-### 进击的 [cpreact](https://github.com/MuYunyun/cpreact)
+### [cpreact](https://github.com/MuYunyun/cpreact)
 
 - [x] [前置准备](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/0.前置准备.md)
 - [x] [JSX 和 Virtual DOM](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/1.JSX和虚拟DOM.md)
@@ -23,14 +21,14 @@
 
 ### React 周边
 
+- [x] [react16.x 特性剪辑](https://github.com/MuYunyun/blog/blob/master/React周边/React16.x特性剪辑.md)
 - [x] [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
 - [x] [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
 - [x] [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
 - [ ] redux-saga 实践
 - [ ] [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/Redux与Mobx适用场景.md)
-- [ ] 探索 React-router 源码
+- [ ] ~~探索 React-router 源码~~
 - [ ] [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/在react使用immutable数据的优势.md)
-- [ ] [react16.x 剧场版](https://github.com/MuYunyun/blog/blob/master/React周边/react16.x剧场版.md)
 
 ### 数据结构
 
