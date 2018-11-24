@@ -33,7 +33,7 @@
 * String and numbers.
 * Booleans or null.
 
-> [render](https://reactjs.org/docs/react-component.html#render]
+> [render](https://reactjs.org/docs/react-component.html#render)
 
 其中 render() 支持返回 Arrays 能让我们少写一个父节点, 如下所示:
 
@@ -44,11 +44,15 @@ const renderArray = () => [
 ]
 ```
 
-> 个人认为 render() 支持返回数组完全可以取代 [Fragments](https://reactjs.org/docs/fragments.html)
+> 个人认为 render() 支持返回数组的特性完全可以取代 [Fragments](https://reactjs.org/docs/fragments.html)
+
+### Context
+
+Context 相当于是用组件化的方式使用 global, 使用其可以共享认证的用户、首选语言(国际化)等一些全局的信息, 而不必通过子组件一层层传递(有时候子组件没有用到某个属性(比如 riderId)，只是起传递作用会显得有些多余)。
 
 ### Portals(传送门)
 
-将 react 子节点渲染到指定的节点上
+将 React 子节点渲染到指定的节点上
 
 案例：实现一个 Modal 组件，[demo](https://codepen.io/gaearon/pen/yzMaBd)
 
