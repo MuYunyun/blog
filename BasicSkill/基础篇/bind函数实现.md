@@ -1,8 +1,6 @@
-### bind 函数实现
+## bind 函数实现
 
-我们会按照如下三个步骤由浅入深来实现 bind：
-
-#### 第一版：借助 call/apply
+### 第一版：借助 call/apply
 
 ```js
 Function.prototype.bind1 = function (context) {
@@ -23,7 +21,7 @@ const resultBind = testBind.bind1(obj)
 resultBind() // muyy
 ```
 
-#### 第二版：借助 arguments
+### 第二版：借助 arguments
 
 ```js
 Function.prototype.bind2 = function (context) {
@@ -34,8 +32,19 @@ Function.prototype.bind2 = function (context) {
     return self.apply(context, arr.concat(restArr))
   }
 }
+```
 
-// 测试：
+> 这种方式的实现其实是函数柯里化的变版
+
+比如在监听事件时可以这样子用:
+
+```js
+dom.addEventListener('click', fn.bind(this))
+```
+
+进行如下测试:
+
+```js
 const obj2 = {
   value: 'muyy',
 }
@@ -48,7 +57,7 @@ const resultBind2 = testBind2.bind2(obj2, 23)
 resultBind2('male')
 ```
 
-#### 第三版：区分环境，是普通调用还是 new 调用
+### 第三版：区分环境，是普通调用还是 new 调用
 
 ```js
 Function.prototype.bind3 = function (context) {
