@@ -18,7 +18,7 @@
 
 ### Promise/A+ 核心
 
-![](http://phrd9aiu0.bkt.clouddn.com/e1a0c15c44f9b014aa78d7b7620db474.jpg-200)
+![](http://with.muyunyun.cn/e1a0c15c44f9b014aa78d7b7620db474.jpg-200)
 
 在实现一个符合 Promise/A+ 规范的 promise 之前，先了解下 Promise/A+ 核心，想更全面地了解可以阅读 [Promise/A+规范](https://segmentfault.com/a/1190000002452115)
 
