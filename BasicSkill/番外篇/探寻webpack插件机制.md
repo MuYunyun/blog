@@ -173,7 +173,7 @@ this.hooks.emit.callAsync(compilation, err => {
 
 结合上述知识点的分析，不难写出自己的 webpack 插件，关键在于想法。为了统计项目中 webpack 各包的有效使用情况，在 fork [webpack-visualizer](https://github.com/chrisbateman/webpack-visualizer) 的基础上对代码升级了一番，[项目地址](https://github.com/MuYunyun/analyze-webpack-plugin)。效果如下：
 
-![](http://phrd9aiu0.bkt.clouddn.com/329ec042a73aecd0a1947bdcc1f0dcb4.jpg-400)
+![](http://with.muyunyun.cn/329ec042a73aecd0a1947bdcc1f0dcb4.jpg-400)
 
 插件核心代码正是基于上文提到的 emit 钩子，以及 compiler 和 compilation 对象。代码如下：
 

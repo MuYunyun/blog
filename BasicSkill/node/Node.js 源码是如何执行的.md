@@ -28,7 +28,7 @@ fs.readFile('./node.gyp', {encoding: 'utf-8'}, function (e, content) {
 * 添加 test.js 作为命令行参数，也可以添加 node 的其他参数，比如 --expose-gc
 * Before launch 栏中 build 去掉
 
-![](http://phrd9aiu0.bkt.clouddn.com/747aa17d5be5e261b7a580c10880365f.jpg-400)
+![](http://with.muyunyun.cn/747aa17d5be5e261b7a580c10880365f.jpg-400)
 
 5. 点击 OK 按钮即完成配置，在 src/node_file.cc 的 1592 行 static void Read(const FunctionCallbackInfo<Value>& args) 增加断点，此时 Run -> Debug 'node' 即可进入调试界面
 

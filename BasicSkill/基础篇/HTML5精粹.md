@@ -141,3 +141,10 @@ document.body.appendChild(script)
 
 * 媒体元素 `<video>`、`<audio>`
 * 浏览器状态管理(history)
+
+### HTML5 JavaScript Api
+
+* requestAnimationFrame
+* Web Worker
+
+

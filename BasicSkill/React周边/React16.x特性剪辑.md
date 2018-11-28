@@ -2,13 +2,11 @@
 
 本文整理了 React 16.x 出现的耳目一新的概念与 api 以及应用场景。
 
-> 更多 React 系列文章可以订阅[blog](https://github.com/MuYunyun/blog)
-
 ### 16.0 Fiber
 
 在 16 之前的版本的渲染过程可以想象成一次性潜水 30 米，在这期间做不了其它事情(Stack Reconciler);
 
-![](http://phrd9aiu0.bkt.clouddn.com/39db8e34ec1ce048695c3bde132a739e.jpg-200)
+![](http://with.muyunyun.cn/39db8e34ec1ce048695c3bde132a739e.jpg-200)
 
 痛点概括:
 
@@ -17,7 +15,7 @@
 
 在 16 版本上, React 带来了 Fiber 的架构, 接着拿上面的潜水例子为例，现在变为可以每次潜 10 米，分 3 个 chunk 进行; chunk 和 chunk 之间通过链表连接; chunk 间插入优先级更高的任务, 先前的任务被抛弃。
 
-![](http://phrd9aiu0.bkt.clouddn.com/02a6b5ac36b12b3c676157ef3985fe4a.jpg-200)
+![](http://with.muyunyun.cn/02a6b5ac36b12b3c676157ef3985fe4a.jpg-200)
 
 > 开启 Fiber 后，获取异步数据的方法应放到 render 后面的生命周期钩子里(phase 2 阶段)进行, 因为 render 前面的生命周期钩子(phase 1阶段)会被执行多次
 
@@ -50,7 +48,62 @@ const renderArray = () => [
 
 ### Context
 
-Context 相当于是用组件化的方式使用 global, 使用其可以共享认证的用户、首选语言(国际化)等一些全局的信息, 而不必通过子组件一层层传递(有时候子组件没有用到某个属性(比如 riderId)，只是起传递作用会显得有些多余)。
+Context 相当于是用组件化的方式使用 global, 使用其可以共享认证的用户、首选语言(国际化)等一些全局的信息, 而不必通过组件一层层传递。
+
+以下是比较冗余的传递:
+
+```js
+<Page riderId={riderId} />
+// ... which renders ...
+<RiderDetail riderId={riderId} />
+// ... which renders ...
+<RiderLevel riderId={riderId} />
+// ... which renders ...
+<Avatar riderId={riderId} />
+```
+
+在 `Context` 之前可以传递 `<Avatar>` 本身(component composition 的思想):
+
+```js
+function Page(props) {
+  const avatar = <Avatar riderId={props.riderId} />
+  return <RiderDetail avatar={avatar} />
+}
+
+<Page riderId={riderId} />
+// ... which renders ...
+<RiderDetail avatar={avatar} />
+// ... which renders ...
+<RiderLevel avatar={avatar} />
+// ... which renders ...
+{ props.avatar }
+```
+
+接着是使用 `Context` 书写的例子, 写法如下:
+
+```js
+const RiderContext = React.createContext(1) // 这里为默认值
+
+function Page(props) {
+  const riderId = props.riderId
+  return (
+    <RiderContext.Provider value={riderId}>
+      <RiderDetail />
+    </RiderContext.Provider>
+  )
+}
+
+function RiderDetail() {
+  return <RiderLevel />
+}
+
+class RiderLevel extends React.Component {
+  static contextType = RiderContext
+  render() {
+    return <Avatar avatar={this.context} />;
+  }
+}
+```
 
 ### Portals(传送门)
 

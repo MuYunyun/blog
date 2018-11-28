@@ -8,6 +8,6 @@
 
 因为最顶部的对象变化了，React 就提前知道需要重新渲染了(可以弥补 PureComponent 只作浅比较的不足)。不过 Updated tree 里的每一个节点还是会重新 diff 的，不过在数据前后比较的这个层面上讲，immutable.js 的效率确实会高一些。
 
-![](http://phrd9aiu0.bkt.clouddn.com/aeef08a94abebda30e9a5fa68e201fa8.jpg)
+![](http://with.muyunyun.cn/aeef08a94abebda30e9a5fa68e201fa8.jpg)
 
 另外，使用 immutable.js 的话需要将所有的 state,props 都转化成其定义的形式。成本还是有的。
