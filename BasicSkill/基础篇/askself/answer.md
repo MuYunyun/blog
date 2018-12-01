@@ -167,13 +167,14 @@ xhr.send(null)
 
 * 了解 XSS 吗 ？ 如何防止 XSS
 
-* cookie、session 与 token 有什么区别
+* session 与 token 有什么区别
 
 ```
-cookie 存放在客户端，可以由客户端也可以由服务端生成
-session(会话) 存放在服务端，每次打开网站就产生一个 session，离开网站，session 就会销毁
+session(会话) 存放在服务端，每次打开网站就产生一个 session，注销网站，session 就会销毁
 token(令牌) 通常是由密码、时间戳混合盐算法一起生成
 ```
+
+> 既然聊到了 cookie 的大小, 另外两个相关的
 
 ### 渲染机制类
 

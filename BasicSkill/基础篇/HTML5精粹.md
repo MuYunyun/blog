@@ -142,6 +142,51 @@ document.body.appendChild(script)
 * 媒体元素 `<video>`、`<audio>`
 * 浏览器状态管理(history)
 
+### HTML5 存储
+
+* cookie: cookie 存放在客户端，可以由客户端也可以由服务端生成, 大小上限为 4 kb;
+* sessionStorage: 大小上限为 2.5Mb(不同浏览器会有差异), 页面关闭即清空;
+* localStorage: 大小上限为 2.5Mb(不同浏览器会有差异), 所有页面关闭即清空;
+
+> cookie 并不属于 HTML5, 但是涉及到和存储有关, 因此也将它列在这了
+
+* IndexedDB
+
+```js
+var request = indexDB.open()
+
+var users = [{
+  username: '007',
+  gender: 'male',
+}, {
+  username: '008',
+  gender: 'female',
+}]
+
+var request = indexedDB.open('admin', 4)
+var db
+request.onsuccess = function(event) {
+	db = event.target.result
+    var store = db.createObjectStore('users', { keyPath: "username" })
+    for (let i = 0; i < users.length; i++) {
+        store.add(users[i])
+    }
+
+}
+
+request.onerror = function(event) {
+	console.log(event.target.errorCode)
+}
+
+var request1 = db.transaction('users').objectStore('users').get('007')
+request1.onsuccess = function(event) {
+  console.log(event.target.result)
+}
+request1.onerror = function(event) {
+  console.log('notFound')
+}
+```
+
 ### HTML5 JavaScript Api
 
 * requestAnimationFrame
