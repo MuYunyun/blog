@@ -150,42 +150,7 @@ document.body.appendChild(script)
 
 > cookie 并不属于 HTML5, 但是涉及到和存储有关, 因此也将它列在这了
 
-* IndexedDB
-
-```js
-var request = indexDB.open()
-
-var users = [{
-  username: '007',
-  gender: 'male',
-}, {
-  username: '008',
-  gender: 'female',
-}]
-
-var request = indexedDB.open('admin', 4)
-var db
-request.onsuccess = function(event) {
-	db = event.target.result
-    var store = db.createObjectStore('users', { keyPath: "username" })
-    for (let i = 0; i < users.length; i++) {
-        store.add(users[i])
-    }
-
-}
-
-request.onerror = function(event) {
-	console.log(event.target.errorCode)
-}
-
-var request1 = db.transaction('users').objectStore('users').get('007')
-request1.onsuccess = function(event) {
-  console.log(event.target.result)
-}
-request1.onerror = function(event) {
-  console.log('notFound')
-}
-```
+* IndexedDB: 大小上限为 5 Mb, 使用起来有坑，先不使用
 
 ### HTML5 JavaScript Api
 
