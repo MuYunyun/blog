@@ -1,8 +1,18 @@
 ## React16.x 特性剪辑
 
-本文整理了 React 16.x 出现的耳目一新的概念与 api 以及应用场景。
+> Before you're going to hate it, then you're going to love it.
 
-### 16.0 Fiber
+![](http://with.muyunyun.cn/18be54d827e9dde7d9e29d029e329334.jpg-400)
+
+### Async Render
+
+在 18年的 [JSConf Iceland](https://www.youtube.com/watch?v=v6iR3Zk4oDY) 上, Dan 神提到 Async Render 涉及到 CPU 以及 IO 这两方面,
+
+![](http://with.muyunyun.cn/1daa3d783a4a7ed7f742882a08a3aa09.jpg-400)
+
+Fiber 架构的出现是为了解决左侧的问题, suspense 则是为了解决了右侧的问题。
+
+#### Fiber
 
 在 16 之前的版本的渲染过程可以想象成一次性潜水 30 米，在这期间做不了其它事情(Stack Reconciler);
 
@@ -13,7 +23,7 @@
 * 一次性渲染到底
 * 中途遇到优先级更高的事件无法调整相应的顺序
 
-在 16 版本上, React 带来了 Fiber 的架构, 接着拿上面的潜水例子为例，现在变为可以每次潜 10 米，分 3 个 chunk 进行; chunk 和 chunk 之间通过链表连接; chunk 间插入优先级更高的任务, 先前的任务被抛弃。
+接着拿上面的潜水例子为例，现在变为可以每次潜 10 米，分 3 个 chunk 进行; chunk 和 chunk 之间通过链表连接; chunk 间插入优先级更高的任务, 先前的任务被抛弃。
 
 ![](http://with.muyunyun.cn/02a6b5ac36b12b3c676157ef3985fe4a.jpg-200)
 
@@ -21,7 +31,7 @@
 
 > 注意: 并没有缩短原先组件的渲染时间(甚至还加长了)，但用户却能感觉操作变流畅了。
 
-> requestIdleCallback(): 借力此 api, 浏览器能在空闲的时间处理低优先级的事
+> [requestIdleCallback()](https://developers.google.com/web/updates/2015/08/using-requestidlecallback): 借力此 api, 浏览器能在空闲的时间处理低优先级的事
 
 ### render()
 
@@ -39,12 +49,12 @@
 
 ```js
 const renderArray = () => [
-  <div>A</div>
-  <div>B</div>
+  <div key="A">A</div>
+  <div key="B">B</div>
 ]
 ```
 
-> 个人认为 render() 支持返回数组的特性完全可以取代 [Fragments](https://reactjs.org/docs/fragments.html)
+> render() 支持返回数组的特性类似 [Fragments](https://reactjs.org/docs/fragments.html)(16.2), 使用 Fragments 可以不用写 key。
 
 ### Context
 
@@ -62,7 +72,7 @@ Context 相当于是用组件化的方式使用 global, 使用其可以共享认
 <Avatar riderId={riderId} />
 ```
 
-在 `Context` 之前可以传递 `<Avatar>` 本身(component composition 的思想):
+在 `Context` 之前可以传递 `<Avatar>` 本身(Component Composition 的思想), 写法如下:
 
 ```js
 function Page(props) {
@@ -136,11 +146,52 @@ componentDidCatch 并不会捕获以下几种错误
 
 ### life cycle
 
-在 React 16.3 的版本中，新加入了两个生命周期：
+![](https://user-images.githubusercontent.com/12389235/41266906-b6a6e75a-6e2b-11e8-8266-9597b2d57f11.png)
 
-* `getDerivedStateFromProps(nextProps, prevState)`: 更加语义化, 用来替代 componentWillMount、componentWillReceiveProps(nextProps);
+在未来 17 的版本中，将移除的生命周期钩子如下:
 
-* `getSnapshotBeforeUpdate(prevProps, prevState)`: 可以将结果传入 componentDidUpdate 里, 从而达到 dom 数据统一。用来替代 componentWillUpdate()（缺点是 React 开启异步渲染后，componentWillUpdate() 与 componentDidUpdate() 间获取的 dom 会不统一;
+* `componentWillMount()`: 移除这个 api 基于以下两点考虑:
+  * 服务端渲染: 在服务端渲染的情景下, componentWillMount 执行完立马执行 render 会导致 componentWillMount 里面执行的方法(获取数据, 订阅事件) 并不一定执行完;
+  * async Render: 在 fiber 架构下, render 前的钩子会被多次调用, 在 componentWillMount 里执行订阅事件就会产生内存泄漏;
+
+> 迁移思路, 将以前写在 `componentWillMount` 的获取数据、时间订阅的方法写进 `componentDidMount` 中;
+
+* `componentWillReceiveProps(nextProps)`: 移除这个 api 基于如下考虑:
+  * 语义不太契合逻辑
+
+举个例子: 比如切换 tab 时都要重新获取当前页面的数据, 之前通常会这么做:
+
+```js
+componentWillReceiveProps(nextProps) {
+  if (nextProps.riderId !== this.props.riderId) {
+    fetchData()
+  }
+}
+```
+
+新的钩子 `getDerivedStateFromProps()` 更加纯粹, 它做的事情是将新传进来的属性和当前的状态值进行对比, 若不一致则更新当前的状态。之前 `componentWillReceiveProps()` 里的获取数据的逻辑之前提到 `async render` 的时候也提到了应该后置到 `componentDidUpdate()` 中。
+
+```js
+getDerivedStateFromProps(nextProps, prevState) {
+  if (nextProps.riderId !== prevState.riderId) {
+    return {
+      riderId: nextProps.riderId
+    }
+  }
+  // 返回 null 则表示 state 不用作更新
+  return null
+}
+```
+
+* `componentWillUpdate()`: 目前将其理解为和 `componentWillMount` 一样的情况
+
+在 React 16.3 的版本中，新加入了两个生命周期:
+
+* `getDerivedStateFromProps(nextProps, prevState)`: 更加语义化, 用来替代 `componentWillMount()` 和 `componentWillReceiveProps(nextProps)`;
+
+* `getSnapshotBeforeUpdate(prevProps, prevState)`: 可以将该钩子返回的结果传入 componentDidUpdate 的第三个参数中, 从而达到 dom 数据统一。用来替代 componentWillUpdate();
+
+> 具体 demo 可见 [Update on Async Rendering](https://react.docschina.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state)
 
 ### 16.7 Hooks
 
@@ -181,3 +232,7 @@ function App() {
 2. 可以将关联逻辑写进一个 `useEffect`;(在以前得写进不同生命周期里);
 
 > 在上述提到的生命周期钩子之外，其它的钩子是否在 hooks 也有对应的方案或者舍弃了其它生命周期钩子, 后续进行观望。
+
+### 相关链接
+
+* [reactjs.org](https://reactjs.org/blog/all.html)

@@ -156,5 +156,3 @@ document.body.appendChild(script)
 
 * requestAnimationFrame
 * Web Worker
-
-
