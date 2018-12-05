@@ -1,18 +1,18 @@
-## React16.x 特性剪辑
+## React 特性剪辑(版本 16.0 ~ 16.9)
 
 > Before you're going to hate it, then you're going to love it.
 
 ![](http://with.muyunyun.cn/18be54d827e9dde7d9e29d029e329334.jpg-400)
 
-### Async Render
+### Concurrent Render(贯穿 16)
 
-在 18年的 [JSConf Iceland](https://www.youtube.com/watch?v=v6iR3Zk4oDY) 上, Dan 神提到 Async Render 涉及到 CPU 以及 IO 这两方面,
+在 18年的 [JSConf Iceland](https://www.youtube.com/watch?v=v6iR3Zk4oDY) 上, Dan 神提到 Concurrent Render 涉及到 CPU 以及 IO 这两方面。
 
 ![](http://with.muyunyun.cn/1daa3d783a4a7ed7f742882a08a3aa09.jpg-400)
 
-Fiber 架构的出现是为了解决左侧的问题, suspense 则是为了解决了右侧的问题。
+Time Slicing 对应解决左侧的问题, Suspense 对应解决了右侧的问题。它们共同要解决的是的提升用户体验, 在更多的场景下都可以做到`可交互`。而 Fiber 架构是上述两者的基石。
 
-#### Fiber
+#### Time Slicing
 
 在 16 之前的版本的渲染过程可以想象成一次性潜水 30 米，在这期间做不了其它事情(Stack Reconciler);
 
@@ -31,9 +31,37 @@ Fiber 架构的出现是为了解决左侧的问题, suspense 则是为了解决
 
 > 注意: 并没有缩短原先组件的渲染时间(甚至还加长了)，但用户却能感觉操作变流畅了。
 
-> [requestIdleCallback()](https://developers.google.com/web/updates/2015/08/using-requestidlecallback): 借力此 api, 浏览器能在空闲的时间处理低优先级的事
+> [requestIdleCallback()](https://developers.google.com/web/updates/2015/08/using-requestidlecallback): 借力此 api, 浏览器能在空闲的时间处理低优先级的事。
 
-### render()
+#### Suspense(16.6, 16.8, 16.9)
+
+Suspense 意思是能暂停当前组件的渲染, 当完成某件事以后再继续渲染。
+
+* code splitting(16.6, 已上线): 文件懒加载。在此之前的实现方式是 [react-loadable](https://github.com/jamiebuilds/react-loadable)
+* 并发模式(16.8, 2019 年 Q2 季度): 在文件懒加载的同时能做其它交互;
+* data fetching(16.9 版本, 2019 年中): 数据动态呈现;
+
+```js
+import React, { lazy, Suspense } from 'react'
+const OtherComponent = lazy(() => import('./OtherComponent'))
+
+function MyComponent() {
+  return (
+    <Suspense fallback={<div>loading...</div>}>
+      <OtherComponent />
+    </Suspense>
+  )
+}
+```
+
+一种简单的预加载思路, 可参考 [preload](https://medium.com/@pomber/lazy-loading-and-preloading-components-in-react-16-6-804de091c82d)
+
+```js
+const OtherComponentPromise = import('./OtherComponent');
+const OtherComponent = React.lazy(() => OtherComponentPromise);
+```
+
+### render 新增的返回类型
 
 在 React16 版本中 render() 增加了一些返回类型，到目前为止支持的返回类型如下：
 
@@ -56,7 +84,36 @@ const renderArray = () => [
 
 > render() 支持返回数组的特性类似 [Fragments](https://reactjs.org/docs/fragments.html)(16.2), 使用 Fragments 可以不用写 key。
 
-### Context
+### Portals(传送门)
+
+将 React 子节点渲染到指定的节点上
+
+案例：实现一个 Modal 组件，[demo](https://codepen.io/gaearon/pen/yzMaBd)
+
+另外关于 Portals 做到冒泡到父节点的兄弟节点这个现象, [demo](https://codepen.io/gaearon/pen/jGBWpE), 我想可以这样子实现：如果组件返回是 Portal 对象，则将该组件的父组件的上的事件 copy 到该组件上。其实并不是真的冒泡到了父节点的兄弟节点上。
+
+### Error Boundaries
+
+React 16 提供了一个新的错误捕获钩子 `componentDidCatch(error, errorInfo)`, 它能将子组件生命周期里所抛出的错误捕获, 防止页面全局崩溃。[demo](https://codepen.io/gaearon/pen/wqvxGa?editors=0010)
+
+componentDidCatch 并不会捕获以下几种错误
+
+* 事件机制抛出的错误(事件里的错误并不会影响渲染)
+* Error Boundaries 自身抛出的错误
+* 异步产生的错误
+* 服务端渲染
+
+### 服务端渲染
+
+服务端渲染一般是作为最后的优化手段, 这里浅显(缺乏经验)谈下 React 16 在其上的优化。
+
+在 React 16 版本中引入了 `React.hydrate()`, 它的作用主要是将相关的事件`注水`进 `html` 页面中, 同时会比较前端生成的 `html` 和服务端传到前端的 `html` 的文本内容的差异, 如果两者不一致将前端产生的文本内容替换服务端生成的(忽略属性)。
+
+### 支持自定义属性
+
+在 React 16 版本中, 支持自定义属性(推荐 `data-xxx`), 因而 React 可以少维护一份 attribute 白名单, 这也是 React 16 体积减少的一个重要因素。
+
+### Context(16.3、16.6)
 
 Context 相当于是用组件化的方式使用 global, 使用其可以共享认证的用户、首选语言(国际化)等一些全局的信息, 而不必通过组件一层层传递。
 
@@ -115,36 +172,7 @@ class RiderLevel extends React.Component {
 }
 ```
 
-### Portals(传送门)
-
-将 React 子节点渲染到指定的节点上
-
-案例：实现一个 Modal 组件，[demo](https://codepen.io/gaearon/pen/yzMaBd)
-
-另外关于 Portals 做到冒泡到父节点的兄弟节点这个现象, [demo](https://codepen.io/gaearon/pen/jGBWpE), 我想可以这样子实现：如果组件返回是 Portal 对象，则将该组件的父组件的上的事件 copy 到该组件上。其实并不是真的冒泡到了父节点的兄弟节点上。
-
-### Error Boundaries
-
-React 16 提供了一个新的错误捕获钩子 `componentDidCatch(error, errorInfo)`, 它能将子组件生命周期里所抛出的错误捕获, 防止页面全局崩溃。[demo](https://codepen.io/gaearon/pen/wqvxGa?editors=0010)
-
-componentDidCatch 并不会捕获以下几种错误
-
-* 事件机制抛出的错误(事件里的错误并不会影响渲染)
-* Error Boundaries 自身抛出的错误
-* 异步产生的错误
-* 服务端渲染
-
-### 服务端渲染
-
-服务端渲染一般是作为最后的优化手段, 这里浅显(缺乏经验)谈下 React 16 在其上的优化。
-
-在 React 16 版本中引入了 `React.hydrate()`, 它的作用主要是将相关的事件`注水`进 `html` 页面中, 同时会比较前端生成的 `html` 和服务端传到前端的 `html` 的文本内容的差异, 如果两者不一致将前端产生的文本内容替换服务端生成的(忽略属性)。
-
-### 支持自定义属性
-
-在 React 16 版本中, 支持自定义属性(推荐 `data-xxx`), 因而 React 可以少维护一份 attribute 白名单, 这也是 React 16 体积减少的一个重要因素。
-
-### life cycle
+### 新的生命周期(16.3)
 
 ![](https://user-images.githubusercontent.com/12389235/41266906-b6a6e75a-6e2b-11e8-8266-9597b2d57f11.png)
 
@@ -152,7 +180,7 @@ componentDidCatch 并不会捕获以下几种错误
 
 * `componentWillMount()`: 移除这个 api 基于以下两点考虑:
   * 服务端渲染: 在服务端渲染的情景下, componentWillMount 执行完立马执行 render 会导致 componentWillMount 里面执行的方法(获取数据, 订阅事件) 并不一定执行完;
-  * async Render: 在 fiber 架构下, render 前的钩子会被多次调用, 在 componentWillMount 里执行订阅事件就会产生内存泄漏;
+  * Concurrent Render: 在 fiber 架构下, render 前的钩子会被多次调用, 在 componentWillMount 里执行订阅事件就会产生内存泄漏;
 
 > 迁移思路, 将以前写在 `componentWillMount` 的获取数据、时间订阅的方法写进 `componentDidMount` 中;
 
@@ -169,7 +197,7 @@ componentWillReceiveProps(nextProps) {
 }
 ```
 
-新的钩子 `getDerivedStateFromProps()` 更加纯粹, 它做的事情是将新传进来的属性和当前的状态值进行对比, 若不一致则更新当前的状态。之前 `componentWillReceiveProps()` 里的获取数据的逻辑之前提到 `async render` 的时候也提到了应该后置到 `componentDidUpdate()` 中。
+新的钩子 `getDerivedStateFromProps()` 更加纯粹, 它做的事情是将新传进来的属性和当前的状态值进行对比, 若不一致则更新当前的状态。之前 `componentWillReceiveProps()` 里的获取数据的逻辑之前提到 `Concurrent render` 的时候也提到了应该后置到 `componentDidUpdate()` 中。
 
 ```js
 getDerivedStateFromProps(nextProps, prevState) {
@@ -193,7 +221,17 @@ getDerivedStateFromProps(nextProps, prevState) {
 
 > 具体 demo 可见 [Update on Async Rendering](https://react.docschina.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state)
 
-### 16.7 Hooks
+### React.memo(16.6)
+
+`React.memo` 是一个高阶组件, 它使无状态组件拥有有状态组价中的 `shouldComponentUpdate()` 以及 `PureComponent` 的能力。
+
+```js
+const MyComponent = React.memo(function MyComponent(props) {
+  ...
+})
+```
+
+### Hooks(16.7)
 
 在 React 16.7 之前，React 有两种形式的组件，有状态组件(类)和无状态组件(函数)。Hooks 的意义就是赋能先前的无状态组件，让之变为有状态。这样一来更加契合了 React 所推崇的函数式编程。
 
@@ -231,7 +269,11 @@ function App() {
 1. 可以避免在 `componentDidMount、componentDidUpdate` 书写重复的代码;
 2. 可以将关联逻辑写进一个 `useEffect`;(在以前得写进不同生命周期里);
 
-> 在上述提到的生命周期钩子之外，其它的钩子是否在 hooks 也有对应的方案或者舍弃了其它生命周期钩子, 后续进行观望。
+### React 的未来
+
+![](http://with.muyunyun.cn/fd1dd7ca2ba34bebef2d489c63befa25.jpg-200)
+
+今年的 React Conf 的一张图, 可以看到 React 从出来到现在势头呈稳健上升趋势, 并在 2018 年这个节点上把 Jquery 拉下了王座。但可以看见 React 未来还有一段很长的路要走。
 
 ### 相关链接
 
