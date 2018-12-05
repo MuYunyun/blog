@@ -26,10 +26,10 @@
 - [x] [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
 - [x] [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
 - [ ] redux-saga 实践
-- [ ] [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/Redux与Mobx适用场景.md)
+- [x] [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/Redux与Mobx适用场景.md)
+- [x] [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/在react使用immutable数据的优势.md)
 - [ ] ~~探索 React-router 源码~~
-- [ ] [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/在react使用immutable数据的优势.md)
-- [ ] 搭建一个 Form 组件
+- [ ] 表单方案的思考
 
 ### 数据结构
 
@@ -78,11 +78,11 @@
 - [x] [探寻 JavaScript 精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
 - [x] [你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
 - [x] [跨域二三事](https://github.com/MuYunyun/blog/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
-- [ ] [数组字符串方法小结](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/数组字符串方法小结——是否对原值有影响.md)
-- [ ] [二刷高程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/二刷高程.md)
+- [x] [数组字符串方法小结](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/数组字符串方法小结——是否对原值有影响.md)
+- [x] [二刷高程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/二刷高程.md)
 - [x] [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
+- [x] [HTML5 精粹](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/HTML5精粹.md)
 - [ ] [http](https://github.com/MuYunyun/blog/blob/master/BasicSkill/http/http.md)
-- [ ] [HTML5 精粹](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/HTML5精粹.md)
 
 ### ES6 札记
 
