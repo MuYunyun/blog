@@ -6,7 +6,30 @@
 
 > 喜欢的可以点下 watch 或 star
 
-### [cpreact](https://github.com/MuYunyun/cpreact)
+### 进击的 JavaScript
+
+- [x] [探寻 JavaScript 精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
+- [x] [你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
+- [x] [红皮书里的细节](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/二刷高程.md)
+- [x] [跨域二三事](https://github.com/MuYunyun/blog/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
+- [x] [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
+- [x] [HTML5 精粹](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/HTML5精粹.md)
+- [ ] [函数式编程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/函数式编程.md)
+- [ ] [http](https://github.com/MuYunyun/blog/blob/master/BasicSkill/http/http.md)
+
+### ES6 札记
+
+- [x] [装饰器](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/装饰器.md)
+- [x] [Promise 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise札记.md)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
+- [x] [Generator 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator札记.md)
+- [x] [Async 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async札记.md)
+- [x] [CommonJS 模块与 ES6 模块间的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
+- [x] [ES6 继承与 ES5 继承的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
+- [x] [扩展运算符](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/扩展运算符.md)
+- [ ] [Reflect](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Reflect.md)
+- [ ] [箭头函数](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/箭头函数.md)
+
+### 从 0 到 1 实现 React
 
 - [x] [前置准备](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/0.前置准备.md)
 - [x] [JSX 和 Virtual DOM](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/1.JSX和虚拟DOM.md)
@@ -72,29 +95,6 @@
 
 * [简版 express.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node/%E7%AE%80%E7%89%88%20express.js%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
 * [简版 koa.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node/%E7%AE%80%E7%89%88%20koa%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
-
-### 基础篇
-
-- [x] [探寻 JavaScript 精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
-- [x] [你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
-- [x] [跨域二三事](https://github.com/MuYunyun/blog/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
-- [x] [数组字符串方法小结](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/数组字符串方法小结——是否对原值有影响.md)
-- [x] [二刷高程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/二刷高程.md)
-- [x] [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
-- [x] [HTML5 精粹](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/HTML5精粹.md)
-- [ ] [http](https://github.com/MuYunyun/blog/blob/master/BasicSkill/http/http.md)
-
-### ES6 札记
-
-- [x] [装饰器](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/装饰器.md)
-- [x] [Promise 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise札记.md)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
-- [x] [Generator 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator札记.md)
-- [x] [Async 札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async札记.md)
-- [x] [CommonJS 模块与 ES6 模块间的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
-- [x] [ES6 继承与 ES5 继承的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
-- [x] [扩展运算符](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/扩展运算符.md)
-- [ ] [Reflect](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Reflect.md)
-- [ ] [箭头函数](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/箭头函数.md)
 
 ### 番外篇
 
