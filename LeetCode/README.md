@@ -388,3 +388,4 @@
 | 398 | [Random Pick Index](https://leetcode.com/problems/random-pick-index/) | | | Medium |
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | | | Medium |
 | 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | | | Easy |
+| 567 | [字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/bytedance/挑战字符串/567.字符串的排列/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/bytedance/挑战字符串/567.字符串的排列/README.md) | Medium |
