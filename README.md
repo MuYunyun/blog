@@ -2,9 +2,7 @@
   <img src="http://with.muyunyun.cn/2e172dced41f13fc3e9a4a481bb012d4.jpg-200">
 </div>
 
-> **knowledge from action**
-
-> 喜欢的可以点下 watch 或 star
+> 日行一卒, 喜欢的可以点下 watch 或 star
 
 ### 进击的 JavaScript
 
