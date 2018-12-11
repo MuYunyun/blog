@@ -1,4 +1,4 @@
-### Generator 使用相关
+### Generator 使用
 
 从一道简单的题目开始：
 
@@ -9,7 +9,7 @@ function* gen() {
 }
 ```
 
-为了让其能成功打印出 1，设计如下函数：
+为了让其能成功打印出 1，设计如下函数:
 
 ```js
 function step(gen) {
@@ -21,7 +21,7 @@ function step(gen) {
 }
 ```
 
-可进行如下调用
+可进行如下调用:
 
 ```js
 var a = step(gen)

@@ -1,21 +1,3 @@
-### Promise
-
-研究 Promise 的动机大体有以下几点：
-
-* 对其 api 的不熟悉以及对实现机制的好奇;
-
-* 很多库(比如 fetch)是基于 Promise 封装的，那么要了解这些库的前置条件得先熟悉 Promise;
-
-* 要了解其它更为高级的异步操作得先熟悉 Promise;
-
-基于这些目的，实践了一个符合 Promise/A+ 规范的 [repromise](https://github.com/MuYunyun/repromise)。
-
-本札记系列总共三篇文章，作为之前的文章 [Node.js 异步异闻录](https://github.com/MuYunyun/blog/issues/7) 的拆分和矫正。
-
-* [Promise札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise札记.md)
-* [Generator札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator札记.md)
-* [Async札记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async札记.md)
-
 ### Promise/A+ 核心
 
 ![](http://with.muyunyun.cn/e1a0c15c44f9b014aa78d7b7620db474.jpg-200)
@@ -26,7 +8,7 @@
 * Promise 的状态只会出现从未完成态向完成态或失败态转化;
 * Promise 的状态一旦转化，将不能被更改;
 
-### repromise api 食用手册
+### promise api 食用手册
 
 #### Promise.resolve()
 
@@ -161,7 +143,9 @@ Promise.resolve(1)
   .done()                             // 能捕获前面链式调用的错误(包括 catch 中)，可以传两个参数也可不传
 ```
 
-### 实践过程总结
+### 实现一个 Promise
+
+> 实践了一个符合 Promise/A+ 规范的 [repromise](https://github.com/MuYunyun/repromise)。
 
 #### 坑点 1：事件循环
 
@@ -241,7 +225,7 @@ console.log('D')
 正常情况下，此 demo 应该输出 `B D C A`, 这里涉及到宏任务和微任务的知识点，一个宏任务里可以有多个微任务。
 
 * 宏任务(macroTask)：setTimeout
-* 微任务(microTask)：promise
+* 微任务(microTask)：promise, async/await
 
 > 由于此项目中的 promise 是用 setTimeout 实现的，所以在上述 demo 中，此项目输出的结果是 `B D A C`, 解决方法：可以使用 `setImmediate` 替代 `setTimeout`，可以参考 [setImmediate.js](https://github.com/YuzuJS/setImmediate)。它的本质用了一些 hack 的手段，比如借用了 postMessage 这个来操作事件循环。
 
