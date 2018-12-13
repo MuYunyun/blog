@@ -186,18 +186,9 @@ class RiderLevel extends React.Component {
 
 * `componentWillReceiveProps(nextProps)`: 移除这个 api 基于如下考虑:
   * 语义不太契合逻辑
+  * phase1 阶段会多次调用
 
-举个例子: 比如切换 tab 时都要重新获取当前页面的数据, 之前通常会这么做:
-
-```js
-componentWillReceiveProps(nextProps) {
-  if (nextProps.riderId !== this.props.riderId) {
-    fetchData()
-  }
-}
-```
-
-新的钩子 `getDerivedStateFromProps()` 更加纯粹, 它做的事情是将新传进来的属性和当前的状态值进行对比, 若不一致则更新当前的状态。之前 `componentWillReceiveProps()` 里的获取数据的逻辑之前提到 `Concurrent render` 的时候也提到了应该后置到 `componentDidUpdate()` 中。
+新的钩子 `getDerivedStateFromProps()` 更加纯粹, 它做的事情是将新传进来的属性和当前的状态值进行对比, 若不一致则更新当前的状态。
 
 ```js
 getDerivedStateFromProps(nextProps, prevState) {
@@ -208,6 +199,30 @@ getDerivedStateFromProps(nextProps, prevState) {
   }
   // 返回 null 则表示 state 不用作更新
   return null
+}
+```
+
+另外关于 componentWillReceiveProps() 在 15 里大量使用的一个场景: 比如切换 tab 时都要重新获取当前页面的数据, 之前通常会这么做:
+
+```js
+componentWillReceiveProps(nextProps) {
+  if (nextProps.riderId !== this.props.riderId) {
+    fetchData(nextProps.riderId)
+  }
+}
+```
+
+在 16 中可以使用 memoize 来代替, 写法如下:
+
+```js
+import memoize from "memoize-one"
+
+class Demo extends React.Component {
+  fetchDataDemo = memoize((riderId) => fetchData(riderId))
+
+  componentDidUpdate() {
+    fetchDataDemo(this.props.riderId)
+  }
 }
 ```
 

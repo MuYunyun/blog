@@ -47,9 +47,13 @@ DNS 解析、连接、传输、处理。
 
 ### 强缓存和协商缓存
 
-> 强缓存是不经过服务器的，协商缓存是经过服务器的
+> 强缓存是不经过服务器的, 协商缓存是经过服务器的
 
 * 强缓存相关字段(Expires, Cache-Control)
-* 协商缓存相关字段(If-Modified-Since, Last-Modified, If-None-Match, Etag)
+* 协商缓存相关字段(Last-Modified, If-Modified-Since, Etag, If-None-Match)
 
-> 针对这组 `Last-Modified, If-Modified-Since` 和另外一组 `Etag, If-None-Match` 个人觉得使用两者中的任意一组都可, 并不存在哪组更加精确的说法。这点和上述的资料持不同观点。
+如下为 HTTP 缓存机制流程图:
+
+![](http://with.muyunyun.cn/d03fb5f88c2d81856d0f596eda3ae519.jpg-300)
+
+> 针对这组 `Last-Modified, If-Modified-Since` 和另外一组 `Etag, If-None-Match` 个人觉得使用两者中的任意一组都可, 并不存在哪组更加精确的说法。
