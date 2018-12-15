@@ -144,13 +144,17 @@ document.body.appendChild(script)
 
 ### HTML5 存储
 
-* cookie: cookie 存放在客户端，可以由客户端也可以由服务端生成, 大小上限为 4 kb;
 * sessionStorage: 大小上限为 2.5Mb(不同浏览器会有差异), 页面关闭即清空;
 * localStorage: 大小上限为 2.5Mb(不同浏览器会有差异), 所有页面关闭即清空;
 
-> cookie 并不属于 HTML5, 但是涉及到和存储有关, 因此也将它列在这了
+它们的 api 也是一致的, 有如下几个:
 
-* IndexedDB: 大小上限为 5 Mb, 使用起来有坑，先不使用
+* setItem(key, value)
+* getItem(key)
+* removeItem(key)
+* clear()
+
+> 在 HTML5 范围之外与存储相关的技术还有 cookie(存放在客户端，可以由客户端也可以由服务端生成, 大小上限为 4 kb)、IndexedDB(大小上限为 5 Mb)、cacheStorage(ServiceWorker)。
 
 ### HTML5 JavaScript Api
 
