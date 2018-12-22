@@ -121,7 +121,6 @@
 <sub>[(相关项目)](https://github.com/MuYunyun/TypeScript)
 - [x] [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/探寻webpack插件机制.md)<sub>[(相关项目)](https://github.com/MuYunyun/analyze-webpack-plugin)
 - [ ] [babel 执行机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/babel执行机制.md)
-- [ ] xss 与 csrf 实践
 - [ ] 源码映射
 - [ ] [npm 与 yarn](npm和yarn的区别)
 

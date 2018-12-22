@@ -4,10 +4,10 @@
 
 ### HTTP 报文组成部分
 
-* 请求报文: 请求行 请求头 请求体
-* 响应报文: 响应行 响应头 响应体
+* 请求报文: 请求行 请求头 空行 请求体
+* 响应报文: 响应行 响应头 空行 响应体
 
-> 请求行里包括请求方法，url, http 版本; 响应行里包括状态码，http 版本，文字说明;
+> 请求行里包括请求方法，url, http 版本; 响应行里包括状态码，http 版本，状态说明;
 
 ### HTTP 协议类: POST 和 GET 的区别
 
@@ -17,6 +17,10 @@
 * Get 请求通过 url 传递，Post 通过 request body 传递
 
 ### HTTP 状态码
+
+> 1xx:
+
+* 101: 需要切换协议(使用 Websocket 开始阶段是 http 协议, 中间切换到 WebSocket 协议, 此时返回的状态码是 101 表示后续协议还需切换)
 
 > 2xx: 成功状态码
 
@@ -49,11 +53,15 @@ DNS 解析、连接、传输、处理。
 
 > 强缓存是不经过服务器的, 协商缓存是经过服务器的
 
-* 强缓存相关字段(Expires, Cache-Control)
-* 协商缓存相关字段(Last-Modified, If-Modified-Since, Etag, If-None-Match)
+* 强缓存相关字段(Expires(响应头), Cache-Control(响应头))
+* 协商缓存相关字段(Last-Modified(响应头), If-Modified-Since(请求头), Etag(响应头), If-None-Match(请求头))
 
 如下为 HTTP 缓存机制流程图:
 
-![](http://with.muyunyun.cn/d03fb5f88c2d81856d0f596eda3ae519.jpg-300)
+![](http://with.muyunyun.cn/7aa47d51ccc2fe5a66f75c542f014f2e.jpg-400)
 
-> 针对这组 `Last-Modified, If-Modified-Since` 和另外一组 `Etag, If-None-Match` 个人觉得使用两者中的任意一组都可, 并不存在哪组更加精确的说法。
+### HTTP 2.0
+
+* 二进制流
+* 多路复用
+* 资源推送优先级
