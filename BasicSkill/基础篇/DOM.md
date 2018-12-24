@@ -16,7 +16,7 @@
 
 ### 操作已存在的 dom 元素
 
-这个点藏得比较深，如果 appendChild/insertBefore 操作已经存在的 dom，则原来的 dom 会移除。(只有一份实例)。
+这个点藏得比较深，如果 `appendChild/insertBefore` 操作已经存在的 dom，则原来的 dom 会移除。(只有一份实例)。
 
 ```html
 <form>
