@@ -59,7 +59,7 @@
 - [ ] redux-saga 实践
 - [x] [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/Redux与Mobx适用场景.md)
 - [x] [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/在react使用immutable数据的优势.md)
-- [ ] ~~探索 React-router 源码~~
+- [ ] [router 的简易实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/router的简易实现.md)
 - [ ] [关于表单的探讨](https://github.com/dwd-fe/reForm/issues/1)
 
 </details>
@@ -129,9 +129,9 @@
 <details>
   <summary>系统篇</summary>
 
-- [x] [CAS 登入流程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/CAS登入流程.md)
-- [x] [RPC 在点我达网关项目的实践一](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/RPC在点我达网关的实践一.md)
-- [x] [解读 IoC 框架 —— InversifyJS](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/解读IoC框架InversifyJS.md)
+* [CAS 登入流程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/CAS登入流程.md)
+* [RPC 在点我达网关项目的实践一](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/RPC在点我达网关的实践一.md)
+* [解读 IoC 框架 —— InversifyJS](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/解读IoC框架InversifyJS.md)
 
 </details>
 
