@@ -2,19 +2,21 @@
   <img src="http://with.muyunyun.cn/2e172dced41f13fc3e9a4a481bb012d4.jpg-200">
 </div>
 
-> 文章采用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">知识共享署名 4.0 国际许可协议</a>进行许可。喜欢的可以点下 watch 或 star。
+> 尽信书则不如无书
+
+> 如果对你有帮助, 可以点下 watch 或 star :notebook_with_decorative_cover:
 
 <details>
-  <summary>基础篇</summary>
+  <summary>进击的 fe</summary>
 
 - [x] [探寻 JavaScript 精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
 - [x] [你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
 - [x] [重温红皮书](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/二刷高程.md)
 - [x] [跨域二三事](https://github.com/MuYunyun/blog/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
 - [x] [HTML5 精粹](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/HTML5精粹.md)
+- [x] [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
 - [ ] [编程范式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/编程范式.md)
 - [ ] [http](https://github.com/MuYunyun/blog/blob/master/BasicSkill/http/http.md)
-- [x] [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
 
 </details>
 
@@ -36,16 +38,16 @@
 <details>
   <summary>从 0 到 1 实现 React</summary>
 
-- [x] [前置准备](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/0.前置准备.md)
-- [x] [JSX 和 Virtual DOM](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/1.JSX和虚拟DOM.md)
-- [x] [组件 和 state|props](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/2.组件和state|props.md)
-- [x] [生命周期](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/3.生命周期.md)
-- [x] [diff 算法](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/4.diff算法.md)
-- [x] [setState 优化](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/5.setState.md)
-- [x] [ref 的实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/6.ref.md)
-- [x] [PureComponent 的实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/7.PureComponent.md)
-- [x] [HOC 探索](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/8.HOC探索.md)
-- [x] [onChange 事件以及受控组件](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/9.onChange事件以及受控组件.md)
+* [前置准备](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/0.前置准备.md)
+* [JSX 和 Virtual DOM](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/1.JSX和虚拟DOM.md)
+* [组件 和 state|props](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/2.组件和state|props.md)
+* [生命周期](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/3.生命周期.md)
+* [diff 算法](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/4.diff算法.md)
+* [setState 优化](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/5.setState.md)
+* [ref 的实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/6.ref.md)
+* [PureComponent 的实现](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/7.PureComponent.md)
+* [HOC 探索](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/8.HOC探索.md)
+* [onChange 事件以及受控组件](https://github.com/MuYunyun/blog/blob/master/从0到1实现React/9.onChange事件以及受控组件.md)
 
 </details>
 
@@ -56,11 +58,11 @@
 - [x] [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
 - [x] [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
 - [x] [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
-- [ ] redux-saga 实践
 - [x] [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/Redux与Mobx适用场景.md)
 - [x] [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/在react使用immutable数据的优势.md)
 - [ ] [router 的简易实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/router的简易实现.md)
 - [ ] [关于表单的探讨](https://github.com/dwd-fe/reForm/issues/1)
+- [ ] redux-saga 实践
 
 </details>
 
@@ -150,3 +152,4 @@
 
 </details>
 
+> 文章采用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">知识共享署名 4.0 国际许可协议</a>进行许可。

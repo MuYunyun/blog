@@ -27,3 +27,17 @@ git remote add [name] [url] 添加远程仓库 url
 git fetch [name]            拉取远程仓库最新代码
 git merge [name]/master     合并远程分支最新代码到本地
 ```
+
+### git pull 和 git fetch 的区别
+
+`git pull` 等价于 `git fetch` 和 `git checkout -b`
+
+### git merge 和 git rebase 的区别
+
+#### merge
+
+* `git merge` 会多产生一次 merge 的 log 记录
+
+#### rebase
+
+* `git rebase` 会将主干新增的 log 前置到当前分支之前。
