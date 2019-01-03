@@ -5,7 +5,7 @@ const app = new Koa()
 
 const responseData = {}
 
-// 第四版测试：错误机制测试
+// 第四版测试: 错误机制测试
 app.use(async (ctx, next) => {
   throw new Error('ooops')
 })

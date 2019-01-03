@@ -4,5 +4,5 @@
 
 视情况考虑
 
-* componentDidMount，可能会导致白屏
+* componentDidMount, 可能会导致白屏
 * constructor, 针对数据不变的情况

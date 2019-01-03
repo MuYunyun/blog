@@ -28,7 +28,7 @@
 
 ![](http://with.muyunyun.cn/4e86e658780009017a22bbb025043276.jpg-300)
 
-可以看到此时两个 div 之间的间距并不是 200px，而是 100px
+可以看到此时两个 div 之间的间距并不是 200px, 而是 100px
 
 如果想要消除 BFC 的这个特性(重叠)可以加上 overflow: hidden 来触发 BFC
 
@@ -57,7 +57,7 @@
 
 ![](http://with.muyunyun.cn/ffa04ee49e9b4d221361929324236c05.jpg-300)
 
-此时，可以看到两个 div 之间的距离已变为期望的 200 px；
+此时, 可以看到两个 div 之间的距离已变为期望的 200 px；
 
 #### 案例二
 
@@ -81,11 +81,11 @@
 </body>
 ```
 
-加上 float: left 后，内容脱离了文档流，所以只看到一条 1px 的线条，如下：
+加上 float: left 后, 内容脱离了文档流, 所以只看到一条 1px 的线条, 如下:
 
 ![](http://with.muyunyun.cn/6b657c7f8d985992c97269fb61bb8678.jpg-300)
 
-此时加上 overflow: hidden 可以触发 BFC 从而消除浮动，代码如下：
+此时加上 overflow: hidden 可以触发 BFC 从而消除浮动, 代码如下:
 
 ```html
 <style>
@@ -134,11 +134,11 @@
 </body>
 ```
 
-同样使用 float，使元素脱离文档流，从而两个 div 标签发生了重叠，
+同样使用 float, 使元素脱离文档流, 从而两个 div 标签发生了重叠,
 
 ![](http://with.muyunyun.cn/c7ebcfce5a7c58142fc9004a7d545852.jpg-300)
 
-使用 overflow: hidden 触发 BFC，使 BFC 元素和浮动元素分离：
+使用 overflow: hidden 触发 BFC, 使 BFC 元素和浮动元素分离:
 
 ```html
 <style>

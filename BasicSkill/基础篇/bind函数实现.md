@@ -1,6 +1,6 @@
 ## bind 函数实现
 
-### 第一版：借助 call/apply
+### 第一版: 借助 call/apply
 
 ```js
 Function.prototype.bind1 = function (context) {
@@ -10,7 +10,7 @@ Function.prototype.bind1 = function (context) {
   }
 }
 
-// 测试：
+// 测试:
 const obj = {
   value: 'muyy',
 }
@@ -21,7 +21,7 @@ const resultBind = testBind.bind1(obj)
 resultBind() // muyy
 ```
 
-### 第二版：借助 arguments
+### 第二版: 借助 arguments
 
 ```js
 Function.prototype.bind2 = function (context) {
@@ -57,7 +57,7 @@ const resultBind2 = testBind2.bind2(obj2, 23)
 resultBind2('male')
 ```
 
-### 第三版：区分环境，是普通调用还是 new 调用
+### 第三版: 区分环境, 是普通调用还是 new 调用
 
 ```js
 Function.prototype.bind3 = function (context) {
@@ -69,7 +69,7 @@ Function.prototype.bind3 = function (context) {
   }
 }
 
-// 测试：使用 new 以后 this 会指向 newObj
+// 测试: 使用 new 以后 this 会指向 newObj
 const obj3 = {
   value: 'muyy',
 }

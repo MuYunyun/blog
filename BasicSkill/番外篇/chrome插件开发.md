@@ -1,6 +1,6 @@
 ### 数据备份方案
 
-首先选择相应插件，这里以 git-remark 为例
+首先选择相应插件, 这里以 git-remark 为例
 
 ![](http://with.muyunyun.cn
 http://with.muyunyun.cn/

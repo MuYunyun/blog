@@ -18,7 +18,7 @@ const core = function (req, res) {
 }
 
 core.listen = function (port, fn) {                      // 挂载到 core 函数上
-  http.createServer(core).listen(port, '127.0.0.1', fn) // 核心还是这条语句，即对 node 的封装
+  http.createServer(core).listen(port, '127.0.0.1', fn) // 核心还是这条语句, 即对 node 的封装
 }
 
 core.routes = []      // 路由队列
@@ -40,7 +40,7 @@ const hitRouting = function (routes, method, pathname) { // 将中间件也当�
         return
       }
       const reg = new RegExp(tmp.path.replace(/:id/g, '\\d+'))
-      if (tmp.method === method && reg.test(pathname)) {        // 匹配正则 /blog/:id，这里仅仅举个例子
+      if (tmp.method === method && reg.test(pathname)) {        // 匹配正则 /blog/:id, 这里仅仅举个例子
         const arr = tmp.path.split(':')
         const pathNameArr = pathname.split('/')
         const obj = {}
@@ -96,8 +96,8 @@ const express = function () {
 const app = express()
 
 // 测试路由
-app.get('/blog/:id', function (req, res) { // 扩展功能①：希望能匹配 /blog/123
-  console.log(req.param.id)                // 扩展功能②：希望能通过 req.param.id 获取到相应参数
+app.get('/blog/:id', function (req, res) { // 扩展功能①: 希望能匹配 /blog/123
+  console.log(req.param.id)                // 扩展功能②: 希望能通过 req.param.id 获取到相应参数
   res.end('test /blog/:id')
 })
 

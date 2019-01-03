@@ -13,7 +13,7 @@ Function.prototype.call1 = function (context) {
   delete context.fn
 }
 
-// 测试：
+// 测试:
 const obj = {
   value: 'muyy',
 }
@@ -36,7 +36,7 @@ Function.prototype.call2 = function (context) {
   delete context.fn
 }
 
-// 测试：
+// 测试:
 const obj2 = {
   value: 'muyy',
 }

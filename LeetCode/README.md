@@ -65,7 +65,7 @@
 | 59 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | | | Medium |
 | 60 | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | | | Medium |
 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | | | Medium |
-| 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/62.不同路径/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/62.不同路径/README.md)，动态规划 | Medium |
+| 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/62.不同路径/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/62.不同路径/README.md), 动态规划 | Medium |
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | | | Medium |
 | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/64.最小路径和/index.js) | | Medium |
 | 65 | [Valid Number](https://leetcode.com/problems/valid-number/) | | | Hard |

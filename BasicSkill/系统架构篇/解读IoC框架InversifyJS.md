@@ -2,7 +2,7 @@
 
 InversityJS 是一个 IoC 框架。IoC(Inversion of Control) 包括依赖注入(Dependency Injection) 和依赖查询(Dependency Lookup)。
 
-相比于类继承的方式，控制反转解耦了父类和子类的联系。
+相比于类继承的方式, 控制反转解耦了父类和子类的联系。
 
 ### 案例解析
 
@@ -50,13 +50,13 @@ const music: any = container.get('Plan')
 console.log(music.getName()) // 流行音乐古典音乐
 ```
 
-上述案例可以抽象为下图：
+上述案例可以抽象为下图:
 
 ![](http://with.muyunyun.cn/8a9ccba28d00ea0c752c3601d716ebcd.jpg-400)
 
-> 虚线表示可以注入，但在代码中没有表现出来。
+> 虚线表示可以注入, 但在代码中没有表现出来。
 
-代码流程可概括如下：
+代码流程可概括如下:
 
 1.将所有相关类(这里指 Music、popMusic、classicMusic) 通过 `@injectable` 声明进 `container` 容器;
 
@@ -66,7 +66,7 @@ console.log(music.getName()) // 流行音乐古典音乐
 
 ### inject/injectable 相关源码
 
-inject 源码简化如下：
+inject 源码简化如下:
 
 ```js
 // 这是一个属性装饰器
@@ -78,7 +78,7 @@ function inject(serviceIdentifier) {
 }
 ```
 
-injectable 源码简化如下：
+injectable 源码简化如下:
 
 ```js
 // 这是一个类装饰器
@@ -97,9 +97,9 @@ function injectable() {
 
 InversityJS 深度结合了 [reflect-metadata](https://github.com/rbuckton/reflect-metadata), reflect-metadata 在 Reflect 基础上对其 api 进行了扩展。
 
-> metadata 本质上是一个 `WeakMap` 对象。扩展：[Map 和 WeakMap 的区别](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/字典.md#map-和-weakmap-的区别)
+> metadata 本质上是一个 `WeakMap` 对象。扩展: [Map 和 WeakMap 的区别](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/字典.md#map-和-weakmap-的区别)
 
-`Reflect.defineMetadata(metadataKey, metadataValue, target[, propertyKey])` 简化版实现如下：
+`Reflect.defineMetadata(metadataKey, metadataValue, target[, propertyKey])` 简化版实现如下:
 
 ```js
 const Metadata = new WeakMap()
@@ -113,7 +113,7 @@ function defineMetadata(metadataKey, metadataValue, target, propertyKey) {
 }
 ```
 
-`Reflect.getOwnMetadata(metadataKey, target[, propertyKey])` 简化版实现如下：
+`Reflect.getOwnMetadata(metadataKey, target[, propertyKey])` 简化版实现如下:
 
 ```js
 function getOwnMetadata(metadataKey, target, propertyKey) {
@@ -123,7 +123,7 @@ function getOwnMetadata(metadataKey, target, propertyKey) {
 }
 ```
 
-其数据结构可表示如下：
+其数据结构可表示如下:
 
 ```js
 WeakMap {

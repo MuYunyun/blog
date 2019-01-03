@@ -1,9 +1,9 @@
 ### HTML5 DOM
 
 1. getElementsByClassName
-2. 遍历相关，如下左侧属性
+2. 遍历相关, 如下左侧属性
 
-> 只涉及元素节点的操作(不涉及其它节点)，建议使用左侧的属性替代右侧的属性：
+> 只涉及元素节点的操作(不涉及其它节点), 建议使用左侧的属性替代右侧的属性:
 
 | 属性名 | 被替代的属性 |
 | :-: | :-: |
@@ -16,7 +16,7 @@
 
 3. ele.scrollIntoView()
 
-默认为 true，ele 移到屏幕中央; 若为 false, ele 移到屏幕底部;
+默认为 true, ele 移到屏幕中央; 若为 false, ele 移到屏幕底部;
 
 ### HTML5 事件
 
@@ -57,7 +57,7 @@
 ```js
 const script = document.createElement('script')
 script.addEventListener('readystatechange', function eventListener(event) {
-  if (event.readyState === 'loaded' || event.readyState === 'complete') { // hack 的手段，浏览器自身的问题
+  if (event.readyState === 'loaded' || event.readyState === 'complete') { // hack 的手段, 浏览器自身的问题
     script.removeEventListener('readystatechange', eventListener)
   }
 })
@@ -154,7 +154,7 @@ document.body.appendChild(script)
 * removeItem(key)
 * clear()
 
-> 在 HTML5 范围之外与存储相关的技术还有 cookie(存放在客户端，可以由客户端也可以由服务端生成, 大小上限为 4 kb)、IndexedDB(大小上限为 5 Mb)、cacheStorage(ServiceWorker)。
+> 在 HTML5 范围之外与存储相关的技术还有 cookie(存放在客户端, 可以由客户端也可以由服务端生成, 大小上限为 4 kb)、IndexedDB(大小上限为 5 Mb)、cacheStorage(ServiceWorker)。
 
 ### HTML5 JavaScript Api
 
