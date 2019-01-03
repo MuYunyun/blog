@@ -2,12 +2,8 @@
   <img src="http://with.muyunyun.cn/2e172dced41f13fc3e9a4a481bb012d4.jpg-200">
 </div>
 
-> 尽信书则不如无书
-
-> 如果对你有帮助, 可以点下 watch 或 star :notebook_with_decorative_cover:
-
 <details>
-  <summary>进击的 fe</summary>
+  <summary>基础篇</summary>
 
 - [x] [探寻 JavaScript 精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
 - [x] [你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
@@ -19,6 +15,8 @@
 - [ ] [http](https://github.com/MuYunyun/blog/blob/master/BasicSkill/http/http.md)
 
 </details>
+
+<br/>
 
 <details>
   <summary>ES6 札记</summary>
@@ -34,6 +32,8 @@
 - [ ] [箭头函数](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/箭头函数.md)
 
 </details>
+
+<br/>
 
 <details>
   <summary>从 0 到 1 实现 React</summary>
@@ -51,6 +51,8 @@
 
 </details>
 
+<br/>
+
 <details>
   <summary>React 周边</summary>
 
@@ -65,6 +67,8 @@
 - [ ] redux-saga 实践
 
 </details>
+
+<br/>
 
 <details>
   <summary>数据结构</summary>
@@ -84,6 +88,8 @@
 > [LeetCode 刷题进度](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
 
 </details>
+
+<br/>
 
 <details>
   <summary>设计模式</summary>
@@ -108,6 +114,8 @@
 
 </details>
 
+<br/>
+
 <details>
   <summary>node.js</summary>
 
@@ -116,8 +124,10 @@
 
 </details>
 
+<br/>
+
 <details>
-  <summary>番外篇</summary>
+  <summary>番外</summary>
 
 - [x] [从 JavaScript 到 TypeScript](https://github.com/MuYunyun/blog/issues/5)
 <sub>[(相关项目)](https://github.com/MuYunyun/TypeScript)
@@ -128,14 +138,18 @@
 
 </details>
 
+<br/>
+
 <details>
-  <summary>系统篇</summary>
+  <summary>架构</summary>
 
 * [CAS 登入流程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/CAS登入流程.md)
-* [RPC 在点我达网关项目的实践一](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/RPC在点我达网关的实践一.md)
+* [RPC 在点我达网关项目的实践](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/RPC在点我达网关的实践一.md)
 * [解读 IoC 框架 —— InversifyJS](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/解读IoC框架InversifyJS.md)
 
 </details>
+
+<br/>
 
 <details>
   <summary>随笔</summary>
@@ -152,4 +166,6 @@
 
 </details>
 
-> 文章采用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">知识共享署名 4.0 国际许可协议</a>进行许可。
+<br/>
+
+> 喜欢的话可以点下 watch 或 star :notebook_with_decorative_cover: 文章采用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">知识共享署名 4.0 国际许可协议</a>进行许可。

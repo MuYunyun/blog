@@ -14,7 +14,7 @@ Time Slicing 对应解决左侧的问题, Suspense 对应解决了右侧的问�
 
 #### Time Slicing
 
-在 16 之前的版本的渲染过程可以想象成一次性潜水 30 米，在这期间做不了其它事情(Stack Reconciler);
+在 16 之前的版本的渲染过程可以想象成一次性潜水 30 米, 在这期间做不了其它事情(Stack Reconciler);
 
 ![](http://with.muyunyun.cn/39db8e34ec1ce048695c3bde132a739e.jpg-200)
 
@@ -23,7 +23,7 @@ Time Slicing 对应解决左侧的问题, Suspense 对应解决了右侧的问�
 * 一次性渲染到底
 * 中途遇到优先级更高的事件无法调整相应的顺序
 
-接着拿上面的潜水例子为例，现在变为可以每次潜 10 米，分 3 个 chunk 进行; chunk 和 chunk 之间通过链表连接; chunk 间插入优先级更高的任务, 先前的任务被抛弃。
+接着拿上面的潜水例子为例, 现在变为可以每次潜 10 米, 分 3 个 chunk 进行; chunk 和 chunk 之间通过链表连接; chunk 间插入优先级更高的任务, 先前的任务被抛弃。
 
 ![](http://with.muyunyun.cn/02a6b5ac36b12b3c676157ef3985fe4a.jpg-200)
 
@@ -282,7 +282,7 @@ function App() {
 在每次 render 后都会执行这个钩子。可以将它当成是 `componentDidMount`、`componentDidUpdate`、`componentWillUnmount` 的合集。因此使用 useEffect 比之前优越的地方在于：
 
 1. 可以避免在 `componentDidMount、componentDidUpdate` 书写重复的代码;
-2. 可以将关联逻辑写进一个 `useEffect`;(在以前得写进不同生命周期里);
+2. 可以将关联逻辑写进一个 `useEffect`(在以前得写进不同生命周期里);
 
 ### React 的未来
 
