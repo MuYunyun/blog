@@ -1,8 +1,8 @@
 ### 操作远程文件
 
 ```
-git push origin :[branch]  删除远程分支
-git rm -r --cached [file]  删除远程文件
+git push origin :[branch] 删除远程分支
+git rm -r --cached [file] 删除远程文件
 ```
 
 ### git commit 提交规范
@@ -14,7 +14,7 @@ test: 增加/修改测试用例
 chore: 修改工具相关
 docs: 修改文档
 perf: 提升性能
-reflactor: 重构，不影响当前逻辑
+reflactor: 重构, 不影响当前逻辑
 style: 修改样式
 deps: 升级依赖
 ```

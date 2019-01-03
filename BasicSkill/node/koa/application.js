@@ -28,7 +28,7 @@ class Koa extends EventEmitter {
         await fn(ctx, next)
       }
     }
-    let next = async function() { // 返回 Promise 对象，从而进行后文 fn.then().catch() 调用
+    let next = async function() { // 返回 Promise 对象, 从而进行后文 fn.then().catch() 调用
       return Promise.resolve()
     }
 
@@ -49,7 +49,7 @@ class Koa extends EventEmitter {
     }
   }
 
-  // 将 req， res 封装进 ctx 对象中
+  // 将 req,  res 封装进 ctx 对象中
   createCtx(req, res) {
     const ctx = Object.create(this.context)
     ctx.request = Object.create(this.request)

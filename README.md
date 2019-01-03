@@ -22,9 +22,9 @@
   <summary>ES6 札记</summary>
 
 - [x] [Decorator](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/装饰器.md)
-- [x] [Promise](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise札记.md)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
-- [x] [Generator](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator札记.md)
-- [x] [Async](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async札记.md)
+- [x] [Promise](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise.md)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
+- [x] [Generator](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator.md)
+- [x] [Async](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async.md)
 - [x] [CommonJS 模块与 ES6 模块间的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
 - [x] [ES6 继承与 ES5 继承的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
 - [x] [扩展运算符](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/扩展运算符.md)

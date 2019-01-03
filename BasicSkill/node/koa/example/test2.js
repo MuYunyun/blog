@@ -1,4 +1,4 @@
-// 第二版测试：封装 request,response,context 对象
+// 第二版测试: 封装 request,response,context 对象
 
 const Koa = require('../application')
 
@@ -7,7 +7,7 @@ const app = new Koa()
 // // 测试自定义扩展
 // app.context.handle = function (errNo = 0, data, errMsg) {
 //   this.res.setHeader('Content-Type', 'application/json;charset=utf-8')
-//   // 注意 this 指向调用函数的对象，也就是 ctx
+//   // 注意 this 指向调用函数的对象, 也就是 ctx
 //   this.body = {
 //     errNo,
 //     data,
@@ -26,7 +26,7 @@ const app = new Koa()
 //   })
 // })
 
-// 第二版最主要目的是把 app.use(req, res) 参数转化为简洁的写法如下：
+// 第二版最主要目的是把 app.use(req, res) 参数转化为简洁的写法如下:
 app.use(async (ctx) => {
   ctx.body = `hello ${ctx.query.name}`
 })

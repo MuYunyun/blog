@@ -1,4 +1,4 @@
-// 这个文件为上下文文件，可以理解为承上启下作用
+// 这个文件为上下文文件, 可以理解为承上启下作用
 // module.exports = {
 //   get query() {
 //     return this.request.query    // 比如这个 this.request 为 ./request.js 中的内容
@@ -13,14 +13,14 @@
 //   },
 // }
 
-// 当 context 中属性越来越多，我们可以使用 __defineGetter__ 以及 __defineSetter__
+// 当 context 中属性越来越多, 我们可以使用 __defineGetter__ 以及 __defineSetter__
 // 属性封装相应方法来减少重复劳动, 日后要增加属性只要在数组中填入相应字段就行。
 
 const proto = {}
 
 function set(type, property) {
   proto.__defineSetter__(property, function(val) {
-    this[type][property] = val  // 这里 this 指向 proto，原因指向调用函数的对象
+    this[type][property] = val  // 这里 this 指向 proto, 原因指向调用函数的对象
   })
 }
 

@@ -3,7 +3,7 @@
 #### redux
 
 * store - view - action 的闭环
-* Redux 颗粒度更细，相对更安全
+* Redux 颗粒度更细, 相对更安全
 
 #### mobx
 

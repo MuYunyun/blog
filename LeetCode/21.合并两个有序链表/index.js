@@ -56,8 +56,8 @@ function ListNode(val) {
  * @return {ListNode}
  */
 
-// 输入：1 2   1 3
-// 输出：1->1->2
+// 输入: 1 2   1 3
+// 输出: 1->1->2
 var mergeTwoLists = function (l1, l2) {
   if (l1 === null) {
     return l2

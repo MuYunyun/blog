@@ -4,7 +4,7 @@ const app = new Koa()
 
 const responseData = {}
 
-// 第三版测试：测试中间件
+// 第三版测试: 测试中间件
 app.use(async (ctx, next) => {
   responseData.name = 'xiaoming'
   await next()

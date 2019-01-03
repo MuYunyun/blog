@@ -1,4 +1,4 @@
-// 第一版测试：封装 http
+// 第一版测试: 封装 http
 const Koa = require('../application')
 
 const app = new Koa()

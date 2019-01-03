@@ -27,9 +27,9 @@ Time Slicing 对应解决左侧的问题, Suspense 对应解决了右侧的问�
 
 ![](http://with.muyunyun.cn/02a6b5ac36b12b3c676157ef3985fe4a.jpg-200)
 
-> 开启 Fiber 后，获取异步数据的方法应放到 render 后面的生命周期钩子里(phase 2 阶段)进行, 因为 render 前面的生命周期钩子(phase 1阶段)会被执行多次
+> 开启 Fiber 后, 获取异步数据的方法应放到 render 后面的生命周期钩子里(phase 2 阶段)进行, 因为 render 前面的生命周期钩子(phase 1阶段)会被执行多次
 
-> 注意: 并没有缩短原先组件的渲染时间(甚至还加长了)，但用户却能感觉操作变流畅了。
+> 注意: 并没有缩短原先组件的渲染时间(甚至还加长了), 但用户却能感觉操作变流畅了。
 
 > [requestIdleCallback()](https://developers.google.com/web/updates/2015/08/using-requestidlecallback): 借力此 api, 浏览器能在空闲的时间处理低优先级的事。
 
@@ -63,7 +63,7 @@ const OtherComponent = React.lazy(() => OtherComponentPromise);
 
 ### render 新增的返回类型
 
-在 React16 版本中 render() 增加了一些返回类型，到目前为止支持的返回类型如下：
+在 React16 版本中 render() 增加了一些返回类型, 到目前为止支持的返回类型如下:
 
 * React elements.
 * Arrays and fragments.
@@ -88,9 +88,9 @@ const renderArray = () => [
 
 将 React 子节点渲染到指定的节点上
 
-案例：实现一个 Modal 组件，[demo](https://codepen.io/gaearon/pen/yzMaBd)
+案例: 实现一个 Modal 组件, [demo](https://codepen.io/gaearon/pen/yzMaBd)
 
-另外关于 Portals 做到冒泡到父节点的兄弟节点这个现象, [demo](https://codepen.io/gaearon/pen/jGBWpE), 我想可以这样子实现：如果组件返回是 Portal 对象，则将该组件的父组件的上的事件 copy 到该组件上。其实并不是真的冒泡到了父节点的兄弟节点上。
+另外关于 Portals 做到冒泡到父节点的兄弟节点这个现象, [demo](https://codepen.io/gaearon/pen/jGBWpE), 我想可以这样子实现: 如果组件返回是 Portal 对象, 则将该组件的父组件的上的事件 copy 到该组件上。其实并不是真的冒泡到了父节点的兄弟节点上。
 
 ### Error Boundaries
 
@@ -176,7 +176,7 @@ class RiderLevel extends React.Component {
 
 ![](https://user-images.githubusercontent.com/12389235/41266906-b6a6e75a-6e2b-11e8-8266-9597b2d57f11.png)
 
-在未来 17 的版本中，将移除的生命周期钩子如下:
+在未来 17 的版本中, 将移除的生命周期钩子如下:
 
 * `componentWillMount()`: 移除这个 api 基于以下两点考虑:
   * 服务端渲染: 在服务端渲染的情景下, componentWillMount 执行完立马执行 render 会导致 componentWillMount 里面执行的方法(获取数据, 订阅事件) 并不一定执行完;
@@ -228,7 +228,7 @@ class Demo extends React.Component {
 
 * `componentWillUpdate()`: 目前将其理解为和 `componentWillMount` 一样的情况
 
-在 React 16.3 的版本中，新加入了两个生命周期:
+在 React 16.3 的版本中, 新加入了两个生命周期:
 
 * `getDerivedStateFromProps(nextProps, prevState)`: 更加语义化, 用来替代 `componentWillMount()` 和 `componentWillReceiveProps(nextProps)`;
 
@@ -248,7 +248,7 @@ const MyComponent = React.memo(function MyComponent(props) {
 
 ### Hooks(16.7)
 
-在 React 16.7 之前，React 有两种形式的组件，有状态组件(类)和无状态组件(函数)。Hooks 的意义就是赋能先前的无状态组件，让之变为有状态。这样一来更加契合了 React 所推崇的函数式编程。
+在 React 16.7 之前, React 有两种形式的组件, 有状态组件(类)和无状态组件(函数)。Hooks 的意义就是赋能先前的无状态组件, 让之变为有状态。这样一来更加契合了 React 所推崇的函数式编程。
 
 接下来梳理 Hooks 中最核心的 2 个 api, `useState` 和 `useEffect`
 
@@ -279,7 +279,7 @@ function App() {
 
 #### useEffect(fn)
 
-在每次 render 后都会执行这个钩子。可以将它当成是 `componentDidMount`、`componentDidUpdate`、`componentWillUnmount` 的合集。因此使用 useEffect 比之前优越的地方在于：
+在每次 render 后都会执行这个钩子。可以将它当成是 `componentDidMount`、`componentDidUpdate`、`componentWillUnmount` 的合集。因此使用 useEffect 比之前优越的地方在于:
 
 1. 可以避免在 `componentDidMount、componentDidUpdate` 书写重复的代码;
 2. 可以将关联逻辑写进一个 `useEffect`(在以前得写进不同生命周期里);

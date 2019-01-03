@@ -1,11 +1,11 @@
-这是一套基本的由浅入深考察前端知识体系的清单，自测用：
+这是一套基本的由浅入深考察前端知识体系的清单, 自测用:
 
 ### CSS
 
 * 什么是 CSS 盒模型
 
 ```
-包含 content，margin，border，padding
+包含 content, margin, border, padding
 ```
 
 * 标准模型和 IE 模型有什么不同
@@ -47,16 +47,16 @@ align-item: center;       // 垂直居中
 
 * 如何创建 BFC
 
-前三个问题的解答看：[聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)，对如何创建 BFC 这个问题答主水平有限，只实验了 overflow:hidden 这个属性，个人建议回答好 BFC 原理即可。
+前三个问题的解答看: [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md), 对如何创建 BFC 这个问题答主水平有限, 只实验了 overflow:hidden 这个属性, 个人建议回答好 BFC 原理即可。
 
 ### DOM 事件类
 
 * DOM 事件的级别了解吗
 
 ```
-DOM0：dom.onClick
-DOM2：dom.addEventListener('click', () => {}, false)
-DOM3：在 1 的基础上加了鼠标键盘事件
+DOM0: dom.onClick
+DOM2: dom.addEventListener('click', () => {}, false)
+DOM3: 在 1 的基础上加了鼠标键盘事件
 ```
 
 * DOM 事件模型了解吗
@@ -68,7 +68,7 @@ DOM3：在 1 的基础上加了鼠标键盘事件
 * DOM 事件流了解吗
 
 ```
-事件通过捕获到目标阶段，目标阶段再进行冒泡
+事件通过捕获到目标阶段, 目标阶段再进行冒泡
 ```
 
 * 描述 DOM 事件捕获的具体流程
@@ -80,7 +80,7 @@ DOM3：在 1 的基础上加了鼠标键盘事件
 * 讲一下事件委托(事件代理)
 
 ```
-将绑定在子元素的事件绑定到父元素上，然后可以通过 e.target 取到目标节点
+将绑定在子元素的事件绑定到父元素上, 然后可以通过 e.target 取到目标节点
 ```
 
 * 自定义事件了解吗
@@ -96,8 +96,8 @@ dom.dispatch(event)
 * 了解显式转换、隐式转换吗？
 
 ```
-显示转换：
-隐式转换：四则运算、if 语句、native 调用(console.log())
+显示转换:
+隐式转换: 四则运算、if 语句、native 调用(console.log())
 ```
 
 * 了解显式转换的过程吗
@@ -170,7 +170,7 @@ xhr.send(null)
 * session 与 token 有什么区别
 
 ```
-session(会话) 存放在服务端，每次打开网站就产生一个 session，注销网站，session 就会销毁
+session(会话) 存放在服务端, 每次打开网站就产生一个 session, 注销网站, session 就会销毁
 token(令牌) 通常是由密码、时间戳混合盐算法一起生成
 ```
 
@@ -195,7 +195,7 @@ token(令牌) 通常是由密码、时间戳混合盐算法一起生成
 
 ```
 1.重排必然会导致重绘
-2.重绘不一定重排，比如元素的颜色发生变化，只会发生重绘
+2.重绘不一定重排, 比如元素的颜色发生变化, 只会发生重绘
 ```
 
 ### 运行机制类
