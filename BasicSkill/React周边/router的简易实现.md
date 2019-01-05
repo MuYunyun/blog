@@ -6,22 +6,22 @@
 
 ```js
 class Router {
-	constructor() {
-		this.router = {}
-		window.addEventListener('hashchange', (e) => {
-			const tag = location.hash.slice(1)
-			this.router[tag] && this.router[tag]()
-		})
-	}
+  constructor() {
+    this.router = {}
+    window.addEventListener('hashchange', (e) => {
+      const tag = location.hash.slice(1)
+      this.router[tag] && this.router[tag]()
+    })
+  }
 
-	route(path, fn) {
-		this.router[path] = fn
-	}
+  route(path, fn) {
+    this.router[path] = fn
+  }
 }
 
 const router = new Router()
 const changeColor = (color) => {
-	document.body.style.background = color
+  document.body.style.background = color
 }
 router.route('red', () => { changeColor('red') })
 router.route('yellow', () => { changeColor('yellow') })
@@ -30,9 +30,9 @@ router.route('blue', () => { changeColor('blue') })
 
 ```html
 <ul>
-	<a href="#red">red</a>
-	<a href="#yellow">yellow</a>
-	<a href="#blue">blue</a>
+  <a href="#red">red</a>
+  <a href="#yellow">yellow</a>
+  <a href="#blue">blue</a>
 </ul>
 ```
 
