@@ -21,15 +21,15 @@
 <details>
   <summary>ES6 札记</summary>
 
-- [x] [Decorator](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/装饰器.md)
-- [x] [Promise](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise.md)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
-- [x] [Generator](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator.md)
-- [x] [Async](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async.md)
-- [x] [CommonJS 模块与 ES6 模块间的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
-- [x] [ES6 继承与 ES5 继承的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
-- [x] [扩展运算符](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/扩展运算符.md)
-- [ ] [Reflect](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Reflect.md)
-- [ ] [箭头函数](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/箭头函数.md)
+* [Decorator](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/装饰器.md)
+* [Promise](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise.md)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
+* [Generator](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator.md)
+* [Async](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async.md)
+* [CommonJS 模块与 ES6 模块间的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
+* [ES6 继承与 ES5 继承的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
+* [扩展运算符](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/扩展运算符.md)
+* [箭头函数](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/箭头函数.md)
+* [Reflect](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Reflect.md)
 
 </details>
 
@@ -62,8 +62,8 @@
 - [x] [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
 - [x] [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/Redux与Mobx适用场景.md)
 - [x] [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/在react使用immutable数据的优势.md)
-- [ ] [router 的简易实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/router的简易实现.md)
-- [ ] [关于表单的探讨](https://github.com/dwd-fe/reForm/issues/1)
+- [x] [router 的简易实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/router的简易实现.md)
+- [ ] [关于表单的探讨](https://github.com/MuYunyun/oneForm/issues/1)
 - [ ] redux-saga 实践
 
 </details>
@@ -132,9 +132,9 @@
 - [x] [从 JavaScript 到 TypeScript](https://github.com/MuYunyun/blog/issues/5)
 <sub>[(相关项目)](https://github.com/MuYunyun/TypeScript)
 - [x] [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/探寻webpack插件机制.md)<sub>[(相关项目)](https://github.com/MuYunyun/analyze-webpack-plugin)
-- [ ] [babel 执行机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/babel执行机制.md)
+- [x] [babel 执行机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/babel执行机制.md)
+- [x] [npm 与 yarn](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/npm和yarn的区别.md)
 - [ ] 源码映射
-- [ ] [npm 与 yarn](npm和yarn的区别)
 
 </details>
 
