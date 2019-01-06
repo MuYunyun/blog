@@ -6,7 +6,7 @@
 
 ### Concurrent Render(贯穿 16)
 
-在 18年的 [JSConf Iceland](https://www.youtube.com/watch?v=v6iR3Zk4oDY) 上, Dan 神提到 Concurrent Render 涉及到 CPU 以及 IO 这两方面。
+在 18 年的 [JSConf Iceland](https://www.youtube.com/watch?v=v6iR3Zk4oDY) 上, Dan 神提到 Concurrent Render 涉及到 CPU 以及 IO 这两方面。
 
 ![](http://with.muyunyun.cn/1daa3d783a4a7ed7f742882a08a3aa09.jpg-400)
 
@@ -27,7 +27,7 @@ Time Slicing 对应解决左侧的问题, Suspense 对应解决了右侧的问�
 
 ![](http://with.muyunyun.cn/02a6b5ac36b12b3c676157ef3985fe4a.jpg-200)
 
-> 开启 Fiber 后, 获取异步数据的方法应放到 render 后面的生命周期钩子里(phase 2 阶段)进行, 因为 render 前面的生命周期钩子(phase 1阶段)会被执行多次
+> 开启 Fiber 后, 获取异步数据的方法应放到 render 后面的生命周期钩子里(phase 2 阶段)进行, 因为 render 前面的生命周期钩子(phase 1 阶段)会被执行多次
 
 > 注意: 并没有缩短原先组件的渲染时间(甚至还加长了), 但用户却能感觉操作变流畅了。
 
@@ -38,8 +38,8 @@ Time Slicing 对应解决左侧的问题, Suspense 对应解决了右侧的问�
 Suspense 意思是能暂停当前组件的渲染, 当完成某件事以后再继续渲染。
 
 * code splitting(16.6, 已上线): 文件懒加载。在此之前的实现方式是 [react-loadable](https://github.com/jamiebuilds/react-loadable)
-* 并发模式(16.8, 2019 年 Q2 季度): 在文件懒加载的同时能做其它交互;
-* data fetching(16.9 版本, 2019 年中): 数据动态呈现;
+* 并发模式(16.8, 2019 年 Q2 季度): 并发模式下, Suspense 提供一个时间参数, 若小于这个值则不进行 loading 加载, 若超过这个值则进行 loading 加载;
+* data fetching(16.9 版本, 2019 年中): 可以控制等所有数据都加载完再呈现出数据;
 
 ```js
 import React, { lazy, Suspense } from 'react'
