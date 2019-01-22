@@ -34,10 +34,10 @@ git merge [name]/master     合并远程分支最新代码到本地
 
 ### git merge 和 git rebase 的区别
 
-#### merge
-
 * `git merge` 会多产生一次 merge 的 log 记录
-
-#### rebase
-
 * `git rebase` 会将主干新增的 log 前置到当前分支之前。
+
+### git reset 和 git revert 的区别
+
+* git revert 回退会产生一个新的 commit, 是向前的操作
+* git reset 回退不会产生一个新的 commit, 是向后的操作
