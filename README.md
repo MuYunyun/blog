@@ -2,18 +2,39 @@
   <img src="http://with.muyunyun.cn/2e172dced41f13fc3e9a4a481bb012d4.jpg-200">
 </div>
 
+该项目是对前端知识架构的梳理, 欢迎带着质疑的眼光去指正。
+
+> 人生没有白走的路，每一步都算数。
+
 <details>
   <summary>基础篇</summary>
 
-- [x] [探寻 JavaScript 精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
-- [x] [你不知道的 JavaScript (上)](https://github.com/MuYunyun/blog/issues/2)
-- [x] [重温红皮书](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/二刷高程.md)
-- [x] [跨域二三事](https://github.com/MuYunyun/blog/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
-- [x] [HTML5 精粹](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/HTML5精粹.md)
 - [x] [水平布局解决方案](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/水平布局解决方案.md)
 - [x] [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
+- [x] [跨域二三事](https://github.com/MuYunyun/blog/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
+- [x] [HTTP 小册](https://github.com/MuYunyun/blog/blob/master/BasicSkill/http/http.md)
+- [x] [HTML5 精粹](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/HTML5精粹.md)
+- [x] [你不知道的 JavaScript](https://github.com/MuYunyun/blog/issues/2)
+- [x] [红皮书里的细节](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/二刷高程.md)
+- [x] [从 JavaScript 到 TypeScript](https://github.com/MuYunyun/blog/issues/5)
+<sub>[(相关项目)](https://github.com/MuYunyun/TypeScript)
+
+> [更多章节](https://github.com/MuYunyun/blog/tree/master/BasicSkill/%E5%9F%BA%E7%A1%80%E7%AF%87)
+
+</details>
+
+<br/>
+
+<details>
+  <summary>进阶篇</summary>
+
+- [x] [探寻 JavaScript 精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
+- [x] [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/探寻webpack插件机制.md)<sub>[(相关项目)](https://github.com/MuYunyun/analyze-webpack-plugin)
+- [x] [babel 执行机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/babel执行机制.md)
+- [x] [npm 与 yarn](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/npm和yarn的区别.md)
 - [ ] [编程范式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/编程范式.md)
-- [ ] [http](https://github.com/MuYunyun/blog/blob/master/BasicSkill/http/http.md)
+- [ ] [函数式编程指南](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/函数式编程指南.md)
+- [ ] 源码映射
 
 </details>
 
@@ -63,7 +84,10 @@
 - [x] [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
 - [x] [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/Redux与Mobx适用场景.md)
 - [x] [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/在react使用immutable数据的优势.md)
-- [x] [router 的简易实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/router的简易实现.md)
+- [x] [路由的简易实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/router的简易实现.md)
+* [React 在服务端渲染的实现](https://github.com/MuYunyun/blog/issues/4)
+* [使用 React 全家桶搭建一个后台管理系统](https://github.com/MuYunyun/blog/issues/3)
+<sub>[(相关项目)](https://github.com/MuYunyun/reactSPA)
 - [ ] [关于表单的探讨](https://github.com/MuYunyun/oneForm/issues/1)
 - [ ] redux-saga 实践
 
@@ -122,6 +146,9 @@
 
 * [简版 express.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node/%E7%AE%80%E7%89%88%20express.js%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
 * [简版 koa.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node/%E7%AE%80%E7%89%88%20koa%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
+* [Node.js 异步异闻录](https://github.com/MuYunyun/blog/issues/7)
+<sub>[(相关项目)](https://github.com/MuYunyun/demos-of-node.js)
+* [用 Node.js 把玩一番 Alfred Workflow](https://github.com/MuYunyun/blog/issues/6) <sub>[(相关项目)](https://github.com/MuYunyun/commonSearch)
 
 </details>
 
@@ -130,40 +157,20 @@
 <details>
   <summary>番外</summary>
 
-- [x] [从 JavaScript 到 TypeScript](https://github.com/MuYunyun/blog/issues/5)
-<sub>[(相关项目)](https://github.com/MuYunyun/TypeScript)
-- [x] [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/探寻webpack插件机制.md)<sub>[(相关项目)](https://github.com/MuYunyun/analyze-webpack-plugin)
-- [x] [babel 执行机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/babel执行机制.md)
-- [x] [npm 与 yarn](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/npm和yarn的区别.md)
-- [ ] 源码映射
+* [原生 JS 实现一个瀑布流插件](https://github.com/MuYunyun/fe_cloud/issues/12) <sub>[(相关项目)](https://github.com/MuYunyun/waterfall)
+* [实现一个自定义工具类库](https://github.com/MuYunyun/blog/issues/9) <sub>[(相关项目)](https://github.com/MuYunyun/diana)
+* [走近 Python](https://github.com/MuYunyun/blog/issues/8)
 
 </details>
 
 <br/>
 
 <details>
-  <summary>架构</summary>
+  <summary>项目架构</summary>
 
 * [CAS 登入流程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/CAS登入流程.md)
 * [RPC 在点我达网关项目的实践](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/RPC在点我达网关的实践一.md)
 * [解读 IoC 框架 —— InversifyJS](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/解读IoC框架InversifyJS.md)
-
-</details>
-
-<br/>
-
-<details>
-  <summary>随笔</summary>
-
-* [原生 JS 实现一个瀑布流插件](https://github.com/MuYunyun/fe_cloud/issues/12) <sub>[(相关项目)](https://github.com/MuYunyun/waterfall)
-* [实现一个自定义工具类库](https://github.com/MuYunyun/blog/issues/9) <sub>[(相关项目)](https://github.com/MuYunyun/diana)
-* [走近 Python](https://github.com/MuYunyun/blog/issues/8)
-* [Node.js 异步异闻录](https://github.com/MuYunyun/blog/issues/7)
-<sub>[(相关项目)](https://github.com/MuYunyun/demos-of-node.js)
-* [用 Node.js 把玩一番 Alfred Workflow](https://github.com/MuYunyun/blog/issues/6) <sub>[(相关项目)](https://github.com/MuYunyun/commonSearch)
-* [React 在服务端渲染的实现](https://github.com/MuYunyun/blog/issues/4)
-* [使用 React 全家桶搭建一个后台管理系统](https://github.com/MuYunyun/blog/issues/3)
-<sub>[(相关项目)](https://github.com/MuYunyun/reactSPA)
 
 </details>
 
