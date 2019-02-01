@@ -2,9 +2,7 @@
   <img src="http://with.muyunyun.cn/2e172dced41f13fc3e9a4a481bb012d4.jpg-200">
 </div>
 
-该项目是对前端知识架构的梳理, 欢迎带着质疑的眼光去指正。
-
-> 人生没有白走的路，每一步都算数。
+该系列文章是对前端知识架构的梳理, 欢迎带着质疑的眼光去阅读。
 
 <details>
   <summary>基础篇</summary>
@@ -89,6 +87,7 @@
 * [使用 React 全家桶搭建一个后台管理系统](https://github.com/MuYunyun/blog/issues/3)
 <sub>[(相关项目)](https://github.com/MuYunyun/reactSPA)
 - [ ] [关于表单的探讨](https://github.com/MuYunyun/oneForm/issues/1)
+- [ ] [suspense 解决了什么](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/suspense解决了什么.md)
 - [ ] redux-saga 实践
 
 </details>
