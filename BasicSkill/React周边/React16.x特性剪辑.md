@@ -38,7 +38,7 @@ Time Slicing 对应解决左侧的问题, Suspense 对应解决了右侧的问�
 Suspense 意思是能暂停当前组件的渲染, 当完成某件事以后再继续渲染。
 
 * `code splitting`(16.6, 已上线): 文件懒加载。在此之前的实现方式是 [react-loadable](https://github.com/jamiebuilds/react-loadable)
-* `并发模式`(16.8, 2019 年 Q2 季度): 并发模式下, `Suspense` 提供一个时间参数, 若小于这个值则不进行 `loading` 加载, 若超过这个值则进行 `loading` 加载;
+* `Concurrent mode`(16.8, 2019 年 Q2 季度): 并发模式下, `Suspense` 提供一个时间参数, 若小于这个值则不进行 `loading` 加载, 若超过这个值则进行 `loading` 加载;
 * `data fetching`(16.9 版本, 2019 年中): 可以控制等所有数据都加载完再呈现出数据;
 
 ```js
