@@ -16,6 +16,11 @@
 - [x] [红皮书里的细节](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/二刷高程.md)
 - [x] [从 JavaScript 到 TypeScript](https://github.com/MuYunyun/blog/issues/5)
 <sub>[(相关项目)](https://github.com/MuYunyun/TypeScript)
+- [x] [探寻 JavaScript 精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
+- [x] [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/探寻webpack插件机制.md)<sub>[(相关项目)](https://github.com/MuYunyun/analyze-webpack-plugin)
+- [x] [babel 执行机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/babel执行机制.md)
+- [x] [npm 与 yarn](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/npm和yarn的区别.md)
+- [ ] 源码映射
 
 > [更多章节](https://github.com/MuYunyun/blog/tree/master/BasicSkill/%E5%9F%BA%E7%A1%80%E7%AF%87)
 
@@ -24,15 +29,9 @@
 <br/>
 
 <details>
-  <summary>进阶篇</summary>
+  <summary>编程范式</summary>
 
-- [x] [探寻 JavaScript 精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
-- [x] [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/探寻webpack插件机制.md)<sub>[(相关项目)](https://github.com/MuYunyun/analyze-webpack-plugin)
-- [x] [babel 执行机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/babel执行机制.md)
-- [x] [npm 与 yarn](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/npm和yarn的区别.md)
-- [ ] [编程范式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/编程范式.md)
-- [ ] [函数式编程指南](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/函数式编程指南.md)
-- [ ] 源码映射
+- [x] [函数式编程入门](https://github.com/MuYunyun/blog/blob/master/BasicSkill/编程范式/函数式编程入门.md)
 
 </details>
 
