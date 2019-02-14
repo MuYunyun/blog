@@ -41,3 +41,13 @@ git merge [name]/master     合并远程分支最新代码到本地
 
 * git revert 回退会产生一个新的 commit, 是向前的操作
 * git reset 回退不会产生一个新的 commit, 是向后的操作
+
+### git reset 撤销操作
+
+以下都为 `commit` 了的情况, 下面对 `--mixed`、`--hard`、`--soft`
+
+* git reset --soft Head~1: 撤销到上个分支, 撤销到 commit 之前, add 之后, 保留代码
+* git reset --mixed Head~1: 撤销到上个分支, 撤销到 add 之前, 保留代码
+* git reset --hard Head~1: 撤销到上个分支, 不保留代码
+
+> 可以看到从上往下回复程度是在加强的。
