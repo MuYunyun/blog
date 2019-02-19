@@ -59,6 +59,8 @@ DOM2: dom.addEventListener('click', () => {}, false)
 DOM3: 在 1 的基础上加了鼠标键盘事件
 ```
 
+> dom.addEventListener() 的第二个参数能跟 `{ handleEvent: () => {} }`
+
 * DOM 事件模型了解吗
 
 ```
