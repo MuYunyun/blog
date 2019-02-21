@@ -16,7 +16,7 @@
 
 3. ele.scrollIntoView()
 
-默认为 true, ele 移到屏幕中央; 若为 false, ele 移到屏幕底部;
+调用 ele.scrollIntoView(), ele 元素顶端会移动到可视区域的顶端; 若传入参数 alignToTop: false, 则 ele 移到屏幕底部;
 
 ### HTML5 事件
 
@@ -144,8 +144,8 @@ document.body.appendChild(script)
 
 ### HTML5 存储
 
-* sessionStorage: 大小上限为 2.5Mb(不同浏览器会有差异), 页面关闭即清空;
-* localStorage: 大小上限为 2.5Mb(不同浏览器会有差异), 所有页面关闭即清空;
+* sessionStorage: 大小上限为 2.5Mb(不同浏览器会有差异), 页面关闭时便清空;
+* localStorage: 大小上限为 2.5Mb(不同浏览器会有差异), 页面关闭时不会清空;
 
 它们的 api 也是一致的, 有如下几个:
 
