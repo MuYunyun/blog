@@ -15,8 +15,15 @@ deadline 有两个参数
 
 `timeRemaining()` 最大值是 50 ms, 相当于 `requestIdleCallback` 中 1 帧是 50ms, `FPS` 是 20(1000 / 50)。这低于流程的要求(一般流畅度的 FPS 的要求为 60)。所以这也是 react 需要自己实现 `requestIdleCallback` 的原因。
 
+### 实现一个 requestIdleCallback
+
 > 如果现在让我实现，我会尝试使用 `requestAnimationFrame` 来实现。
+
+...未完待续
+
+> [requestIdleCallback polyful](https://github.com/facebook/react/blob/eeb817785c771362416fd87ea7d2a1a32dde9842/packages/scheduler/src/Scheduler.js#L212-L222)
 
 ### 相关文章
 
 * [你应该知道的 requestIdleCallback](https://segmentfault.com/a/1190000014457824)
+* [官方解释](https://github.com/facebook/react/issues/13206)
