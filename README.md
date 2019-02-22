@@ -75,20 +75,30 @@
 <details>
   <summary>React 周边</summary>
 
-* [React16.x 特性剪辑](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/React16.x特性剪辑.md)
+* [React16.x 特性剪辑](https://github.com/MuYunyun/blog/blob/master/React/React16.x特性剪辑.md)
 * [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
 * [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
 * [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
-* [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/Redux与Mobx适用场景.md)
-* [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/在react使用immutable数据的优势.md)
-* [路由的简易实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/router的简易实现.md)
+* [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/React/Redux与Mobx适用场景.md)
+* [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/React/在react使用immutable数据的优势.md)
+* [路由的简易实现](https://github.com/MuYunyun/blog/blob/master/React/router的简易实现.md)
 * [React 在服务端渲染的实现](https://github.com/MuYunyun/blog/issues/4)
 * [使用 React 全家桶搭建一个后台管理系统](https://github.com/MuYunyun/blog/issues/3)
 <sub>[(相关项目)](https://github.com/MuYunyun/reactSPA)
-* [关于表单的探讨](https://github.com/MuYunyun/oneForm/issues/1)
-* [定制自己的 react-script](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/定制自己的react-script.md)
-- [ ] [suspense 解决了什么](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/suspense解决了什么.md)
-- [ ] redux-saga 实践
+* [定制自己的 react-script](https://github.com/MuYunyun/blog/blob/master/React/定制自己的react-script.md)
+- [ ] [你不知道的 requestIdleCallback](https://github.com/MuYunyun/blog/blob/master/React/requestIdleCallback.md)
+- [ ] [suspense 解决了什么](https://github.com/MuYunyun/blog/blob/master/React/suspense解决了什么.md)
+- [ ] ~~redux-saga 实践~~
+
+</details>
+
+<br/>
+
+<details>
+  <summary>组件开发</summary>
+
+* [Form](https://github.com/MuYunyun/oneForm/issues/1)
+* [Swipe](https://github.com/MuYunyun/blog/blob/master/React/组件开发/swipe.md)
 
 </details>
 
