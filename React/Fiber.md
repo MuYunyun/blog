@@ -2,7 +2,7 @@
 
 此小节会通过两个 `demo` 来展示 `Stack Reconciler` 以及 `Fiber Reconciler` 的数据结构。
 
-![](http://with.muyunyun.cn/7621091ae74df1bbd8b00586128a7d44.jpg-muyy)
+![](http://with.muyunyun.cn/7621091ae74df1bbd8b00586128a7d44.jpg-300v)
 
 首先用代码表示上图节点间的关系。比如 `a1 节点`下有 `b1、b2、b3 节点`, 就可以把它们间的关系写成 `a1.render = () => [b1, b2, b3]`;
 
@@ -41,7 +41,7 @@ function walk(instance) {
 
 节点之间的链表有三种情形, 用图表示如下:
 
-![](http://with.muyunyun.cn/d7378495a2f16e9058c80326705465f4.jpg-muyy)
+![](http://with.muyunyun.cn/d7378495a2f16e9058c80326705465f4.jpg-300v)
 
 1. 父节点到子节点(红色虚线)
 2. 同层节点(黄色虚线)
@@ -101,26 +101,26 @@ var walk = function(node) {
 }
 
 var goWalk = function(root) {
-  let node = root
+  let currentNode = root
 
   while (true) {
-    const child = walk(node)
+    const child = walk(currentNode)
     // 如果有子节点
     if (child) {
-      node = child
+      currentNode = child
       continue
     }
 
     // 如果没有相邻节点, 则返回到父节点
-    while (!node.sibling) {
-      node = node.parent
-      if (node === root) {
+    while (!currentNode.sibling) {
+      currentNode = currentNode.parent
+      if (currentNode === root) {
         return
       }
     }
 
     // 相邻节点
-    node = node.sibling
+    currentNode = currentNode.sibling
   }
 }
 
@@ -129,6 +129,13 @@ goWalk(new FiberNode(a1))
 ```
 
 打印结果为 `a1 b1 c1 d1 d2 b2 c2 b3`
+
+### Fiber Reconciler 的优势
+
+通过分析上述两种数据结构实现的代码，可以得出下面结论:
+
+* 基于树的深度遍历实现的 Reconciler: 一旦进入调用栈便无法暂停;
+* 基于链表实现的 Reconciler: 在 `while(true) {}` 的循环中, 可以通过 `currentNode` 的赋值重新得到需要操作的节点，而在赋值之前便可以'暂停'来执行其它逻辑, 这也是 `requestIdleCallback` 能得以在 `Fiber Reconciler` 的原因。
 
 ### 相关链接
 
