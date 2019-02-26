@@ -70,5 +70,9 @@ function commitRoot(root, finishedWork) {
 * [Inside Fiber: in-depth overview of the new reconciliation algorithm in React](https://medium.com/react-in-depth/inside-fiber-in-depth-overview-of-the-new-reconciliation-algorithm-in-react-e1c04700ef6e)
 
 - [ ] [react-fiber-architecture](https://github.com/acdlite/react-fiber-architecture)
+
+fiber 架构是一个增量渲染,
+
+> 阅读到:I strongly suggest that you are familiar with the following resources before continuing:
+
 - [ ] [Lin Clark - A Cartoon Intro to Fiber - React Conf 2017](https://www.youtube.com/watch?v=ZCuYPiUIONs)
-- [ ] [How to Contribute](https://reactjs.org/docs/how-to-contribute.html)
