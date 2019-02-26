@@ -89,3 +89,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(<App />)
 ### 相关文章
 
 * [Releasing Suspense](https://github.com/facebook/react/issues/13206)
+
+- [ ] [the suspense is killing redux](https://medium.com/@ryanflorence/the-suspense-is-killing-redux-e888f9692430)
+- [ ] [How to use React.lazy and Suspense for components lazy loading](https://medium.freecodecamp.org/how-to-use-react-lazy-and-suspense-for-components-lazy-loading-8d420ecac58)
+- [ ] [Understanding React “Suspense”](https://medium.com/@baphemot/understanding-react-suspense-1c73b4b0b1e6)
+- [ ] [React Suspense with the Fetch API](https://medium.com/swlh/react-suspense-with-the-fetch-api-cc655aced759)
