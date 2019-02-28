@@ -17,7 +17,9 @@ deadline 有两个参数
 
 ### 实现一个 requestIdleCallback
 
-> 如果现在让我实现，我会尝试使用 `requestAnimationFrame` 来实现。
+`requestIdleCallback`: 在当前帧的 `idle` 执行优先级相对低的任务。
+
+> `requestAnimationFrame` 会在下一帧执行优先级相对高的任务。
 
 ...未完待续
 

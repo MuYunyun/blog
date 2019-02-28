@@ -1,4 +1,22 @@
+### 名词解释
+
+在介绍 `Fiber` 之前, 需要对官网中出现的以下名词有个深刻的认知。
+
+* `Reconciliation`: 调和算法, 得出 `Virtual Dom(针对 Web)` 之间的差异;
+* `Render`: 将 `Reconciliation` 的结果刷新到界面上;
+* `Scheduling`: 调度。`Recct` 通过内部的调度来安排任务在何时执行(理解为 `requestIdleCallback` 的运用);
+* `Fiber`: 链表数据结构的 `React` 实现(个人理解)。
+
+> 平常大家说的 'Fiber' 其实是由上面这些名词组成的架构, Fiber 真正意义上只是一个链表数据结构的 React 实现版本。
+
+> 在 Fiber 的数据结构下有助于实现 concurrent 以及 error boundary, 你觉得如何实现？
+
+* 并发这个考虑 `Promise.all`?
+* 可以通过链表锁定到具体的报错，让相应的 `error boundary` 展现
+
 ### Fiber
+
+fiber 架构是一个增量渲染。
 
 ```js
 current tree => workInProgress tree => current tree
@@ -71,8 +89,6 @@ function commitRoot(root, finishedWork) {
 
 - [ ] [react-fiber-architecture](https://github.com/acdlite/react-fiber-architecture)
 
-fiber 架构是一个增量渲染,
-
-> 阅读到:I strongly suggest that you are familiar with the following resources before continuing:
+> 阅读到:Structure of a fiber
 
 - [ ] [Lin Clark - A Cartoon Intro to Fiber - React Conf 2017](https://www.youtube.com/watch?v=ZCuYPiUIONs)
