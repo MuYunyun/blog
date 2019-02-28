@@ -48,9 +48,20 @@ fiber 里包含了创造节点后的[work](https://github.com/facebook/react/blo
 }
 ```
 
-* alternate: 指向其对应的 workInProgress tree
-* effectTag: 副作用类型, 这个 effect 作用于 `commit` 阶段(总共有 render、commit 阶段)
-* nextEffect: 下一个副作用
+下面是对 `fiber` 对象中各属性的解释。
+
+* `type`: 组件的类型
+* `key`: 根据 `key` 字段判断该 `fiber` 对象是否可以复用
+* `child`: 子链表的引用
+* `sibling`: 相邻链表的引用
+* `return`: 父链表的引用
+* `pendingProps`: 和 `memoizedProps` 一起使用, 若 `pendingProps` 与 `memoizedProps` 相等, 则可以复用上一个 fiber 相关的输出
+* `memoizedProps`
+* `pendingWorkPriority`: 代表优先级的数字。数字越大，优先级越低(例外 0 —— no work)。这个字段是否更改，待确认
+* `alternate`: 指向其对应的 `workInProgress fiber`
+* `effectTag`: 副作用类型, 这个 effect 作用于 `commit` 阶段(总共有 render、commit 阶段)
+* `nextEffect`: 下一个副作用
+* `output`: 输出值
 
 ### Render phase
 
@@ -83,12 +94,7 @@ function commitRoot(root, finishedWork) {
 
 * 提问: 为什么称呼从 `diff` 转为 `reconciliation`
 
-### 参考链接
+### 资料推荐
 
 * [Inside Fiber: in-depth overview of the new reconciliation algorithm in React](https://medium.com/react-in-depth/inside-fiber-in-depth-overview-of-the-new-reconciliation-algorithm-in-react-e1c04700ef6e)
-
-- [ ] [react-fiber-architecture](https://github.com/acdlite/react-fiber-architecture)
-
-> 阅读到:Structure of a fiber
-
-- [ ] [Lin Clark - A Cartoon Intro to Fiber - React Conf 2017](https://www.youtube.com/watch?v=ZCuYPiUIONs)
+* [react-fiber-architecture](https://github.com/acdlite/react-fiber-architecture)
