@@ -9,9 +9,9 @@
 
 ### 使用自定义模板/脚本创建项目
 
-只需要维护 `create-react-app/scripts` 的文件就行。
+只需要维护 `packages/scripts` 的文件就行。
 
-* 更改 `create-react-app/scripts` 目录下的 `package.json` 的各种配置信息, 比如将 `react-script` 里的 `name` 更名为 `react-siren-scripts`;
+* 更改 `packages/scripts` 目录下的 `package.json` 的各种配置信息, 比如将 `react-script` 里的 `name` 更名为 `react-siren-scripts`;
 * `react-scripts/scripts/init.js` 添加 `console.log()`;
 * `react-scripts/template`: 修改模板文件;
 
