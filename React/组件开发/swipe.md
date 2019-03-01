@@ -78,8 +78,3 @@ mount(<Swipe>
   <div key="4">PANE 4</div>
 </Swipe>, { attatch: document.body })
 ```
-
-### todo
-
-* infinite: 无限滑动
-* autoplay: 自动切换
