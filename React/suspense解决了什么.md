@@ -1,12 +1,98 @@
-### lazy 为什么要在 Suspense 中使用
+### Code Spliting
 
-`Suspense` 首先提供了 `code-spiliting` 的功能
+在 16.6 版本之前，`code-spliting` 通常是由第三方库来完成的，比如 [react-loadble](https://github.com/jamiebuilds/react-loadable)(核心思路为: 高阶组件 + webpack dynamic import), 在 16.6 版本中提供了 `Suspense` 和 `lazy` 这两个钩子, 因此在之后的版本中便可以使用其来实现 `Code Spliting`。
 
-> 在这之前，code-spliting 通常是由第三方库来完成的，比如 [react-loadble](https://github.com/jamiebuilds/react-loadable)。目前阶段, 服务端渲染还是得使用 react-loadable。[React.lazy](https://reactjs.org/docs/code-splitting.html#reactlazy)
+> 目前阶段, 服务端渲染中的 `code-spliting` 还是得使用 `react-loadable`, 可查阅 [React.lazy](https://reactjs.org/docs/code-splitting.html#reactlazy), 暂时先不探讨原因。
 
-### Data Fetching
+`Code Spliting` 在 `React` 中的使用方法是在 `Suspense` 组件中使用 `<LazyComponent>` 组件:
 
-下面放两段代码，可以从中直观地感受在 `Suspense` 中使用 `Data Fetching` 带来的便利。(该 [suspenseDemo](https://github.com/demos-platform/suspenseDemo) 源自 19 年 D2 上的分享)
+```js
+import { Suspense, lazy } from 'react'
+
+const DemoA = lazy(() => import('./demo/a'))
+const DemoB = lazy(() => import('./demo/b'))
+
+<Suspense>
+  <NavLink to="/demoA">DemoA</NavLink>
+  <NavLink to="/demoB">DemoB</NavLink>
+
+  <Router>
+    <DemoA path="/demoA" />
+    <DemoB path="/demoB" />
+  </Router>
+</Suspense>
+```
+
+源码中 `lazy` 将传入的参数封装成一个 `LazyComponent`
+
+```js
+function lazy(ctor) {
+  return {
+    $$typeof: REACT_LAZY_TYPE, // 相关类型
+    _ctor: ctor,
+    _status: -1,   // dynamic import 的状态
+    _result: null, // 存放加载文件的资源
+  };
+}
+```
+
+观察 [readLazyComponentType](https://github.com/MuYunyun/react/blob/29b7b775f2ecf878eaf605be959d959030598b07/packages/react-reconciler/src/ReactFiberLazyComponent.js#L30-L87) 后可以发现 `dynamic import` 本身类似 `Promise` 的执行机制, 也具有 `Pending`、`Resolved`、`Rejected` 三种状态, 这就比较好理解为什么 `LazyComponent` 组件需要放在 `Suspense` 中执行了(`Suspense` 中提供了相关的捕获机制, 下文会进行模拟实现`), 相关源码如下:
+
+```js
+function readLazyComponentType(lazyComponent) {
+  const status = lazyComponent._status;
+  const result = lazyComponent._result;
+  switch (status) {
+    case Resolved: { // Resolve 时，呈现相应资源
+      const Component = result;
+      return Component;
+    }
+    case Rejected: { // Rejected 时，throw 相应 error
+      const error = result;
+      throw error;
+    }
+    case Pending: {  // Pending 时, throw 相应 thenable
+      const thenable = result;
+      throw thenable;
+    }
+    default: { // 第一次执行走这里
+      lazyComponent._status = Pending;
+      const ctor = lazyComponent._ctor;
+      const thenable = ctor(); // 可以看到和 Promise 类似的机制
+      thenable.then(
+        moduleObject => {
+          if (lazyComponent._status === Pending) {
+            const defaultExport = moduleObject.default;
+            lazyComponent._status = Resolved;
+            lazyComponent._result = defaultExport;
+          }
+        },
+        error => {
+          if (lazyComponent._status === Pending) {
+            lazyComponent._status = Rejected;
+            lazyComponent._result = error;
+          }
+        },
+      );
+      // Handle synchronous thenables.
+      switch (lazyComponent._status) {
+        case Resolved:
+          return lazyComponent._result;
+        case Rejected:
+          throw lazyComponent._result;
+      }
+      lazyComponent._result = thenable;
+      throw thenable;
+    }
+  }
+}
+```
+
+### Async Data Fetching
+
+为了解决获取的数据在不同时刻进行展现的问题(在 [suspenseDemo](https://github.com/demos-platform/suspenseDemo) 中有相应演示), `Suspense` 给出了解决方案。
+
+下面放两段代码，可以从中直观地感受在 `Suspense` 中使用 `Async Data Fetching` 带来的便利。
 
 * 一般进行数据获取的代码如下:
 
@@ -207,11 +293,19 @@ class PromiseThrower extends React.Component {
 
 效果调试可以点击[这里](https://codesandbox.io/s/1zy82mm0j4), 在 `16.6` 版本之后, `componentDidCatch` 只能捕获 `commit phase` 的异常。所以在 `16.6` 版本之后实现的 `<PromiseThrower>` 又有一些差异(即将 `throw thenable` 移到 `componentDidMount` 中进行)。
 
-### Suspense 在源码中的引用
+### ConcurrentMode + Suspense
 
+当网速足够快, 数据立马就获取到了，此时页面存在的 `Loading` 按钮就显得有些多余了。(在 [suspenseDemo](https://github.com/demos-platform/suspenseDemo) 中有相应演示), `Suspense` 在 `Concurrent Mode` 下给出了相应的解决方案, 其提供了 `maxDuration` 参数。用法如下:
 
+```js
+<Suspense maxDuration={500} fallback={<Loading />}>
+  ...
+</Suspense>
+```
 
-### Suspense 与 hooks 结合
+该 Demo 的效果为当获取数据的时间大于(是否包含等于还没确认) 500 毫秒, 显示自定义的 `<Loading />` 组件, 当获取数据的时间小于 500 毫秒, 略过 `<Loading>` 组件直接展示用户的数据。[相关源码](https://github.com/MuYunyun/react/blob/29b7b775f2ecf878eaf605be959d959030598b07/packages/react-reconciler/src/ReactFiberUnwindWork.js#L232-L242)。
+
+需要注意的是 `maxDuration` 属性只有在 `Concurrent Mode` 下才生效, 可参考[源码中的注释](https://github.com/MuYunyun/react/blob/29b7b775f2ecf878eaf605be959d959030598b07/packages/react-reconciler/src/ReactFiberUnwindWork.js#L270-L277)。在 Sync 模式下, `maxDuration` 始终为 0。
 
 ### 后记: 缓存算法
 
@@ -224,12 +318,8 @@ class PromiseThrower extends React.Component {
 
 `react-cache` 采用的是 `LRU` 算法。
 
-### 相关文章
+### 相关资料
 
-* [Releasing Suspense](https://github.com/facebook/react/issues/13206)
-* [the suspense is killing redux](https://medium.com/@ryanflorence/the-suspense-is-killing-redux-e888f9692430):
-
-- [ ] [React Suspense with the Fetch API](https://medium.com/swlh/react-suspense-with-the-fetch-api-cc655aced759): 这篇文章有待考量。
-
-
-- [ ] [https://thoamsy.github.io/blogs/react-lazy/]
+* [suspenseDemo](https://github.com/demos-platform/suspenseDemo): 文字相关案例都集成在该 demo 中
+* [Releasing Suspense](https://github.com/facebook/react/issues/13206): `Suspense` 开发进度
+* [the suspense is killing redux](https://medium.com/@ryanflorence/the-suspense-is-killing-redux-e888f9692430)

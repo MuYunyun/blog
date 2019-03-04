@@ -76,6 +76,10 @@
   <summary>React 周边</summary>
 
 * [React16.x 特性剪辑](https://github.com/MuYunyun/blog/blob/master/React/React16.x特性剪辑.md)
+* [Suspense 解决了什么](https://github.com/MuYunyun/blog/blob/master/React/suspense解决了什么.md)
+* [Fiber 数据结构](https://github.com/MuYunyun/blog/blob/master/React/Fiber.md)
+* [使用 React 全家桶搭建一个后台管理系统](https://github.com/MuYunyun/blog/issues/3)
+<sub>[(相关项目)](https://github.com/MuYunyun/reactSPA)
 * [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
 * [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
 * [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
@@ -83,14 +87,10 @@
 * [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/React/在react使用immutable数据的优势.md)
 * [路由的简易实现](https://github.com/MuYunyun/blog/blob/master/React/router的简易实现.md)
 * [React 在服务端渲染的实现](https://github.com/MuYunyun/blog/issues/4)
-* [使用 React 全家桶搭建一个后台管理系统](https://github.com/MuYunyun/blog/issues/3)
-<sub>[(相关项目)](https://github.com/MuYunyun/reactSPA)
 * [定制自己的 react-script](https://github.com/MuYunyun/blog/blob/master/React/定制自己的react-script.md)
-* [Fiber 数据结构](https://github.com/MuYunyun/blog/blob/master/React/Fiber.md)
 
 - [ ] [Fiber 源码探究](https://github.com/MuYunyun/blog/blob/master/React/Fiber2.md)
 - [ ] [你不知道的 requestIdleCallback](https://github.com/MuYunyun/blog/blob/master/React/requestIdleCallback.md)
-- [ ] [suspense 解决了什么](https://github.com/MuYunyun/blog/blob/master/React/suspense解决了什么.md)
 - [ ] ~~redux-saga 实践~~
 
 </details>
