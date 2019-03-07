@@ -51,3 +51,9 @@ git merge [name]/master     合并远程分支最新代码到本地
 * git reset --hard Head~1: 撤销到上个分支, 不保留代码
 
 > 可以看到从上往下回复程度是在加强的。
+
+### git cherry-pick
+
+使用场景: 在一个分支中拉取另外一个分支`某一个 commit` 或`一段区间的 commit`
+
+> [git cherry-pick 使用指南](https://www.jianshu.com/p/08c3f1804b36)

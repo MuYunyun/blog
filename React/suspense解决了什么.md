@@ -132,15 +132,13 @@ const resource = unstable_createResource((id) => {
 })
 
 function Demo {
-  render() {
-    const data = resource.read(this.props.id)
+  const data = resource.read(this.props.id)
 
-    const { name } = data;
+  const { name } = data;
 
-    return (
-      <div>{name}</div>
-    );
-  }
+  return (
+    <div>{name}</div>
+  );
 }
 ```
 
@@ -314,7 +312,7 @@ class PromiseThrower extends React.Component {
 
 > [漫画：什么是 LRU 算法](https://juejin.im/post/5c0392656fb9a049fb4366fa)
 
-若数据的长度限定是 3, 访问顺序为 `set(2,2),set(1,1),get(2),get(1),get(2),set(3,3),set(4,4)`, 则根据 `LRU` 算法删除的是 `(3, 3)`, 根据 `LFU` 算法删除的是 `(1, 1)`。
+若数据的长度限定是 `3`, 访问顺序为 `set(2,2),set(1,1),get(2),get(1),get(2),set(3,3),set(4,4)`, 则根据 `LRU` 算法删除的是 `(1, 1)`, 根据 `LFU` 算法删除的是 `(3, 3)`。
 
 `react-cache` 采用的是 `LRU` 算法。
 
