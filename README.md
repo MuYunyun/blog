@@ -2,7 +2,7 @@
   <img src="http://with.muyunyun.cn/2e172dced41f13fc3e9a4a481bb012d4.jpg-200">
 </div>
 
-该系列文章是对前端知识架构的梳理, 欢迎带着质疑的眼光去阅读。
+该系列文章是对前端知识架构的梳理, 欢迎带着质疑的眼光去阅读。[文章反馈/内推](https://github.com/MuYunyun/blog/issues/new)
 
 <details>
   <summary>基础篇</summary>
