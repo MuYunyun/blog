@@ -1,6 +1,6 @@
 ### css 是什么
 
-css(cascading style sheet) 层叠样式表。
+`css(cascading style sheet)` 层叠样式表。
 
 ### 块级元素/行内元素
 
@@ -8,17 +8,19 @@ css(cascading style sheet) 层叠样式表。
 
 ### 选择器
 
-#### 子类选择器
-
-符号为 `>`
+#### 子类选择器 (>)
 
 * `p > span {}` 意为 p 元素后面直接跟着 span 的情形样式才生效
 
 > 对比: `p span {}` 意为 p 元素后面跟着 span 的情形
 
+#### 相邻选择器 (~)
+
+* `p ~ span {}` 意为与 p 元素同级别且位于 p 元素之后的 span 标签会生效
+
 #### 伪类选择器和伪元素选择器
 
-* 伪类: `:link`、`:visited`、`:hover`、`:active`(前面4个可以记忆成 LoVe-HA)、`:nth-child`
+* 伪类: `:link`、`:visited`、`:hover`、`:active`(前面 4 个可以记忆成 LoVe-HA)、`:nth-child`
 * 伪元素: `:before`、`:after`
 
 `p:first-child {}` 含义: 某元素的第一个子元素为 p 情形时的样式。
