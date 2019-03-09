@@ -1,8 +1,8 @@
-<div align="center">
-  <img src="http://with.muyunyun.cn/2e172dced41f13fc3e9a4a481bb012d4.jpg-200">
-</div>
+> 该系列文章是对前端知识架构的梳理, 欢迎带着[质疑](https://github.com/MuYunyun/blog/issues/new)去阅读。喜欢的话可以点下 watch 或 star :notebook_with_decorative_cover:
 
-该系列文章是对前端知识架构的梳理, 欢迎带着质疑的眼光去阅读。[文章反馈/内推](https://github.com/MuYunyun/blog/issues/new)
+<div align="center">
+  <img src="https://github.com/MuYunyun/blog/blob/master/roadmap.png">
+</div>
 
 <details>
   <summary>基础篇</summary>
@@ -188,4 +188,6 @@
 
 <br/>
 
-> 喜欢的话可以点下 watch 或 star :notebook_with_decorative_cover: 文章采用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">知识共享署名 4.0 国际许可协议</a>进行许可。
+> 文章采用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">知识共享署名 4.0 国际许可协议</a>进行许可。
+
+> 拼多多相应产品、技术、测试、算法、前端、客户端、风控、数仓、人事、行政各个方向各条业务线都可以内推(mujue@pinduoduo.com)，期待有缘。
