@@ -78,3 +78,7 @@ mount(<Swipe>
   <div key="4">PANE 4</div>
 </Swipe>, { attatch: document.body })
 ```
+
+### 依赖 Swipe 的组件
+
+Tabs 组件
