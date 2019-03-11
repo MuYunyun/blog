@@ -144,8 +144,8 @@ document.body.appendChild(script)
 
 ### HTML5 存储
 
-* sessionStorage: 大小上限为 2.5Mb(不同浏览器会有差异), 页面关闭时便清空;
-* localStorage: 大小上限为 2.5Mb(不同浏览器会有差异), 页面关闭时不会清空;
+* `sessionStorage`: 大小上限为 2.5Mb(不同浏览器会有差异), 页面关闭时便清空;
+* `localStorage`: 大小上限为 2.5Mb(不同浏览器会有差异), 页面关闭时不会清空;
 
 它们的 api 也是一致的, 有如下几个:
 
@@ -158,5 +158,20 @@ document.body.appendChild(script)
 
 ### HTML5 JavaScript Api
 
-* requestAnimationFrame
-* Web Worker
+* `requestAnimationFrame`: 在下次 repaint 前执行相应的函数
+
+```js
+let frame
+function animation() {
+	requestAnimationFrame(animation) // 在之后的 repaint 产生该 animation 的效果
+}
+
+frame = requestAnimationFrame(animation) // 在下次 repaint 之前调用该 animation
+
+// 可以在销毁期的生命周期函数中执行以下函数
+componentWillUnMount() {
+	cancelAnimationFrame(frame)
+}
+```
+
+* `Web Worker`
