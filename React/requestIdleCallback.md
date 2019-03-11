@@ -6,7 +6,7 @@ requestIdleCallback((deadline) => {
 }, {timeout: ...})
 ```
 
-deadline 有两个参数
+`deadline` 有两个参数
 
 * timeRemaining(): 当前帧还剩下多少时间
 * didTimeout: 是否超时
@@ -27,5 +27,6 @@ deadline 有两个参数
 
 ### 相关文章
 
-* [你应该知道的 requestIdleCallback](https://segmentfault.com/a/1190000014457824)
-* [官方解释](https://github.com/facebook/react/issues/13206)
+* [你应该知道的 requestIdleCallback](https://segmentfault.com/a/1190000014457824): `requestIdleCallback` 与 `requestAnimationFrame` 的一些区别
+* [官方解释](https://github.com/facebook/react/issues/13206#issuecomment-418923831): `requestIdleCallback` 的解释
+
