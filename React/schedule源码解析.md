@@ -37,6 +37,15 @@
 2. `Schedule` 自己注册一个回调 callback 调用该队列，并下一个帧中执行它;
 3. 在下一帧中尽可能多地执行队形里的回调;
 
+### Schedule 源码分析
+
+观察以下 4 个前置函数的实现
+
+* requestHostCallback,
+* cancelHostCallback,
+* shouldYieldToHost,
+* getCurrentTime,
+
 ### 相关文章
 
 * [scheduling-on-off-main-thread](https://developer.chrome.com/devsummit/schedule/scheduling-on-off-main-thread): 讲解了如何在帧里拆分任务以及使用 worker 的一些限制

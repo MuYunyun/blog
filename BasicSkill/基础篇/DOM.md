@@ -12,6 +12,8 @@
 
 3. elt.getBoundingClientRect()
 
+> 在标准盒模型下(box-sizing: content-box) margin 不算入其中, padding 算入其中;
+
 * 能获得位置相关信息
 
 ### 操作已存在的 dom 元素
