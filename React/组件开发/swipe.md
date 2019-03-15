@@ -43,7 +43,28 @@ delta = {
 
 * 手势从左往右滑动是向左滑动 `delta.x > 0`, 手势从右往左滑动是向右滑动 `delta.x < 0`
 
-### 测试用例之坑
+### 坑点
+
+#### 不必要的 id 传入
+
+为了解决在一个页面中使用多处 `Swipe` 组件，首先提供了一个 id 参数来进行区分多个 Swipe 组件, 思路是在封装的组件内部通过 `document.getElementById(id)` 获取到这个 dom 节点，然后进行位置的初始化。
+
+```js
+<Swipe
+  id=""
+>
+</Swipe>
+```
+
+但是这对使用者是一个额外的负担, 需要获取到节点的地方在 React 中可以思考两个方案:
+
+* 使用 `ref`, 相当于是操作 dom, 但是可以省去使用方不必要的 id 传入;
+
+#### 如何改造成受控组件
+
+目前的实现为非受控组件, 若要将其改为受控组件, 改的地方比较多, 必须使用 `state` 来替换全局参数。另外位置的信息在 `React.cloneElement()` 中进行处理。
+
+#### 测试用例之坑
 
 `jest` 跑如下测试用例, 当跑到 `componentDidMount` 里的 `document.getElementById('demo')` 并不拿到相应元素。
 
@@ -79,6 +100,6 @@ mount(<Swipe>
 </Swipe>, { attatch: document.body })
 ```
 
-### 依赖 Swipe 的组件
+------- 分割线 -------
 
-Tabs 组件
+经过上述步骤去掉 `document.getElementById` 以后, `{ attatch: document.body }` 也可以去掉了。
