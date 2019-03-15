@@ -11,7 +11,7 @@
 * 标准模型和 IE 模型有什么不同
 
 ```
-是否将 padding 和 border 算进 content 的 width 中
+是否将 padding 和 border 算进 content 的 width 中, 即在 IE 模型下, padding 和 border 会挤压 content 的空间
 ```
 
 * CSS 如何设置这两种模型
