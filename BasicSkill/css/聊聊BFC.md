@@ -30,7 +30,7 @@
 
 可以看到此时两个 div 之间的间距并不是 200px, 而是 100px
 
-如果想要消除 BFC 的这个特性(重叠)可以加上 overflow: hidden 来触发 BFC
+如果想要消除 BFC 的重叠特性可以加上具有 `overflow: hidden` 样式的父节点来消除 BFC
 
 ```html
 <style>

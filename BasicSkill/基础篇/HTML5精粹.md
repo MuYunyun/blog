@@ -158,20 +158,35 @@ document.body.appendChild(script)
 
 ### HTML5 JavaScript Api
 
-* `requestAnimationFrame`: 在下次 repaint 前执行相应的函数
+* `requestAnimationFrame(callback)`: 在下次重绘前执行执行的回调
 
 ```js
 let frame
-function animation() {
-	requestAnimationFrame(animation) // 在之后的 repaint 产生该 animation 的效果
+function callback(timeStamp) {
+	console.log(timeStamp) // 开始执行回调的时间戳
+	// 如果想要产生循环动画的效果, 需在回调函数中再次调用 requestAnimationFrame()
+	requestAnimationFrame(callback)
 }
 
-frame = requestAnimationFrame(animation) // 在下次 repaint 之前调用该 animation
+frame = requestAnimationFrame(callback) // 在下次重绘之前调用回调
 
 // 可以在销毁期的生命周期函数中执行以下函数
 componentWillUnMount() {
 	cancelAnimationFrame(frame)
 }
 ```
+
+执行上述代码, 控制台(chrome)打印如下数据:
+
+```
+1795953.649
+1795970.318
+1795986.987
+1796003.656
+1796020.325
+1796036.994
+```
+
+可以看到一帧的时间大致为 16ms。
 
 * `Web Worker`

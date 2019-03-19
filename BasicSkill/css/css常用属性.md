@@ -65,3 +65,18 @@
 * 相对 `font-size`
   * `rem`: 相对 html 中的 font-size 进行转换(如果根元素的 font-size 小于 12px 则以 12px 来计算);
   * `em`: 相对父元素(或者自己层级)的 font-size 进行转换;
+
+### css 选择器
+
+* 属性选择器
+* 结构性伪类选择器: `:not()`、`:empty`、`:first-child`、`:last-child`、`:nth-child(n)`、`:nth-last-child(n)`
+* `:first-of-type`、`:nth-of-type(n)`、`:last-of-type`、`:nth-last-of-type(n)`、`only-child`、`only-of-type`
+
+> 括号中的 n 可以是 `2n+1`、`-n+5`、`even`、`odd` 等
+
+此外还有
+
+* `:enabled`、`:disabled`
+* `:checked`(选择框加点变化示例)、`::selection`(改变用鼠标选择网页文本的样式)
+* `:read-only`(与 html 中 readonly='readonly' 配合使用)、`:read-write`(与 :read-only 选择器相反, 主要用来指定当元素处于非只读状态时的样式。)
+* `::before` && `::after`
