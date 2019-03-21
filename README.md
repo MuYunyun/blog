@@ -119,7 +119,7 @@
 * [动态规划](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/动态规划.md)
 * [贪心算法](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/贪心算法.md)
 
-> [LeetCode 刷题进度](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
+> [LeetCode](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/README.md)
 
 </details>
 

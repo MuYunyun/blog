@@ -4,56 +4,56 @@
 
 | # | Title | Source Code | Explanation | Difficulty |
 |:---:|:---:|:---:|:---:|:---:|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/1.TwoSum/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/1.TwoSum/README.md) | Easy |
-| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/2.AddTwoNumbers/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/2.AddTwoNumbers/README.md) | Medium |
-| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/3.LongestSubstringWithoutRepeatingCharacters/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/3.LongestSubstringWithoutRepeatingCharacters/README.md) | Medium |
-| 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/4.两个排序数组的中位数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/4.两个排序数组的中位数/README.md) | Hard |
-| 5 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/5.最长回文子串/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/5.最长回文子串/README.md) | Medium |
-| 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/6.Z字形变换/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/6.Z字形变换/README.md) | Medium |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/1.TwoSum/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/1.TwoSum/README.md) | Easy |
+| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/2.AddTwoNumbers/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/2.AddTwoNumbers/README.md) | Medium |
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/3.LongestSubstringWithoutRepeatingCharacters/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/3.LongestSubstringWithoutRepeatingCharacters/README.md) | Medium |
+| 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/4.两个排序数组的中位数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/4.两个排序数组的中位数/README.md) | Hard |
+| 5 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/5.最长回文子串/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/5.最长回文子串/README.md) | Medium |
+| 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/6.Z字形变换/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/6.Z字形变换/README.md) | Medium |
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | | | Easy |
 | 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | | | Medium |
-| 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/9.回文数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/9.回文数/README.md) | Easy |
+| 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/9.回文数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/9.回文数/README.md) | Easy |
 | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | | | Hard |
-| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/11.盛最多水的容器/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/11.盛最多水的容器/README.md) | Medium |
-| 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/12.整数转罗马数字/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/12.整数转罗马数字/README.md) | Medium |
-| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/13.罗马数字转整数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/13.罗马数字转整数/README.md) | Easy |
-| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/14.最长公共前缀/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/14.最长公共前缀/README.md) | Easy |
+| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/11.盛最多水的容器/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/11.盛最多水的容器/README.md) | Medium |
+| 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/12.整数转罗马数字/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/12.整数转罗马数字/README.md) | Medium |
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/13.罗马数字转整数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/13.罗马数字转整数/README.md) | Easy |
+| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/14.最长公共前缀/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/14.最长公共前缀/README.md) | Easy |
 | 15 | [3Sum](https://leetcode.com/problems/3sum/) | | | Medium |
-| 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/16.最接近的三数之和/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/16.最接近的三数之和/README.md) | Medium |
-| 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/17.电话号码的字母组合/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/17.电话号码的字母组合/README.md) | Medium |
+| 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/16.最接近的三数之和/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/16.最接近的三数之和/README.md) | Medium |
+| 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/17.电话号码的字母组合/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/17.电话号码的字母组合/README.md) | Medium |
 | 18 | [4Sum](https://leetcode.com/problems/4sum/) | | | Medium |
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | | | Medium |
-| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/20.有效的括号/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/20.有效的括号/README.md) | Easy |
-| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/21.合并两个有序链表/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/21.合并两个有序链表/README.md) | Easy |
-| 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/22.括号生成/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/22.括号生成/README.md) | Medium |
+| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/20.有效的括号/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/20.有效的括号/README.md) | Easy |
+| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/21.合并两个有序链表/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/21.合并两个有序链表/README.md) | Easy |
+| 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/22.括号生成/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/22.括号生成/README.md) | Medium |
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | | | Hard |
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | | | Medium |
 | 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | | | Hard |
-| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/26.删除排序数组中的重复项/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/26.删除排序数组中的重复项/README.md) | Easy |
-| 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/27.移除元素/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/27.移除元素/README.md) | Easy |
-| 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/28.实现strStr/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/28.实现strStr/README.md) | Easy |
+| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/26.删除排序数组中的重复项/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/26.删除排序数组中的重复项/README.md) | Easy |
+| 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/27.移除元素/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/27.移除元素/README.md) | Easy |
+| 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/28.实现strStr/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/28.实现strStr/README.md) | Easy |
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | | | Medium |
 | 30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | | | Hard |
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | | | Medium |
 | 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | | | Hard |
-| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/33.搜索旋转排序数组/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/33.搜索旋转排序数组/README.md) | Medium |
+| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/33.搜索旋转排序数组/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/33.搜索旋转排序数组/README.md) | Medium |
 | 34 | [Search for a Range](https://leetcode.com/problems/search-for-a-range/) | | | Medium |
-| 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/35.搜索插入位置/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/35.搜索插入位置/README.md) | Easy |
-| 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/36.有效的数独/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/36.有效的数独/README.md) | Medium |
+| 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/35.搜索插入位置/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/35.搜索插入位置/README.md) | Easy |
+| 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/36.有效的数独/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/36.有效的数独/README.md) | Medium |
 | 37 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | | | Hard |
-| 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/38.报数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/38.报数/README.md) | Easy |
-| 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/39.组合总和/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/39.组合总和/README.md) | Medium |
-| 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/40.组合总和II/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/40.组合总和II/README.md) | Medium |
+| 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/38.报数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/38.报数/README.md) | Easy |
+| 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/39.组合总和/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/39.组合总和/README.md) | Medium |
+| 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/40.组合总和II/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/40.组合总和II/README.md) | Medium |
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | | | Hard |
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | | | Hard |
 | 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | | | Medium |
 | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | | | Hard |
 | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | | | Hard |
-| 46 | [Permutations](https://leetcode.com/problems/permutations/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/46.全排列/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/46.全排列/README.md) | Medium |
-| 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/47.全排列II/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/47.全排列II/README.md) | Medium |
-| 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/48.旋转图像/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/48.旋转图像/README.md) | Medium |
-| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/49.字母异位词分组/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/49.字母异位词分组/README.md) | Medium |
-| 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/50.Pow/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/50.Pow/README.md) | Medium |
+| 46 | [Permutations](https://leetcode.com/problems/permutations/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/46.全排列/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/46.全排列/README.md) | Medium |
+| 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/47.全排列II/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/47.全排列II/README.md) | Medium |
+| 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/48.旋转图像/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/48.旋转图像/README.md) | Medium |
+| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/49.字母异位词分组/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/49.字母异位词分组/README.md) | Medium |
+| 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/50.Pow/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/50.Pow/README.md) | Medium |
 | 51 | [N-Queens](https://leetcode.com/problems/n-queens/) | | | Hard |
 | 52 | [N-Queens II](https://leetcode.com/problems/n-queens-ii/) | | | Hard |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | | | Easy |
@@ -65,23 +65,23 @@
 | 59 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | | | Medium |
 | 60 | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | | | Medium |
 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | | | Medium |
-| 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/62.不同路径/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/62.不同路径/README.md), 动态规划 | Medium |
+| 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/62.不同路径/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/62.不同路径/README.md), 动态规划 | Medium |
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | | | Medium |
-| 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/64.最小路径和/index.js) | | Medium |
+| 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/64.最小路径和/index.js) | | Medium |
 | 65 | [Valid Number](https://leetcode.com/problems/valid-number/) | | | Hard |
-| 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/66.加一/index.js) | | Easy |
-| 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/67.二进制求和/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/67.二进制求和/README.md) | Easy |
+| 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/66.加一/index.js) | | Easy |
+| 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/67.二进制求和/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/67.二进制求和/README.md) | Easy |
 | 68 | [Text Justification](https://leetcode.com/problems/text-justification/) | | | Hard |
-| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/69.x的平方根/index.js) | | Easy |
-| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/70.爬楼梯/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/70.爬楼梯/README.md) | Easy |
+| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/69.x的平方根/index.js) | | Easy |
+| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/70.爬楼梯/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/70.爬楼梯/README.md) | Easy |
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path/) | | | Medium |
 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | | | Hard |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | | | Medium |
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | | | Medium |
-| 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/75.颜色分类) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/75.颜色分类/README.md) | Medium |
+| 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/75.颜色分类) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/75.颜色分类/README.md) | Medium |
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | | | Hard |
 | 77 | [Combinations](https://leetcode.com/problems/combinations/) | | | Medium |
-| 78 | [Subsets](https://leetcode.com/problems/subsets/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/78.子集/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/78.子集/README.md) | Medium |
+| 78 | [Subsets](https://leetcode.com/problems/subsets/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/78.子集/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/78.子集/README.md) | Medium |
 | 79 | [Word Search](https://leetcode.com/problems/word-search/) | | | Medium |
 | 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | | | Medium |
 | 81 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | | | Medium |
@@ -91,24 +91,24 @@
 | 85 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | | | Hard |
 | 86 | [Partition List](https://leetcode.com/problems/partition-list/) | | | Medium |
 | 87 | [Scramble String](https://leetcode.com/problems/scramble-string/) | | | Hard |
-| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/88.合并两个有序数组/index.js) | | Easy |
+| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/88.合并两个有序数组/index.js) | | Easy |
 | 89 | [Gray Code](https://leetcode.com/problems/gray-code/) | | | Medium |
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii/) | | | Medium |
 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | | | Medium |
 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | | | Medium |
-| 93 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/93.复原IP地址/index.js) | | Medium |
+| 93 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/93.复原IP地址/index.js) | | Medium |
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) |
-[JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/94.二叉树的中序遍历/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/94.二叉树的中序遍历/README.md) | Medium |
+[JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/94.二叉树的中序遍历/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/94.二叉树的中序遍历/README.md) | Medium |
 | 95 | [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | | | Medium |
 | 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) | | | Medium |
 | 97 | [Interleaving String](https://leetcode.com/problems/interleaving-string/) | | | Hard |
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | | | Medium |
 | 99 | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) | | | Hard |
-| 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/100.相同的树/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/100.相同的树/README.md) | Easy |
-| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/101.对称二叉树/index.js) | | Easy |
+| 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/100.相同的树/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/100.相同的树/README.md) | Easy |
+| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/101.对称二叉树/index.js) | | Easy |
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | | | Medium |
 | 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | | | Medium |
-| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/104.二叉树的最大深度/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/104.二叉树的最大深度/README.md) | Easy |
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/104.二叉树的最大深度/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/104.二叉树的最大深度/README.md) | Easy |
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | | | Medium |
 | 106 | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | | | Medium |
 | 107 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | | | Easy |
@@ -125,7 +125,7 @@
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | | | Easy |
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | | | Easy |
 | 120 | [Triangle](https://leetcode.com/problems/triangle/) | | | Medium |
-| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/121.买卖股票的最佳时机/index.js) | | Easy |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/121.买卖股票的最佳时机/index.js) | | Easy |
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | | | Easy |
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | | | Hard |
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | | | Hard |
@@ -155,7 +155,7 @@
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/) | | | Medium |
 | 149 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | | | Hard |
 | 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | | | Medium |
-| 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/151.翻转字符串里的单词/index.js) | | Medium |
+| 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/151.翻转字符串里的单词/index.js) | | Medium |
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | | | Medium |
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | | | Medium |
 | 154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | | | Hard |
@@ -388,4 +388,4 @@
 | 398 | [Random Pick Index](https://leetcode.com/problems/random-pick-index/) | | | Medium |
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | | | Medium |
 | 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | | | Easy |
-| 567 | [字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/LeetCode/bytedance/挑战字符串/567.字符串的排列/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/bytedance/挑战字符串/567.字符串的排列/README.md) | Medium |
+| 567 | [字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/bytedance/挑战字符串/567.字符串的排列/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/bytedance/挑战字符串/567.字符串的排列/README.md) | Medium |
