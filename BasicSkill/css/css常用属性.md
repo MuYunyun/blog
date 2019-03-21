@@ -8,7 +8,7 @@
 * content-box(默认)
 * border-box
 
-> 它们的核心区别是是否将 border 以及 padding 算入 content 的 width 中
+> 它们的核心区别是是否将 border 以及 padding 算入 content 的 width 中(前提是设置了 width 下)。
 
 ### 超过行内容显示省略号
 

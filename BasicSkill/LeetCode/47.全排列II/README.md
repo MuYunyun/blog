@@ -16,4 +16,4 @@
 
 ### analyze
 
-[题目46](https://github.com/MuYunyun/blog/blob/master/LeetCode/46.全排列/README.md) 的升级版
+[题目 46](https://github.com/MuYunyun/blog/blob/master/LeetCode/46.全排列/README.md) 的升级版

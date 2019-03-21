@@ -1,6 +1,6 @@
 ### title
 
-将字符串 "PAYPALISHIRING" 以Z字形排列成给定的行数:
+将字符串 "PAYPALISHIRING" 以 Z 字形排列成给定的行数:
 
 ```
 P   A   H   N

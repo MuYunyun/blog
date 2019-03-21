@@ -1,1 +1,0 @@
-- [writing-resilient-components/](https://overreacted.io/writing-resilient-components/) 阅读到 Marie Kondo Your Lint Config

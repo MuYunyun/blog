@@ -158,7 +158,7 @@ document.body.appendChild(script)
 
 ### HTML5 JavaScript Api
 
-* `requestAnimationFrame(callback)`: 在下次重绘前执行执行的回调
+* `requestAnimationFrame(callback)`: 表示在重绘前执行指定的回调函数，下面通过一个简单的 demo 来认识它。
 
 ```js
 let frame
@@ -187,6 +187,10 @@ componentWillUnMount() {
 1796036.994
 ```
 
-可以看到一帧的时间大致为 16ms。
+可以看到一帧的时间大致为 16ms。requestAnimation 不仅可以用在动画上, 更是被 React 团队用来 hack requestIdleCallback 的实现。可以阅读[你不知道的 requestIdleCallback](https://github.com/MuYunyun/blog/blob/master/React/requestIdleCallback.md)
 
 * `Web Worker`
+
+JavaScript 是一门单线程的语言, 借助 Web Worker 能在浏览器上模拟线程的概念。
+
+* `Service Worker`: 基于 Web Worker 的 api 来处理网络请求以及缓存, 可以将其理解为是 `Web Worker + cache storage` 的组合。同时其也是 PWA 依赖的最为重要的技术。
