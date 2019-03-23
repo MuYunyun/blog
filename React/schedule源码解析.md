@@ -5,8 +5,6 @@
 * 任务执行时间得足够短, 能在一帧时间内执行完;
 * 不同任务存在不同的优先级;
 
-> [当前实现](https://github.com/facebook/react/blob/master/packages/scheduler/src/forks/SchedulerHostConfig.default.js)
-
 ### 任务的种类
 
 在一帧中执行的任务种类有以下几种类别:
@@ -21,7 +19,7 @@
 
 ### 任务的排序机制
 
-任务的排序机制是由 `expiration time` 这个字段决定的，该字段表示过期时间(值越小, 越早执行), 为 `callback 的注册时间`与`当前任务优先级的值`之和。
+任务的排序机制是由 `expiration time` 这个字段决定的，其值为 `callback 的注册时间`与`当前任务优先级的值`之和, 表示过期时间(值越小, 越早执行)。
 
 优先级的值有以下几类:
 

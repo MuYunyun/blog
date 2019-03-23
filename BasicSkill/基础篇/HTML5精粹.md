@@ -158,36 +158,39 @@ document.body.appendChild(script)
 
 ### HTML5 JavaScript Api
 
-* `requestAnimationFrame(callback)`: 表示在重绘前执行指定的回调函数，下面通过一个简单的 demo 来认识它。
+* `requestAnimationFrame(callback)`: 表示在下次重绘前执行指定的回调函数，下面通过一个简单的 demo 来认识它。
 
 ```js
 let frame
+let n = 5
 function callback(timeStamp) {
 	console.log(timeStamp) // 开始执行回调的时间戳
 	// 如果想要产生循环动画的效果, 需在回调函数中再次调用 requestAnimationFrame()
-	requestAnimationFrame(callback)
+	while (n > 0) {
+		requestAnimationFrame(callback)
+		console.log('测试执行顺序')
+		n--
+	}
 }
 
 frame = requestAnimationFrame(callback) // 在下次重绘之前调用回调
 
-// 可以在销毁期的生命周期函数中执行以下函数
-componentWillUnMount() {
-	cancelAnimationFrame(frame)
-}
+// 如果想要销毁该回调, 可以执行 cancelAnimationFrame(frame)
 ```
 
 执行上述代码, 控制台(chrome)打印如下数据:
 
 ```
+先输出 5 次 '测试执行顺序'
 1795953.649
 1795970.318
 1795986.987
 1796003.656
 1796020.325
-1796036.994
+...
 ```
 
-可以看到一帧的时间大致为 16ms。requestAnimation 不仅可以用在动画上, 更是被 React 团队用来 hack requestIdleCallback 的实现。可以阅读[你不知道的 requestIdleCallback](https://github.com/MuYunyun/blog/blob/master/React/requestIdleCallback.md)
+可以看到在浏览器上一帧的时间大致为 `16ms`。同时可以看到 `requestAnimation(callback)` 中的 callback 也是异步的(只不过它是基于帧与帧间的异步), 所以上述打印结果是先打印出 5 次 '测试执行顺序' 后再依次打印出 5 个时间戳。requestAnimation 不仅可以用在动画上, 更是被 React 团队用来 hack requestIdleCallback 的实现。可以阅读[你不知道的 requestIdleCallback](https://github.com/MuYunyun/blog/blob/master/React/requestIdleCallback.md)
 
 * `Web Worker`
 
