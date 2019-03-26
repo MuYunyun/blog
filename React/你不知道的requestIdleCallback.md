@@ -88,13 +88,13 @@ shouldYieldToHost = function () {
 let frame
 let n = 5
 function callback(timeStamp) {
-	console.log(timeStamp) // 开始执行回调的时间戳
-	// 如果想要产生循环动画的效果, 需在回调函数中再次调用 requestAnimationFrame()
-	while (n > 0) {
+  console.log(timeStamp) // 开始执行回调的时间戳
+  // 如果想要产生循环动画的效果, 需在回调函数中再次调用 requestAnimationFrame()
+  while (n > 0) {
     requestAnimationFrame(callback)
     console.log('测试执行顺序')
-		n--
-	}
+    n--
+  }
 }
 
 frame = requestAnimationFrame(callback) // 在下次重绘之前调用回调
@@ -118,10 +118,10 @@ frame = requestAnimationFrame(callback) // 在下次重绘之前调用回调
 
 `requestHostCallback`(也就是 requestIdleCallback) 这部分源码的实现比较复杂, 可以将其分解为以下几个重要的步骤(有一些细节点可以看注释):
 
-步骤一: 如果有优先级更高的任务, 则通过 `postMessage` 触发步骤四, 否则如果 `requestAnimationFrame` 在当前帧没有安排任务, 则开始一个帧的流程;
-步骤二: 在一个帧的流程中调用 `requestAnimationFrameWithTimeout` 函数, 该函数调用了 `requestAnimationFrame`, 并对执行时间超过 `100ms` 的任务用 `setTimeout` 放到下一个事件队列中处理;
-步骤三: 执行 `requestAnimationFrame` 中的回调函数 `animationTick`, 在该回调函数中得到当前帧的截止时间 `frameDeadline`, 并通过 `postMessage` 触发步骤四;
-步骤四: 通过 `onmessage` 接受 `postMessage` 指令, 触发消息事件的执行。在 `onmessage` 函数中根据 `frameDeadline - currentTime <= 0` 判断任务是否可以在当前帧执行，如果可以的话执行该任务, 否则进入下一帧的调用。
+1. 步骤一: 如果有优先级更高的任务, 则通过 `postMessage` 触发步骤四, 否则如果 `requestAnimationFrame` 在当前帧没有安排任务, 则开始一个帧的流程;
+2. 步骤二: 在一个帧的流程中调用 `requestAnimationFrameWithTimeout` 函数, 该函数调用了 `requestAnimationFrame`, 并对执行时间超过 `100ms` 的任务用 `setTimeout` 放到下一个事件队列中处理;
+3. 步骤三: 执行 `requestAnimationFrame` 中的回调函数 `animationTick`, 在该回调函数中得到当前帧的截止时间 `frameDeadline`, 并通过 `postMessage` 触发步骤四;
+4. 步骤四: 通过 `onmessage` 接受 `postMessage` 指令, 触发消息事件的执行。在 `onmessage` 函数中根据 `frameDeadline - currentTime <= 0` 判断任务是否可以在当前帧执行，如果可以的话执行该任务, 否则进入下一帧的调用。
 
 ```js
 export let requestHostCallback;

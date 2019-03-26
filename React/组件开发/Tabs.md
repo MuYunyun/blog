@@ -61,3 +61,9 @@ if (typeof window.getComputedStyle(document.body).scrollBehavior == 'undefined')
   })
 }
 ```
+
+### Tab 下划线随着内容栏的滑动而动态滑动
+
+难点: 如何达到原生的顺滑效果。
+
+* 减少 `getBoundingClientRect` 的调用次数
