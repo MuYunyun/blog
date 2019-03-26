@@ -48,7 +48,7 @@
 
 2. DOMContentLoaded
 
-优于 window.load 执行
+优于 window.onload 执行
 
 3. readystatechange
 
