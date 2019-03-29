@@ -6,6 +6,8 @@
 
 - [ ] [听歌学英语](https://mp.weixin.qq.com/mp/homepage?__biz=MzI5ODE3NDQ0OQ%3D%3D&hid=2&sn=9b6dd88b8303196473c2a6c28b995c42)
 
+* [元音连读](https://mp.weixin.qq.com/s?__biz=MzI5ODE3NDQ0OQ==&mid=100000160&idx=1&sn=c7247b9fadb68c91d6338200d13c08d3&scene=19#wechat_redirect), 若单词末和单词头是元音标相邻, 则再其间加上 `/y/` 或者 `/w/`(哪个顺畅读哪个)
+
 ### English Songs
 
 每周听懂一首英文歌

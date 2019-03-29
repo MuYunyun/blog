@@ -14,7 +14,7 @@
 2. 在 Mac 端将喜欢的照片打星, 然后右键点击 favourite 里的图片 create 到一个新文件;
 3. 可以右键点击 Share/Airdrop 将最终筛选好的图片传回 iphone;
 
-当前同步时间 Oct 6
+当前同步时间 2018.10.6
 
 ### 1password 快捷键
 

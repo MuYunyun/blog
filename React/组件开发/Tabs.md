@@ -24,20 +24,39 @@ if (tabs.length > 4) {
 }
 ```
 
-但是 `behavior: 'smooth'` 在 ios 机子上是没有效果的, 所以结合 `requestAnimationFrame` 产生相应的兜底方案。效果可以见 Tabs 组件的滑动栏。
+但是 `behavior: 'smooth'` 在 ios 机子上是没有效果的, 所以结合 `requestAnimationFrame` 产生相应的兜底方案。
 
 ```js
-// 水平平稳滑动, 兼容 IOS
-const scrollHorizontalTo = (elm: any, distance: number) => {
-  let leftPosition = elm.scrollLeft
-  const diff = distance - elm.scrollLeft
+/* 平滑滚动处理代码, 兼容 IOS */
+// elm: 移动元素
+// distance: 移动距离
+// direction: 移动方向 horizontal: 水平 vertical: 竖直
+// const scrollHorizontalTo = (elm: any, distance: number, direction = 'horizontal') => {
+const scrollTo = (elm: any, distance: number, direction = 'horizontal') => {
+  let position: number = 0
+
+  if (direction === 'horizontal') {
+    position = elm.scrollLeft
+  } else if (direction === 'vertical') {
+    position = elm.scrollTop
+  }
+  const diff = distance - position
 
   const callback = () => {
-    leftPosition = leftPosition + diff / 5
-    elm.scrollTo(leftPosition, 0)
+    position = position + diff / 20
+    if (direction === 'horizontal') {
+      elm.scrollTo(position, 0)
+    } else {
+      elm.scrollTo(0, position)
+    }
 
-    if (Math.abs(distance - leftPosition) < 1) {
-      elm.scrollTo(distance, 0)
+    // 若距离目标距离小于 5, 则直接跳到目标位置。
+    if (Math.abs(distance - position) < 5) {
+      if (direction === 'horizontal') {
+        elm.scrollTo(distance, 0)
+      } else if (direction === 'vertical') {
+        elm.scrollTo(0, distance)
+      }
     } else {
       requestAnimationFrame(callback)
     }
@@ -47,23 +66,6 @@ const scrollHorizontalTo = (elm: any, distance: number) => {
 }
 ```
 
-完整的兜底代码:
-
-```js
-if (typeof window.getComputedStyle(document.body).scrollBehavior == 'undefined') {
-  // 传统的JS平滑滚动处理代码...
-  scrollHorizontalTo((this as any)[`tabScroll`], this.tabMiddleDistance)
-} else {
-  ; (this as any)[`tabScroll`].scrollTo({
-    left: this.tabMiddleDistance, // 在支持 behavior: smooth 的则使用这个属性
-    top: 0,
-    behavior: 'smooth'
-  })
-}
-```
-
 ### Tab 下划线随着内容栏的滑动而动态滑动
 
-难点: 如何达到原生的顺滑效果。
-
-* 减少 `getBoundingClientRect` 的调用次数
+难点: 如何达到原生的顺滑效果。目前的方案是减少 `getBoundingClientRect` 的调用次数, 将需多次获取的值进行缓存。
