@@ -61,3 +61,11 @@ git cherry-pick <commit id>
 ```
 
 > [git cherry-pick 使用指南](https://www.jianshu.com/p/08c3f1804b36)
+
+### git log
+
+查看文件修改内容
+
+```js
+git lg -p
+```

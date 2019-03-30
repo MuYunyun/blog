@@ -1,4 +1,4 @@
-该系列随笔是对前端知识架构的梳理。文章内容主要涵盖前端工程化、JavaScript 知识体系、CSS 知识体系、数据结构、设计模式等, 最近产出的文章以 React 源码解析、React 设计模式、组件开发为主。:notebook_with_decorative_cover:
+该系列随笔是对前端知识架构的梳理。文章内容主要涵盖前端工程化、JavaScript 知识体系、CSS 知识体系、数据结构、设计模式等。最近产出的文章会以 `React 源码解析、React 设计模式、组件开发`为主。:notebook_with_decorative_cover:
 
 > 感谢每位提出意见的朋友, 欢迎[交流](https://github.com/MuYunyun/blog/issues/new), 欢迎 Star。
 
@@ -73,13 +73,22 @@
 
 </details>
 
-* [React16.x 特性剪辑](https://github.com/MuYunyun/blog/blob/master/React/React16.x特性剪辑.md)
-* [Fiber 数据结构](https://github.com/MuYunyun/blog/blob/master/React/Fiber.md)
-* [React Suspense 解决了什么](https://github.com/MuYunyun/blog/blob/master/React/suspense解决了什么.md)
-* [你不知道的 requestIdleCallback](https://github.com/MuYunyun/blog/blob/master/React/你不知道的requestIdleCallback.md)
+<details>
+  <summary>组件开发</summary>
+
+* [编写具有弹性的组件](https://github.com/MuYunyun/blog/blob/master/React/组件开发/编写具有弹性的组件.md)
+* [Form](https://github.com/MuYunyun/oneForm/issues/1)
+* [Swipe](https://github.com/MuYunyun/blog/blob/master/React/组件开发/swipe.md)
+* [Tabs](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Tabs.md)
+
+</details>
+
+<details>
+  <summary>相关技术栈</summary>
+
+* [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/React/相关技术栈/Redux与Mobx适用场景.md)
 * [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
 * [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
-* [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/React/Redux与Mobx适用场景.md)
 * [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
 * [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/React/在react使用immutable数据的优势.md)
 * [路由的简易实现](https://github.com/MuYunyun/blog/blob/master/React/router的简易实现.md)
@@ -87,20 +96,16 @@
 * [定制自己的 react-script](https://github.com/MuYunyun/blog/blob/master/React/定制自己的react-script.md)
 * [使用 React 全家桶搭建一个后台管理系统](https://github.com/MuYunyun/blog/issues/3)
 <sub>[(相关项目)](https://github.com/MuYunyun/reactSPA)
+</details>
+
+* [React16.x 特性剪辑](https://github.com/MuYunyun/blog/blob/master/React/React16.x特性剪辑.md)
+* [Fiber 数据结构](https://github.com/MuYunyun/blog/blob/master/React/Fiber.md)
+* [React Suspense 解决了什么](https://github.com/MuYunyun/blog/blob/master/React/suspense解决了什么.md)
+* [你不知道的 requestIdleCallback](https://github.com/MuYunyun/blog/blob/master/React/你不知道的requestIdleCallback.md)
 
 - [ ] [hooks](https://github.com/MuYunyun/blog/blob/master/React/hooks.md)
 - [ ] [React Schedule 源码解析](https://github.com/MuYunyun/blog/blob/master/React/schedule源码解析.md)
 - [ ] [深入 Fiber 架构](https://github.com/MuYunyun/blog/blob/master/React/Fiber2.md)
-
-</details>
-
-<br/>
-
-<details>
-  <summary>组件开发</summary>
-
-* [Form](https://github.com/MuYunyun/oneForm/issues/1)
-* [Swipe](https://github.com/MuYunyun/blog/blob/master/React/组件开发/swipe.md)
 
 </details>
 
