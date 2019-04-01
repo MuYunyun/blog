@@ -88,7 +88,7 @@ $length: $value + 1px
 ### 条件语句
 
 ```scss
-@if $support-legacy {
+@if ($support-legacy) {
   // ..
 } @else {
   // ..
