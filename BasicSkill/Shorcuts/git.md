@@ -34,8 +34,10 @@ git merge [name]/master     合并远程分支最新代码到本地
 
 ### git merge 和 git rebase 的区别
 
-* `git merge` 会多产生一次 merge 的 log 记录
-* `git rebase` 会将主干新增的 log 前置到当前分支之前。
+* `git merge` 会多产生一次 merge 的 log 记录;
+* `git rebase` 会将主干新增的日志记录前置到当前分支之前;
+
+> git merge --no-ff 在每次合并都会产生一个新的合并记录; git merge 的话只有解决冲突的时候才会产生一个新的合并记录。
 
 ### git reset 和 git revert 的区别
 
@@ -68,4 +70,25 @@ git cherry-pick <commit id>
 
 ```js
 git lg -p
+```
+
+### 对线上代码 (master 分支) 进行修复
+
+1. 在 `master` 分支上使用 `git reset --hard xxxxxx`;
+2. 使用 `git checkout -b` 创建 `fix/xxx` 分支, 在该分支上进行 bug 修复;
+3. 回到 `master` 分支, 可以使用 `git reflog` 查看之前 reset 过来的分支节点, 再执行 `git reset --hard xxxxxx` 回到那个节点。
+4. 在 master 的最新节点上使用 `git merge --no-ff fix/xxx`
+
+### github 使用技巧
+
+选择一句话, 按 r 对该话进行引用回复。
+
+### 关于 pull request
+
+如果是比较复杂的 Feature 可以越早的(在开发过程)提 pr, 这样子可以提早的指出问题代码。
+
+当有人提了 `pr`, 需要观察 pr 的代码是否存在问题。比如使用如下命令:
+
+```
+git remote add lanyincao git@github.com:snakeUni/snake-design.git
 ```
