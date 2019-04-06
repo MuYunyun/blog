@@ -28,8 +28,8 @@
 
 ### position
 
-* relative: 相对于其自身位置进行定位;
-* absolute: 相对其最近的非 `static` 的祖先元素进行定位;
+* relative: 元素根据正常的文档流相进行定位;
+* absolute: 脱离当前文档流, 相对其最近的的祖先元素进行定位;
 
 > position 是位置相关, display 是布局相关;
 
@@ -63,8 +63,8 @@
   * `1vmin`: 取视窗宽度和视窗高度最小值的 1/100;
   * `1vmax`: 取视窗宽度和视窗高度最大值的 1/100;
 * 相对 `font-size`
-  * `rem`: 相对 html 中的 font-size 进行转换(如果根元素的 font-size 小于 12px 则以 12px 来计算);
-  * `em`: 相对父元素(或者自己层级)的 font-size 进行转换;
+  * `rem`: 相对 html 中的 `font-size` 进行转换(如果根元素的 font-size 小于 12px 则以 12px 来计算);
+  * `em`: 相对父元素(或者自己层级)的 `font-size` 进行转换;
 
 ### css 选择器
 

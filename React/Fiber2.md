@@ -3,8 +3,8 @@
 在介绍 `Fiber` 之前, 需要对官网中出现的以下名词有个深刻的认知。
 
 * `Reconciliation`: 调和算法, 得出 `Virtual Dom(针对 Web)` 之间的差异;
+* `Scheduling`: 调度。`Recct` 通过内部的调度来安排不同优先级的任务在`最佳时刻`执行(在 Reconciler 中调用);
 * `Render`: 将 `Reconciliation` 的结果刷新到界面上;
-* `Scheduling`: 调度。`Recct` 通过内部的调度来安排不同优先级的任务在`最佳时刻`执行;
 * `Fiber`: 链表数据结构的 `React` 实现(个人理解)。
 
 > 平常大家说的 'Fiber' 其实是由上面这些名词组成的架构, Fiber 真正意义上只是一个链表数据结构的 React 实现版本。
