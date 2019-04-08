@@ -29,7 +29,7 @@
 ### position
 
 * relative: 元素根据正常的文档流相进行定位;
-* absolute: 脱离当前文档流, 相对其最近的的祖先元素进行定位;
+* absolute: 脱离当前文档流, 相对其最近的 `position` 属性值为非 `static` 祖先元素进行定位, 直到 body。
 
 > position 是位置相关, display 是布局相关;
 

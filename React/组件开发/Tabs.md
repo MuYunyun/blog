@@ -66,6 +66,56 @@ const scrollTo = (elm: any, distance: number, direction = 'horizontal') => {
 }
 ```
 
-### Tab 下划线随着内容栏的滑动而动态滑动
+### 开发坑点
+
+背景: `Tab` 下划线随着内容栏的滑动而动态滑动。
 
 难点: 如何达到原生的顺滑效果。目前的方案是减少 `getBoundingClientRect` 的调用次数, 将需多次获取的值进行缓存。
+
+### 开发坑点(五星)
+
+背景坑点: `tab` 栏是可以滑动的, 在使用 `this.contentRectLeft = elm.getBoundingClientRect().left` 进行缓存时, 在 `tab` 滑动后期待取得的是 `tab` 距离`当前视口`左侧的值, 但是实际获取到的是当前 `tab` 距离滚动条最左侧的值。相关代码如下:
+
+```js
+afterChangeTab = (index: number) => {
+  const { tabDirection } = this.props
+  if (tabDirection === 'horizontal') {
+    ...
+    this.tabMove(this.tabMiddleDistance) // ①
+    this.contentRectLeft = (this as any)[`tab${index}`].getBoundingClientRect().left // ②
+    console.log(this.contentRectLeft) // 这个地方打印的是当前 `tab` 距离滚动条最左侧的值
+  }
+}
+
+tabMove = (distance: number) => {
+  const { tabs, tabDirection } = this.props
+  // 如果是水平滑动时且 tab 栏的数量大于 4, tab 栏可滑动
+  if (tabDirection === 'horizontal' && tabs.length > 4) {
+    scrollTo((this as any)[`tabScroll`], distance, 'horizontal')
+  }
+  ...
+}
+```
+
+造成的原因是调用 `this.tabMove` 中的 `scrollTo` 方法里调用了 `requestAnimationFrame`, 其也是一个异步的钩子。所以 ② 的代码执行是由于 `requestAnimationFrame` 的执行的！目前的解决方法只能取消 `scrollTo` 方法的调用尽管 tab 的滚动比较僵硬, 但是确保了 `this.contentRectLeft` 缓存的值的准确性。
+
+```js
+tabMove = (distance: number) => {
+  const { tabs, tabDirection } = this.props
+  // 如果是水平滑动时且 tab 栏的数量大于 4, tab 栏可滑动
+  if (tabDirection === 'horizontal' && tabs.length > 4) {
+    // scrollTo 里面有了 requestAnimationFrame 方法, 以及 scrollTo 都是一个异步的钩子, 会造成缓存
+    // scrollTo((this as any)[`tabScroll`], distance, 'horizontal')
+    // ;(this as any)[`tabScroll`].scrollTo({
+    //   left: distance,
+    //   top: 0,
+    //   behavior: 'smooth',
+    // })
+    ;(this as any)[`tabScroll`].scrollLeft = distance
+  }
+  ...
+}
+```
+
+> 多使用小黄鸭笔记法, 就能理出眉目, 理逻辑的时候可能觉得浪费时间, 但是这往往是解决问题最高效的方法。
+
