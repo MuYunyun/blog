@@ -18,4 +18,46 @@
 
 ![](http://with.muyunyun.cn/d188c846ffbd8c79646a940c352686d5.jpg)
 
-点击 `x` 号, 因为 `x` 号不在 input 输入框内, 所以首先执行的是 `onBlur`, 然后期待调用 `onClear`, 最后再调用 `onFocus` 重新聚焦。
+点击叉号的时候, 因为叉号不在 `input` 输入框内, 所以首先执行的是 `onBlur`, 此时失去焦点, 后续执行不了叉号上的 `handleClear` 逻辑。解决方法如下:
+
+```js
+handleBlur = (e: React.FocusEvent<HTMLInputElement>) => {
+  const { onBlur } = this.props
+  onBlur(e)
+
+  setTimeout(() => {
+    // 如果点击叉号, 执行到这里时候 document.activeElement === this.inputRef
+    if (document.activeElement !== this.inputRef) {
+      this.setState({ focus: false })
+    }
+  }, 20)
+}
+
+/* 清空输入并重新聚焦 */
+handleClear = () => {
+  const { onClear, onChange } = this.props
+  onChange && onChange('')
+  onClear('')
+  this.focus()
+}
+
+focus = () => {
+  if (this.inputRef) {
+    this.inputRef.focus()
+  }
+}
+```
+
+### 解决点击 🔍 不 blur 仍然保持聚焦的效果
+
+![](http://with.muyunyun.cn/afa95e394ae7ff8b1b180b0407acf424.jpg)
+
+当点击搜索 `icon` 的时候, 为了仍保留 `input` 的聚焦的效果, 使用 `z-index` 对 `input` 元素做如下操作。
+
+```css
+.demo {
+  position: absolute;
+  z-index: 2;
+  background-color: transparent;
+}
+```
