@@ -58,11 +58,11 @@ git merge [name]/master     合并远程分支最新代码到本地
 
 使用场景: 在一个分支中拉取另外一个分支`某一个 commit` 或`一段区间的 commit`
 
-```js
-git cherry-pick <commit id>
 ```
-
-> [git cherry-pick 使用指南](https://www.jianshu.com/p/08c3f1804b36)
+git cherry-pick <commit id>
+git cherry-pick 371c2…971209 // (2,5]
+git cherry-pick 371c2^…971209 // [2,5]
+```
 
 ### git log
 

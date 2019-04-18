@@ -5,7 +5,7 @@
 ```ts
 interface {
   mustFillIn: number,
-  mayFillWithDefaultValue: number,
+  mayFillWithDefaultValue: number, // 可选的带默认值的不用带上问号
   mayFillWithoutDefaultValue?: number // 可选的不带默认值的带上问号
 }
 ```
@@ -15,7 +15,7 @@ interface {
 ```ts
 class Divider extends React.Component<DividerProps, any> {
 
-  static defaultProps: Partial<Pick<DividerProps, 'mayFillWithDefaultValue' | 'mayFillWithoutDefaultValue'>> = {
+  static defaultProps: Pick<DividerProps, 'mayFillWithDefaultValue' | 'mayFillWithoutDefaultValue'> = {
     mayFillWithDefaultValue: 12345
   }
 
@@ -26,6 +26,9 @@ class Divider extends React.Component<DividerProps, any> {
   }
 }
 ```
+
+* Pick 针对有必传值的场景做区分
+* interface 中的 ? 针对有默认值和无默认值做区分
 
 ### 针对 hooks 中的写法
 
