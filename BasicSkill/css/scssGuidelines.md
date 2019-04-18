@@ -115,6 +115,16 @@ $length: $value + 1px
 }
 ```
 
+### 继承
+
+```scss
+.demo1 {}
+
+.demo {
+  @extend .demo1
+}
+```
+
 ### 参考文献
 
 * [sassguidelines](https://sass-guidelin.es/)

@@ -7,7 +7,7 @@
 
 #### useState
 
-使用闭包来进行简单逻辑的实现:
+使用闭包来实现 `useState` 的简单逻辑:
 
 ```js
 // 这里使用闭包
@@ -113,6 +113,12 @@ const React = (function() {
   let currentHook = 0
 
   return {
+    render(Component) {
+      const component = Component()
+      component.render()
+      currentHook = 0 // 重置, 这里很关键, 将 hooks 的执行放到 hooks 队列中, 确保每次执行的顺序保持一致。
+      return component
+    },
     useState(initialValue) {
       hooks[currentHook] = hooks[currentHook] || initialValue
 
@@ -159,11 +165,16 @@ function Counter() {
   }
 }
 
-Counter().render() // 'useEffect' 0, 'render', 0
-Counter().noop()
-Counter().render() // 'render', 0
-Counter().click()
-Counter().render() // 'useEffect' 1, 'render', 1
+/* 如下 mock 执行了 useEffect、render; 这里使用 React.render 的原因是为了重置 currentHook 的值 */
+let comp = React.render(Counter) // useEffect 0 type hi render 0
+
+/* 如下 mock 只执行了 render */
+comp.noop()
+comp = React.render(Counter) // render 0
+
+/* 如下 mock 重新执行了 useEffect、render */
+comp.click()
+React.render(Counter) // useEffect 1, render 1
 ```
 
 ### 使用 Hooks 的注意项
@@ -252,4 +263,4 @@ function Demo() {
 * [awesome-react-hooks](https://github.com/rehooks/awesome-react-hooks)
 * [usehooks](https://github.com/gragland/usehooks)
 * [a-complete-guide-to-useeffect](https://overreacted.io/a-complete-guide-to-useeffect/): 一定要读 Dan 的这篇文章
-- [ ] [deep-dive-how-do-react-hooks-really-work](https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/)
+* [deep-dive-how-do-react-hooks-really-work](https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/)
