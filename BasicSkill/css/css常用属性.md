@@ -22,9 +22,9 @@
 
 ### display: block/inline-block/inline 的区别
 
-* block: 有宽高, 不在同一行;
-* inline-block: 有宽高，在同一行;
-* inline: 无宽高, 在同一行;
+* `block`: 有宽高, 不在同一行;
+* `inline-block`: 有宽高，在同一行;
+* `inline`: 无宽高, 在同一行;
 
 ### position
 
