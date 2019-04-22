@@ -224,6 +224,9 @@ function Demo() {
 
 当更新的一个状态依赖于另一个状态时, 使用 `useReducer` 能避免调用多次 `useEffect`。见 [decoupling-updates-from-actions](https://overreacted.io/a-complete-guide-to-useeffect/#decoupling-updates-from-actions)
 
+- [ ] [Hooks, State, Closures, and useReducer](https://adamrackis.dev/state-and-use-reducer/)
+- [ ] [Should I useState or useReducer](https://kentcdodds.com/blog/should-i-usestate-or-usereducer/)
+
 #### useEffect 中公用函数的逻辑
 
 ```js
