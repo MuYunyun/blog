@@ -30,6 +30,7 @@
 
 * relative: 元素根据正常的文档流相进行定位;
 * absolute: 脱离当前文档流, 相对其最近的 `position` 属性值为非 `static` 祖先元素进行定位, 直到 body。
+* fixed: 脱离当前文档流, 相对视窗定位。注意: 当父元素上有这几个属性时, `transform`, `perspective`, `filter` 时, fixed 定位会失效。
 
 > position 是位置相关, display 是布局相关;
 
@@ -63,8 +64,41 @@
   * `1vmin`: 取视窗宽度和视窗高度最小值的 1/100;
   * `1vmax`: 取视窗宽度和视窗高度最大值的 1/100;
 * 相对 `font-size`
-  * `rem`: 相对 html 中的 `font-size` 进行转换(如果根元素的 font-size 小于 12px 则以 12px 来计算);
+  * `rem`: 相对 `html` 中的 `font-size` 进行转换(如果根元素的 font-size 小于 12px 则以 12px 来计算);
   * `em`: 相对父元素(或者自己层级)的 `font-size` 进行转换;
+
+#### rem 的使用
+
+通常将 1rem 设置为 100px, (经过测试 10px/1px 也是可以的)
+
+<details>
+  <summary>相关测试</summary>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		html {
+			font-size: calc(100vw / 375)
+		}
+	</style>
+</head>
+
+<body>
+	<div class="test" style="font-size: 16rem;margin-top: 16rem;padding: 16rem">测试</div>
+</body>
+
+</html>
+```
+</details>
+
+```css
+html {
+  font-size: calc(100vw / 3.75) /* 此时 1 rem 相当于是 100px */
+}
+```
 
 ### css 选择器
 
