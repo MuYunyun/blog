@@ -2,11 +2,13 @@
 
 * [react-final-form](https://github.com/final-form/react-final-form)
 
-* [Informed](https://github.com/joepuzzo/informed)
-
 * [redux-form](https://github.com/erikras/redux-form)
 
 * [noform](https://github.com/alibaba/noform)
+
+* [Informed](https://github.com/joepuzzo/informed): render props
+
+* [formik](https://github.com/jaredpalmer/formik)
 
 ### 组件库构建的核心
 
