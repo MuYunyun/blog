@@ -3,7 +3,8 @@
 * Command + Shift + H: 全局替换
 * Command + option + F: 当前页面全局替换
 * shift + option + F: 格式化
-* command + shift + V 实时预览 md 文件
+* command + shift + V: 实时预览 md 文件
+* alt + shift + F: 格式化表格
 
 ### 左侧栏
 
