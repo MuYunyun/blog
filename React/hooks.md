@@ -1,9 +1,9 @@
 ### 为什么要使用 Hooks?
 
-* 避免书写类的复杂性
-* 避免高阶组件
+* 相较类拥有更简洁的书写;
+* 函数更加自由地组合避免类中 HOC、render Props 的写法;
 
-### useState/useEffect 的简单实现
+### useState、useEffect 的简单实现
 
 #### useState
 
@@ -105,7 +105,7 @@ Counter().render() // 'useEffect' 1, 'render', 1
 
 ### 多次调用
 
-为了在 `hooks` 中能使用多次 `useState`, `useEffect`, 将各个 `useState`, `useEffect` 的调用存进一个数组中, 上面基础上进行如下改造:
+为了在 `hooks` 中能使用多次 `useState`, `useEffect`, 将各个 `useState`, `useEffect` 的调用存进一个数组中, 在上面基础上进行如下改造:
 
 ```js
 const React = (function() {
@@ -179,15 +179,12 @@ React.render(Counter) // useEffect 1, render 1
 
 ### 使用 Hooks 的注意项
 
-#### Hooks 每次渲染带着一切
+* 在 `hooks` 中每一次 `render` 都有自己的 `state` 和 `props`, 这与 `class` 中存在差异, 见 [Hooks 每次渲染带着一切 state](https://overreacted.io/a-complete-guide-to-useeffect/#each-render-has-its-own-everything)
+  * `class` 中可以用闭包模拟 `hooks` 的表现, [链接](https://codesandbox.io/s/w7vjo07055); `hooks` 中可以使用 `ref` 模拟 `class` 的表现, [链接](https://codesandbox.io/s/rm7z22qnlp);
 
-* 在 `hooks` 中每一次 `render` 都有自己的 `state` 和 `props`, 这和 `class` 中有点差异，见 [each-render-has-its-own-everything](https://overreacted.io/a-complete-guide-to-useeffect/#each-render-has-its-own-everything)
+* 真实地写出 useEffect 的所有依赖
 
-> `class` 中可以用闭包模拟 `hooks` 的表现; `hooks` 中可以使用 `ref` 模拟 `class` 的表现, 或者在第二个参数传入需要鉴别的参数;
-
-#### 诚实地写出 useEffect 的所有依赖
-
-在以下 `demo` 中, `useEffect` 的第二个参数传入 `[]`, 希望 `useEffect` 里的函数只执行一次(类似在 `componentDidMount` 中执行一次), 页面上每隔 1s 递增 1。
+在以下 demo 中, `useEffect` 的第二个参数传入 `[]`, 希望 `useEffect` 里的函数只执行一次(类似在 `componentDidMount` 中执行一次), 页面上每隔 1s 递增 1。
 
 ```js
 function Demo() {
@@ -209,7 +206,7 @@ function Demo() {
 但达到我们预期的效果了么? [demo](https://codesandbox.io/s/n3o2m1wpj4), 可以看到界面上只增加到 1 就停止了。原因就是传入的第二个参数 `[]` 搞的鬼, `[]` 表示没有外界状态对 `effect` 产生干扰。流程大致如下:
 
 1. 第一次调用 `useEffect` 传入的 `count` 为 0, 于是 `setCount(0 + 1)`;
-2. 受 `useEffect` 第二个参数 `[]` 的影响，所以相当于还是 `setCount(0 + 1)`;
+2. 受 `useEffect` 第二个参数 `[]` 的影响，`count` 仍然为 0, 所以相当于还是 `setCount(0 + 1)`;
 
 那如何修正上述问题呢? 方法有两个(方法一为主, 方法二为辅):
 
@@ -220,7 +217,10 @@ function Demo() {
 
 #### useReducer
 
-`useReducer` 将行为(dispatch) 和展现抽离开。
+使用 `useState` 的地方都能用 `useReducer` 进行替代。相较 `useState`, `useReducer` 有如下优点:
+
+* `useReducer` 将 `how`(reducer) 和 `what`(dispatch('action')) 进行抽离。
+* 使用 `reducer` 逻辑状态进行集中化维护。
 
 当更新的一个状态依赖于另一个状态时, 使用 `useReducer` 能避免调用多次 `useEffect`。见 [decoupling-updates-from-actions](https://overreacted.io/a-complete-guide-to-useeffect/#decoupling-updates-from-actions)
 
@@ -258,12 +258,11 @@ function Demo() {
 
 #### todo
 
-- [ ] 完善 Each Render Has Its Own Everything 例子
 - [ ] [How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data/): 计划读, 可能涉及 susepense
 
 ### 相关资源
 
 * [awesome-react-hooks](https://github.com/rehooks/awesome-react-hooks)
 * [usehooks](https://github.com/gragland/usehooks)
-* [a-complete-guide-to-useeffect](https://overreacted.io/a-complete-guide-to-useeffect/): 一定要读 Dan 的这篇文章
+* [a-complete-guide-to-useeffect](https://overreacted.io/a-complete-guide-to-useeffect/): 推荐 Dan 的这篇文章
 * [deep-dive-how-do-react-hooks-really-work](https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/)
