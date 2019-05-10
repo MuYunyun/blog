@@ -18,9 +18,24 @@ module.exports = {
   setupTestFrameworkScriptFile: require.resolve('./test/setup-tests.js')
   // 测试覆盖率收集目录
   collectCoverageFrom: ['src/**/*.js']
+  // 指定测试覆盖率需要需要达到的阈值
+  coverageThreshold: {
+    global: {
+      statements: 80,
+      branches: 80,
+      lines: 80,
+      functions: 80,
+    }
+  }
+  // 增强 watch 模式体验: $ npm install --save-dev jest-watch-typeahead
+  watchPlugins: [
+    'jest-watch-typeahead/filename',
+    'jest-watch-typeahead/testname',
+  ]
 }
 ```
 
 [jest-emotion](https://github.com/emotion-js/emotion): 如果 css 中具体样式发生改变也要重新跑 snapshot
 
-视频阅读到第 15 章。
+### react-test-library 的使用
+
