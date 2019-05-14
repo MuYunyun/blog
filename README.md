@@ -80,6 +80,12 @@
 * [Form](https://github.com/MuYunyun/oneForm/issues/1)
 * [Swipe](https://github.com/MuYunyun/blog/blob/master/React/组件开发/swipe.md)
 * [Tabs](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Tabs.md)
+* [Affix](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Affix.md)
+* [Button](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Button.md)
+* [CheckBox](https://github.com/MuYunyun/blog/blob/master/React/组件开发/CheckBox.md)
+* [Form](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Form.md)
+* [SearchBar](https://github.com/MuYunyun/blog/blob/master/React/组件开发/SearchBar.md)
+* [Modal](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Modal.md)
 
 </details>
 
