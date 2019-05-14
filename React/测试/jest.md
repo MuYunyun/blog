@@ -37,5 +37,38 @@ module.exports = {
 
 [jest-emotion](https://github.com/emotion-js/emotion): 如果 css 中具体样式发生改变也要重新跑 snapshot
 
+### jest-dom
+
+jest-dom 封装了测试 dom 的方法。报错的信息可以更加准确。
+
+```
+import 'jest-dom/extend-expect'
+```
+
+这样子就可以使用如下方法
+
+```
+expect(input).toHavaAttribute('type', 'number'): 是否有某个属性
+expect(..).toHaveTextContent(): 是否有某个内容
+```
+
+### dom-test-library
+
+dom-test-library 的优势。
+
+* 增加了更多的操作, 比如根据 label 找对应的节点;
+* 支持正则匹配;
+
+```
+import { queries } from 'dom-testing-library'
+```
+
 ### react-test-library 的使用
 
+react-test-library 在 dom-test-library 的基础上查找 React 组件。
+
+```
+import 'react-testing-library/clieanup-after-each' // 自动完成每次的回收
+```
+
+读到第 6 章。

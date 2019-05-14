@@ -1,6 +1,6 @@
 ### BFC 含义
 
-块级作用域上下文
+块级格式化上下文(Block Formatting Context)
 
 ### BFC 特性
 
