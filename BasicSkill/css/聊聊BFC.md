@@ -30,7 +30,7 @@
 
 可以看到此时两个 div 之间的间距并不是 200px, 而是 100px
 
-如果想要消除 BFC 的重叠特性可以加上具有 `overflow: hidden` 样式的父节点来消除 BFC
+此时可以在父节点加上 `overflow: hidden` 触发 BFC, 从而避免重叠。
 
 ```html
 <style>
@@ -168,15 +168,8 @@
 ### 如何触发 BFC
 
 ```
-* overflow: hidden 先用好最常用的这个
-* position: absolute
-* float: 除了 none ?
-* display: flex
+* overflow: 不为 visible;
+* position: 不为 static 以及 relative;
+* float: 不为 none;
+* display: 为 inline-box、table-ceil、flex;
 ```
-
-<!-- ```
-1.float 不为 none
-2.position 不为 static 以及 relative
-3.overflow 不为 visible
-4.display 为 inline-box、table-ceil、flex
-``` -->
