@@ -119,3 +119,44 @@ tabMove = (distance: number) => {
 
 > 多使用小黄鸭笔记法, 就能理出眉目, 理逻辑的时候可能觉得浪费时间, 但是这往往是解决问题最高效的方法。
 
+### 关于设计模式
+
+在开发组件 Tabs\Checkbox\Radio... 有以下两种模式可以选择
+
+* 配置模式，标签的标题和内容放在 options/children
+
+```js
+<Tabs options={[{
+  content: [],
+  disabled: true,
+}]} />
+```
+
+* children 模式：
+
+```js
+<Tab>
+  <Tab.item>标签一</Tab.item>
+  <Tab.item>标签二</Tab.item>
+</Tab>
+```
+
+相对配置模式, children 模式更加贴近 React 的组件化编程。但是使用者可能对以下写法不生效会产生困惑。因为大多数组件库只会支持 Tab.Item 在 Tab 后面的情况。
+
+```js
+renderChildren = () => {
+  return <>
+    <Tab.item>标签一</Tab.item>
+    <Tab.item>标签二</Tab.item>
+  </>
+}
+
+render() {
+  return (
+    <Tab>
+      {this.renderChildren}
+    </Tab>
+  )
+}
+```
+

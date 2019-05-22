@@ -29,7 +29,7 @@
 * `Low`: (10s timeout)可以延迟执行，但最终需要执行的任务;
 * `Idle`: (no timeout)执行与否不影响应用的任务;
 
-在了解了 `expiration time` 之后, 对 Schedule 的流程进行如下概述:
+在了解了 `expiration time` 之后, 对 `Schedule` 的流程进行如下概述:
 
 1. 所有回调根据 `expiration time` 排好序放入一个队列中;
 2. `Schedule` 自己注册一个回调 callback 调用该队列，并下一个帧中执行它;
