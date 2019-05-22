@@ -1,6 +1,6 @@
 该系列随笔是对前端知识架构的梳理。内容涉及前端工程化、JavaScript 知识体系、CSS 知识体系、数据结构、设计模式等。最近产出的文章以 `React 源码解析、组件设计与开发`为主。:notebook_with_decorative_cover:
 
-> 欢迎[提 issue](https://github.com/MuYunyun/blog/issues/new), 欢迎交流。[my twitter](https://twitter.com/YunyunMu)
+> 欢迎[提 issue](https://github.com/MuYunyun/blog/issues/new), 欢迎交流。[Twitter](https://twitter.com/YunyunMu)
 
 <details>
   <summary>基础篇</summary>
@@ -85,7 +85,7 @@
 * [CheckBox](https://github.com/MuYunyun/blog/blob/master/React/组件开发/CheckBox.md)
 * [Form](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Form.md)
 * [SearchBar](https://github.com/MuYunyun/blog/blob/master/React/组件开发/SearchBar.md)
-* [Modal](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Modal.md)
+* [Modal](https://github.com/MuYunyun/blog/blob/master/React/组件开发/modal.md)
 
 </details>
 
