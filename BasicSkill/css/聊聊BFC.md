@@ -4,9 +4,9 @@
 
 ### BFC 特性
 
-* 同一个 BFC 内元素外边距会发生重合
-* BFC 内可以有浮动元素（清除浮动）
-* BFC 内可以分离浮动元素
+* 同一个 BFC 内元素外边距会发生重合(见案例一)
+* BFC 内可以有浮动元素(见案例二)
+* BFC 内可以分离浮动元素(见案例三)
 
 #### 案例一
 
@@ -30,7 +30,7 @@
 
 可以看到此时两个 div 之间的间距并不是 200px, 而是 100px
 
-此时可以在父节点加上 `overflow: hidden` 触发 BFC, 从而避免重叠。
+此时可以在父节点加上 `overflow: hidden` 使其变为 BFC 元素, 从而避免重叠。
 
 ```html
 <style>
@@ -81,11 +81,11 @@
 </body>
 ```
 
-加上 float: left 后, 内容脱离了文档流, 所以只看到一条 1px 的线条, 如下:
+子节点加上 float: left 后, 其脱离了文档流, 所以只看到一条 1px 的线条, 如下:
 
 ![](http://with.muyunyun.cn/6b657c7f8d985992c97269fb61bb8678.jpg-300)
 
-此时加上 overflow: hidden 可以触发 BFC 从而消除浮动, 代码如下:
+此时在父节点中加上 overflow: hidden 使其变为 BFC 元素从而消除浮动, 代码如下:
 
 ```html
 <style>
@@ -134,11 +134,11 @@
 </body>
 ```
 
-同样使用 float, 使元素脱离文档流, 从而两个 div 标签发生了重叠,
+相邻节点中的一个节点使用 float: left, 其脱离文档流, 从而两个 div 标签发生了重叠,
 
 ![](http://with.muyunyun.cn/c7ebcfce5a7c58142fc9004a7d545852.jpg-300)
 
-使用 overflow: hidden 触发 BFC, 使 BFC 元素和浮动元素分离:
+此时在普通流节点上使用 overflow: hidden 使其变为 BFC 元素从而使 BFC 元素和浮动元素分离:
 
 ```html
 <style>

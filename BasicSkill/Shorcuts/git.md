@@ -92,3 +92,7 @@ git lg -p
 ```
 git remote add lanyincao git@github.com:snakeUni/snake-design.git
 ```
+
+### git reflog
+
+git reflog 可以查看所有分支的所有操作记录
