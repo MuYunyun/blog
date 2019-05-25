@@ -1,4 +1,4 @@
-该系列随笔是对前端知识架构的梳理。内容涉及前端工程化、JavaScript 知识体系、CSS 知识体系、数据结构、设计模式等。最近产出的文章以 `React 源码解析、组件设计与开发`为主。:notebook_with_decorative_cover:
+该系列随笔是对前端知识架构的梳理。内容涉及前端工程化、JavaScript 知识体系、CSS 知识体系、数据结构、设计模式等。最近产出的文章以 `React 源码解析、组件设计`为主。:notebook_with_decorative_cover:
 
 > 欢迎[提 issue](https://github.com/MuYunyun/blog/issues/new), 欢迎交流。[Twitter](https://twitter.com/YunyunMu)
 
@@ -109,6 +109,7 @@
 * [React Suspense 解决了什么](https://github.com/MuYunyun/blog/blob/master/React/suspense解决了什么.md)
 * [你不知道的 requestIdleCallback](https://github.com/MuYunyun/blog/blob/master/React/你不知道的requestIdleCallback.md)
 * [React Hooks 深入系列](https://github.com/MuYunyun/blog/blob/master/React/React_Hooks深入系列.md)
+* [流畅性](https://github.com/MuYunyun/blog/blob/master/React/流畅性.md)
 
 - [ ] [React Schedule 源码解析](https://github.com/MuYunyun/blog/blob/master/React/schedule源码解析.md)
 - [ ] [深入 Fiber 架构](https://github.com/MuYunyun/blog/blob/master/React/Fiber2.md)
