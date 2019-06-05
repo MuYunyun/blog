@@ -1,8 +1,10 @@
+在流畅性的章节中提到将主线程的一个长任务进行`时间分片`可以拆分为多个帧任务, 但如果同时存在多个任务则必然会存在一种竞争机制, 于是需要一种 `Schedule` 机制, 在时间分片中加入`动态优先级`的概念来真正避免卡顿现象。
+
 ### Schedule
 
 调度算法思想:
 
-* 任务执行时间得足够短, 能在一帧时间内执行完;
+* 任务执行时间得足够短, 能在一帧时间内执行完(时间分片);
 * 不同任务存在不同的优先级;
 
 ### 任务的种类
@@ -15,13 +17,13 @@
 
 > 不能拆分的任务(执行时间较长的 chunk)怎么办？
 
-目前借助 `Worker`
+借助 `web Worker`
 
 ### 任务的排序机制
 
 任务的排序机制是由 `expiration time` 这个字段决定的，其值为 `callback 的注册时间`与`当前任务优先级的值`之和, 表示过期时间(值越小, 越早执行)。
 
-优先级的值有以下几类:
+优先级的值分为以下几种类别:
 
 * `Immediate`: (0ms timeout)需要实时交互的任务;
 * `User Block`: (250ms timeout)对页面交互有副作用的任务;
@@ -37,14 +39,18 @@
 
 ### Schedule 源码分析
 
-观察以下 4 个前置函数的实现
+Schedule 中 4 个比较重要的方法的作用罗列如下:
 
-* requestHostCallback,
-* cancelHostCallback,
-* shouldYieldToHost,
-* getCurrentTime,
+* requestHostCallback: 提供调用下一帧的能力
+* cancelHostCallback: 提供取消当前任务的能力
+* shouldYieldToHost: 提供暂停当前任务的能力
+* getCurrentTime: 根据该函数获取的值从而判断具体的优先级
 
 ### 相关文章
 
 * [scheduling-on-off-main-thread](https://developer.chrome.com/devsummit/schedule/scheduling-on-off-main-thread): 讲解了如何在帧里拆分任务以及使用 worker 的一些限制
 * [Scheduling in React](https://philippspiess.com/scheduling-in-react/#fn-1): 任务的排序机制
+* [main-thread-scheduling](https://github.com/WICG/main-thread-scheduling): 浏览器上 schedule API 设计提案, 核心是从最高优先级的任务中挑选时间过去最久的任务。
+
+
+- [ ] [剖析 React 源码：调度原理](https://juejin.im/post/5cef5392e51d4510727c801e): 可以阅读

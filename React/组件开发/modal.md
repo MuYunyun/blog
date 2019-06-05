@@ -116,6 +116,10 @@ const unlock = (targetElement: any) => {
 export { lock, unlock }
 ```
 
+使用了上述方法后效果如下:
+
+![](http://with.muyunyun.cn/0a5886e43e522b183415c62d29890ebc.gif)
+
 > 参考 [滑动穿透(锁 body)终极探索](https://juejin.im/post/5ca4816e5188250b251e34e9)
 
 ### 微信 ios 下 input 唤醒键盘视图错误兼容问题
