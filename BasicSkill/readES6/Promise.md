@@ -223,10 +223,10 @@ console.log('D')
 
 正常情况下, 此 demo 应该输出 `B D C A`, 这里涉及到宏任务和微任务的知识点, 一个宏任务里可以有多个微任务。
 
-* 宏任务(macroTask): setTimeout
-* 微任务(microTask): promise, async/await
+* 宏任务(macroTask): setTimeout、requestAnimationFrame
+* 微任务(microTask): promise、setImmediate、async/await
 
-> 由于此项目中的 promise 是用 setTimeout 实现的, 所以在上述 demo 中, 此项目输出的结果是 `B D A C`, 解决方法: 可以使用 `setImmediate` 替代 `setTimeout`, 可以参考 [setImmediate.js](https://github.com/YuzuJS/setImmediate)。它的本质用了一些 hack 的手段, 比如借用了 `postMessage` 这个来操作事件循环。
+> 由于此项目中的 promise 是用 setTimeout 实现的, 所以在上述 demo 中, 此项目输出的结果是 `B D A C`, 解决方法: 可以参考 [setImmediate.js](https://github.com/YuzuJS/setImmediate)。它的本质用了一些 hack 的手段, 比如借用了 `postMessage` 这个来操作事件循环。
 
 ### 问题: promise.all 如何做到让多个 setTimeout 并发运行?
 

@@ -98,3 +98,4 @@ function commitRoot(root, finishedWork) {
 
 * [Inside Fiber: in-depth overview of the new reconciliation algorithm in React](https://medium.com/react-in-depth/inside-fiber-in-depth-overview-of-the-new-reconciliation-algorithm-in-react-e1c04700ef6e)
 * [react-fiber-architecture](https://github.com/acdlite/react-fiber-architecture)
+

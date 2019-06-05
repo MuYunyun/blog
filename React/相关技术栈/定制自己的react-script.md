@@ -16,7 +16,7 @@
 * `react-scripts/template`: 修改模板文件;
 
 ```
-npx create-react-app my-app --scripts-version react-siren-scripts
+npx create-react-app my-app w--scripts-version react-siren-scripts
 ```
 
 目前其集成了 `scss`
