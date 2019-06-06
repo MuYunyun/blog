@@ -89,8 +89,8 @@ DOM3: 在 1 的基础上加了鼠标键盘事件
 
 ```js
 var event = new Event('custom')
-dom.addEventListeners('custom', () => {})
-dom.dispatch(event)
+dom.addEventListener('custom', () => {})
+dom.dispatchEvent(event)
 ```
 
 ### 类型转换
