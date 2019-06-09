@@ -17,7 +17,7 @@
 </div>
 ```
 
-伪代码逻辑: 在 JavaScript 中通过 target 与 currentTarget 区分
+伪代码逻辑: 在 JavaScript 中通过 `target` 与 `currentTarget` 区分
 
 ```js
 if (target === currentTarget) { // 点击蒙层

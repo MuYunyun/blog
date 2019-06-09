@@ -148,3 +148,4 @@ goWalk(new FiberNode(a1))
 ### 相关链接
 
 * [The how and why on React’s usage of linked list in Fiber to walk the component’s tree](https://medium.com/react-in-depth/the-how-and-why-on-reacts-usage-of-linked-list-in-fiber-67f1014d0eb7)
+* [Fiber Principles: Contributing To Fiber](https://github.com/facebook/react/issues/7942): Fiber 设计思想相关 issue, 推荐。
