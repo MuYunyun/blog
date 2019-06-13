@@ -54,3 +54,4 @@ Schedule 中 4 个比较重要的方法的作用罗列如下:
 
 
 - [ ] [剖析 React 源码：调度原理](https://juejin.im/post/5cef5392e51d4510727c801e): 可以阅读
+- [ ] [Scheduling is the Future](https://www.youtube.com/watch?reload=9&v=Iyrf52cwxQI&feature=youtu.be&utm_source=tinyreact&utm_medium=email): @ReactEurope 2019
