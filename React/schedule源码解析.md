@@ -1,3 +1,9 @@
+### Schedule
+
+### Perceived Performance
+
+Perceived performance 可感知到的性能
+
 在流畅性的章节中提到将主线程的一个长任务进行`时间分片`可以拆分为多个帧任务, 但如果同时存在多个任务则必然会存在一种竞争机制, 于是需要一种 `Schedule` 机制, 在时间分片中加入`动态优先级`的概念来真正避免卡顿现象。
 
 ### Schedule
@@ -25,11 +31,11 @@
 
 优先级的值分为以下几种类别:
 
-* `Immediate`: (0ms timeout)需要实时交互的任务;
-* `User Block`: (250ms timeout)对页面交互有副作用的任务;
-* `Normal`: (5s timeout)不影响交互的任务;
-* `Low`: (10s timeout)可以延迟执行，但最终需要执行的任务;
-* `Idle`: (no timeout)执行与否不影响应用的任务;
+* `Immediate`: (0ms timeout)需要实时交互的任务;           (Do it now)
+* `User Block`: (250ms timeout)对页面交互有副作用的任务;   (Do it now)
+* `Normal`: (5s timeout)不影响交互的任务;                 (Do it soon)
+* `Low`: (10s timeout)可以延迟执行，但最终需要执行的任务;   (Do it eventually)
+* `Idle`: (no timeout)执行与否不影响应用的任务;            (Do it if you can)
 
 在了解了 `expiration time` 之后, 对 `Schedule` 的流程进行如下概述:
 
@@ -46,12 +52,46 @@ Schedule 中 4 个比较重要的方法的作用罗列如下:
 * shouldYieldToHost: 提供暂停当前任务的能力
 * getCurrentTime: 根据该函数获取的值从而判断具体的优先级
 
+### JND
+
+JND(Just Noticeable Difference), [JND](https://github.com/MuYunyun/react/blob/0f1e97e7cb67b7e403af5f78f38294dfd33e081e/packages/react-reconciler/src/ReactFiberWorkLoop.js#L2144-L2167)
+
+```js
+// Computes the next Just Noticeable Difference (JND) boundary.
+// The theory is that a person can't tell the difference between small differences in time.
+// Therefore, if we wait a bit longer than necessary that won't translate to a noticeable
+// difference in the experience. However, waiting for longer might mean that we can avoid
+// showing an intermediate loading state. The longer we have already waited, the harder it
+// is to tell small differences in time. Therefore, the longer we've already waited,
+// the longer we can wait additionally. At some point we have to give up though.
+// We pick a train model where the next boundary commits at a consistent schedule.
+// These particular numbers are vague estimates. We expect to adjust them based on research.
+function jnd(timeElapsed: number) {
+  return timeElapsed < 120
+    ? 120
+    : timeElapsed < 480
+      ? 480
+      : timeElapsed < 1080
+        ? 1080
+        : timeElapsed < 1920
+          ? 1920
+          : timeElapsed < 3000
+            ? 3000
+            : timeElapsed < 4320
+              ? 4320
+              : ceil(timeElapsed / 1960) * 1960;
+}
+```
+
+### Connection between Time Slicing and Suspense
+
+`Time Slicing` is the premise of `Suspense`. Because in each time slicing it can compare the task priority, and then determine whether to show the loading.
+
+![](http://with.muyunyun.cn/6999fa9b5759613e1dde3b2dfec7076d.jpg)
+
 ### 相关文章
 
 * [scheduling-on-off-main-thread](https://developer.chrome.com/devsummit/schedule/scheduling-on-off-main-thread): 讲解了如何在帧里拆分任务以及使用 worker 的一些限制
 * [Scheduling in React](https://philippspiess.com/scheduling-in-react/#fn-1): 任务的排序机制
-* [main-thread-scheduling](https://github.com/WICG/main-thread-scheduling): 浏览器上 schedule API 设计提案, 核心是从最高优先级的任务中挑选时间过去最久的任务。
-
-
-- [ ] [剖析 React 源码：调度原理](https://juejin.im/post/5cef5392e51d4510727c801e): 可以阅读
-- [ ] [Scheduling is the Future](https://www.youtube.com/watch?reload=9&v=Iyrf52cwxQI&feature=youtu.be&utm_source=tinyreact&utm_medium=email): @ReactEurope 2019
+* [main-thread-scheduling](https://github.com/WICG/main-thread-scheduling): schedule API in future. 核心是从最高优先级的任务中挑选时间过去最久的任务。
+* [Scheduling is the Future](https://www.youtube.com/watch?reload=9&v=Iyrf52cwxQI&feature=youtu.be&utm_source=tinyreact&utm_medium=email): @ReactEurope 2019 speaker: @aweary

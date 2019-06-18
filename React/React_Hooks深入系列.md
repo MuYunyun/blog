@@ -1,7 +1,5 @@
 ### React Hooks 深入系列
 
-本文基于近段时间对 hooks 碎片化的理解作一次简单梳理, [个人博客](https://github.com/MuYunyun/blog)。同时欢迎关注基于 hooks 构建的 UI 组件库 —— [snake-design](https://github.com/ming-cult/snake-design)。
-
 在 class 已经融入 React 生态的节点下, React 推出的 Hooks 具有如下优势:
 
 * 更简洁的书写;
