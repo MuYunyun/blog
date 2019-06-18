@@ -19,6 +19,7 @@
 - [x] [babel 执行机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/babel执行机制.md)
 - [x] [npm 与 yarn](https://github.com/MuYunyun/blog/blob/master/BasicSkill/番外篇/npm和yarn的区别.md)
 - [x] [移动端场景知识](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/移动端场景知识.md)
+- [ ] [重构笔记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/效率篇/重构改善既有代码的设计.md)
 - [ ] 源码映射
 
 > [更多章节](https://github.com/MuYunyun/blog/tree/master/BasicSkill/%E5%9F%BA%E7%A1%80%E7%AF%87)
@@ -87,6 +88,7 @@
 * [Form](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Form.md)
 * [SearchBar](https://github.com/MuYunyun/blog/blob/master/React/组件开发/SearchBar.md)
 * [Modal](https://github.com/MuYunyun/blog/blob/master/React/组件开发/modal.md)
+* [主题色替换方案](https://github.com/MuYunyun/blog/blob/master/React/组件开发/主题色替换方案.md)
 
 </details>
 
@@ -160,6 +162,15 @@
 * [观察者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/观察者模式.md)
 
 > [issue](https://github.com/MuYunyun/blog/issues/20)
+
+</details>
+
+<br/>
+
+<details>
+  <summary>TypeScript</summary>
+
+- [x] [基础篇](https://github.com/MuYunyun/blog/blob/master/BasicSkill/typescript/TypeScript基础篇.md)
 
 </details>
 

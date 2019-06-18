@@ -88,7 +88,7 @@
 ### 写法
 
 ```
-yarn add --dev xx
+yarn add xx -D
 ```
 
 -------------- 分割线 ---------------
@@ -96,3 +96,9 @@ yarn add --dev xx
 ### yarn 使用心得
 
 在本地开发一个独立的包, 可以通过 `yarn link` 进行链接开发。
+
+### 区分几个 package.json 字段
+
+* dependencies: 业务依赖
+* devDependencies: 开发依赖
+* pureDependencies: 在 dependencies 的基础上加上 warning
