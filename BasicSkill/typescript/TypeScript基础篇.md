@@ -75,6 +75,10 @@ function alertName(): void {
 }
 ```
 
+### unknow 类型
+
+> [TypeScript 3.0: The unknown Type](https://mariusschulz.com/blog/typescript-3-0-the-unknown-type), 比 any 更加安全的类型
+
 ## 函数
 
 ### 为函数定义类型
