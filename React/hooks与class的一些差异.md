@@ -1,6 +1,6 @@
 ### why move to hooks?
 
-mixin、HOC、Render Props 有什么缺陷?
+`mixin`、`HOC`、`Render Props` 有什么缺陷?
 
 * 数据源不明。导致不易快速定位 bug。(mixin、hoc、render props)
 * 命名重复性问题。在一个组件中同时使用多个 hoc, 不排除这些 hoc 里的方法存在命名冲突的问题。(mixin、hoc)
@@ -24,7 +24,6 @@ X.current // can read or write
 this.X // can read or write
 
 > [twitter](https://twitter.com/dan_abramov/status/1125223181701263360)
-
 
 ### Hooks vs Class in setState
 

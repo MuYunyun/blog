@@ -33,4 +33,6 @@ function Example({ someProp }, hooks) {
 
 使用传递的劣势是在有时会出现冗余的传递。
 
-* [RFCS](https://github.com/reactjs/rfcs/pull/68#issuecomment-439314884): A general concern is what the debugging story is going to be like. There are a few angles to that.
+### 相关资料
+
+* [RFCS](https://github.com/reactjs/rfcs/pull/68#issuecomment-439314884): hooks 设计的一些理念

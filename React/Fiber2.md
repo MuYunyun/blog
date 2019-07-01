@@ -94,6 +94,12 @@ function commitRoot(root, finishedWork) {
 
 * 提问: 为什么称呼从 `diff` 转为 `reconciliation`
 
+### Fiber 的三个阶段
+
+* 开始阶段: [ReactFiberBeginWork](https://github.com/MuYunyun/react/blob/master/packages/react-reconciler/src/ReactFiberBeginWork.js)
+* 完成阶段: [ReactFiberCompleteWork](https://github.com/MuYunyun/react/blob/master/packages/react-reconciler/src/ReactFiberCompleteWork.js)
+* 提交阶段: [ReactFiberCommitWork](https://github.com/MuYunyun/react/blob/master/packages/react-reconciler/src/ReactFiberCommitWork.js)
+
 ### 资料推荐
 
 * [Inside Fiber: in-depth overview of the new reconciliation algorithm in React](https://medium.com/react-in-depth/inside-fiber-in-depth-overview-of-the-new-reconciliation-algorithm-in-react-e1c04700ef6e)
