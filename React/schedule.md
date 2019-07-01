@@ -1,5 +1,7 @@
 ### Schedule
 
+解决  `目标对象更快完成渲染`与`及时响应优先级更高任务`之间的矛盾。
+
 ### Perceived Performance
 
 Perceived performance 可感知到的性能
@@ -31,11 +33,11 @@ Perceived performance 可感知到的性能
 
 优先级的值分为以下几种类别:
 
-* `Immediate`: (0ms timeout)需要实时交互的任务;           (Do it now)
-* `User Block`: (250ms timeout)对页面交互有副作用的任务;   (Do it now)
-* `Normal`: (5s timeout)不影响交互的任务;                 (Do it soon)
-* `Low`: (10s timeout)可以延迟执行，但最终需要执行的任务;   (Do it eventually)
-* `Idle`: (no timeout)执行与否不影响应用的任务;            (Do it if you can)
+* `Immediate`: (0ms timeout)需要实时交互的任务;                       (Do it now)
+* `User Block`: (250ms timeout)对页面交互有副作用的任务;      (Do it now)
+* `Normal`: (5s timeout)不影响交互的任务;                                   (Do it soon)
+* `Low`: (10s timeout)可以延迟执行，但最终需要执行的任务;  (Do it eventually)
+* `Idle`: (no timeout)执行与否不影响应用的任务;                         (Do it if you can)
 
 在了解了 `expiration time` 之后, 对 `Schedule` 的流程进行如下概述:
 
@@ -88,6 +90,13 @@ function jnd(timeElapsed: number) {
 `Time Slicing` is the premise of `Suspense`. Because in each time slicing it can compare the task priority, and then determine whether to show the loading.
 
 ![](http://with.muyunyun.cn/6999fa9b5759613e1dde3b2dfec7076d.jpg)
+
+### is-input-pending
+
+* 相比 `requestIdleCallback`, 其有更简洁的 api;
+* 另外其不会受到优先级的限制;
+
+> [is-input-pending](https://github.com/WICG/is-input-pending)
 
 ### 相关文章
 

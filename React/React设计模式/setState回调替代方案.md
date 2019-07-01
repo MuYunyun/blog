@@ -1,6 +1,6 @@
 ### setState 回调替代方案
 
-在脚手架中发现 setState 禁用了回调的使用。
+在脚手架中发现 setState 禁用了回调的使用。因为目前发现使用 setState 第二个参数的场景是想用 setState 更新状态后的值。
 
 ```js
 class App extenes React.Component {
@@ -27,7 +27,7 @@ class App extenes React.Component {
 
 ```js
 class App extenes React.Component {
-  countName = () => {
+  countName = (name) => {
     if (name === "xxx") {
       this.setState({ // 2
         count: this.state.count + 1

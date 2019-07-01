@@ -25,3 +25,5 @@ chrome.storage.local.set({'github-repo-notes': obj}, () => {
 
 * [插件发版地址](https://chrome.google.com/webstore/developer/dashboard/)
 * [GitHub Notes](https://chrome.google.com/webstore/detail/github-notes/ololfachmeilbnmipbbglhbdnadcjlak?authuser=0)
+
+> 开发者账号 backup: liweirancn@gmail.com
