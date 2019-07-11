@@ -101,4 +101,4 @@ yarn add xx -D
 
 * dependencies: 业务依赖
 * devDependencies: 开发依赖
-* pureDependencies: 在 dependencies 的基础上加上 warning
+* pureDependencies: 在 dependencies 的基础上加上 warning, @桃夭表示使用 pureDependencies 业务只会打出一份包。而使用 dependencies 业务中如果有不同版本的依赖, 会打出多份包。
