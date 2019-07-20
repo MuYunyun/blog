@@ -32,7 +32,7 @@ function unImportWork(deadline) {
 
 > requestIdleCallback is called only 20 times per second - Chrome on my 6x2 core Linux machine, it's not really useful for UI work。—— from [Releasing Suspense](https://github.com/facebook/react/issues/13206#issuecomment-418923831)
 
-也就是说 `requestIdleCallback` 的 FPS 只有 `20`, 这远远低于页面流畅度的要求！(一般 FPS 为 60 时对用户来说是感觉流程的, 即一帧时间为 16.7 ms), 这也是 React 需要自己实现 `requestIdleCallback` 的原因。
+~~也就是说 `requestIdleCallback` 的 FPS 只有 `20`, 这远远低于页面流畅度的要求！(一般 FPS 为 60 时对用户来说是感觉流程的, 即一帧时间为 16.7 ms), 这也是 React 需要自己实现 `requestIdleCallback` 的原因。~~
 
 ### 源码解析之 requestIdleCallback
 

@@ -29,32 +29,6 @@
 <br/>
 
 <details>
-  <summary>编程范式</summary>
-
-- [x] [函数式编程入门](https://github.com/MuYunyun/blog/blob/master/BasicSkill/编程范式/函数式编程入门.md)
-
-</details>
-
-<br/>
-
-<details>
-  <summary>ES6 札记</summary>
-
-* [Decorator](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/装饰器.md)
-* [Promise](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise.md)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
-* [Generator](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator.md)
-* [Async](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async.md)
-* [CommonJS 模块与 ES6 模块间的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
-* [ES6 继承与 ES5 继承的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
-* [扩展运算符](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/扩展运算符.md)
-* [箭头函数](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/箭头函数.md)
-* [Reflect](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Reflect.md)
-
-</details>
-
-<br/>
-
-<details>
   <summary>进击的 React</summary>
 
 <br/>
@@ -110,14 +84,42 @@
 </details>
 
 * [React16.x 特性剪辑](https://github.com/MuYunyun/blog/blob/master/React/React16.x特性剪辑.md)
-* [Fiber 数据结构](https://github.com/MuYunyun/blog/blob/master/React/Fiber.md)
+* [Fiber 数据结构](https://github.com/MuYunyun/blog/blob/master/React/Fiber数据结构.md)
+* [深入 Fiber 架构](https://github.com/MuYunyun/blog/blob/master/React/深入Fiber架构.md)
 * [React Hooks 深入系列](https://github.com/MuYunyun/blog/blob/master/React/React_Hooks深入系列.md)
 * [流畅性](https://github.com/MuYunyun/blog/blob/master/React/流畅性.md)
+* [Schedule](https://github.com/MuYunyun/blog/blob/master/React/schedule.md)
 * [你不知道的 requestIdleCallback](https://github.com/MuYunyun/blog/blob/master/React/你不知道的requestIdleCallback.md)
 * [React Suspense 解决了什么](https://github.com/MuYunyun/blog/blob/master/React/suspense解决了什么.md)
 
-- [ ] [Schedule](https://github.com/MuYunyun/blog/blob/master/React/schedule.md)
-- [ ] [深入 Fiber 架构](https://github.com/MuYunyun/blog/blob/master/React/Fiber2.md)
+- [ ] 二生万物
+- [ ] Hooks 设计模式
+
+</details>
+
+<br/>
+
+<details>
+  <summary>编程范式</summary>
+
+- [x] [函数式编程入门](https://github.com/MuYunyun/blog/blob/master/BasicSkill/编程范式/函数式编程入门.md)
+
+</details>
+
+<br/>
+
+<details>
+  <summary>ES6 札记</summary>
+
+* [Decorator](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/装饰器.md)
+* [Promise](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise.md)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
+* [Generator](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator.md)
+* [Async](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Async.md)
+* [CommonJS 模块与 ES6 模块间的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/模块.md)
+* [ES6 继承与 ES5 继承的差异](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/继承.md)
+* [扩展运算符](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/扩展运算符.md)
+* [箭头函数](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/箭头函数.md)
+* [Reflect](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Reflect.md)
 
 </details>
 
@@ -179,7 +181,7 @@
 <br/>
 
 <details>
-  <summary>node.js</summary>
+  <summary>Node.js</summary>
 
 * [简版 express.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node/%E7%AE%80%E7%89%88%20express.js%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
 * [简版 koa.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node/%E7%AE%80%E7%89%88%20koa%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
