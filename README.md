@@ -92,8 +92,9 @@
 * [你不知道的 requestIdleCallback](https://github.com/MuYunyun/blog/blob/master/React/你不知道的requestIdleCallback.md)
 * [React Suspense 解决了什么](https://github.com/MuYunyun/blog/blob/master/React/suspense解决了什么.md)
 
-- [ ] 二生万物
-- [ ] Hooks 设计模式
+- [ ] [二生万物,hooks](https://github.com/MuYunyun/blog/blob/master/React/二生万物,hooks.md)
+- [ ] [Hooks 设计模式](https://github.com/MuYunyun/blog/blob/master/React/Hooks设计模式.md)
+- [ ] [React 暗器百解](https://github.com/MuYunyun/blog/blob/master/React/suspense解决了什么.md)
 
 </details>
 
