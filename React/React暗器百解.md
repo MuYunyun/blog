@@ -51,7 +51,9 @@
 
 ```js
 class Picker extends Component {
-  state = { data: this.props.data }
+  state = {
+    data: this.props.data
+  }
 
   getDerivedStateFromProps(props, state) {
     if (JSON.stringify(props.data) !== JSON.stringify(state.data)) {
@@ -69,4 +71,31 @@ class Picker extends Component {
 
 ![](http://with.muyunyun.cn/1d13387bf1d927c36cf3d1a0feaf3134.jpg)
 
-此时的 state 变化(让 Picker 父组件重新 render)也会造成 `getDerivedStateFromProps` 的调用, 导致 JSON.stringify(props.data)、JSON.stringify(state.data) 间一直会不相等, 所以返回的一直是 props。
+此时的 state 变化使 Picker 父组件重新 render 后会造成 `getDerivedStateFromProps` 的调用, 导致 JSON.stringify(props.data)、JSON.stringify(state.data) 间一直会不相等, 所以返回的一直是 props。
+
+#### 反模式二: 当 props 改变的时候执行重置 state
+
+```js
+class Picker extends Component {
+  state = {
+    data: this.props.data
+  }
+
+  getDerivedStateFromProps(props, state) {
+    if (JSON.stringify(props.data) !== JSON.stringify(this.props.data)) {
+      return {
+        data: props.data
+      }
+    }
+    return null
+  }
+  ...
+}
+```
+
+这样子比第一种情况好, 大多数情况是没问题的。但是有时候会出现 `JSON.stringify(props.data)`、`JSON.stringify(this.props.data)` 相等的情况, 这种情况下这样使用就会失效了。
+
+#### 解法
+
+* 完全受控组件
+* 完全非受控组件 + key

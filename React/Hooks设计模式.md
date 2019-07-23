@@ -57,6 +57,7 @@ X.current // can read or write
 this.X // can read or write
 
 > [twitter](https://twitter.com/dan_abramov/status/1125223181701263360)
+> [Is there something like instance variables](https://reactjs.org/docs/hooks-faq.html#is-there-something-like-instance-variables)
 
 ### Hooks vs Class in setState
 
@@ -121,7 +122,54 @@ function Counter({initialState}) {
 
 ### Hooks FAQ
 
-- [ ] [Hooks FAQ](https://reactjs.org/docs/hooks-faq.html)
+#### 如何获取之前的 props 以及 state
+
+React 官方很大可能在未来会提供一个 `usePrevious` 的 hooks 来获取之前的 props 以及 state。
+
+usePrevious 的核心思想是用 ref 来存储先前的值。
+
+```js
+function usePrevous(value) {
+  const ref = useRef()
+  useEffect(() => {
+    ref.current = value
+  })
+  return ref.current
+}
+```
+
+#### hooks 中 getDerivedStateFromProps 的替代方案
+
+在 [React 暗器百解](./React暗器百解.md) 中提到了 getDerivedStateFromProps 是一种反模式, 但是极少数情况(比如 <Transition /> 组件还是用得到该钩子), 在 Hooks 中如何达到 getDerivedStateFromProps 的效果呢?
+
+```js
+function ScrollView({row}) {
+  const [isScrollingDown, setISScrollingDown] = setState(false)
+  const [prevRow, setPrevRow] = setState(null)
+
+  // 核心是创建一个 `prevRow` state 与父组件传进来的 `row` 进行比较
+  if (row !== prevRow) {
+    setISScrollingDown(prevRow !== null && row > prevRow)
+    setPrevRow(row)
+  }
+
+  return `Scrolling down ${isScrollingDown}`
+}
+```
+
+#### hooks 中 forceUpdate 的替代方案
+
+可以使用 `useReducer` 来 hack `forceUpdate`, 但是尽量避免 forceUpdate 的使用。
+
+```js
+const [ignored, forceUpdate] = useReduce(x => x + 1, 0)
+
+function handleClick() {
+  forceUpdate()
+}
+```
+
+- [ ] [Hooks FAQ](https://reactjs.org/docs/hooks-faq.html): 阅读到 Performance Optimizations
 
 ### 相关资料
 
