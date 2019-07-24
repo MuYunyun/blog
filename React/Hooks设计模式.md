@@ -169,7 +169,96 @@ function handleClick() {
 }
 ```
 
-- [ ] [Hooks FAQ](https://reactjs.org/docs/hooks-faq.html): 阅读到 Performance Optimizations
+#### 依赖列表中移除函数是否是安全的?
+
+通常来说, 结论是不安全的。可以观察 demo,
+
+```js
+const { useState, useEffect } = React
+
+function Example({ someProp }) {
+  function doSomething() {
+    console.log(someProp) // 这里只输出 1, 点击按钮的 2 并没有输出。
+  }
+
+  useEffect(
+    () => {
+      doSomething()
+    },
+    [] // 🔴 This is not safe (it calls `doSomething` which uses `someProp`)
+  )
+
+  return <div>example</div>
+}
+
+export default function() {
+  const [value, setValue] = useState(1)
+  return (
+    <>
+      <Example someProp={value} />
+      <Button onClick={() => setValue(2)}>button</Button>
+    </>
+  )
+}
+```
+
+在该 demo 中, 点击 button 按钮, 并没有打印出 2。解决上述问题有两种方法。
+
+方法一: 一般来说首推的做法是将函数放进相关的 `effect` 中, 这样相关属性改变可以从依赖中一目了然。
+
+```js
+function Example({ someProp }) {
+  useEffect(
+    () => {
+      function doSomething() {
+        console.log(someProp)
+      }
+      doSomething()
+    },
+    [someProps] // 相关属性改变一目了然
+  )
+
+  return <div>example</div>
+}
+```
+
+方法二: 在依赖列表中把函数加入
+
+```js
+function Example({ someProp }) {
+  function doSomething() {
+    console.log(someProp) // 这里只输出 1, 点击按钮的 2 并没有输出。
+  }
+
+  useEffect(
+    () => {
+      doSomething()
+    },
+    [doSomething] // 🔴 This is not safe (it calls `doSomething` which uses `someProp`)
+  )
+
+  return <div>example</div>
+}
+```
+
+方案二基本上不会单独使用, 它一般结合 `useCallback` 一起使用来处理某些函数计算量较大的函数。
+
+```js
+function Example({ someProp }) {
+  const doSomething = useCallback(() => {
+    console.log(someProp)
+  }, [someProp])
+
+  useEffect(
+    doSomething(),
+    [doSomething]
+  )
+
+  return <div>example</div>
+}
+```
+
+- [ ] [Hooks FAQ](https://reactjs.org/docs/hooks-faq.html): 阅读到 What can I do if my effect dependencies change too often?
 
 ### 相关资料
 
