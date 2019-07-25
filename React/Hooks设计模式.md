@@ -47,6 +47,8 @@ function Example({ someProp }, hooks) {
 
 ### Hooks 与 class 的一些差异
 
+#### Hooks 调用实例的方法
+
 Hooks tip: something.current (a ref value) is just like this.something in a class (an instance field).
 
 /* in a function */
@@ -59,7 +61,17 @@ this.X // can read or write
 > [twitter](https://twitter.com/dan_abramov/status/1125223181701263360)
 > [Is there something like instance variables](https://reactjs.org/docs/hooks-faq.html#is-there-something-like-instance-variables)
 
-### Hooks vs Class in setState
+#### Hooks vs Class in setState
+
+Hooks 中的 setState 与 Class 中最大区别在于 Hooks 不会对多次 setState 进行合并操作。如果要执行合并操作, 可像如下操作:
+
+```js
+setState(prevState => {
+  return { ...prevState, ...updateValues }
+})
+```
+
+此外关于 `setState` 的异步表现, 见如下表:
 
 | | Class | Hooks |
 |:---:|:---:|:---:|
@@ -169,6 +181,25 @@ function handleClick() {
 }
 ```
 
+#### hooks 中 shouldComponentUpdate 的替代方案
+
+使用 `useMemo` 可以在 hooks 中实现 `shouldComponentUpdate` 的替代, 但 useMemo 只对 props 进行浅比较。
+
+```js
+React.useMemo((props) => {
+  // your component
+})
+```
+
+#### useMemo 与 useCallback 的区别
+
+```js
+useMemo(() => value) <==> useCallback(value) <==> 缓存 value
+```
+
+* useCallback: 一般用于缓存函数
+* useMemo: 一般用于缓存组件
+
 #### 依赖列表中移除函数是否是安全的?
 
 通常来说, 结论是不安全的。可以观察 demo,
@@ -204,7 +235,7 @@ export default function() {
 
 在该 demo 中, 点击 button 按钮, 并没有打印出 2。解决上述问题有两种方法。
 
-方法一: 一般来说首推的做法是将函数放进相关的 `effect` 中, 这样相关属性改变可以从依赖中一目了然。
+方法一: 一般来说首推的做法是将函数放进相关的 `effect` 中, 这样相关属性改变可以从依赖中一目了然
 
 ```js
 function Example({ someProp }) {
@@ -222,7 +253,7 @@ function Example({ someProp }) {
 }
 ```
 
-方法二: 在依赖列表中把函数加入
+方法二: 把函数加入依赖列表中
 
 ```js
 function Example({ someProp }) {
@@ -258,7 +289,31 @@ function Example({ someProp }) {
 }
 ```
 
-- [ ] [Hooks FAQ](https://reactjs.org/docs/hooks-faq.html): 阅读到 What can I do if my effect dependencies change too often?
+#### 如何避免重复创建昂贵的对象
+
+* 使用 `useState` 的 `lazy-initial`
+
+使用 `const [value, setValue] = useState(() => createExpensiveObj)`, 见 [lazy-initial-state](https://reactjs.org/docs/hooks-reference.html#lazy-initial-state);
+
+* 使用自定义 useRef 函数
+
+```js
+function Image(props) {
+  const ref = useRef(null)
+
+  function getExpensiveObj() {
+    if (ref.current === null) {
+      ref.current = ExpensiveObj
+    }
+
+    return ref.current
+  }
+
+  // if need ExpensiveObj, call getExpensiveObj()
+}
+```
+
+- [ ] [Hooks FAQ](https://reactjs.org/docs/hooks-faq.html): 阅读到 How to avoid passing callbacks down??
 
 ### 相关资料
 
