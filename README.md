@@ -1,6 +1,4 @@
-该系列随笔是对前端知识架构的梳理。内容涉及前端工程化、JavaScript 知识体系、CSS 知识体系、数据结构、设计模式等。最近产出的文章以 `React 源码解析、组件设计`为主。:notebook_with_decorative_cover:
-
-> 欢迎[提 issue](https://github.com/MuYunyun/blog/issues/new), 欢迎交流。[Twitter](https://twitter.com/YunyunMu)
+该系列随笔是对前端知识架构的梳理。内容涉及前端工程化、JavaScript/CSS、数据结构、设计模式、React 技术栈等。 :notebook_with_decorative_cover:
 
 <details>
   <summary>基础篇</summary>
