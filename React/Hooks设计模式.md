@@ -1,16 +1,20 @@
-### why move to hooks?
+### why Hooks?
 
-`mixin`、`HOC`、`Render Props` 有什么缺陷?
+一: `多个组件间逻辑复用`: 在 Class 中使用 React 不能将带有 state 的逻辑给单独抽离成 function, 其只能通过嵌套组件的方式来解决多个组件间逻辑复用的问题, 基于嵌套组件的思想存在 [HOC](https://github.com/MuYunyun/blog/blob/master/React/从0到1实现React/8.HOC探索.md) 与 `render props` 两种设计模式。但是这两种设计模式是否存在缺陷呢?
 
-* 数据源不明。导致不易快速定位 bug。(mixin、hoc、render props)
-* 命名重复性问题。在一个组件中同时使用多个 hoc, 不排除这些 hoc 里的方法存在命名冲突的问题。(mixin、hoc)
-* 性能问题。需要额外的组件实例存在额外的开销。(mixin、hoc、render Props)
+* 嵌套地狱, 当嵌套层级过多后, 数据源的追溯会变得十分困难, 导致定位 bug 不容易; (hoc、render props)
+* 性能, 需要额外的组件实例存在额外的开销; (hoc、render props)
+* 命名重复性, 在一个组件中同时使用多个 hoc, 不排除这些 hoc 里的方法存在命名冲突的问题; (hoc)
 
-反过来说, 这些也是 hooks 的优势所在。
+二: `单个组件中的逻辑复用`: Class 中的生命周期 `componentDidMount`、`componentDidUpdate` 甚至 `componentWillUnMount` 中的大多数逻辑基本是类似的, 必须拆散在不同生命周期中维护相同的逻辑对使用者是不友好的, 这样也造成了组件的代码量变多。
 
-另外使用 clsaa API 与 TypeScript 结合使用时, 需要进行两次声明(一次 interface, 一次 defaultProps)
+三: Class 的其它一些问题: 在 React 使用 Class 需要书写大量样板, 用户通常会对 Class 中 Constructor 的 bind 以及 this 的使用感到困惑, 同时 React Team 表示 Class 在机器编译优化方面也不是很理想。
 
-> [尤雨溪：Vue Function-based API RFC](https://mp.weixin.qq.com/s/k37eVdlH-_Hder8yN3na5g)
+#### React Logo 与 Hooks 的小彩蛋
+
+![](http://with.muyunyun.cn/ddbdcec2fc39ba350fc74647f4fad6f5.jpg-300)
+
+React 的 logo 是一个原子图案, 原子组成了物质的表现, React 组成了页面的表现; 而 Hooks 就如夸克, 其一直都在, 但是直到 4 年后的今天才被设计出来。 —— by Dan in React Conf(2018)
 
 ### 为什么 useState 返回一个数组而非一个对象?
 
@@ -32,7 +36,7 @@
 
 ### Hooks 传递的设计
 
-为什么要从全局引入, 而非如下通过函数传递
+Hooks 是否可以设计成在组件中通过函数传递, 比如像下面这样使用:
 
 ```js
 const SomeContext = require('./SomeContext)
@@ -43,25 +47,9 @@ function Example({ someProp }, hooks) {
 }
 ```
 
-使用传递的劣势是在有时会出现冗余的传递。
+使用传递的劣势是在有时会出现冗余的传递。(待补充)
 
-### Hooks 与 class 的一些差异
-
-#### Hooks 调用实例的方法
-
-Hooks tip: something.current (a ref value) is just like this.something in a class (an instance field).
-
-/* in a function */
-const X = useRef()
-X.current // can read or write
-
-/* in a class */
-this.X // can read or write
-
-> [twitter](https://twitter.com/dan_abramov/status/1125223181701263360)
-> [Is there something like instance variables](https://reactjs.org/docs/hooks-faq.html#is-there-something-like-instance-variables)
-
-#### Hooks vs Class in setState
+### Hooks 与 Class 中关于 setState 不同的表现差异
 
 Hooks 中的 setState 与 Class 中最大区别在于 Hooks 不会对多次 setState 进行合并操作。如果要执行合并操作, 可像如下操作:
 
@@ -75,7 +63,7 @@ setState(prevState => {
 
 | | Class | Hooks |
 |:---:|:---:|:---:|
-| setState(async) | 多次输出 | 多次输出, 但是输出次数会小于等于 class 的 |
+| setState(async) | 多次输出 | 多次输出, 但是输出次数会小于等于 Class 的 |
 | setState(sync) | 多次输出 | 单次输出 |
 
 ![](http://with.muyunyun.cn/314d5035e996809ab463e33e5029777f.jpg)
@@ -132,13 +120,11 @@ function Counter({initialState}) {
 
 使用 hooks 实现自定义版本的 redux
 
-### Hooks FAQ
+### Hooks 中如何获取之前的 props 以及 state
 
-#### 如何获取之前的 props 以及 state
+React 官方在未来很可能会提供一个 `usePrevious` 的 hooks 来获取之前的 props 以及 state。
 
-React 官方很大可能在未来会提供一个 `usePrevious` 的 hooks 来获取之前的 props 以及 state。
-
-usePrevious 的核心思想是用 ref 来存储先前的值。
+`usePrevious` 的核心思想是用 ref 来存储先前的值。
 
 ```js
 function usePrevous(value) {
@@ -150,9 +136,25 @@ function usePrevous(value) {
 }
 ```
 
-#### hooks 中 getDerivedStateFromProps 的替代方案
+### Hooks 中如何调用实例上的方法
 
-在 [React 暗器百解](./React暗器百解.md) 中提到了 getDerivedStateFromProps 是一种反模式, 但是极少数情况(比如 <Transition /> 组件还是用得到该钩子), 在 Hooks 中如何达到 getDerivedStateFromProps 的效果呢?
+Hooks 中 something.current(a ref value) 的含义等价于在 Class 中使用 this.something。
+
+```js
+/* in a function */
+const X = useRef()
+X.current // can read or write
+
+/* in a Class */
+this.X // can read or write
+```
+
+> [twitter](https://twitter.com/dan_abramov/status/1125223181701263360)
+> [Is there something like instance variables](https://reactjs.org/docs/hooks-faq.html#is-there-something-like-instance-variables)
+
+### Hooks 中 getDerivedStateFromProps 的替代方案
+
+在 [React 暗器百解](./React暗器百解.md) 中提到了 getDerivedStateFromProps 是一种反模式, 但是极少数情况还是用得到该钩子, 在 Hooks 中如何达到 getDerivedStateFromProps 的效果呢?
 
 ```js
 function ScrollView({row}) {
@@ -169,7 +171,7 @@ function ScrollView({row}) {
 }
 ```
 
-#### hooks 中 forceUpdate 的替代方案
+### Hooks 中 forceUpdate 的替代方案
 
 可以使用 `useReducer` 来 hack `forceUpdate`, 但是尽量避免 forceUpdate 的使用。
 
@@ -181,9 +183,9 @@ function handleClick() {
 }
 ```
 
-#### hooks 中 shouldComponentUpdate 的替代方案
+### Hooks 中 shouldComponentUpdate 的替代方案
 
-使用 `useMemo` 可以在 hooks 中实现 `shouldComponentUpdate` 的替代, 但 useMemo 只对 props 进行浅比较。
+在 Hooks 中可以使用 `useMemo` 来作为 `shouldComponentUpdate` 的替代方案, 但 `useMemo` 只对 props 进行浅比较。
 
 ```js
 React.useMemo((props) => {
@@ -194,7 +196,8 @@ React.useMemo((props) => {
 #### useMemo 与 useCallback 的区别
 
 ```js
-useMemo(() => value) <==> useCallback(value) <==> 缓存 value
+// 缓存 value
+useMemo(() => value) <==> useCallback(value)
 ```
 
 * useCallback: 一般用于缓存函数
@@ -235,7 +238,7 @@ export default function() {
 
 在该 demo 中, 点击 button 按钮, 并没有打印出 2。解决上述问题有两种方法。
 
-方法一: 一般来说首推的做法是将函数放进相关的 `effect` 中, 这样相关属性改变可以从依赖中一目了然
+方法一: 将函数放入 `useEffect` 中, 同时将相关属性放入依赖项中。因为在依赖中改变的相关属性一目了然, 所以这也是首推的做法。
 
 ```js
 function Example({ someProp }) {
@@ -258,14 +261,14 @@ function Example({ someProp }) {
 ```js
 function Example({ someProp }) {
   function doSomething() {
-    console.log(someProp) // 这里只输出 1, 点击按钮的 2 并没有输出。
+    console.log(someProp)
   }
 
   useEffect(
     () => {
       doSomething()
     },
-    [doSomething] // 🔴 This is not safe (it calls `doSomething` which uses `someProp`)
+    [doSomething]
   )
 
   return <div>example</div>
@@ -313,8 +316,9 @@ function Image(props) {
 }
 ```
 
-- [ ] [Hooks FAQ](https://reactjs.org/docs/hooks-faq.html): 阅读到 How to avoid passing callbacks down??
-
 ### 相关资料
 
-* [RFCS](https://github.com/reactjs/rfcs/pull/68#issuecomment-439314884): hooks 设计的一些理念
+* [Hooks RFCS](https://github.com/reactjs/rfcs/pull/68#issuecomment-439314884)
+* [Hooks FAQ](https://reactjs.org/docs/hooks-faq.html)
+* [Making Sense of React Hooks](https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889)
+* [Vue Function-based API RFC](https://zhuanlan.zhihu.com/p/68477600)
