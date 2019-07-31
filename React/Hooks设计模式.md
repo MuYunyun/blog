@@ -1,3 +1,9 @@
+### React Logo 与 Hooks
+
+![](http://with.muyunyun.cn/ddbdcec2fc39ba350fc74647f4fad6f5.jpg-300)
+
+React 的 logo 是一个原子图案, 原子组成了物质的表现。类似的, React 就像原子般构成了页面的表现; 而 Hooks 就如夸克, 其更接近 React 本质的样子, 但是直到 4 年后的今天才被真正设计出来。 —— Dan in React Conf(2018)
+
 ### why Hooks?
 
 一: `多个组件间逻辑复用`: 在 Class 中使用 React 不能将带有 state 的逻辑给单独抽离成 function, 其只能通过嵌套组件的方式来解决多个组件间逻辑复用的问题, 基于嵌套组件的思想存在 [HOC](https://github.com/MuYunyun/blog/blob/master/React/从0到1实现React/8.HOC探索.md) 与 `render props` 两种设计模式。但是这两种设计模式是否存在缺陷呢?
@@ -6,37 +12,31 @@
 * 性能, 需要额外的组件实例存在额外的开销; (hoc、render props)
 * 命名重复性, 在一个组件中同时使用多个 hoc, 不排除这些 hoc 里的方法存在命名冲突的问题; (hoc)
 
-二: `单个组件中的逻辑复用`: Class 中的生命周期 `componentDidMount`、`componentDidUpdate` 甚至 `componentWillUnMount` 中的大多数逻辑基本是类似的, 必须拆散在不同生命周期中维护相同的逻辑对使用者是不友好的, 这样也造成了组件的代码量变多。
+二: `单个组件中的逻辑复用`: Class 中的生命周期 `componentDidMount`、`componentDidUpdate` 甚至 `componentWillUnMount` 中的大多数逻辑基本是类似的, 必须拆散在不同生命周期中维护相同的逻辑对使用者是不友好的, 这样也造成了组件的代码量增加。
 
-三: Class 的其它一些问题: 在 React 使用 Class 需要书写大量样板, 用户通常会对 Class 中 Constructor 的 bind 以及 this 的使用感到困惑, 同时 React Team 表示 Class 在机器编译优化方面也不是很理想。
+三: Class 的其它一些问题: 在 React 使用 Class 需要书写大量样板, 用户通常会对 Class 中 Constructor 的 bind 以及 this 的使用感到困惑; 当结合 class 与 TypeScript 一起使用时, 需要对 defaultValue 做额外声明处理; 此外 React Team 表示 Class 在机器编译优化方面也不是很理想。
 
-#### React Logo 与 Hooks 的小彩蛋
+### useState 返回的值为什么是数组而非对象?
 
-![](http://with.muyunyun.cn/ddbdcec2fc39ba350fc74647f4fad6f5.jpg-300)
+原因是数组的解构比对象更加方便, 可以观察以下两种数据结构解构的差异。
 
-React 的 logo 是一个原子图案, 原子组成了物质的表现, React 组成了页面的表现; 而 Hooks 就如夸克, 其一直都在, 但是直到 4 年后的今天才被设计出来。 —— by Dan in React Conf(2018)
-
-### 为什么 useState 返回一个数组而非一个对象?
-
-因为数组比对象更加方便, 可以观察如下
-
-数组:
+返回数组时, 可以直接解构成任意名字。
 
 ```js
-[name, setName] = useState('鸣人')
-[age, setAge] = useState(13)
+[name, setName] = useState('路飞')
+[age, setAge] = useState(12)
 ```
 
-对象:
+返回对象时, 却需要多一层的命名。
 
 ```js
-{value: name, setValue: setName} = useState('鸣人')
-{value: name, setValue: setName} = useState(13)
+{value: name, setValue: setName} = useState('路飞')
+{value: name, setValue: setName} = useState(12)
 ```
 
 ### Hooks 传递的设计
 
-Hooks 是否可以设计成在组件中通过函数传递, 比如像下面这样使用:
+Hooks 是否可以设计成在组件中通过函数传参来使用? 比如进行如下调用?
 
 ```js
 const SomeContext = require('./SomeContext)
@@ -47,11 +47,11 @@ function Example({ someProp }, hooks) {
 }
 ```
 
-使用传递的劣势是在有时会出现冗余的传递。(待补充)
+使用传递的劣势是会出现冗余的传递。(可以联想 context 解决了什么)
 
-### Hooks 与 Class 中关于 setState 不同的表现差异
+### Hooks 与 Class 中调用 setState 有不同的表现差异么?
 
-Hooks 中的 setState 与 Class 中最大区别在于 Hooks 不会对多次 setState 进行合并操作。如果要执行合并操作, 可像如下操作:
+Hooks 中的 setState 与 Class 中最大区别在于 Hooks 不会对多次 setState 进行合并操作。如果要执行合并操作, 可执行如下操作:
 
 ```js
 setState(prevState => {
@@ -59,68 +59,35 @@ setState(prevState => {
 })
 ```
 
-此外关于 `setState` 的异步表现, 见如下表:
+此外可以对 class 与 Hooks 之间 `setState` 是异步还是同步的表现进行对比, 可以先对以下 4 种情形 render 输出的个数进行观察分析:
 
-| | Class | Hooks |
-|:---:|:---:|:---:|
-| setState(async) | 多次输出 | 多次输出, 但是输出次数会小于等于 Class 的 |
-| setState(sync) | 多次输出 | 单次输出 |
 
-![](http://with.muyunyun.cn/314d5035e996809ab463e33e5029777f.jpg)
+### 是否能使用 React Hooks 替代 Redux
 
-- [ ] [一些异步](https://codesandbox.io/s/funny-mclean-6lru4)
-
-### Hooks 状态管理
-
-useRedux:
+在 React 16.8 版本之后, 针对`不是特别复杂`的业务场景, 可以使用 React 提供的 `useContext`、`useReducer` 实现自定义简化版的 redux, 可见 [todoList](https://github.com/MuYunyun/todoList) 中的运用。核心代码如下:
 
 ```js
-import * as actions from './actions'
+import React, { createContext, useContext, useReducer } from "react"
 
-function Counter() {
-  const [count, {increment, decrement}] = useRedux(state => state.count, actions);
+// 创建 StoreContext
+const StoreContext = createContext()
 
+// 构建 Provider 容器层
+export const StoreProvider = ({reducer, initialState, children}) => {
   return (
-    <>
-      Count: {count}
-      <button onClick={() => increment()}>+</button>
-      <button onClick={() => decrement()}>-</button>
-    </>
-  );
+    <StoreContext.Provider value={useReducer(reducer, initialState)}>
+      {children}
+    </StoreContext.Provider>
+  )
 }
+
+// 在子组件中调用 useStoreContext, 从而取得 Provider 中的 value
+export const useStoreContext = () => useContext(StoreContext)
 ```
 
-useReducer:
+但是针对特别复杂的场景目前不建议使用此模式, 因为 context 的机制会有性能问题。具体原因可见 [react-redux v7 回退到订阅的原因](https://github.com/reduxjs/react-redux/issues/1177)
 
-```js
-const initialState = {count: 0};
-
-function reducer(state, action) {
-  switch (action.type) {
-    case 'increment':
-      return {count: state.count + 1};
-    case 'decrement':
-      return {count: state.count - 1};
-    default:
-      throw new Error();
-  }
-}
-
-function Counter({initialState}) {
-  const [state, dispatch] = useReducer(reducer, initialState);
-  return (
-    <>
-      Count: {state.count}
-      <button onClick={() => dispatch({type: 'increment'})}>+</button>
-      <button onClick={() => dispatch({type: 'decrement'})}>-</button>
-    </>
-  );
-}
-```
-
-使用 hooks 实现自定义版本的 redux
-
-### Hooks 中如何获取之前的 props 以及 state
+### Hooks 中如何获取先前的 props 以及 state
 
 React 官方在未来很可能会提供一个 `usePrevious` 的 hooks 来获取之前的 props 以及 state。
 
@@ -138,7 +105,7 @@ function usePrevous(value) {
 
 ### Hooks 中如何调用实例上的方法
 
-Hooks 中 something.current(a ref value) 的含义等价于在 Class 中使用 this.something。
+在 Hooks 中使用 useRef() 等价于在 Class 中使用 this.something。
 
 ```js
 /* in a function */
@@ -146,22 +113,21 @@ const X = useRef()
 X.current // can read or write
 
 /* in a Class */
-this.X // can read or write
+this.X    // can read or write
 ```
 
-> [twitter](https://twitter.com/dan_abramov/status/1125223181701263360)
 > [Is there something like instance variables](https://reactjs.org/docs/hooks-faq.html#is-there-something-like-instance-variables)
 
 ### Hooks 中 getDerivedStateFromProps 的替代方案
 
-在 [React 暗器百解](./React暗器百解.md) 中提到了 getDerivedStateFromProps 是一种反模式, 但是极少数情况还是用得到该钩子, 在 Hooks 中如何达到 getDerivedStateFromProps 的效果呢?
+在 [React 暗器百解](https://github.com/MuYunyun/blog/blob/master/React/React暗器百解.md) 中提到了 `getDerivedStateFromProps` 是一种反模式, 但是极少数情况还是用得到该钩子, Hooks 没有该 api, 那其如何达到 getDerivedStateFromProps 的效果呢?
 
 ```js
 function ScrollView({row}) {
   const [isScrollingDown, setISScrollingDown] = setState(false)
   const [prevRow, setPrevRow] = setState(null)
 
-  // 核心是创建一个 `prevRow` state 与父组件传进来的 `row` 进行比较
+  // 核心是创建一个 prevRow state 与父组件传进来的 row 进行比较
   if (row !== prevRow) {
     setISScrollingDown(prevRow !== null && row > prevRow)
     setPrevRow(row)
@@ -196,8 +162,7 @@ React.useMemo((props) => {
 #### useMemo 与 useCallback 的区别
 
 ```js
-// 缓存 value
-useMemo(() => value) <==> useCallback(value)
+useMemo(() => <component />) 等价于 useCallback(<component />)
 ```
 
 * useCallback: 一般用于缓存函数
@@ -205,7 +170,7 @@ useMemo(() => value) <==> useCallback(value)
 
 #### 依赖列表中移除函数是否是安全的?
 
-通常来说, 结论是不安全的。可以观察 demo,
+通常来说依赖列表中移除函数是不安全的。观察如下 demo
 
 ```js
 const { useState, useEffect } = React
@@ -219,7 +184,7 @@ function Example({ someProp }) {
     () => {
       doSomething()
     },
-    [] // 🔴 This is not safe (it calls `doSomething` which uses `someProp`)
+    [] // 🔴 这是不安全的, 因为在 doSomething 函数中使用了 someProps 属性
   )
 
   return <div>example</div>
@@ -294,11 +259,15 @@ function Example({ someProp }) {
 
 #### 如何避免重复创建昂贵的对象
 
-* 使用 `useState` 的 `lazy-initial`
+* 方法一: 使用 `useState` 的懒初始化, 用法如下
 
-使用 `const [value, setValue] = useState(() => createExpensiveObj)`, 见 [lazy-initial-state](https://reactjs.org/docs/hooks-reference.html#lazy-initial-state);
+```js
+const [value, setValue] = useState(() => createExpensiveObj)
+```
 
-* 使用自定义 useRef 函数
+> 见 [lazy-initial-state](https://reactjs.org/docs/hooks-reference.html#lazy-initial-state);
+
+* 方法二: 使用自定义 useRef 函数
 
 ```js
 function Image(props) {
