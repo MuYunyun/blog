@@ -31,7 +31,7 @@ React 的 logo 是一个原子图案, 原子组成了物质的表现。类似的
 
 ```js
 {value: name, setValue: setName} = useState('路飞')
-{value: name, setValue: setName} = useState(12)
+{value: old, setValue: setOld} = useState(12)
 ```
 
 ### Hooks 传递的设计
@@ -58,9 +58,6 @@ setState(prevState => {
   return { ...prevState, ...updateValues }
 })
 ```
-
-此外可以对 class 与 Hooks 之间 `setState` 是异步还是同步的表现进行对比, 可以先对以下 4 种情形 render 输出的个数进行观察分析:
-
 
 ### 是否能使用 React Hooks 替代 Redux
 
@@ -94,7 +91,7 @@ React 官方在未来很可能会提供一个 `usePrevious` 的 hooks 来获取�
 `usePrevious` 的核心思想是用 ref 来存储先前的值。
 
 ```js
-function usePrevous(value) {
+function usePrevious(value) {
   const ref = useRef()
   useEffect(() => {
     ref.current = value
