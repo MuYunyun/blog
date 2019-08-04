@@ -62,3 +62,54 @@ function Demo() {
   return (<div>Count: {count}</div>)
 }
 ```
+
+### React Hooks 内部探究
+
+以 `useState` 和 `useReducer` 为例
+
+#### 使用 useState 实现 useReducer
+
+```js
+import * as React from 'react'
+const { useState, useRef, useCallback } = React
+
+function useReducer(reducer, initialState) {
+  const [state, setState] = useState(initialState)
+  const reducerRef = useRef(reducer)
+  const stateRef = useRef(state)
+
+  const dispatch = useCallback((action) => {
+    setState(reducerRef.current(stateRef.current, action))
+  }, [])
+
+  useEffect(() => {
+    reducerRef.current = reducer
+  }, [reducer])
+
+  useEffect(() => {
+    stateRef.current = state
+  }, [state])
+
+  return [state, dispatch]
+}
+```
+
+#### 使用 useReducer 实现 useState
+
+```js
+import * as React from 'react'
+const { useReducer, useCallback } = React
+
+function useState(initialState) {
+
+  const [state, dispatch] = useReducer((state, action) => {
+    return action
+  }, initialState)
+
+  const setState = useCallback(
+    (newState) => dispatch(newState), []
+  )
+
+  return [state, setState]
+}
+```
