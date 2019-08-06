@@ -41,21 +41,22 @@ if (target === currentTarget) { // 点击蒙层
 具体代码如下:
 
 ```js
+import { isNotReachIOS } from './mobileDetect'
+
 /* 该方法解决 ios 滑动穿透问题, 经测试安卓 8.0 版本也适用 */
 let lockedNum = 0
 let initialClientY = 0
 let documentListenerAdded = false
 
-const lockedElements: any = []
+const lockedElements: HTMLElement[] = []
 
-const preventDefault = (event: any) => {
+const preventDefault = (event: Event) => {
   if (!event.cancelable) return
-
   event.preventDefault()
 }
 
 // 如果位于滚动元素的
-const handleScroll = (event: any, targetElement: any) => {
+const handleScroll = (event: TouchEvent, targetElement: HTMLElement) => {
   const clientY = event.targetTouches[0].clientY - initialClientY
 
   if (targetElement) {
@@ -69,46 +70,50 @@ const handleScroll = (event: any, targetElement: any) => {
   }
 
   event.stopPropagation()
-  return true
+  return false
 }
 
-const lock = (targetElement: any) => {
+/* 逻辑: 首先先将 document 上的 touchmove 事件禁用掉。(防止遮罩层滚动)
+然后再将需要进行滚动的元素阻止其冒泡, 这样子滚动的元素就能 touchmove 了。(使弹框层中需滚动的元素可滚动)
+最后对弹框层的边界值做处理, 在浮层内容拉到最顶部(scrollTop 为 0) 还上滑动或者浮层内容拉到最底部(scrollTop + clientHeight >= scrollHeight) 还下滑动时
+要防止其滑动穿透, 所以需要对其进行 event.prevent */
+const lock = (targetElement: HTMLElement) => {
+  if (!documentListenerAdded) {
+    // 针对 ios9 以下的机型需要单独处理
+    isNotReachIOS(10)
+      ? document.addEventListener('touchmove', preventDefault)
+      : document.addEventListener('touchmove', preventDefault, { passive: false })
+    documentListenerAdded = true
+  }
+
   if (targetElement && lockedElements.indexOf(targetElement) === -1) {
-    targetElement.ontouchstart = (event: any) => {
+    targetElement.ontouchstart = (event: TouchEvent) => {
       initialClientY = event.targetTouches[0].clientY
     }
 
-    targetElement.ontouchmove = (event: any) => {
+    targetElement.ontouchmove = (event: TouchEvent) => {
       if (event.targetTouches.length !== 1) return
-
       handleScroll(event, targetElement)
     }
 
     lockedElements.push(targetElement)
+    lockedNum += 1
   }
-
-  if (!documentListenerAdded) {
-    document.addEventListener('touchmove', preventDefault, { passive: false })
-    documentListenerAdded = true
-  }
-
-  lockedNum += 1
 }
 
-const unlock = (targetElement: any) => {
-  lockedNum -= 1
-
-  if (lockedNum > 0) return
-
+const unlock = (targetElement: HTMLElement) => {
   const index = lockedElements.indexOf(targetElement)
   if (index !== -1) {
+    lockedNum -= 1
     targetElement.ontouchmove = null
     targetElement.ontouchstart = null
     lockedElements.splice(index, 1)
   }
 
-  if (documentListenerAdded) {
-    document.removeEventListener('touchmove', preventDefault)
+  if (lockedNum === 0 && documentListenerAdded) {
+    isNotReachIOS(10)
+      ? (document as any).removeEventListener('touchmove', preventDefault)
+      : (document as any).removeEventListener('touchmove', preventDefault, { passive: false })
     documentListenerAdded = false
   }
 }
