@@ -69,9 +69,9 @@ dom-test-library 的优势。
 import { queries } from 'dom-testing-library'
 ```
 
-### react-test-library 的使用
+### @testing-library/react 的使用
 
-`react-test-library` 在 `dom-test-library` 的基础上查找 React 组件。
+`@testing-library/react` 在 `dom-test-library` 的基础上查找 React 组件。
 
 ```
 import 'react-testing-library/clieanup-after-each' // 自动完成每次的回收
@@ -116,11 +116,11 @@ test('...', () => {
 })
 ```
 
-* getByLabelText (form inputs)
-* getByPlaceholderText (only if your input doesn’t have a label — less accessible!)
-* getByText (buttons and headers)
-* getByAltText (images)
-* getByTestId (use this for things like dynamic text or otherwise odd elements you want to test)
+* `getByLabelText`       (form inputs)
+* `getByPlaceholderText` (only if your input doesn’t have a label — less accessible!)
+* `getByText`            (buttons and headers)
+* `getByAltText`         (images)
+* `getByTestId`          (use this for things like dynamic text or otherwise odd elements you want to test)
 
 上述每一个方法都有对应的 `queryByFoo` 替代方法。以 `query` 开头的方法找不到的话会返回 null, 以 `get` 开头的方法找不到的话会 throw。
 
