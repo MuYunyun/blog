@@ -49,7 +49,7 @@ function Demo() {
 
 * `useReducer` 将 `how`(reducer) 和 `what`(dispatch(action)) 进行抽离; 使用 `reducer` 逻辑状态进行集中化维护;
 * 相比 useState, useReducer 没有[闭包问题](https://overreacted.io/a-complete-guide-to-useeffect/#each-render-has-its-own-everything);
-* 当状态的一个 state 依赖状态中的另一个 state 时, 这种情况最好使用 useReducer; 可以参考 [decoupling-updates-from-actions](https://overreacted.io/a-complete-guide-to-useeffect/#decoupling-updates-from-actions) 中 Dan 列举的 demo。
+* 当状态的一个 state 依赖状态中的另一个 state 时, 这种情况最好使用 `useReducer`; 可以参考 [decoupling-updates-from-actions](https://overreacted.io/a-complete-guide-to-useeffect/#decoupling-updates-from-actions) 中 Dan 列举的 demo。
 
 #### 处理 useEffect 中的公用函数
 
