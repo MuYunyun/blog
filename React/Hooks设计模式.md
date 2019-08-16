@@ -61,6 +61,13 @@ setState(prevState => {
 
 此外可以对 class 与 Hooks 之间 `setState` 是异步还是同步的表现进行对比, 可以先对以下 4 种情形 render 输出的个数进行观察分析:
 
+### Hooks 中的 useEffect 的执行时间是否与 componentDidMount/componentDidUpdate 相同
+
+在 [timing-of-effects](https://reactjs.org/docs/hooks-reference.html#timing-of-effects) 中有提到 `useEffect` 的执行时机是在浏览器 layout 与 paint 之后, 与之相对的 `componentDidMount`/`componentDidUpdate` 的执行时机是在 layout 与 paint 之前(Hooks 中的 useLayoutEffect 与此相对)。
+
+> useLayoutEffect 适用的场景为在 class 模式下在 componentDidMount/componentDidUpdate 中对样式进行调整的场景;
+
+> [this-benchmark-is-indeed-flawed](https://medium.com/@dan_abramov/this-benchmark-is-indeed-flawed-c3d6b5b6f97f): 此文用数据比较了 useEffect 与 componentDidMount/componentDidUpdate 的执行时机。
 
 ### 是否能使用 React Hooks 替代 Redux
 

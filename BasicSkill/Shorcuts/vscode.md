@@ -6,7 +6,6 @@
 * command + shift + V: 实时预览 md 文件
 * alt + shift + F: 格式化表格
 
-
 ### 左侧栏
 
 * command + shift + E 打开资源

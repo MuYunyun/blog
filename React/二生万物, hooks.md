@@ -1,3 +1,5 @@
+### hooks 与 class 中的异步
+
 此外可以对 class 与 Hooks 之间 `setState` 是异步还是同步的表现进行对比, 可以先对以下 4 种情形 render 输出的个数进行观察分析:
 
 class 中的 setState:
