@@ -6,7 +6,7 @@
 }
 ```
 
-三个值分别为
+三个值分别为:
 
 * `flex-grow`: 占比, 默认为 0;
 * `flex-shrink`: 缩减比例, 0 为不缩减, 默认为 1;
@@ -37,5 +37,18 @@
 .parentDemo {
   display: flex;
   flex-direction: column;
+}
+```
+
+#### Flex 布局中省略号失效
+
+Flex 布局中, 省略号属性是失效的。
+
+```css
+.demo {
+  display: flex;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 ```
