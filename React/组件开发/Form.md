@@ -17,3 +17,4 @@
 ### 应用
 
 * [oneForm](https://github.com/MuYunyun/oneForm/issues/1)
+* [beast-form](https://uni-blog.netlify.com/posts/2019-08-19/form/): 作者蓝银草

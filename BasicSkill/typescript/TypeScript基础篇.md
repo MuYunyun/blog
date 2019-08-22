@@ -19,6 +19,7 @@ JavaScript 是一门弱类型语言，变量的数据类型具有动态性，只
 ### String 类型
 
 一个保存字符串的文本，类型声明为 string。可以发现类型声明可大写也可小写，后文同理。
+
 ```ts
 let name: string = 'muyy'
 let name2: String = 'muyy'
@@ -27,6 +28,7 @@ let name2: String = 'muyy'
 ### Boolen 类型
 
 boolean 是 true 或 false 的值，所以 `let isBool3: boolean = new Boolean(1)` 就会编译报错，因为 new Boolean(1) 生成的是一个 Bool 对象。
+
 ```ts
 let isBool1: boolean = false
 ```
@@ -40,6 +42,7 @@ let number: number = 10;
 ### Array 类型
 
 数组是 Array 类型。然而，因为数组是一个集合，我们还需要指定在数组中的元素的类型。我们通过 `Array<type>` or `type[]` 语法为数组内的元素指定类型
+
 ```ts
 let arr:number[] = [1, 2, 3, 4, 5];
 let arr2:Array<number> = [1, 2, 3, 4, 5];
@@ -48,14 +51,24 @@ let arr3:string[] = ["1","2"];
 let arr4:Array<string> = ["1","2"];
 ```
 
+### Tuple 类型
+
+Tuple 类型相对于 Array 类型, 其允许元素的类型不一定相同。
+
+```js
+let x: [string, number]
+x = ['a', 1]
+```
+
 ### Enums 类型
 
-列出所有可用值，一个枚举的默认初始值是 0。你可以调整一开始的范围：
+列出所有可用值，一个枚举的默认初始值是 0。一开始的范围可以作如下调整:
 
 ```ts
 enum Role {Employee = 3, Manager, Admin}
 let role: Role = Role.Employee
 console.log(role) // 3
+console.log(Role[4]) // Manager
 ```
 
 ### Any 类型
@@ -75,13 +88,39 @@ function alertName(): void {
 }
 ```
 
-### unknow 类型
+### Unknow 类型
 
-> [TypeScript 3.0: The unknown Type](https://mariusschulz.com/blog/typescript-3-0-the-unknown-type), 比 any 更加安全的类型
+任何使用 any 类型的地方推荐使用 unknow 类型代替它。
+
+> [new-unknown-top-type](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#new-unknown-top-type), 比 any 更加安全的类型
+
+### Never 类型
+
+当函数 throw 或者返回错误, 循环永远为 true 时可以声明为 never 类型。
+
+```js
+// Function returning never must have unreachable end point
+function error(message: string): never {
+  throw new Error(message);
+}
+
+// Inferred return type is never
+function fail() {
+  return error("Something failed");
+}
+
+// Function returning never must have unreachable end point
+function infiniteLoop(): never {
+  while (true) {
+  }
+}
+
+```
 
 ## 函数
 
 ### 为函数定义类型
+
 我们可以给每个参数添加类型之后再为函数本身添加返回值类型。 TypeScript 能够根据返回语句自动推断出返回值类型，因此我们通常省略它。下面函数 add, add2, add3 的效果是一样的，其中是 add3 函数是函数完整类型。
 
 ```ts

@@ -41,17 +41,17 @@ module.exports = {
 }
 ```
 
-[jest-emotion](https://github.com/emotion-js/emotion): 如果 css 中具体样式发生改变也要重新跑 snapshot
+> [jest-emotion](https://github.com/emotion-js/emotion): css 中具体样式发生更改便重新生成 snapshot。
 
 ### jest-dom
 
-jest-dom 封装了测试 dom 的方法。报错的信息可以更加准确。
+`jest-dom` 封装了测试 dom 的方法。报错的信息可以更加准确。
 
-```
+```js
 import 'jest-dom/extend-expect'
 ```
 
-这样子就可以使用如下方法
+此时可以使用如下方法:
 
 ```js
 expect(input).toHavaAttribute('type', 'number') // 是否有某个属性
@@ -152,7 +152,7 @@ test('loads greetings on click', () => {
 
 * Mock react-transition-group in React Component Tests with jest.mock
 
-比如 react-transition-group 动画库也是存在异步库, 它会在 1 s 后将 Children 隐藏, 这时候可以使用 `mock` 来处理。
+比如 `react-transition-group` 动画库也是存在异步库, 它会在 1 s 后将 Children 隐藏, 这时候可以使用 `mock` 来处理。
 
 ```js
 jest.mock('react-transition-group', () => {
@@ -180,3 +180,5 @@ const error = expect.any(Error)
 const info = {componentStack: expect.stringContaining('Bomb')}
 expect(mockReportError).toHaveBeenCalledWith(error, info)
 ```
+
+- [ ] [react-testing-3-jest-and-react-testing-library/](https://blog.sapegin.me/all/react-testing-3-jest-and-react-testing-library/): to read
