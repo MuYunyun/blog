@@ -77,7 +77,7 @@ import { queries } from 'dom-testing-library'
 import 'react-testing-library/cleanup-after-each' // 自动完成每次的回收
 ```
 
-* Debug the DOM state during tests using react-testing-library’s debug function,
+* 可以使用 `react-testing-library` 中的 debug 函数来对子组件进行断点调试。
 
 ```js
 test('...', () => {
@@ -96,9 +96,7 @@ import { fireEvent } from 'react-testing-library'
 fireEvent.change()
 ```
 
-* Assert rendered text with react-testing-library
-
-以下罗列几种断言方式
+* 几种断言方式
 
 * 方式一: expect(container).toHaveTextContent(/the number is invalid/i)
 * 方式二: getByText(/the number is invalid/i)
@@ -122,7 +120,7 @@ test('...', () => {
 
 上述每一个方法都有对应的 `queryByFoo` 替代方法。以 `query` 开头的方法找不到的话会返回 null, 以 `get` 开头的方法找不到的话会 throw。
 
-如果这些都不会让你确切地知道你在找什么, render 方法也会返回映射到 container 属性的 DOM 元素，所以你可以像 `container.querySelector('body #root')` 一样使用它。
+如果这些都不会让你确切地知道你在找什么, render 方法也会返回映射到 container 属性的 DOM 元素，所以也可以像 `container.querySelector('body #root')` 一样使用它。
 
 * Mock HTTP Requests with jest.mock in React Component Tests
 
@@ -181,4 +179,7 @@ const info = {componentStack: expect.stringContaining('Bomb')}
 expect(mockReportError).toHaveBeenCalledWith(error, info)
 ```
 
-- [ ] [react-testing-3-jest-and-react-testing-library/](https://blog.sapegin.me/all/react-testing-3-jest-and-react-testing-library/): to read
+### link
+
+* [react-testing-1-best-practices](https://blog.sapegin.me/all/react-testing-1-best-practices/): 如何书写测试用例;
+* [react-testing-3-jest-and-react-testing-library/](https://blog.sapegin.me/all/react-testing-3-jest-and-react-testing-library/): react-testing-library 的补充用法;

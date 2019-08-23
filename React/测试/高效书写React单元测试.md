@@ -1,3 +1,29 @@
+测试是一个风险驱动的行为。
+
+> 每当你收到 Bug 报告, 先写一个单元测试来暴露这个 Bug。
+
+### 测试用例
+
+* jest: 大而全;
+* mocha: 可搭配周边生态, 并且可测试布局像素等浏览器原生 DOM;
+
+### 测试总类
+
+* e2e 测试: 端到端测试，模拟用户在真实环境上(包括网络请求、数据库)操作行为的测试，其实 `jest`、`mocha` 都有相应 e2e 测试的 api。
+
+### 测试风格
+
+* BDD 风格: `foo.should.equal('bar')` 或者 `expect(foo).to.equal('bar')`;
+* TDD 风格: `assert.equal(foo, 'bar', 'foo equal bar')`, diana 中的测试风格;
+
+> 见 [Chai](https://www.chaijs.com/guide/styles/)
+
+### Enzyme
+
+封装了 React 相关测试 api 的一个工具库。
+
+### TDD
+
 ### 书写一个测试函数
 
 test 函数:
@@ -61,7 +87,7 @@ yarn add prettier -D
 
 --list-diffetent: 列出需要 prettier 的列表
 
-```
+```js
 "format": "npm run prettier -- --write",
 "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
 "validate": "npm run lint && npm run prettier -- --list-different"
