@@ -1,165 +1,185 @@
-测试是一个风险驱动的行为。
+### 测试的动机
 
-> 每当你收到 Bug 报告, 先写一个单元测试来暴露这个 Bug。
+测试用例的书写是一个风险驱动的行为, 每当收到 Bug 报告时, 先写一个单元测试来暴露这个 Bug, 在日后的代码提交中, 若该测试用例是通过的, 开发者能更为自信地确保程序不会再次出现此 bug。
 
-### 测试用例
+> 测试的动机是有效地提高开发者的自信心。
 
-* jest: 大而全;
-* mocha: 可搭配周边生态, 并且可测试布局像素等浏览器原生 DOM;
+### 前端现代化测试模型
 
-### 测试总类
+前端测试中有两种模型, `金字塔模型`与`奖杯模型`。
 
-* e2e 测试: 端到端测试，模拟用户在真实环境上(包括网络请求、数据库)操作行为的测试，其实 `jest`、`mocha` 都有相应 e2e 测试的 api。
+金字塔模型摘自 [Martin Fowler's blog](https://martinfowler.com/bliki/TestPyramid.html), 模型示意图如下:
 
-### 测试风格
+![](http://with.muyunyun.cn/d97821c98ca86b161ac650198e6b44fd.jpg-300)
 
-* BDD 风格: `foo.should.equal('bar')` 或者 `expect(foo).to.equal('bar')`;
-* TDD 风格: `assert.equal(foo, 'bar', 'foo equal bar')`, diana 中的测试风格;
+金字塔模型自下而上分为单元测试、集成测试、UI 测试, 之所以是金字塔结构是因为单元测试的成本最低, UI 测试的成本最高, 所以单元测试写的数量最多, UI 测试写的数量最少。同时越往上的测试的通过率给开发者带来的信心是越大的。
 
-> 见 [Chai](https://www.chaijs.com/guide/styles/)
+奖杯模型摘自 Kent C. Dots 提出的 [The Testing Trophy](https://twitter.com/kentcdodds/status/960723172591992832?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E960723172591992832&ref_url=https%3A%2F%2Fkentcdodds.com%2Fblog%2Fwrite-tests), 该模型是笔者比较认可的前端现代化测试模型, 模型示意图如下:
 
-### Enzyme
+![](http://with.muyunyun.cn/0453d50194dfa1cbf7a4aeb70252c438.jpg-300)
 
-封装了 React 相关测试 api 的一个工具库。
+奖杯模型中自下而上分为静态测试、单元测试、集成测试、e2e 测试, 它们的职责大致如下:
+
+* `静态测试`: 在编写代码逻辑阶段时进行报错提示。(代表库: eslint、flow、TypeScript)
+* `单元测试`: 在奖杯模型中, 单元测试的职责是对一些边界情况或者特定的算法进行测试。(代表库: [jest](https://github.com/facebook/jest)、[mocha](https://github.com/mochajs/mocha))
+* `集成测试`: 模拟用户的行为进行测试, 对网络请求、数据库的数据获取等依赖第三方的行为进行 mock。(代表库: [jest](https://github.com/facebook/jest)、[react-testing-library](https://github.com/testing-library/react-testing-library))
+* `e2e 测试`: 模拟用户在真实环境上(包括网络请求、数据库)操作行为的测试。(代表库: [cypress](https://github.com/cypress-io/cypress))
+
+越是上层的测试给开发者带来的信息是越大的, 越是下层的测试测试的效率是越高的。奖杯模型综合考虑了这两点因素, 因此可以看到其花在集成测试中的比例是最高的。
 
 ### 基于用户行为去测试
 
-测试一个组件应该基于用户行为而不应基于组件的具体实现细节去测试。
+书写测试用例是为了提高开发者对程序的自信心的, 但是很多时候书写测试用例给开发者带来了觉得在做无用功的沮丧。导致沮丧的感觉出现往往是因为开发者对组件的具体实现细节进行了测试, 如果换个角度站在用户的行为上去测试则能极大提高测试效率。
 
-测试组件的具体实现细节会带来两个问题:
+首先来看下测试组件的具体细节会带来的两个问题:
 
-1. 未来对组件进行重构时, 该测试用例可能会失败;(错误否定)
-2. 即使代码中有 bug, 改测试用例也会通过;(错误肯定)
+1. 测试用例`错误否定`;
+2. 测试用例`错误肯定`;
 
-下面对这两个情形进行阐述。
-
-- [ ] [testing-implementation-details](https://kentcdodds.com/blog/testing-implementation-details): 阅读到Let's take a look at each of these in turn
-- [ ] [why-i-never-use-shallow-rendering](https://kentcdodds.com/blog/why-i-never-use-shallow-rendering)
-
-### 书写一个测试函数
-
-test 函数:
+以`轮播图组件`为例, 依次来看上述问题。轮播图组件伪代码如下:
 
 ```js
-async function test(title, callback) {
-  try {
-    await callback();
-    console.log(`✓ ${title}`);
-  } catch (error) {
-    console.error(`✕ ${title}`);
-    console.error(error);
+class Carousel extends React.Component {
+  state = {
+    index: 0
+  }
+
+  /* 跳转到指定的页数 */
+  jump = (to: number) => {
+    this.setState({
+      index: to
+    })
+  }
+
+  render() {
+    const { index } = this.state
+    return <>
+      <Swipe currentPage={index} />
+      <button onClick={() => this.jump(index - 1)}>上一页</button>
+      <button onClick={() => this.jump(index + 1)}>下一页</button>
+    </>
   }
 }
 ```
 
-expect 函数:
+如下是基于 `enzyme` 的 api 写的测试用例:
 
 ```js
-function expect(actual) {
-  return {
-    toBe(expected) {
-      if (actual !== expected) {
-        throw new Error(`${actual} is not equal to ${expected}`);
-      }
-    }
-  };
-}
-```
+import { mount } from 'enzyme'
 
-应用:
+describe('Carousel Test', () => {
+  it('test jump', () => {
+    const wrapper = mount(<Carousel>
+      <div>第一页</div>
+      <div>第二页</div>
+      <div>第三页</div>
+    </Carousel>)
 
-```js
-const sum = (a, b) => a + b;
-
-test("sum adds numbers", async () => {
-  const result = await sum(3, 7);
-  const expected = 10;
-  expect(result).toBe(expected);
-});
-```
-
-### 静态测试
-
-下面罗列一些配合静态测试的库
-
-* eslint
-* prettier
-
-```
-yarn add prettier -D
-```
-
-`prettier` 项目的全部文件
-
-```
-"scripts": {
-  "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql|vue)\""
-},
-```
-
---list-diffetent: 列出需要 prettier 的列表
-
-```js
-"format": "npm run prettier -- --write",
-"prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
-"validate": "npm run lint && npm run prettier -- --list-different"
-```
-
-* `hawsky`: 内置大量可以配合 git 命令执行的钩子
-* `lint-staged`: 把范围缩小为操作更改的文件
-
-### mock 测试
-
-#### mock 请求后端接口数据
-
-当测试需要请求后端接口数据的 UI 组件(比如图片上传组件), 为了防止接口不稳定等影响到测试用例通过, 通常需要对请求后端接口数据进行 mock。
-
-> 当需要测试接口返回的真实数据时可以对其进行集成测试。
-
-```js
-jest.spyOn(global, 'fetch').mockImplementation(() => {
-  Promise.resolve({
-    json: () => Promise.resolve(mockData)
+    expect(wrapper.state('index')).toBe(0)
+    wrapper.instance().jump(2)
+    expect((wrapper.state('index')).toBe(2)
   })
 })
 ```
 
-#### mock 模块/组件
-
-如果存在对当前组件的测试影响不大的第三方模块, 可以将相关模块/组件进行 mock, 从而可以提高测试的效率。
+恭喜, 测试通过✅。然后某一天觉得 `index` 的取名不妥, 对其重构将 `index` 的 state 更名为 `currentPage`, 此时代码如下:
 
 ```js
-jest.mock('someComponent', () => {
-  return (props) => {
-    return <span>mock Component</span>
+class Carousel extends React.Component {
+  state = {
+    currentPage: 0
   }
+
+  /* 跳转到指定的页数 */
+  jump = (to: number) => {
+    this.setState({
+      currentPage: to
+    })
+  }
+
+  render() {
+    const { currentPage } = this.state
+    return <>
+      <Swipe currentPage={currentPage} />
+      <button onClick={() => this.jump(currentPage - 1)}>上一页</button>
+      <button onClick={() => this.jump(currentPage + 1)}>下一页</button>
+    </>
+  }
+}
+```
+
+再次跑测试用例, 它在 `expect(wrapper.state('index')).toBe(0)` 的地方抛错了❌。此时就出现了测试用例`错误否定`的情况, 因为这段代码对于使用方来说是不存在问题的, 但是测试用例却抛出错误, 此时开发者不得不做'无用功'来调整测试用例适配新代码。调整后的测试用例如下:
+
+```diff
+describe('Carousel Test', () => {
+  it('test jump', () => {
+    ...
+
+-   expect(wrapper.state('index')).toBe(0)
++   expect(wrapper.state('currentPage')).toBe(0)
+    wrapper.instance().jump(2)
+-   expect((wrapper.state('index')).toBe(2)
++   expect((wrapper.state('currentPage')).toBe(2)
+  })
 })
 ```
 
-#### mock 时间类 api
+然后有一天小明同学对代码做了以下改动:
 
-如果测试用例中遇到 `setTimeout(fn, 5000)` 真的等上 5s 后才执行 fn 测试效率是非常低效的, 因此可以使用 jest 提供的 `jest.useFakeTimers()` 来 mock 与时间有关的 api。
+```diff
+class Carousel extends React.Component {
+  state = {
+    currentPage: 0
+  }
 
-```js
-jest.useFakeTimers();
+  /* 跳转到指定的页数 */
+  jump = (to: number) => {
+    this.setState({
+      currentPage: to
+    })
+  }
 
-// move ahead in time by 100ms
-act(() => {
-  jest.advanceTimersByTime(100);
-});
+  render() {
+    const { currentPage } = this.state
+    return <>
+      <Swipe currentPage={currentPage} />
+-     <button onClick={() => this.jump(currentPage - 1)}>上一页</button>
++     <button onClick={this.jump(currentPage - 1)}>上一页</button>
+-     <button onClick={() => this.jump(currentPage + 1)}>下一页</button>
++     <button onClick={this.jump(currentPage + 1)}>下一页</button>
+    </>
+  }
+}
 ```
 
-### act
+小明同学跑了上述单测, 测试通过✅, 于是开心地提交了代码。结果上线后线上出现了问题! 这就是所谓测试用例`错误肯定`的情形。因为测试用例测试了组件内部细节(此处为 `jump` 函数), 让小明误以为已经覆盖了全部场景。
 
-`act` 确保其函数里跟的单元方法(比如 rendering、用户事件、数据获取)在执行步骤 `make assertions` 之前已经全部执行完。
+测试用例`错误否定`以及`错误肯定`都给开发者带来了挫败感与困扰, 究其原因是测试了组件内部的具体细节所至。而一个稳定可靠的测试用例应该脱离组件内部的实现细节, 越接近用户行为的测试用例能给开发者带来越充足的自信。相较于 enzyme, [react-testing-library](https://github.com/testing-library/react-testing-library) 所提供的 api 更加贴近用户的使用行为, 使用其对上述测试用例重构如下:
+
+未完待续。。。。
 
 ```js
-act(() => {
-  // render components
-});
-// make assertions
+import { render, fireEvent } from '@testing-library/react'
+
+describe('Carousel Test', () => {
+  it('test jump', () => {
+    const { getByText } = render(<Carousel>
+      <div>第一页</div>
+      <div>第二页</div>
+      <div>第三页</div>
+    </Carousel>)
+
+    fireEvent.click(getByText(/下一页/))
+    expect().toBe(0)
+    wrapper.instance().jump(2)
+    expect((wrapper.state('index')).toBe(2)
+  })
+})
 ```
 
 ### 相关链接
 
+* [write-tests](https://kentcdodds.com/blog/write-tests)
 * [Testing](https://reactjs.org/docs/testing-recipes.html)
+* [Testing Implementation Details](https://kentcdodds.com/blog/testing-implementation-details)
+* [why-i-never-use-shallow-rendering](https://kentcdodds.com/blog/why-i-never-use-shallow-rendering)

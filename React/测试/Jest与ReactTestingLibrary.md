@@ -98,10 +98,10 @@ fireEvent.change()
 
 * 几种断言方式
 
-* 方式一: expect(container).toHaveTextContent(/the number is invalid/i)
-* 方式二: getByText(/the number is invalid/i)
-* 方式三: expect(getByText(/the number is invalid/i)).toBeTruthy()
-* 方式四: 配合 `data-testid` 属性可以使用 expect(getByTestId('...')).toHaveTextContent(/the number is invalid/i)
+* 方式一: `expect(container).toHaveTextContent(/the number is invalid/i)`
+* 方式二: `getByText(/the number is invalid/i)`
+* 方式三: `expect(getByText(/the number is invalid/i)).toBeTruthy()`
+* 方式四: 配合 `data-testid` 属性可以使用 `expect(getByTestId('...')).toHaveTextContent(/the number is invalid/i)`
 
 * Test prop updates with react-testing-library
 
@@ -179,7 +179,108 @@ const info = {componentStack: expect.stringContaining('Bomb')}
 expect(mockReportError).toHaveBeenCalledWith(error, info)
 ```
 
+### 书写一个测试函数
+
+测试函数有两种风格, BDD(行为驱动开发) 以及 TDD(测试驱动开发)。
+
+* BDD 风格: `foo.should.equal('bar')` 或者 `expect(foo).to.equal('bar')`;
+* TDD 风格: `assert.equal(foo, 'bar', 'foo equal bar')`;
+
+> [几种断言类型](https://www.chaijs.com/guide/styles/)
+
+下面我们来书写基于 BDD 风格的 test 函数:
+
+```js
+async function test(title, callback) {
+  try {
+    await callback();
+    console.log(`✓ ${title}`);
+  } catch (error) {
+    console.error(`✕ ${title}`);
+    console.error(error);
+  }
+}
+```
+
+`expect` 函数:
+
+```js
+function expect(actual) {
+  return {
+    toBe(expected) {
+      if (actual !== expected) {
+        throw new Error(`${actual} is not equal to ${expected}`);
+      }
+    }
+  };
+}
+```
+
+应用:
+
+```js
+const sum = (a, b) => a + b;
+
+test("sum adds numbers", async () => {
+  const result = await sum(3, 7);
+  const expected = 10;
+  expect(result).toBe(expected);
+});
+```
+
+### mock 测试
+
+#### mock 请求后端接口数据
+
+当测试需要请求后端接口数据的 UI 组件(比如图片上传组件), 为了防止接口不稳定等影响到测试用例通过, 通常需要对请求后端接口数据进行 mock。
+
+> 当需要测试接口返回的真实数据时可以对其进行集成测试。
+
+```js
+jest.spyOn(global, 'fetch').mockImplementation(() => {
+  Promise.resolve({
+    json: () => Promise.resolve(mockData)
+  })
+})
+```
+
+#### mock 模块/组件
+
+如果存在对当前组件的测试影响不大的第三方模块, 可以将相关模块/组件进行 mock, 从而可以提高测试的效率。
+
+```js
+jest.mock('someComponent', () => {
+  return (props) => {
+    return <span>mock Component</span>
+  }
+})
+```
+
+#### mock 时间类 api
+
+如果测试用例中遇到 `setTimeout(fn, 5000)` 真的等上 5s 后才执行 fn 测试效率是非常低效的, 因此可以使用 jest 提供的 `jest.useFakeTimers()` 来 mock 与时间有关的 api。
+
+```js
+jest.useFakeTimers();
+
+// move ahead in time by 100ms
+act(() => {
+  jest.advanceTimersByTime(100);
+});
+```
+
+### act
+
+`act` 确保其函数里跟的单元方法(比如 rendering、用户事件、数据获取)在执行步骤 `make assertions` 之前已经全部执行完。
+
+```js
+act(() => {
+  // render components
+});
+// make assertions
+```
+
 ### link
 
-* [react-testing-1-best-practices](https://blog.sapegin.me/all/react-testing-1-best-practices/): 如何书写测试用例;
-* [react-testing-3-jest-and-react-testing-library/](https://blog.sapegin.me/all/react-testing-3-jest-and-react-testing-library/): react-testing-library 的补充用法;
+* [react-testing-1-best-practices](https://blog.sapegin.me/all/react-testing-1-best-practices/)
+* [react-testing-3-jest-and-react-testing-library/](https://blog.sapegin.me/all/react-testing-3-jest-and-react-testing-library/)
