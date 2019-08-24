@@ -1,4 +1,10 @@
-该系列随笔是对前端知识架构的思考与梳理。内容涉及前端工程化、React 技术栈、设计模式等。 :notebook_with_decorative_cover:
+<div align="center">
+  <img src="http://with.muyunyun.cn/f0b8ab78b10ecc0caf5d3745d0385d2a.jpg-muyy">
+</div>
+
+> knowledge from action, 喜欢的可以点下 watch 或 star。
+
+### 前端知识架构
 
 <details>
   <summary>基础篇</summary>
@@ -193,10 +199,3 @@
 </details>
 
 > 文章采用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">知识共享署名 4.0 国际许可协议</a>进行许可。
-
-### RoadMap
-
-<div align="center">
-  <img src="https://github.com/MuYunyun/blog/blob/master/roadmap.png">
-</div>
-

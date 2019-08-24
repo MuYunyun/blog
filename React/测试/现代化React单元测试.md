@@ -22,7 +22,19 @@
 
 封装了 React 相关测试 api 的一个工具库。
 
-### TDD
+### 基于用户行为去测试
+
+测试一个组件应该基于用户行为而不应基于组件的具体实现细节去测试。
+
+测试组件的具体实现细节会带来两个问题:
+
+1. 未来对组件进行重构时, 该测试用例可能会失败;(错误否定)
+2. 即使代码中有 bug, 改测试用例也会通过;(错误肯定)
+
+下面对这两个情形进行阐述。
+
+- [ ] [testing-implementation-details](https://kentcdodds.com/blog/testing-implementation-details): 阅读到Let's take a look at each of these in turn
+- [ ] [why-i-never-use-shallow-rendering](https://kentcdodds.com/blog/why-i-never-use-shallow-rendering)
 
 ### 书写一个测试函数
 

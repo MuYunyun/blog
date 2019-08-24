@@ -20,14 +20,12 @@
   "lint-staged": {
     "**/*.md": [
       "lint-md"
-    ],
-    "**/**/*.md": [
-      "lint-md"
     ]
   },
   "devDependencies": {
     "husky": "^3.0.3",
     "lint-md": "^0.2.0",
+    "lint-md-cli": "^0.1.1",
     "lint-staged": "^9.2.1"
   }
 }
