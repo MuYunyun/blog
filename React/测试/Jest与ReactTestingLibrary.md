@@ -278,5 +278,4 @@ test("sum adds numbers", async () => {
 
 ### link
 
-* [react-testing-1-best-practices](https://blog.sapegin.me/all/react-testing-1-best-practices/)
 * [react-testing-3-jest-and-react-testing-library/](https://blog.sapegin.me/all/react-testing-3-jest-and-react-testing-library/)

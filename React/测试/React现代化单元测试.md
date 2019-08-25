@@ -12,7 +12,7 @@
 
 ![](http://with.muyunyun.cn/d97821c98ca86b161ac650198e6b44fd.jpg-300)
 
-金字塔模型自下而上分为单元测试、集成测试、UI 测试, 之所以是金字塔结构是因为单元测试的成本最低, UI 测试的成本最高, 所以单元测试写的数量最多, UI 测试写的数量最少。同时越往上的测试的通过率给开发者带来的信心是越大的。
+金字塔模型自下而上分为单元测试、集成测试、UI 测试, 之所以是金字塔结构是因为单元测试的成本最低, 与之相对, UI 测试的成本最高。所以单元测试写的数量最多, UI 测试写的数量最少。同时需注意的是越是上层的测试, 其通过率给开发者带来的信心是越大的。
 
 奖杯模型摘自 Kent C. Dots 提出的 [The Testing Trophy](https://twitter.com/kentcdodds/status/960723172591992832?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E960723172591992832&ref_url=https%3A%2F%2Fkentcdodds.com%2Fblog%2Fwrite-tests), 该模型是笔者比较认可的前端现代化测试模型, 模型示意图如下:
 
@@ -22,19 +22,19 @@
 
 * `静态测试`: 在编写代码逻辑阶段时进行报错提示。(代表库: eslint、flow、TypeScript)
 * `单元测试`: 在奖杯模型中, 单元测试的职责是对一些边界情况或者特定的算法进行测试。(代表库: [jest](https://github.com/facebook/jest)、[mocha](https://github.com/mochajs/mocha))
-* `集成测试`: 模拟用户的行为进行测试, 对网络请求、数据库的数据获取等依赖第三方的行为进行 mock。(代表库: [jest](https://github.com/facebook/jest)、[react-testing-library](https://github.com/testing-library/react-testing-library))
-* `e2e 测试`: 模拟用户在真实环境上(包括网络请求、数据库)操作行为的测试。(代表库: [cypress](https://github.com/cypress-io/cypress))
+* `集成测试`: 模拟用户的行为进行测试, 对网络请求、获取数据库的数据等依赖第三方环境的行为进行 mock。(代表库: [jest](https://github.com/facebook/jest)、[react-testing-library](https://github.com/testing-library/react-testing-library))
+* `e2e 测试`: 模拟用户在真实环境上操作行为(包括网络请求、获取数据库数据等)的测试。(代表库: [cypress](https://github.com/cypress-io/cypress))
 
-越是上层的测试给开发者带来的信息是越大的, 越是下层的测试测试的效率是越高的。奖杯模型综合考虑了这两点因素, 因此可以看到其花在集成测试中的比例是最高的。
+越是上层的测试给开发者带来的自信是越大的, 与此同时, 越是下层的测试测试的效率是越高的。奖杯模型综合考虑了这两点因素, 可以看到其在集成测试中的占比是最高的。
 
 ### 基于用户行为去测试
 
-书写测试用例是为了提高开发者对程序的自信心的, 但是很多时候书写测试用例给开发者带来了觉得在做无用功的沮丧。导致沮丧的感觉出现往往是因为开发者对组件的具体实现细节进行了测试, 如果换个角度站在用户的行为上去测试则能极大提高测试效率。
+书写测试用例是为了提高开发者对程序的自信心的, 但是很多时候书写测试用例给开发者带来了觉得在做无用功的沮丧。导致沮丧的感觉出现往往是因为开发者对组件的具体实现细节进行了测试, 如果换个角度站在用户的行为上进行测试则能极大提高测试效率。
 
-首先来看下测试组件的具体细节会带来的两个问题:
+测试组件的具体细节会带来的两个问题:
 
-1. 测试用例`错误否定`;
-2. 测试用例`错误肯定`;
+1. 测试用例对代码`错误否定`;
+2. 测试用例对代码`错误肯定`;
 
 以`轮播图组件`为例, 依次来看上述问题。轮播图组件伪代码如下:
 
@@ -82,7 +82,7 @@ describe('Carousel Test', () => {
 })
 ```
 
-恭喜, 测试通过✅。然后某一天觉得 `index` 的取名不妥, 对其重构将 `index` 的 state 更名为 `currentPage`, 此时代码如下:
+恭喜, 测试通过✅。某一天开发者觉得 `index` 的命名不妥, 对其重构将 `index` 更名为 `currentPage`, 此时代码如下:
 
 ```js
 class Carousel extends React.Component {
@@ -108,7 +108,7 @@ class Carousel extends React.Component {
 }
 ```
 
-再次跑测试用例, 它在 `expect(wrapper.state('index')).toBe(0)` 的地方抛错了❌。此时就出现了测试用例`错误否定`的情况, 因为这段代码对于使用方来说是不存在问题的, 但是测试用例却抛出错误, 此时开发者不得不做'无用功'来调整测试用例适配新代码。调整后的测试用例如下:
+再次跑测试用例, 此时在 `expect(wrapper.state('index')).toBe(0)` 的地方抛出了错误❌, 这就是所谓的测试用例对代码进行了`错误否定`。因为这段代码对于使用方来说是不存在问题的, 但是测试用例却抛出错误, 此时开发者不得不做'无用功'来调整测试用例适配新代码。调整后的测试用例如下:
 
 ```diff
 describe('Carousel Test', () => {
@@ -124,7 +124,7 @@ describe('Carousel Test', () => {
 })
 ```
 
-然后有一天小明同学对代码做了以下改动:
+然后在某一天粗心的小明同学对代码做了以下改动:
 
 ```diff
 class Carousel extends React.Component {
@@ -151,9 +151,9 @@ class Carousel extends React.Component {
 }
 ```
 
-小明同学跑了上述单测, 测试通过✅, 于是开心地提交了代码。结果上线后线上出现了问题! 这就是所谓测试用例`错误肯定`的情形。因为测试用例测试了组件内部细节(此处为 `jump` 函数), 让小明误以为已经覆盖了全部场景。
+小明同学跑了上述单测, 测试通过✅, 于是开心地提交了代码。结果上线后线上出现了问题! 这就是所谓测试用例对代码进行了`错误肯定`。因为测试用例测试了组件内部细节(此处为 `jump` 函数), 让小明误以为已经覆盖了全部场景。
 
-测试用例`错误否定`以及`错误肯定`都给开发者带来了挫败感与困扰, 究其原因是测试了组件内部的具体细节所至。而一个稳定可靠的测试用例应该脱离组件内部的实现细节, 越接近用户行为的测试用例能给开发者带来越充足的自信。相较于 enzyme, [react-testing-library](https://github.com/testing-library/react-testing-library) 所提供的 api 更加贴近用户的使用行为, 使用其对上述测试用例重构如下:
+测试用例`错误否定`以及`错误肯定`都给开发者带来了挫败感与困扰, 究其原因是测试了组件内部的具体细节所至。而一个稳定可靠的测试用例应该脱离组件内部的实现细节, 越接近用户行为的测试用例能给开发者带来越充足的自信。相较于 enzyme, [react-testing-library](https://github.com/testing-library/react-testing-library) 所提供的 api 更加贴近用户的使用行为, 使用其对上述测试用例进行重构:
 
 ```js
 import { render, fireEvent } from '@testing-library/react'
@@ -174,7 +174,7 @@ describe('Carousel Test', () => {
 })
 ```
 
-关于 `react-testing-Library` 的用法总结将在下一章节 [Jest 与 react-testing-Library](https://github.com/MuYunyun/blog/blob/master/React/Jest与ReactTestingLibrary.md) 具体介绍, 欢迎关注[个人博客](https://github.com/MuYunyun/blog)。
+关于 `react-testing-Library` 的用法总结将在下一章节 [Jest 与 react-testing-Library](https://github.com/MuYunyun/blog/blob/master/React/测试/Jest与ReactTestingLibrary.md) 具体介绍。如果对 React 技术栈感兴趣, 欢迎关注[个人博客](https://github.com/MuYunyun/blog)。
 
 ### 相关链接
 
@@ -182,3 +182,4 @@ describe('Carousel Test', () => {
 * [Testing](https://reactjs.org/docs/testing-recipes.html)
 * [Testing Implementation Details](https://kentcdodds.com/blog/testing-implementation-details)
 * [why-i-never-use-shallow-rendering](https://kentcdodds.com/blog/why-i-never-use-shallow-rendering)
+* [react-testing-1-best-practices](https://blog.sapegin.me/all/react-testing-1-best-practices/)
