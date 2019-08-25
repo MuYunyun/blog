@@ -198,4 +198,12 @@
 <sub>[(相关项目)](https://github.com/MuYunyun/reactSPA)
 </details>
 
+<details>
+  <summary>现代化测试</summary>
+
+* [React 现代化单元测试](https://github.com/MuYunyun/blog/blob/master/React/React现代化单元测试.md)
+* [Jest 与 react-testing-Library](https://github.com/MuYunyun/blog/blob/master/React/Jest与ReactTestingLibrary.md)
+
+</details>
+
 > 文章采用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">知识共享署名 4.0 国际许可协议</a>进行许可。

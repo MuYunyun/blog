@@ -1,8 +1,4 @@
-一个组件的测试可以分为以下几类的测试:
-
-* 基础样式
-* 模拟事件
-* 异步调用
+### Jest 与 ReactTestingLibrary
 
 ### 一些配置
 
@@ -179,55 +175,6 @@ const info = {componentStack: expect.stringContaining('Bomb')}
 expect(mockReportError).toHaveBeenCalledWith(error, info)
 ```
 
-### 书写一个测试函数
-
-测试函数有两种风格, BDD(行为驱动开发) 以及 TDD(测试驱动开发)。
-
-* BDD 风格: `foo.should.equal('bar')` 或者 `expect(foo).to.equal('bar')`;
-* TDD 风格: `assert.equal(foo, 'bar', 'foo equal bar')`;
-
-> [几种断言类型](https://www.chaijs.com/guide/styles/)
-
-下面我们来书写基于 BDD 风格的 test 函数:
-
-```js
-async function test(title, callback) {
-  try {
-    await callback();
-    console.log(`✓ ${title}`);
-  } catch (error) {
-    console.error(`✕ ${title}`);
-    console.error(error);
-  }
-}
-```
-
-`expect` 函数:
-
-```js
-function expect(actual) {
-  return {
-    toBe(expected) {
-      if (actual !== expected) {
-        throw new Error(`${actual} is not equal to ${expected}`);
-      }
-    }
-  };
-}
-```
-
-应用:
-
-```js
-const sum = (a, b) => a + b;
-
-test("sum adds numbers", async () => {
-  const result = await sum(3, 7);
-  const expected = 10;
-  expect(result).toBe(expected);
-});
-```
-
 ### mock 测试
 
 #### mock 请求后端接口数据
@@ -278,6 +225,55 @@ act(() => {
   // render components
 });
 // make assertions
+```
+
+### 书写一个测试函数
+
+测试函数有两种风格, BDD(行为驱动开发) 以及 TDD(测试驱动开发)。
+
+* BDD 风格: `foo.should.equal('bar')` 或者 `expect(foo).to.equal('bar')`;
+* TDD 风格: `assert.equal(foo, 'bar', 'foo equal bar')`;
+
+> [几种断言类型](https://www.chaijs.com/guide/styles/)
+
+下面我们来书写基于 BDD 风格的 test 函数:
+
+```js
+async function test(title, callback) {
+  try {
+    await callback();
+    console.log(`✓ ${title}`);
+  } catch (error) {
+    console.error(`✕ ${title}`);
+    console.error(error);
+  }
+}
+```
+
+`expect` 函数:
+
+```js
+function expect(actual) {
+  return {
+    toBe(expected) {
+      if (actual !== expected) {
+        throw new Error(`${actual} is not equal to ${expected}`);
+      }
+    }
+  };
+}
+```
+
+应用:
+
+```js
+const sum = (a, b) => a + b;
+
+test("sum adds numbers", async () => {
+  const result = await sum(3, 7);
+  const expected = 10;
+  expect(result).toBe(expected);
+});
 ```
 
 ### link

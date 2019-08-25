@@ -1,6 +1,6 @@
 ### 测试的动机
 
-测试用例的书写是一个风险驱动的行为, 每当收到 Bug 报告时, 先写一个单元测试来暴露这个 Bug, 在日后的代码提交中, 若该测试用例是通过的, 开发者能更为自信地确保程序不会再次出现此 bug。
+测试用例的书写是一个风险驱动的行为, 每当收到 Bug 报告时, 先写一个单元测试来暴露这个 Bug, 在日后的代码提交中, 若该测试用例是通过的, 开发者就能更为自信地确保程序不会再次出现此 bug。
 
 > 测试的动机是有效地提高开发者的自信心。
 
@@ -55,8 +55,8 @@ class Carousel extends React.Component {
     const { index } = this.state
     return <>
       <Swipe currentPage={index} />
-      <button onClick={() => this.jump(index - 1)}>上一页</button>
       <button onClick={() => this.jump(index + 1)}>下一页</button>
+      <span>`当前位于第${index}页`</span>
     </>
   }
 }
@@ -101,8 +101,8 @@ class Carousel extends React.Component {
     const { currentPage } = this.state
     return <>
       <Swipe currentPage={currentPage} />
-      <button onClick={() => this.jump(currentPage - 1)}>上一页</button>
       <button onClick={() => this.jump(currentPage + 1)}>下一页</button>
+      <span>`当前位于第${currentPage}页`</span>
     </>
   }
 }
@@ -143,10 +143,9 @@ class Carousel extends React.Component {
     const { currentPage } = this.state
     return <>
       <Swipe currentPage={currentPage} />
--     <button onClick={() => this.jump(currentPage - 1)}>上一页</button>
-+     <button onClick={this.jump(currentPage - 1)}>上一页</button>
 -     <button onClick={() => this.jump(currentPage + 1)}>下一页</button>
 +     <button onClick={this.jump(currentPage + 1)}>下一页</button>
+      <span>`当前位于第${index}页`</span>
     </>
   }
 }
@@ -155,8 +154,6 @@ class Carousel extends React.Component {
 小明同学跑了上述单测, 测试通过✅, 于是开心地提交了代码。结果上线后线上出现了问题! 这就是所谓测试用例`错误肯定`的情形。因为测试用例测试了组件内部细节(此处为 `jump` 函数), 让小明误以为已经覆盖了全部场景。
 
 测试用例`错误否定`以及`错误肯定`都给开发者带来了挫败感与困扰, 究其原因是测试了组件内部的具体细节所至。而一个稳定可靠的测试用例应该脱离组件内部的实现细节, 越接近用户行为的测试用例能给开发者带来越充足的自信。相较于 enzyme, [react-testing-library](https://github.com/testing-library/react-testing-library) 所提供的 api 更加贴近用户的使用行为, 使用其对上述测试用例重构如下:
-
-未完待续。。。。
 
 ```js
 import { render, fireEvent } from '@testing-library/react'
@@ -169,13 +166,15 @@ describe('Carousel Test', () => {
       <div>第三页</div>
     </Carousel>)
 
+    expect(getByText(/当前位于第一页/)).toBeInTheDocument()
     fireEvent.click(getByText(/下一页/))
-    expect().toBe(0)
-    wrapper.instance().jump(2)
-    expect((wrapper.state('index')).toBe(2)
+    expect(getByText(/当前位于第一页/)).not.toBeInTheDocument()
+    expect(getByText(/当前位于第二页/)).toBeInTheDocument()
   })
 })
 ```
+
+关于 `react-testing-Library` 的用法总结将在下一章节 [Jest 与 react-testing-Library](https://github.com/MuYunyun/blog/blob/master/React/Jest与ReactTestingLibrary.md) 具体介绍, 欢迎关注[个人博客](https://github.com/MuYunyun/blog)。
 
 ### 相关链接
 
