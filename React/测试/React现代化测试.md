@@ -14,7 +14,7 @@
 
 金字塔模型自下而上分为单元测试、集成测试、UI 测试, 之所以是金字塔结构是因为单元测试的成本最低, 与之相对, UI 测试的成本最高。所以单元测试写的数量最多, UI 测试写的数量最少。同时需注意的是越是上层的测试, 其通过率给开发者带来的信心是越大的。
 
-奖杯模型摘自 Kent C. Dots 提出的 [The Testing Trophy](https://twitter.com/kentcdodds/status/960723172591992832?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E960723172591992832&ref_url=https%3A%2F%2Fkentcdodds.com%2Fblog%2Fwrite-tests), 该模型是笔者比较认可的前端现代化测试模型, 模型示意图如下:
+奖杯模型摘自 Kent C. Dodds 提出的 [The Testing Trophy](https://twitter.com/kentcdodds/status/960723172591992832?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E960723172591992832&ref_url=https%3A%2F%2Fkentcdodds.com%2Fblog%2Fwrite-tests), 该模型是笔者比较认可的前端现代化测试模型, 模型示意图如下:
 
 ![](http://with.muyunyun.cn/0453d50194dfa1cbf7a4aeb70252c438.jpg-300)
 
