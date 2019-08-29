@@ -24,6 +24,12 @@
 
 > 见 [水平垂直居中]([./水平垂直居中](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/水平垂直居中.md).md)
 
+场景: 右侧图标的导航栏的场景也适用此方式。
+
+![](http://with.muyunyun.cn/234bae5566a4662a6995ff01191865e3.jpg)
+
+方法: 在 flex 布局中, 使用 `margin-left: auto`。
+
 #### flex + height: 100%
 
 在 ios10 以下的 ios 版本中, 在 flex 布局中不推荐与 `height: 100%` 一起连用;
@@ -52,3 +58,4 @@ Flex 布局中, 省略号属性是失效的。
   white-space: nowrap;
 }
 ```
+
