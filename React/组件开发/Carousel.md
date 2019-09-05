@@ -1,4 +1,4 @@
-### 开发一个 React Swipe(走马灯) 组件
+### Carousel(走马灯) 组件
 
 事件是交给原生事件还是交由 React 的合成事件呢? 在最初的实现中参考 [react-swipe](https://github.com/voronianski/react-swipe/blob/gh-pages/src/index.js) 相当于是自己封装原生事件。
 
