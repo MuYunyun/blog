@@ -160,3 +160,23 @@ render() {
 }
 ```
 
+### Tabs 支持传入自定义组件
+
+使用 React.cloneElement 对传入的子组件进行处理是会有问题的, 因为此时只能接受 HTML 节点, 而不接受自定义组件的传入;
+
+```js
+return React.cloneElement(reactElement, {
+  className: cx(),
+  style: {}
+})
+```
+
+只要做如下改造便可以完成接受自定义组件的传入
+
+```js
+return (
+  <div className={cx()} style={}>
+    { React.cloneElement(reactElement }
+  </div>
+)
+```
