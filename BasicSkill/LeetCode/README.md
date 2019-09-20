@@ -270,7 +270,7 @@
 | 280 | [Wiggle Sort](https://leetcode.com/problems/wiggle-sort/) :blue_book: | | | Medium |
 | 281 | [Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/) :blue_book: | | | Medium |
 | 282 | [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/) | | | Hard |
-| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | | | Easy |
+| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/283.移动零/README.md) | Easy |
 | 284 | [Peeking Iterator](https://leetcode.com/problems/peeking-iterator/) | | | Medium |
 | 285 | [Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) :blue_book: | | | Medium |
 | 286 | [Walls and Gates](https://leetcode.com/problems/walls-and-gates/) :blue_book: | | | Medium |
