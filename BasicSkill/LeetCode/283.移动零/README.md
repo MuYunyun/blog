@@ -14,6 +14,8 @@
 
 ### first code
 
+* 思路一: 将 0 从数组中移除, 并用 count 变量计算移除 0 的个数, 最后将数组 push 回 count 个 0。
+
 ```js
 /**
  * @param {number[]} nums
@@ -32,6 +34,31 @@ var moveZeroes = function(nums) {
     nums.push(0)
   }
   return nums
-};
+}
 ```
 
+* 思路二: 使用双指针
+
+```js
+/**
+ * @param {number[]} nums
+ * @return {void} Do not return anything, modify nums in-place instead.
+ */
+var moveZeroes = function(nums) {
+  let m = 0 // 指针一的下标, [0, m) 区域用于存储非 0 元素
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i]) { // 如果存在 num[i] 不为 0, 则让其与 num[m] 交换
+      if (i !== m) {
+        [nums[m], nums[i]] = [nums[i], nums[m]]
+      }
+      m++
+    }
+  }
+  return nums
+}
+```
+
+### 同类扩展题目
+
+26、27、80 题目。
