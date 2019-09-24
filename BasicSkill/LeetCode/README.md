@@ -29,8 +29,8 @@
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | | | Hard |
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | | | Medium |
 | 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | | | Hard |
-| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/26.删除排序数组中的重复项/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/26.删除排序数组中的重复项/README.md) | Easy |
-| 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/27.移除元素/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/27.移除元素/README.md) | Easy |
+| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/26.删除排序数组中的重复项/README.md) | Easy |
+| 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/27.移除元素/README.md) | Easy |
 | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/28.实现strStr/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/28.实现strStr/README.md) | Easy |
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | | | Medium |
 | 30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | | | Hard |
