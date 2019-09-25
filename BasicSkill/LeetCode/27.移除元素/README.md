@@ -50,6 +50,8 @@ var removeElement = function (nums, val) {
 
 解法二: 双指针
 
+![](http://with.muyunyun.cn/e4ea67e0bdbf4af9ee3ad2a0ede55571.jpg)
+
 ```js
 /**
  * @param {number[]} nums

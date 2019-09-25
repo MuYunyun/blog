@@ -1,12 +1,12 @@
 ### LeetCode
 
-> 分享知乎上的一个[刷题方法](https://www.zhihu.com/question/31092580/answer/453117660)
+> [刷题方法](https://www.zhihu.com/question/31092580/answer/453117660)
 
 | # | Title | Source Code | Explanation | Difficulty |
 |:---:|:---:|:---:|:---:|:---:|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/1.TwoSum/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/1.TwoSum/README.md) | Easy |
-| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/2.AddTwoNumbers/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/2.AddTwoNumbers/README.md) | Medium |
-| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/3.LongestSubstringWithoutRepeatingCharacters/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/3.LongestSubstringWithoutRepeatingCharacters/README.md) | Medium |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/1.两数之和/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/1.两数之和/README.md) | Easy |
+| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/2.两数相加/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/2.两数相加/README.md) | Medium |
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/3.无重复字符的最长子串/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/3.无重复字符的最长子串/README.md) | Medium |
 | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/4.两个排序数组的中位数/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/4.两个排序数组的中位数/README.md) | Hard |
 | 5 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/5.最长回文子串/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/5.最长回文子串/README.md) | Medium |
 | 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/6.Z字形变换/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/6.Z字形变换/README.md) | Medium |
@@ -78,7 +78,7 @@
 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | | | Hard |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | | | Medium |
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | | | Medium |
-| 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/75.颜色分类) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/75.颜色分类/README.md) | Medium |
+| 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/75.颜色分类/README.md) | Medium |
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | | | Hard |
 | 77 | [Combinations](https://leetcode.com/problems/combinations/) | | | Medium |
 | 78 | [Subsets](https://leetcode.com/problems/subsets/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/78.子集/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/78.子集/README.md) | Medium |
@@ -91,7 +91,7 @@
 | 85 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | | | Hard |
 | 86 | [Partition List](https://leetcode.com/problems/partition-list/) | | | Medium |
 | 87 | [Scramble String](https://leetcode.com/problems/scramble-string/) | | | Hard |
-| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/88.合并两个有序数组/index.js) | | Easy |
+| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/88.合并两个有序数组/README.md) | Easy |
 | 89 | [Gray Code](https://leetcode.com/problems/gray-code/) | | | Medium |
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii/) | | | Medium |
 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | | | Medium |
