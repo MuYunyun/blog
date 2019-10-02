@@ -41,7 +41,7 @@ var findKthLargest = function(nums, k) {
 思路: 本方法大致上与快速排序相同。简便起见，注意到第 k 个最大元素也就是升序排序后下标为 `N - k` 的元素。递归使用[划分算法](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/划分算法.md)。
 
 * 使用划分算法, 定义一个枢纽值, 并将其放到指定位置(小于该枢纽值的都在其左边, 大于该枢纽值的都在其右边);
-* 比较枢纽值的下标 m 与 N - k 的大小关系
+* 比较枢纽值的下标 position 与 N - k 的大小关系
 
 ![](http://with.muyunyun.cn/503d3b6311c2f401a50bcdb5c57f0f52.jpg)
 
