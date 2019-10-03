@@ -21,6 +21,8 @@
 
 ### 解题
 
+双指针法:
+
 ```js
 /**
  * @param {string} s
@@ -33,7 +35,7 @@ var reverseVowels = function(s) {
     const isValidateLeft = isValidate(s[left])
     const isValidateRight = isValidate(s[right])
     if (isValidateLeft && isValidateRight) {
-      result = swap(s, left, right)
+      result = swap(result, left, right)
       left++
       right--
     }
@@ -48,7 +50,7 @@ var reverseVowels = function(s) {
 }
 
 var isValidate = (value) => {
-  return ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'].includes(value)
+  return /a|e|i|o|u|A|E|I|O|U/.test(value)
 }
 
 /* 交换位置

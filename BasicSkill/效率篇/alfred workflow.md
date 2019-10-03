@@ -1,6 +1,6 @@
 ### 演讲一: alfred workflow 是什么
 
-可定制化工具流, 能用脚本(node.js、python、php、ruby、perl、)提高我们日常效率，比如个人比较常用的有以下几种 —— 查文档，查单词，查 npm 包, 上传图床快捷操作等等。归纳下可以完成以下几类操作
+可定制化工具流, 能用脚本(node.js、python、php、ruby、perl)提高我们日常效率，比如个人比较常用的有以下几种 —— 查文档，查单词，查 npm 包, 上传图床快捷操作等等。归纳下可以完成以下几类操作
 
 * 查询信息并可以跳转到相应界面(npm、豆瓣、yd、canIUse)
 * 监听键盘按键完成特定事件(yd)
@@ -13,7 +13,6 @@
 
 > 一些有用传插件可查看 [alfred-workflows](https://github.com/willfarrell/alfred-workflows)
 
-### 演讲三: 如何调试一个 alfred-workflow
+### 实用快捷键
 
-* commonSearch()
-* yd(主要看按键如何生效)
+`shift + cmd + c`: 找寻近期复制到剪切板中的内容。
