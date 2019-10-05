@@ -16,11 +16,11 @@
 
 ### 解题
 
-思路: 滑动列表。
+思路: `滑动列表`。时间复杂度为 `O(n)`, 空间复杂度为 `1`。
 
 1. 取滑动列表 [left, right];
-2. 若列表 [left, right] 中的取值之和小于 s, 则列表 right + 1。
-3. 若列表 [left, right] 中的取值之和大于 s, 则列表 left + 1。
+2. 若列表 [left, right] 中的取值之和小于 s, 则列表的有边界 right 往右扩张。
+3. 若列表 [left, right] 中的取值之和大于 s, 则列表的左边界 left 往右扩张。
 
 ```js
 /**
@@ -32,15 +32,16 @@ var minSubArrayLen = function(s, nums) {
   let left = 0, right = -1 // [left, right], 左闭右闭
   let minDistance = nums.length + 1 // 存储 left 与 right 间的距离
   let sum = 0 // [left, right] 间值的总和
-  while (left < nums.length) {
-    if (right < nums.length && sum < s) {
+  while (left < nums.length - 1) {
+    if (right < nums.length - 1 && sum < s) {
       right++
       sum = sum + nums[right]
     } else {
-      // 。。。
-      minDistance = Math.min(minDistance, right - left + 1)
       sum = sum - nums[left]
       left++
+    }
+    if (sum >= s) {
+      minDistance = Math.min(minDistance, right - left + 1)
     }
   }
 
@@ -49,3 +50,5 @@ var minSubArrayLen = function(s, nums) {
   return minDistance
 }
 ```
+
+### 相关题目
