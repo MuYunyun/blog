@@ -33,15 +33,15 @@ var minSubArrayLen = function(s, nums) {
   let minDistance = nums.length + 1 // 存储 left 与 right 间的距离
   let sum = 0 // [left, right] 间值的总和
   while (left < nums.length) {
-    if (right <= nums.length - 1 && sum < s) {
+    if (right < nums.length && sum < s) {
       right++
       sum = sum + nums[right]
-    } else if (sum > s) {
+    } else {
+      // 。。。
+      minDistance = Math.min(minDistance, right - left + 1)
       sum = sum - nums[left]
       left++
     }
-
-    minDistance = Math.min(minDistance, right - left + 1)
   }
 
   if (minDistance === nums.length + 1) return 0
