@@ -83,6 +83,26 @@
 > 前端随笔集
 
 <details>
+  <summary>数据结构</summary>
+
+* [算法复杂度](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/算法复杂度.md)
+* [栈](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/栈.md)
+* [队列](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/队列.md)
+* [链表](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/链表.md)
+* [集合](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/集合.md)
+* [字典](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/字典.md)
+* [哈希表](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/哈希表.md)
+* [二叉树](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/二叉树.md)
+* [图](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/图.md)
+* [排序|查找](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/README.md)
+* [动态规划](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/动态规划.md)
+* [贪心算法](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/贪心算法.md)
+
+> [LeetCode 题解](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/README.md)
+
+</details>
+
+<details>
   <summary>JavaScript</summary>
 
 - [x] [你不知道的 JavaScript](https://github.com/MuYunyun/blog/issues/2)
@@ -113,26 +133,6 @@
 - [ ] [过渡与动画](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/css小书/过渡与动画.md)
 
 > [更多章节](https://github.com/MuYunyun/blog/tree/master/BasicSkill/%E5%9F%BA%E7%A1%80%E7%AF%87)
-
-</details>
-
-<details>
-  <summary>数据结构</summary>
-
-* [算法复杂度](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/算法复杂度.md)
-* [栈](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/栈.md)
-* [队列](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/队列.md)
-* [链表](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/链表.md)
-* [集合](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/集合.md)
-* [字典](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/字典.md)
-* [哈希表](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/哈希表.md)
-* [二叉树](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/二叉树.md)
-* [图](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/图.md)
-* [排序|查找](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/README.md)
-* [动态规划](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/动态规划.md)
-* [贪心算法](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/贪心算法.md)
-
-> [LeetCode](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/README.md)
 
 </details>
 
