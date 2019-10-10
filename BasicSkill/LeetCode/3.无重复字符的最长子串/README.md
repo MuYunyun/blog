@@ -14,9 +14,15 @@
 
 ### 题解
 
-方法名: 滑动窗口
+方法名: 滑动窗口是字符串/数组中常用概念
 
-滑动窗口是字符串/数组中常用概念, 这道题的解法如下: `判断字符串 s[i, j) 中是否有 s.charAt(j + 1), 如果有, 给左区间加上相应的值`。
+解法一: `判断字符串 s[i, j) 中是否有 s.charAt(j + 1), 如果有, 给左区间加上相应的值`, 执行时间大致为 98ms 左右。
+
+具体步骤如下:
+
+1. 取滑动列表 [left, right];
+2. 若列表 [left, right] 中的取值之和小于 s, 则列表的有边界 right 往右扩张。
+3. 若列表 [left, right] 中的取值之和大于 s, 则列表的左边界 left 往右扩张。
 
 ```js
 /**
@@ -40,7 +46,7 @@ var lengthOfLongestSubstring = function(s) {
 }
 ```
 
-针对 `判断字符串 s[i, j) 中是否有 s.charAt(j + 1)` 这一句, 是否能使用 O(n) 复杂度的算法代替 indexOf 呢?
+思考: 针对 `判断字符串 s[i, j) 中是否有 s.charAt(j + 1)` 这一句, 是否能使用 O(n) 时间复杂度的算法代替 indexOf 呢? 使用 cacheObj 来缓存值, 测试执行时间大致为 170ms 左右。
 
 ```js
 /**
@@ -48,7 +54,24 @@ var lengthOfLongestSubstring = function(s) {
  * @return {number}
  */
 var lengthOfLongestSubstring = function(s) {
+  let left = 0, right = 0 // [left, right] 区域
+  let result = 0 // 假定结果的初始值为 0
+  const cacheObj = {}
 
+  while (left < s.length) {
+    if (right < s.length && !cacheObj[s[right]]) {
+      cacheObj[s[right]] = 1
+      result = Math.max(result, right - left + 1)
+      right++
+    } else {
+      cacheObj[s[left]] = null
+      left++
+    }
+  }
+  if (result === 0) {
+    return 0
+  }
+  return result
 }
 ```
 
