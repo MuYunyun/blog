@@ -32,3 +32,7 @@ getClassName = () => {
   background: $btn-background;
 }
 ```
+
+### 难点
+
+在移动端中, 手指移到 button 按钮上时如何模拟 pc 端的 hover 状态?
