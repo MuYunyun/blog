@@ -53,4 +53,4 @@ var minSubArrayLen = function(s, nums) {
 
 ### 相似题目
 
-76、209、438
+3、76、209、438

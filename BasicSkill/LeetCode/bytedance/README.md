@@ -1,1 +1,0 @@
-[bytedance](https://leetcode-cn.com/explore/interview/card/bytedance)
