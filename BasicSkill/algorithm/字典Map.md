@@ -1,8 +1,8 @@
 ### 字典
 
-类似于集合, 字典也是一种无重复元素, 无顺序的数据结构。
+类似于集合, 字典也是一种`无重复元素`, `无顺序`的数据结构。
 
-区别在于在集合中, 我们以 [值,  值] 的形式存储；在字典中, 我们以 [键, 值] 的形式存储；集合的知识点可以阅读 [集合](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/集合.md)
+区别在于在集合中, 我们以 `[值,  值]` 的形式存储; 在字典中, 我们以 `[键, 值]` 的形式存储; 集合的知识点可以阅读 [集合](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/集合.md)
 
 ES6 引入的 Map 就是字典的数据类型。
 
