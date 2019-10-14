@@ -268,7 +268,7 @@
 | 280 | [Wiggle Sort](https://leetcode.com/problems/wiggle-sort/) :blue_book: | | Medium |
 | 281 | [Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/) :blue_book: | | Medium |
 | 282 | [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/) | | Hard |
-| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/283.移动零/README.md) | Easy |
+| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/283.移动零/README.md) | Easy |
 | 284 | [Peeking Iterator](https://leetcode.com/problems/peeking-iterator/) | | Medium |
 | 285 | [Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) :blue_book: | | Medium |
 | 286 | [Walls and Gates](https://leetcode.com/problems/walls-and-gates/) :blue_book: | | Medium |
@@ -334,7 +334,7 @@
 | 346 | [Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) :blue_book: | | Easy |
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | | Medium |
 | 348 | [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) :blue_book: | | Medium |
-| 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | | Easy |
+| 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/349.两个数组的交集/README.md) | Easy |
 | 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | | Easy |
 | 351 | [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) :blue_book: | | Medium |
 | 352 | [Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/) | | Hard |
