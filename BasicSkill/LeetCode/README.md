@@ -335,7 +335,7 @@
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | | Medium |
 | 348 | [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) :blue_book: | | Medium |
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/349.两个数组的交集/README.md) | Easy |
-| 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | | Easy |
+| 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/350.两个数组的交集II/README.md) | Easy |
 | 351 | [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) :blue_book: | | Medium |
 | 352 | [Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/) | | Hard |
 | 353 | [Design Snake Game](https://leetcode.com/problems/design-snake-game/) :blue_book: | | Medium |
