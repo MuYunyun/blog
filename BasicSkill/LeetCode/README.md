@@ -188,7 +188,7 @@
 | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | | Medium |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | | Medium |
 | 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | | Medium |
-| 202 | [Happy Number](https://leetcode.com/problems/happy-number/) | | Easy |
+| 202 | [Happy Number](https://leetcode.com/problems/happy-number/) | [Analuze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/202.快乐数/Analyze.md) | Easy |
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | | Easy |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/) | | Easy |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | | Easy |
