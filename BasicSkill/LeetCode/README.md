@@ -191,7 +191,7 @@
 | 202 | [Happy Number](https://leetcode.com/problems/happy-number/) | [Analuze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/202.快乐数/Analyze.md) | Easy |
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | | Easy |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/) | | Easy |
-| 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | | Easy |
+| 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/205.同构字符串/README.md) | Easy |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | | Easy |
 | 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | | Medium |
 | 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | | Medium |
