@@ -228,7 +228,7 @@
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | | Hard |
 | 240 | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | | Medium |
 | 241 | [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | | Medium |
-| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | | Easy |
+| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/242.有效的字母异位词/README.md) | Easy |
 | 243 | [Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/) :blue_book: | | Easy |
 | 244 | [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/) :blue_book: | | Medium |
 | 245 | [Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/) :blue_book: | | Medium |
