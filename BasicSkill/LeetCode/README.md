@@ -275,7 +275,7 @@
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | | Medium |
 | 288 | [Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/) :blue_book: | | Medium |
 | 289 | [Game of Life](https://leetcode.com/problems/game-of-life/) | | Medium |
-| 290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | | Easy |
+| 290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/290.单词规律/README.md) | Easy |
 | 291 | [Word Pattern II](https://leetcode.com/problems/word-pattern-ii/) :blue_book: | | Hard |
 | 292 | [Nim Game](https://leetcode.com/problems/nim-game/) | | Easy |
 | 293 | [Flip Game](https://leetcode.com/problems/flip-game/) :blue_book: | | Easy |
