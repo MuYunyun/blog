@@ -1,5 +1,7 @@
 ### Picker 组件
 
+#### 视觉兜底
+
 在 Picker 组件中, 来聊聊组件视觉层面的兜底。
 
 ```js
@@ -28,3 +30,16 @@
 ![](http://with.muyunyun.cn/cb71389f4a26685a686329d69290d15b.jpg)
 
 讨论话题: 这样子的兜底对用户是否友好。
+
+#### 一个典型的闭包陷阱
+
+如下代码的逻辑是点击关闭按钮, 让值恢复到之前的值。一下代码有没有问题呢?
+
+```js
+close = () => {
+  const { value, defaultPicker } = this.props
+  setTimeout(() => {
+    this.onChangePickerValue(value || defaultPicker || [])
+  }, 1000)
+}
+```
