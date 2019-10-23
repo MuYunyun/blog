@@ -142,6 +142,14 @@ export default function() {
 
 情形①、情形②、情形③、情形④ 中 render 输出的次数分别是 2, 4, 2, 4。可以看出在 React 中使用 class 写法和 hooks 写法是一一对应的。此外 `setState 的执行是异步还是同步取决于其执行环境`。
 
+### 如何在 Hooks 中模拟 setState 的第二个参数
+
+场景: 在使用类模式的 React 中有时会使用 setState 的第二个参数来完成某些异步回调操作(比如接口请求), 在 Hooks 中如何对齐类模式中的这种用法呢?
+
+使用 useRef 来控制一个标志符;
+
+> 具体见 [issue](https://github.com/facebook/react/issues/14174#issuecomment-437551476)
+
 ### Hooks 中的 useEffect 的执行时间是否与 componentDidMount/componentDidUpdate 相同
 
 在 [timing-of-effects](https://reactjs.org/docs/hooks-reference.html#timing-of-effects) 中有提到 `useEffect` 的执行时机是在浏览器 layout 与 paint 之后, 与之相对的 `componentDidMount`/`componentDidUpdate` 的执行时机是在 layout 与 paint 之前(Hooks 中的 useLayoutEffect 与此相对)。
