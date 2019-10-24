@@ -1,17 +1,17 @@
 ### Title
 
-Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。
 
-You may assume that each input would have `exactly one solution`, and you may `not use the same element twice`.
+你可以假设每种输入只会`对应一个答案`。但是，你不能重复利用这个数组中同样的元素。
 
-### Example
+示例:
 
 ```js
-Given nums = [2, 7, 11, 15], target = 9,
-
-Because nums[0] + nums[1] = 2 + 7 = 9,
-return [0, 1].
+给定 nums = [2, 7, 11, 15], target = 9
 ```
+
+因为 nums[0] + nums[1] = 2 + 7 = 9
+所以返回 [0, 1]
 
 ### Analyze
 
@@ -33,12 +33,18 @@ var twoSum = function(nums, target) {
 }
 ```
 
-* Time Complexity: O(n^2)
-* Space Complexity: O(1)
+* 时间复杂度: O(n^2)
+* 空间复杂度: O(1)
 
-题解 2-1: Hash Table
+题解 2-1: 哈希表
+
+思路:
 
 > 需要留意的是, 如果数组中有重复的值比如 [5, 5], target = 10 这种情况的处理
+
+* 遍历一次数组, 查询当前`哈希表`中是否有和当前索引值 `nums[i]` 对应的匹配值 `target - nums[i]`;
+  * 若有, 则返回它们两个值的索引;
+  * 若没有, 则将当前索引值和下标存入哈希表中;
 
 ```js
 var twoSum = function(nums, target) {
@@ -54,7 +60,29 @@ var twoSum = function(nums, target) {
 }
 ```
 
-* Time Complexity: O(n)
-* Space Complexity: O(n)
+* 时间复杂度: O(n)
+* 空间复杂度: O(n)
 
-题解 2-2: 使用 Map
+题解 2-2: 使用 Map, 思路同哈希表
+
+```js
+var twoSum = function(nums, target) {
+  var map = new Map()
+
+  for (let i = 0; i < nums.length; i++) {
+    const targetValue = target - nums[i]
+    const getTargetValue = map.get(targetValue)
+    if (typeof(getTargetValue) === 'number') {
+      return [i, getTargetValue]
+    }
+    map.set(nums[i], i)
+  }
+}
+```
+
+* 时间复杂度: O(n)
+* 空间复杂度: O(n)
+
+### 相似题目
+
+15、16、18
