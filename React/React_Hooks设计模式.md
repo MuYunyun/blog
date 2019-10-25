@@ -31,7 +31,7 @@ React 的 logo 是一个原子图案, 原子组成了物质的表现。类似的
 
 ```js
 {value: name, setValue: setName} = useState('路飞')
-{value: old, setValue: setOld} = useState(12)
+{value: name, setValue: setName} = useState(12)
 ```
 
 ### Hooks 传递的设计
@@ -58,6 +58,105 @@ setState(prevState => {
   return { ...prevState, ...updateValues }
 })
 ```
+
+此外可以对 class 与 Hooks 之间 `setState` 是异步还是同步的表现进行对比, 可以先对以下 4 种情形 render 输出的个数进行观察分析:
+
+class 中的 setState:
+
+```js
+export default class App extends React.Component {
+  state = {
+    name: '路飞',
+    old: 12,
+    gender: 'boy'
+  }
+
+  // 情形 ①: class 中异步调用 setState
+  componentDidMount() {
+    this.setState({
+      name: '娜美'
+    })
+    this.setState({
+      old: 13
+    })
+    this.setState({
+      gender: 'girl'
+    })
+  }
+
+  // 情形 ②: class 中同步调用 setState
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        name: '娜美'
+      })
+      this.setState({
+        old: 13
+      })
+      this.setState({
+        gender: 'girl'
+      })
+    })
+  }
+
+  render() {
+    console.log('render')
+    const { name, old, gender } = this.state
+    return (
+      <>{name}{old}{gender}</>
+    )
+  }
+}
+```
+
+Hooks 中的 setState
+
+```js
+export default function() {
+  const [name, setName] = useState('路飞')
+  const [old, setOld] = useState('12')
+  const [gender, setGender] = useState('boy')
+
+  // 情形③: Hooks 中异步调用 setState
+  useEffect(() => {
+    setName('娜美')
+    setOld('13')
+    setGender('girl')
+  }, [])
+
+  // 情形④: Hooks 中同步调用 setState
+  useEffect(() => {
+    setTimeout(() => {
+      setName('娜美')
+      setOld('13')
+      setGender('girl')
+    }, 0)
+  }, [])
+
+  console.log('render')
+  return (
+    <>{name}{old}{gender}</>
+  )
+}
+```
+
+情形①、情形②、情形③、情形④ 中 render 输出的次数分别是 2, 4, 2, 4。可以看出在 React 中使用 class 写法和 hooks 写法是一一对应的。此外 `setState 的执行是异步还是同步取决于其执行环境`。
+
+### 如何在 Hooks 中模拟 setState 的第二个参数
+
+场景: 在使用类模式的 React 中有时会使用 setState 的第二个参数来完成某些异步回调操作(比如接口请求), 在 Hooks 中如何对齐类模式中的这种用法呢?
+
+使用 useRef 来控制一个标志符;
+
+> 具体见 [issue](https://github.com/facebook/react/issues/14174#issuecomment-437551476)
+
+### Hooks 中的 useEffect 的执行时间是否与 componentDidMount/componentDidUpdate 相同
+
+在 [timing-of-effects](https://reactjs.org/docs/hooks-reference.html#timing-of-effects) 中有提到 `useEffect` 的执行时机是在浏览器 layout 与 paint 之后, 与之相对的 `componentDidMount`/`componentDidUpdate` 的执行时机是在 layout 与 paint 之前(Hooks 中的 useLayoutEffect 与此相对)。
+
+> useLayoutEffect 适用的场景为在 class 模式下在 componentDidMount/componentDidUpdate 中对样式进行调整的场景;
+
+> [this-benchmark-is-indeed-flawed](https://medium.com/@dan_abramov/this-benchmark-is-indeed-flawed-c3d6b5b6f97f): 此文用数据比较了 useEffect 与 componentDidMount/componentDidUpdate 的执行时机。
 
 ### 是否能使用 React Hooks 替代 Redux
 
@@ -91,7 +190,7 @@ React 官方在未来很可能会提供一个 `usePrevious` 的 hooks 来获取�
 `usePrevious` 的核心思想是用 ref 来存储先前的值。
 
 ```js
-function usePrevious(value) {
+function usePrevous(value) {
   const ref = useRef()
   useEffect(() => {
     ref.current = value
@@ -139,7 +238,7 @@ function ScrollView({row}) {
 可以使用 `useReducer` 来 hack `forceUpdate`, 但是尽量避免 forceUpdate 的使用。
 
 ```js
-const [ignored, forceUpdate] = useReduce(x => x + 1, 0)
+const [ignored, forceUpdate] = useReducer(x => x + 1, 0)
 
 function handleClick() {
   forceUpdate()
