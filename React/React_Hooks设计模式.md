@@ -223,7 +223,7 @@ function ScrollView({row}) {
   const [isScrollingDown, setISScrollingDown] = setState(false)
   const [prevRow, setPrevRow] = setState(null)
 
-  // 核心是创建一个 prevRow state 与父组件传进来的 row 进行比较
+  // 核心是创建一个 prevRow state 与函数调用方传进来的 row 进行比较
   if (row !== prevRow) {
     setISScrollingDown(prevRow !== null && row > prevRow)
     setPrevRow(row)
@@ -378,6 +378,38 @@ function Image(props) {
   }
 
   // if need ExpensiveObj, call getExpensiveObj()
+}
+```
+
+### race condition
+
+关于竞态的解决方法:
+
+1. 提供一个标志符, 在 `clean effect` 阶段中将其置空。
+2. 使用 Suspense: Suspense 的机制能做到 `render as fetch`。见 [solving-race-conditions-with-suspense](https://reactjs.org/docs/concurrent-mode-suspense.html#solving-race-conditions-with-suspense)
+
+```js
+function Article({ id }) {
+  const [article, setArticle] = useState(null);
+
+  useEffect(() => {
+    let didCancel = false;
+
+    async function fetchData() {
+      const article = await API.fetchArticle(id);
+      if (!didCancel) {
+        setArticle(article);
+      }
+    }
+
+    fetchData();
+
+    return () => {
+      didCancel = true;
+    };
+  }, [id]);
+
+  // ...
 }
 ```
 
