@@ -34,5 +34,11 @@
 1. 解决接口根据 render 走导致`不能并发请求接口`的痛点;
 2. 解决使用 Promise.all 带来的`页面数据内容存在延时`的问题;
 
-to read: When we click the “Next” button to switch the active profile,
+### Concurrent UI patterns
+
+Default Mode: Receded → Skeleton → Complete
+
+Preferred Mode: Pending → Skeleton → Complete
+
+to read: Default: Receded → Skeleton → Complete
 
