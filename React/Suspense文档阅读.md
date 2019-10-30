@@ -36,9 +36,13 @@
 
 ### Concurrent UI patterns
 
-Default Mode: Receded → Skeleton → Complete
+* Default Mode: Receded → Skeleton → Complete
+* Preferred Mode: Pending → Skeleton → Complete
 
-Preferred Mode: Pending → Skeleton → Complete
+总结:
 
-to read: Default: Receded → Skeleton → Complete
+* Receded 不好的原因是因为其把页面现有的内容给弄丢了。
+* 可以使用 `useTransition` 进入 Pending 状态 —— 位于当前页的同时, 加载下一页(想象多元宇宙)
+* 如果不想下一个页面的非核心组件延长 Pending 的时间, 用 Suspense 包裹它;
 
+to read: If we’re willing to sacrifice consistency, we could pass potentially stale data to the components that delay our transition.
