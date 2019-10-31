@@ -36,13 +36,45 @@
 
 ### Concurrent UI patterns
 
-* Default Mode: Receded → Skeleton → Complete
-* Preferred Mode: Pending → Skeleton → Complete
+* `Default Mode`: Receded → Skeleton → Complete
+* `Preferred Mode`: Pending → Skeleton → Complete
 
 总结:
 
 * Receded 不好的原因是因为其把页面现有的内容给弄丢了。
 * 可以使用 `useTransition` 进入 Pending 状态 —— 位于当前页的同时, 加载下一页(想象多元宇宙)
 * 如果不想下一个页面的非核心组件延长 Pending 的时间, 用 Suspense 包裹它;
+
+### useDeferredValue
+
+`useDeferredValue` 的作用: 能让组件中的部分内容`延迟加载`。
+
+```js
+const deferredText = useDeferredValue(text, {
+  timeoutMs: 5000
+})
+```
+
+这里第二个参数表示, 能确保 5s 之内输入框内的输入是顺滑的。
+
+### SuspenseList
+
+SuspenseList 中的 `revealOrder` 字段能控制其里面 Suspense 节点的输出顺序, `tail` 字段控制当前加载的节点数。
+
+```js
+function ProfilePage({ resource }) {
+  return (
+    <SuspenseList revealOrder="forwards" tail="collapsed">
+      <ProfileDetails resource={resource} />
+      <Suspense fallback={<h2>Loading posts...</h2>}>
+        <ProfileTimeline resource={resource} />
+      </Suspense>
+      <Suspense fallback={<h2>Loading fun facts...</h2>}>
+        <ProfileTrivia resource={resource} />
+      </Suspense>
+    </SuspenseList>
+  );
+}
+```
 
 to read: If we’re willing to sacrifice consistency, we could pass potentially stale data to the components that delay our transition.
