@@ -158,30 +158,23 @@ export default function() {
 
 > [this-benchmark-is-indeed-flawed](https://medium.com/@dan_abramov/this-benchmark-is-indeed-flawed-c3d6b5b6f97f): 此文用数据比较了 useEffect 与 componentDidMount/componentDidUpdate 的执行时机。
 
-### 是否能使用 React Hooks 替代 Redux
+### Hooks 中模拟仅调用 componentDidUpdate 而不调用 componentDidMount
 
-在 React 16.8 版本之后, 针对`不是特别复杂`的业务场景, 可以使用 React 提供的 `useContext`、`useReducer` 实现自定义简化版的 redux, 可见 [todoList](https://github.com/MuYunyun/todoList) 中的运用。核心代码如下:
+思路: 借助 `useRef` 跳过头一次的执行。
 
 ```js
-import React, { createContext, useContext, useReducer } from "react"
+function Demo() {
+  const mounted = React.useRef(false)
 
-// 创建 StoreContext
-const StoreContext = createContext()
-
-// 构建 Provider 容器层
-export const StoreProvider = ({reducer, initialState, children}) => {
-  return (
-    <StoreContext.Provider value={useReducer(reducer, initialState)}>
-      {children}
-    </StoreContext.Provider>
-  )
+  React.useEffect(() => {
+    if (!mounted.current) {
+      mounted.current = true
+    } else {
+      // do something mock componentDidUpdate
+    }
+  })
 }
-
-// 在子组件中调用 useStoreContext, 从而取得 Provider 中的 value
-export const useStoreContext = () => useContext(StoreContext)
 ```
-
-但是针对特别复杂的场景目前不建议使用此模式, 因为 context 的机制会有性能问题。具体原因可见 [react-redux v7 回退到订阅的原因](https://github.com/reduxjs/react-redux/issues/1177)
 
 ### Hooks 中如何获取先前的 props 以及 state
 
@@ -263,6 +256,31 @@ useMemo(() => <component />) 等价于 useCallback(<component />)
 
 * useCallback: 一般用于缓存函数
 * useMemo: 一般用于缓存组件
+
+### 是否能使用 React Hooks 替代 Redux
+
+在 React 16.8 版本之后, 针对`不是特别复杂`的业务场景, 可以使用 React 提供的 `useContext`、`useReducer` 实现自定义简化版的 redux, 可见 [todoList](https://github.com/MuYunyun/todoList) 中的运用。核心代码如下:
+
+```js
+import React, { createContext, useContext, useReducer } from "react"
+
+// 创建 StoreContext
+const StoreContext = createContext()
+
+// 构建 Provider 容器层
+export const StoreProvider = ({reducer, initialState, children}) => {
+  return (
+    <StoreContext.Provider value={useReducer(reducer, initialState)}>
+      {children}
+    </StoreContext.Provider>
+  )
+}
+
+// 在子组件中调用 useStoreContext, 从而取得 Provider 中的 value
+export const useStoreContext = () => useContext(StoreContext)
+```
+
+但是针对特别复杂的场景目前不建议使用此模式, 因为 context 的机制会有性能问题。具体原因可见 [react-redux v7 回退到订阅的原因](https://github.com/reduxjs/react-redux/issues/1177)
 
 #### 依赖列表中移除函数是否是安全的?
 
@@ -381,12 +399,11 @@ function Image(props) {
 }
 ```
 
-### race condition
+### 竞态
 
-关于竞态的解决方法:
+关于竞态(race condition) 的解决方法:
 
-1. 提供一个标志符, 在 `clean effect` 阶段中将其置空。
-2. 使用 Suspense: Suspense 的机制能做到 `render as fetch`。见 [solving-race-conditions-with-suspense](https://reactjs.org/docs/concurrent-mode-suspense.html#solving-race-conditions-with-suspense)
+方案一: 提供一个标志符, 在 `clean effect` 阶段中将其置空。代码如下:
 
 ```js
 function Article({ id }) {
@@ -412,6 +429,8 @@ function Article({ id }) {
   // ...
 }
 ```
+
+方案二: 使用 Suspense: Suspense 的机制能做到 `render as fetch`。见 [solving-race-conditions-with-suspense](https://reactjs.org/docs/concurrent-mode-suspense.html#solving-race-conditions-with-suspense)
 
 ### 相关资料
 
