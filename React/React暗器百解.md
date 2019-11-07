@@ -99,3 +99,21 @@ class Picker extends Component {
 
 * 完全受控组件
 * 完全非受控组件 + key
+
+### Hooks 踩坑
+
+There are three common reasons you might be seeing it:
+
+```js
+1. You might have mismatching versions of React and React DOM.
+2. You might be breaking the Rules of Hooks.
+3. You might have more than one copy of React in the same app.
+```
+
+在 demo 项目中使用 yarn link "@msfe/beast-mobile" 会遇到上述报错, 解决方法是执行(貌似有问题)
+
+```bash
+npm link ../beast-mobile-demo/node_modules/react from @msfe/beast-mobile
+```
+
+另一种方法是在业务项目中配置 [resolutions](https://yarnpkg.com/lang/en/docs/selective-version-resolutions/)

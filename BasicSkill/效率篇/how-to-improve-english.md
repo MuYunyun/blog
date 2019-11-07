@@ -17,3 +17,11 @@
 - [ ] [20 天流畅美语听力挑战](https://mp.weixin.qq.com/mp/homepage?__biz=MzI5ODE3NDQ0OQ%3D%3D&hid=14&sn=82877c6cf530bf3bc851c936d7cffd1a)
 - [ ] [精品资源｜最适合学英语的 50 部动画](https://mp.weixin.qq.com/s/XXzQeUMZvA2nnuQXKMNsBg): 未来有兴趣可以观看
 - [ ] [精品资源｜电影学英语新姿势: 100 部纯英字幕电影 + 剧本 + MP3](https://mp.weixin.qq.com/s/5Z9ja6nfuZdOZrVKwUBsEg): 未来有兴趣可以观看
+
+### Amazon Alexa 连接
+
+使用 PC 端登入 https://pitangui.amazon.com/spa/index.html#settings, 在 pc 端按照指示对 Alexz 进行连接。
+
+1. 按照步骤先连接到手机外放的热点;
+
+后续接着研究: [Alexa 使用](https://www.jianshu.com/p/a04fb4c4ac62)

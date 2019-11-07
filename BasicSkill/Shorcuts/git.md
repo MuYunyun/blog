@@ -1,13 +1,13 @@
 ### 操作远程文件
 
-```
+```bash
 git push origin :[branch] 删除远程分支
 git rm -r --cached [file] 删除远程文件
 ```
 
 ### git commit 提交规范
 
-```
+```bash
 feat: 新功能
 fix: 修复 bug
 test: 增加/修改测试用例
@@ -21,7 +21,7 @@ deps: 升级依赖
 
 ### PR 相关
 
-```
+```bash
 git remote -v               列出远程仓库 url
 git remote add [name] [url] 添加远程仓库 url
 git fetch [name]            拉取远程仓库最新代码
@@ -58,7 +58,7 @@ git merge [name]/master     合并远程分支最新代码到本地
 
 使用场景: 在一个分支中拉取另外一个分支`某一个 commit` 或`一段区间的 commit`
 
-```
+```bash
 git cherry-pick <commit id>
 git cherry-pick 371c2…971209 // (2,5]
 git cherry-pick 371c2^…971209 // [2,5]
@@ -89,7 +89,7 @@ git lg -p
 
 当有人提了 `pr`, 需要观察 pr 的代码是否存在问题。比如使用如下命令:
 
-```
+```bash
 git remote add lanyincao git@github.com:snakeUni/snake-design.git
 ```
 
@@ -113,8 +113,16 @@ git reflog 可以查看所有分支的所有操作记录
 
 ### 打 tag
 
-```
+```bash
 git tag v0.1
 git tag -d v0.1         // 删标签
 git push orgin v0.1 // 推标签
+```
+
+### git 项目大小写
+
+git 默认初始化的项目是不区分文件名大小写的, 可以执行下这行命令
+
+```js
+git config core.ignorecase false
 ```
