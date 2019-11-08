@@ -152,7 +152,7 @@ export default function() {
 
 ### Hooks 中的 useEffect 的执行时间是否与 componentDidMount/componentDidUpdate 相同
 
-在 [timing-of-effects](https://reactjs.org/docs/hooks-reference.html#timing-of-effects) 中有提到 `useEffect` 的执行时机是在浏览器 layout 与 paint 之后, 与之相对的 `componentDidMount`/`componentDidUpdate` 的执行时机是在 layout 与 paint 之前(Hooks 中的 useLayoutEffect 与此相对)。
+在 [timing-of-effects](https://reactjs.org/docs/hooks-reference.html#timing-of-effects) 中有提到 `useEffect` 的执行时机是在浏览器下一次 layout 与 paint 之后, 与之相对的 `useLayoutEffect` 的执行时机是在浏览器下一次 layout 与 paint 之前(同 `componentDidMount`/`componentDidUpdate`)。
 
 > useLayoutEffect 适用的场景为在 class 模式下在 componentDidMount/componentDidUpdate 中对样式进行调整的场景;
 
