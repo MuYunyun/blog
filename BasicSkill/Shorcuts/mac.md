@@ -23,3 +23,15 @@
 疑问点: 转换密码项到登录项
 
 > [1Password for Mac 使用指南](https://sspai.com/post/35195)
+
+### 邮箱加密
+
+```bash
+echo mujue@pinduoduo.com | base64
+```
+
+得到 bXVqdWVAcGluZHVvZHVvLmNvbQo=
+
+```bash
+echo bXVqdWVAcGluZHVvZHVvLmNvbQo= | base64 -D
+```
