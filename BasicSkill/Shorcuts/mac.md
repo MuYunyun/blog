@@ -27,7 +27,7 @@
 ### 邮箱加密
 
 ```bash
-echo mujue@pinduoduo.com | base64
+echo xxx | base64
 ```
 
 得到 bXVqdWVAcGluZHVvZHVvLmNvbQo=

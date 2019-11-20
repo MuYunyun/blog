@@ -30,16 +30,6 @@
 
 > [行高与基线](https://blog.csdn.net/lulujiajiawenwen/article/details/8245201)
 
-### 块级元素/行内元素
-
-`html` 中, 块级元素不能继承自行内元素。配合 `css` 的 `display` 属性可以。
-
-### 结构和层叠
-
-#### 优先级
-
-Id 选择器 > 类选择器 | 属性选择器 > 元素 > 通配选择器
-
 ### 样式表
 
 * 内联样式表

@@ -49,4 +49,4 @@
 
 ### 简历传送门
 
-`mujue@pinduoduo.com`
+`echo bXVqdWVAcGluZHVvZHVvLmNvbQo= | base64 -D`
