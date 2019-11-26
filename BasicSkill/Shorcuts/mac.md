@@ -35,3 +35,13 @@ echo xxx | base64
 ```bash
 echo bXVqdWVAcGluZHVvZHVvLmNvbQo= | base64 -D
 ```
+
+### 网易云音乐迁移到 apple music
+
+使用 TuneMyMusic 导入。
+
+打开 https://yyrcd.com/2018/11/14/n2s-zh/, 填入 网易云歌单的 ID。假如歌单地址是 https://music.163.com/#/playlist?id=2651036663, 那么便填写 2651036663
+
+接下来点击 Search ，会显示歌单列表，然后复制生成的文字版歌单。导出歌单后，打开 TuneMyMusic 网站 https://www.tunemymusic.com/zh-cn/
+
+导入来源选择 从文本 ，目的地选择 Apple Music 即可。
