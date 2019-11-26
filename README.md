@@ -41,7 +41,7 @@
 <details>
   <summary>组件开发实践</summary>
 
-* [组件设计原则 —— 为什么推荐使用受控组件](https://github.com/MuYunyun/blog/blob/master/React/组件开发/组件设计原则(受控组件).md)
+* [组件设计 —— 重新认识受控与非受控组件](https://github.com/MuYunyun/blog/blob/master/React/组件开发/组件设计(重新认识受控与非受控组件).md)
 * [Button](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Button.md)
 * [Icon](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Icon.md)
 * [Menu](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Menu.md)
