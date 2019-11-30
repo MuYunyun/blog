@@ -46,7 +46,7 @@ path.join('/foo', 'bar', 'baz/asdf', 'quux', '..')
 // Returns: '/foo/bar/baz/asdf'
 ```
 
-* `path.resolve()`: 返回绝对路径(绝对路径以 `/` 开头), 该 api 的注意点, 遵循`从右向左最小匹配`原则。
+* `path.resolve()`: 返回绝对路径(绝对路径以 `/` 开头), 注意该 api 遵循`从右向左最小匹配`原则。
 
 ```js
 path.resolve('/foo', '/bar', 'baz')
@@ -57,10 +57,9 @@ path.resolve('wwwroot', 'static_files/png/', '../gif/image.gif');
 // this returns '/home/myself/node/wwwroot/static_files/gif/image.gif'
 ```
 
-* `path.relative(from, to)`: 返回 `to 路径`相对 `from 路径`的差值。
+* `path.relative(from, to)`: 返回相对路径, 其为 `to 路径`相对 `from 路径`的差值。
 
 ```js
 path.relative('/data/orandea/test/aaa', '/data/orandea/impl/bbb')
 // Returns: '../../impl/bbb'
 ```
-

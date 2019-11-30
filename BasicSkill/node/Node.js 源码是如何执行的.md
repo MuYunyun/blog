@@ -18,7 +18,7 @@ make install
 const fs = require('fs')
 
 fs.readFile('./node.gyp', {encoding: 'utf-8'}, function (e, content) {
-    console.log(content)
+  console.log(content)
 })
 ```
 

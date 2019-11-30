@@ -55,9 +55,10 @@
 * [SearchBar](https://github.com/MuYunyun/blog/blob/master/React/组件开发/SearchBar.md)
 * [Modal](https://github.com/MuYunyun/blog/blob/master/React/组件开发/modal.md)
 * [TextArea](https://github.com/MuYunyun/blog/blob/master/React/组件开发/TextArea.md)
-* [编写具有弹性的组件](https://github.com/MuYunyun/blog/blob/master/React/组件开发/编写具有弹性的组件.md)
 * [主题色替换方案](https://github.com/MuYunyun/blog/blob/master/React/组件开发/主题色替换方案.md)
 * [移动端组件测试指北](https://github.com/MuYunyun/blog/blob/master/React/组件开发/移动端组件测试指北.md)
+
+- [ ] [组件开发实践](https://github.com/MuYunyun/blog/blob/master/React/组件开发/组件开发实践.md)
 
 </details>
 
@@ -68,7 +69,7 @@
 * [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
 * [探索从 MVC 到 MVVM + Flux 架构模式的转变](https://github.com/MuYunyun/blog/issues/14)<sub>[(相关项目)](https://github.com/MuYunyun/stateManage)
 * [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
-* [在 react 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/React/在react使用immutable数据的优势.md)
+* [在 React 使用 immutable 数据的优势](https://github.com/MuYunyun/blog/blob/master/React/在react使用immutable数据的优势.md)
 * [路由的简易实现](https://github.com/MuYunyun/blog/blob/master/React/router的简易实现.md)
 * [React 在服务端渲染的实现](https://github.com/MuYunyun/blog/issues/4)
 * [定制自己的 react-script](https://github.com/MuYunyun/blog/blob/master/React/定制自己的react-script.md)
@@ -113,7 +114,6 @@
 - [x] [红皮书里的细节](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/二刷高程.md)
 - [x] [探寻 JavaScript 精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
 - [x] [函数式编程入门](https://github.com/MuYunyun/blog/blob/master/BasicSkill/编程范式/函数式编程入门.md)
-- [ ] [重构笔记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/效率篇/重构改善既有代码的设计.md)
 - [x] [Decorator](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/装饰器.md)
 - [x] [Promise](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Promise.md)<sub>[(相关项目)](https://github.com/MuYunyun/repromise)
 - [x] [Generator](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Generator.md)
@@ -124,7 +124,7 @@
 - [x] [箭头函数](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/箭头函数.md)
 - [x] [Reflect](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Reflect.md)
 
-> [更多章节](https://github.com/MuYunyun/blog/tree/master/BasicSkill/%E5%9F%BA%E7%A1%80%E7%AF%87)
+- [ ] [重构笔记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/效率篇/重构改善既有代码的设计.md)
 
 </details>
 
@@ -202,7 +202,7 @@
   <summary>项目架构</summary>
 
 * [CAS 登入流程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/CAS登入流程.md)
-* [RPC 在网关项目的实践](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/RPC在点我达网关的实践一.md)
+* [RPC 在网关项目中的实践](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/RPC在点我达网关的实践一.md)
 * [解读 IoC 框架 —— InversifyJS](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/解读IoC框架InversifyJS.md)
 
 </details>
