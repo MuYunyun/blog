@@ -112,7 +112,6 @@
 - [x] [你不知道的 JavaScript](https://github.com/MuYunyun/blog/issues/2)
 - [x] [红皮书里的细节](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/二刷高程.md)
 - [x] [探寻 JavaScript 精度问题](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/探寻JavaScript精度问题.md)
-- [x] [从 JavaScript 到 TypeScript](https://github.com/MuYunyun/blog/issues/5)
 - [x] [函数式编程入门](https://github.com/MuYunyun/blog/blob/master/BasicSkill/编程范式/函数式编程入门.md)
 - [ ] [重构笔记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/效率篇/重构改善既有代码的设计.md)
 - [x] [Decorator](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/装饰器.md)
@@ -166,7 +165,8 @@
 <details>
   <summary>TypeScript</summary>
 
-- [x] [基础篇](https://github.com/MuYunyun/blog/blob/master/BasicSkill/typescript/TypeScript基础篇.md)
+* [TypeScript 基础篇](https://github.com/MuYunyun/blog/blob/master/BasicSkill/typescript/TypeScript基础篇.md)
+* [工具类型](https://github.com/MuYunyun/blog/blob/master/BasicSkill/typescript/Utility_Types.md)
 
 </details>
 

@@ -14,3 +14,7 @@
 * command + shift + D 打开调试
 * command + shift + X 打开扩展
 * command + shift + r 打开 bookmarks
+
+### 推荐字体
+
+* [vscode](https://github.com/sdras/night-owl-vscode-theme)

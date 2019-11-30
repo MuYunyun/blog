@@ -39,9 +39,9 @@ const x: Record<Page, PageInfo> = {
 };
 ```
 
-### Omit<T,K>
+### Omit<T, K>
 
-在 T 类型中将属性符合 K 的字段移除。
+`Omit<T, K>`: 申明一个类型其在 T 类型中`移除 K 中包含的属性值`;
 
 ```js
 interface Todo {
@@ -56,11 +56,36 @@ const todo: TodoPreview = {
 };
 ```
 
-### to read
+### Exclude<T, U>
 
-`Exclude<T,U>`
+`Exclude<T, U>`: 申明一个类型其在 T 类型中`移除 U 中所包含的类型`;
+
+```js
+type T0 = Exclude<"a" | "b" | "c", "a">; // "b" | "c"
+type T1 = Exclude<"a" | "b" | "c", "a" | "b">; // "c"
+type T2 = Exclude<string | number | (() => void), Function>; // string | number
+```
+
+### NonNullable<T>
+
+`NonNullable<T>`: 申明一个类型其将 T 类型中的 null 与 undefined 移除;
+
+### InstanceType<T>
+
+`InstanceType<T>`: 申明一个由构造函数实例类型组合而成的类型;
+
+```js
+class C {
+  x = 0;
+  y = 0;
+}
+type T0 = InstanceType<typeof C>; // C
+type T1 = InstanceType<any>; // any
+type T2 = InstanceType<never>; // any
+type T3 = InstanceType<string>; // Error
+type T4 = InstanceType<Function>; // Error
+```
 
 ### link
 
 * [utility-types](https://www.elsewebdevelopment.com/wp-content/uploads/typescript-3.7-utility-types-printable-cheatsheet.pdf)
-* [utility-types](https://www.elsewebdevelopment.com/typescript-3-7-utility-types-printable-pdf-cheat-sheet/?utm_source=typescript-weekly.com&utm_campaign=typescript_weekly_116&utm_medium=email)
