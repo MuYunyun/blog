@@ -175,3 +175,5 @@ function HackWxIos() {
 
 export default HackWxIos
 ```
+
+> [知乎 —— Modal 为什么设计成组件的形式，为啥不全设计成函数 api 直接调用？](https://www.zhihu.com/question/357548379/answer/919983914)

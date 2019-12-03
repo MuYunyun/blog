@@ -101,3 +101,7 @@ mount(<Swipe>
 ------- 分割线 -------
 
 经过上述步骤去掉 `document.getElementById` 以后, `{ attatch: document.body }` 也可以去掉了。
+
+### css 实现
+
+scroll-snap-type
