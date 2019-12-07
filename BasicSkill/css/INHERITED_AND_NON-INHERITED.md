@@ -1,6 +1,6 @@
 ### INHERITED AND NON-INHERITED IN CSS
 
-When I look up css properties in MDN's specifications section, there are `Initial value`、`Applies to`、`Inherited`、`Media`、`Computed value`、`Animation type`、`Canonical order` in it and it seems unfamiliar to me. So I try to find out some of them today.
+When I look up css properties in MDN's specifications section, there are some properties in it and it seems unfamiliar to me. So I try to find out some of them today.
 
 ![](http://with.muyunyun.cn/b22bcdb94d354d3f301cae7997d9cd17.jpg)
 
@@ -8,7 +8,7 @@ When I look up css properties in MDN's specifications section, there are `Initia
 
 The initial value of a CSS property is its default value.
 
-The Initial value has two different behavious between `inherited properties` and `non-inherited properties`.
+The Initial value has two different behavior between `inherited properties` and `non-inherited properties`.
 
 For `inherited properties`, the initial value is `used on the root element only`.
 
@@ -18,10 +18,9 @@ For `inherited properties`, the initial value is `used on the root element only`
 </span>
 ```
 
-The result is the color of both `span` and `em` element are red. Because the color is an inherited property, the element will get the color property from the parent
-recursively until to document.
+The result is the color of both `span` and `em` element are red. Because the color is an inherited property, the element will get the color property from the parent recursively until to document.
 
-For `non-inherited properties`, the initial value is `used on every element`. When no value for a non-inherited property has been specified on an element, the element gets the initial value directely.
+For `non-inherited properties`, the initial value is `used on every element`. When no value for a non-inherited property has been specified on an element, the element gets the initial value directly.
 
 ```html
 <span style="border: 1px solid black">
@@ -31,7 +30,7 @@ For `non-inherited properties`, the initial value is `used on every element`. Wh
 
 The result is the border is only effected on `span` element, not `em`. Because the border is a non-inherited property, and there is no border property specified on the em, so the em get the border's initial value `none`.
 
-It mentioned much times about inherited value and non-inherited value above, and now we sort out properties which css property type is inherited value and which isn't.
+It mentioned much times about inherited value and non-inherited value above, and now we sort out css properties.
 
 ### Inherited Type
 
@@ -45,13 +44,13 @@ I've collected some inherited types in css, they are listed as follow:
 
 ### Non-Inherited Type
 
-In the oppsite of inherited type, the non-inherited types are listed as follow:
+In the opposite of inherited type, the non-inherited types are listed as follow:
 
 * `Layout Type`: float、position、left、right、top、bottom、z-index、display
 * `Box Type`: width、max-width、min-width、height、max-height、min-height、margin、padding、border;
 * `Background Type`: background-size、background-image、background-clip、background-color、background-origin、background-position、background-repeat;
-* `others`: overflow、text-overflow、verticle-align;
+* `Others`: overflow、text-overflow、vertical-align;
 
 ### Recap
 
-These lists distinguishs some inherited type and some non-inherited type from css propertys. Hope it's helpful for you.
+These section introduces the inherited concept in CSS, and distinguish some inherited type and some non-inherited type from css properties. Hope it's helpful for you.

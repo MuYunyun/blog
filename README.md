@@ -131,7 +131,7 @@
 <details>
   <summary>CSS</summary>
 
-- [ ] [INHERITED AND NON-INHERITED](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/INHERITED_AND_NON-INHERITED.md)
+- [x] [INHERITED AND NON-INHERITED](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/INHERITED_AND_NON-INHERITED.md)
 - [x] [水平布局解决方案](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/水平布局解决方案.md)
 - [x] [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
 - [ ] [过渡与动画](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/css小书/过渡与动画.md)
