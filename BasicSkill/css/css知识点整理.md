@@ -65,3 +65,13 @@
 ### input 的宽度 —— 并不是给元素设置 display:block 就会自动填充父元素宽度。input 就是个例外，其默认宽度取决于 size 特性的值。
 
 ![](https://user-gold-cdn.xitu.io/2019/7/29/16c3d4f6fef0a871?imageslim)
+
+### object-fit
+
+It's a css property that can be eaqual to the background-size, it has five types:
+
+* fill: default
+* contain
+* cover: used in imagePicker
+* none
+* scale-down: if the image's size is imaller than box, it'll keep the image's size, otherwise it'll equal to contain. You can look for it [here](https://codepen.io/chrisnager/pen/XJgJqN)
