@@ -46,7 +46,7 @@ async function block() {
 
 在如上案例中, `request(url1)` 请求未完成的话是不会发起 `request(url2)` 请求的(类似串行调用), 若想使之变为并行调用可以作如下修改:
 
-写法1:
+写法 1:
 
 ```js
 async function block() {
@@ -57,11 +57,11 @@ async function block() {
 }
 ```
 
-写法2:
+写法 2:
 
 ```js
 async function block() {
-  const [result1, result2] = await Promise.all(request(url1), request(url2))
+  const [result1, result2] = await Promise.all([request(url1), request(url2)])
 }
 ```
 

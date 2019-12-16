@@ -4,13 +4,17 @@ When I look up css properties in MDN's specifications section, there are some pr
 
 ![](http://with.muyunyun.cn/b22bcdb94d354d3f301cae7997d9cd17.jpg)
 
+The follow list try to give one word to specify the meaning of them.
+
 * Initial value: Specify the CSS property's default value;
 * Applies to: Specify which elements to apply to;
 * Inherited: Specify the CSS property is inherited or non-inherited;
 * [Media](https://www.w3.org/TR/css3-mediaqueries/): Specify how a document is to be presented on different media;
-* Computed value
+* [Computed value](https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value): The CSS property that is transferred from parent to child;
 * [Animation type](https://drafts.csswg.org/web-animations/#animation-type)
-* Canonical order
+* [Canonical order](https://developer.mozilla.org/en-US/docs/Glossary/Canonical_order): Some CSS properties(font、background...) have their own CSS property value order.
+
+And this article is to discuss the topic about the knowledge of inherited and non-inherited.
 
 ### Initial value between inherited and non-inherited
 
@@ -58,8 +62,6 @@ In the opposite of inherited type, the non-inherited types are listed as follow:
 * `Box Type`: width、max-width、min-width、height、max-height、min-height、margin、padding、border;
 * `Background Type`: background-size、background-image、background-clip、background-color、background-origin、background-position、background-repeat;
 * `Others`: overflow、text-overflow、vertical-align;
-
-
 
 ### Recap
 
