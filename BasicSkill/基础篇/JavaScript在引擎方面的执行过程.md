@@ -10,6 +10,18 @@
 (0, fn)() === fn()
 ```
 
+```js
+var global = 'outer';
+(() => {
+  var global = 'inner';
+  eval('console.log("call directly:" + global)');
+  (0, eval)('console.log("call directly:" + global)');
+})()
+
+// call directly:inner
+// call directly:outer
+```
+
 ### why (0, fn)()
 
 ### link
