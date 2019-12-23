@@ -22,8 +22,6 @@ var global = 'outer';
 // call directly:outer
 ```
 
-### why (0, fn)()
-
 ### link
 
 * [1](https://stackoverflow.com/questions/40967162/what-is-the-meaning-of-this-code-0-function-in-javascript)

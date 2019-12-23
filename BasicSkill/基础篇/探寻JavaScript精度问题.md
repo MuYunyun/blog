@@ -114,7 +114,7 @@ Math.pow(2, 53) === Math.pow(2, 53) + 1 // true
 
 解决方案大致有以下几种:
 
-1.针对大数的整数可以考虑使用 bigint 类型(目前在 stage 3 阶段)；
+1.针对大数的整数可以考虑使用 BigInt 类型(目前在 ~~stage 3~~ stage4 阶段)；
 
 2.使用 [bigNumber](https://github.com/MikeMcl/bignumber.js), 它的思想是转化成 string 进行处理, 这种方式对性能有一定影响;
 
@@ -129,3 +129,15 @@ Math.pow(2, 53) === Math.pow(2, 53) + 1 // true
 * [javascript 里最大的安全的整数为什么是2的53次方减一](https://www.zhihu.com/question/29010688)
 * [IEEE-754 进制转换图生成](http://www.binaryconvert.com/convert_double.html): 工具
 * [在线进制转换工具](https://www.sojson.com/hexconvert.html): 工具
+
+### BigInt
+
+```js
+const expected = 4n / 2n;
+// ↪ 2n
+
+const rounded = 5n / 2n;
+// ↪ 2n, not 2.5n
+```
+
+> The / operator also work as expected with whole numbers. However, since these are BigInts and not BigDecimals, this operation will round towards 0, which is to say, it will not return any fractional digits.

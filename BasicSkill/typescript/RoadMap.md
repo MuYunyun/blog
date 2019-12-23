@@ -4,7 +4,7 @@
 
 ### 3.7
 
-#### Optional Chaining Operator
+#### Optional Chaining Operator(可选链操作符)
 
 Optional Chaining Operator can help us `reduce some code` when we judge `foo.bar.baz` as follow:
 
@@ -40,7 +40,7 @@ null && 1      // null
 NaN && 1       // NaN
 ```
 
-#### Nullish Coalescing Operator
+#### Nullish Coalescing Operator(空值合并运算符)
 
 `??` means you can take the value that isn't `undefined` or `null`.
 
