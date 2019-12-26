@@ -63,7 +63,7 @@
 
 这幅图很关键, 可以从图中看到 IEEE-754 标准下双精度浮点数由三部分组成, 分别如下:
 
-* sign(符号): 占 1 bit, 表示正负;
+* sign(符号): 占 1 bit, 0 表示正, 1 表示负;
 * exponent(指数): 占 11 bit, 表示范围;
 * mantissa(尾数): 占 52 bit, 表示精度, 多出的末尾如果是 1 需要进位;
 
@@ -141,3 +141,13 @@ const rounded = 5n / 2n;
 ```
 
 > The / operator also work as expected with whole numbers. However, since these are BigInts and not BigDecimals, this operation will round towards 0, which is to say, it will not return any fractional digits.
+
+#### Polyfilling and transpiling BigInts
+
+> Unlike most other modern JavaScript features, BigInts cannot reasonably be transpiled down to ES5.
+
+> The BigInt proposal changes the behavior of operators (like +, >=, etc.) to work on BigInts. These changes are impossible to polyfill directly, and they are also making it infeasible (in most cases) to transpile BigInt code to fallback code using Babel or similar tools. The reason is that such a transpilation would have to replace every single operator in the program with a call to some function that performs type checks on its inputs, which would incur an unacceptable run-time performance penalty. In addition, it would greatly increase the file size of any transpiled bundle, negatively impacting download, parse, and compile times.
+
+### todo
+
+- [ ](https://docs.google.com/presentation/d/1apPbAiv_-mJF35P31IjaII8UA6TwSynCA_zhfDEmgOE/edit#slide=id.p)
