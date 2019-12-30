@@ -40,7 +40,7 @@ null && 1      // null
 NaN && 1       // NaN
 ```
 
-#### Nullish Coalescing Operator(空值合并运算符)
+#### Nullish Coalescing Operator(空值合并操作符)
 
 `??` means you can take the value that isn't `undefined` or `null`.
 

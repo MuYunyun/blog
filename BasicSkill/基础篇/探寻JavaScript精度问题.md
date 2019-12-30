@@ -130,24 +130,3 @@ Math.pow(2, 53) === Math.pow(2, 53) + 1 // true
 * [IEEE-754 进制转换图生成](http://www.binaryconvert.com/convert_double.html): 工具
 * [在线进制转换工具](https://www.sojson.com/hexconvert.html): 工具
 
-### BigInt
-
-```js
-const expected = 4n / 2n;
-// ↪ 2n
-
-const rounded = 5n / 2n;
-// ↪ 2n, not 2.5n
-```
-
-> The / operator also work as expected with whole numbers. However, since these are BigInts and not BigDecimals, this operation will round towards 0, which is to say, it will not return any fractional digits.
-
-#### Polyfilling and transpiling BigInts
-
-> Unlike most other modern JavaScript features, BigInts cannot reasonably be transpiled down to ES5.
-
-> The BigInt proposal changes the behavior of operators (like +, >=, etc.) to work on BigInts. These changes are impossible to polyfill directly, and they are also making it infeasible (in most cases) to transpile BigInt code to fallback code using Babel or similar tools. The reason is that such a transpilation would have to replace every single operator in the program with a call to some function that performs type checks on its inputs, which would incur an unacceptable run-time performance penalty. In addition, it would greatly increase the file size of any transpiled bundle, negatively impacting download, parse, and compile times.
-
-### todo
-
-- [ ](https://docs.google.com/presentation/d/1apPbAiv_-mJF35P31IjaII8UA6TwSynCA_zhfDEmgOE/edit#slide=id.p)
