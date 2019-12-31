@@ -63,6 +63,13 @@ In the opposite of inherited type, the non-inherited types are listed as follow:
 * `Background Type`: background-size、background-image、background-clip、background-color、background-origin、background-position、background-repeat;
 * `Others`: overflow、text-overflow、vertical-align;
 
+### todo
+
+* inherit
+* initial
+* unset
+* revert
+
 ### Recap
 
 These section introduces the inherited concept in CSS, and distinguish some inherited type and some non-inherited type from css properties. Hope it's helpful for you.
