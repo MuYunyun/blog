@@ -12,13 +12,3 @@
   * [z-you](https://mp.weixin.qq.com/s?__biz=MzI5ODE3NDQ0OQ==&mid=100000271&idx=1&sn=af737ffae12ad46bc522acd38d3d258e&scene=19#wechat_redirect): 辅音 `/z/` 与 `/j/` 连读时，被同化为 `/ʒ/`, For example: A`s u`sual、I love you becau`se y`ou are you.
 
 - [ ] [learning English through listening to music](https://mp.weixin.qq.com/mp/homepage?__biz=MzI5ODE3NDQ0OQ%3D%3D&hid=2&sn=9b6dd88b8303196473c2a6c28b995c42): 当前看到第 7 节
-
-### watching
-
-- [ ] 100 部纯英字幕电影观看进度;
-
-### 优先级相对低
-
-- [ ] [20 天流畅美语听力挑战](https://mp.weixin.qq.com/mp/homepage?__biz=MzI5ODE3NDQ0OQ%3D%3D&hid=14&sn=82877c6cf530bf3bc851c936d7cffd1a)
-- [ ] [精品资源｜最适合学英语的 50 部动画](https://mp.weixin.qq.com/s/XXzQeUMZvA2nnuQXKMNsBg): 未来有兴趣可以观看
-
