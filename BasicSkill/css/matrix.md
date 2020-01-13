@@ -1,22 +1,28 @@
 ### transform-function
 
-A transformation function is described as a two matrix, like this:
+A linear transformation function is described as a 2 x 2 matrix, like this:
 
 ![](http://with.muyunyun.cn/32d9ec359e0199ddbb0741b0b79bc1a9.jpg)
 
---------------- why matrix? ---------------
-
-so every transformation can be described like this:
+The transformation function is applyied to an element by using matrix multiplication. Thus each cordinate changes is based on the matrix value.
 
 ![](http://with.muyunyun.cn/74244bb9e6cb2e93a5756021b2c5895d.jpg)
 
-if several transformation work on the elements, it can be described like this:
+If several transformation work on the the same element, it can be writen in a row.
 
 ![](http://with.muyunyun.cn/3de22426e661a9d6faefe0f608d444f2.jpg)
-
-### how to infer the Formula
-
 
 ### matrix()
 
 The result of matrix is equal to `<transform-function>`.
+
+`matrix(a, b, c, d, tx, ty)` is equal like this:
+
+------- 占位 --------
+
+
+
+### link
+
+* [matrix-multiplication](http://www.ruanyifeng.com/blog/2015/09/matrix-multiplication.html): by Ruan Yifeng
+* [transform-function](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function)
