@@ -1,4 +1,4 @@
-###
+### Game Of Thrones
 
 ![](http://with.muyunyun.cn/149bd36ec2c46d8c789da45ce9ec9f7d.jpg-400)
 
@@ -7,6 +7,8 @@
 `Kings LanDing`
 
 `Pentos`
+
+26
 
 ### links
 

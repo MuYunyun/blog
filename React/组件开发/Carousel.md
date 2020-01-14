@@ -105,3 +105,30 @@ mount(<Swipe>
 ### css 实现
 
 scroll-snap-type
+
+![](http://with.muyunyun.cn/56583153afaa5ae1edad7bea4b728234.jpg-400)
+
+to research
+
+* scroll-snap-align: start;
+* scroll-snap-stop: always;
+
+* Using average mobile to test
+* Using USB Debugger from chrome
+
+### 框架方案
+
+* Framer Motion
+* React Spring + React Use Gesture
+* React swipeable + animation library(AnimeJS)
+* Harmmer.js + animation library(GSAP?)
+
+### some advice
+
+* Immediate Response
+  * stiff spring
+  * one-to-one movement
+
+### links
+
+[Progressive Web Animations | Alexandra Holachek](https://www.youtube.com/watch?v=laPsceJ4tTY&list=PLPxbbTqCLbGHPxZpw4xj_Wwg8-fdNxJRh&index=21) 8:26
