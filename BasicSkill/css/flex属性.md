@@ -12,6 +12,16 @@
 * `flex-shrink`: 缩减比例, 0 为不缩减, 默认为 1;
 * `flex-basis`: flex 基本尺寸, 默认为 auto;
 
+### How to calculate the flex-shrink
+
+![](http://with.muyunyun.cn/1431bcfc07c05820a123d5716955b860.jpg)
+
+The calculate step is a little difficulty, you can see it in the [how-to-calculate-flex-shrink](https://stackoverflow.com/questions/36550840/how-to-calculate-flex-shrink-when-flex-items-have-a-different-flex-basis).
+
+### justify-content
+
+
+
 ### flex 特殊用法
 
 #### flex + z-index
