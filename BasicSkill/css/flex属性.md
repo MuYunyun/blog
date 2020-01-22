@@ -20,7 +20,8 @@ The calculate step is a little difficulty, you can see it in the [how-to-calcula
 
 ### justify-content
 
-
+* space-around: The spacing between each pair of adjacent items is the same, The empty space before the first and after the last item equals `half of the space` between each pair of adjacent items.
+* space-evenly: The spacing between each pair of adjacent items, the main-start edge and the first item, and the main-end edge and the last item, `are all exactly the sam`
 
 ### flex 特殊用法
 
