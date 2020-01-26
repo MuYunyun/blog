@@ -87,7 +87,7 @@ render() {
 }
 ```
 
-原因是因为 `mount` 只渲染组件不挂载到 `dom` 上去。解决思路如下:
+原因是因为 `mount` 渲染组件是挂载到 [jsdom](https://github.com/jsdom/jsdom) 上而非真实 `dom` 上, 当时的解决思路如下:
 
 ```js
 mount(<Swipe>
@@ -98,37 +98,18 @@ mount(<Swipe>
 </Swipe>, { attatch: document.body })
 ```
 
-------- 分割线 -------
+经过上述去除步骤去掉 `document.getElementById` 使用 ref 后, `{ attatch: document.body }` 也便去掉了。
 
-经过上述步骤去掉 `document.getElementById` 以后, `{ attatch: document.body }` 也可以去掉了。
+### CSS 方案?
 
-### css 实现
-
-scroll-snap-type
+* scroll-snap-type
+  * mandatory: the visual viewport of this scroll container will `rest on a snap point` if it isn't currently scrolled.
+  * proximity: The visual viewport of this scroll container may come to `rest on a snap point` if it isn't currently scrolled considering the user agent's scroll parameters.
 
 ![](http://with.muyunyun.cn/56583153afaa5ae1edad7bea4b728234.jpg-400)
 
-to research
-
 * scroll-snap-align: start;
-* scroll-snap-stop: always;
+* scroll-snap-stop(experiment)
+  * always: defining whether the scroll container is allowed to "pass over" possible snap positions(Used with scroll-snap-align can).
 
-* Using average mobile to test
-* Using USB Debugger from chrome
-
-### 框架方案
-
-* Framer Motion
-* React Spring + React Use Gesture
-* React swipeable + animation library(AnimeJS)
-* Harmmer.js + animation library(GSAP?)
-
-### some advice
-
-* Immediate Response
-  * stiff spring
-  * one-to-one movement
-
-### links
-
-[Progressive Web Animations | Alexandra Holachek](https://www.youtube.com/watch?v=laPsceJ4tTY&list=PLPxbbTqCLbGHPxZpw4xj_Wwg8-fdNxJRh&index=21) 8:26
+阅读文档后, 该 api 浏览器兼容情况不是特别好(ios 要 11 以上), 此外, 比如循环轮播是无法实现的。
