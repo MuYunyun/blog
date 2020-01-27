@@ -31,7 +31,11 @@ The way to take is usually `an animation library` with `a gesture hooks`.
 
 use touch-action before:
 
+![](http://with.muyunyun.cn/2389d4fa4e0e900b666b45aec2bef6f0.mp4)
+
 use touch-action after:
+
+![](http://with.muyunyun.cn/c606aceefb404a5acb5b850a2129ac33.mp4)
 
 ### resource links
 
