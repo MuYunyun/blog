@@ -231,9 +231,12 @@ function ScrollView({row}) {
 可以使用 `useReducer` 来 hack `forceUpdate`, 但是尽量避免 forceUpdate 的使用。
 
 ```js
-const [ignored, forceUpdate] = useReducer(x => x + 1, 0)
+const useForceUpdate = () => {
+  return useReducer(x => x + 1, 0)[1]
+}
 
 function handleClick() {
+  const forceUpdate = useForceUpdate()
   forceUpdate()
 }
 ```

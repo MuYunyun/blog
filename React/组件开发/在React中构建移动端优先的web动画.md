@@ -6,7 +6,8 @@
 
 * scroll、swipe-to-refresh 会受到浏览器默认行为干扰;
 * 触摸反应迟钝, 没有直接操作的感觉;
-* 反物理直觉;qq中、低设备;
+* 反物理直觉;
+* 兼容中、低设备;
 
 ### 框架方案
 
@@ -22,17 +23,34 @@ The way to take is usually `an animation library` with `a gesture hooks`.
 * `Immediate Response`: If not response immediately, it feels super disconnected. [demo](https://mobile-first-animation.netlify.com/21)
 * `Scroll Decay`: The concepts of scroll decay can help us decide how our UIs should respect to users interaction. [demo](https://mobile-first-animation.netlify.com/23)
   * `-webkit-overflow-scrolling: touch`
+* `Rubberbanding`
 
-### to watch
+### Touch cancellation
 
-Designing Fluid Interfaces
+* Use the `touch-action` CSS property to disable default browser behaviors with precision.
 
-### some advice
+use touch-action before:
 
-* Immediate Response
-  * stiff spring
-  * one-to-one movement
+use touch-action after:
 
-### links
+### resource links
 
 * [Progressive Web Animations | Alexandra Holachek](https://www.youtube.com/watch?v=laPsceJ4tTY&list=PLPxbbTqCLbGHPxZpw4xj_Wwg8-fdNxJRh&index=21)
+
+#### Springs & Gestures
+
+- [ ] [Material Design guide to gestures](https://material.io/design/interaction/gestures.html#types-of-gestures)
+- [ ] [Great intro to using springs in animations](https://medium.com/ios-os-x-development/demystifying-uikit-spring-animations-2bb868446773)
+- [ ] [In-depth look at projection](https://medium.com/ios-os-x-development/gestures-in-fluid-interfaces-on-intent-and-projection-36d158db7395)
+- [ ] [Apple's "Designing Fluid Interfaces" talk](https://developer.apple.com/mobile-app-examples/play/wwdc2018/803/)
+- [ ] [In-depth exploration of momentum scrolling](https://ariya.io/2013/08/javascript-kinetic-scrolling-part-1)
+- [ ] [Implementation of iOS animation principles](https://medium.com/@nathangitter/building-fluid-interfaces-ios-swift-9732bb934bf5)
+
+#### Touch on the web
+
+- [ ] [Interactive touch-action demo](https://www.chenhuijing.com/touch-action/)
+- [ ] [Google introduction to touch on the web](https://developers.google.com/web/fundamentals/design-and-ux/input/touch)
+- [ ] [Mozilla introduction to pointer events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events)
+- [ ] [Mozilla introduction to touch-action](https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action)
+- [ ] [Overscroll behavior](https://developers.google.com/web/updates/2017/11/overscroll-behavior)
+- [ ] [Passive event listeners](https://developers.google.com/web/updates/2016/06/passive-event-listeners)
