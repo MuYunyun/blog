@@ -203,9 +203,9 @@
 | 214 | [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/) | | Hard |
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/215.数组中的第K个最大元素/README.md) | Medium |
 | 216 | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/) | | Medium |
-| 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | | Easy |
+| 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/217.Contains_Duplicate/README.md) | Easy |
 | 218 | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/) | | Hard |
-| 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | | Easy |
+| 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/219.Contains_Duplicate_II/README.md) | Easy |
 | 220 | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/) | | Medium |
 | 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | | Medium |
 | 222 | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) | | Medium |

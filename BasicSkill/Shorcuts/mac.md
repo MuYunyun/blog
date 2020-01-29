@@ -55,3 +55,8 @@ echo bXVqdWVAcGluZHVvZHVvLmNvbQo= | base64 -D
 ### apple pencel
 
 * Mark up a screenshot
+
+### app
+
+* MarginNote 3: 阅读 PDF 文件;
+* Eudic: 欧路词典;
