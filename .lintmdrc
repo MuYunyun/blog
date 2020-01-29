@@ -1,0 +1,6 @@
+{
+  "excludeFiles": [],
+  "rules": {
+    "no-empty-code-lang": 0
+  }
+}
