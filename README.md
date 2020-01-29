@@ -11,8 +11,8 @@ Welcome to my personal FE blog. If you like it, welcome watch or star! In the me
 - [Introduction](#introduction)
 - [React Series](#react-series)
   - [Deep Into React](#deep-into-react)
-  - [React Component In Practice](#react-component-in-practice)
-  - [Environment Around React](#environment-around-react)
+  - [Component Design](#component-design)
+  - [Technology Around React](#technology-around-react)
   - [Build React from scratch](#build-react-from-scratch)
   - [Modern Testing](#modern-testing)
 - [FE Cloud](#fe-cloud)
@@ -37,38 +37,40 @@ Welcome to my personal FE blog. If you like it, welcome watch or star! In the me
 * [你不知道的 requestIdleCallback](https://github.com/MuYunyun/blog/blob/master/React/你不知道的requestIdleCallback.md)
 * [React Suspense 解决了什么](https://github.com/MuYunyun/blog/blob/master/React/suspense解决了什么.md)
 * [React Hooks 深入系列](https://github.com/MuYunyun/blog/blob/master/React/React_Hooks深入系列.md)
-* [React Hooks 深入系列 —— 设计模式](https://github.com/MuYunyun/blog/blob/master/React/React_Hooks设计模式.md)
+* [React Hooks 设计模式](https://github.com/MuYunyun/blog/blob/master/React/React_Hooks设计模式.md)
 
 - [ ] [React 暗器百解](https://github.com/MuYunyun/blog/blob/master/React/React暗器百解.md)
 
-#### React Component In Practice
+#### Component Design
 
-* [组件设计 —— 重新认识受控与非受控组件](https://github.com/MuYunyun/blog/blob/master/React/组件开发/组件设计(重新认识受控与非受控组件).md)
+* [重新认识受控与非受控组件](https://github.com/MuYunyun/blog/blob/master/React/组件设计/重新认识受控与非受控组件.md)
+
+- [ ] [Build Mobile First Animation In React](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/build_mobile_first_animation.md)
 
 <details>
-  <summary>组件开发实践</summary>
+  <summary>More</summary>
 
-* [Button](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Button.md)
-* [Icon](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Icon.md)
-* [Menu](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Menu.md)
-* [Keyboard](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Keyboard.md)
-* [Carousel](https://github.com/MuYunyun/blog/blob/master/React/组件开发/swipe.md)
-* [Tabs](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Tabs.md)
-* [Affix](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Affix.md)
-* [AddressPicker](https://github.com/MuYunyun/blog/blob/master/React/组件开发/AddressPicker.md)
-* [CheckBox](https://github.com/MuYunyun/blog/blob/master/React/组件开发/CheckBox.md)
-* [Form](https://github.com/MuYunyun/blog/blob/master/React/组件开发/Form.md), [oneForm](https://github.com/MuYunyun/oneForm/issues/1)
-* [SearchBar](https://github.com/MuYunyun/blog/blob/master/React/组件开发/SearchBar.md)
-* [Modal](https://github.com/MuYunyun/blog/blob/master/React/组件开发/modal.md)
-* [TextArea](https://github.com/MuYunyun/blog/blob/master/React/组件开发/TextArea.md)
-* [主题色替换方案](https://github.com/MuYunyun/blog/blob/master/React/组件开发/主题色替换方案.md)
-* [移动端组件测试指北](https://github.com/MuYunyun/blog/blob/master/React/组件开发/移动端组件测试指北.md)
+* [Button](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/Button.md)
+* [Icon](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/Icon.md)
+* [Menu](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/Menu.md)
+* [Keyboard](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/Keyboard.md)
+* [Carousel](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/swipe.md)
+* [Tabs](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/Tabs.md)
+* [Affix](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/Affix.md)
+* [AddressPicker](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/AddressPicker.md)
+* [CheckBox](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/CheckBox.md)
+* [Form](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/Form.md), [oneForm](https://github.com/MuYunyun/oneForm/issues/1)
+* [SearchBar](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/SearchBar.md)
+* [Modal](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/modal.md)
+* [TextArea](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/TextArea.md)
+* [主题色替换方案](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/主题色替换方案.md)
+* [移动端组件测试指北](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/移动端组件测试指北.md)
 
-- [ ] [组件开发实践](https://github.com/MuYunyun/blog/blob/master/React/组件开发/组件开发实践.md)
+- [ ] [组件设计实践](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/组件开发实践.md)
 
 </details>
 
-#### Environment Around React
+#### Technology Around React
 
 * [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/React/相关技术栈/Redux与Mobx适用场景.md)
 * [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)

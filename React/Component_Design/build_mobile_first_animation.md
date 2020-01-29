@@ -31,11 +31,14 @@ The way to take is usually `an animation library` with `a gesture hooks`.
 
 use touch-action before:
 
-<video src="http://with.muyunyun.cn/2389d4fa4e0e900b666b45aec2bef6f0.mp4" controls="controls" height="400px"></video>
+![](http://with.muyunyun.cn/2f284758868304dabad94d2a25500562.gif)
 
 use touch-action after:
 
-<video src="http://with.muyunyun.cn/c606aceefb404a5acb5b850a2129ac33.mp4" controls="controls" height="400px"></video>
+![](http://with.muyunyun.cn/a458a78d287e08627f4dd6b1502fc33e.gif)
+
+* [Interactive touch-action demo](https://www.chenhuijing.com/touch-action/)
+* [Mozilla introduction to touch-action](https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action)
 
 ### resource links
 
@@ -52,9 +55,7 @@ use touch-action after:
 
 #### Touch on the web
 
-- [ ] [Interactive touch-action demo](https://www.chenhuijing.com/touch-action/)
 - [ ] [Google introduction to touch on the web](https://developers.google.com/web/fundamentals/design-and-ux/input/touch)
 - [ ] [Mozilla introduction to pointer events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events)
-- [ ] [Mozilla introduction to touch-action](https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action)
 - [ ] [Overscroll behavior](https://developers.google.com/web/updates/2017/11/overscroll-behavior)
 - [ ] [Passive event listeners](https://developers.google.com/web/updates/2016/06/passive-event-listeners)
