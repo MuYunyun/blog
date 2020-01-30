@@ -60,7 +60,7 @@ var containsNearbyDuplicate = function(nums, k) {
 
 ![](http://with.muyunyun.cn/db151c5e5eef41a30b2e8cbca9fd417e.jpg-400)
 
-算法时间复杂度是 NlogN 级别的, 不知道为何执行时间花了 1800ms(如果有朋友知道原因请告诉我。)
+算法时间复杂度是 NlogN 级别的, 执行时间花了 1800ms。
 
 ```js
 /**
@@ -93,4 +93,4 @@ var containsNearbyDuplicate = function(nums, k) {
 
 ![](http://with.muyunyun.cn/c756eba46d7c18d4fe4acfbc011e3a78.jpg-400)
 
-使用 Set 用相同的思路来实验下, 结果发现执行时间比之前用数组队列的实现快了很多。
+使用 Set 用同样的思路实验, 时间复杂度为 O(N), 其执行时间比之前用数组队列的实现快了很多。

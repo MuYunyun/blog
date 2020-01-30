@@ -16,7 +16,7 @@
 | 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/12.整数转罗马数字/README.md) | Medium |
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/13.罗马数字转整数/README.md) | Easy |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/14.最长公共前缀/README.md) | Easy |
-| 15 | [3Sum](https://leetcode.com/problems/3sum/) | | Medium |
+| 15 | [3Sum](https://leetcode.com/problems/3sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/15.3Sum/README.md) | Medium |
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/16.最接近的三数之和/README.md) | Medium |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/17.电话号码的字母组合/README.md) | Medium |
 | 18 | [4Sum](https://leetcode.com/problems/4sum/) | | Medium |
@@ -103,7 +103,7 @@
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | | Medium |
 | 99 | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) | | Hard |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/100.相同的树/README.md) | Easy |
-| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/101.对称二叉树/index.js) | Easy |
+| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/101.对称二叉树/index.js) | Easy |
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | | Medium |
 | 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | | Medium |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/104.二叉树的最大深度/README.md) | Easy |
@@ -123,7 +123,7 @@
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | | Easy |
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | | Easy |
 | 120 | [Triangle](https://leetcode.com/problems/triangle/) | | Medium |
-| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/121.买卖股票的最佳时机/index.js) | Easy |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/121.买卖股票的最佳时机/index.js) | Easy |
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | | Easy |
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | | Hard |
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | | Hard |
@@ -153,7 +153,7 @@
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/) | | Medium |
 | 149 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | | Hard |
 | 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | | Medium |
-| 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/151.翻转字符串里的单词/index.js) | | Medium |
+| 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/151.翻转字符串里的单词/index.js) | | Medium |
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | | Medium |
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | | Medium |
 | 154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | | Hard |
@@ -388,4 +388,4 @@
 | 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | | Easy |
 | 438 | [找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/438.找到字符串中所有字母异位词) | Medium |
 | 451 | [根据字符出现频率排序](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/451.根据字符出现频率排序) | Medium |
-| 567 | [字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) | [JavaScript](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/bytedance/挑战字符串/567.字符串的排列/index.js) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/567.字符串的排列) | Medium |
+| 567 | [字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/567.字符串的排列) | Medium |

@@ -178,8 +178,6 @@ This is my personal FE blog. If there is any wrong thing in these articles, welc
 * [适配者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/适配者模式.md)
 * [观察者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/观察者模式.md)
 
-> [issue](https://github.com/MuYunyun/blog/issues/20)
-
 #### TypeScript
 
 * [TypeScript 基础篇](https://github.com/MuYunyun/blog/blob/master/BasicSkill/typescript/TypeScript基础篇.md)
