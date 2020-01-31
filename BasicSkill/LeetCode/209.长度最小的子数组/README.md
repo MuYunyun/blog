@@ -51,6 +51,6 @@ var minSubArrayLen = function(s, nums) {
 }
 ```
 
-### 相似题目
+### Sister Title
 
 3、76、209、438

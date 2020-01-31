@@ -65,6 +65,6 @@ var swap = function(str, a, b) {
 }
 ```
 
-### 相似题目
+### Sister Title
 
 125、167、344

@@ -100,6 +100,6 @@ var findAnagrams = function(s, p) {
 };
 ```
 
-### 相似题目
+### Sister Title
 
 76

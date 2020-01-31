@@ -28,6 +28,6 @@ var minWindow = function(s, t) {
 };
 ```
 
-### 相似题目
+### Sister Title
 
 3、209、438

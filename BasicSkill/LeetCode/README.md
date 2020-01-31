@@ -17,9 +17,9 @@
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/13.罗马数字转整数/README.md) | Easy |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/14.最长公共前缀/README.md) | Easy |
 | 15 | [3Sum](https://leetcode.com/problems/3sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/15.3Sum/README.md) | Medium |
-| 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/16.最接近的三数之和/README.md) | Medium |
+| 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/16.3Sum_Closest/README.md) | Medium |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/17.电话号码的字母组合/README.md) | Medium |
-| 18 | [4Sum](https://leetcode.com/problems/4sum/) | | Medium |
+| 18 | [4Sum](https://leetcode.com/problems/4sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/18.4Sum/README.md) | Medium |
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | | Medium |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/20.有效的括号/README.md) | Easy |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/21.合并两个有序链表/README.md) | Easy |
