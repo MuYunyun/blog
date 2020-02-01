@@ -10,3 +10,7 @@
 * `step over`: 单步执行, 遇到子函数会将子函数当成是一个整体执行;
 * `step into`: 单步执行, 遇到子函数进入子函数;
 
+### Take Full Size Screenshots
+
+1. Press `Cmd + Shift + P`;
+2. Type `Capture full size screenshot`;
