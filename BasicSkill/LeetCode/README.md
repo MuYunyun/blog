@@ -387,6 +387,7 @@
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | | Medium |
 | 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | | Easy |
 | 438 | [找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/438.找到字符串中所有字母异位词/README.md) | Medium |
+| 447 | [Number_of_Boomerangs](https://leetcode-cn.com/problems/number-of-boomerangs/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/447.NumberOfBoomerangs/README.md) | Easy |
 | 451 | [根据字符出现频率排序](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/451.根据字符出现频率排序/README.md) | Medium |
 | 454 | [4Sum II](https://leetcode-cn.com/problems/4sum-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/454.4Sum_II/README.md) | Medium |
 | 567 | [字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/567.字符串的排列/README.md) | Medium |
