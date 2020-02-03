@@ -2,6 +2,19 @@
 
 移动端优先动画是指在移动设备上开发的, 旨在在移动浏览器而非桌面浏览器的上下文中工作的动画。它有着类似原生 App 的交互体验, 尤其是体贴的手势交互, 同时即使在中低档设备上其也具有不错的流畅体验。
 
+### Types of gestures
+
+* Navigational gestures
+  * Tap
+  * Scroll and pan
+  * Drag
+  * Swipe
+  * Pinch
+* Action gestures
+* Transform gestures
+
+> [Types of gestures](https://material.io/design/interaction/gestures.html#types-of-gestures)ddd
+
 ### 难点罗列
 
 * scroll、swipe-to-refresh 会受到浏览器默认行为干扰;
