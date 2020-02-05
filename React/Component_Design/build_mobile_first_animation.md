@@ -13,7 +13,7 @@
 * Action gestures
 * Transform gestures
 
-> [Types of gestures](https://material.io/design/interaction/gestures.html#types-of-gestures)ddd
+> [Types of gestures](https://material.io/design/interaction/gestures.html#types-of-gestures)
 
 ### 难点罗列
 

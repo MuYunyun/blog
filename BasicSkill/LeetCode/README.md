@@ -151,7 +151,7 @@
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | | Hard |
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) | | Medium |
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/) | | Medium |
-| 149 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | | Hard |
+| 149 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/149.Max_Points_on_a_Line/README.md) | Hard |
 | 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | | Medium |
 | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/151.翻转字符串里的单词/index.js) | | Medium |
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | | Medium |
