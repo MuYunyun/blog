@@ -20,7 +20,7 @@ This is my personal FE blog. If there is any wrong thing in these articles, welc
 - [React Series](#react-series)
   - [Deep Into React](#deep-into-react)
   - [Component Design](#component-design)
-  - [Technology Around React](#technology-around-react)
+  - [React Stack](#react-stack)
   - [Build React from scratch](#build-react-from-scratch)
   - [Modern Testing](#modern-testing)
 - [FE Cloud](#fe-cloud)
@@ -78,7 +78,7 @@ This is my personal FE blog. If there is any wrong thing in these articles, welc
 
 </details>
 
-#### Technology Around React
+#### React Stack
 
 * [Redux 与 Mobx 适用场景](https://github.com/MuYunyun/blog/blob/master/React/相关技术栈/Redux与Mobx适用场景.md)
 * [MVVM 框架解析之双向绑定](https://github.com/MuYunyun/fe_cloud/issues/11) <sub>[(相关项目)](https://github.com/MuYunyun/mvvm)
