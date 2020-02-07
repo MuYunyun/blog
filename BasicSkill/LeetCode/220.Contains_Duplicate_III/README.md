@@ -25,9 +25,12 @@ Output: false
 
 ### Analyze
 
+题目理解需要绕过弯: 在`剩余数组找到距离当前数组下标值最小的值`。
+
 * 需要考虑的点
   * nums 数组长度;
   * k 是否可以为 0;
+  * 需要保留每一个数值, 所以数据结构不能用 Set;
 
 ```js
 /**
@@ -38,39 +41,24 @@ Output: false
  */
 var containsNearbyAlmostDuplicate = function(nums, k, t) {
   if (nums.length <= 1) return false
-  const temSet = new Set()
+  const temArr = []
 
   let l = 0
   let r = nums.length
-
   while (l < r) {
-    if (temSet.size > 0) {
-      const curMinValue = Math.min(...temSet)
-      const curMaxValue = Math.max(...temSet)
-      if (curMaxValue - curMinValue <= t) {
-        return true
-      }
-    }
-
-    if (temSet.size < k) {
-      temSet.add(nums[l])
-    } else if (temSet.size = k && k > 0) {
-      temSet.delete(nums[l - k])
-      temSet.add(nums[l])
+    if (temArr.length < k + 1) {
+      temArr.push(nums[l])
+    } else if (temArr.length = k + 1  && k > 0) {
+      temArr.shift()
+      temArr.push(nums[l])
     }
     l++
+
+    if (temArr.length > 2) {
+
+    }
   }
 
   return false
 }
-```
-
-```js
-[1,5,9,1,5,9]
-2
-3
-
-true
-
-false
 ```

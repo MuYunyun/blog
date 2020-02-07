@@ -11,7 +11,13 @@
   * Swipe
   * Pinch
 * Action gestures
+  * Tap
+  * Long press
+  * Swipe
 * Transform gestures
+  * Double tap
+  * Pinch
+  * Compound gestures
 
 > [Types of gestures](https://material.io/design/interaction/gestures.html#types-of-gestures)
 
@@ -34,9 +40,12 @@ The way to take is usually `an animation library` with `a gesture hooks`.
 ### Some Principles
 
 * `Immediate Response`: If not response immediately, it feels super disconnected. [demo](https://mobile-first-animation.netlify.com/21)
+  * demo: Carousel 组件, 目前 Tab 的滑动存在缺陷;
 * `Scroll Decay`: The concepts of scroll decay can help us decide how our UIs should respect to users interaction. [demo](https://mobile-first-animation.netlify.com/23)
-  * `-webkit-overflow-scrolling: touch`
+  * demo: Picker/DatePicker 组件;
+  * `-webkit-overflow-scrolling: touch`;
 * `Rubberbanding`
+  * demo: PopOver 组件;
 
 ### Touch cancellation
 
@@ -59,7 +68,6 @@ use touch-action after:
 
 #### Springs & Gestures
 
-- [ ] [Material Design guide to gestures](https://material.io/design/interaction/gestures.html#types-of-gestures)
 - [ ] [Great intro to using springs in animations](https://medium.com/ios-os-x-development/demystifying-uikit-spring-animations-2bb868446773)
 - [ ] [In-depth look at projection](https://medium.com/ios-os-x-development/gestures-in-fluid-interfaces-on-intent-and-projection-36d158db7395)
 - [ ] [Apple's "Designing Fluid Interfaces" talk](https://developer.apple.com/mobile-app-examples/play/wwdc2018/803/)
