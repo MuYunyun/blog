@@ -62,6 +62,13 @@ use touch-action after:
 * [Interactive touch-action demo](https://www.chenhuijing.com/touch-action/)
 * [Mozilla introduction to touch-action](https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action)
 
+### Passive event listeners
+
+If you decide not to cancel the scroll, you can set the **passive** in the addEventListener. If that, it can enable the browsers to scroll the page immediately.
+
+* [passive-event-listeners](https://developers.google.com/web/updates/2016/06/passive-event-listeners)
+- [ ] [Passive events listener explainer](https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md)
+
 ### resource links
 
 * [Progressive Web Animations | Alexandra Holachek](https://www.youtube.com/watch?v=laPsceJ4tTY&list=PLPxbbTqCLbGHPxZpw4xj_Wwg8-fdNxJRh&index=21)
@@ -70,13 +77,12 @@ use touch-action after:
 
 - [ ] [Great intro to using springs in animations](https://medium.com/ios-os-x-development/demystifying-uikit-spring-animations-2bb868446773)
 - [ ] [In-depth look at projection](https://medium.com/ios-os-x-development/gestures-in-fluid-interfaces-on-intent-and-projection-36d158db7395)
-- [ ] [Apple's "Designing Fluid Interfaces" talk](https://developer.apple.com/mobile-app-examples/play/wwdc2018/803/)
 - [ ] [In-depth exploration of momentum scrolling](https://ariya.io/2013/08/javascript-kinetic-scrolling-part-1)
-- [ ] [Implementation of iOS animation principles](https://medium.com/@nathangitter/building-fluid-interfaces-ios-swift-9732bb934bf5)
+- [ ] [Apple's "Designing Fluid Interfaces" talk](https://developer.apple.com/videos/play/wwdc2018/803/)
+- [ ] [Implementation of iOS animation principles](https://medium.com/@nathangitter/building-fluid-interfaces-ios-swift-9732bb934bf5): read Interface #1: Calculator Button
 
 #### Touch on the web
 
 - [ ] [Google introduction to touch on the web](https://developers.google.com/web/fundamentals/design-and-ux/input/touch)
 - [ ] [Mozilla introduction to pointer events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events)
 - [ ] [Overscroll behavior](https://developers.google.com/web/updates/2017/11/overscroll-behavior)
-- [ ] [Passive event listeners](https://developers.google.com/web/updates/2016/06/passive-event-listeners)
