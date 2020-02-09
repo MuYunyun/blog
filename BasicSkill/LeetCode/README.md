@@ -206,7 +206,7 @@
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/217.Contains_Duplicate/README.md) | Easy |
 | 218 | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/) | | Hard |
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/219.Contains_Duplicate_II/README.md) | Easy |
-| 220 | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/) | | Medium |
+| 220 | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/220.Contains_Duplicate_III/README.md) | Medium |
 | 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | | Medium |
 | 222 | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) | | Medium |
 | 223 | [Rectangle Area](https://leetcode.com/problems/rectangle-area/) | | Medium |
