@@ -14,6 +14,7 @@
 * command + shift + D 打开调试
 * command + shift + X 打开扩展
 * command + shift + r 打开 bookmarks
+* command + shift + 0: toggle activitybar: [setting](https://stackoverflow.com/questions/30878856/is-there-a-shortcut-to-hide-the-side-bar-in-visual-studio-code)
 
 ### 推荐字体
 
