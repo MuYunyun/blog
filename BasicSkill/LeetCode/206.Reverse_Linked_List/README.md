@@ -23,8 +23,9 @@ null <- 1 -> 2 -> 3 -> 4 -> 5
 
 step:
 
-1. 如果 prev 为空, cur 指向 null, 如果存在 prev, cur 指向 prev;
-2. 如果 next 位置为空结束迭代, 否则 cur 移动到 next 位置, prev 移动到 cur 位置, 重复步骤 1;
+1. 定义三个变量 prev, cur, next 表示上一个值, 当前值, 下一个值;
+2. 如果存在 cur.next 则将 cur.next 指向 prev;
+3. 将 cur 移动到 next 位置, prev 移动到 cur 位置, 重复步骤 2;
 
 ```js
 /**
@@ -41,39 +42,36 @@ step:
 var reverseList = function(head) {
   let prev = null
   let cur = head
-  let next = head.next
-
-  while (cur.next) {
-    if (prev === null) {
-      cur.next = null
-    } else {
+  if (head) {
+    let next = head.next
+    while (cur.next) {
       cur.next = prev
+      prev = cur
+      cur = next
+      next = next.next
     }
-    prev = cur
-    cur = next
-    next = next.next
+    cur.next = prev
   }
-
-  return head
+  return cur
 };
 ```
 
-test case
+这样写存在一些冗余的代码, 比如需要判断 head 是否为空, 同时因为 while 中的条件是 cur.next, 因为末尾的 cur.next 需要单独处理一遍, 比较麻烦, 因此进而优化。
 
 ```js
-function ListNode(val) {
-    this.val = val;
-    this.next = null
-}
-var test1 = new ListNode(1)
-var test2 = new ListNode(2)
-var test3 = new ListNode(3)
-var test4 = new ListNode(4)
-var test5 = new ListNode(5)
-test1.next = test2
-test2.next = test3
-test3.next = test4
-test4.next = test5
-test5.next = null
-reverseList(test1)
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var reverseList = function(head) {
+  let prev = null
+  let cur = head
+  while (cur !== null) {
+    let next = cur.next
+    cur.next = prev
+    prev = cur
+    cur = next
+  }
+  return prev
+};
 ```
