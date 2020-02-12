@@ -75,7 +75,7 @@ If you decide not to cancel the scroll, you can set the **passive** in the addEv
 
 ### Apple's "Designing Fluid Interfaces" talk
 
-- [ ] [Apple's "Designing Fluid Interfaces" talk](https://developer.apple.com/videos/play/wwdc2018/803/): watch 32.09
+- [ ] [Apple's "Designing Fluid Interfaces" talk](https://developer.apple.com/videos/play/wwdc2018/803/): watch 48:16
 - [ ] [Implementation of iOS animation principles](https://medium.com/@nathangitter/building-fluid-interfaces-ios-swift-9732bb934bf5): read Interface #1: Calculator Button
 
 #### Springs & Gestures

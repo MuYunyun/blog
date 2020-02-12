@@ -75,3 +75,29 @@ var reverseList = function(head) {
   return prev
 };
 ```
+
+根据题目的建议, 接着用递归的方式实现一遍(值得注意的是, 迭代与递归的写法都是能互相转换的。)
+
+```js
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var reverseList = function(head) {
+  let prev = null
+  let cur = head
+
+  const recursiveFn = () => {
+    if (cur === null) return
+
+    let next = cur.next
+    cur.next = prev
+    prev = cur
+    cur = next
+
+    recursiveFn()
+  }
+  recursiveFn()
+  return prev
+};
+```

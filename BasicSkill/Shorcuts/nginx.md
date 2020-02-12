@@ -30,5 +30,4 @@ ps -ef | grep nginx            查询 nginx 是否启动
 ### 相关文章
 
 * [使用 Nginx + Node.js 部署你的网站](https://www.jianshu.com/p/717f2b88d057)
-
 * [Nginx 中文官方文档](http://shouce.jb51.net/nginx-doc/)
