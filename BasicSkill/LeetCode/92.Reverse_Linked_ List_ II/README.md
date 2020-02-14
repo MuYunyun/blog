@@ -11,6 +11,12 @@ Input: 1->2->3->4->5->NULL, m = 2, n = 4
 Output: 1->4->3->2->5->NULL
 ```
 
+### Analyze
+
+难点:
+
+* 返回啥
+
 ```js
 1 -> 2 -> 3 -> 4 -> 5
     (4 -> 3 -> 2)
@@ -33,23 +39,22 @@ Output: 1->4->3->2->5->NULL
 var reverseBetween = function(head, m, n) {
   let prev = null
   let cur = head
-  let count = 1
 
   while (cur !== null) {
     let next = cur.next
-    if (count < m) {
-      prev = cur
-      cur = next
-    } else (count >= m && count ) {
 
-    }
-
-    cur = cur.next
-    count++
+    cur.next = prev
+    prev = cur
+    cur = next
   }
 
-
+  return xx
 }
+```
+
+```js
+Input: 1->2->3->4->5->NULL, m = 2, n = 4
+Output: 1->4->3->2->5->NULL
 ```
 
 ### Sister Title

@@ -12,7 +12,7 @@
 
 Nothing someone says before 'but' really counts.
 
-S0 7 45:50
+S0 8 39:52
 
 ### links
 
