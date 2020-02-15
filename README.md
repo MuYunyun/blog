@@ -208,6 +208,6 @@ This is my personal FE blog. If you like it, welcome watch or star. If there is 
 
 #### Project Framework
 
-* [CAS 登入流程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/CAS登入流程.md)
-* [RPC 在网关项目中的实践](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/RPC在点我达网关的实践一.md)
-* [解读 IoC 框架 —— InversifyJS](https://github.com/MuYunyun/blog/blob/master/BasicSkill/系统架构篇/解读IoC框架InversifyJS.md)
+* [CAS 登入流程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/project_framework/CAS登入流程.md)
+* [RPC 在网关项目中的实践](https://github.com/MuYunyun/blog/blob/master/BasicSkill/project_framework/RPC在点我达网关的实践一.md)
+* [解读 IoC 框架 —— InversifyJS](https://github.com/MuYunyun/blog/blob/master/BasicSkill/project_framework/解读IoC框架InversifyJS.md)

@@ -1,1 +1,0 @@
-- [ ] [Ultimate React Component Patterns with Typescript 2.8](https://levelup.gitconnected.com/ultimate-react-component-patterns-with-typescript-2-8-82990c516935): 当前阅读到 Default Props 的第三部分

@@ -2,7 +2,7 @@
 
 | # | Title | Explanation | Difficulty |
 |:---:|:---:|:---:|:---:|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/1.两数之和/README.md) | Easy |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/1.Two_Sum/README.md) | Easy |
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/2.两数相加/README.md) | Medium |
 | 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/3.无重复字符的最长子串/README.md) | Medium |
 | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/4.两个排序数组的中位数/README.md) | Hard |
