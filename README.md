@@ -12,7 +12,7 @@
 
 ### Introduction
 
-This is my personal FE blog. If there is any wrong thing in these articles, welcome [point it](https://github.com/MuYunyun/blog/issues/new).
+This is my personal FE blog. If you like it, welcome watch or star. If there is any wrong place in these articles, you can point it [there](https://github.com/MuYunyun/blog/issues/new).
 
 > Articles licensed under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en) Agreement.
 
@@ -134,7 +134,7 @@ This is my personal FE blog. If there is any wrong thing in these articles, welc
 * [INHERITED AND NON-INHERITED](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/INHERITED_AND_NON-INHERITED.md)
 
 <details>
-  <summary>CSS</summary>
+  <summary>more</summary>
 
 * [水平布局解决方案](https://github.com/MuYunyun/blog/blob/master/BasicSkill/基础篇/水平布局解决方案.md)
 * [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
