@@ -69,6 +69,18 @@ If you decide not to cancel the scroll, you can set the **passive** in the addEv
 * [passive-event-listeners](https://developers.google.com/web/updates/2016/06/passive-event-listeners)
 - [ ] [Passive events listener explainer](https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md)
 
+### Scroll
+
+Problem 1: scroll chaining
+
+When the user reachs a 'scroll boundary', the content behind the drawer or modal starts scrolling!
+
+![](https://developers.google.com/web/updates/images/2017/11/overscroll-behavior/drawer-scroll.mp4?hl=zh_cn)
+
+![](http://with.muyunyun.cn/5ad52dbc5716fb92b823898557cc94fa.gif)
+
+- [ ] [Overscroll behavior](https://developers.google.com/web/updates/2017/11/overscroll-behavior): read Introducing overscroll-behavior
+
 ### resource links
 
 * [Apple's "Designing Fluid Interfaces" talk](https://developer.apple.com/videos/play/wwdc2018/803/)
@@ -85,4 +97,3 @@ If you decide not to cancel the scroll, you can set the **passive** in the addEv
 
 - [ ] [Google introduction to touch on the web](https://developers.google.com/web/fundamentals/design-and-ux/input/touch)
 - [ ] [Mozilla introduction to pointer events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events)
-- [ ] [Overscroll behavior](https://developers.google.com/web/updates/2017/11/overscroll-behavior)
