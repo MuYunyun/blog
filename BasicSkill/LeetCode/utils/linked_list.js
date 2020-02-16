@@ -1,5 +1,10 @@
+function ListNode(val) {
+  this.val = val;
+  this.next = null;
+}
+
 // the function to create linked list
-function createLinkedList() {
+var list = (function createLinkedList() {
   function ListNode(val) {
     this.val = val;
     this.next = null;
@@ -15,4 +20,4 @@ function createLinkedList() {
   list1.next = list2;
 
   return list1
-}
+})()

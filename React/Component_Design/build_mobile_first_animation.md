@@ -40,12 +40,12 @@ The way to take is usually `an animation library` with `a gesture hooks`.
 ### Some Principles
 
 * `Immediate Response`: If not response immediately, it feels super disconnected. [demo](https://mobile-first-animation.netlify.com/21)
-  * demo: Carousel 组件, 目前 Tab 的滑动存在缺陷;
+  * Carousel 组件, 目前 Tab 的滑动存在缺陷;
 * `Scroll Decay`: The concepts of scroll decay can help us decide how our UIs should respect to users interaction. [demo](https://mobile-first-animation.netlify.com/23)
-  * demo: Picker/DatePicker 组件;
-  * `-webkit-overflow-scrolling: touch`;
+  * `-webkit-overflow-scrolling: touch`;(only used in ios > 5, but not success)
+  * Picker/DatePicker 组件;
 * `Rubberbanding`
-  * demo: PopOver 组件;
+  * PopOver 组件;
 
 ### Touch cancellation
 
