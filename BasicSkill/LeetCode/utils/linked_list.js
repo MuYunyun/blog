@@ -3,7 +3,10 @@ function ListNode(val) {
   this.next = null;
 }
 
-// the function to create linked list
+/*
+  the function to create linked list
+  todo: use arr params and print
+*/
 var list = (function createLinkedList() {
   function ListNode(val) {
     this.val = val;

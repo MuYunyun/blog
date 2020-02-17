@@ -13,4 +13,43 @@ Output: 1->2->2->4->3->5
 
 ### Analyze
 
-todo
+```js
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @param {number} x
+ * @return {ListNode}
+ */
+var partition = function(head, x) {
+  const listNode = new ListNode(0)
+  listNode.next = head
+
+  const smallerThanX = new ListNode(0)
+  const biggerThanX = new ListNode(0)
+
+  let cur = listNode.next
+  let smallPoint = smallerThanX
+  let bigPoint = biggerThanX
+  while (cur) {
+    if (cur.val < x) {
+      smallPoint.next = cur
+      smallPoint = smallPoint.next
+    } else {
+      bigPoint.next = cur
+      bigPoint = bigPoint.next
+    }
+
+    cur = cur.next
+  }
+
+  smallPoint.next = biggerThanX.next
+
+  return smallerThanX.next
+}
+```

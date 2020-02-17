@@ -81,6 +81,11 @@ When the user reachs a 'scroll boundary', the content behind the drawer or modal
 
 - [ ] [Overscroll behavior](https://developers.google.com/web/updates/2017/11/overscroll-behavior): read Introducing overscroll-behavior
 
+* overscroll-behavior
+  * auto: default;
+  * contain: prevent scroll chaining, keep the overflow effects within the node self;
+  * none: prevent scroll chaining, prevent overflow effects within the node self.
+
 ### resource links
 
 * [Apple's "Designing Fluid Interfaces" talk](https://developer.apple.com/videos/play/wwdc2018/803/)
