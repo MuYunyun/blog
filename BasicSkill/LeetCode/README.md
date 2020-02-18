@@ -87,7 +87,7 @@
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/83.Remove_Duplicates_from_Sorted_List/README.md) | Easy |
 | 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | | Hard |
 | 85 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | | Hard |
-| 86 | [Partition List](https://leetcode.com/problems/partition-list/) | | Medium |
+| 86 | [Partition List](https://leetcode.com/problems/partition-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/86.Partition_List/README.md) | Medium |
 | 87 | [Scramble String](https://leetcode.com/problems/scramble-string/) | | Hard |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/88.合并两个有序数组/README.md) | Easy |
 | 89 | [Gray Code](https://leetcode.com/problems/gray-code/) | | Medium |

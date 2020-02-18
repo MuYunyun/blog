@@ -13,6 +13,10 @@ Output: 1->2->2->4->3->5
 
 ### Analyze
 
+思路: 遍历访问链表 head, 将链表中小于 x 与大于等于 x 的值作拆分成两个链表, 最后再将它们给链接起来。
+
+* 易漏点: 大于等于 x 的链表的末尾的 next 应该指向 null。
+
 ```js
 /**
  * Definition for singly-linked list.
@@ -48,6 +52,7 @@ var partition = function(head, x) {
     cur = cur.next
   }
 
+  bigPoint.next = null
   smallPoint.next = biggerThanX.next
 
   return smallerThanX.next

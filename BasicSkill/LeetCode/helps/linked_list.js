@@ -1,19 +1,21 @@
 // some useful fn to do with linked_list
 
+function ListNode(val) {
+  this.val = val;
+  this.next = null;
+}
+
 /**
- * create linked list
+ * create init linked list for leetcode.
  */
-var initList = (function createLinkedList(...args) {
-  function ListNode(val) {
-    this.val = val;
-    this.next = null;
-  }
+var list = (function createLinkedList(...args) {
+  const reverseArgs = args.reverse()
   const tmplistNode = new ListNode(0)
-  let length = args.length
-  let cur = new ListNode(args[length - 1])
+  let length = reverseArgs.length
+  let cur = new ListNode(reverseArgs[length - 1])
   tmplistNode.next = cur
   while (length-- && length >= 1) {
-    let next = new ListNode(args[length - 1])
+    let next = new ListNode(reverseArgs[length - 1])
     cur.next = next
     cur = next
   }
