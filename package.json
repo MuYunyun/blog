@@ -16,7 +16,8 @@
   "homepage": "https://github.com/MuYunyun/blog#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
@@ -25,6 +26,7 @@
     ]
   },
   "devDependencies": {
+    "commitlint": "^8.3.5",
     "husky": "^3.0.3",
     "lint-md": "^0.2.0",
     "lint-md-cli": "^0.1.1",
