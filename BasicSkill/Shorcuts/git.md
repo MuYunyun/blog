@@ -126,3 +126,9 @@ git 默认初始化的项目是不区分文件名大小写的, 可以执行下�
 ```js
 git config core.ignorecase false
 ```
+
+### 误提交敏感信息到 github 怎么办
+
+* [removing-sensitive-data-from-a-repository](https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
+
+跟进 https://enterprise.githubsupport.com/hc/en-us

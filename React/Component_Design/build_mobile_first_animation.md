@@ -79,12 +79,14 @@ When the user reachs a 'scroll boundary', the content behind the drawer or modal
 
 ![](http://with.muyunyun.cn/5ad52dbc5716fb92b823898557cc94fa.gif)
 
-- [ ] [Overscroll behavior](https://developers.google.com/web/updates/2017/11/overscroll-behavior): read Introducing overscroll-behavior
-
-* overscroll-behavior
+* [overscroll-behavior](https://drafts.csswg.org/css-overscroll/)
   * auto: default;
   * contain: prevent scroll chaining, keep the overflow effects within the node self;
   * none: prevent scroll chaining, prevent overflow effects within the node self.
+
+![](http://with.muyunyun.cn/130f116b88477fba5725033e4245927a.jpg)
+
+> [Overscroll behavior](https://developers.google.com/web/updates/2017/11/overscroll-behavior): read Introducing overscroll-behavior
 
 ### resource links
 
@@ -92,9 +94,14 @@ When the user reachs a 'scroll boundary', the content behind the drawer or modal
 * [Implementation of iOS animation principles](https://medium.com/@nathangitter/building-fluid-interfaces-ios-swift-9732bb934bf5)
 * [Progressive Web Animations | Alexandra Holachek](https://www.youtube.com/watch?v=laPsceJ4tTY&list=PLPxbbTqCLbGHPxZpw4xj_Wwg8-fdNxJRh&index=21)
 
+### Spring Animations
+
+* [springs in animations](https://github.com/jenox/UIKit-Playground/tree/master/01-Demystifying-UIKit-Spring-Animations)
+
+![](http://with.muyunyun.cn/21585e988e682457131948346fc8949d.jpg)
+
 #### Springs & Gestures
 
-- [ ] [Great intro to using springs in animations](https://medium.com/ios-os-x-development/demystifying-uikit-spring-animations-2bb868446773)
 - [ ] [In-depth look at projection](https://medium.com/ios-os-x-development/gestures-in-fluid-interfaces-on-intent-and-projection-36d158db7395)
 - [ ] [In-depth exploration of momentum scrolling](https://ariya.io/2013/08/javascript-kinetic-scrolling-part-1)
 
