@@ -129,6 +129,20 @@ git config core.ignorecase false
 
 ### 误提交敏感信息到 github 怎么办
 
+the first step:
+
+```bash
+git filter-branch --force --index-filter \
+  "git rm --cached --ignore-unmatch yarn.lock" \
+  --prune-empty --tag-name-filter cat -- --all
+```
+
+the second step:
+
+```bash
+git push origin --force --all
+```
+
 * [removing-sensitive-data-from-a-repository](https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
 
-跟进 https://enterprise.githubsupport.com/hc/en-us
+ask for Contact [GitHub Support](https://support.github.com/contact) or [GitHub Premium Support](https://premium.githubsupport.com/), asking them to remove cached views and references to the sensitive data in pull requests on GitHub.
