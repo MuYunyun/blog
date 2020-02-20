@@ -312,7 +312,7 @@
 | 325 | [Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/) :blue_book: | | Medium |
 | 326 | [Power of Three](https://leetcode.com/problems/power-of-three/) | | Easy |
 | 327 | [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/) | | Hard |
-| 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | | Medium |
+| 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/328.Odd_Even_Linked_List/README.md) | Medium |
 | 329 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | | Hard |
 | 330 | [Patching Array](https://leetcode.com/problems/patching-array/) | | Hard |
 | 331 | [Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/) | | Medium |

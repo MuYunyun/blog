@@ -55,10 +55,11 @@ Output: 1  ->  3  ->  5  ->  2  ->  4  ->  NULL
  * @return {ListNode}
  */
 var oddEvenList = function(head) {
+  if (!head) return head
   const list = new ListNode(0)
   list.next = head
   const odd = list.next
-  const even = list.next.next
+  const even = odd.next
 
   let prev = null
   let cur = list.next
@@ -74,7 +75,7 @@ var oddEvenList = function(head) {
   }
 
   if (count % 2 === 1) {
-    prev.next = null
+    prev && (prev.next = null)
     cur.next = even
   } else {
     prev.next = even
@@ -82,14 +83,4 @@ var oddEvenList = function(head) {
 
   return odd
 }
-```
-
-### 错误记录
-
-```bash
-执行出错信息：
-Line 16: TypeError: Cannot read property 'next' of null
-
-最后执行的输入：
-[]
 ```
