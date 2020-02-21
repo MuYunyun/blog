@@ -14,11 +14,7 @@ Explanation: 342 + 465 = 807.
 
 ### Analyze
 
-Pseudocode as follow:
-
-* 初始化 head, temp
-* 循环遍历两个链表
-  * 根据 sum 的值来决定是否要处理进位
+核心: 根据 sum 的值来决定是否要处理进位
 
 ```js
 // Keyword: single linked list
@@ -51,13 +47,13 @@ var addTwoNumbers = function(l1, l2) {
       l2 = l2.next
     }
 
-    const obj = new ListNode(sum % 10)
+    const list = new ListNode(sum % 10)
     if (head === null) {
-      head = obj
-      temp = obj
+      head = list
+      temp = list
     } else {
-      temp.next = obj
-      temp = obj
+      temp.next = list
+      temp = list
     }
 
     // 处理进位
@@ -75,3 +71,7 @@ var addTwoNumbers = function(l1, l2) {
   return head
 }
 ```
+
+### Sister Title
+
+445
