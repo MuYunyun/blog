@@ -79,10 +79,35 @@ var addTwoNumbers = function(l1, l2) {
     l2 = tmpList.next
   }
 
-  let count = countl1 < countl2 ? countl2 : countl1
+  listNodeAdd(l1, l2)
 
-  while (count--) {
+  let result = l1
+  if (digitCarry === 1) {
+    result = new ListNode(1)
+    result.next = l1
+  }
 
+  return l1
+}
+
+// flag: 1 shows digit carry, 0 not;
+let digitCarry = 0
+
+/**
+ * calculate the sum of l1 and l2
+ */
+function listNodeAdd(l1, l2) {
+  if (l1.next === null) return
+
+  listNodeAdd(l1.next, l2.next)
+
+  let sum = l1.val + l2.val + digitCarry
+  if (sum >= 10) {
+    l1.val = sum % 10
+    digitCarry = 1
+  } else {
+    l1.val = sum
+    digitCarry = 0
   }
 }
 ```
