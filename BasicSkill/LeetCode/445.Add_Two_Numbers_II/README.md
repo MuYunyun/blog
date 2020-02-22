@@ -1,4 +1,4 @@
-### title
+### Add Two Numbers II
 
 You are given two non-empty linked lists representing two non-negative integers. `The most significant digit comes first` and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 
@@ -79,6 +79,10 @@ var addTwoNumbers = function(l1, l2) {
     l2 = tmpList.next
   }
 
+  let count = countl1 < countl2 ? countl2 : countl1
 
+  while (count--) {
+
+  }
 }
 ```
