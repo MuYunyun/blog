@@ -26,12 +26,6 @@ Output: 7 -> 8 -> 0 -> 7
 0  ->  5  ->  6  ->  4
 ```
 
-```js
- cur    next
-  7  ->  2  ->  2  ->  3
-  0  ->  7  ->  7  ->  7
-```
-
 * 第二步: 如果当前两个链表的相加值为 9, 则递归寻找两个链表的下一个相加值;
 
 ```js
@@ -63,8 +57,7 @@ var addTwoNumbers = function(l1, l2) {
 
   // creat the frontest List
   let tmpList = new ListNode(0)
-  tmpList.next = new ListNode(0)
-  let cur = tmpList.next
+  let cur = tmpList
   let diff = Math.abs(countl2 - countl1)
   while (diff--) {
     cur.next = new ListNode(0)
@@ -78,7 +71,7 @@ var addTwoNumbers = function(l1, l2) {
     cur.next = l2
     l2 = tmpList.next
   }
-
+  debugger
   listNodeAdd(l1, l2)
 
   let result = l1
@@ -87,17 +80,17 @@ var addTwoNumbers = function(l1, l2) {
     result.next = l1
   }
 
-  return l1
+  return result
 }
 
 // flag: 1 shows digit carry, 0 not;
-let digitCarry = 0
+var digitCarry = 0
 
 /**
  * calculate the sum of l1 and l2
  */
 function listNodeAdd(l1, l2) {
-  if (l1.next === null) return
+  if (l1 === null) return
 
   listNodeAdd(l1.next, l2.next)
 
@@ -111,3 +104,18 @@ function listNodeAdd(l1, l2) {
   }
 }
 ```
+
+### 测试用例
+
+输入:
+
+[9]
+[9]
+
+输出
+
+[1,9]
+
+预期结果
+
+[1,8]
