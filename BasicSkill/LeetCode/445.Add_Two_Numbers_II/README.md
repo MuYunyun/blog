@@ -26,7 +26,7 @@ Output: 7 -> 8 -> 0 -> 7
 0  ->  5  ->  6  ->  4
 ```
 
-* 第二步: 如果当前两个链表的相加值为 9, 则递归寻找两个链表的下一个相加值;
+* 第二步: 递归计算两个链表同位之和, 同时使用 digitCarry 表示进位的情况;
 
 ```js
 /**
@@ -71,7 +71,29 @@ var addTwoNumbers = function(l1, l2) {
     cur.next = l2
     l2 = tmpList.next
   }
-  debugger
+
+
+  // flag: 1 shows digit carry, 0 not;
+  let digitCarry = 0
+
+  /**
+   * calculate the sum of l1 and l2
+   */
+  function listNodeAdd(l1, l2) {
+    if (l1 === null) return
+
+    listNodeAdd(l1.next, l2.next)
+
+    let sum = l1.val + l2.val + digitCarry
+    if (sum >= 10) {
+      l1.val = sum % 10
+      digitCarry = 1
+    } else {
+      l1.val = sum
+      digitCarry = 0
+    }
+  }
+
   listNodeAdd(l1, l2)
 
   let result = l1
@@ -82,40 +104,10 @@ var addTwoNumbers = function(l1, l2) {
 
   return result
 }
-
-// flag: 1 shows digit carry, 0 not;
-var digitCarry = 0
-
-/**
- * calculate the sum of l1 and l2
- */
-function listNodeAdd(l1, l2) {
-  if (l1 === null) return
-
-  listNodeAdd(l1.next, l2.next)
-
-  let sum = l1.val + l2.val + digitCarry
-  if (sum >= 10) {
-    l1.val = sum % 10
-    digitCarry = 1
-  } else {
-    l1.val = sum
-    digitCarry = 0
-  }
-}
 ```
 
-### 测试用例
+![](http://with.muyunyun.cn/c2559f9251487e23530e6932cc46516b.jpg-400)
 
-输入:
+### Sister Title
 
-[9]
-[9]
-
-输出
-
-[1,9]
-
-预期结果
-
-[1,8]
+2
