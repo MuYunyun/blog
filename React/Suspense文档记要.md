@@ -76,5 +76,3 @@ function ProfilePage({ resource }) {
   );
 }
 ```
-
-to read: If we’re willing to sacrifice consistency, we could pass potentially stale data to the components that delay our transition.
