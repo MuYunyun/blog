@@ -16,7 +16,7 @@ Tabs 组件在 Swipe 的组件上开发。
 
 ```js
 if (tabs.length > 4) {
-  ; (this as any)[`tabScroll`].scrollTo({
+  (this as any)[`tabScroll`].scrollTo({
     left: this.tabMiddleDistance(),
     top: 0,
     behavior: 'smooth'
@@ -183,8 +183,45 @@ return (
 
 ### 一列长度特别长, 一列特别短的特殊处理
 
-当进页面的时候将 tabs 的三列的第一页数据都分别请求一遍。
+### 性能优化
+
+默认情况下, 当进一个页面的时候就将 tabs 每一块内容区数据都请求了一遍, 如果每个 tab 页面接口数非常多的时候, 可能会有卡顿问题, 提供两种模式来进行优化:
+
+方式一: 在 Tabs 组件切换 tab 时, 在触发的 onChange 中获取相应数据传入对应组件。
 
 ```js
-
+<Tabs
+  tabs={tabs}
+  activeTab={page}
+  onChange={(index, _e) => {
+    if (index === 0) {
+      /* 伪代码: 获取数据 A */
+    } else if (index === 1) {
+      /* 伪代码: 获取数据 B */
+    } else if (index === 2) {
+      /* 伪代码: 获取数据 C */
+    }
+    setPage(index)
+  }}
+>
+  <A data={dataA} />
+  <B data={dataB} />
+  <C data={dataC} />
+</Tabs>
 ```
+
+方式二: 维护逻辑变量, 这里以 ifRead 是否已读(多多圈为例), 控制 A、B、C 组件的显示。
+
+```js
+<Tabs
+  tabs={tabs}
+  activeTab={page}
+  onChange={(index, _e) => setPage(index)}
+>
+  <div>{ifRead0 || page === 0 ? <A /> : null}</div>
+  <div>{ifRead1 || page === 1 ? <B /> : null}</div>
+  <div>{ifRead2 || page === 2 ? <C /> : null}</div>
+</Tabs>
+```
+
+相比较一的方式, 方式二的优势是将请求数据的逻辑被拆分到 A、B、C 各个子组件中, 劣势是需要维护逻辑变量。
