@@ -29,3 +29,24 @@ emm, 虽然是道简单难度的题目, 但是通过率不是很高, 大多数�
 
 1.选取数组的第一个值 str
 2.让数组中的每个值分别 indexOf(str), 如果 indexOf(str) !== 0, 则让 str = str.slice(0, str.length - 1)
+
+```js
+/**
+ * @param {string[]} strs
+ * @return {string}
+ */
+var longestCommonPrefix = function (strs) {
+  if (strs.length === 0) return ''
+
+  let str = strs[0]
+
+  for (let i = 0; i < strs.length; i++) {
+    while (strs[i].indexOf(str) !== 0) {
+      str = str.slice(0, str.length - 1)
+      if (str.length === 0) { return '' }
+    }
+  }
+
+  return str
+};
+```

@@ -20,4 +20,15 @@
 
 ### analyze
 
-水题
+后面需要改。
+
+```js
+/**
+ * @param {string} haystack
+ * @param {string} needle
+ * @return {number}
+ */
+var strStr = function (haystack, needle) {
+  return haystack.indexOf(needle)
+};
+```

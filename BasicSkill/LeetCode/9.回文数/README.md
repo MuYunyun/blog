@@ -16,3 +16,20 @@ Example 3:
 Input: 10
 Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+
+### Analyze
+
+```js
+/**
+ * @param {number} x
+ * @return {boolean}
+ */
+var isPalindrome = function (x) {
+  const convert = x.toString().split('').reverse().join('')
+  if (x === Number(convert)) {
+    return true
+  } else {
+    return false
+  }
+};
+```
