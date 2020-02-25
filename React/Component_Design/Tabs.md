@@ -66,6 +66,41 @@ const scrollTo = (elm: any, distance: number, direction = 'horizontal') => {
 }
 ```
 
+这写法有如下坑
+  * scrollTo 也是异步行为, 因此 requestAnimationFrame 动画是失效的;
+  * `基于距离`判断精度不是很准确
+
+因此改用为 scrollLeft, 以及基于时间来调整
+
+```js
+// t: 过去时间; b: 初始距离; c: 终点距离 d: 完成时间, todo: 相关公式后续了解
+const easeInOutCubic = (t: number, b: number, c: number, d: number) => {
+  const cc = c - b
+  t /= d / 2
+  if (t < 1) {
+    return (cc / 2) * t * t * t + b
+  } else {
+    return (cc / 2) * ((t -= 2) * t * t + 2) + b
+  }
+}
+
+function scrollToX(value: number, node: HTMLElement) {
+  const scrollLeft = node.scrollLeft
+  const startTime = Date.now()
+  const frameFunc = () => {
+    const timestamp = Date.now()
+    const time = timestamp - startTime
+    node.scrollLeft = easeInOutCubic(time, scrollLeft, value, 450)
+    if (time < 450) {
+      requestAnimationFrame(frameFunc)
+    } else {
+      setScrollTop(value, node)
+    }
+  }
+  requestAnimationFrame(frameFunc)
+}
+```
+
 ### 开发坑点
 
 背景: `Tab` 下划线随着内容栏的滑动而动态滑动。
