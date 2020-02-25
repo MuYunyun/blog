@@ -22,7 +22,24 @@ Output: 2->3
  cur  next
   1 -> 1 -> 1 -> 2 -> 3
 
-  2 -> 3
+prev  cur  next
+       1 -> 2 -> 3 -> 3 -> 4 -> 4 -> 5
+                  .
+                  .
+           prev cur  next
+       1 -> 2 -> 3 -> 3 -> 4 -> 4 -> 5
+                  .
+                  .
+           prev      cur  next
+       1 -> 2 -> 3 -> 3 -> 4 -> 4 -> 5
+                  .
+                  .
+           prev           cur  next
+       1 -> 2 -> 3 -> 3 -> 4 -> 4 -> 5
+                  .
+                  .
+           prev           cur  next
+       1 -> 2 -> 3 -> 3 -> 4 -> 4 -> 5
 ```
 
 ```js
@@ -38,6 +55,25 @@ Output: 2->3
  * @return {ListNode}
  */
 var deleteDuplicates = function(head) {
-  const dummyHead =
+  const dummyHead = new ListNode(0)
+
+  let prev = dummyHead
+  let cur = prev.next
+
+  while (cur) {
+    let next = cur.next
+    if (next && cur.val === next.val) {
+      while (next && cur.val === next.val) {
+        cur = next
+        next = next.next
+        prev.next = next
+      }
+      cur = next
+      prev.next = cur
+    }
+    prev = cur
+    cur = next
+  }
+  return dummyHead.next
 }
 ```
