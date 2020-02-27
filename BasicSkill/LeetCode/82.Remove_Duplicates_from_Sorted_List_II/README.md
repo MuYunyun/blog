@@ -56,7 +56,11 @@ prev  cur  next
                   .
                   .
            prev                     cur
-       1 -> 2 -> 3 -> 3 -> 4 -> 4 -> 5              .
+       1 -> 2 -> 3 -> 3 -> 4 -> 4 -> 5
+```
+
+```js
+    1 -> 1 -> 1 -> 1 -> 3 -> 3
 ```
 
 ```js
@@ -73,7 +77,7 @@ prev  cur  next
  */
 var deleteDuplicates = function(head) {
   const dummyHead = new ListNode(0)
-
+  dummyHead.next = head
   let prev = dummyHead
   let cur = prev.next
 
@@ -103,6 +107,20 @@ var deleteDuplicates = function(head) {
 
 ### test
 
+输入：
+[1,1,1,1,3,3]
+
+输出:
+[3,3]
+
+预期：
+[]
+
+```js
+
+    1   1   1   1   3   3
+```
+
 ```js
 function ListNode(val) {
   this.val = val;
@@ -125,37 +143,69 @@ var list = (function createLinkedList(...args) {
   }
 
   return tmplistNode.next
-})(1, 1, 1, 2, 3)
+})(1, 1, 1, 1, 3, 3)
 
 var deleteDuplicates = function(head) {
   const dummyHead = new ListNode(0)
+  dummyHead.next = head
 
-  let prev = dummyHead
-  let cur = prev.next
-
-  while (cur) {
-    let next = cur.next
-    debugger
-    if (next && cur.val === next.val) {
-      while (next && cur.val === next.val) {
-        cur = next
-        next = cur.next
-        if (next) {
-          let afterNext = next.next
-          if (afterNext && next.val === afterNext.val) {
-            cur = afterNext
-            next = cur.next
-          }
-        }
-      }
-      cur = next
-      prev.next = cur
+  let slowPoint = dummyHead
+  let quickPoint = dummyHead
+  debugger
+  while(slowPoint.next) {
+    while(quickPoint.next && quickPoint.next.val === slowPoint.val) {
+      quickPoint = quickPoint.next
     }
-    prev = cur
-    cur = prev ? prev.next : null
+
+    if (slowPoint === quickPoint) {
+      slowPoint = slowPoint.next
+      quickPoint = slowPoint
+    } else {
+      slowPoint.next = quickPoint
+    }
   }
+
   return dummyHead.next
 }
 
 deleteDuplicates(list)
+```
+
+思路: `快慢指针`, 用快指针跳过有重复值的链表, 慢指针负责和快指针拼接!
+
+```js
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var deleteDuplicates = function(head) {
+  const dummyHead = new ListNode(0)
+  dummyHead.next = head
+
+  let cur = dummyHead.next
+
+  while(cur) {
+    let slowPoint = cur
+    let quickPoint = slowPoint
+    while(quickPoint.next && quickPoint.next.val === slowPoint.val) {
+      quickPoint = quickPoint.next
+    }
+
+    if (slowPoint === quickPoint) {
+      slowPoint = slowPoint.next
+      quickPoint = slowPoint
+    } else {
+      slowPoint.next = quickPoint
+    }
+  }
+
+  return dummyHead.next
+}
 ```

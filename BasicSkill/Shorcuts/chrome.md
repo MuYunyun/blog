@@ -14,3 +14,7 @@
 
 1. Press `Cmd + Shift + P`;
 2. Type `Capture full size screenshot`;
+
+### 切换
+
+chrome://flags/#enable-force-dark, enabled 启动暗黑
