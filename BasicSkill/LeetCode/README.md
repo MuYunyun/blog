@@ -83,7 +83,7 @@
 | 79 | [Word Search](https://leetcode.com/problems/word-search/) | | Medium ||
 | 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/80.删除排序数组中的重复项II/README.md) | Medium ||
 | 81 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | | Medium ||
-| 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/80.删除排序数组中的重复项II/README.md) | Medium | 快慢指针 |
+| 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/82.Remove_Duplicates_from_Sorted_List_II/README.md) | Medium | 快慢指针 |
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/83.Remove_Duplicates_from_Sorted_List/README.md) | Easy ||
 | 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | | Hard ||
 | 85 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | | Hard ||
