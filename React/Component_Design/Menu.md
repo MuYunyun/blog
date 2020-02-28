@@ -9,3 +9,7 @@
 ### JavaScript 动画与 CSS 动画
 
 todo
+
+### 细节
+
+1. 背景: 在 Menu.Item 中通常会写 Link 标签或者 a 标签进行路由跳转, 但由于 a 标签是行内样式, 点击区域过小导致跳转失效。参考了 ant-design 的[解决方案](https://github.com/ant-design/ant-design/issues/21649), 给 `<a />` 标签添加相关样式;

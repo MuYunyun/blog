@@ -11,7 +11,7 @@
                                                     `--"
 
 
-This is my persinal blog where to write and record some thought daily. It's very thankful to point wrong place from these articles [there](https://github.com/MuYunyun/blog/issues/new) by any chance. If you like it, welcome watch or star✨.
+This is my persinal blog where to write and record some thought daily. If you like it, welcome watch or star✨.
 
 - [React Series](#react-series)
   - [Deep Into React](#deep-into-react)
@@ -208,4 +208,4 @@ This is my persinal blog where to write and record some thought daily. It's very
 * [RPC 在网关项目中的实践](https://github.com/MuYunyun/blog/blob/master/BasicSkill/project_framework/RPC在点我达网关的实践一.md)
 * [解读 IoC 框架 —— InversifyJS](https://github.com/MuYunyun/blog/blob/master/BasicSkill/project_framework/解读IoC框架InversifyJS.md)
 
-> Articles licensed under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en) Agreement.
+> It's very thankful to point any wrong place from these articles [there](https://github.com/MuYunyun/blog/issues/new) as well. The Articles licensed under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en) Agreement.
