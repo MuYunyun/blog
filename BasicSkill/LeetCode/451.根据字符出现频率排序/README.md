@@ -62,8 +62,6 @@ var frequencySort = function(s) {
   }
 
   const arr = []
-  // for (let i = 0; i < map.keys.length; i++) {
-  //   const key = map.keys[i]
   for (let key of map.keys()) {
     arr.push({
       key,

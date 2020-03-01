@@ -73,17 +73,6 @@ const scrollTo = (elm: any, distance: number, direction = 'horizontal') => {
 因此改用为 scrollLeft, 以及基于时间来调整
 
 ```js
-// t: 过去时间; b: 初始距离; c: 终点距离 d: 完成时间, todo: 相关公式后续了解
-const easeInOutCubic = (t: number, b: number, c: number, d: number) => {
-  const cc = c - b
-  t /= d / 2
-  if (t < 1) {
-    return (cc / 2) * t * t * t + b
-  } else {
-    return (cc / 2) * ((t -= 2) * t * t + 2) + b
-  }
-}
-
 function scrollToX(value: number, node: HTMLElement) {
   const scrollLeft = node.scrollLeft
   const startTime = Date.now()
@@ -100,6 +89,90 @@ function scrollToX(value: number, node: HTMLElement) {
   requestAnimationFrame(frameFunc)
 }
 ```
+
+#### 缓动动画
+
+缓动动画公式参数:
+
+* time: 当前已运动的时间;
+* begin: 距离的初始值;
+* change: 目标值和初始值差值;
+* duration: 运动总时间;
+
+```js
+function linear(time, begin, change, duration) {
+  return change * (time / duration) + begin
+}
+```
+
+* `Linear`: 线性匀速运动效果;
+* `Quadratic`: 二次方的缓动（t^2）;
+* `Cubic`: 三次方的缓动（t^3）;
+* `Quartic`: 四次方的缓动（t^4）;
+* `Quintic`: 五次方的缓动（t^5）;
+* `Sinusoidal`: 正弦曲线的缓动（sin(t)）;
+* `Exponential`: 指数曲线的缓动（2^t）;
+* `Circular`: 圆形曲线的缓动（sqrt(1-t^2)）;
+* `Elastic`: 指数衰减的正弦曲线缓动;
+* `Back`: 超过范围的三次方缓动（(s+1)*t^3 – s*t^2）;
+* `Bounce`: 指数衰减的反弹缓动;
+
+除了 Linear 外, 其余每个效果都分三个缓动方式, 分别是:
+
+* `easeIn`: 从 0 开始加速的缓动, 也就是先慢后快;
+* `easeOut`: 减速到 0 的缓动, 也就是先快后慢;
+* `easeInOut`: 前半段从 0 开始加速, 后半段减速到 0 的缓动;
+
+以 `Quadratic` 为例, [源码](https://github.com/tweenjs/tween.js/blob/master/src/Tween.js#L534-L558):
+
+```js
+/* k 取值范围为 [0, 1] */
+TWEEN.Easing = {
+	Quadratic: {
+		In: function (k) {
+			return k * k;
+		},
+		Out: function (k) {
+			return k * (2 - k);
+    },
+    // k 为 [0, 0.5) 时, 使用 In 公式;
+    // k 为 [0.5, 1] 时, 使用 out 公式;
+		InOut: function (k) {
+			if ((k *= 2) < 1) {
+				return 0.5 * k * k;
+			}
+			return - 0.5 * (--k * (k - 2) - 1);
+		}
+	},
+}
+```
+
+in:
+
+![](http://with.muyunyun.cn/ac0ce9fe36c1169eec182b16aa9307b0.jpg)
+
+out:
+
+![](http://with.muyunyun.cn/281a10bf309065e0d879ee087be5ce10.jpg)
+
+
+```js
+const easeInOutCubic = (time: number, begin: number, change: number, d: number) => {
+  const cc = change - begin
+  time /= d / 2
+  if (time < 1) {
+    return (cc / 2) * time * time * time + begin
+  } else {
+    return (cc / 2) * ((time -= 2) * time * time + 2) + begin
+  }
+}
+```
+
+### 贝塞尔曲线和缓动动画的关系?
+
+* [贝塞尔曲线的推导](https://juejin.im/post/5b854e1451882542fe28a53d)
+
+目前的理解: 贝塞尔的方程式和缓动动画的公式是两条并列的主线, 使用它们中的任意一个都可以完成 JavaScript 的动画效果。
 
 ### 开发坑点
 
@@ -260,3 +333,7 @@ return (
 ```
 
 相比较一的方式, 方式二的优势是将请求数据的逻辑被拆分到 A、B、C 各个子组件中, 劣势是需要维护逻辑变量。
+
+### link
+
+* [数学画图](https://www.mathway.com/Graph)
