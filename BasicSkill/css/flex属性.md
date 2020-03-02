@@ -69,4 +69,3 @@ Flex 布局中, 省略号属性是失效的。
   white-space: nowrap;
 }
 ```
-

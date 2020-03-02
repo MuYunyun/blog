@@ -173,3 +173,48 @@
 * float: 不为 none;
 * display: 为 inline-box、table-ceil、flex;
 ```
+
+### question
+
+Here is my demo,
+
+```html
+<html lang="en">
+  <style>
+    li {
+      display: inline-block;
+      background: red;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 30px
+    }
+
+    .demo {
+      width: 90px;
+    }
+
+    .clearfix {
+      overflow: visible;
+    }
+  </style>
+  <body>
+    <ul class="demo">
+      <li>testtest</li>
+      <li>testtest</li>
+      <li>testtest</li>
+      <li>testtest</li>
+      <li>testtest</li>
+      <li>testtest</li>
+    </ul>
+  </body>
+</html>
+```
+
+I'm confused why is it, I want to use overflow: hidden and not expect the strange gap, how can I do?
+
+![](http://with.muyunyun.cn/79377b5f34efca7b6574fff146c37f56.jpg)
+
+the solve way is to add `line-height: 0` to the class demo and add `line-height: 12px` to the tag li.
+
+> [there-is-an-strange-distance-when-using-overflow-hidden](https://stackoverflow.com/questions/60482616/there-is-an-strange-distance-when-using-overflow-hidden)
