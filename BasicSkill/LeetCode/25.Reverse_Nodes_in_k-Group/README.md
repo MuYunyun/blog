@@ -28,7 +28,29 @@ prev   next -> cur
         1  ->  2  ->  3  ->  4  ->  5
 ```
 
-每 k 个值之间进行链表反转, 目前的思考是替换的同时维护一个 count, count 达到 k 以后 count 清 0; 同时根据 count 是否达到 k 来进行判断当前列表的下一个列表是指向原列表还是反转后的列表。
+每间隔 k 个值进行链表反转, 目前的思考是替换链表的同时维护一个 count, count 达到 k 以后 count 清 0, 同时根据 count 是否达到 k 来判断当前组列表的下一组列表是指向原列表还是反转后的列表。但是这样的思路需要额外的内存来存储下一组列表。有没有更好的方法呢?
+
+```js
+尾插法:
+
+pre
+tail    head
+dummy    1     2     3     4     5
+# 我们用 tail 移到要翻转的部分最后一个元素
+pre     head       tail
+dummy    1     2     3     4     5
+	      cur
+# 我们尾插法的意思就是, 依次把 cur 移到 tail 后面
+pre          tail  head
+dummy    2     3    1     4     5
+	      cur
+                .
+                .
+# 依次类推
+pre     tail      head
+dummy    3     2    1     4     5
+		cur
+```
 
 ```js
 /**
@@ -44,6 +66,9 @@ prev   next -> cur
  * @return {ListNode}
  */
 var reverseKGroup = function(head, k) {
+  const dummyHead = new ListNode(0)
+  dummyHead.next = head
+
 
 }
 ```
