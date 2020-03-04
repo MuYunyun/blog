@@ -34,22 +34,22 @@ dummy    1  -> 2  -> 3  -> 4  -> 5  -> 6
 prev	  cur
 
 ① 将 tail 移到要翻转部分的最后一个元素, 若移动 k 元素之前已到达链表末尾则完成每间隔 k 个值的链表翻转;
-                         tail
+                         tail   next
 dummy    1  -> 2  -> 3  -> 4  -> 5  -> 6
 prev	  cur
 
 ② 接着依次把 cur 移到 tail 后面, 同时需要借助额外变量 prev 将 cur 的下一个节点指向 prev;
-                    tail
+                    tail        next
 dummy    2  -> 3  -> 4  -> 1  -> 5  -> 6
 	      cur               prev
                 .
                 .
-              tail
+              tail       next
 dummy    3  -> 4  -> 2  -> 1  -> 5  -> 6
 		    cur         prev
                 .
                 .
-        tail
+        tail        next
 dummy    4  -> 3  -> 2  -> 1  -> 5  -> 6
 		    cur   prev
 ```
@@ -71,16 +71,29 @@ var reverseKGroup = function(head, k) {
   const dummyHead = new ListNode(0)
   dummyHead.next = head
   let prev = dummyHead
-  let cur = prev.next
+  let cur = dummyHead.next
   let tail = cur
   let count = 0
 
   while (cur) {
-    while (tail.next) {
-      tail = tail.next
-      if (count < k) count++
+    if (count === 0) {
+      while (tail.next) {
+        tail = tail.next
+        if (count < k) {
+          count++
+        } else {
+          break
+        }
+      }
+      if (count < k) break
     }
-    if (count < k) break
+    let next = tail.next
+    prev = cur
+    cur = cur.next
+    prev.next = next
+    tail.next = prev
+
+    count--
   }
 }
 ```
