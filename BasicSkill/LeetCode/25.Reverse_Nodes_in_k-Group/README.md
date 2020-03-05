@@ -32,26 +32,48 @@ You may not alter the values in the list's nodes, only nodes itself may be chang
         tail
 dummy    1  -> 2  -> 3  -> 4  -> 5  -> 6
 prev	  cur
+        headP
 
 ① 将 tail 移到要翻转部分的最后一个元素, 若移动 k 元素之前已到达链表末尾则完成每间隔 k 个值的链表翻转;
-                         tail   next
+                         tail
 dummy    1  -> 2  -> 3  -> 4  -> 5  -> 6
-prev	  cur
+prev	  cur                     headP
 
 ② 接着依次把 cur 移到 tail 后面, 同时需要借助额外变量 prev 将 cur 的下一个节点指向 prev;
-                    tail        next
+                    tail
 dummy    2  -> 3  -> 4  -> 1  -> 5  -> 6
-	      cur               prev
+	      cur               prev  headP
                 .
                 .
-              tail       next
+              tail
 dummy    3  -> 4  -> 2  -> 1  -> 5  -> 6
-		    cur         prev
+		    cur         prev        headP
                 .
                 .
-        tail        next
+        tail
 dummy    4  -> 3  -> 2  -> 1  -> 5  -> 6
-		    cur   prev
+		    cur   prev              headP
+```
+
+```js
+k === 3
+
+pre
+tail    head
+dummy    1     2     3     4     5
+
+pre     head       tail
+dummy    1     2     3     4     5
+	       cur
+
+pre          tail  head
+dummy    2     3    1     4     5
+	       cur
+
+pre     tail      head
+dummy    3     2    1     4     5
+		cur
+....
 ```
 
 ```js
@@ -71,11 +93,12 @@ var reverseKGroup = function(head, k) {
   const dummyHead = new ListNode(0)
   dummyHead.next = head
   let prev = dummyHead
-  let cur = dummyHead.next
-  let tail = cur
+  let cur = prev.next
+  let headP = cur
   let count = 0
 
   while (cur) {
+    let tail = cur
     if (count === 0) {
       while (tail.next) {
         tail = tail.next
@@ -85,15 +108,63 @@ var reverseKGroup = function(head, k) {
           break
         }
       }
-      if (count < k) break
+      if (count < k) {
+        break
+      } else {
+        headP = tail.next
+      }
     }
     let next = tail.next
+
     prev = cur
     cur = cur.next
+
+    // todo
+
     prev.next = next
     tail.next = prev
 
     count--
+    if (count === 0) cur = headP
+  }
+
+  return dummyHead.next
+}
+```
+
+```js
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+  public ListNode reverseKGroup(ListNode head, int k) {
+    ListNode dummy = new ListNode(0);
+    dummy.next = head;
+    ListNode pre = dummy;
+    ListNode tail = dummy;
+    while (true) {
+      int count = 0;
+      while (tail != null && count != k) {
+        count++;
+        tail = tail.next;
+      }
+      if (tail == null) break;
+      ListNode head1 = pre.next;
+      while (pre.next != tail) {
+        ListNode cur = pre.next;
+        pre.next = cur.next;
+        cur.next = tail.next;
+        tail.next = cur;
+      }
+      pre = head1;
+      tail = head1;
+    }
+    return dummy.next;
   }
 }
 ```
