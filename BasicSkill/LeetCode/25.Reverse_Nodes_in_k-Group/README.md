@@ -58,22 +58,21 @@ dummy    4  -> 3  -> 2  -> 1  -> 5  -> 6
 ```js
 k === 3
 
-pre
-tail    head
+prev
+tail   head1
 dummy    1     2     3     4     5
 
-pre     head       tail
+prev   head1        tail
 dummy    1     2     3     4     5
-	       cur
+	      cur
 
-pre          tail  head
+prev          tail head1
 dummy    2     3    1     4     5
-	       cur
+	      cur
 
-pre     tail      head
+prev    tail       head1
 dummy    3     2    1     4     5
-		cur
-....
+		    cur
 ```
 
 ```js
@@ -93,39 +92,27 @@ var reverseKGroup = function(head, k) {
   const dummyHead = new ListNode(0)
   dummyHead.next = head
   let prev = dummyHead
-  let cur = prev.next
-  let headP = cur
-  let count = 0
+  let tail = dummyHead
 
-  while (cur) {
-    let tail = cur
-    if (count === 0) {
-      while (tail.next) {
-        tail = tail.next
-        if (count < k) {
-          count++
-        } else {
-          break
-        }
-      }
-      if (count < k) {
-        break
-      } else {
-        headP = tail.next
-      }
+  while (true) {
+    let count = 0
+    while (tail && count !== k) {
+      tail = tail.next
+      count++
     }
-    let next = tail.next
+    if (count !== k) break
 
-    prev = cur
-    cur = cur.next
+    let head1 = prev.next
 
-    // todo
+    while (prev.next !== tail) {
+      let cur = prev.next
+      prev.next = cur.next
+      cur.next = tail.next
+      tail.next = cur
+    }
 
-    prev.next = next
-    tail.next = prev
-
-    count--
-    if (count === 0) cur = headP
+    prev = head1
+    tail = head1
   }
 
   return dummyHead.next
@@ -133,38 +120,11 @@ var reverseKGroup = function(head, k) {
 ```
 
 ```js
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-class Solution {
-  public ListNode reverseKGroup(ListNode head, int k) {
-    ListNode dummy = new ListNode(0);
-    dummy.next = head;
-    ListNode pre = dummy;
-    ListNode tail = dummy;
-    while (true) {
-      int count = 0;
-      while (tail != null && count != k) {
-        count++;
-        tail = tail.next;
-      }
-      if (tail == null) break;
-      ListNode head1 = pre.next;
-      while (pre.next != tail) {
-        ListNode cur = pre.next;
-        pre.next = cur.next;
-        cur.next = tail.next;
-        tail.next = cur;
-      }
-      pre = head1;
-      tail = head1;
-    }
-    return dummy.next;
-  }
-}
+输入
+[1,2,3,4,5]
+2
+输出
+[]
+预期结果
+[2,1,4,3,5]
 ```
