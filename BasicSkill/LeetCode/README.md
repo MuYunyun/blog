@@ -26,7 +26,7 @@
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/22.括号生成/README.md) | Medium ||
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | | Hard ||
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/22.括号生成/README.md) | Medium | 链表 |
-| 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | | Hard ||
+| 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/25.Reverse_Nodes_in_k-Group/README.md) | Hard | 尾插法 |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/26.删除排序数组中的重复项/README.md) | Easy ||
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/27.移除元素/README.md) | Easy ||
 | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/28.实现strStr/README.md) | Easy ||
