@@ -161,6 +161,33 @@ xhr.onreadystatechange = function() {
 xhr.send(null)
 ```
 
+甚至可以结合 Promise 与 HttpRequest 来封装 fetch。
+
+```js
+function fetch(url) {
+  return new Promise((resolve, reject) => {
+    var xhr = new XMLHttpRequest()
+    xhr.open('GET', url, true)
+    xhr.onreadystatechange = function() {
+      if (this.readyState === 4 && this.status === 200) {
+        resolve(this.responseText)
+      } else {
+        reject(new Error(this.status))
+      }
+    }
+    xhr.send(null)
+  })
+}
+
+fetch('/post.json')
+  .then((fulfilled) => {
+    console.log(fulfilled)
+  })
+  .catch((rejected) => {
+    console.log(rejected)
+  })
+```
+
 * 跨域通信的几种方式
 
 ### 安全类
