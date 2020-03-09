@@ -32,8 +32,18 @@ Output: -1->0->3->4->5
 ```js
             head0
 dummy -> 4 -> 2 -> 1 -> 3
+            .
+            .
+pre         head0
+dummy -> 4 -> 2 -> 1 -> 3
+            .
+            .
+pre         head0
+dummy -> 2 -> 4 -> 1 -> 3
 
 
+            head0
+dummy -> 4 -> 2 -> null
 ```
 
 ```js
@@ -59,12 +69,13 @@ var insertionSortList = function(head) {
       continue
     }
 
-    dummy.next = head
-    while (dummy.next !== head0 && dummy.next.next) {
-      if (head0.val > dummy.next.val && head0.val < dummy.next.next.val) {
+    let pre = dummy
+    while (pre.next.val < head0.val) { pre = pre.next }
 
-      }
-    }
+    let next = head0.next
+    pre.next.next = next
+    head0.next = pre.next
+    pre.next = head0
   }
 
   return dummy.next
