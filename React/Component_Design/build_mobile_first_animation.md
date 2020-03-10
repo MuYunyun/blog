@@ -102,7 +102,7 @@ When the user reachs a 'scroll boundary', the content behind the drawer or modal
 
 #### Springs & Gestures
 
-- [ ] [In-depth look at projection](https://medium.com/ios-os-x-development/gestures-in-fluid-interfaces-on-intent-and-projection-36d158db7395)
+- [ ] [In-depth look at projection](https://medium.com/ios-os-x-development/gestures-in-fluid-interfaces-on-intent-and-projection-36d158db7395): 以借助这里的 Projection 公式来优化改进
 - [ ] [In-depth exploration of momentum scrolling](https://ariya.io/2013/08/javascript-kinetic-scrolling-part-1)
 
 #### Touch on the web
