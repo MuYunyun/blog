@@ -29,21 +29,53 @@ Output: -1->0->3->4->5
 
 ### Analyze
 
+head0: 当前已排序列表的最后一个;
+pre: 用于遍历当前已排序列表;
+
 ```js
-            head0
+       head0
 dummy -> 4 -> 2 -> 1 -> 3
             .
             .
-pre         head0
+pre    head0
 dummy -> 4 -> 2 -> 1 -> 3
             .
             .
 pre         head0
 dummy -> 2 -> 4 -> 1 -> 3
+            .
+            .
+             pre head0
+dummy -> 1 -> 2 -> 4 -> 3
+            .
+            .
+                      head0
+dummy -> 1 -> 2 -> 3 -> 4
+```
 
-
-            head0
-dummy -> 4 -> 2 -> null
+```js
+        head0
+dummy -> -1 -> 5 -> 3 -> 4 -> 0
+              .
+              .
+         pre head0
+dummy -> -1 -> 5 -> 3 -> 4 -> 0
+              .
+              .
+              pre head0
+dummy -> -1 -> 3 -> 5 -> 4 -> 0
+              .
+              .
+              pre head0
+dummy -> -1 -> 3 -> 5 -> 4 -> 0
+              .
+              .
+         pre           head0
+dummy -> -1 -> 3 -> 4 -> 5 -> 0
+              .
+              .
+                            head0
+dummy -> -1 -> 0 -> 3 -> 4 -> 5
 ```
 
 ```js
@@ -70,14 +102,16 @@ var insertionSortList = function(head) {
     }
 
     let pre = dummy
-    while (pre.next.val < head0.val) { pre = pre.next }
+    while (pre.next.val < head0.next.val) { pre = pre.next }
 
     let next = head0.next
-    pre.next.next = next
-    head0.next = pre.next
-    pre.next = head0
+    head0.next = next.next
+    next.next = pre.next
+    pre.next = next
   }
 
   return dummy.next
 }
 ```
+
+![](http://with.muyunyun.cn/d0cee500a18a46b76ed67016484973e2.jpg)
