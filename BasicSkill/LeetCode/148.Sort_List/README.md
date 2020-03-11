@@ -1,6 +1,6 @@
 ### Sort List
 
-Sort a linked list in O(n log n) time using constant space complexity.
+Sort a linked list in `O(n log n)` time using `constant space` complexity.
 
 Example 1:
 
@@ -20,9 +20,10 @@ Output: -1->0->3->4->5
 
 该题会用到如下思路:
 
+* `归并排序思想`;
 * 如何确认链表的中点? 使用`快慢指针`, 快指针每次走两步, 慢指针每次走一步;
   * 处理奇数链表/偶数链表, 慢指针最后的位置就是链表的中点位置;
-* `归并排序思想`;
+* 链表如何 merge?
 
 ```js
 奇数:
@@ -53,14 +54,21 @@ var sortList = function(head) {
     slow = slow.next
     quick.next && (quick = quick.next)
   }
+  // if the slow list is equal to the quick list, it means the current list only has one node.
+  if (slow === quick) return dummy
   let rightList = slow.next
   slow.next = null
   let leftList = dummy
-  return
+  return merge(sortList(leftList.next), sortList(rightList))
 }
 
 var merge = function(leftList, rightList) {
-  // todo
+  const dummy = new ListNode(0)
+  let lNode = leftList
+  let rNode = rightList
+  if (lNode) {
+
+  }
 }
 ```
 
