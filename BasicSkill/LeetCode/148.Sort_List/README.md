@@ -43,6 +43,16 @@ dummy  ->  4  ->  2  ->  1
 ```
 
 ```js
+lNode        lNext rNode
+dummy -> 2 -> null   1 -> null
+```
+
+```js
+lNode        lNext rNode
+dummy -> 1 -> null   2 -> null
+```
+
+```js
 var sortList = function(head) {
   const dummy = new ListNode(0)
   dummy.next = head
@@ -59,16 +69,27 @@ var sortList = function(head) {
   let rightList = slow.next
   slow.next = null
   let leftList = dummy
-  return merge(sortList(leftList.next), sortList(rightList))
+  return merge(sortList(leftList), sortList(rightList))
 }
 
 var merge = function(leftList, rightList) {
-  const dummy = new ListNode(0)
   let lNode = leftList
   let rNode = rightList
-  if (lNode) {
 
+  while (lNode.next && rNode) {
+    let lNext = lNode.next
+    let rNext = rNode.next
+    if (lNode.next.val >= rNode.val) {
+      rNode.next = lNode.next
+      lNode.next = rNode
+    } else {
+
+    }
+    rNode = rNext
+    lNode = lNext
   }
+
+
 }
 ```
 
