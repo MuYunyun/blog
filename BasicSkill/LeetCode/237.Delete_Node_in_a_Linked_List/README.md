@@ -22,17 +22,24 @@ Explanation: You are given the third node with value 1, the linked list should b
 
 Note:
 
-* The linked list will have at least two elements.
+* The linked list will have `at least two elements`.
 * All of the nodes' values will be unique.
-* The given node will not be the tail and it will always be a valid node of the linked list.
+* The given node will `not be the tail` and it will always be a valid node of the linked list.
 * `Do not return anything from your function`.
 
 ### Analyze
 
-相较于 [203.Remove_Linked_List_Elements](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/203.Remove_Linked_List_Elements/README.md), 此题在函数中不能返回任何值, 因此不能引入 dummyHead。
+相较于 [203.Remove_Linked_List_Elements](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/203.Remove_Linked_List_Elements/README.md), 此题一个点是在函数中不能返回任何值, 因此不能引入 dummyHead。另外一个点是没有传入 head 指针, 所以没法拿到当前要删除的上个节点。
 
 ```js
-  4 -> 5 -> 1 -> 9
+4 -> 5 -> 1 -> 9 -> null
+          .
+          .
+          node
+4 -> 5 -> 9 -> 9 -> null
+          .
+          .
+4 -> 5 -> 9 -> null
 ```
 
 ```js
@@ -48,7 +55,8 @@ Note:
  * @return {void} Do not return anything, modify node in-place instead.
  */
 var deleteNode = function(node) {
-
+  node.val = node.next.val
+  node.next = node.next.next
 }
 ```
 
