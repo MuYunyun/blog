@@ -27,11 +27,11 @@ rotate 4 steps to the right: 2->0->1->NULL
 
 ### Analyze
 
-分析: 尾部向前数第 k 个元素, 该元素作为尾元素。
+分析: 从尾部向前数第 k 个元素, 该元素作为头元素, 原来的头放在原来的尾后面。
 
 ```js
-
-  1 -> 2 -> 3 -> 4 -> 5 -> NULL
+              l
+dummy -> 1 -> 2 -> 3 -> 4 -> 5 -> NULL
 ```
 
 ```js
@@ -48,6 +48,21 @@ rotate 4 steps to the right: 2->0->1->NULL
  * @return {ListNode}
  */
 var rotateRight = function(head, k) {
+  const dummy = new ListNode(0)
+  dummy.next = head
+  let count = 0
+  let tmp = dummy.next
+  while (tmp) {
+    tmp = tmp.next
+    count++
+  }
+
+  const modK = k % count
+
 
 }
 ```
+
+### Sister Title
+
+19
