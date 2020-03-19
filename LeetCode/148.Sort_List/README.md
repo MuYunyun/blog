@@ -103,4 +103,4 @@ var merge = function(leftList, rightList) {
 
 ### 姊妹题
 
-147
+147、143
