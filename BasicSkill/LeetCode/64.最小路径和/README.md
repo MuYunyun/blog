@@ -1,3 +1,4 @@
+```js
 /**
  * @param {number[][]} grid
  * @return {number}
@@ -35,3 +36,4 @@ function findMinCount(x, y, grid, cache) {
 
   return count
 }
+```

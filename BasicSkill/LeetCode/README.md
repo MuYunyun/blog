@@ -65,12 +65,12 @@
 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/61.Rotate_List/README.md) | Medium | 链表 \| 双指针 |
 | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/62.不同路径/README.md) | Medium ||
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | | Medium ||
-| 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/64.最小路径和/index.js) | Medium ||
+| 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/64.最小路径和/README.md) | Medium ||
 | 65 | [Valid Number](https://leetcode.com/problems/valid-number/) | | Hard ||
-| 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/66.加一/index.js) | Easy ||
+| 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/66.加一/README.md) | Easy ||
 | 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/67.二进制求和/README.md) | Easy ||
 | 68 | [Text Justification](https://leetcode.com/problems/text-justification/) | | Hard ||
-| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [Analuze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/69.x的平方根/index.js) | Easy ||
+| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [Analuze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/69.x的平方根/README.md) | Easy ||
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/70.爬楼梯/README.md) | Easy ||
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path/) | | Medium ||
 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | | Hard ||
@@ -94,7 +94,7 @@
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii/) | | Medium ||
 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | | Medium ||
 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/92.Reverse_Linked_List_II/README.md) | Medium ||
-| 93 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/93.复原IP地址/index.js) | Medium ||
+| 93 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/93.复原IP地址/README.md) | Medium ||
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/94.二叉树的中序遍历/README.md) | Medium ||
 | 95 | [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | | Medium ||
 | 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) | | Medium ||
@@ -102,7 +102,7 @@
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | | Medium ||
 | 99 | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) | | Hard ||
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/100.相同的树/README.md) | Easy ||
-| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/101.对称二叉树/index.js) | Easy ||
+| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/101.对称二叉树/README.md) | Easy ||
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | | Medium ||
 | 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | | Medium ||
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/104.二叉树的最大深度/README.md) | Easy ||
@@ -122,7 +122,7 @@
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | | Easy ||
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | | Easy ||
 | 120 | [Triangle](https://leetcode.com/problems/triangle/) | | Medium ||
-| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/121.买卖股票的最佳时机/index.js) | Easy ||
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/121.买卖股票的最佳时机/README.md) | Easy ||
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | | Easy ||
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | | Hard ||
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | | Hard ||
@@ -152,7 +152,7 @@
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/148.Sort_List/README.md) | Medium | 归并排序、快慢指针 |
 | 149 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/149.Max_Points_on_a_Line/README.md) | Hard ||
 | 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | | Medium ||
-| 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/151.翻转字符串里的单词/index.js) | Medium ||
+| 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/151.翻转字符串里的单词/README.md) | Medium ||
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | | Medium ||
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | | Medium ||
 | 154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | | Hard ||
