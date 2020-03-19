@@ -33,6 +33,8 @@ rotate 4 steps to the right: 2->0->1->NULL
 2. 第二步: l 与 r 距离保持为 modK + 1;
 3. 第三步: l 与 r 同时向右移动, 直到 r 为 null, 则 l 为要分割的元素;
 
+> 此外如果链表长度为 0 或者链表长度与 k 相等时, 则链表实际上没有旋转交换位置。
+
 ```js
   l                r
 dummy -> 1 -> 2 -> 3 -> 4 -> 5 -> NULL
@@ -65,11 +67,26 @@ var rotateRight = function(head, k) {
     count++
   }
 
+  if (count === 0 || count === k) return dummy.next
   const modK = k % count
+  let diff = modK + 1
 
-  while () {
-
+  let l = dummy
+  let r = dummy
+  while (diff--) {
+    r = r.next
   }
+
+  while (r) {
+    r = r.next
+    l = l.next
+  }
+
+  last.next = dummy.next
+  dummy.next = l.next
+  l.next = null
+
+  return dummy.next
 }
 ```
 

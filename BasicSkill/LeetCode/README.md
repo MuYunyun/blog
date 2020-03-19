@@ -62,7 +62,7 @@
 | 58 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | | Easy ||
 | 59 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | | Medium ||
 | 60 | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | | Medium ||
-| 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | | Medium ||
+| 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/61.Rotate_List/README.md) | Medium | 链表 \| 双指针 |
 | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/62.不同路径/README.md) | Medium ||
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | | Medium ||
 | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/64.最小路径和/index.js) | Medium ||
