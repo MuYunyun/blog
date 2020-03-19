@@ -21,9 +21,9 @@ This is my persinal blog where to write and record some thought daily. If you li
   - [Modern Testing](#modern-testing)
 - [FE Cloud](#fe-cloud)
   - [JavaScript](#javascript)
-  - [CSS](#css)
   - [Data Structure](#data-structure)
   - [Design Pattern](#design-pattern)
+  - [CSS](#css)
   - [TypeScript](#typescript)
   - [Node.js](#nodejs)
   - [FE CLOUD](#fe-cloud-1)
@@ -125,20 +125,6 @@ This is my persinal blog where to write and record some thought daily. If you li
 
 - [ ] [重构笔记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/效率篇/重构改善既有代码的设计.md)
 
-#### CSS
-
-* [INHERITED AND NON-INHERITED](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/INHERITED_AND_NON-INHERITED.md)
-
-<details>
-  <summary>more</summary>
-
-* [水平布局解决方案](https://github.com/MuYunyun/blog/blob/master/BasicSkill/basis/水平布局解决方案.md)
-* [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
-
-- [ ] [过渡与动画](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/css小书/过渡与动画.md)
-
-</details>
-
 #### Data Structure
 
 * [算法复杂度](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/算法复杂度.md)
@@ -154,7 +140,7 @@ This is my persinal blog where to write and record some thought daily. If you li
 * [动态规划](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/动态规划.md)
 * [贪心算法](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/贪心算法.md)
 
-> [LeetCode 题解](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/README.md)
+> [LeetCode 题解](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
 
 #### Design Pattern
 
@@ -173,6 +159,20 @@ This is my persinal blog where to write and record some thought daily. If you li
 * [状态模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/状态模式.md)
 * [适配者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/适配者模式.md)
 * [观察者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/观察者模式.md)
+
+#### CSS
+
+* [INHERITED AND NON-INHERITED](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/INHERITED_AND_NON-INHERITED.md)
+
+<details>
+  <summary>more</summary>
+
+* [水平布局解决方案](https://github.com/MuYunyun/blog/blob/master/BasicSkill/basis/水平布局解决方案.md)
+* [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
+
+- [ ] [过渡与动画](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/css小书/过渡与动画.md)
+
+</details>
 
 #### TypeScript
 

@@ -2,56 +2,56 @@
 
 | # | Title | Explanation | Difficulty | Type |
 |:---:|:---:|:---:|:---:|:---:|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/1.Two_Sum/README.md) | Easy ||
-| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/2.Add_Two_Numbers/README.md) | Medium ||
-| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/3.无重复字符的最长子串/README.md) | Medium ||
-| 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/4.两个排序数组的中位数/README.md) | Hard ||
-| 5 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/5.最长回文子串/README.md) | Medium ||
-| 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/6.Z字形变换/README.md) | Medium ||
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/1.Two_Sum/README.md) | Easy ||
+| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/2.Add_Two_Numbers/README.md) | Medium ||
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/3.无重复字符的最长子串/README.md) | Medium ||
+| 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/4.两个排序数组的中位数/README.md) | Hard ||
+| 5 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/5.最长回文子串/README.md) | Medium ||
+| 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/6.Z字形变换/README.md) | Medium ||
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | | Easy ||
 | 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | | Medium ||
-| 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/9.回文数/README.md) | Easy ||
+| 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/9.回文数/README.md) | Easy ||
 | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | | Hard ||
-| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) |  [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/11.盛最多水的容器/README.md) | Medium ||
-| 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/12.整数转罗马数字/README.md) | Medium ||
-| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/13.罗马数字转整数/README.md) | Easy ||
-| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/14.最长公共前缀/README.md) | Easy ||
-| 15 | [3Sum](https://leetcode.com/problems/3sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/15.3Sum/README.md) | Medium ||
-| 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/16.3Sum_Closest/README.md) | Medium ||
-| 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/17.电话号码的字母组合/README.md) | Medium ||
-| 18 | [4Sum](https://leetcode.com/problems/4sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/18.4Sum/README.md) | Medium ||
-| 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/19.Remove_Nth_Node_From_End_of_List/README.md) | Medium | 双指针 \| 链表 |
-| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/20.有效的括号/README.md) | Easy ||
-| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/21.Merge_Two_Sorted_Lists/README.md) | Easy | 归并排序、递归 |
-| 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/22.括号生成/README.md) | Medium ||
+| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) |  [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/11.盛最多水的容器/README.md) | Medium ||
+| 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/12.整数转罗马数字/README.md) | Medium ||
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/13.罗马数字转整数/README.md) | Easy ||
+| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/14.最长公共前缀/README.md) | Easy ||
+| 15 | [3Sum](https://leetcode.com/problems/3sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/15.3Sum/README.md) | Medium ||
+| 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/16.3Sum_Closest/README.md) | Medium ||
+| 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/17.电话号码的字母组合/README.md) | Medium ||
+| 18 | [4Sum](https://leetcode.com/problems/4sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/18.4Sum/README.md) | Medium ||
+| 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/19.Remove_Nth_Node_From_End_of_List/README.md) | Medium | 双指针 \| 链表 |
+| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/20.有效的括号/README.md) | Easy ||
+| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/21.Merge_Two_Sorted_Lists/README.md) | Easy | 归并排序、递归 |
+| 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/22.括号生成/README.md) | Medium ||
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | | Hard ||
-| 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/22.括号生成/README.md) | Medium | 链表 |
-| 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/25.Reverse_Nodes_in_k-Group/README.md) | Hard | 尾插法 |
-| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/26.删除排序数组中的重复项/README.md) | Easy ||
-| 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/27.移除元素/README.md) | Easy ||
-| 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/28.实现strStr/README.md) | Easy ||
+| 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/22.括号生成/README.md) | Medium | 链表 |
+| 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/25.Reverse_Nodes_in_k-Group/README.md) | Hard | 尾插法 |
+| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/26.删除排序数组中的重复项/README.md) | Easy ||
+| 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/27.移除元素/README.md) | Easy ||
+| 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/28.实现strStr/README.md) | Easy ||
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | | Medium ||
 | 30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | | Hard ||
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | | Medium ||
 | 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | | Hard ||
-| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/33.搜索旋转排序数组/README.md) | Medium ||
+| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/33.搜索旋转排序数组/README.md) | Medium ||
 | 34 | [Search for a Range](https://leetcode.com/problems/search-for-a-range/) | | Medium ||
-| 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/35.搜索插入位置/README.md) | Easy ||
-| 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/36.有效的数独/README.md) | Medium ||
+| 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/35.搜索插入位置/README.md) | Easy ||
+| 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/36.有效的数独/README.md) | Medium ||
 | 37 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | | Hard ||
-| 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/38.报数/README.md) | Easy ||
-| 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/39.组合总和/README.md) | Medium ||
-| 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/40.组合总和II/README.md) | Medium ||
+| 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/38.报数/README.md) | Easy ||
+| 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/39.组合总和/README.md) | Medium ||
+| 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/40.组合总和II/README.md) | Medium ||
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | | Hard ||
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | | Hard ||
 | 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | | Medium ||
 | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | | Hard ||
 | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | | Hard ||
-| 46 | [Permutations](https://leetcode.com/problems/permutations/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/46.全排列/README.md) | Medium ||
-| 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/47.全排列II/README.md) | Medium ||
-| 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/48.旋转图像/README.md) | Medium ||
-| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/49.Group_Anagrams/README.md) | Medium ||
-| 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/50.Pow/README.md) | Medium ||
+| 46 | [Permutations](https://leetcode.com/problems/permutations/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/46.全排列/README.md) | Medium ||
+| 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/47.全排列II/README.md) | Medium ||
+| 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/48.旋转图像/README.md) | Medium ||
+| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/49.Group_Anagrams/README.md) | Medium ||
+| 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/50.Pow/README.md) | Medium ||
 | 51 | [N-Queens](https://leetcode.com/problems/n-queens/) | | Hard ||
 | 52 | [N-Queens II](https://leetcode.com/problems/n-queens-ii/) | | Hard ||
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | | Easy ||
@@ -62,50 +62,50 @@
 | 58 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | | Easy ||
 | 59 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | | Medium ||
 | 60 | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | | Medium ||
-| 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/61.Rotate_List/README.md) | Medium | 链表 \| 双指针 |
-| 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/62.不同路径/README.md) | Medium ||
+| 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/61.Rotate_List/README.md) | Medium | 链表 \| 双指针 |
+| 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/62.不同路径/README.md) | Medium ||
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | | Medium ||
-| 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/64.最小路径和/README.md) | Medium ||
+| 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/64.最小路径和/README.md) | Medium ||
 | 65 | [Valid Number](https://leetcode.com/problems/valid-number/) | | Hard ||
-| 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/66.加一/README.md) | Easy ||
-| 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/67.二进制求和/README.md) | Easy ||
+| 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/66.加一/README.md) | Easy ||
+| 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/67.二进制求和/README.md) | Easy ||
 | 68 | [Text Justification](https://leetcode.com/problems/text-justification/) | | Hard ||
-| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [Analuze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/69.x的平方根/README.md) | Easy ||
-| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/70.爬楼梯/README.md) | Easy ||
+| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [Analuze](https://github.com/MuYunyun/blog/blob/master/LeetCode/69.x的平方根/README.md) | Easy ||
+| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/70.爬楼梯/README.md) | Easy ||
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path/) | | Medium ||
 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | | Hard ||
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | | Medium ||
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | | Medium ||
-| 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/75.颜色分类/README.md) | Medium ||
+| 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/75.颜色分类/README.md) | Medium ||
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | | Hard ||
 | 77 | [Combinations](https://leetcode.com/problems/combinations/) | | Medium ||
-| 78 | [Subsets](https://leetcode.com/problems/subsets/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/78.子集/README.md) | Medium ||
+| 78 | [Subsets](https://leetcode.com/problems/subsets/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/78.子集/README.md) | Medium ||
 | 79 | [Word Search](https://leetcode.com/problems/word-search/) | | Medium ||
-| 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/80.删除排序数组中的重复项II/README.md) | Medium ||
+| 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/80.删除排序数组中的重复项II/README.md) | Medium ||
 | 81 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | | Medium ||
-| 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/82.Remove_Duplicates_from_Sorted_List_II/README.md) | Medium | 快慢指针 |
-| 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/83.Remove_Duplicates_from_Sorted_List/README.md) | Easy ||
+| 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/82.Remove_Duplicates_from_Sorted_List_II/README.md) | Medium | 快慢指针 |
+| 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/83.Remove_Duplicates_from_Sorted_List/README.md) | Easy ||
 | 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | | Hard ||
 | 85 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | | Hard ||
-| 86 | [Partition List](https://leetcode.com/problems/partition-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/86.Partition_List/README.md) | Medium ||
+| 86 | [Partition List](https://leetcode.com/problems/partition-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/86.Partition_List/README.md) | Medium ||
 | 87 | [Scramble String](https://leetcode.com/problems/scramble-string/) | | Hard ||
-| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/88.合并两个有序数组/README.md) | Easy ||
+| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/88.合并两个有序数组/README.md) | Easy ||
 | 89 | [Gray Code](https://leetcode.com/problems/gray-code/) | | Medium ||
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii/) | | Medium ||
 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | | Medium ||
-| 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/92.Reverse_Linked_List_II/README.md) | Medium ||
-| 93 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/93.复原IP地址/README.md) | Medium ||
-| 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/94.二叉树的中序遍历/README.md) | Medium ||
+| 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/92.Reverse_Linked_List_II/README.md) | Medium ||
+| 93 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/93.复原IP地址/README.md) | Medium ||
+| 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/94.二叉树的中序遍历/README.md) | Medium ||
 | 95 | [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | | Medium ||
 | 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) | | Medium ||
 | 97 | [Interleaving String](https://leetcode.com/problems/interleaving-string/) | | Hard ||
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | | Medium ||
 | 99 | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) | | Hard ||
-| 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/100.相同的树/README.md) | Easy ||
-| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/101.对称二叉树/README.md) | Easy ||
+| 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/100.相同的树/README.md) | Easy ||
+| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/101.对称二叉树/README.md) | Easy ||
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | | Medium ||
 | 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | | Medium ||
-| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/104.二叉树的最大深度/README.md) | Easy ||
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/104.二叉树的最大深度/README.md) | Easy ||
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | | Medium ||
 | 106 | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | | Medium ||
 | 107 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | | Easy ||
@@ -122,7 +122,7 @@
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | | Easy ||
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | | Easy ||
 | 120 | [Triangle](https://leetcode.com/problems/triangle/) | | Medium ||
-| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/121.买卖股票的最佳时机/README.md) | Easy ||
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/121.买卖股票的最佳时机/README.md) | Easy ||
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | | Easy ||
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | | Hard ||
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | | Hard ||
@@ -148,11 +148,11 @@
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | | Medium ||
 | 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | | Hard ||
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | | Hard ||
-| 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/147.Insertion_Sort_List/README.md) | Medium | 插入排序、链表 |
-| 148 | [Sort List](https://leetcode.com/problems/sort-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/148.Sort_List/README.md) | Medium | 归并排序、快慢指针 |
-| 149 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/149.Max_Points_on_a_Line/README.md) | Hard ||
+| 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/147.Insertion_Sort_List/README.md) | Medium | 插入排序、链表 |
+| 148 | [Sort List](https://leetcode.com/problems/sort-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/148.Sort_List/README.md) | Medium | 归并排序、快慢指针 |
+| 149 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/149.Max_Points_on_a_Line/README.md) | Hard ||
 | 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | | Medium ||
-| 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/151.翻转字符串里的单词/README.md) | Medium ||
+| 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/151.翻转字符串里的单词/README.md) | Medium ||
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | | Medium ||
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | | Medium ||
 | 154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | | Hard ||
@@ -168,7 +168,7 @@
 | 164 | [Maximum Gap](https://leetcode.com/problems/maximum-gap/) | | Hard ||
 | 165 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | | Medium ||
 | 166 | [Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/) | | Medium ||
-| 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/167.两数之和II-输入有序数组/README.md) | Easy ||
+| 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/167.两数之和II-输入有序数组/README.md) | Easy ||
 | 168 | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | | Easy ||
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | | Easy ||
 | 170 | [Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/) :blue_book: | | Easy ||
@@ -187,25 +187,25 @@
 | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | | Medium ||
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | | Medium ||
 | 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | | Medium ||
-| 202 | [Happy Number](https://leetcode.com/problems/happy-number/) | [Analuze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/202.快乐数/Analyze.md) | Easy ||
-| 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/203.Remove_Linked_List_Elements/README.md) | Easy ||
+| 202 | [Happy Number](https://leetcode.com/problems/happy-number/) | [Analuze](https://github.com/MuYunyun/blog/blob/master/LeetCode/202.快乐数/Analyze.md) | Easy ||
+| 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/203.Remove_Linked_List_Elements/README.md) | Easy ||
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/) | | Easy ||
-| 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/205.同构字符串/README.md) | Easy ||
-| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/206.Reverse_Linked_List/README.md) | Easy ||
+| 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/205.同构字符串/README.md) | Easy ||
+| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/206.Reverse_Linked_List/README.md) | Easy ||
 | 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | | Medium ||
 | 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | | Medium ||
-| 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/209.长度最小的子数组/README.md) | Medium ||
+| 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/209.长度最小的子数组/README.md) | Medium ||
 | 210 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | | Medium ||
 | 211 | [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | | Medium ||
 | 212 | [Word Search II](https://leetcode.com/problems/word-search-ii/) | | Hard ||
 | 213 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | | Medium ||
 | 214 | [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/) | | Hard ||
-| 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/215.数组中的第K个最大元素/README.md) | Medium ||
+| 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/215.数组中的第K个最大元素/README.md) | Medium ||
 | 216 | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/) | | Medium ||
-| 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/217.Contains_Duplicate/README.md) | Easy ||
+| 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/217.Contains_Duplicate/README.md) | Easy ||
 | 218 | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/) | | Hard ||
-| 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/219.Contains_Duplicate_II/README.md) | Easy ||
-| 220 | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/220.Contains_Duplicate_III/README.md) | Medium ||
+| 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/219.Contains_Duplicate_II/README.md) | Easy ||
+| 220 | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/220.Contains_Duplicate_III/README.md) | Medium ||
 | 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | | Medium ||
 | 222 | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) | | Medium ||
 | 223 | [Rectangle Area](https://leetcode.com/problems/rectangle-area/) | | Medium ||
@@ -222,12 +222,12 @@
 | 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | | Easy ||
 | 235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | | Easy ||
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | | Medium ||
-| 237 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/237.Delete_Node_in_a_Linked_List/README.md) | Easy | 特殊的链表题 |
+| 237 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/237.Delete_Node_in_a_Linked_List/README.md) | Easy | 特殊的链表题 |
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | | Medium ||
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | | Hard ||
 | 240 | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | | Medium ||
 | 241 | [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | | Medium ||
-| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/242.Valid_Anagram/README.md) | Easy ||
+| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/242.Valid_Anagram/README.md) | Easy ||
 | 243 | [Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/) :blue_book: | | Easy ||
 | 244 | [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/) :blue_book: | | Medium ||
 | 245 | [Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/) :blue_book: | | Medium ||
@@ -267,14 +267,14 @@
 | 280 | [Wiggle Sort](https://leetcode.com/problems/wiggle-sort/) :blue_book: | | Medium ||
 | 281 | [Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/) :blue_book: | | Medium ||
 | 282 | [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/) | | Hard ||
-| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/283.移动零/README.md) | Easy ||
+| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/283.移动零/README.md) | Easy ||
 | 284 | [Peeking Iterator](https://leetcode.com/problems/peeking-iterator/) | | Medium ||
 | 285 | [Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) :blue_book: | | Medium ||
 | 286 | [Walls and Gates](https://leetcode.com/problems/walls-and-gates/) :blue_book: | | Medium ||
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | | Medium ||
 | 288 | [Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/) :blue_book: | | Medium ||
 | 289 | [Game of Life](https://leetcode.com/problems/game-of-life/) | | Medium ||
-| 290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/290.单词规律/README.md) | Easy ||
+| 290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/290.单词规律/README.md) | Easy ||
 | 291 | [Word Pattern II](https://leetcode.com/problems/word-pattern-ii/) :blue_book: | | Hard ||
 | 292 | [Nim Game](https://leetcode.com/problems/nim-game/) | | Easy ||
 | 293 | [Flip Game](https://leetcode.com/problems/flip-game/) :blue_book: | | Easy ||
@@ -312,7 +312,7 @@
 | 325 | [Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/) :blue_book: | | Medium ||
 | 326 | [Power of Three](https://leetcode.com/problems/power-of-three/) | | Easy ||
 | 327 | [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/) | | Hard ||
-| 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/328.Odd_Even_Linked_List/README.md) | Medium ||
+| 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/328.Odd_Even_Linked_List/README.md) | Medium ||
 | 329 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | | Hard ||
 | 330 | [Patching Array](https://leetcode.com/problems/patching-array/) | | Hard ||
 | 331 | [Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/) | | Medium ||
@@ -328,13 +328,13 @@
 | 341 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | | Medium ||
 | 342 | [Power of Four](https://leetcode.com/problems/power-of-four/) | | Easy ||
 | 343 | [Integer Break](https://leetcode.com/problems/integer-break/) | | Medium ||
-| 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/344.反转字符串/README.md) | Easy ||
+| 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/344.反转字符串/README.md) | Easy ||
 | 345 | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | | Easy ||
 | 346 | [Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) :blue_book: | | Easy ||
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | | Medium ||
 | 348 | [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) :blue_book: | | Medium ||
-| 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/349.两个数组的交集/README.md) | Easy ||
-| 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/350.两个数组的交集II/README.md) | Easy ||
+| 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/349.两个数组的交集/README.md) | Easy ||
+| 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/350.两个数组的交集II/README.md) | Easy ||
 | 351 | [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) :blue_book: | | Medium ||
 | 352 | [Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/) | | Hard ||
 | 353 | [Design Snake Game](https://leetcode.com/problems/design-snake-game/) :blue_book: | | Medium ||
@@ -385,9 +385,9 @@
 | 398 | [Random Pick Index](https://leetcode.com/problems/random-pick-index/) | | Medium ||
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | | Medium ||
 | 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | | Easy ||
-| 438 | [找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/438.找到字符串中所有字母异位词/README.md) | Medium ||
-| 445 | [Add_Two_Numbers_II](https://leetcode-cn.com/problems/add-two-numbers-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/445.Add_Two_Numbers_II/README.md) | Medium ||
-| 447 | [Number_of_Boomerangs](https://leetcode-cn.com/problems/number-of-boomerangs/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/447.NumberOfBoomerangs/README.md) | Easy ||
-| 451 | [根据字符出现频率排序](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/451.根据字符出现频率排序/README.md) | Medium ||
-| 454 | [4Sum II](https://leetcode-cn.com/problems/4sum-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/454.4Sum_II/README.md) | Medium ||
-| 567 | [字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/567.字符串的排列/README.md) | Medium ||
+| 438 | [找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/438.找到字符串中所有字母异位词/README.md) | Medium ||
+| 445 | [Add_Two_Numbers_II](https://leetcode-cn.com/problems/add-two-numbers-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/445.Add_Two_Numbers_II/README.md) | Medium ||
+| 447 | [Number_of_Boomerangs](https://leetcode-cn.com/problems/number-of-boomerangs/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/447.NumberOfBoomerangs/README.md) | Easy ||
+| 451 | [根据字符出现频率排序](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/451.根据字符出现频率排序/README.md) | Medium ||
+| 454 | [4Sum II](https://leetcode-cn.com/problems/4sum-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/454.4Sum_II/README.md) | Medium ||
+| 567 | [字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/567.字符串的排列/README.md) | Medium ||
