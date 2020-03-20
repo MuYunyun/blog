@@ -20,13 +20,14 @@ Given 1->2->3->4->5, reorder it to 1->5->2->4->3.
 ### Analyze
 
 这道题可作如下转化:
-  1. 找到链表中点后分割链表为左右两部分;
-  2. 接着左右链表各取一个值进行交替拼接;
+
+1. 找到链表中点后分割链表为左右两部分;
+2. 接着从 left 链表的左侧, right 链表的右侧各取一个值进行交替拼接;
 
 > 快慢指针即 quick 指针每次走两步, slow 指针每次走一步, 同 [148.Sort_List](https://github.com/MuYunyun/blog/blob/master/LeetCode/148.Sort_List/README.md)
 
 ```js
-                                   q
+                                  q
                    s
 dummy -> 1 -> 2 -> 3 -> 4 -> 5 -> NULL
 ```
@@ -50,11 +51,15 @@ var reorderList = function(head) {
   let slow = dummy
   let quick = dummy
 
-  while (quick.next) {
+  while (quick && quick.next) {
     slow = slow.next
     quick = quick.next
     quick = quick.next
   }
+
+  let right = slow.next
+  slow.next = null
+  let left = dummy
 }
 ```
 
