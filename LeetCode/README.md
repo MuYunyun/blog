@@ -144,7 +144,7 @@
 | 140 | [Word Break II](https://leetcode.com/problems/word-break-ii/) | | Hard ||
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | | Easy ||
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | | Medium ||
-| 143 | [Reorder List](https://leetcode.com/problems/reorder-list/) | | Medium ||
+| 143 | [Reorder List](https://leetcode.com/problems/reorder-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/143.Reorder_List/README.md) | Medium | 快慢指针、翻转拼接链表 |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | | Medium ||
 | 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | | Hard ||
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | | Hard ||
