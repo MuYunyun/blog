@@ -61,3 +61,8 @@ echo bXVqdWVAcGluZHVvZHVvLmNvbQo= | base64 -D
 
 * shortcuts: 具有创造力的一个功能点;
 
+### 输出当前项目目录结构
+
+```js
+tree -L 3 -I "node_modules"
+```
