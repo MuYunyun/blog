@@ -10,9 +10,11 @@
 
 ### good word
 
-Nothing someone says before 'but' really counts.
+* Nothing someone says before 'but' really counts.
+* My father understands mercy, when this is a room for it.
+  * 得饶人处且饶人
 
-S0 8 39:52
+S0 9 00:00
 
 ### links
 
