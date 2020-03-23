@@ -45,7 +45,12 @@ Explanation:
 
 ### Analyze
 
-栈的使用
+栈的使用, 思路大致如下:
+
+1. 遇到数字推入栈;
+2. 遇到符号则从栈中取出最后两位进行数学操作;
+
+> 稍加留意的是, 需要对 / 运算进行取整操作;
 
 ```js
 /**
@@ -64,13 +69,13 @@ var evalRPN = function(tokens) {
       const x = stack.pop()
       let result
       if (operateTagIndex === 0) {
-        result = x + y
+        result = Number(x) + Number(y)
       } else if (operateTagIndex === 1) {
-        result = x - y
+        result = Number(x) - Number(y)
       } else if (operateTagIndex === 2) {
-        result = x * y
+        result = Number(x) * Number(y)
       } else if (operateTagIndex === 3) {
-        result = x / y
+        result = parseInt((Number(x) / Number(y)), 10)
       }
       stack.push(result)
     }
