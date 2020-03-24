@@ -334,6 +334,20 @@ return (
 
 相比较一的方式, 方式二的优势是将请求数据的逻辑被拆分到 A、B、C 各个子组件中, 劣势是需要维护逻辑变量。
 
+### Hooks 的闭包问题
+
+2020-03-24 记录: 今天遇到了一个 bug, 花的事件比较久, 值得记录下修复心得:
+
+![](http://with.muyunyun.cn/0b1ee2a477d39ec2550a1ef88c63987a.jpg)
+
+川穹说只有安卓机有问题, ios 没问题! 很是奇怪, 就围绕聚焦和安卓机查资料得到 `在安卓机下聚焦会触发 resize 事件, ios 则不会触发 resize 的结论`, 因此定位到罪魁祸首
+
+```js
+window.addEventListener('resize', () => {})
+```
+
+又由于在 hooks 中进行使用, 犯下了闭包陷阱; 最终使用 useRef 解决了问题;
+
 ### link
 
 * [数学画图](https://www.mathway.com/Graph)

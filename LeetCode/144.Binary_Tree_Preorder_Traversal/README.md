@@ -25,6 +25,17 @@ Follow up: Recursive solution is trivial, could you do it `iteratively`?
 
 1. 确认返回类型为数组;
 
+构建 tree
+
+```js
+var tree = new TreeNode(1)
+var tree2 = new TreeNode(2)
+var tree3 = new TreeNode(3)
+tree2.left = tree3
+tree.left = null
+tree.right = tree2
+```
+
 ```js
 /**
  * Definition for a binary tree node.
