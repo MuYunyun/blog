@@ -72,7 +72,7 @@
 | 68 | [Text Justification](https://leetcode.com/problems/text-justification/) | | Hard ||
 | 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [Analuze](https://github.com/MuYunyun/blog/blob/master/LeetCode/69.x的平方根/README.md) | Easy ||
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/70.爬楼梯/README.md) | Easy ||
-| 71 | [Simplify Path](https://leetcode.com/problems/simplify-path/) | | Medium ||
+| 71 | [Simplify Path](https://leetcode.com/problems/simplify-path/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/71.Simplify_Path/README.md) | Medium | 栈 |
 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | | Hard ||
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | | Medium ||
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | | Medium ||
