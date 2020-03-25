@@ -127,6 +127,8 @@ This is my persinal blog where to write and record some thought daily. If you li
 
 #### Data Structure
 
+> [LeetCode 题解](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
+
 * [算法复杂度](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/算法复杂度.md)
 * [栈](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/栈.md)
 * [队列](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/队列.md)
@@ -139,8 +141,6 @@ This is my persinal blog where to write and record some thought daily. If you li
 * [排序|查找](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/README.md)
 * [动态规划](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/动态规划.md)
 * [贪心算法](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/贪心算法.md)
-
-> [LeetCode 题解](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
 
 #### Design Pattern
 

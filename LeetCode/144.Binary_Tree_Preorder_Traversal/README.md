@@ -19,22 +19,18 @@ Follow up: Recursive solution is trivial, could you do it `iteratively`?
 
 ### Analyze
 
-递归解法:
-
-第一次接触 tree 的题, 需注意以下几个问题
-
-1. 确认返回类型为数组;
-
 构建 tree
 
 ```js
-var tree = new TreeNode(1)
+var tree1 = new TreeNode(1)
 var tree2 = new TreeNode(2)
 var tree3 = new TreeNode(3)
 tree2.left = tree3
-tree.left = null
-tree.right = tree2
+tree1.left = null
+tree1.right = tree2
 ```
+
+首先给出递归解法, 代码很短。
 
 ```js
 /**
@@ -50,10 +46,19 @@ tree.right = tree2
  */
 var preorderTraversal = function(root) {
   if (root) {
-		return [root.val, ...preorderTraversal(root.left)]
-		return [root.val, ...preorderTraversal(root.right)]
+    return [root.val, ...preorderTraversal(root.left), ...preorderTraversal(root.right)]
   } else {
 		return []
 	}
 }
 ```
+
+### 扩展 —— 递归和栈的关系
+
+```js
+       1
+      / \
+     2   3
+```
+
+针对树 `[1, 2, 3]`, 观察下系统栈的执行过程。

@@ -1,35 +1,34 @@
-### title
+### 205. Isomorphic Strings
 
-给定两个字符串 s 和 t，判断它们是否是同构的。
+Given two strings s and t, determine if they are isomorphic.
 
-`如果 s 中的字符可以被替换得到 t, 那么这两个字符串是同构的`。
+Two strings are isomorphic if the characters in s can be replaced to get t.
 
-`所有出现的字符都必须用另一个字符替换，同时保留字符的顺序`。两个字符不能映射到同一个字符上，但字符可以映射自己本身。
+All occurrences of a character must be replaced with another character while preserving the order of characters. `No two characters may map to the same character` but `a character may map to itself`.
 
-示例 1:
-
-```js
-输入: s = "egg", t = "add"
-输出: true
-```
-
-示例 2:
+Example 1:
 
 ```js
-输入: s = "foo", t = "bar"
-输出: false
+Input: s = "egg", t = "add"
+Output: true
 ```
 
-示例 3:
+Example 2:
 
 ```js
-输入: s = "paper", t = "title"
-输出: true
+Input: s = "foo", t = "bar"
+Output: false
 ```
 
-说明:
+Example 3:
 
-你可以`假设 s 和 t 具有相同的长度`。
+```js
+Input: s = "paper", t = "title"
+Output: true
+```
+
+Note:
+You may assume both s and t have the same length.
 
 ### 题解
 
@@ -61,7 +60,7 @@ var isIsomorphic = function(s, t) {
   }
 
   return true
-};
+}
 ```
 
 方法二: 判断 s 与 t 字符串中字符出现的第一个位置。(针对本题的巧妙解法, 不过推荐优先掌握方法一)
