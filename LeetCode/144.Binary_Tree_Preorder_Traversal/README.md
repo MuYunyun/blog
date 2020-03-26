@@ -65,12 +65,42 @@ var preorderTraversal = function(root) {
 
 针对如图剖析树在先序遍历下的递归操作, 其执行过程如下:
 
-* 第一步: 打印 1;
-* 第二步: 打印 2, 同时将 5 推入了系统栈;
-* 第三步: 打印 3, 同时将 4 推入了系统栈;
-* 第四步: 因为 3 没有左右子节点, 从系统栈中取出 4 打印;
-* 第五步: 因为 2 的左右子节点都已穷举, 从系统栈中取出 5 打印;
-* 第六步: 因为 5 没有左右子节点, 至此递归操作结束;
+* 步骤一: 将 1 和左右子节点 2, 5 推入栈中; 打印 1 后, 从栈中移除 1;
+* 步骤二: 将 2 的左右子节点 3, 4 推入栈中; 打印 2 后, 从栈中移除 2;
+* 步骤三: 因为 3、4 都无左右子节点, 打印 3、4 后从栈中移除 3、4;
+* 步骤四: 打印 5 后从栈中移除 5;
+
+模拟系统栈实现图解:
+
+```js
+1    步骤一、二      3   步骤三、四
+2  -------------->  4 -------------> []
+5                   5
+```
+
+代码实现:
+
+```js
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number[]}
+ */
+var preorderTraversal = function(root) {
+  const stack = []
+  if (!root) return []
+  stack.push(root.val)
+  while (stack.length > 0) {
+
+  }
+}
+```
 
 ### Sister Title
 
