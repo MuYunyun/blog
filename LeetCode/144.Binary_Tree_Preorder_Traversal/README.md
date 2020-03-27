@@ -48,8 +48,8 @@ var preorderTraversal = function(root) {
   if (root) {
     return [root.val, ...preorderTraversal(root.left), ...preorderTraversal(root.right)]
   } else {
-		return []
-	}
+    return []
+  }
 }
 ```
 
@@ -65,17 +65,35 @@ var preorderTraversal = function(root) {
 
 针对如图剖析树在先序遍历下的递归操作, 其执行过程如下:
 
-* 步骤一: 将 1 和左右子节点 2, 5 推入栈中; 打印 1 后, 从栈中移除 1;
-* 步骤二: 将 2 的左右子节点 3, 4 推入栈中; 打印 2 后, 从栈中移除 2;
-* 步骤三: 因为 3、4 都无左右子节点, 打印 3、4 后从栈中移除 3、4;
-* 步骤四: 打印 5 后从栈中移除 5;
+* 步骤一: 将根节点 1 推入栈;
+* 步骤二: 从栈中取出顶部元素 1 并打印。
+  * 由于存在右节点 5, 将其推入栈中;
+  * 由于存在左节点 2, 将其推入栈中;
+* 步骤三: 从栈中取出顶部元素 2 并打印。
+  * 由于存在右节点 4, 将其推入栈中;
+  * 由于存在左节点 3, 将其推入栈中;
+* 步骤四: 从栈中取出顶部元素 3 并打印。
+* 步骤五: 从栈中取出顶部元素 4 并打印。
+* 步骤六: 从栈中取出顶部元素 5 并打印。
 
 模拟系统栈实现图解:
 
 ```js
-1    步骤一、二      3   步骤三、四
-2  -------------->  4 -------------> []
-5                   5
+步骤一:
+1
+
+步骤二: 取出 1 并打印;
+2
+5
+
+步骤三: 取出 2 并打印;
+3
+4
+5
+
+步骤四: 取出 3 并打印;
+步骤四: 取出 4 并打印;
+步骤四: 取出 5 并打印;
 ```
 
 代码实现:
@@ -93,12 +111,17 @@ var preorderTraversal = function(root) {
  * @return {number[]}
  */
 var preorderTraversal = function(root) {
+  const printArr = []
   const stack = []
   if (!root) return []
-  stack.push(root.val)
+  stack.push(root)
   while (stack.length > 0) {
-
+    const popValue = stack.pop()
+    printArr.push(popValue.val)
+    popValue.right && stack.push(popValue.right)
+    popValue.left && stack.push(popValue.left)
   }
+  return printArr
 }
 ```
 
