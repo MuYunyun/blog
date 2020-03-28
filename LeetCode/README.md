@@ -95,7 +95,7 @@
 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | | Medium ||
 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/92.Reverse_Linked_List_II/README.md) | Medium ||
 | 93 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/93.复原IP地址/README.md) | Medium ||
-| 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/94.二叉树的中序遍历/README.md) | Medium ||
+| 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/94.Binary_Tree_Inorder_Traversal/README.md) | Medium | 二叉树 \| 栈 \| 递归 |
 | 95 | [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | | Medium ||
 | 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) | | Medium ||
 | 97 | [Interleaving String](https://leetcode.com/problems/interleaving-string/) | | Hard ||
