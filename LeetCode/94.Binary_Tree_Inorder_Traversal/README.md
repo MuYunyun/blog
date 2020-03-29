@@ -47,11 +47,11 @@ var inorderTraversal = function(root) {
 ### 扩展 —— 递归和栈的关系
 
 ```js
-     1
+     4
     / \
    2   5
   / \
- 3   4
+ 1   3
 ```
 
 针对如图剖析树在先序遍历下的递归操作, 其执行过程如下:
@@ -102,13 +102,19 @@ var inorderTraversal = function(root) {
 var inorderTraversal = function(root) {
   const printArr = []
   if (!root) return []
+
+  let cur = root
   const stack = []
   stack.push(root)
   while(stack.length > 0) {
+    while (cur.left) {
+      stack.push(cur.left)
+      cur = cur.left
+    }
     const pickValue = stack.pop()
+    // pickValue.left && stack.push(pickValue.left)
     printArr.push(pickValue.val)
-    root.right && stack.push(root.right)
-    root.left && stack.push(root.left)
+    pickValue.right && stack.push(pickValue.right)
   }
   return printArr
 }
