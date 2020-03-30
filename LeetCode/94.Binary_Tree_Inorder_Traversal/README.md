@@ -19,7 +19,7 @@ Follow up: Recursive solution is trivial, could you do it iteratively?
 
 ### Analyze
 
-递归
+递归法:
 
 ```js
 /**
@@ -42,7 +42,7 @@ var inorderTraversal = function(root) {
 }
 ```
 
-迭代, 模拟系统栈
+迭代法, 模拟系统栈
 
 ### 扩展 —— 递归和栈的关系
 
@@ -54,38 +54,33 @@ var inorderTraversal = function(root) {
  1   3
 ```
 
-针对如图剖析树在先序遍历下的递归操作, 其执行过程如下:
+使用`颜色标记法`剖析树在中序遍历下的递归操作, 模拟系统栈图解其执行过程如下:
 
-* 步骤一: 将根节点 1 推入栈;
-* 步骤二: 从栈中取出顶部元素 1 并打印。
-  * 由于存在右节点 5, 将其推入栈中;
-  * 由于存在左节点 2, 将其推入栈中;
-* 步骤三: 从栈中取出顶部元素 2 并打印。
-  * 由于存在右节点 4, 将其推入栈中;
-  * 由于存在左节点 3, 将其推入栈中;
-* 步骤四: 从栈中取出顶部元素 3 并打印。
-* 步骤五: 从栈中取出顶部元素 4 并打印。
-* 步骤六: 从栈中取出顶部元素 5 并打印。
-
-模拟系统栈实现图解:
+它的思路如下:
 
 ```js
-步骤一:
-1
+white 2
+gray  4
+white 5
 
-步骤二: 取出 1 并打印;
-2
-5
+white 1
+gray  2
+white 3
+gray  4
+white 5
 
-步骤三: 取出 2 并打印;
-3
-4
-5
+gray  1
+gray  2
+white 3
+gray  4
+white 5
 
-步骤四: 取出 3 并打印;
-步骤四: 取出 4 并打印;
-步骤四: 取出 5 并打印;
+white 3
+gray  4
+white 5
 ```
+
+-------------------------------
 
 ```js
 /**
@@ -100,23 +95,7 @@ var inorderTraversal = function(root) {
  * @return {number[]}
  */
 var inorderTraversal = function(root) {
-  const printArr = []
-  if (!root) return []
 
-  let cur = root
-  const stack = []
-  stack.push(root)
-  while(stack.length > 0) {
-    while (cur.left) {
-      stack.push(cur.left)
-      cur = cur.left
-    }
-    const pickValue = stack.pop()
-    // pickValue.left && stack.push(pickValue.left)
-    printArr.push(pickValue.val)
-    pickValue.right && stack.push(pickValue.right)
-  }
-  return printArr
 }
 ```
 
