@@ -127,8 +127,6 @@ var preorderTraversal = function(root) {
 }
 ```
 
-### 颜色标记法
-
 ### 颜色标记法(迭代法, 模拟系统栈)
 
 使用`颜色标记法`剖析树在中序遍历下的递归操作, 思路如下:
@@ -137,6 +135,8 @@ var preorderTraversal = function(root) {
 2. 从栈顶取出访问元素:
    1. 若为灰色元素, 则打印之;
    2. 若为白色元素, 按照`右 -> 左 -> 中`的顺序推入栈, 同时将白色元素标记为灰色元素;
+
+> 推荐使用颜色标记法, 它的解题思路适用于解前序、中序、后序遍历。
 
 ```js
      1
@@ -174,7 +174,7 @@ white 5
  * @param {TreeNode} root
  * @return {number[]}
  */
-var inorderTraversal = function(root) {
+var preorderTraversal = function(root) {
   const printArr = []
   if (!root) return printArr
   const stack = []
@@ -190,8 +190,8 @@ var inorderTraversal = function(root) {
       printArr.push(node.val)
     } else {
       node.right && stack.push({ color: 'white', node: node.right })
-      stack.push({ color: 'gray', node })
       node.left && stack.push({ color: 'white', node: node.left })
+      stack.push({ color: 'gray', node })
     }
   }
 

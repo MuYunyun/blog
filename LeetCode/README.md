@@ -146,7 +146,7 @@
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | | Medium ||
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/143.Reorder_List/README.md) | Medium | 快慢指针、翻转拼接链表 |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/144.Binary_Tree_Preorder_Traversal/README.md) | Medium | 二叉树 \| 栈 \| 递归 |
-| 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | | Hard ||
+| 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/145.Binary_Tree_Postorder_Traversal/README.md) | Hard | 二叉树 \| 栈 \| 递归 |
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | | Hard ||
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/147.Insertion_Sort_List/README.md) | Medium | 插入排序、链表 |
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/148.Sort_List/README.md) | Medium | 归并排序、快慢指针 |
