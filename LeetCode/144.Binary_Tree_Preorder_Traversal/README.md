@@ -30,7 +30,9 @@ tree1.left = null
 tree1.right = tree2
 ```
 
-首先给出递归解法, 代码很短。
+### 递归法
+
+首先给出递归解法, 代码很简洁。
 
 ```js
 /**
@@ -121,6 +123,78 @@ var preorderTraversal = function(root) {
     popValue.right && stack.push(popValue.right)
     popValue.left && stack.push(popValue.left)
   }
+  return printArr
+}
+```
+
+### 颜色标记法
+
+### 颜色标记法(迭代法, 模拟系统栈)
+
+使用`颜色标记法`剖析树在中序遍历下的递归操作, 思路如下:
+
+1. 将访问过的元素标记为灰色, 未访问过的元素标记为白色;
+2. 从栈顶取出访问元素:
+   1. 若为灰色元素, 则打印之;
+   2. 若为白色元素, 按照`右 -> 左 -> 中`的顺序推入栈, 同时将白色元素标记为灰色元素;
+
+```js
+     1
+    / \
+   2   5
+  / \
+ 3   4
+```
+
+在如上所示树中, 模拟系统栈图解其执行过程如下:
+
+```js
+gray  1
+white 2
+white 5
+
+white 2
+white 5
+
+gray  2
+white 3
+white 4
+white 5
+```
+
+```js
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number[]}
+ */
+var inorderTraversal = function(root) {
+  const printArr = []
+  if (!root) return printArr
+  const stack = []
+  stack.push({
+    color: 'white',
+    node: root
+  })
+
+  while (stack.length > 0) {
+    const pickValue = stack.pop()
+    const { color, node } = pickValue
+    if (color === 'gray') {
+      printArr.push(node.val)
+    } else {
+      node.right && stack.push({ color: 'white', node: node.right })
+      stack.push({ color: 'gray', node })
+      node.left && stack.push({ color: 'white', node: node.left })
+    }
+  }
+
   return printArr
 }
 ```
