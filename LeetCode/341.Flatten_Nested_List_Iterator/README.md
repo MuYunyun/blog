@@ -59,9 +59,16 @@ Explanation: By calling next repeatedly until hasNext returns false,
  */
 var NestedIterator = function(nestedList) {
   if (!nestedList) return
-  this.tmpList = []
+  this.stackList = []
+  this.stackList.push(nestedList)
   while (this.hasNext()) {
+    const pickList = this.stackList.pop()
+    if (pickList.getInteger()) {
 
+    }
+    if (pickList.getList()) {
+      this.stackList.push(pickList.pop())
+    }
   }
 }
 
@@ -70,7 +77,7 @@ var NestedIterator = function(nestedList) {
  * @returns {boolean}
  */
 NestedIterator.prototype.hasNext = function() {
-  return this.tmpList.length > 0
+  return this.stackList.length > 0
 }
 
 /**
@@ -78,7 +85,7 @@ NestedIterator.prototype.hasNext = function() {
  * @returns {integer}
  */
 NestedIterator.prototype.next = function() {
-  return this.tmpList.pop()
+  return this.stackList.pop()
 }
 
 /**
