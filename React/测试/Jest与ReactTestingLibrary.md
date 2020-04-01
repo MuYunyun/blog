@@ -208,12 +208,12 @@ jest.mock('someComponent', () => {
 如果测试用例中遇到 `setTimeout(fn, 5000)` 真的等上 5s 后才执行 fn 测试效率是非常低效的, 因此可以使用 jest 提供的 `jest.useFakeTimers()` 来 mock 与时间有关的 api。
 
 ```js
-jest.useFakeTimers();
+jest.useFakeTimers()
 
 // move ahead in time by 100ms
 act(() => {
-  jest.advanceTimersByTime(100);
-});
+  jest.advanceTimersByTime(100)
+})
 ```
 
 ### act
@@ -223,7 +223,7 @@ act(() => {
 ```js
 act(() => {
   // render components
-});
+})
 // make assertions
 ```
 
@@ -241,11 +241,11 @@ act(() => {
 ```js
 async function test(title, callback) {
   try {
-    await callback();
-    console.log(`✓ ${title}`);
+    await callback()
+    console.log(`✓ ${title}`)
   } catch (error) {
-    console.error(`✕ ${title}`);
-    console.error(error);
+    console.error(`✕ ${title}`)
+    console.error(error)
   }
 }
 ```
@@ -257,23 +257,23 @@ function expect(actual) {
   return {
     toBe(expected) {
       if (actual !== expected) {
-        throw new Error(`${actual} is not equal to ${expected}`);
+        throw new Error(`${actual} is not equal to ${expected}`)
       }
     }
-  };
+  }
 }
 ```
 
 应用:
 
 ```js
-const sum = (a, b) => a + b;
+const sum = (a, b) => a + b
 
 test("sum adds numbers", async () => {
-  const result = await sum(3, 7);
-  const expected = 10;
-  expect(result).toBe(expected);
-});
+  const result = await sum(3, 7)
+  const expected = 10
+  expect(result).toBe(expected)
+})
 ```
 
 ### link
