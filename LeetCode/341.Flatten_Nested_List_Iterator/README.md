@@ -26,6 +26,10 @@ Explanation: By calling next repeatedly until hasNext returns false,
 
 ### analyze
 
+该题需注意的点: 比如 [1, [4]] 数组里面的 1, [4] 得通过 `getInteger` 与 `getList` 获取得到。
+
+### 递归法
+
 ```js
 /**
  * // This is the interface that allows for creating nested lists.
@@ -58,16 +62,18 @@ Explanation: By calling next repeatedly until hasNext returns false,
  * @param {NestedInteger[]} nestedList
  */
 var NestedIterator = function(nestedList) {
-  if (!nestedList) return
-  this.stackList = []
-  this.stackList.push(nestedList)
-  while (this.hasNext()) {
-    const pickList = this.stackList.pop()
-    if (pickList.getInteger()) {
+  this.stack = []
+  this.resetArr(nestedList)
+}
 
-    }
-    if (pickList.getList()) {
-      this.stackList.push(pickList.pop())
+NestedIterator.prototype.resetArr = function(nestedList) {
+  if (!nestedList && !nestedList.length) return
+  for (let i = 0; i < nestedList.length; i++) {
+    const curList = nestedList[i]
+    if (curList.isInteger()) {
+      this.stack.push(curList.getInteger())
+    } else {
+      this.resetArr(curList.getList())
     }
   }
 }
@@ -77,7 +83,7 @@ var NestedIterator = function(nestedList) {
  * @returns {boolean}
  */
 NestedIterator.prototype.hasNext = function() {
-  return this.stackList.length > 0
+  return this.stack.length > 0
 }
 
 /**
@@ -85,7 +91,81 @@ NestedIterator.prototype.hasNext = function() {
  * @returns {integer}
  */
 NestedIterator.prototype.next = function() {
-  return this.stackList.pop()
+  return this.stack.pop()
+}
+
+/**
+ * Your NestedIterator will be called like this:
+ * var i = new NestedIterator(nestedList), a = [];
+ * while (i.hasNext()) a.push(i.next());
+*/
+```
+
+### 迭代法
+
+todo:
+
+```js
+/**
+ * // This is the interface that allows for creating nested lists.
+ * // You should not implement it, or speculate about its implementation
+ * function NestedInteger() {
+ *
+ *     Return true if this NestedInteger holds a single integer, rather than a nested list.
+ *     @return {boolean}
+ *     this.isInteger = function() {
+ *         ...
+ *     };
+ *
+ *     Return the single integer that this NestedInteger holds, if it holds a single integer
+ *     Return null if this NestedInteger holds a nested list
+ *     @return {integer}
+ *     this.getInteger = function() {
+ *         ...
+ *     };
+ *
+ *     Return the nested list that this NestedInteger holds, if it holds a nested list
+ *     Return null if this NestedInteger holds a single integer
+ *     @return {NestedInteger[]}
+ *     this.getList = function() {
+ *         ...
+ *     };
+ * };
+ */
+/**
+ * @constructor
+ * @param {NestedInteger[]} nestedList
+ */
+var NestedIterator = function(nestedList) {
+  this.printArr = []
+  if (!nestedList) return
+  this.stackList = []
+  this.stackList.push(nestedList)
+  while (this.stackList.length > 0) {
+    const pickValue = this.stackList.pop()
+    if (pickValue.isInteger()) {
+      this.printArr.push(pickValue.getInteger())
+    }
+    if (pickValue.getList()) {
+      this.stackList.push(pickValue)
+    }
+  }
+}
+
+/**
+ * @this NestedIterator
+ * @returns {boolean}
+ */
+NestedIterator.prototype.hasNext = function() {
+  return this.printArr.length > 0
+}
+
+/**
+ * @this NestedIterator
+ * @returns {integer}
+ */
+NestedIterator.prototype.next = function() {
+  return this.printArr.pop()
 }
 
 /**
