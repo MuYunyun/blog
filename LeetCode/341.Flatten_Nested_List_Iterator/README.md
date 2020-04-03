@@ -62,7 +62,7 @@ Explanation: By calling next repeatedly until hasNext returns false,
  * @param {NestedInteger[]} nestedList
  */
 var NestedIterator = function(nestedList) {
-  this.stack = []
+  this.printArr = []
   this.resetArr(nestedList)
 }
 
@@ -71,7 +71,7 @@ NestedIterator.prototype.resetArr = function(nestedList) {
   for (let i = 0; i < nestedList.length; i++) {
     const curList = nestedList[i]
     if (curList.isInteger()) {
-      this.stack.push(curList.getInteger())
+      this.printArr.unshift(curList.getInteger())
     } else {
       this.resetArr(curList.getList())
     }
@@ -83,7 +83,7 @@ NestedIterator.prototype.resetArr = function(nestedList) {
  * @returns {boolean}
  */
 NestedIterator.prototype.hasNext = function() {
-  return this.stack.length > 0
+  return this.printArr.length > 0
 }
 
 /**
@@ -91,7 +91,7 @@ NestedIterator.prototype.hasNext = function() {
  * @returns {integer}
  */
 NestedIterator.prototype.next = function() {
-  return this.stack.pop()
+  return this.printArr.pop()
 }
 
 /**
@@ -103,7 +103,15 @@ NestedIterator.prototype.next = function() {
 
 ### 迭代法
 
-todo:
+```js
+[[1,1],2,[3,3]]
+
+[1,1], 2, [3, 3]
+
+[1, 1], 2, 3, 3
+
+1, 1, 2, 3, 3
+```
 
 ```js
 /**
@@ -143,11 +151,12 @@ var NestedIterator = function(nestedList) {
   this.stackList.push(nestedList)
   while (this.stackList.length > 0) {
     const pickValue = this.stackList.pop()
-    if (pickValue.isInteger()) {
-      this.printArr.push(pickValue.getInteger())
-    }
-    if (pickValue.getList()) {
-      this.stackList.push(pickValue)
+    for (let i = 0; i < pickValue.length; i++) {
+      if (pickValue[i].isInteger()) {
+        this.printArr.unshift(pickValue[i].getInteger())
+      } else {
+        this.stackList.push(pickValue[i])
+      }
     }
   }
 }
