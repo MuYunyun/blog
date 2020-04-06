@@ -150,11 +150,13 @@ var NestedIterator = function(nestedList) {
   this.stackList = []
   this.stackList.push(nestedList)
   while (this.stackList.length > 0) {
+    console.log('this.stackList', this.stackList)
     const pickValue = this.stackList.pop()
     for (let i = 0; i < pickValue.length; i++) {
       if (pickValue[i].isInteger()) {
         this.printArr.unshift(pickValue[i].getInteger())
       } else {
+        console.log('perf')
         this.stackList.push(pickValue[i])
       }
     }
