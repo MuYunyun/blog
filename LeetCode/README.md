@@ -325,7 +325,7 @@
 | 338 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | | Medium ||
 | 339 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) :blue_book: | | Easy ||
 | 340 | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) :blue_book: | | Hard ||
-| 341 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | | Medium ||
+| 341 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/341.Flatten_Nested_List_Iterator/README.md) | Medium | 栈 \| 递归 |
 | 342 | [Power of Four](https://leetcode.com/problems/power-of-four/) | | Easy ||
 | 343 | [Integer Break](https://leetcode.com/problems/integer-break/) | | Medium ||
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/344.反转字符串/README.md) | Easy ||

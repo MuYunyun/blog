@@ -26,7 +26,7 @@ Explanation: By calling next repeatedly until hasNext returns false,
 
 ### analyze
 
-该题需注意的点: 比如 [1, [4]] 数组里面的 1, [4] 得通过 `getInteger` 与 `getList` 获取得到。
+该题需注意的点: [1, [4]] 里的子项 1, [4] 分别通过 `getInteger` 与 `getList` 获取到。
 
 ### 递归法
 
@@ -103,15 +103,16 @@ NestedIterator.prototype.next = function() {
 
 ### 迭代法
 
-```js
-[[1,1],2,[3,3]]
+相对递归法, 迭代法需要额外维护一个`系统调用栈`, 然后使用`颜色标记法`完成题解。
 
-[1,1], 2, [3, 3]
+颜色标记法思路:
 
-[1, 1], 2, 3, 3
-
-1, 1, 2, 3, 3
-```
+* 未访问过的列表标记为`白色`, 访问过的列表标记为`灰色`;
+* 从栈顶取出访问元素:
+   * 若为灰色元素, 则打印之;
+   * 若为白色元素, 则遍历子列表:
+      * 若子列表为列表, 则将其`标记为白色`并推入栈;
+      * 若子列表为数字, 则将其`标记为灰色`并推入栈;
 
 ```js
 /**
@@ -148,16 +149,18 @@ var NestedIterator = function(nestedList) {
   this.printArr = []
   if (!nestedList) return
   this.stackList = []
-  this.stackList.push(nestedList)
+  this.stackList.push({ color: 'white', list: nestedList })
   while (this.stackList.length > 0) {
-    console.log('this.stackList', this.stackList)
-    const pickValue = this.stackList.pop()
-    for (let i = 0; i < pickValue.length; i++) {
-      if (pickValue[i].isInteger()) {
-        this.printArr.unshift(pickValue[i].getInteger())
-      } else {
-        console.log('perf')
-        this.stackList.push(pickValue[i])
+    const { color, list } = this.stackList.pop()
+    if (color === 'gray') {
+      this.printArr.unshift(list)
+    } else {
+      for (let i = 0; i < list.length; i++) {
+        if (list[i].isInteger()) {
+          this.stackList.push({ color: 'gray', list: list[i].getInteger() })
+        } else {
+          this.stackList.push({ color: 'white', list: list[i].getList() })
+        }
       }
     }
   }
@@ -176,7 +179,7 @@ NestedIterator.prototype.hasNext = function() {
  * @returns {integer}
  */
 NestedIterator.prototype.next = function() {
-  return this.printArr.pop()
+  return this.printArr.shift()
 }
 
 /**
@@ -185,3 +188,7 @@ NestedIterator.prototype.next = function() {
  * while (i.hasNext()) a.push(i.next());
 */
 ```
+
+### Similar Title
+
+94、144、145

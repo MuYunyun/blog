@@ -201,4 +201,4 @@ var preorderTraversal = function(root) {
 
 ### Sister Title
 
-144、94、145
+94、145
