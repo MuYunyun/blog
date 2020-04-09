@@ -19,10 +19,10 @@ This is my persinal blog where to write and record some thought daily. If you li
   - [React Stack](#react-stack)
   - [Build React from scratch](#build-react-from-scratch)
   - [Modern Testing](#modern-testing)
+- [Data Structure](#data-structure)
+- [Design Pattern](#design-pattern)
 - [FE Cloud](#fe-cloud)
   - [JavaScript](#javascript)
-  - [Data Structure](#data-structure)
-  - [Design Pattern](#design-pattern)
   - [CSS](#css)
   - [TypeScript](#typescript)
   - [Node.js](#nodejs)
@@ -30,6 +30,8 @@ This is my persinal blog where to write and record some thought daily. If you li
   - [Project Framework](#project-framework)
 
 ### React Series
+
+This section will introduce the world of React progressively. It'll tell the principle of React, how to design React Component gracefully and how to build a simple React from scratch.
 
 #### Deep Into React
 
@@ -105,6 +107,41 @@ This is my persinal blog where to write and record some thought daily. If you li
 * [React 现代化测试](https://github.com/MuYunyun/blog/blob/master/React/测试/React现代化测试.md)
 * [Jest 与 react-testing-Library](https://github.com/MuYunyun/blog/blob/master/React/测试/Jest与ReactTestingLibrary.md)
 
+### Data Structure
+
+> [Travel Of LeetCode](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
+
+* [Algorithm And Complexy](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/算法复杂度.md)
+* [Stack](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/栈.md)
+* [Queue](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/队列.md)
+* [List](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/链表.md)
+* [Set](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/集合.md)
+* [Dictionary](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/字典.md)
+* [Hash Table](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/哈希表.md)
+* [Binary Tree](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/二叉树.md)
+* [Gragh](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/图.md)
+* [Sort And Find](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/README.md)
+* [Dynamic Programming](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/动态规划.md)
+* [Greedy Algorithm](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/贪心算法.md)
+
+### Design Pattern
+
+* [单例模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/单例模式.md)
+* [策略模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/策略模式.md)
+* [代理模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/代理模式.md)
+* [迭代器模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/迭代器模式.md)
+* [发布-订阅模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/发布订阅模式.md)
+* [命令模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/命令模式.md)
+* [组合模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/组合模式.md)
+* [模板方法模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/模板方法模式.md)
+* [享元模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/享元模式.md)
+* [职责链模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/职责链模式.md)
+* [中介者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/中介者模式.md)
+* [装饰者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/装饰者模式.md)
+* [状态模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/状态模式.md)
+* [适配者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/适配者模式.md)
+* [观察者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/观察者模式.md)
+
 ### FE Cloud
 
 #### JavaScript
@@ -124,41 +161,6 @@ This is my persinal blog where to write and record some thought daily. If you li
 * [Reflect](https://github.com/MuYunyun/blog/blob/master/BasicSkill/readES6/Reflect.md)
 
 - [ ] [重构笔记](https://github.com/MuYunyun/blog/blob/master/BasicSkill/效率篇/重构改善既有代码的设计.md)
-
-#### Data Structure
-
-> [LeetCode 题解](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
-
-* [算法复杂度](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/算法复杂度.md)
-* [栈](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/栈.md)
-* [队列](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/队列.md)
-* [链表](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/链表.md)
-* [集合](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/集合.md)
-* [字典](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/字典.md)
-* [哈希表](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/哈希表.md)
-* [二叉树](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/二叉树.md)
-* [图](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/图.md)
-* [排序|查找](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/README.md)
-* [动态规划](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/动态规划.md)
-* [贪心算法](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/贪心算法.md)
-
-#### Design Pattern
-
-* [单例模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/单例模式.md)
-* [策略模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/策略模式.md)
-* [代理模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/代理模式.md)
-* [迭代器模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/迭代器模式.md)
-* [发布-订阅模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/发布订阅模式.md)
-* [命令模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/命令模式.md)
-* [组合模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/组合模式.md)
-* [模板方法模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/模板方法模式.md)
-* [享元模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/享元模式.md)
-* [职责链模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/职责链模式.md)
-* [中介者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/中介者模式.md)
-* [装饰者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/装饰者模式.md)
-* [状态模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/状态模式.md)
-* [适配者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/适配者模式.md)
-* [观察者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/观察者模式.md)
 
 #### CSS
 

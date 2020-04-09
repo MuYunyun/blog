@@ -1,6 +1,6 @@
-### 102.Binary Tree Level Order Traversal
+### 107.Binary Tree Level Order Traversal II
 
-Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+Given a binary tree, return the `bottom-up` level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).
 
 For example:
 Given binary tree [3,9,20,null,null,15,7],
@@ -13,13 +13,13 @@ Given binary tree [3,9,20,null,null,15,7],
    15   7
 ```
 
-return its level order traversal as:
+return its bottom-up level order traversal as:
 
 ```js
 [
-  [3],
+  [15,7],
   [9,20],
-  [15,7]
+  [3]
 ]
 ```
 
@@ -39,7 +39,7 @@ return its level order traversal as:
  * @param {TreeNode} root
  * @return {number[][]}
  */
-var levelOrder = function(root) {
+var levelOrderBottom = function(root) {
   const printArr = []
   if (!root) return printArr
   const list = []
@@ -47,18 +47,16 @@ var levelOrder = function(root) {
   while (list.length > 0) {
     const { node, level } = list.shift()
     if (!printArr[level]) {
-      printArr[level] = []
+      printArr.unshift([])
     }
-    printArr[level].push(node.val)
-    node.left && list.push({ node: node.left, level: level + 1 })
-    node.right && list.push({ node: node.right, level: level + 1 })
+    printArr[0].push(node.val)
+    node.left && (list.push({ node: node.left, level: level + 1 }))
+    node.right && (list.push({ node: node.right, level: level + 1 }))
   }
   return printArr
 }
 ```
 
-![](http://with.muyunyun.cn/d668eecd2648eeb7345ed85e3f4d5316.jpg)
-
 ### Similar Title
 
-102、107(Sister Title)、103、199
+102(Sister Title)、107、103、199
