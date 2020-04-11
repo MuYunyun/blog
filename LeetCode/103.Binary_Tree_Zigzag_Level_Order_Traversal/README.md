@@ -25,7 +25,7 @@ return its zigzag level order traversal as:
 
 ### analyze
 
-解析: 该题考察的是`树的广度遍历(BFS)`, 运用到了`队列`相关知识; 层级为奇数时顺序推入, 层级为偶数时逆序推入;
+解析: 该题考察的是`树的广度遍历(BFS)`, 运用到了`队列`相关知识; 此外展示项的处理逻辑为当层级为奇数时顺序推入, 层级为偶数时逆序推入;
 
 ```js
 /**
@@ -51,17 +51,20 @@ var zigzagLevelOrder = function(root) {
     }
 
     if (level % 2 === 0) {
-      printArr[level].unshift(node.val)
-    } else {
       printArr[level].push(node.val)
+    } else {
+      printArr[level].unshift(node.val)
     }
 
-    list.push({ level: level + 1, node })
+    node.left && list.push({ level: level + 1, node: node.left })
+    node.right && list.push({ level: level + 1, node: node.right })
   }
 
   return printArr
 }
 ```
+
+![](http://with.muyunyun.cn/46fb98b84aa676d4608d3ce793c08273.jpg)
 
 ### Similar Title
 
