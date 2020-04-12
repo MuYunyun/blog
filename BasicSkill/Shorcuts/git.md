@@ -85,7 +85,7 @@ git lg -p
 
 ### 关于 pull request
 
-如果是比较复杂的 Feature 可以越早的(在开发过程)提 pr, 这样子可以提早的指出问题代码。
+如果是比较复杂的 Feature 可以在开发过程提 pr(标为 WIP), 这样子可以提早的指出问题代码。
 
 当有人提了 `pr`, 需要观察 pr 的代码是否存在问题。比如使用如下命令:
 
@@ -125,6 +125,12 @@ git 默认初始化的项目是不区分文件名大小写的, 可以执行下�
 
 ```js
 git config core.ignorecase false
+```
+
+### 查看两个分支的差异
+
+```js
+git diff xxx xxx > my.patch
 ```
 
 ### 误提交敏感信息到 github 怎么办
