@@ -1,6 +1,6 @@
 ### 279. Perfect Squares
 
-Given a positive integer n, find the least number of perfect square numbers (for example, 1, 4, 9, 16, ...) which sum to n.
+Given a positive integer n, find `the least number` of perfect square numbers (for example, 1, 4, 9, 16, ...) which sum to n.
 
 Example 1:
 
@@ -24,9 +24,9 @@ Explanation: 13 = 4 + 9.
 
 首先思考能否使用贪心算法, 比如针对数字 12, 使用贪心算法先取能使用最大的数字 9, 结果为 9 1 1 1, 长度为 4; 但其实是有更短长度的答案 4 4 4 的, 因此不能使用贪心算法。
 
-建模: 构建图的数据结构:
+建模: 构建树的数据结构:
 
-![](http://with.muyunyun.cn/47ab817c48b6cb5dfb829d96f508996d.jpg)
+![](http://with.muyunyun.cn/1ec5a5a75516e0ae7fa96c9c9a74bd79.jpg)
 
 ```js
 6
@@ -41,15 +41,17 @@ Explanation: 13 = 4 + 9.
  */
 var numSquares = function(n) {
   const list = []
-  list.push({ cur: n, step: 0 })
+  list.push({ num: n, step: 0 })
 
   while (list.length > 0) {
-    const { cur, step } = list.shift()
-    if (cur === 0) return step
+    const { num, step } = list.shift()
+    if (num === 0) return step
 
-    for (let i = 0; cur - i * i > 0; i++) {
-      list.push({ cur: cur - i * i, step: step + 1 })
+    for (let i = 1; num - i * i >= 0; i++) {
+      list.push({ num: num - i * i, step: step + 1 })
     }
   }
 }
 ```
+
+todo: 思路相通了, 代码目前运行超时, 树和图之间的转换;
