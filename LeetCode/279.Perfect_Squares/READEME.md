@@ -28,7 +28,11 @@ Explanation: 13 = 4 + 9.
 
 ![](http://with.muyunyun.cn/1ec5a5a75516e0ae7fa96c9c9a74bd79.jpg)
 
-比如数字 5 到 0 的路径可以是 `5 -> 1 -> 0`、`5 -> 4 -> 0`、`5 -> 4 -> 3 -> 2 -> 1 -> 0`;
+比如数字 5 到 0 的路径可以是
+
+1. `5 -> 1 -> 0`;
+2. `5 -> 4 -> 0`;
+3. `5 -> 4 -> 3 -> 2 -> 1 -> 0`;
 
 ```js
 /**
@@ -49,4 +53,33 @@ var numSquares = function(n) {
 }
 ```
 
-此时提交代码, 运行超时。究其原因, 比如到达
+此时提交代码, 运行超时。
+
+进行分析, 以从 5 到达 1 为例, 有如下方式 ①: `5 -> 1`; ②: `5 -> 4 -> 3 -> 2 -> 1`; 显然不会采用第二种方式, 因此可以省略步骤二访问 1 的操作的。
+
+由此引出`图的数据结构`, 在树的数据结构中, 到达一个节点的路径是`唯一确定`的, 而使用图的数据结构时, 到达一个节点的方式可能会存在多个路径;
+
+```js
+/**
+ * @param {number} n
+ * @return {number}
+ */
+var numSquares = function(n) {
+  const list = []
+  list.push({ num: n, step: 0 })
+  const visitedObj = { [n]: true }
+  debugger
+  while (list.length > 0) {
+    const { num, step, visited } = list.shift()
+    if (num === 0) return step
+    for (let i = 1; ; i++) {
+      const extraNum = num - i * i
+      if (extraNum < 0) return
+      if (!visitedObj[extraNum]) {
+        visitedObj[extraNum] = true
+        list.push({ num: num - i * i, step: step + 1 })
+      }
+    }
+  }
+}
+```
