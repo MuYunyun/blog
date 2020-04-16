@@ -28,11 +28,7 @@ Explanation: 13 = 4 + 9.
 
 ![](http://with.muyunyun.cn/1ec5a5a75516e0ae7fa96c9c9a74bd79.jpg)
 
-```js
-6
-```
-
-比如数字 6 到 0, 可以 1 1 1 1 1 1, 也可以是 4 1 1;
+比如数字 5 到 0 的路径可以是 `5 -> 1 -> 0`、`5 -> 4 -> 0`、`5 -> 4 -> 3 -> 2 -> 1 -> 0`;
 
 ```js
 /**
@@ -46,7 +42,6 @@ var numSquares = function(n) {
   while (list.length > 0) {
     const { num, step } = list.shift()
     if (num === 0) return step
-
     for (let i = 1; num - i * i >= 0; i++) {
       list.push({ num: num - i * i, step: step + 1 })
     }
@@ -54,4 +49,4 @@ var numSquares = function(n) {
 }
 ```
 
-todo: 思路相通了, 代码目前运行超时, 树和图之间的转换;
+此时提交代码, 运行超时。究其原因, 比如到达
