@@ -57,7 +57,7 @@ var numSquares = function(n) {
 
 进行分析, 以从 5 到达 1 为例, 有如下方式 ①: `5 -> 1`; ②: `5 -> 4 -> 3 -> 2 -> 1`; 显然不会采用第二种方式, 因此可以省略步骤二访问 1 的操作的。
 
-由此引出`图的数据结构`, 在树的数据结构中, 到达一个节点的路径是`唯一确定`的, 而使用图的数据结构时, 到达一个节点的方式可能会存在多个路径;
+使用`树的数据结构`时, 到达一个节点的路径是`唯一确定`的, 与之相对地在使用`图的数据结构`时, 到达一个节点的方式可能`会存在多个路径`; 为此引入 visitedObj 来存储该节点是否已经访问过, 改进代码如下:
 
 ```js
 /**
@@ -68,13 +68,13 @@ var numSquares = function(n) {
   const list = []
   list.push({ num: n, step: 0 })
   const visitedObj = { [n]: true }
-  debugger
   while (list.length > 0) {
     const { num, step, visited } = list.shift()
-    if (num === 0) return step
-    for (let i = 1; ; i++) {
+    for (let i = 1;; i++) {
       const extraNum = num - i * i
-      if (extraNum < 0) return
+      if (extraNum < 0) break
+      // this line return the result in advance, it reduces perform time very much.
+      if (extraNum === 0) return step + 1
       if (!visitedObj[extraNum]) {
         visitedObj[extraNum] = true
         list.push({ num: num - i * i, step: step + 1 })
@@ -83,3 +83,9 @@ var numSquares = function(n) {
   }
 }
 ```
+
+![](http://with.muyunyun.cn/05fe8335c7c57360edd7e9d28fe3a102.jpg)
+
+### Similar Title
+
+127、126

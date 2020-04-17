@@ -263,7 +263,7 @@
 | 276 | [Paint Fence](https://leetcode.com/problems/paint-fence/) :blue_book: | | Easy ||
 | 277 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/) :blue_book: | | Medium ||
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | | Easy ||
-| 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares/) | | Medium ||
+| 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/279.Perfect_Squares/README.md) | Medium | 图 \| BFS |
 | 280 | [Wiggle Sort](https://leetcode.com/problems/wiggle-sort/) :blue_book: | | Medium ||
 | 281 | [Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/) :blue_book: | | Medium ||
 | 282 | [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/) | | Hard ||
