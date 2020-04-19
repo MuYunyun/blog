@@ -14,4 +14,11 @@
 
 ![](http://with.muyunyun.cn/04a72955723425fcad4cff7288b74d03.jpg)
 
+### 打蝴蝶结方法
+
+1. 在线的一半处穿过礼物盒;
+2. 交叉旋转;
+
+![](http://with.muyunyun.cn/7d2ffb72e7deacf8c1665c39d0817a6a.jpg-300)
+
 > [礼物包装方法](http://www.mimidiy.com/2012/0919/li-wu-bao-zhuang-fa.html)

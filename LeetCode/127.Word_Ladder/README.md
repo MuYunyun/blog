@@ -8,9 +8,9 @@ Each transformed word must exist in the word list.
 Note:
 
 * Return 0 if there is no such transformation sequence.
-* All words have the same length.
-* All words contain only lowercase alphabetic characters.
-* You may assume no duplicates in the word list.
+* All words `have the same length`.
+* All words `contain only lowercase alphabetic characters`.
+* You may assume `no duplicates` in the word list.
 * You may assume beginWord and endWord are non-empty and are not the same.
 
 Example 1:
@@ -24,7 +24,6 @@ wordList = ["hot","dot","dog","lot","log","cog"]
 Output: 5
 
 // Explanation: As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
-
 // return its length 5.
 ```
 
@@ -43,7 +42,13 @@ Output: 0
 
 ### Analyze
 
-建模:
+建模: 题目可以转化为求`图最短路径`的问题; 图最短路径运用到了队列的思想。
+
+```js
+        hit
+     ↙   ↓   ↘
+   xit  hxt  hix
+```
 
 ```js
 /**
@@ -53,6 +58,19 @@ Output: 0
  * @return {number}
  */
 var ladderLength = function(beginWord, endWord, wordList) {
+  if (wordList.indexOf(endWord) === -1) return 0
+  const queue = []
+  queue.push({ word: beginWord, level = 1 })
 
+  while (queue.length > 0) {
+    const { word, level } = queue.shift()
+
+  }
+}
+
+function diffOnePosition(word, wordList) {
+  for (let i = 0; i < wordList.length; i++) {
+
+  }
 }
 ```
