@@ -65,12 +65,16 @@ var ladderLength = function(beginWord, endWord, wordList) {
   while (queue.length > 0) {
     const { word, level } = queue.shift()
 
+    for (let i = 0; i < wordList.length; i++) {
+      const ifDiffOneWord = ifDiffOneWord(word, wordList[i])
+
+    }
   }
 }
 
-function diffOnePosition(word, wordList) {
-  for (let i = 0; i < wordList.length; i++) {
+// judge if the targetWord has one different word from the comparedWord;
+function ifDiffOneWord(targetWord, comparedWord) {
 
-  }
+  return []
 }
 ```
