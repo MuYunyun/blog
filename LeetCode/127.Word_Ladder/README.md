@@ -42,7 +42,7 @@ Output: 0
 
 ### Analyze
 
-建模: 题目可以转化为求`图最短路径`的问题; 图最短路径运用到了队列的思想。
+建模: 题目可以转化为求`图最短路径`的问题; 图最短路径运用到了`队列的思想`。
 
 ```js
         hit
@@ -60,21 +60,37 @@ Output: 0
 var ladderLength = function(beginWord, endWord, wordList) {
   if (wordList.indexOf(endWord) === -1) return 0
   const queue = []
-  queue.push({ word: beginWord, level = 1 })
+  queue.push({ word: beginWord, level: 1 })
 
   while (queue.length > 0) {
     const { word, level } = queue.shift()
 
     for (let i = 0; i < wordList.length; i++) {
-      const ifDiffOneWord = ifDiffOneWord(word, wordList[i])
-
+      const isDiffOneWord = ifDiffOneWord(word, wordList[i])
+      if (isDiffOneWord) {
+        if (wordList[i] === endWord) {
+          return level + 1
+        }
+        queue.push({ word: wordList[i], level: level + 1 })
+      }
     }
   }
 }
 
 // judge if the targetWord has one different word from the comparedWord;
 function ifDiffOneWord(targetWord, comparedWord) {
-
-  return []
+  let wordLength = targetWord.length
+  let diffNum = 0
+  for (let i = 0; i < wordLength; i++) {
+    if (targetWord[i] !== comparedWord[i]) {
+      diffNum++
+    }
+    if (diffNum > 1) return false
+  }
+  if (diffNum === 1) {
+    return true
+  } else {
+    return false
+  }
 }
 ```
