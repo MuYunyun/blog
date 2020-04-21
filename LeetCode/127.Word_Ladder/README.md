@@ -7,7 +7,7 @@ Each transformed word must exist in the word list.
 
 Note:
 
-* Return 0 if there is no such transformation sequence.
+* `Return 0` if there is no such transformation sequence.
 * All words `have the same length`.
 * All words `contain only lowercase alphabetic characters`.
 * You may assume `no duplicates` in the word list.
@@ -42,7 +42,9 @@ Output: 0
 
 ### Analyze
 
-建模: 题目可以转化为求`图最短路径`的问题; 图最短路径运用到了`队列的思想`。
+建模: 题目可以转化为求`图最短路径`的问题, 图最短路径运用到了`队列的思想`。
+
+比如字母 `hit` 可以转化变形为 `xit`、`hxt`、`hix` 三个字母;
 
 ```js
         hit
@@ -60,11 +62,14 @@ Output: 0
 var ladderLength = function(beginWord, endWord, wordList) {
   if (wordList.indexOf(endWord) === -1) return 0
   const queue = []
+  const visitedObj = {
+    beginWord: true
+  }
   queue.push({ word: beginWord, level: 1 })
-
   while (queue.length > 0) {
     const { word, level } = queue.shift()
 
+    if (visitedObj[word]) continue
     for (let i = 0; i < wordList.length; i++) {
       const isDiffOneWord = ifDiffOneWord(word, wordList[i])
       if (isDiffOneWord) {
@@ -72,9 +77,11 @@ var ladderLength = function(beginWord, endWord, wordList) {
           return level + 1
         }
         queue.push({ word: wordList[i], level: level + 1 })
+        visitedObj[word] = true
       }
     }
   }
+  return 0
 }
 
 // judge if the targetWord has one different word from the comparedWord;
@@ -94,3 +101,5 @@ function ifDiffOneWord(targetWord, comparedWord) {
   }
 }
 ```
+
+![](http://with.muyunyun.cn/6a2cb2b81d139ee676a1be7634551fb1.jpg)
