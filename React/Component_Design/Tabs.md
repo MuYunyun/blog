@@ -347,7 +347,3 @@ window.addEventListener('resize', () => {})
 ```
 
 又由于在 hooks 中进行使用, 犯下了闭包陷阱; 最终使用 useRef 解决了问题;
-
-### link
-
-* [数学画图](https://www.mathway.com/Graph)

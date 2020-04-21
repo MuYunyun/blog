@@ -44,12 +44,13 @@ Output: 0
 
 建模: 题目可以转化为求`图最短路径`的问题, 图最短路径运用到了`队列的思想`。
 
-比如字母 `hit` 可以转化变形为 `xit`、`hxt`、`hix` 三个字母;
+比如 beginWord 字母 `hit` 可以转化变形为 `xit`、`hxt`、`hix` 三个字母, 如果此时转化的这三个字母中有字母与 endWord 相等, 则返回寻找 level 1;
 
 ```js
-        hit
+                      level
+        hit             0
      ↙   ↓   ↘
-   xit  hxt  hix
+   xit  hxt  hix        1
 ```
 
 ```js
@@ -103,3 +104,7 @@ function ifDiffOneWord(targetWord, comparedWord) {
 ```
 
 ![](http://with.muyunyun.cn/6a2cb2b81d139ee676a1be7634551fb1.jpg)
+
+此时虽然 ac 了该题, 但执行耗时有些慢, 🤔有没有优化空间呢?
+
+因为 BFS 是从左到右依次遍历的, 可以想象层级较深的节点需要更多的空间时间来进行搜索。题解中提到了双向 BFS, 它的含义是一端从 beginWord 开始搜索, 一端从 endWord 开始搜索。

@@ -1,5 +1,5 @@
 /** remind to clock */
-function remindClock (arr) {
+(function remindClock (arr) {
   let print = ''
   for (let i = 1; i < 21; i++) {
     if (arr.indexOf(i) === -1) {
@@ -9,4 +9,4 @@ function remindClock (arr) {
 
   if (print === '') return '齐了'
   return `${print}记得打卡`
-}
+})([])
