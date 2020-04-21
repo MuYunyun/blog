@@ -42,16 +42,22 @@ Output: 0
 
 ### Analyze
 
-建模: 题目可以转化为求`图最短路径`的问题, 图最短路径运用到了`队列的思想`。
-
-比如 beginWord 字母 `hit` 可以转化变形为 `xit`、`hxt`、`hix` 三个字母, 如果此时转化的这三个字母中有字母与 endWord 相等, 则返回寻找 level 1;
+题目解读: 比如 beginWord 字母 `hit` 可以转化变形为 `xit`、`hxt`、`hix` 三种形式字母, 如果此时转化后存在与 endWord 相等的字母, 则返回寻找到的 level。
 
 ```js
-                      level
-        hit             0
-     ↙   ↓   ↘
-   xit  hxt  hix        1
+                                     level
+                       hit             1
+                    ↙   ↓   ↘
+                  xit  hot  hix        2
+                     ↙     ↘
+                   dot     lot         3
+                 ↙     ↘    ↓
+               lot     dog log         4
+                        ↓
+                       cog             5
 ```
+
+因此该题可以转化为求`图最短路径`的问题, 图最短路径运用到了`队列的思想`。
 
 ```js
 /**
@@ -107,4 +113,22 @@ function ifDiffOneWord(targetWord, comparedWord) {
 
 此时虽然 ac 了该题, 但执行耗时有些慢, 🤔有没有优化空间呢?
 
-因为 BFS 是从左到右依次遍历的, 可以想象层级较深的节点需要更多的空间时间来进行搜索。题解中提到了双向 BFS, 它的含义是一端从 beginWord 开始搜索, 一端从 endWord 开始搜索。
+因为 BFS 是从左到右依次遍历的, 可以想象层级较深的节点需要更多的空间时间来进行搜索。这里引出了`双向 BFS` 算法, 它的思路如下:
+
+* 一端从 beginWord 开始 BFS, 于此同时另一端从 endWord 也开始 BFS;
+  * 用 beginLevel, endLevel 来分别记录它们访问到的层级;
+  * beginLevel 与 endLevel 每次加一;
+* 当两端聚拢到同一个节点时, 此时 beginLevel 与 endLevel 之和就为题解; 否则返回 0;
+
+```js
+                                     level
+                       hit             1
+                        ↓
+                       hot             2
+                     ↙     ↘
+                   dot     lot         3
+                 ↙     ↘    ↓
+               lot     dog log         4
+                        ↓
+                       cog             5
+```
