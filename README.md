@@ -109,6 +109,8 @@ This section will introduce the world of React progressively. It'll tell the pri
 
 ### Data Structure
 
+This section we will start tralvel in the world of data strcture together! It's worth nothing the travel is so interestring that you'll enjoy it too!
+
 > [Travel Of LeetCode](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
 
 * [Algorithm And Complexy](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/算法复杂度.md)

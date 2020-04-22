@@ -11,7 +11,7 @@ Note:
 * All words `have the same length`.
 * All words `contain only lowercase alphabetic characters`.
 * You may assume `no duplicates` in the word list.
-* You may assume beginWord and endWord are non-empty and are not the same.
+* You may assume beginWord and endWord are `non-empty` and are `not the same`.
 
 Example 1:
 
@@ -131,4 +131,67 @@ function ifDiffOneWord(targetWord, comparedWord) {
                lot     dog log         4
                         ↓
                        cog             5
+```
+
+```js
+/**
+ * @param {string} beginWord
+ * @param {string} endWord
+ * @param {string[]} wordList
+ * @return {number}
+ */
+var ladderLength = function(beginWord, endWord, wordList) {
+  if (wordList.indexOf(endWord) === -1) return 0
+  const beginQueue = []
+  const endQueue = []
+
+  const visitedObj = {
+    beginWord: true,
+    endWord: true
+  }
+  beginQueue.push({ beginWord, beginLevel: 1 })
+  endQueue.push({ endWord, endLevel: 1 })
+  while (beginQueue.length > 0) {
+    const { beginWord, beginLevel } = beginQueue.shift()
+    const { endWord, endLevel } = endQueue.shift()
+    if (beginWord === endWord) return beginLevel + endLevel
+    if (visitedObj[beginWord] || visitedObj[endWord]) continue
+    for (let i = 0; i < wordList.length; i++) {
+      const isDiffOneBeginWord = ifDiffOneWord(beginWord, wordList[i])
+      const isDiffOneEndWord = ifDiffOneWord(endWord, wordList[i])
+      if (isDiffOneBeginWord) {
+        if (wordList[i] === endWord) {
+          return beginLevel + endLevel
+        }
+        beginQueue.push({ beginWord: wordList[i], beginLevel: beginLevel + 1 })
+        visitedObj[beginWord] = true
+      }
+      if (isDiffOneEndWord) {
+        if (wordList[i] === beginWord) {
+          return beginLevel + endLevel
+        }
+        endQueue.push({ endWord: wordList[i], endLevel: endLevel + 1 })
+        visitedObj[endWord] = true
+      }
+    }
+  }
+  return 0
+}
+
+// judge if the targetWord has one different word from the comparedWord
+function ifDiffOneWord(targetWord, comparedWord) {
+  let wordLength = targetWord.length
+  let diffNum = 0
+  for (let i = 0; i < wordLength; i++) {
+    if (targetWord[i] !== comparedWord[i]) {
+      diffNum++
+    }
+    if (diffNum > 1) return false
+  }
+  if (diffNum === 1) {
+    return true
+  } else {
+    return false
+  }
+}
 ```
