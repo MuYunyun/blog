@@ -134,6 +134,18 @@ function ifDiffOneWord(targetWord, comparedWord) {
 ```
 
 ```js
+["hot","dot","dog","lot","log","cog"]
+begin: hot dot
+end: dog dot
+
+ladderLength('hit', 'cog', ["hot","dot","dog","lot","log","cog"])
+
+"lost"
+"cost"
+["most","fist","lost","cost","fish"]
+```
+
+```js
 /**
  * @param {string} beginWord
  * @param {string} endWord
@@ -145,8 +157,10 @@ var ladderLength = function(beginWord, endWord, wordList) {
   const beginQueue = []
   const endQueue = []
 
-  const visitedObj = {
-    beginWord: true,
+  const visitedBeginObj = {
+    beginWord: true
+  }
+  const visitedEndObj = {
     endWord: true
   }
   beginQueue.push({ beginWord, beginLevel: 1 })
@@ -154,24 +168,25 @@ var ladderLength = function(beginWord, endWord, wordList) {
   while (beginQueue.length > 0) {
     const { beginWord, beginLevel } = beginQueue.shift()
     const { endWord, endLevel } = endQueue.shift()
-    if (beginWord === endWord) return beginLevel + endLevel
-    if (visitedObj[beginWord] || visitedObj[endWord]) continue
     for (let i = 0; i < wordList.length; i++) {
       const isDiffOneBeginWord = ifDiffOneWord(beginWord, wordList[i])
       const isDiffOneEndWord = ifDiffOneWord(endWord, wordList[i])
+      if ((isDiffOneBeginWord && endWord === wordList[i])
+      || (isDiffOneEndWord && beginWord === wordList[i])) {
+        return beginLevel + endLevel
+      }
+      if (isDiffOneBeginWord && isDiffOneEndWord) {
+        return beginLevel + endLevel + 1
+      }
       if (isDiffOneBeginWord) {
-        if (wordList[i] === endWord) {
-          return beginLevel + endLevel
-        }
-        beginQueue.push({ beginWord: wordList[i], beginLevel: beginLevel + 1 })
-        visitedObj[beginWord] = true
+        !visitedBeginObj[beginWord]
+          && beginQueue.push({ beginWord: wordList[i], beginLevel: beginLevel + 1 })
+        visitedBeginObj[beginWord] = true
       }
       if (isDiffOneEndWord) {
-        if (wordList[i] === beginWord) {
-          return beginLevel + endLevel
-        }
-        endQueue.push({ endWord: wordList[i], endLevel: endLevel + 1 })
-        visitedObj[endWord] = true
+        !visitedEndObj[endWord]
+          && endQueue.push({ endWord: wordList[i], endLevel: endLevel + 1 })
+        visitedEndObj[endWord] = true
       }
     }
   }
