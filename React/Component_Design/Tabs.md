@@ -174,6 +174,10 @@ const easeInOutCubic = (time: number, begin: number, change: number, d: number) 
 
 目前的理解: 贝塞尔的方程式和缓动动画的公式是两条并列的主线, 使用它们中的任意一个都可以完成 JavaScript 的动画效果。
 
+### When click tab, how to move it center?
+
+![](http://with.muyunyun.cn/71c277598fff27600479ba12c8cd04aa.jpg)
+
 ### 开发坑点
 
 背景: `Tab` 下划线随着内容栏的滑动而动态滑动。

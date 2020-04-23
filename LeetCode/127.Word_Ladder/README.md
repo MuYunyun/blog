@@ -140,9 +140,14 @@ end: dog dot
 
 ladderLength('hit', 'cog', ["hot","dot","dog","lot","log","cog"])
 
-"lost"
-"cost"
-["most","fist","lost","cost","fish"]
+"leet"
+"code"
+["lest","leet","lose","code","lode","robe","lost"]
+
+输出: 0
+预期: 6
+
+ladderLength('leet', 'code', ["lest","leet","lose","code","lode","robe","lost"])
 ```
 
 ```js
@@ -165,9 +170,14 @@ var ladderLength = function(beginWord, endWord, wordList) {
   }
   beginQueue.push({ beginWord, beginLevel: 1 })
   endQueue.push({ endWord, endLevel: 1 })
+  if (ifDiffOneWord(beginWord, endWord)) return 2
   while (beginQueue.length > 0) {
     const { beginWord, beginLevel } = beginQueue.shift()
     const { endWord, endLevel } = endQueue.shift()
+    if (beginLevel > endLevel) {
+      debugger
+      return 0
+    }
     for (let i = 0; i < wordList.length; i++) {
       const isDiffOneBeginWord = ifDiffOneWord(beginWord, wordList[i])
       const isDiffOneEndWord = ifDiffOneWord(endWord, wordList[i])
@@ -190,6 +200,7 @@ var ladderLength = function(beginWord, endWord, wordList) {
       }
     }
   }
+  debugger
   return 0
 }
 
@@ -210,3 +221,5 @@ function ifDiffOneWord(targetWord, comparedWord) {
   }
 }
 ```
+
+当前卡的点从 beginQueue 与 endQueue 取出值遍历的时候有漏掉。
