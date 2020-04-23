@@ -118,7 +118,7 @@ function ifDiffOneWord(targetWord, comparedWord) {
 * 一端从 beginWord 开始 BFS, 于此同时另一端从 endWord 也开始 BFS;
   * 用 beginLevel, endLevel 来分别记录它们访问到的层级;
   * beginLevel 与 endLevel 每次加一;
-* 当两端聚拢到同一个节点时, 此时 beginLevel 与 endLevel 之和就为题解; 否则返回 0;
+* 当找到一个单词被两边搜索都访问过了, 此时 beginLevel 与 endLevel 之和就为题解; 否则返回 0;
 
 ```js
                                      level
@@ -171,23 +171,26 @@ var ladderLength = function(beginWord, endWord, wordList) {
   beginQueue.push({ beginWord, beginLevel: 1 })
   endQueue.push({ endWord, endLevel: 1 })
   if (ifDiffOneWord(beginWord, endWord)) return 2
-  while (beginQueue.length > 0) {
-    const { beginWord, beginLevel } = beginQueue.shift()
-    const { endWord, endLevel } = endQueue.shift()
-    if (beginLevel > endLevel) {
-      debugger
-      return 0
-    }
+  while (beginQueue.length > 0 && endQueue.length > 0) {
+    // const { beginWord, beginLevel } = beginQueue.shift()
+    // const { endWord, endLevel } = endQueue.shift()
+    // if (beginLevel > endLevel) {
+    //   debugger
+    //   return 0
+    // }
+    const beginQueueLength = beginQueue.length
+    const endQueueLength = endQueue.length
+    /* Todo: It's a good idea to pick smaller queue to traverse every time */
     for (let i = 0; i < wordList.length; i++) {
       const isDiffOneBeginWord = ifDiffOneWord(beginWord, wordList[i])
       const isDiffOneEndWord = ifDiffOneWord(endWord, wordList[i])
-      if ((isDiffOneBeginWord && endWord === wordList[i])
-      || (isDiffOneEndWord && beginWord === wordList[i])) {
-        return beginLevel + endLevel
-      }
-      if (isDiffOneBeginWord && isDiffOneEndWord) {
-        return beginLevel + endLevel + 1
-      }
+      // if ((isDiffOneBeginWord && endWord === wordList[i])
+      // || (isDiffOneEndWord && beginWord === wordList[i])) {
+      //   return beginLevel + endLevel
+      // }
+      // if (isDiffOneBeginWord && isDiffOneEndWord) {
+      //   return beginLevel + endLevel + 1
+      // }
       if (isDiffOneBeginWord) {
         !visitedBeginObj[beginWord]
           && beginQueue.push({ beginWord: wordList[i], beginLevel: beginLevel + 1 })
