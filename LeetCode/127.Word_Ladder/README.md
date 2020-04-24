@@ -170,40 +170,48 @@ var ladderLength = function(beginWord, endWord, wordList) {
   }
   beginQueue.push({ beginWord, beginLevel: 1 })
   endQueue.push({ endWord, endLevel: 1 })
-  if (ifDiffOneWord(beginWord, endWord)) return 2
+
   while (beginQueue.length > 0 && endQueue.length > 0) {
-    // const { beginWord, beginLevel } = beginQueue.shift()
-    // const { endWord, endLevel } = endQueue.shift()
-    // if (beginLevel > endLevel) {
-    //   debugger
-    //   return 0
-    // }
     const beginQueueLength = beginQueue.length
     const endQueueLength = endQueue.length
+
     /* Todo: It's a good idea to pick smaller queue to traverse every time */
-    for (let i = 0; i < wordList.length; i++) {
-      const isDiffOneBeginWord = ifDiffOneWord(beginWord, wordList[i])
-      const isDiffOneEndWord = ifDiffOneWord(endWord, wordList[i])
-      // if ((isDiffOneBeginWord && endWord === wordList[i])
-      // || (isDiffOneEndWord && beginWord === wordList[i])) {
-      //   return beginLevel + endLevel
-      // }
-      // if (isDiffOneBeginWord && isDiffOneEndWord) {
-      //   return beginLevel + endLevel + 1
-      // }
-      if (isDiffOneBeginWord) {
-        !visitedBeginObj[beginWord]
-          && beginQueue.push({ beginWord: wordList[i], beginLevel: beginLevel + 1 })
-        visitedBeginObj[beginWord] = true
+    if (beginQueueLength < endQueueLength) {
+      const { beginWord, beginLevel } = beginQueue.shift()
+      for (let i = 0; i < wordList.length; i++) {
+        const isDiffOneBeginWord = ifDiffOneWord(beginWord, wordList[i])
+        const { boolean, level } = visitedEndObj[wordList[i]] ? visitedEndObj[wordList[i]] : {}
+        if (isDiffOneBeginWord && boolean === true) {
+          return beginLevel + level
+        }
+        if (isDiffOneBeginWord) {
+          !visitedBeginObj[beginWord]
+            && beginQueue.push({ beginWord: wordList[i], beginLevel: beginLevel + 1 })
+          visitedBeginObj[beginWord] = {
+            boolean: true,
+            level: beginLevel + 1
+          }
+        }
       }
-      if (isDiffOneEndWord) {
-        !visitedEndObj[endWord]
-          && endQueue.push({ endWord: wordList[i], endLevel: endLevel + 1 })
-        visitedEndObj[endWord] = true
+    } else {
+      const { endWord, endLevel } = endQueue.shift()
+      for (let i = 0; i < wordList.length; i++) {
+        const isDiffOneEndWord = ifDiffOneWord(endWord, wordList[i])
+        const { boolean, level } = visitedBeginObj[wordList[i]] ? visitedBeginObj[wordList[i]] : {}
+        if (isDiffOneEndWord && boolean === true) {
+          return endLevel + level
+        }
+        if (isDiffOneEndWord) {
+          !visitedEndObj[endWord]
+            && endQueue.push({ endWord: wordList[i], endLevel: endLevel + 1 })
+          visitedEndObj[endWord] = {
+            boolean: true,
+            level: endLevel + 1
+          }
+        }
       }
     }
   }
-  debugger
   return 0
 }
 
