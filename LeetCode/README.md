@@ -128,7 +128,7 @@
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | | Hard ||
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | | Easy ||
 | 126 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/) | | Hard ||
-| 127 | [Word Ladder](https://leetcode.com/problems/word-ladder/) | | Medium ||
+| 127 | [Word Ladder](https://leetcode.com/problems/word-ladder/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/127.Word_Ladder/README.md) | Medium | BFS \| 图求最短路径 |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | | Hard ||
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | | Medium ||
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | | Medium ||
