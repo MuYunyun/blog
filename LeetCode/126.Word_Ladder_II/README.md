@@ -43,18 +43,7 @@ Output: []
 
 ### Analyze
 
-```js
-24/39 测试用例
-
-输入：
-"red"
-"tax"
-["ted","tex","red","tax","tad","den","rex","pee"]
-输出：
-[["red","ted","tad","tax"],["red","ted","tex","tax"]]
-预期：
-[["red","ted","tad","tax"],["red","ted","tex","tax"],["red","rex","tex","tax"]]
-```
+暂时跳过此题, 目前卡在 21/39 测试用例中, 超过时间限制;
 
 ```js
 /**
@@ -68,15 +57,19 @@ var findLadders = function(beginWord, endWord, wordList) {
   if (wordList.indexOf(endWord) === -1) return result
   const queue = []
   const visitedObj = {
-    beginWord: true
+    beginWord: {
+      visited: true,
+      visitedParent: null
+    }
   }
   queue.push({ word: createNode(beginWord), level: 1 })
   let levelLimit = null
-  debugger
   while (queue.length > 0) {
     const { word, level } = queue.shift()
     if (levelLimit && level >= levelLimit) return result
-    if (visitedObj[word.val]) continue
+    // if the value and it's parent value are visited, jump this loop;
+    if (visitedObj[word.val] && visitedObj[word.val].visited
+    && word.parent === visitedObj[word.val].visitedParent) continue
     for (let i = 0; i < wordList.length; i++) {
       const isDiffOneWord = ifDiffOneWord(word.val, wordList[i])
       if (isDiffOneWord) {
@@ -87,7 +80,10 @@ var findLadders = function(beginWord, endWord, wordList) {
           levelLimit = level + 1
         }
         queue.push({ word: newNode, level: level + 1 })
-        visitedObj[word.val] = true
+        visitedObj[word.val] = {
+          visited: true,
+          visitedParent: word
+        }
       }
     }
   }
