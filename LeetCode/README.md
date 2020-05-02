@@ -331,7 +331,7 @@
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/344.反转字符串/README.md) | Easy ||
 | 345 | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | | Easy ||
 | 346 | [Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) :blue_book: | | Easy ||
-| 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | | Medium ||
+| 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/347.Top_K_Frequent_Elements/README.md) | Medium | -- |
 | 348 | [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) :blue_book: | | Medium ||
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/349.两个数组的交集/README.md) | Easy ||
 | 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/350.两个数组的交集II/README.md) | Easy ||

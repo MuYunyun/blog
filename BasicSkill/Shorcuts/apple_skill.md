@@ -2,11 +2,11 @@
 
 #### mac 快捷键
 
-* 截屏/录屏幕: shift + cmd + 5
-* cmd + tab: 应用切换
-* ctrl + cmd + 空格: 表情输入
-* alt + cmd + v: 图床
-* shift + cmd + c: 复制过的内容
+* `shift + cmd + 5`: 截屏/录屏幕
+* `cmd + tab`: 应用切换
+* `ctrl + cmd + 空格`: 表情输入
+* `alt + cmd + v`: 图床
+* `shift + cmd + c`: 复制过的内容
 
 #### 管理 iphone 的图库
 
