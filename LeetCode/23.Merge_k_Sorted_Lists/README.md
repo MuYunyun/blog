@@ -16,7 +16,7 @@ Output: 1->1->2->3->4->4->5->6
 
 ### Analyze
 
-此题在两个队列归并算法的基础上扩展为 k 个队列的合并过程。
+可以将合并 k 个排序队列转换为合并 2 个排序队列。
 
 ```js
 /**
@@ -32,16 +32,16 @@ Output: 1->1->2->3->4->4->5->6
  */
 var mergeKLists = function(lists) {
   if (lists[0]) return null
-  const dummyLists = new ListNode(0)
-  dummyLists.next = lists[0]
-  let cur = dummyLists.next
+  let result = lists[0]
 
   for (let i = 1; i < lists.length; i++) {
-
-    while (cur) {
-
-      cur = cur.next
-    }
+    const compareList = lists[i]
+    result = mergeTwoLists(cur, compareList)
   }
+  return result
+}
+
+var mergeTwoLists = function(curList, compareList) {
+
 }
 ```
