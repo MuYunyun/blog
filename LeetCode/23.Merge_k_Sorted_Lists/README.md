@@ -19,6 +19,14 @@ Output: 1->1->2->3->4->4->5->6
 可以将合并 k 个排序队列转换为合并 2 个排序队列。
 
 ```js
+    cur
+dummyNode -> 1 -> 4 -> 5
+
+comparedCur
+     1      -> 3 -> 4
+```
+
+```js
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -42,6 +50,17 @@ var mergeKLists = function(lists) {
 }
 
 var mergeTwoLists = function(curList, compareList) {
+  const dummyNode = new ListNode(0)
+  dummyNode.next = curList
+  let cur = dummyNode
+  let comparedCur = compareList
 
+  while (cur.next) {
+    if (cur.next.val > comparedCur.val) {
+      comparedCur.next = cur.next
+      cur.next = comparedCur
+    }
+    cur = cur.next
+  }
 }
 ```
