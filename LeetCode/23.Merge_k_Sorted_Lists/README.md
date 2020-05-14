@@ -24,6 +24,9 @@ dummyNode -> 1 -> 4 -> 5
 
 comparedCur
      1      -> 3 -> 4
+
+
+
 ```
 
 ```js
@@ -55,12 +58,16 @@ var mergeTwoLists = function(curList, compareList) {
   let cur = dummyNode
   let comparedCur = compareList
 
-  while (cur.next) {
+  while (cur.next || compared) {
     if (cur.next.val > comparedCur.val) {
+      let nextComparedCur = comparedCur.next
       comparedCur.next = cur.next
       cur.next = comparedCur
+      comparedCur = comparedCur.next
     }
     cur = cur.next
   }
+
+  return dummyNode.next
 }
 ```
