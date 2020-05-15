@@ -18,15 +18,14 @@ Output: 1->1->2->3->4->4->5->6
 
 可以将合并 k 个排序队列转换为合并 2 个排序队列。
 
+图例解释:
+
 ```js
-    cur
+   cur
 dummyNode -> 1 -> 4 -> 5
 
 comparedCur
-     1      -> 3 -> 4
-
-
-
+    2       -> 6
 ```
 
 ```js
@@ -42,12 +41,11 @@ comparedCur
  * @return {ListNode}
  */
 var mergeKLists = function(lists) {
-  if (lists[0]) return null
   let result = lists[0]
 
   for (let i = 1; i < lists.length; i++) {
     const compareList = lists[i]
-    result = mergeTwoLists(cur, compareList)
+    result = mergeTwoLists(result, compareList)
   }
   return result
 }
@@ -58,16 +56,30 @@ var mergeTwoLists = function(curList, compareList) {
   let cur = dummyNode
   let comparedCur = compareList
 
-  while (cur.next || compared) {
+  while (cur.next && comparedCur) {
     if (cur.next.val > comparedCur.val) {
       let nextComparedCur = comparedCur.next
       comparedCur.next = cur.next
       cur.next = comparedCur
-      comparedCur = comparedCur.next
+      comparedCur = nextComparedCur
     }
     cur = cur.next
+  }
+  if (comparedCur) {
+    cur.next = comparedCur
   }
 
   return dummyNode.next
 }
+```
+
+未通过:
+
+```js
+输入：
+[]
+输出：
+undefined
+预期：
+[]
 ```
