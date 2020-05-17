@@ -75,3 +75,8 @@ It's a css property that can be eaqual to the background-size, it has five types
 * cover: used in imagePicker
 * none
 * scale-down: if the image's size is imaller than box, it'll keep the image's size, otherwise it'll equal to contain. You can look for it [here](https://codepen.io/chrisnager/pen/XJgJqN)
+
+### style 里的样式过长该怎么办
+
+* 第一步: `$0.innerText`;
+* 第二步: 点击 `Show more(221 kB)`;
