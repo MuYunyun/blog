@@ -16,7 +16,7 @@ Output: 1->1->2->3->4->4->5->6
 
 ### Analyze
 
-可以将合并 k 个排序队列转换为合并 2 个排序队列。
+思路一: 分治算法。可以将合并 k 个排序队列转换为合并 2 个排序队列。
 
 图例解释:
 
@@ -41,7 +41,7 @@ comparedCur
  * @return {ListNode}
  */
 var mergeKLists = function(lists) {
-  let result = lists[0]
+  let result = lists[0] || null
 
   for (let i = 1; i < lists.length; i++) {
     const compareList = lists[i]
@@ -71,15 +71,3 @@ var mergeTwoLists = function(curList, compareList) {
 
   return dummyNode.next
 }
-```
-
-未通过:
-
-```js
-输入：
-[]
-输出：
-undefined
-预期：
-[]
-```
