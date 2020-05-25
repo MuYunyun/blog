@@ -1,52 +1,197 @@
-### 一些概念
+### 堆节点的访问
 
-* `大顶堆`: 用于`升序排序`
+通常堆是通过一维数组来实现的。在数组起始位置为 0 的情形中:
 
-每个节点都大于等于左右子节点的值。
+* 父节点 i 的左子节点在位置 `(2i + 1)`;
+* 父节点 i 的右子节点在位置 `(2i + 2)`;
+* 子节点 i 的父节点在位置 `Math.floor((i - 1) / 2)`;
 
-```js
-          50
-        ↙    ↘
-    30          25
-  ↙    ↘      ↙    ↘
-20      15  10      18
-```
+### Max Heap && Min Heap
 
-* `小顶堆`: 用于`降序排序`
-
-每个节点都小于等于左右子节点的值。
+* `Max Heap`: 每个节点都`大于等于左右子节点`的值。用于`升序排序`。
 
 ```js
-          10
-        ↙    ↘
-    15          18
-  ↙    ↘      ↙    ↘
-20      16  25      30
+           8
+        ↙     ↘
+     3          7
+  ↙    ↘      ↙   ↘
+2        1  5       4
 ```
 
-### 堆排序
+* `Min Heap`: 每个节点都`小于等于左右子节点`的值。用于`降序排序`。
 
-题目: 给定数组 `[5, 2, 7, 3, 2, 1, 4]`, 使用堆排序对其进行升序排列。
+```js
+          1
+        ↙    ↘
+      2        4
+   ↙    ↘    ↙   ↘
+  5       3 8      7
+```
+
+### Heap Sort
+
+题目: 给定数组 `[5, 2, 7, 3, 1, 8, 4]`, 使用堆排序对其进行升序排列。
 
 * 步骤一: 构造大顶堆;
 
 ```js
           5
-        ↙    ↘
-     2          7
+        ↙   ↘
+     2         7
           |
-       convert
+    因为子节点 7 大于 5, 因此作 convert, 结果如下
           ↓
 
           7
-        ↙    ↘
-     2          5
+        ↙   ↘
+     2         5
+          |
+    依此类推, 构造出大顶堆。
+          ↓
+
+           8
+        ↙     ↘
+     3          7
+  ↙    ↘      ↙   ↘
+2        1  5       4
 ```
 
-### 堆节点的访问
+* 步骤二: 取出顶部元素, 将数组末尾元素移到顶部;
+* 步骤三: 如果存在顶部元素的子元素大于顶部元素的情形, 对调它们(维持 max heap);
 
-通常堆是通过一维数组来实现的。在数组起始位置为 0 的情形中:
+```js
+           8
+        ↙     ↘
+     3          7
+  ↙    ↘      ↙   ↘
+2        1  5       4
+          |
+  取出顶部 8, 将数组末尾元素 4 移到顶部
+          ↓
 
-* 父节点 i 的左子节点在位置 (2i + 1);
-* 父节点 i 的右子节点在位置 (2i + 2);
-* 子节点 i 的父节点在位置 floor((i - 1) / 2);
+           4
+        ↙     ↘ (对调)
+     3          7
+  ↙    ↘      ↙
+2        1  5
+          |
+  如果存在顶部元素的子元素大于顶部元素的情形, 对调它们, 重新构造 max heap.
+          ↓
+
+           7
+        ↙     ↘
+     3          4
+  ↙    ↘      ↙
+2        1  5
+          |
+  重复上述 3 个步骤, 直到堆中的元素为空
+
+```
+
+下面来实现上述步骤:
+
+```js
+var heap_sort = function(arr) {
+  const result = []
+  let material = arr
+
+  while (material.length > 0) {
+    const maxHeapArr = builtMaxHeap(material)
+    result.unshift(maxHeapArr[0])
+    maxHeapArr[0] = maxHeapArr[maxHeapArr.length - 1]
+    material = maxHeapArr.slice(0, maxHeapArr.length - 1)
+  }
+
+  return result
+}
+
+// input: [5, 2, 7, 3, 1, 8, 4]
+// output: to build big heap [8, 3, 7, 2, 1, 5, 4]
+var builtMaxHeap = function(arr) {
+  let parent, compareChild
+  for (let i = 0; i < arr.length; i++) {
+    parent = Math.floor((i - 1) / 2)
+    compareChild = i
+    while (parent >= 0) {
+      if (arr[parent] < arr[compareChild]) {
+        swap(arr, parent, compareChild)
+        compareChild = parent
+        parent = Math.floor((compareChild - 1) / 2)
+      } else {
+        parent = -1
+      }
+    }
+  }
+  return arr
+}
+
+// swap two value in arr
+var swap = function(arr, pointOne, pointTwo) {
+  const tmp = arr[pointOne]
+  arr[pointOne] = arr[pointTwo]
+  arr[pointTwo] = tmp
+}
+```
+
+理想情况下, 堆排序时间复杂度应为 nlogn, 空间复杂度应为 1, 上述实现的代码中没有达到这一复杂度的。参考社区代码后重写:
+  * 由 len 控制执行时机;
+  * 对 arr 进行操作不引入额外变量;
+
+```js
+var len
+var heap_sort = function(arr) {
+  buildMaxHeapify(arr)
+
+  while (len > 1) {
+    swap(arr, len - 1, 0)
+    len--
+    keepMaxHeapify(arr, 0)
+  }
+
+  return arr
+}
+
+
+/**
+ * to build max heapify from bottom to top;
+ * the last subscript's parent subscript is Math.floor((len - 1) / 2)
+ */
+var buildMaxHeapify = function(arr) {
+  len = arr.length
+
+  for (let i = Math.floor((len - 1) / 2); i >= 0; i--) {
+    keepMaxHeapify(arr, i)
+  }
+}
+
+/**
+ * to keep max heap
+ */
+var keepMaxHeapify = function(arr, i) {
+  const left = 2 * i + 1
+  const right = 2 * i + 2
+  let maxSubscript = i
+
+  if (left < len && arr[left] > arr[maxSubscript]) {
+    maxSubscript = left
+  }
+
+  if (right < len && arr[right] > arr[maxSubscript]) {
+    maxSubscript = right
+  }
+
+  if (maxSubscript !== i) {
+    swap(arr, maxSubscript, i)
+    keepMaxHeapify(arr, maxSubscript)
+  }
+}
+
+/**
+ * swap two value in arr
+ */
+var swap = function(arr, pointOne, pointTwo) {
+  const tmp = arr[pointOne]
+  arr[pointOne] = arr[pointTwo]
+  arr[pointTwo] = tmp
+}
+```

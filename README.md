@@ -20,6 +20,7 @@ This is my persinal blog where to write and record some thought daily. If you li
   - [Build React from scratch](#build-react-from-scratch)
   - [Modern Testing](#modern-testing)
 - [Data Structure](#data-structure)
+  - [Algorithm](#algorithm)
 - [Design Pattern](#design-pattern)
 - [FE Cloud](#fe-cloud)
   - [JavaScript](#javascript)
@@ -126,23 +127,47 @@ This section we will start tralvel in the world of data strcture together! It's 
 * [Dynamic Programming](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/动态规划.md)
 * [Greedy Algorithm](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/贪心算法.md)
 
+<details>
+  <summary>algorithm</summary>
+
+#### Algorithm
+
+**Sort Algorithm**
+
+- [x] [Selection Sort](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/sort/selection_sort.md)
+- [x] [Quick Sort](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/sort/quick_sort.md)
+- [x] [Merge Sort](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/sort/merge_sort.md)
+- [x] [Heap Sort](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/sort/heap_sort.md)
+
+算法是一种思想! 以排序算法为例, 可能最常见的是在数组中使用排序算法, 但是相同的思想也能用于数组对象, 甚至链表中, 比如链表中实现排序的两道题。
+
+1. [147.Insertion Sort List](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/147.Insertion_Sort_List/README.md): 插入排序在链表中的实现;
+2. [148.Sort List](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/148.Sort_List/README.md): 归并排序在链表中的实现;
+
+**Common Algorithm**
+
+- [x] [Recursive](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/斐波那契数列优化.md)
+- [x] [Binary Search](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/二分查找.md)
+
+</details>
+
 ### Design Pattern
 
-* [单例模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/单例模式.md)
-* [策略模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/策略模式.md)
-* [代理模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/代理模式.md)
-* [迭代器模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/迭代器模式.md)
-* [发布-订阅模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/发布订阅模式.md)
-* [命令模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/命令模式.md)
-* [组合模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/组合模式.md)
-* [模板方法模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/模板方法模式.md)
-* [享元模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/享元模式.md)
-* [职责链模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/职责链模式.md)
-* [中介者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/中介者模式.md)
-* [装饰者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/装饰者模式.md)
-* [状态模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/状态模式.md)
-* [适配者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/适配者模式.md)
-* [观察者模式](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/观察者模式.md)
+* [Singleton Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/单例模式.md)
+* [Stralegy Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/策略模式.md)
+* [Proxy Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/代理模式.md)
+* [Iterator Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/迭代器模式.md)
+* [Publish/Subscribe Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/发布订阅模式.md)
+* [Command Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/命令模式.md)
+* [Composite Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/组合模式.md)
+* [Template Method Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/模板方法模式.md)
+* [Flyweight Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/享元模式.md)
+* [Chain of Responsibility Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/职责链模式.md)
+* [Mediator Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/中介者模式.md)
+* [Decorator Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/装饰者模式.md)
+* [State Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/状态模式.md)
+* [Adapter Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/适配者模式.md)
+* [Observer Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/观察者模式.md)
 
 ### FE Cloud
 
