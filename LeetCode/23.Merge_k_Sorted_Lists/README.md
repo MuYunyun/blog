@@ -71,3 +71,11 @@ var mergeTwoLists = function(curList, compareList) {
 
   return dummyNode.next
 }
+
+思路二: 优先队列
+
+todo
+
+```js
+
+```
