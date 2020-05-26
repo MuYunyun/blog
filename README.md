@@ -20,7 +20,6 @@ This is my persinal blog where to write and record some thought daily. If you li
   - [Build React from scratch](#build-react-from-scratch)
   - [Modern Testing](#modern-testing)
 - [Data Structure](#data-structure)
-  - [Algorithm](#algorithm)
 - [Design Pattern](#design-pattern)
 - [FE Cloud](#fe-cloud)
   - [JavaScript](#javascript)
@@ -114,40 +113,35 @@ This section we will start tralvel in the world of data strcture together! It's 
 
 > [Travel Of LeetCode](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
 
-* [Algorithm And Complexy](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/算法复杂度.md)
-* [Stack](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/栈.md)
-* [Queue](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/队列.md)
-* [List](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/链表.md)
-* [Set](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/集合.md)
-* [Dictionary](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/字典.md)
-* [Hash Table](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/哈希表.md)
-* [Binary Tree](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/二叉树.md)
-* [Gragh](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/图.md)
-* [Sort And Find](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/README.md)
-* [Dynamic Programming](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/动态规划.md)
-* [Greedy Algorithm](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/贪心算法.md)
+* [Stack](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/stack.md)
+* [Queue](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/queue.md)
+* [List](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/list.md)
+* [Set](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/set.md)
+* [Dictionary](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/.md)
+* [Hash Table](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/hash_table.md)
+* [Binary Tree](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/binary_tree.md)
+* [Graph](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/graph.md)
 
 <details>
   <summary>algorithm</summary>
 
-#### Algorithm
+* [Algorithm And Complexy](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/complexy.md)
+- [Recursive](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/recursive.md)
+- [Binary Search](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/binary_search.md)
+* [Greedy Algorithm](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/greedy.md)
+* [Dynamic Programming](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/dynamic_programming.md)
 
 **Sort Algorithm**
 
-- [x] [Selection Sort](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/sort/selection_sort.md)
-- [x] [Quick Sort](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/sort/quick_sort.md)
-- [x] [Merge Sort](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/sort/merge_sort.md)
-- [x] [Heap Sort](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/sort/heap_sort.md)
+- [x] [Selection Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/selection_sort.md)
+- [x] [Quick Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/quick_sort.md)
+- [x] [Merge Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/merge_sort.md)
+- [x] [Heap Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/heap_sort.md)
 
-算法是一种思想! 以排序算法为例, 可能最常见的是在数组中使用排序算法, 但是相同的思想也能用于数组对象, 甚至链表中, 比如链表中实现排序的两道题。
+算法是一种思想! 以排序算法为例, 最常见的是在数组中使用排序算法, 但是相同的思想也能用于数组对象, 甚至链表中, 比如链表中实现排序的两道题。
 
-1. [147.Insertion Sort List](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/147.Insertion_Sort_List/README.md): 插入排序在链表中的实现;
-2. [148.Sort List](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/148.Sort_List/README.md): 归并排序在链表中的实现;
-
-**Common Algorithm**
-
-- [x] [Recursive](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/斐波那契数列优化.md)
-- [x] [Binary Search](https://github.com/MuYunyun/blog/blob/master/BasicSkill/algorithm/二分查找.md)
+1. [147.Insertion Sort List](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/147.Insertion_Sort_List/README.md): insert sort in list;
+2. [148.Sort List](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/148.Sort_List/README.md): merge sort in list;
 
 </details>
 

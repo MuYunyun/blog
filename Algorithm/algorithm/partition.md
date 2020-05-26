@@ -51,4 +51,4 @@ console.log(testArr) // [3, 2, 5, 7, 9]
 
 ### partition 算法的作用
 
-见 leetcode 215: 数组中的第K个最大元素
+见 leetcode 215: 数组中的第 K 个最大元素
