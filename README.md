@@ -126,17 +126,17 @@ This section we will start tralvel in the world of data strcture together! It's 
   <summary>algorithm</summary>
 
 * [Algorithm And Complexy](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/complexy.md)
-- [Recursive](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/recursive.md)
-- [Binary Search](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/binary_search.md)
+* [Recursive](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/recursive.md)
+* [Binary Search](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/binary_search.md)
 * [Greedy Algorithm](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/greedy.md)
 * [Dynamic Programming](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/dynamic_programming.md)
 
 **Sort Algorithm**
 
-- [x] [Selection Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/selection_sort.md)
-- [x] [Quick Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/quick_sort.md)
-- [x] [Merge Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/merge_sort.md)
-- [x] [Heap Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/heap_sort.md)
+* [Selection Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/selection_sort.md)
+* [Quick Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/quick_sort.md)
+* [Merge Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/merge_sort.md)
+* [Heap Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/heap_sort.md)
 
 算法是一种思想! 以排序算法为例, 最常见的是在数组中使用排序算法, 但是相同的思想也能用于数组对象, 甚至链表中, 比如链表中实现排序的两道题。
 
