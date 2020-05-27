@@ -34,6 +34,62 @@
 
 ### 基于堆的优先队列
 
+* enqueue
+
+```js
+var len
+
+/**
+ * to build max heapify from bottom to top;
+ * the last subscript's parent subscript is Math.floor((len - 1) / 2)
+ */
+var buildMaxHeapify = function(arr) {
+  len = arr.length
+
+  for (let i = Math.floor((len - 1) / 2); i >= 0; i--) {
+    keepMaxHeapify(arr, i)
+  }
+}
+
+/**
+ * insert value into heap.
+ */
+var enqueue = function(arr, value) {
+  arr.push(value)
+  keepMaxHeapify(arr, arr.length - 1)
+}
+
+/**
+ *
+ */
+var dequeue = function() {
+
+}
+
+/**
+ * to keep max heap
+ */
+var keepMaxHeapify = function(arr, i) {
+  const left = 2 * i + 1
+  const right = 2 * i + 2
+  let maxSubscript = i
+
+  if (left < len && arr[left] > arr[maxSubscript]) {
+    maxSubscript = left
+  }
+
+  if (right < len && arr[right] > arr[maxSubscript]) {
+    maxSubscript = right
+  }
+
+  if (maxSubscript !== i) {
+    swap(arr, maxSubscript, i)
+    keepMaxHeapify(arr, maxSubscript)
+  }
+}
+```
+
+
 ```js
 /**
  * get current heap size
