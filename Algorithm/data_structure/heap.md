@@ -52,7 +52,7 @@ var buildMaxHeapify = function(arr) {
 }
 
 /**
- * insert value into heap.
+ * insert a value into heap.
  */
 var enqueue = function(arr, value) {
   arr.push(value)
@@ -63,7 +63,8 @@ var enqueue = function(arr, value) {
  *
  */
 var dequeue = function() {
-
+  const maxValue = arr[0]
+  swap(arr, len - 1, 0)
 }
 
 /**
