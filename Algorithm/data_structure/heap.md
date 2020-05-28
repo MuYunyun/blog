@@ -89,7 +89,7 @@ It's usually to use the two ways called enqueue and dequeue:
 2        1  5
           |
   redo the last steps
-
+          ↓
            7
         ↙     ↘
      3          5
@@ -113,15 +113,22 @@ var buildMaxHeapify = function(arr) {
 }
 
 /**
- * insert a value into heap.
+ * Insert a value into heap. It's an operation called sift up.
  */
 var enqueue = function(arr, value) {
-  arr.push(value)
-  keepMaxHeapify(arr, arr.length - 1)
+  arr.splice(len - 1, 0, value)
+  len++
+
+  let parent = Math.floor((len - 1) / 2
+  while () {
+
+  }
 }
 
-/**
- *
+/*
+ * to pick the smallest or the biggest element from the heap; Then t'll
+ * swap the endest element with the first element, and then keep the
+ * heap length reduce one. If so, only do once sift down operation in * the first element to keep heapify.
  */
 var dequeue = function() {
   const maxValue = arr[0]
@@ -130,7 +137,7 @@ var dequeue = function() {
 }
 
 /**
- * to keep max heap
+ * to keep max heap, it's an operation called sift down.
  */
 var keepMaxHeapify = function(arr, i) {
   const left = 2 * i + 1
@@ -149,36 +156,5 @@ var keepMaxHeapify = function(arr, i) {
     swap(arr, maxSubscript, i)
     keepMaxHeapify(arr, maxSubscript)
   }
-}
-```
-
-
-```js
-/**
- * get current heap size
- */
-var getSize = function() {
-
-}
-
-/**
- * find max element
- */
-var findMax = function() {
-
-}
-
-/**
- * extract max element
- */
-var dequeue = function() {
-
-}
-
-/**
- * insert value into heap
- */
-var enqueue = function(value) {
-
 }
 ```
