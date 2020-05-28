@@ -1,4 +1,4 @@
-### 堆
+### Heap
 
 堆是通过一维数组来实现的树结构。
 
@@ -32,9 +32,70 @@
   5       3 8      7
 ```
 
-### 基于堆的优先队列
+### Priority Queue Based Heap
 
-* enqueue
+It's usually to use the two ways called enqueue and dequeue:
+
+* `enqueue(value)`: insert value into the heap;
+  * Because the value is inserted into the last heap, we'll use `sift up` to adjust position;
+
+```js
+           10
+        ↙     ↘
+     3          7
+           |
+           ↓
+      `enqueue(9)`
+           10
+        ↙     ↘
+     3          7
+  ↙ sift up
+9
+           |
+           ↓
+           10
+        ↙     ↘
+     9          7
+  ↙ sift up
+3
+```
+
+* `dequeue()`: to pick the smallest or the biggest element from the heap;
+  * It'll swap the endest element with the first element, and then keep the heap length reduce 1. If so, only do once `sift down` operation in the first element to heapify.
+
+```js
+           8
+        ↙     ↘
+     3          7
+  ↙    ↘      ↙   ↘
+2        1  5       4
+          |
+  pick 8, move 4 to top
+          ↓
+
+           4
+        ↙     ↘ (swap)
+     3          7
+  ↙    ↘      ↙
+2        1  5
+          |
+  sift down 4 to rebuild max heap.
+          ↓
+
+           7
+        ↙     ↘
+     3          4
+  ↙    ↘      ↙
+2        1  5
+          |
+  redo the last steps
+
+           7
+        ↙     ↘
+     3          5
+  ↙    ↘      ↙
+2        1  4
+```
 
 ```js
 var len
@@ -65,6 +126,7 @@ var enqueue = function(arr, value) {
 var dequeue = function() {
   const maxValue = arr[0]
   swap(arr, len - 1, 0)
+  keepMaxHeapify(arr, 0)
 }
 
 /**
