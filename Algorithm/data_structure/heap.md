@@ -108,38 +108,50 @@ var buildMaxHeapify = function(arr) {
   len = arr.length
 
   for (let i = Math.floor((len - 1) / 2); i >= 0; i--) {
-    keepMaxHeapify(arr, i)
+    siftDown(arr, i)
   }
+  return arr
 }
 
 /**
  * Insert a value into heap. It's an operation called sift up.
  */
 var enqueue = function(arr, value) {
-  arr.splice(len - 1, 0, value)
+  debugger
+  arr.splice(len, 0, value)
   len++
+  siftUp()
+}
 
-  let parent = Math.floor((len - 1) / 2
-  while () {
-
+/**
+ * to keep max heap, it's an operation called sift up.
+ */
+var siftUp = function() {
+  let enqueueValSubscript = len - 1
+  let parent = Math.floor(enqueueValSubscript / 2)
+  while (parent > 0 && arr[parent] < arr[enqueueValSubscript]) {
+    swap(arr, parent, enqueueValSubscript)
+    enqueueValSubscript = parent
+    parent = Math.floor(enqueueValSubscript / 2)
   }
 }
 
 /*
- * to pick the smallest or the biggest element from the heap; Then t'll
- * swap the endest element with the first element, and then keep the
- * heap length reduce one. If so, only do once sift down operation in * the first element to keep heapify.
+ * to pick the smallest or the biggest element from the heap and return it;
+ * Then t'll swap the endest element with the first element, and then keep the
+ * heap length reduce one. If so, only do once sift down operation in the first element to keep heapify.
  */
 var dequeue = function() {
   const maxValue = arr[0]
   swap(arr, len - 1, 0)
-  keepMaxHeapify(arr, 0)
+  siftDown(arr, 0)
+  return maxValue
 }
 
 /**
  * to keep max heap, it's an operation called sift down.
  */
-var keepMaxHeapify = function(arr, i) {
+var siftDown = function(arr, i) {
   const left = 2 * i + 1
   const right = 2 * i + 2
   let maxSubscript = i
@@ -154,7 +166,35 @@ var keepMaxHeapify = function(arr, i) {
 
   if (maxSubscript !== i) {
     swap(arr, maxSubscript, i)
-    keepMaxHeapify(arr, maxSubscript)
+    siftDown(arr, maxSubscript)
   }
 }
+
+// swap two value in arr
+var swap = function(arr, pointOne, pointTwo) {
+  const tmp = arr[pointOne]
+  arr[pointOne] = arr[pointTwo]
+  arr[pointTwo] = tmp
+}
+```
+
+This is an one test case:
+
+```js
+input: var arr = [5, 2, 7, 3, 1, 8, 4]
+
+buildMaxHeapify(arr) // [8, 3, 7, 2, 1, 5, 4]
+           8                                           8
+        ↙     ↘          enqueue(arr, 6)            ↙     ↘
+     3          7        --------------->         6          7
+  ↙    ↘      ↙   ↘                            ↙    ↘      ↙   ↘
+2        1  5       4                        3        1   5       4
+                                           ↙
+                                         2
+
+                                     7
+        return 8                  ↙     ↘
+        dequeue()               6         5
+    ---------------->        ↙    ↘     ↙   ↘
+                           3       1   2      4
 ```
