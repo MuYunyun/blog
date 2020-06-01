@@ -152,3 +152,44 @@ git push origin --force --all
 * [removing-sensitive-data-from-a-repository](https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
 
 ask for Contact [GitHub Support](https://support.github.com/contact) or [GitHub Premium Support](https://premium.githubsupport.com/), asking them to remove cached views and references to the sensitive data in pull requests on GitHub.
+
+### clean up git commit
+
+使用交互式 rebase 则有更多的功能，可以细致的操作每一条 commit，这样我们就能合并，修改 commit
+
+```
+git rebase -i [start-commit] [end-commit]
+# (start-commit, end-commit] 前开后闭区间，默认 end-commit 为当前 HEAD
+```
+
+for example
+
+```
+git rebase -i HEAD~4
+```
+
+```
+1 pick 05a703d fix: 左右按键遇见 label 标签、加粗文字, 光标位置与预期不符
+2 s a716c1d fix: 修复 P0 报错
+3
+4 # Rebase d974fa9..a716c1d onto d974fa9 (2 command(s))
+5 #
+6 # Commands:
+7 # p, pick = use commit
+8 # r, reword = use commit, but edit the commit message
+9 # e, edit = use commit, but stop for amending
+10 # s, squash = use commit, but meld into previous commit
+11 # f, fixup = like "squash", but discard this commit's log message
+12 # x, exec = run command (the rest of the line) using shell
+13 # d, drop = remove commit
+14 #
+15 # These lines can be re-ordered; they are executed from top to bottom.
+16 #
+17 # If you remove a line here THAT COMMIT WILL BE LOST.
+18 #
+19 # However, if you remove everything, the rebase will be aborted.
+20 #
+21 # Note that empty commits are commented out
+```
+
+删除不想保留的 commit。
