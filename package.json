@@ -1,6 +1,10 @@
 {
   "name": "blog",
   "description": "life is a moment",
+  "scripts": {
+    "start": "create-react-doc -d React,BasicSkill,Algorithm,LeetCode --clean",
+    "build": "create-react-doc -d React,BasicSkill,Algorithm,LeetCode --clean --build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MuYunyun/blog.git"
@@ -14,6 +18,7 @@
   ],
   "author": "muyunyun",
   "homepage": "https://github.com/MuYunyun/blog#readme",
+  "license": "MIT",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
@@ -31,5 +36,8 @@
     "lint-md": "^0.2.0",
     "lint-md-cli": "^0.1.1",
     "lint-staged": "^9.2.1"
+  },
+  "dependencies": {
+    "create-react-doc": "^0.0.1"
   }
 }

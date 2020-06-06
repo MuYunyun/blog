@@ -11,7 +11,7 @@
                                                     `--"
 
 
-This is my persinal blog where to write and record some thought daily. If you like it, welcome watch or star✨.
+This is my persinal blog where to write and record some thought daily. It's powered by [create-react-doc](https://github.com/MuYunyun/create-react-doc). If you like it, welcome watch or star✨.
 
 - [React Series](#react-series)
   - [Deep Into React](#deep-into-react)
@@ -224,6 +224,8 @@ This section we will start tralvel in the world of data strcture together! It's 
 * [原生 JS 实现一个瀑布流插件](https://github.com/MuYunyun/fe_cloud/issues/12) <sub>[(相关项目)](https://github.com/MuYunyun/waterfall)
 * [实现一个自定义工具类库](https://github.com/MuYunyun/blog/issues/9) <sub>[(相关项目)](https://github.com/MuYunyun/diana)
 * [走近 Python](https://github.com/MuYunyun/blog/issues/8)
+
+> Now I'm writing File is just Blog.
 
 #### Project Framework
 
