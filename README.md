@@ -49,7 +49,7 @@ This section will introduce the world of React progressively. It'll tell the pri
 
 #### Component Design
 
-* [重新认识受控与非受控组件](https://github.com/MuYunyun/blog/blob/master/React/组件设计/重新认识受控与非受控组件.md)
+* [重新认识受控与非受控组件](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/重新认识受控与非受控组件.md)
 
 - [ ] [Build Mobile First Animation In React](https://github.com/MuYunyun/blog/blob/master/React/Component_Design/build_mobile_first_animation.md)
 
