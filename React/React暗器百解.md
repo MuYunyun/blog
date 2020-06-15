@@ -36,3 +36,17 @@
 点击一个按钮, 连续使用 setState 进行三次的增加, 如果使用 setState({}) 会造成 state 的合并, 使用 setState((state, props) => stateChange) 没有这个问题。
 
 > [react-as-a-ui-runtime](https://overreacted.io/react-as-a-ui-runtime/)
+
+* How to judge if the react element is Fragment?
+
+```js
+/**
+ * judege if is React Fragment.
+ */
+function isReactFragment(variableToInspect) {
+  if (variableToInspect.type) {
+    return variableToInspect.type === React.Fragment;
+  }
+  return variableToInspect === React.Fragment;
+}
+```
