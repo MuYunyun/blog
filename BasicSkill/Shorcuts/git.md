@@ -193,3 +193,28 @@ git rebase -i HEAD~4
 ```
 
 删除不想保留的 commit。
+
+### How do you make changes on a specific commit
+
+```
+1. git rebase -i <Earlier Commit>
+2. edit the commit info you want change from pick to edit
+3. git commit --amend --author="MuYunyun <muyy95@gmail.com>"
+4. git rebase --continue
+```
+
+### Setting your Git username
+
+* for every repository
+
+```
+$ git config --global user.name "Mona Lisa"
+$ git config --global user.name
+```
+
+* for a single repository
+
+```
+$ git config user.name "Mona Lisa"
+$ git config user.name
+```

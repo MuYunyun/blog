@@ -7,3 +7,4 @@ backup
 yarn.lock
 .cache
 .crd-dist
+_config.yml
