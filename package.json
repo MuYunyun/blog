@@ -2,7 +2,7 @@
   "name": "blog",
   "description": "life is a moment",
   "scripts": {
-    "start": "create-react-doc -d React,BasicSkill,Algorithm,LeetCode",
+    "start": "create-react-doc -d LeetCode",
     "build": "create-react-doc -d React,BasicSkill,Algorithm,LeetCode --build"
   },
   "repository": {
