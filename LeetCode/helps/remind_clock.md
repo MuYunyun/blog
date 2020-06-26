@@ -1,3 +1,4 @@
+```js
 /** remind to clock */
 (function remindClock (arr) {
   let print = ''
@@ -10,3 +11,4 @@
   if (print === '') return '齐了'
   return `${print}记得打卡`
 })([])
+```

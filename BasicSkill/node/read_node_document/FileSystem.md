@@ -1,6 +1,6 @@
 ### fs.Stats
 
-```
+```js
 Stats {
   dev: 2114,
   ino: 48064969,

@@ -1,3 +1,4 @@
+```js
 module.exports = {
   get body() {
     return this._body
@@ -15,3 +16,4 @@ module.exports = {
     this.res.statusCode = code
   }
 }
+```

@@ -1,3 +1,4 @@
+```js
 const url = require('url')
 
 module.exports = {
@@ -5,3 +6,4 @@ module.exports = {
     return url.parse(this.req.url, true).query
   }
 }
+```

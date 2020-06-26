@@ -1,3 +1,4 @@
+```js
 // ---- some useful fn to do with linked_list ----
 
 /**
@@ -33,3 +34,4 @@ function createTree(treeArr) {
   tree7 && (tree3.right = tree7)
   return tree1
 }
+```

@@ -93,7 +93,7 @@ This section will introduce the world of React progressively. It'll tell the pri
 
 * [前置准备](https://github.com/MuYunyun/blog/blob/master/React/从0到1实现React/0.前置准备.md)
 * [JSX 和 Virtual DOM](https://github.com/MuYunyun/blog/blob/master/React/从0到1实现React/1.JSX和虚拟DOM.md)
-* [组件 和 state|props](https://github.com/MuYunyun/blog/blob/master/React/从0到1实现React/2.组件和state|props.md)
+* [组件 和 state|props](https://github.com/MuYunyun/blog/blob/master/React/从0到1实现React/2.2.组件和state与props.md)
 * [生命周期](https://github.com/MuYunyun/blog/blob/master/React/从0到1实现React/3.生命周期.md)
 * [diff 算法](https://github.com/MuYunyun/blog/blob/master/React/从0到1实现React/4.diff算法.md)
 * [setState 优化](https://github.com/MuYunyun/blog/blob/master/React/从0到1实现React/5.setState.md)

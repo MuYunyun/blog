@@ -1,3 +1,4 @@
+```js
 // 这个文件为上下文文件, 可以理解为承上启下作用
 // module.exports = {
 //   get query() {
@@ -48,3 +49,4 @@ getResponse.forEach(r => {
 })
 
 module.exports = proto
+```

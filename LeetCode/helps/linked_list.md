@@ -1,3 +1,4 @@
+```js
 // ---- some useful fn to do with linked_list ----
 
 function ListNode(val) {
@@ -36,3 +37,4 @@ var printList = function (list) {
   }
   console.log(str)
 }
+```

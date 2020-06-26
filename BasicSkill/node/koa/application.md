@@ -1,3 +1,4 @@
+```js
 const http = require('http')
 const EventEmitter = require('events')
 const context = require('./context')
@@ -83,3 +84,4 @@ class Koa extends EventEmitter {
 }
 
 module.exports = Koa
+```

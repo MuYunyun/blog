@@ -70,7 +70,7 @@
 | 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/66.Plus_One/README.md) | Easy ||
 | 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/67.Add_Binary/README.md) | Easy ||
 | 68 | [Text Justification](https://leetcode.com/problems/text-justification/) | | Hard ||
-| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [Analuze](https://github.com/MuYunyun/blog/blob/master/LeetCode/69.Sqrt(x)/README.md) | Easy ||
+| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [Analuze](https://github.com/MuYunyun/blog/blob/master/LeetCode/69.Sqrt_X/README.md) | Easy ||
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/70.Climbing_Stairs/README.md) | Easy ||
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/71.Simplify_Path.md) | Medium | 栈 |
 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | | Hard ||

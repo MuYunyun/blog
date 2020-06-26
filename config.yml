@@ -1,0 +1,13 @@
+# create-react-doc configuration
+
+# Site
+title: Time Flying
+
+# Github
+## if you want to editing pages on github, you should config these arguments.
+user: MuYunyun
+repo: blog
+branch: master # the default value of branch is master
+
+# Available values: en| zh-cn
+language: en
