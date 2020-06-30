@@ -117,6 +117,8 @@ npm link ../beast-mobile-demo/node_modules/react from @msfe/beast-mobile
 
 另一种方法是在业务项目中配置 [resolutions](https://yarnpkg.com/lang/en/docs/selective-version-resolutions/)
 
+try [yalc](https://github.com/whitecolor/yalc)
+
 ### 区分几个 package.json 字段
 
 * dependencies: 业务依赖
