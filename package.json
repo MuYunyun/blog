@@ -2,8 +2,9 @@
   "name": "blog",
   "description": "life is a moment",
   "scripts": {
-    "start": "create-react-doc -d React,BasicSkill,Algorithm,LeetCode",
-    "build": "create-react-doc -d React,BasicSkill,Algorithm,LeetCode --build"
+    "start": "react-doc start",
+    "build": "react-doc build",
+    "deploy": "react-doc deploy"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,6 @@
     "lint-staged": "^9.2.1"
   },
   "dependencies": {
-    "create-react-doc": "^0.0.1"
+    "create-react-doc": "^0.0.6"
   }
 }
