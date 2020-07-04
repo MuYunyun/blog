@@ -12,6 +12,9 @@ $ npx lerna init
 * lerna init: 初始化当前项目
 * lerna run: 跑各个子包里的 `script`
 
+* [Mono repo 迁移实践](https://medium.com/@banyudu/mono-repo-%E8%BF%81%E7%A7%BB%E5%AE%9E%E8%B7%B5-eaf955aaf4d7)
+* [awesome-monorepo](https://github.com/korfuri/awesome-monorepo)
+
 ### 相关资料
 
 > [lerna github](https://github.com/lerna)
