@@ -39,6 +39,6 @@
     "lint-staged": "^9.2.1"
   },
   "dependencies": {
-    "create-react-doc": "^0.0.6"
+    "create-react-doc": "^0.0.7"
   }
 }

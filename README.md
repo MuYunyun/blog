@@ -10,7 +10,9 @@
                                                   \(   _.-"
                                                     `--"
 
-This is my persinal blog where to write and record some thought daily. It's powered by [create-react-doc](https://github.com/MuYunyun/create-react-doc). If you like it, welcome watch or star✨.
+This is my persinal blog where to write and record some thought daily. If you like it, welcome watch or star✨.
+
+> If you want to set up a blog based in github like me, [muyunyun.cn/blog](muyunyun.cn/blog). Welcome to use [create-react-doc](https://github.com/MuYunyun/create-react-doc).
 
 - [React Series](#react-series)
   - [Deep Into React](#deep-into-react)
