@@ -1,6 +1,14 @@
-需求背景: 需要在 `pc` 端容器里嵌套一个 `mobile` 容器，相当于要同时启动两个项目。
+### lerna
 
-将其定位为一个 `monorepo` 项目。
+### background
+
+~~需求背景: 需要在 `pc` 端容器里嵌套一个 `mobile` 容器，相当于要同时启动两个项目。~~
+
+~~将其定位为一个 `monorepos` 项目。~~
+
+From lerna
+
+> Splitting up large codebases into separate independently versioned packages is extremely useful for code sharing. However, making changes across many repositories is messy and difficult to track, and testing across repositories becomes complicated very quickly.
 
 ### 方案一: lerna
 
