@@ -10,7 +10,7 @@ From lerna
 
 > Splitting up large codebases into separate independently versioned packages is extremely useful for code sharing. However, making changes across many repositories is messy and difficult to track, and testing across repositories becomes complicated very quickly.
 
-### 方案一: lerna
+### Usage
 
 ```
 $ mkdir lerna-repo && cd $_
@@ -26,6 +26,21 @@ $ npx lerna init
 
 * [Mono repo 迁移实践](https://medium.com/@banyudu/mono-repo-%E8%BF%81%E7%A7%BB%E5%AE%9E%E8%B7%B5-eaf955aaf4d7)
 * [awesome-monorepo](https://github.com/korfuri/awesome-monorepo)
+
+### Advandage
+
+* Quick jump to reference file.
+  * Instead webpack alias maybe do extra config.
+
+### Q & A
+
+> why should add workspaces and private props in the root?
+
+The root package.json usually not have any effect, and workspaces and private props are used together.
+
+### Question
+
+It seems it should be named @crd/theme instead of @crd-theme.
 
 ### 相关资料
 
