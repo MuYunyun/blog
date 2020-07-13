@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[350],{1002:function(o,n){o.exports="- [ ] [前端自动化测试探索](https://fex.baidu.com/blog/2015/07/front-end-test/): 介绍测试比较广泛。包括样式测试。"}}]);

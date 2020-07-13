@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[356],{1008:function(e,n){e.exports="### react-dom\n\n本章目的梳理 `react-dom` 模块做了的事情。验证以下几件事。\n\n*. 创建 `React Root`\n  *. 创建 `Fiber Root`;\n  * expiretime\n  * 看到 scheduleWork 收尾\n* update\n\n[React 源码解析](https://react.jokcy.me/)"}}]);

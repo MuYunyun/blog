@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[101],{753:function(n,o){n.exports="### gold price\n\n* 4.14 371\n* 5.17 391"}}]);
