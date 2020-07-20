@@ -4,17 +4,26 @@
 
 React 的 logo 是一个原子图案, 原子组成了物质的表现。类似的, React 就像原子般构成了页面的表现; 而 Hooks 就如夸克, 其更接近 React 本质的样子, 但是直到 4 年后的今天才被真正设计出来。 —— Dan in React Conf(2018)
 
-### why Hooks?
+### WHY HOOKS?
 
 一: `多个组件间逻辑复用`: 在 Class 中使用 React 不能将带有 state 的逻辑给单独抽离成 function, 其只能通过嵌套组件的方式来解决多个组件间逻辑复用的问题, 基于嵌套组件的思想存在 [HOC](https://github.com/MuYunyun/blog/blob/master/React/从0到1实现React/8.HOC探索.md) 与 `render props` 两种设计模式。但是这两种设计模式是否存在缺陷呢?
 
 * 嵌套地狱, 当嵌套层级过多后, 数据源的追溯会变得十分困难, 导致定位 bug 不容易; (hoc、render props)
-* 性能, 需要额外的组件实例存在额外的开销; (hoc、render props)
+* 性能, 额外的组件实例需要存在额外的开销; (Hoc、Render props)
 * 命名重复性, 在一个组件中同时使用多个 hoc, 不排除这些 hoc 里的方法存在命名冲突的问题; (hoc)
 
-二: `单个组件中的逻辑复用`: Class 中的生命周期 `componentDidMount`、`componentDidUpdate` 甚至 `componentWillUnMount` 中的大多数逻辑基本是类似的, 必须拆散在不同生命周期中维护相同的逻辑对使用者是不友好的, 这样也造成了组件的代码量增加。
+二: `单个组件中的逻辑复用`: Class 中的生命周期 `componentDidMount`、`componentDidUpdate` 甚至 `componentWillUnMount` 中的大多数逻辑基本是类似的, 必须拆散在不同生命周期中维护相同的逻辑对使用者是不友好的, 这样也造成了冗余的组件代码量。
 
-三: Class 的其它一些问题: 在 React 使用 Class 需要书写大量样板, 用户通常会对 Class 中 Constructor 的 bind 以及 this 的使用感到困惑; 当结合 class 与 TypeScript 一起使用时, 需要对 defaultValue 做额外声明处理; 此外 React Team 表示 Class 在机器编译优化方面也不是很理想。
+三: Class 的其它一些问题: 书写 Class 组件时需要大量样板代码, 用户通常会对 Class 中 Constructor 的 bind 以及 this 的使用感到困惑(Todo: 举例); 当 Class 与 TypeScript 结合一起使用时, 需要对 defaultValue 做额外声明处理; 此外 React Team 表示 Class 在机器编译优化方面也不是很理想。
+
+------- 2020.07.19 -------
+
+* 组件重构
+* React Hooks 的常见陷阱
+  * 闭包陷阱, (useInterval)
+  * Hooks 规则, eslint-hooks 插件
+* Hooks 不能做?
+  * Matrix 组件
 
 ### useState 返回的值为什么是数组而非对象?
 
@@ -47,7 +56,7 @@ function Example({ someProp }, hooks) {
 }
 ```
 
-使用传递的劣势是会出现冗余的传递。(可以联想 context 解决了什么)
+使用传递的劣势是会出现冗余的传递。(可以联想 Context 解决了什么)
 
 ### Hooks 与 Class 中调用 setState 有不同的表现差异么?
 
@@ -150,7 +159,7 @@ export default function() {
 
 > 具体见 [issue](https://github.com/facebook/react/issues/14174#issuecomment-437551476)
 
-### Hooks 中的 useEffect 的执行时间是否与 componentDidMount/componentDidUpdate 相同
+### Hooks 中 useEffect 的执行时间是否与 componentDidMount/componentDidUpdate 相同
 
 在 [timing-of-effects](https://reactjs.org/docs/hooks-reference.html#timing-of-effects) 中有提到 `useEffect` 的执行时机是在浏览器下一次 layout 与 paint 之后, 与之相对的 `useLayoutEffect` 的执行时机是在浏览器下一次 layout 与 paint 之前(同 `componentDidMount`/`componentDidUpdate`)。
 
