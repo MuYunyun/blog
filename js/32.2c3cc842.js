@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[32],{684:function(s,n){s.exports="### xss(cross site script)\n\n* 内容型 xss: 后端返回前端的模板内容里掺杂脚本\n* 反射型 xss: url 里带有脚本\n* dom xss: 脚本通过 dom api 插入页面\n\n防止措施: 正则过滤\n\n### csrf(cross site request forgery)\n\n防止措施: 校验 token"}}]);

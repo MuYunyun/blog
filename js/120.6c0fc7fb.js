@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[120],{796:function(c,e){c.exports="### Child Process\n\n* `child_process.exec()`\n  * exec command.\n* `child_process.execFile()`\n  * exec file such as git.\n* `child_process.fork()`\n* `child_process.execSync()`\n* `child_process.execFileSync()`"}}]);

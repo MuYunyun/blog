@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[92],{744:function(n,i){n.exports="这篇文章梳理一些方法论\n\n### 既要又要还要\n\n既要学习, 又要实践, 还要总结。\n\n### medium\n\n* [medium unliited](https://medium-unlimited.ml/download/): medium 文章阅读不设上限的插件"}}]);
