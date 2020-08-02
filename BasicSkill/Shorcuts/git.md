@@ -213,8 +213,10 @@ $ git config --global user.name
 * for a single repository
 
 ```
-$ git config user.name "Mona Lisa"
+$ git config user.name "MuYunyun"
 $ git config user.name
+$ git config user.email "328375795@qq.com"
+$ git config user.email
 ```
 
 ### How to check the conflict of two branch, but not need to merge them?

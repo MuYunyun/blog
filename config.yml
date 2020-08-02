@@ -17,5 +17,16 @@ branch: master            # the default value of branch is master
 deploy_branch: gh-pages   # which branch to deploy.(default: gh-pages)
 # publish:                # if you want upload to gitlab or other git platform, you can set full git url in it
 
+# use search plugin: provide ability for searching site globally in the site.
+# default value: true
+search: true
+host: 'muyunyun.cn'            # the url host to search
+search_map: {                  # search_map is connected to menu props
+  '/Algorithm': 'Algorithm',
+  '/BasicSkill': 'BasicSkill',
+  '/LeetCode': 'LeetCode',
+  '/React': 'React'
+}
+
 # Available values: en | zh-cn
 language: en
