@@ -178,7 +178,7 @@ var swap = function(arr, pointOne, pointTwo) {
 }
 ```
 
-This is an one test case:
+Test case one:
 
 ```js
 input: var arr = [5, 2, 7, 3, 1, 8, 4]
