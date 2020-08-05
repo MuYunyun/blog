@@ -117,7 +117,6 @@ var buildMaxHeapify = function(arr) {
  * Insert a value into heap. It's an operation called sift up.
  */
 var enqueue = function(arr, value) {
-  debugger
   arr.splice(len, 0, value)
   len++
   siftUp()
@@ -144,6 +143,7 @@ var siftUp = function() {
 var dequeue = function() {
   const maxValue = arr[0]
   swap(arr, len - 1, 0)
+  len--
   siftDown(arr, 0)
   return maxValue
 }
