@@ -105,7 +105,7 @@
 | 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/101.Symmetric_Tree.md) | Easy ||
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/102.Binary_Tree_Level_Order_Traversal.md) | Medium | 队列 \| BFS \| 二叉树 |
 | 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/103.Binary_Tree_Zigzag_Level_Order_Traversal.md) | Medium | 队列 \| BFS \| 二叉树 |
-| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/104.Maximum_Depth_of_Binary_Tree.md) | Easy ||
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/104.Maximum_Depth_of_Binary_Tree.md) | Easy | Recursive |
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | | Medium ||
 | 106 | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | | Medium ||
 | 107 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/107.Binary_Tree_Level_Order_Traversal_II.md) | Easy | 队列 \| BFS \| 二叉树 |

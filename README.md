@@ -2,9 +2,7 @@
   <a href="http://muyunyun.cn/blog"><img src="http://with.muyunyun.cn/ec330b8ac2175c828be41f446f9f9619.jpg" /></a>
 </div>
 
-This is my persinal blog where to write and record some thought daily. If you like it, welcome watch or star✨.
-
-> If you want to set up a blog like me. Welcome to use [create-react-doc](https://github.com/MuYunyun/create-react-doc) and give advice.
+This is my persinal blog created with <a href="https://github.com/MuYunyun/create-react-doc" target="_blank">create-react-doc</a> where to write and record some thought daily. If you like it, welcome watch or star✨.
 
 - [React Series](#react-series)
   - [Deep Into React](#deep-into-react)
