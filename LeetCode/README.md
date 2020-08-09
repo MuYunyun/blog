@@ -112,7 +112,7 @@
 | 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | | Easy ||
 | 109 | [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | | Medium ||
 | 110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | | Easy ||
-| 111 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | | Easy ||
+| 111 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/111.Minimum_Depth_of_Binary_Tree.md) | Easy | Recursive |
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum/) | | Easy ||
 | 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii/) | | Medium ||
 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | | Medium ||
