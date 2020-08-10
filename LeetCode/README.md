@@ -101,8 +101,8 @@
 | 97 | [Interleaving String](https://leetcode.com/problems/interleaving-string/) | | Hard ||
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | | Medium ||
 | 99 | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) | | Hard ||
-| 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/100.Same_Tree.md) | Easy ||
-| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/101.Symmetric_Tree.md) | Easy ||
+| 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/100.Same_Tree.md) | Easy | Recursive |
+| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/101.Symmetric_Tree.md) | Easy | Recursively |
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/102.Binary_Tree_Level_Order_Traversal.md) | Medium | 队列 \| BFS \| 二叉树 |
 | 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/103.Binary_Tree_Zigzag_Level_Order_Traversal.md) | Medium | 队列 \| BFS \| 二叉树 |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/104.Maximum_Depth_of_Binary_Tree.md) | Easy | Recursive |
