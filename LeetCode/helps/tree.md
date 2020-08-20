@@ -18,20 +18,16 @@ function createTree(treeArr) {
     this.val = val
     this.left = this.right = null
   }
-  const tree1 = treeArr[0] && new TreeNode(treeArr[0])
-  const tree2 = treeArr[1] && new TreeNode(treeArr[1])
-  const tree3 = treeArr[2] && new TreeNode(treeArr[2])
-  const tree4 = treeArr[3] && new TreeNode(treeArr[3])
-  const tree5 = treeArr[4] && new TreeNode(treeArr[4])
-  const tree6 = treeArr[5] && new TreeNode(treeArr[5])
-  const tree7 = treeArr[6] && new TreeNode(treeArr[6])
+  const cacheObj = {}
+  for (let i = 0; i < treeArr.length; i++) {
+    cacheObj[`tree${i}`] = treeArr[i] && new TreeNode(treeArr[i])
+  }
 
-  tree2 && (tree1.left = tree2)
-  tree3 && (tree1.right = tree3)
-  tree4 && (tree2.left = tree4)
-  tree5 && (tree2.right = tree5)
-  tree6 && (tree3.left = tree6)
-  tree7 && (tree3.right = tree7)
-  return tree1
+  for (let i = 0; i < treeArr.length; i++) {
+    cacheObj[`tree${2 * i + 1}`] && (cacheObj[`tree${i}`].left = cacheObj[`tree${2 * i + 1}`])
+    cacheObj[`tree${2 * i + 2}`] && (cacheObj[`tree${i}`].right = cacheObj[`tree${2 * i + 2}`])
+  }
+
+  return cacheObj['tree0']
 }
 ```

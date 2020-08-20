@@ -111,7 +111,7 @@
 | 107 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/107.Binary_Tree_Level_Order_Traversal_II.md) | Easy | 队列 \| BFS \| 二叉树 |
 | 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | | Easy ||
 | 109 | [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | | Medium ||
-| 110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | | Easy ||
+| 110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/110.Balanced_Binary_Tree.md) | Easy | Recursive |
 | 111 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/111.Minimum_Depth_of_Binary_Tree.md) | Easy | Recursive |
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum/) | | Easy ||
 | 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii/) | | Medium ||
