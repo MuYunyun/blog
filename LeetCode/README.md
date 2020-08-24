@@ -207,7 +207,7 @@
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/219.Contains_Duplicate_II.md) | Easy ||
 | 220 | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/220.Contains_Duplicate_III.md) | Medium ||
 | 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | | Medium ||
-| 222 | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) | | Medium ||
+| 222 | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/222.Count_Complete_Tree_Nodes.md) | Medium | Recursive |
 | 223 | [Rectangle Area](https://leetcode.com/problems/rectangle-area/) | | Medium ||
 | 224 | [Basic Calculator](https://leetcode.com/problems/basic-calculator/) | | Hard ||
 | 225 | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | | Easy ||
