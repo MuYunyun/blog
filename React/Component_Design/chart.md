@@ -25,3 +25,16 @@
 * [antv f2](https://f2.antv.vision/zh/examples/candlestick/basic)
 * [ant design pro](https://v2-pro.ant.design/components/charts-cn)
 * [Biz Charts](https://bizcharts.net/product/bizcharts/category/7/page/12): to read
+
+### line chart
+
+|                     shape 类型                     |       解释       |
+| :------------------------------------------------: | :--------------: |
+|                       'line'                       |       折线       |
+|                      'smooth'                      |     平滑曲线     |
+|                       'dot'                        |       点线       |
+|                       'dash'                       |       虚线       |
+|                       'dash'                       |       虚线       |
+| 'hv', 'vh', 'hvh', 'vhv', 'hv', 'vh', 'hvh', 'vhv' | 信号相关的折线图 |
+
+> h means horizontal, v means vertical
