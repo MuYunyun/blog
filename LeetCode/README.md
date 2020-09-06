@@ -385,6 +385,7 @@
 | 398 | [Random Pick Index](https://leetcode.com/problems/random-pick-index/) | | Medium ||
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | | Medium ||
 | 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | | Easy ||
+| 404 | [Sum Of Left Leaves](https://leetcode-cn.com/problems/sum-of-left-leaves/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/404.Sum_of_Left_Leaves.md) | Easy | Recursive |
 | 438 | [Find All Anagrams In A String](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/438.Find_All_Anagrams_In_A_String.md) | Medium ||
 | 445 | [Add Two Numbers II](https://leetcode-cn.com/problems/add-two-numbers-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/445.Add_Two_Numbers_II/README.md) | Medium ||
 | 447 | [Number of Boomerangs](https://leetcode-cn.com/problems/number-of-boomerangs/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/447.Number_Of_Boomerangs.md) | Easy ||
