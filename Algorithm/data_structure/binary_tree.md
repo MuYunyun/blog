@@ -266,6 +266,8 @@ tree.insert(6)
 
 ![](http://with.muyunyun.cn/212607e3b24b52c0df959902ed8e4b1f.jpg-300)
 
+> 三者都为 DFS, 本质在于节点的访问时机不同。
+
 三种遍历的实现方式大同小异, 可在上面代码中观察到实现的差异。如下是 Leetcode 中对应三种不同遍历方式的题目:
 
 * [Binary Tree Preorder Traversal](https://github.com/MuYunyun/blog/blob/master/LeetCode/144.Binary_Tree_Preorder_Traversal/README.md)
