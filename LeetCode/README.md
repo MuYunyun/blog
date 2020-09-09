@@ -242,7 +242,7 @@
 | 254 | [Factor Combinations](https://leetcode.com/problems/factor-combinations/) :blue_book: | | Medium ||
 | 255 | [Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/) :blue_book: | | Medium ||
 | 256 | [Paint House](https://leetcode.com/problems/paint-house/) :blue_book: | | Easy ||
-| 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) | | Easy ||
+| 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/257.Binary_Tree_Paths.md) | Easy | DFS、Recursive |
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits/) | | Easy ||
 | 259 | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) :blue_book: | | Medium ||
 | 260 | [Single Number III](https://leetcode.com/problems/single-number-iii/) | | Medium ||
