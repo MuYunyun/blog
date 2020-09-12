@@ -113,8 +113,8 @@
 | 109 | [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | | Medium ||
 | 110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/110.Balanced_Binary_Tree.md) | Easy | Recursive |
 | 111 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/111.Minimum_Depth_of_Binary_Tree.md) | Easy | Recursive |
-| 112 | [Path Sum](https://leetcode.com/problems/path-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/112.Path_Sum.md) | Easy | Recursive |
-| 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii/) | | Medium ||
+| 112 | [Path Sum](https://leetcode.com/problems/path-sum/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/112.Path_Sum.md) | Easy | Recursive(DFS) |
+| 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/113.Path_Sum_II.md) | Medium | Recursive(DFS) |
 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | | Medium ||
 | 115 | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | | Hard ||
 | 116 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | | Medium ||
