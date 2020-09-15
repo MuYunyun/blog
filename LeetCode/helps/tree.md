@@ -20,7 +20,7 @@ function createTree(treeArr) {
   }
   const cacheObj = {}
   for (let i = 0; i < treeArr.length; i++) {
-    cacheObj[`tree${i}`] = treeArr[i] && new TreeNode(treeArr[i])
+    cacheObj[`tree${i}`] = typeof treeArr[i] === 'number' && new TreeNode(treeArr[i])
   }
 
   for (let i = 0; i < treeArr.length; i++) {

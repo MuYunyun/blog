@@ -130,7 +130,7 @@
 | 126 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/) | | Hard ||
 | 127 | [Word Ladder](https://leetcode.com/problems/word-ladder/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/127.Word_Ladder.md) | Medium | BFS \| 图求最短路径 |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | | Hard ||
-| 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | | Medium ||
+| 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [Analyze](https://github.com/MuYunyun/blog/blob/master/LeetCode/129.Sum_Root_to_Leaf_Numbers.md) | Medium | Recursive \| DFS |
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | | Medium ||
 | 131 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | | Medium ||
 | 132 | [Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/) | | Hard ||
