@@ -5,8 +5,8 @@
     "start": "react-doc start",
     "build": "react-doc build",
     "deploy": "react-doc deploy",
-    "download": "leetcode download",
-    "download-all": "leetcode download -a"
+    "download": "crd-leetcode download",
+    "download-all": "crd-leetcode download -a"
   },
   "repository": {
     "type": "git",

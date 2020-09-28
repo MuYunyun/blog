@@ -85,20 +85,6 @@
 
 也就是说 `yarn` 结合了 `npm` 和 `cnpm` 的优点。
 
-### 写法
-
-```
-yarn add xx -D
-```
-
--------------- 分割线 ---------------
-
-### yarn 使用心得
-
-在本地开发一个独立的包, 可以通过 `yarn link` 进行链接开发。
-
-> yarn link 的包同时会注入到 node_modules 中
-
 #### Hooks 踩坑
 
 There are three common reasons you might be seeing it:
@@ -124,11 +110,3 @@ try [yalc](https://github.com/whitecolor/yalc)
 * dependencies: 业务依赖
 * devDependencies: 开发依赖
 * pureDependencies: 在 dependencies 的基础上加上 warning, @桃夭表示使用 pureDependencies 业务只会打出一份包。而使用 dependencies 业务中如果有不同版本的依赖, 会打出多份包。
-
-### 配置 yarn 全局路径
-
-* 1. `yarn global dir` 得到 /Users/mac/.config/yarn/global
-* 2. vim .zshrc
-  * 2.1 加上 export NODE_PATH=/Users/mac/.config/yarn/global/node_modules/
-* yarn add puppeteer -g
-```
