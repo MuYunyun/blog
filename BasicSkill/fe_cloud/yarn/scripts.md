@@ -14,3 +14,16 @@ yarn add xx -D
 * 2. vim .zshrc
   * 2.1 加上 export NODE_PATH=/Users/mac/.config/yarn/global/node_modules/
 * yarn add puppeteer -g
+
+### bin
+
+```js
+yarn global bin // find yarn global bin path
+npm bin -g      // find npm global bin path
+```
+
+yarn link xx, 就是将 bin 的命令挂载到 global 上。
+
+```js
+yarn link xx
+```

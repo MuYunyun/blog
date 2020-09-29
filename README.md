@@ -4,14 +4,14 @@
 
 This is my persinal blog created with <a href="https://github.com/MuYunyun/create-react-doc" target="_blank">create-react-doc</a> where to write and record some thought daily. If you like it, welcome watch or star✨.
 
+- [Data Structure](#data-structure)
+- [Design Pattern](#design-pattern)
 - [React Series](#react-series)
   - [Deep Into React](#deep-into-react)
   - [Component Design](#component-design)
   - [React Stack](#react-stack)
   - [Build React from scratch](#build-react-from-scratch)
   - [Modern Testing](#modern-testing)
-- [Data Structure](#data-structure)
-- [Design Pattern](#design-pattern)
 - [FE Cloud](#fe-cloud)
   - [JavaScript](#javascript)
   - [CSS](#css)
@@ -19,6 +19,62 @@ This is my persinal blog created with <a href="https://github.com/MuYunyun/creat
   - [Node.js](#nodejs)
   - [FE CLOUD](#fe-cloud-1)
   - [Project Framework](#project-framework)
+
+### Data Structure
+
+This section we will start tralvel in the world of data strcture together! It's worth nothing the travel is so interestring that you'll enjoy it too!
+
+> [Travel Of LeetCode](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
+
+* [Stack](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/stack.md)
+* [Queue](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/queue.md)
+* [List](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/list.md)
+* [Set](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/set.md)
+* [Dictionary](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/.md)
+* [Hash Table](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/hash_table.md)
+* [Binary Tree](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/binary_tree.md)
+* [Graph](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/graph.md)
+
+<details>
+  <summary>algorithm</summary>
+
+* [Algorithm And Complexy](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/complexy.md)
+* [Recursive](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/recursive.md)
+* [Binary Search](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/binary_search.md)
+* [Greedy Algorithm](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/greedy.md)
+* [Dynamic Programming](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/dynamic_programming.md)
+
+**Sort Algorithm**
+
+* [Selection Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/selection_sort.md)
+* [Quick Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/quick_sort.md)
+* [Merge Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/merge_sort.md)
+* [Heap Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/heap_sort.md)
+
+算法是一种思想! 以排序算法为例, 最常见的是在数组中使用排序算法, 但是相同的思想也能用于数组对象, 甚至链表中, 比如链表中实现排序的两道题。
+
+1. [147.Insertion Sort List](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/147.Insertion_Sort_List/README.md): insert sort in list;
+2. [148.Sort List](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/148.Sort_List/README.md): merge sort in list;
+
+</details>
+
+### Design Pattern
+
+* [Singleton Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/单例模式.md)
+* [Stralegy Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/策略模式.md)
+* [Proxy Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/代理模式.md)
+* [Iterator Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/迭代器模式.md)
+* [Publish/Subscribe Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/发布订阅模式.md)
+* [Command Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/命令模式.md)
+* [Composite Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/组合模式.md)
+* [Template Method Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/模板方法模式.md)
+* [Flyweight Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/享元模式.md)
+* [Chain of Responsibility Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/职责链模式.md)
+* [Mediator Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/中介者模式.md)
+* [Decorator Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/装饰者模式.md)
+* [State Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/状态模式.md)
+* [Adapter Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/适配者模式.md)
+* [Observer Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/观察者模式.md)
 
 ### React Series
 
@@ -97,62 +153,6 @@ This section will introduce the world of React progressively. It'll tell the pri
 
 * [React 现代化测试](https://github.com/MuYunyun/blog/blob/master/React/测试/React现代化测试.md)
 * [Jest 与 react-testing-Library](https://github.com/MuYunyun/blog/blob/master/React/测试/Jest与ReactTestingLibrary.md)
-
-### Data Structure
-
-This section we will start tralvel in the world of data strcture together! It's worth nothing the travel is so interestring that you'll enjoy it too!
-
-> [Travel Of LeetCode](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
-
-* [Stack](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/stack.md)
-* [Queue](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/queue.md)
-* [List](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/list.md)
-* [Set](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/set.md)
-* [Dictionary](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/.md)
-* [Hash Table](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/hash_table.md)
-* [Binary Tree](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/binary_tree.md)
-* [Graph](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/graph.md)
-
-<details>
-  <summary>algorithm</summary>
-
-* [Algorithm And Complexy](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/complexy.md)
-* [Recursive](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/recursive.md)
-* [Binary Search](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/binary_search.md)
-* [Greedy Algorithm](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/greedy.md)
-* [Dynamic Programming](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/dynamic_programming.md)
-
-**Sort Algorithm**
-
-* [Selection Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/selection_sort.md)
-* [Quick Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/quick_sort.md)
-* [Merge Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/merge_sort.md)
-* [Heap Sort](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/sort/heap_sort.md)
-
-算法是一种思想! 以排序算法为例, 最常见的是在数组中使用排序算法, 但是相同的思想也能用于数组对象, 甚至链表中, 比如链表中实现排序的两道题。
-
-1. [147.Insertion Sort List](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/147.Insertion_Sort_List/README.md): insert sort in list;
-2. [148.Sort List](https://github.com/MuYunyun/blog/blob/master/BasicSkill/LeetCode/148.Sort_List/README.md): merge sort in list;
-
-</details>
-
-### Design Pattern
-
-* [Singleton Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/单例模式.md)
-* [Stralegy Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/策略模式.md)
-* [Proxy Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/代理模式.md)
-* [Iterator Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/迭代器模式.md)
-* [Publish/Subscribe Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/发布订阅模式.md)
-* [Command Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/命令模式.md)
-* [Composite Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/组合模式.md)
-* [Template Method Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/模板方法模式.md)
-* [Flyweight Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/享元模式.md)
-* [Chain of Responsibility Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/职责链模式.md)
-* [Mediator Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/中介者模式.md)
-* [Decorator Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/装饰者模式.md)
-* [State Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/状态模式.md)
-* [Adapter Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/适配者模式.md)
-* [Observer Pattern](https://github.com/MuYunyun/blog/blob/master/BasicSkill/设计模式/观察者模式.md)
 
 ### FE Cloud
 
