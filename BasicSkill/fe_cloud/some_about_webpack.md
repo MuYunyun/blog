@@ -12,4 +12,4 @@ resolve: {
 }
 ```
 
-通常情况下，模块的 package 都不会声明 browser 或 module 字段，所以便是使用 main 了。
+通常情况下，模块的 package 都不会声明 `browser` 或 `module` 字段，所以便是使用 `main` 了。
