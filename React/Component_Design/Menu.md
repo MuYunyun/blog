@@ -8,8 +8,12 @@
 
 ### JavaScript 动画与 CSS 动画
 
-@todo JavaScript/CSS animation
-@body to write this in the future.
+```js
+/**
+ * @todo JavaScript/CSS animation
+ * @body to write this in the future.
+ */
+```
 
 ### 细节
 

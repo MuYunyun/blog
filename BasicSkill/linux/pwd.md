@@ -1,5 +1,5 @@
 ### pwd
 
 * pwd
-  * print working directory
+  * pathname of the current working directory
   * 当前路径
