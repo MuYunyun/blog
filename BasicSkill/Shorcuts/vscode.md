@@ -19,3 +19,9 @@
 ### 推荐字体
 
 * [vscode](https://github.com/sdras/night-owl-vscode-theme)
+
+### 插件开发
+
+* 本地开发调试
+  * 打包：`vsce package`
+  * 扩展视图命令下拉菜单中使用 `Install from VSIX` 命令安装

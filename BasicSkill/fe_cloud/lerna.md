@@ -21,7 +21,7 @@ $ npx lerna init
 * lerna run: 跑各个子包里的 `script`
 * lerna bootstrap: Bootstrap the packages in the current Lerna repo. Installs all of their dependencies and links any cross-dependencies.
 * lerna add: add module to child module from the root dir. [document](https://github.com/lerna/lerna/tree/master/commands/add#examples)
-  * lerna add yamljs --scope=crd-scripts --dev
+  * lerna add eslint --scope=crd-scripts --dev
 
 > details see [lerna doc](https://lerna.js.org/)
 
