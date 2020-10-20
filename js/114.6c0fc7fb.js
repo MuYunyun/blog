@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[114],{790:function(n,o){n.exports="### 第一版测试: 封装 http\n\n```js\nconst Koa = require('../application')\n\nconst app = new Koa()\n\napp.use((req, res) => {\n  res.end('hello koa')\n})\n\napp.listen(3000, '127.0.0.1', () => {\n  console.log('listening on the 3000')\n})\n```"}}]);

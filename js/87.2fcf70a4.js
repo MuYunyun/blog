@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[87],{777:function(n,s){n.exports="### W3C\n\nSome CSS guideness can be found there.\n\n* [w3c](https://github.com/w3c/csswg-drafts)"}}]);

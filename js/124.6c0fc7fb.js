@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[124],{800:function(n,o){n.exports="### TTY\n\nTTY short for terminal."}}]);
