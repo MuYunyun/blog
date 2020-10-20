@@ -19,14 +19,17 @@ deploy_branch: gh-pages   # which branch to deploy.(default: gh-pages)
 
 # use search plugin: provide ability for searching site globally in the site.
 # default value: true
-search: false
-host: 'muyunyun.cn'            # the url host to search
-search_map: {                  # search_map is connected to menu props
-  '/Algorithm': 'Algorithm',
-  '/BasicSkill': 'BasicSkill',
-  '/LeetCode': 'LeetCode',
-  '/React': 'React'
-}
+# search: false
+# host: 'muyunyun.cn'            # the url host to search
+# search_map: {                  # search_map is connected to menu props
+#   '/Algorithm': 'Algorithm',
+#   '/BasicSkill': 'BasicSkill',
+#   '/LeetCode': 'LeetCode',
+#   '/React': 'React'
+# }
 
 # Available values: en | zh-cn
 language: en
+
+# used theme
+theme: crd-seed
