@@ -1,0 +1,33 @@
+name: traffic2badge
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '1 0 * * *' #UTC
+
+jobs:
+  run:
+    name: Make GitHub Traffic to Badge
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2.3.3
+
+      - name: Get Traffic
+        id: traffic
+        uses: yi-Xu-0100/traffic-to-badge@v1.1.4
+        with:
+          my_token: ${{ secrets.TRAFFIC_TOKEN }}
+          #(default) static_list: ${{ github.repository }}
+          #(default) traffic_branch: traffic
+          #(default) views_color: brightgreen
+          #(default) clones_color: brightgreen
+          #(default) logo: github
+
+      - name: Show Traffic Data
+        run: |
+          echo ${{ steps.traffic.outputs.traffic_branch }}
+          echo ${{ steps.traffic.outputs.traffic_path }}
+          cd ${{ steps.traffic.outputs.traffic_path }}
+          ls -a
