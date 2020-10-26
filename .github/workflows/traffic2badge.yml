@@ -14,9 +14,24 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2.3.3
 
-      - name: Get Traffic
+      - name: Get Commit Message
+        id: message
+        uses: actions/github-script@v3.0.0
+        env:
+          FULL_COMMIT_MESSAGE: '${{ github.event.head_commit.message }}'
+        with:
+          result-encoding: string
+          script: |
+            var message = `${process.env.FULL_COMMIT_MESSAGE}`;
+            core.info(message);
+            if (message != '') return message;
+            var time = new Date(Date.now()).toISOString();
+            core.info(time);
+            return `Get traffic data at ${time}`;
+
+      - name: Set Traffic
         id: traffic
-        uses: yi-Xu-0100/traffic-to-badge@v1.1.4
+        uses: yi-Xu-0100/traffic-to-badge@v1.1.5
         with:
           my_token: ${{ secrets.TRAFFIC_TOKEN }}
           #(default) static_list: ${{ github.repository }}
@@ -24,6 +39,16 @@ jobs:
           #(default) views_color: brightgreen
           #(default) clones_color: brightgreen
           #(default) logo: github
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3.7.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: ${{ steps.traffic.outputs.traffic_branch }}
+          publish_dir: ${{ steps.traffic.outputs.traffic_path }}
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          full_commit_message: ${{ steps.message.outputs.result }}
 
       - name: Show Traffic Data
         run: |
