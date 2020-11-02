@@ -48,8 +48,11 @@ ls -a
 # -F 可以显示类型，用以区分是文件还是目录
 ls -F # 后缀为 ”/“ 代表是目录，”*“ 为可执行文件，没有则为文件
 
-# -i 查看inode编号, 每一个文件或目录都有一个唯一的编号，这个数字由内核分配给文件系统中的每一个对象
+# -i 查看 inode 编号, 每一个文件或目录都有一个唯一的编号，这个数字由内核分配给文件系统中的每一个对象
 ls -i
+
+# 过滤文件列表, * 代表 0 个或多个字符, ? 代表一个字符
+ls READ*
 ```
 
 ### pwd
@@ -119,7 +122,142 @@ mkdir -p temp/temp2/temp3
 mkdir -m 777 temp
 ```
 
-* [to read](https://github.com/xjh22222228/linux-manual#mktemp)
+### more
+
+* 空格 - 查看下一屏内容
+* B - 查看上一屏内容
+* 回车 - 查看下一行内容
+* Q - 退出
+
+```bash
+more README.md
+
+# 从第10行开始显示
+more +10 README.md
+```
+
+### paste
+
+合并 N 个文件的`列`。
+
+> 并不是纵向合并, 而是横向合并。
+
+```bash
+# 1.txt 和 2.txt 合并输出
+paste 1.txt 2.txt
+
+# 1.txt 2.txt 合并后保存为 3.txt
+paste 1.txt 2.txt > 3.txt
+```
+
+### stat
+
+用于显示文件或目录的状态信息
+
+```js
+16777220 8702541224 -rw-r--r-- 1 mac staff 0 15857 "Nov  1 13:02:02 2020" "Nov  1 13:02:02 2020" "Nov  1 13:02:02 2020" "Oct 25 18:48:15 2020" 4096 32 0 README.md
+```
+
+### grep
+
+强大的文本搜索工具, 被称为 Linux 命令三剑客。
+
+```bash
+# 从 README.md 文件中搜索 linux 关键字
+grep "linux" README.md
+grep "linux" README.md README2.md # 多个文件搜索
+
+# 输出时高亮显示
+grep "linux" README.md --color
+
+# -o 只输出匹配部分
+grep -o "linux" README.md --color
+
+# -n 输出到匹配的行数
+grep -n "linux" README.md
+
+# -c 输出到匹配次数
+grep -c "linux" README.md
+
+# -r 递归目录文件搜索
+grep -r "linux" ./src
+
+# 使用 glob 风格表达式搜索
+egrep "[0-9]" # 等价于 grep -E "[0-9]" README.md
+```
+
+### touch
+
+创建一个空文件, 如果文件存在只会修改文件的创建时间
+
+```bash
+touch README.md
+```
+
+### cd
+
+进入指定目录
+
+```bash
+# 进入当前 src 目录
+cd src
+
+# 回到上一次目录
+cd -
+
+# 返回上一级目录
+cd ..
+cd ../../..   # 返回多级
+
+# 进入家目录
+cd ~
+cd # 或者不带任何参数
+
+# 将上一个命令的参数作为cd参数使用
+cd !$
+
+# 模糊匹配目录，有时目录名很长一个一个敲效率就很低
+# * 代表0个或多个字符， ? 代表一个字符
+cd READ*
+```
+
+### rm
+
+删除指定目录或文件
+
+> 使用此命令需要非常小心, 一但删除无法恢复
+
+```bash
+# 删除当前 1.txt 文件
+rm 1.txt
+
+# -i 删除前询问是否真的要删除，因为一旦删除无法恢复
+rm -i README.md
+
+# 这条命令比较常用, 强制删除目录或文件
+# -r 如果是目录递归删除, -f 强制删除 不发出任何警告
+rm -rf ./src
+```
+
+### cp
+
+拷贝文件或目录
+
+```bash
+# 将当前 README.md 文件拷贝到上一层
+cp ./README.md ../README.md
+
+# -a 将原文件属性一同拷贝, 修改时间、创建时间等
+cp -a ./README.md ../README.md
+
+# -r 用于递归拷贝目录
+cp -r home ../home
+
+# -i 如果目标文件存在会询问用户是否需要覆盖
+cp -i README.md README.md
+```
+
+* [to read](https://github.com/xjh22222228/linux-manual#cat)
 
 ### link
 

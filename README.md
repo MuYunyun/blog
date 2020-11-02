@@ -218,8 +218,6 @@ This section will introduce the world of React progressively. It'll tell the pri
 * [实现一个自定义工具类库](https://github.com/MuYunyun/blog/issues/9) <sub>[(相关项目)](https://github.com/MuYunyun/diana)
 * [走近 Python](https://github.com/MuYunyun/blog/issues/8)
 
-> Now I'm writing File is just Blog.
-
 #### Project Framework
 
 * [CAS 登入流程](https://github.com/MuYunyun/blog/blob/master/BasicSkill/project_framework/CAS登入流程.md)
