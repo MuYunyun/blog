@@ -1,13 +1,13 @@
 [
   {
     "referrer": "github.com",
-    "count": 174,
-    "uniques": 80
+    "count": 176,
+    "uniques": 81
   },
   {
     "referrer": "leetcode-cn.com",
-    "count": 14,
-    "uniques": 10
+    "count": 17,
+    "uniques": 12
   },
   {
     "referrer": "muyunyun.cn",
@@ -21,8 +21,8 @@
   },
   {
     "referrer": "Google",
-    "count": 8,
-    "uniques": 7
+    "count": 9,
+    "uniques": 8
   },
   {
     "referrer": "mail.qq.com",
