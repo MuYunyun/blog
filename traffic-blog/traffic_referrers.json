@@ -1,8 +1,8 @@
 [
   {
     "referrer": "github.com",
-    "count": 157,
-    "uniques": 74
+    "count": 147,
+    "uniques": 68
   },
   {
     "referrer": "leetcode-cn.com",
@@ -11,12 +11,12 @@
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 10,
-    "uniques": 10
+    "count": 9,
+    "uniques": 9
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 8,
+    "count": 6,
     "uniques": 6
   },
   {
@@ -40,12 +40,12 @@
     "uniques": 1
   },
   {
-    "referrer": "v2ex.com",
+    "referrer": "awesomeopensource.com",
     "count": 1,
     "uniques": 1
   },
   {
-    "referrer": "awesomeopensource.com",
+    "referrer": "dogedoge.com",
     "count": 1,
     "uniques": 1
   }
