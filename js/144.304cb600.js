@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[144],{834:function(n,e){n.exports="### 方法论\n\n| short name |         full name          |      mean      |\n| :--------: | :------------------------: | :------------: |\n|    OKR     | Objectives and Key Results | 目标和关键结果 |\n|    KPI     | Key Performance Indication |  关键业绩指标  |\n\n* OKR: 方法论\n* KPI: 结果"}}]);

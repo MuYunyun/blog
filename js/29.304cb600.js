@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[29],{719:function(n,c){n.exports="### iTerm2 快捷键\n\n```\nctrl + a: 到行首\nctrl + e: 到行尾\nctrl + u: 删除当前行\nctrl + w: 删除光标当前单词\n```"}}]);

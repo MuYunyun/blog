@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[64],{754:function(n,p){n.exports="### Apple Id\n\n账号名(美区): muyy95@gmail.com\n账户名(国区): 328375795@qq.com\n\n> [注册美区 Apple ID](https://zhuanlan.zhihu.com/p/36574047)\n"}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[210],{900:function(r,n){r.exports="/**\n * @param {string} str\n * @returns {string}\n */\nvar reverseWords = function (str) {\n  const handleStr = str.trim().replace(/\\s\\s+/g, ' ')\n  const reverseStr = handleStr.split(' ').reverse().join(' ')\n\n  return reverseStr\n};"}}]);
