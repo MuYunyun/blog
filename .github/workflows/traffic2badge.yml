@@ -2,7 +2,7 @@ name: traffic2badge
 on:
   push:
     branches:
-      - master
+      - main
   schedule:
     - cron: '1 0 * * *' #UTC
 

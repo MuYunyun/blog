@@ -27,7 +27,7 @@ This is my persinal blog created with <a href="https://github.com/MuYunyun/creat
 
 ### Data Structure
 
-This section we will start tralvel in the world of data strcture together! It's worth nothing the travel is so interestring that you'll enjoy it too!
+This section we will start tralvel in the world of data strcture together! There is no doubt that the travel is so interestring that you'll enjoy it too!
 
 > [Travel Of LeetCode](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
 
@@ -160,6 +160,8 @@ This section will introduce the world of React progressively. It'll tell the pri
 * [Jest 与 react-testing-Library](https://github.com/MuYunyun/blog/blob/master/React/测试/Jest与ReactTestingLibrary.md)
 
 ### FE Cloud
+
+This section will talk about colorful frontend world.
 
 #### JavaScript
 
