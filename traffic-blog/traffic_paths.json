@@ -2,25 +2,19 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 311,
-    "uniques": 123
+    "count": 283,
+    "uniques": 122
   },
   {
     "path": "/MuYunyun/blog/blob/master/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/单例模式.md at master · MuYunyun/blog · GitHub",
-    "count": 59,
-    "uniques": 41
-  },
-  {
-    "path": "/MuYunyun/blog/actions",
-    "title": "Actions · MuYunyun/blog",
-    "count": 56,
-    "uniques": 2
+    "count": 58,
+    "uniques": 40
   },
   {
     "path": "/MuYunyun/blog/issues",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 43,
+    "count": 30,
     "uniques": 9
   },
   {
@@ -28,6 +22,12 @@
     "title": "blog/代理模式.md at master · MuYunyun/blog · GitHub",
     "count": 29,
     "uniques": 20
+  },
+  {
+    "path": "/MuYunyun/blog/actions",
+    "title": "Actions · MuYunyun/blog",
+    "count": 24,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/blog/blob/master/LeetCode/README.md",
