@@ -1,8 +1,8 @@
 [
   {
     "referrer": "github.com",
-    "count": 149,
-    "uniques": 72
+    "count": 135,
+    "uniques": 70
   },
   {
     "referrer": "leetcode-cn.com",
@@ -21,8 +21,8 @@
   },
   {
     "referrer": "Google",
-    "count": 7,
-    "uniques": 6
+    "count": 6,
+    "uniques": 5
   },
   {
     "referrer": "link.juejin.im",
@@ -35,17 +35,17 @@
     "uniques": 2
   },
   {
-    "referrer": "mail.qq.com",
-    "count": 2,
-    "uniques": 2
-  },
-  {
     "referrer": "blog.csdn.net",
     "count": 2,
     "uniques": 1
   },
   {
     "referrer": "dogedoge.com",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "referrer": "mail.qq.com",
     "count": 1,
     "uniques": 1
   }
