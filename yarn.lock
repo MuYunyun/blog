@@ -2655,10 +2655,10 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
-crd-scripts@^0.2.13:
-  version "0.2.13"
-  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-0.2.13.tgz#427219ba81080b1176d32431f2106d666b424cbd"
-  integrity sha512-cMN91gs8kjt6JpUPk6vsPMtJ8BdDBbNi+qkLQ6TuyFcy/9y5bXyTMXz2cfJ6Xuwjf938w+voUG5MIt0EFflbDg==
+crd-scripts@^0.2.15:
+  version "0.2.15"
+  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-0.2.15.tgz#3c44d029709da03b8976c97d77fed4db359fd73e"
+  integrity sha512-YA1kQUHgV2SLfuq4zCKnd9MPTVoeVPGBfDCCtM9m1Jvduxq7PKc4stNZM7DeX4if9gYy6m3cDYeCJdCbYpEsgw==
   dependencies:
     "@babel/cli" "^7.2.3"
     "@babel/core" "^7.3.4"
@@ -2677,7 +2677,7 @@ crd-scripts@^0.2.13:
     colors-cli "^1.0.13"
     copy-markdown-image-webpack-plugin "^2.0.0"
     copy-template-dir "^1.3.0"
-    crd-theme "^0.2.13"
+    crd-theme "^0.2.14"
     crd-utils "^0.2.8"
     css-loader "^0.28.7"
     detect-port "^1.2.2"
@@ -2713,15 +2713,15 @@ crd-scripts@^0.2.13:
     write "^1.0.3"
     yamljs "^0.3.0"
 
-crd-templates@^0.2.10:
-  version "0.2.10"
-  resolved "https://registry.npmjs.org/crd-templates/-/crd-templates-0.2.10.tgz#a445c0b85fee135aae2a51626917a3d6f54e1cf1"
-  integrity sha512-lM62zSNKswBvnsQ4UVoRkNWHNuLuML6mB9ZqAwtZEEFZt6Y9UKcUWyDsQGsVIi4qqMYhf8zWDZglUr+MKJpktA==
+crd-templates@^0.2.15:
+  version "0.2.15"
+  resolved "https://registry.npmjs.org/crd-templates/-/crd-templates-0.2.15.tgz#b0a540e044f5cd3adc28095693aa1bc205efe5bc"
+  integrity sha512-nCC7+tzKx1AA4rLj+NOc6GchFyE8KO9h7/mhHZPxOu6SmxKrYpFyjF1ZBOBuyiOmnHgXw6pWcrsFWaYvactdLA==
 
-crd-theme@^0.2.13:
-  version "0.2.13"
-  resolved "https://registry.npmjs.org/crd-theme/-/crd-theme-0.2.13.tgz#d2342cbf3d0fafc6b1f507c9f1233c1349bdbdc7"
-  integrity sha512-8rzNJFhuqWFHMPy08B/DkX0S3NPADP2oBr9/Aa+fWNXKf8OLQuk158QBc1KoNUV/PPJUPQY4bX+d7Kz7PBtRdA==
+crd-theme@^0.2.14:
+  version "0.2.14"
+  resolved "https://registry.npmjs.org/crd-theme/-/crd-theme-0.2.14.tgz#74acfc8f34ad7fb6c8a8795112a563e05f9f917d"
+  integrity sha512-LD/nVwDBVgSOe3pEcQhpQdSA32xiNPLqYAkSy7Yb2bSdFkLKF9HwFo2dGsFSNYxE6xL9ru+/8YwWPG0Qd6ztJg==
   dependencies:
     classnames "^2.2.6"
     diana "^1.0.2"
@@ -2770,15 +2770,15 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-doc@^0.2.13:
-  version "0.2.13"
-  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-0.2.13.tgz#944ba9fabadff50924246c052f7ef67ad05a242d"
-  integrity sha512-wC+8eXqmXvsnUWojI01aBeSKuzGtSI0A0dNEgTcl5vCYLbwDs+sLZeFSyKFhTG/RjG457LbUN0nBhSiVkpKlCw==
+create-react-doc@^0.2.15:
+  version "0.2.15"
+  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-0.2.15.tgz#8d84e7ee116e54eee759746a510a6f7c184258fa"
+  integrity sha512-wapev0DLGpBwHnXXb0auW11yl9iH9D2yiG6Sb61GWc2aK8xuhvO8wQfT1tOM9qzwHG+H62sbXIDpU8NLLMG2dQ==
   dependencies:
     commander "^2.12.2"
-    crd-scripts "^0.2.13"
-    crd-templates "^0.2.10"
-    crd-theme "^0.2.13"
+    crd-scripts "^0.2.15"
+    crd-templates "^0.2.15"
+    crd-theme "^0.2.14"
     fs-extra "^5.0.0"
 
 cross-spawn@^6.0.0, cross-spawn@^6.0.5:
