@@ -132,7 +132,7 @@ mkdir -m 777 temp
 ```bash
 more README.md
 
-# 从第10行开始显示
+# 从第 10 行开始显示
 more +10 README.md
 ```
 
@@ -258,6 +258,96 @@ cp -i README.md README.md
 ```
 
 * [to read](https://github.com/xjh22222228/linux-manual#cat)
+
+### cat
+
+查看指定整个文件内容
+
+```bash
+# 查看 README.md 文件所有内容
+cat README.md
+cat README.md README2.md  # 或者一次性显示多个文件
+
+# -n 每一行显示行号
+cat -n README.md
+
+# -b 只给有内容的行显示行号
+cat -b README.md
+```
+
+### mv
+
+mv 有 2 个用途：
+
+* 将文件或目录移动到另一个位置
+* 将文件或目录重命名
+
+```bash
+# 将 README.md 重命名为 README-2.md, 如果 README-2.md 存在会直接覆盖。
+mv README.md README-2.md
+
+# 将 README.md 移动到上一层目录
+mv README.md ../README.md
+
+# -i 交互式操作，如果目标文件存在则进行询问是否覆盖
+mv -i README.md ../README.md
+```
+
+### open
+
+open 命令可在 linux / mac 具有可视化界面下进行文本编辑、打开应用程序等功能。
+
+```bash
+# 在mac下用Finder打开当前目录
+open .
+
+# 用默认应用程序打开文件
+open README.md
+
+# 用默认编辑器打开文件
+open -e README.md
+
+# 如果是一个URL用默认浏览器打开页面
+open https://github.com/MuYunyun/blog.git
+
+# 指定某个应用程序打开某个文件, 如果不指定文件默认直接打开程序
+open -a /Applications/Google\ Chrome.app README.md
+```
+
+### source
+
+在当前Shell环境中从指定文件读取和执行命令， 通常用于重新执行环境。
+
+它有个别名 . 点操作符号。
+
+```bash
+# 等价 . ~/.bash_profile
+source ~/.bash_profile
+```
+
+实际上大部分开发者都没搞懂 source 命令。 可以把它理解为编程语言中的 import, java/python/js 都有这个，就是用来导入文件。
+
+下面演示 source 用于 shell 脚本中
+
+util.sh
+
+```bash
+#!/bin/bash
+getName() {
+  echo "Linux"
+}
+```
+
+main.sh
+
+```bash
+#!/bin/bash
+# 加载文件
+source ./util.sh
+
+# 这样就可以调用 util 文件中的函数了
+echo $(getName)
+```
 
 ### link
 
