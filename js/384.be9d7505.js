@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[384],{1074:function(n,p){n.exports="来看为什么有如下 api:\n\n### call/put\n\n本质目的是让测试用例不必再发起多一次函数调用, 取而代之转为比较对象是否相同。\n\n* 使用 `call` 替代使用 `fetch`\n* 使用 `put` 替代使用 `dispatch{action}`\n\n### fork\n\n* 使用 `fork`: 模拟多个线程\n\n### redux-saga 相较于 redux-thunk 的一些优点\n\n* 对测试用例较为友好(比较函数和传入参数)\n* 对异步操作流程的操作颗粒度更加细"}}]);
