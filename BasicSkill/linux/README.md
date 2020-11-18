@@ -349,6 +349,101 @@ source ./util.sh
 echo $(getName)
 ```
 
+### tree
+
+生成目录树结构, 通常用于描述项目结构。
+
+```bash
+# 递归当前目录下所有文件并生成目录树
+tree
+
+# -I 忽略某些目录
+tree -I "node_modules"
+
+# 只显示目录
+tree -d
+
+# 指定要递归的目录层级
+tree -L 3
+```
+
+### ln
+
+将某一个文件在另外一个位置建立并产生同步的链接。当不同的 2 个目录需要同时引用某一个文件时此命令就派上用场了。
+
+> 这个命令的应用场景: 比如 yarn link
+
+* 软链接也可以叫符号链接：
+  * 软链接，以路径的形式存在。类似于Windows操作系统中的快捷方式;
+  * 软链接可以 跨文件系统, 硬链接不可以;
+  * 软链接可以对一个不存在的文件名进行链接;
+  * 软链接可以对目录进行链接;
+* 硬链接:
+  * 硬链接，以文件副本的形式存在。但不占用实际空间, 从根本上而言就是同一个文件;
+  * 不允许给目录创建硬链接;
+  * 硬链接只有在同一个文件系统中才能创建;
+
+> 理解: 文件系统博主理解: 比如在 mac 系统中装了个虚拟机, 虚拟机里面跑了另外一个 window 系统, 那此时 mac 和虚拟机里面的系统就是两个不同的文件系统。
+
+```bash
+# 默认创建硬链接，修改 README.md 内容， a.md 也会同步修改, 修改 a.md, README.md 也会同步修改
+ln README.md a.md
+
+# -s 创建软链接
+ln -s README.md a.md # 如果删除了 README.md  a.md 将失效
+
+# -f 强制执行
+ln -f README.md ./src/a.md
+```
+
+### file
+
+查看文件类型, 比如文件、目录、二进制、符号链接等。
+
+```bash
+file README.md
+README.md: HTML document text, UTF-8 Unicode text
+```
+
+## 系统管理
+
+### ping
+
+测试目标地址是否可连接、延迟度
+
+```bash
+# 测试 github.com 连通性, 按 ctrl + C 停止
+ping github.com
+
+# ping 5 次后断开
+ping -c 5 github.com
+
+# 每 5 秒 ping 一次
+ping -i 5 github.com
+```
+
+### which
+
+查找某个命令存储在哪个位置, 输出绝对路径, which 会在环境变量 $PATH 设置的目录里去查找。
+
+注: 可以通过 echo $PATH 查看设置的目录.
+
+```bash
+which top  # /usr/bin/top
+
+# 打印多个命令
+which ping top
+```
+
+### uptime
+
+
+
+```bash
+# 当前系统运行的天数，小时，分钟 (从上次开机起计算), 当前系统登录用户数。一分钟、5分钟、15分钟平均负载, 这 3 个值不能大于 CPU 个数，如果大于了说明系统负载高，性能低。
+uptime # 13:25  up 2 days, 18:57, 7 users, load averages: 2.06 2.06 2.15
+```
+
 ### link
 
 * thanks for [Read Linux](https://github.com/xjh22222228/linux-manual).
