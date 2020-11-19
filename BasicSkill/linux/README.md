@@ -437,12 +437,63 @@ which ping top
 
 ### uptime
 
-
-
 ```bash
 # 当前系统运行的天数，小时，分钟 (从上次开机起计算), 当前系统登录用户数。一分钟、5分钟、15分钟平均负载, 这 3 个值不能大于 CPU 个数，如果大于了说明系统负载高，性能低。
 uptime # 13:25  up 2 days, 18:57, 7 users, load averages: 2.06 2.06 2.15
 ```
+
+### uname
+
+打印系统信息
+
+```bash
+# 不带任何参数打印当前操作系统内核名称
+uname # Darwin , 等价于 uname -s
+
+# 打印系统所有信息, cloud-2.local: 网络节点主机名称, x86_64: 主机的硬件架构名称
+uname -a # Darwin cloud-2.local 19.4.0 Darwin Kernel Version 19.4.0: Wed Mar  4 22:28:40 PST 2020; root:xnu-6153.101.6~15/RELEASE_X86_64 x86_64
+
+# 打印主机的硬件架构名称
+uname -m # x86_64
+```
+
+### ifconfig
+
+配置或显示系统网卡的网络参数。
+
+```bash
+# 显示所有网络参数信息
+ifconfig
+```
+
+### lsof
+
+列出当前系统打开文件的工具
+
+```bash
+## 打印所有打开文件的的列表
+lsof
+
+# 查看指定端口被占用情况
+lsof -i:8080
+```
+
+### alias
+
+设置命令别名，用于简化较长的命令。
+
+```bash
+# 列出所有已设置的别名
+alias
+
+# 删除所有别名
+unalias -a
+
+# 设置别名
+alias ll='ls -l'
+```
+
+## 系统进程
 
 ### link
 
