@@ -2,20 +2,14 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 179,
-    "uniques": 95
+    "count": 165,
+    "uniques": 91
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/单例模式.md at main · MuYunyun/blog · GitHub",
-    "count": 55,
-    "uniques": 36
-  },
-  {
-    "path": "/MuYunyun/blog/actions",
-    "title": "Actions · MuYunyun/blog",
-    "count": 27,
-    "uniques": 3
+    "count": 54,
+    "uniques": 35
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md",
@@ -42,21 +36,27 @@
     "uniques": 12
   },
   {
-    "path": "/MuYunyun/blog/issues",
-    "title": "Issues · MuYunyun/blog",
-    "count": 16,
-    "uniques": 4
-  },
-  {
     "path": "/MuYunyun/blog/tree/main/BasicSkill",
     "title": "blog/BasicSkill at main · MuYunyun/blog · GitHub",
     "count": 15,
     "uniques": 11
   },
   {
+    "path": "/MuYunyun/blog/issues",
+    "title": "Issues · MuYunyun/blog",
+    "count": 15,
+    "uniques": 3
+  },
+  {
     "path": "/MuYunyun/blog/issues/11",
     "title": "MVVM 框架解析之双向绑定 · Issue #11 · MuYunyun/blog · GitHub",
     "count": 14,
     "uniques": 13
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/观察者模式.md at main · MuYunyun/blog · GitHub",
+    "count": 14,
+    "uniques": 11
   }
 ]
