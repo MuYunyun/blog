@@ -2,14 +2,14 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 185,
-    "uniques": 101
+    "count": 174,
+    "uniques": 96
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/单例模式.md at main · MuYunyun/blog · GitHub",
-    "count": 61,
-    "uniques": 42
+    "count": 60,
+    "uniques": 41
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md",
@@ -26,7 +26,7 @@
   {
     "path": "/MuYunyun/blog/blob/main/LeetCode/README.md",
     "title": "blog/README.md at main · MuYunyun/blog · GitHub",
-    "count": 23,
+    "count": 21,
     "uniques": 16
   },
   {
@@ -54,9 +54,9 @@
     "uniques": 13
   },
   {
-    "path": "/MuYunyun/blog/tree/main/BasicSkill",
-    "title": "blog/BasicSkill at main · MuYunyun/blog · GitHub",
-    "count": 15,
-    "uniques": 11
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/装饰者模式.md at main · MuYunyun/blog · GitHub",
+    "count": 14,
+    "uniques": 13
   }
 ]
