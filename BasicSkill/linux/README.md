@@ -495,6 +495,14 @@ alias ll='ls -l'
 
 ## 系统进程
 
+### ps
+
+涵盖命令参数三大风格
+
+* Unix 风格, `前面加单破折线`
+* BSD 风格, 全称伯克利软件发行版(Berkeley software distribution), `前面不加破折线`
+* GNU 风格, 全称 "Gnu's Not Unix", `前面加双破折线`
+
 ### link
 
 * thanks for [Read Linux](https://github.com/xjh22222228/linux-manual).
