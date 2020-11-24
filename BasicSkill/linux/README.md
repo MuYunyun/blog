@@ -497,11 +497,28 @@ alias ll='ls -l'
 
 ### ps
 
-涵盖命令参数三大风格
+ps 命令涵盖命令参数三大风格
 
 * Unix 风格, `前面加单破折线`
 * BSD 风格, 全称伯克利软件发行版(Berkeley software distribution), `前面不加破折线`
 * GNU 风格, 全称 "Gnu's Not Unix", `前面加双破折线`
+
+```bash
+# 配合 grep 查询指定进程, -a means: all, -f means full
+ps -af | grep nginx
+```
+
+## 其它
+
+### clear
+
+用于清除当前终端所有信息，本质上只是向后翻了一页，往上滚动还能看到之前的操作信息
+
+> 注：效果等用于 `command + K` 可以完全清除终端所有操作信息。
+
+```bash
+clear
+```
 
 ### link
 
