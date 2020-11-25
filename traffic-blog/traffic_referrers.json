@@ -1,8 +1,8 @@
 [
   {
     "referrer": "github.com",
-    "count": 104,
-    "uniques": 57
+    "count": 100,
+    "uniques": 54
   },
   {
     "referrer": "leetcode-cn.com",
@@ -30,22 +30,22 @@
     "uniques": 2
   },
   {
-    "referrer": "jianshu.com",
-    "count": 4,
-    "uniques": 2
-  },
-  {
     "referrer": "Google",
     "count": 3,
     "uniques": 3
   },
   {
-    "referrer": "cnblogs.com",
+    "referrer": "jianshu.com",
     "count": 3,
     "uniques": 1
   },
   {
     "referrer": "blog.csdn.net",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "referrer": "mail.qq.com",
     "count": 1,
     "uniques": 1
   }
