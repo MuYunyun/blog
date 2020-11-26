@@ -1,18 +1,18 @@
 [
   {
     "referrer": "github.com",
-    "count": 100,
+    "count": 88,
     "uniques": 54
   },
   {
     "referrer": "leetcode-cn.com",
-    "count": 20,
+    "count": 21,
     "uniques": 18
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 13,
-    "uniques": 12
+    "count": 14,
+    "uniques": 13
   },
   {
     "referrer": "muyunyun.cn",
@@ -20,19 +20,19 @@
     "uniques": 6
   },
   {
+    "referrer": "v2ex.com",
+    "count": 6,
+    "uniques": 4
+  },
+  {
     "referrer": "html.cn",
     "count": 5,
     "uniques": 1
   },
   {
-    "referrer": "v2ex.com",
-    "count": 4,
-    "uniques": 2
-  },
-  {
     "referrer": "Google",
-    "count": 3,
-    "uniques": 3
+    "count": 4,
+    "uniques": 4
   },
   {
     "referrer": "jianshu.com",
@@ -40,7 +40,7 @@
     "uniques": 1
   },
   {
-    "referrer": "blog.csdn.net",
+    "referrer": "sourcegraph.com",
     "count": 1,
     "uniques": 1
   },
