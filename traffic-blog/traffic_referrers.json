@@ -1,13 +1,13 @@
 [
   {
     "referrer": "github.com",
-    "count": 109,
-    "uniques": 60
+    "count": 98,
+    "uniques": 55
   },
   {
     "referrer": "leetcode-cn.com",
-    "count": 24,
-    "uniques": 21
+    "count": 23,
+    "uniques": 20
   },
   {
     "referrer": "link.zhihu.com",
@@ -31,8 +31,8 @@
   },
   {
     "referrer": "v2ex.com",
-    "count": 4,
-    "uniques": 4
+    "count": 3,
+    "uniques": 3
   },
   {
     "referrer": "jianshu.com",
@@ -40,12 +40,12 @@
     "uniques": 1
   },
   {
-    "referrer": "blog.csdn.net",
+    "referrer": "wiki.baidu.com",
     "count": 1,
     "uniques": 1
   },
   {
-    "referrer": "wiki.baidu.com",
+    "referrer": "mail.qq.com",
     "count": 1,
     "uniques": 1
   }
