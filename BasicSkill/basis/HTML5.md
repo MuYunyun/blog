@@ -197,3 +197,7 @@ frame = requestAnimationFrame(callback) // 在下次重绘之前调用回调
 JavaScript 是一门单线程的语言, 借助 Web Worker 能在浏览器上模拟线程的概念。
 
 * `Service Worker`: 基于 Web Worker 的 api 来处理网络请求以及缓存, 可以将其理解为是 `Web Worker + cache storage` 的组合。同时其也是 PWA 依赖的最为重要的技术。
+
+### 浏览器支持 HTML5 情况
+
+可以在 html5test.com 查询浏览器支持 HTML5 情况。
