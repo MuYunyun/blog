@@ -35,4 +35,14 @@
   * WTF       // 智能类库。字符串操作、各种容器、指针、线程、算法等
 * Tools
 
-read page 48
+### Chromium 多进程模型
+
+![](http://with.muyunyun.cn/af3e700cca1056b8796667751e27e7ec.jpg-muyy)
+
+* Browser 进程: 浏览器的主进程, 是其它类型进程的祖先, 负责它们的创建和销毁。
+* Renderer 进程: 网页的渲染进程。
+* NPAPI 进程。
+* GPU 进程。
+* Pepper 进程。
+
+read page 51
