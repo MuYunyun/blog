@@ -52,7 +52,7 @@ console.log(music.getName()) // 流行音乐古典音乐
 
 上述案例可以抽象为下图:
 
-![](http://with.muyunyun.cn/8a9ccba28d00ea0c752c3601d716ebcd.jpg-400)
+![explain](http://with.muyunyun.cn/8a9ccba28d00ea0c752c3601d716ebcd.jpg-400)
 
 > 虚线表示可以注入, 但在代码中没有表现出来。
 
