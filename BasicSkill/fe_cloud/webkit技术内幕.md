@@ -41,8 +41,8 @@
 
 * Browser 进程: 浏览器的主进程, 是其它类型进程的祖先, 负责它们的创建和销毁。
 * Renderer 进程: 网页的渲染进程。
-* NPAPI 进程。
-* GPU 进程。
-* Pepper 进程。
+* NPAPI 插件进程。
+* GPU 进程: 对 3D 图形加速调用的实现。
+* Pepper 插件进程。
 
 read page 51
