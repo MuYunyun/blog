@@ -1,18 +1,18 @@
 [
   {
     "referrer": "github.com",
-    "count": 145,
-    "uniques": 89
-  },
-  {
-    "referrer": "link.zhihu.com",
-    "count": 29,
-    "uniques": 23
+    "count": 143,
+    "uniques": 88
   },
   {
     "referrer": "leetcode-cn.com",
-    "count": 28,
-    "uniques": 22
+    "count": 26,
+    "uniques": 20
+  },
+  {
+    "referrer": "link.zhihu.com",
+    "count": 25,
+    "uniques": 20
   },
   {
     "referrer": "muyunyun.cn",
