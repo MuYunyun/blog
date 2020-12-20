@@ -15,6 +15,14 @@
   * 类 lottie 方案, 提供网页 ae, https://render.alipay.com/p/s/mars-editor/, 转化为 WebGl
 * [网易云音乐年度报告从设计到代码](https://zhuanlan.zhihu.com/p/57576659)。
 
+### 场景
+
+* 直播: 手势拜年特效
+
+* 素材属性编辑
+* 内容平台操作
+
+
 ### 实时动画
 
 * 还原度
