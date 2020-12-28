@@ -27,7 +27,10 @@ This is my persinal blog created with <a href="https://github.com/MuYunyun/creat
 
 ### Data Structure
 
-This section we will start tralvel in the world of data strcture together! There is no doubt that the travel is so interestring that you'll enjoy it too!
+This section we will start tralvel in the world of data strcture together! There is no doubt the travel is so interestring that you'll enjoy it too! Before your travel of data structure, I want to tell two points it's valueble:
+
+1. Interest and Insist.
+2. Thought is more important than action.
 
 > [Travel Of LeetCode](https://github.com/MuYunyun/blog/blob/master/LeetCode/README.md)
 
