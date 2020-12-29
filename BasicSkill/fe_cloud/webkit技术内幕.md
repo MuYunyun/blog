@@ -39,10 +39,12 @@
 
 ![](http://with.muyunyun.cn/af3e700cca1056b8796667751e27e7ec.jpg-muyy)
 
-* Browser 进程: 浏览器的主进程, 是其它类型进程的祖先, 负责它们的创建和销毁。
-* Renderer 进程: 网页的渲染进程。
-* NPAPI 插件进程。
-* GPU 进程: 对 3D 图形加速调用的实现。
-* Pepper 插件进程。
+* `Browser 进程`: 浏览器的主进程, 是其它类型进程的祖先, 负责它们的创建和销毁。
+* `Renderer 进程`: 网页的渲染进程。
+* `NPAPI 插件进程`。
+* `GPU 进程`: 对 3D 图形加速调用的实现。
+* `Pepper 插件进程`。
 
-read page 51
+每个进程内部有多个线程。
+
+read page 56
