@@ -1,6 +1,6 @@
 ### DDL 与 DML
 
-* 数据定义语言(DDL)
+* 数据定义语言(DDL): Data Definition Language
 
 ```js
  1. CREATE - to create objects in the database

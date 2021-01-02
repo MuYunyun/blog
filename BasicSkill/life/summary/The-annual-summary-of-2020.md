@@ -5,6 +5,7 @@
   * 脑图
 * 开源
   * create-react-doc
+    * RFC: album photo
 * 去过的路
   * 难进
 * 爱在黎明破晓前
