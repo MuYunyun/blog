@@ -63,16 +63,18 @@ FROM table_name1, table_name2
   * WHERE 相当于编程语言中的 if。
   * 可以使用在 SELECT、UPDATE、DELETE 语句中。
   * 可以使用 AND 或者 OR 指定一个或多个条件。
-  * 操作符有 `=`、`>`、`<`、`>=`、`<=`、`!= or <>`
+  * 操作符有 `=`、`>`、`<`、`>=`、`<=`、`!= or <>`、`IS NULL`、`IS NOT NULL`
   * `Like`: 类似于 `=`, SQL 提供了四种匹配方式。
-    * %: 表示任意 0 个或多个字符。可匹配任意类型和长度的字符, 有些情况下若是中文, 请使用两个百分号（%%）表示。
+    * `%`: 表示任意 0 个或多个字符。可匹配任意类型和长度的字符, 有些情况下若是中文, 请使用两个百分号（%%）表示。
       * eg: 查询包含 javascript 字段的信息: `SELECT * FROM position WHERE name LIKE '%java%';`
-    * _: 表示任意单个字符。匹配单个任意字符, 它常用来限制表达式的字符长度语句。
+    * `_`: 表示任意单个字符。匹配单个任意字符, 它常用来限制表达式的字符长度语句。
     * []: 表示括号内所列字符中的一个（类似正则表达式）。指定一个字符、字符串或范围, 要求所匹配对象为它们中的任一个。
     * [^]: 表示不在括号所列之内的单个字符。其取值和 [] 相同, 但它要求所匹配对象为指定字符以外的任一个字符。
     查询内容包含通配符时,由于通配符的缘故, 导致我们查询特殊字符 “%”、“_”、“[” 的语句无法正常实现, 而把特殊字符用 “[ ]” 括起便可正常查询。
+  * `REGEXP`: 可以使用正则进行筛选。
+    * eg: `SELECT name FROM person_tbl WHERE name REGEXP '^st';`
 * `GROUP BY`: 对 SELECT 查询出来的结果集按照某个字段或者表达式进行分组，获得一组组的集合。
-  * `WITH ROLLUP`: 可以实现在分组统计数据基础上再进行相同的统计 (SUM,AVG,COUNT 等)。
+  * `WITH ROLLUP`: 可以实现在分组统计数据基础上再进行相同的统计 (SUM, AVG, COUNT 等)。
     * ![](http://with.muyunyun.cn/1d8a95a812f6ffc91d6f5a357fe9755c.jpg)
   * `coalesce`: 针对上图 null 处, 可以使用 coalesce(a,b,c) 语法, 其等价于 JavaScript 中 `a || b || c || null`
     * ![](http://with.muyunyun.cn/8530fc78779c7024f41053a51c160196.jpg)
@@ -114,4 +116,58 @@ UNION [ALL | DISTINCT]
 * `DISTINCT`: 默认值, 表示多个 SELECT 语句会删除重复的数据。
 * `All`: 表示多个 SELECT 语句不会删除重复的数据。
 
-read to: https://www.runoob.com/mysql/mysql-join.html
+### 连接的使用
+
+真正的应用中经常需要从多个数据表中读取数据。此时可以使用 JOIN 在两个或多个表中读取数据。
+
+* INNER JOIN (内连接)
+  * ![](http://with.muyunyun.cn/b6fb7c5a37b37586b7c36f7b524294bd.jpg)
+  * `SELECT field1,field2 FROM table_name1 INNER JOIN table_name2 ON condition;`
+* LEFT JOIN (左连接)
+  * ![](http://with.muyunyun.cn/52e7cfa17e2c2ff5983a2ba3c6f3eb8e.jpg)
+  * `SELECT field1,field2 FROM table_name1 LEFT JOIN ttable_name2 ON condition;`
+* RIGHT JOIN (右连接)
+  * ![](http://with.muyunyun.cn/d79d96273e72c6c308ba8744b507f562.jpg)
+  * `SELECT field1,field2 FROM table_name1 RIGHT JOIN table_name2 ON condition;`
+
+### 事务
+
+事务主要用于处理操作量大，复杂度高的数据。笔者认为事务就像数据库语句中引入 git 操作。
+
+* MySQL 中使用了 Innodb 引擎的数据库或表支持事务;
+* 事务用来管理 insert、update、delete 语句;
+
+MYSQL 事务控制语句
+
+* BEGIN: 开始一个事务
+* ROLLBACK: 事务回滚
+* COMMIT: 事务确认
+
+### ALTER
+
+修改表名或者修改表字段就要使用 ALTER 命令。
+
+* 删除表字段
+  * DROP: `ALTER TABLE testalter_tbl DROP i;`
+* 添加表字段
+  * ADD: `ALTER TABLE testalter_tbl ADD i INT;`
+* 修改表字段类型及名称
+  * MODIFY: `alter table tableName modify name1 type1 first|after name2;`
+    * name1 为想要修改的字段
+    * type1 为该字段原来类型
+    * first 与 after 二选一, first 放在第一位, after 放在 name2 字段后面
+  * CHANGE: `ALTER TABLE testalter_tbl CHANGE i j BIGINT;`
+    * 将 i 字段重命名为 j 字段
+
+### 索引
+
+空间换时间。使用索引可以加快数据库内部找寻数据的速度。
+
+* 创建索引
+  * `CREATE INDEX indexName ON table_name (column_name)`
+* 删除索引
+  * `DROP INDEX [indexName] ON mytable;`
+
+### SQL 注入
+
+to read: https://www.runoob.com/mysql/mysql-sql-injection.html
