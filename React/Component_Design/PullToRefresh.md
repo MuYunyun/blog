@@ -124,3 +124,7 @@ export default function PullToRefreshDemo() {
 }
 
 ```
+
+### 组件测试
+
+见 JEST 测试一节。

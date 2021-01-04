@@ -1,4 +1,4 @@
-### Jest 与 ReactTestingLibrary
+### jest 与 jest-dom(ReactTestingLibrary)
 
 ### 一些配置
 
@@ -175,6 +175,9 @@ const info = {componentStack: expect.stringContaining('Bomb')}
 expect(mockReportError).toHaveBeenCalledWith(error, info)
 ```
 
+* [jest-dom](https://github.com/testing-library/jest-dom)
+  * [toBeVisible](https://github.com/testing-library/jest-dom#tobevisible)
+
 ### mock 测试
 
 #### mock 请求后端接口数据
@@ -190,6 +193,14 @@ jest.spyOn(global, 'fetch').mockImplementation(() => {
   })
 })
 ```
+
+#### mock 浏览器节点信息
+
+在使用 JEST 测试一些需要浏览器位置信息的组件(比如 PullToRefresh、Scrollbar 组件等等)时, 需要将浏览器节点信息给 mock 掉。
+
+1. 将获取位置的方法抽离到 util 包中;
+   * 这也是为什么尽量将`函数力度拆细`的原因。
+2. mock util 包中的该方法;
 
 #### mock 模块/组件
 
@@ -208,7 +219,11 @@ jest.mock('someComponent', () => {
 如果测试用例中遇到 `setTimeout(fn, 5000)` 真的等上 5s 后才执行 fn 测试效率是非常低效的, 因此可以使用 jest 提供的 `jest.useFakeTimers()` 来 mock 与时间有关的 api。
 
 ```js
+// mocks out setTimeout and other timer functions with mock functions.
 jest.useFakeTimers()
+
+// use jest.runAllTimers() to make sure all perf of callback.
+jest.runAllTimers()
 
 // move ahead in time by 100ms
 act(() => {

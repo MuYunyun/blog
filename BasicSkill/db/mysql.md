@@ -170,4 +170,4 @@ MYSQL 事务控制语句
 
 ### SQL 注入
 
-to read: https://www.runoob.com/mysql/mysql-sql-injection.html
+线上应用应该注意防范 SQL 注入。
