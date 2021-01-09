@@ -18,10 +18,8 @@
 ### 场景
 
 * 直播: 手势拜年特效
-
 * 素材属性编辑
 * 内容平台操作
-
 
 ### 实时动画
 
@@ -103,5 +101,14 @@ animation.addEventListener('data_ready', () => {
 
 #### lottie-web部分高阶用法
 
-1. 在制作 AE 动画时, 将图层命名为 #svgId 格式，前端加载该动画后，相应的图层的 id 会被设置为 svgId，可以通过 dom 方法获取该元素并做相应的操作；
-2. 在制作 AE 动画时，将图层命名为 .svgClass 格式，前端加载该动画后，相应的图层的 class 会被设置为 svgClass，可以通过 dom 方法获取这些元素并做相应的操作；
+1. 在制作 AE 动画时, 将图层命名为 #svgId 格式，前端加载该动画后，相应的图层的 id 会被设置为 svgId，可以通过 dom 方法获取该元素并做相应的操作;
+2. 在制作 AE 动画时，将图层命名为 .svgClass 格式，前端加载该动画后，相应的图层的 class 会被设置为 svgClass，可以通过 dom 方法获取这些元素并做相应的操作;
+
+### 相关链接
+
+- [ ] [剖析 lottie-web 动画实现原理](https://juejin.cn/post/6914835547588395022)
+- [ ] [使用 Lottie 快速开发动画](https://jelly.jd.com/article/5fcf44b5a1c4e30142d0a472)
+
+其它
+
+- [ ] [Web 帧动画解决方案 - APNG原理与实现](https://juejin.cn/post/6914846392808636429)
