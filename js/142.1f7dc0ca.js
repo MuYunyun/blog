@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[142],{832:function(n,i){n.exports='### Api\n\n* promisify: callback promise 化\n\n```js\nconst { promisify } = require("util");\n```'}}]);

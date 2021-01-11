@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{695:function(n,o){n.exports="### Back Tracking 回溯法\n\n### 解决场景\n\n* 排列问题\n*"}}]);

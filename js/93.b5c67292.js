@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[93],{783:function(n,o){n.exports="### .gitlab.yml 调试技巧\n\n1. 在 `scripts` 中书写脚本。\n2. 本地运行 [docker](./docker.md) 环境启动项目。"}}]);

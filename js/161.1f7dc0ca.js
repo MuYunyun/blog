@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[161],{851:function(n,s){n.exports="### ways\n\n1. use [AST Explorer](https://astexplorer.net/)\n2. pick babel-eslint and eslint v4 in Transform.\n\n### links\n\n* [How To Write Your First ESLint Plugin](https://dev.to/spukas/how-to-write-your-first-eslint-plugin-145)"}}]);

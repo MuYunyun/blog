@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[160],{850:function(n,a){n.exports="### Service\n\n* laaS(Infrastructure), 基础设施即服务;\n* PaaS(Platform), 平台即服务;\n* SaaS(Software), 软件即服务;\n\n![](http://with.muyunyun.cn/af4d1f46f7fefe989c798a9e4ec55fa6.jpg)\n"}}]);

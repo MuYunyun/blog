@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[120],{810:function(n,o){n.exports="### 黑客与画家\n\n* hacker\n  * 好玩、高智商、探索精神\n  * 价值观: 分享、民主、自由\n\n* 为什么书呆子不受欢迎:\n  * 10+ 岁心智的不健全。\n  * 中学阶段,「书呆子」不受欢迎。但是小学阶段「书呆子」没啥影响, 进入社会后, 「书呆子」更受欢迎。\n* 黑客与画家\n  * read 46"}}]);

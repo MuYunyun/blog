@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[133],{823:function(n,r){n.exports="```js\nconst url = require('url')\n\nmodule.exports = {\n  get query() {\n    return url.parse(this.req.url, true).query\n  }\n}\n```"}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[337],{1027:function(n,e){n.exports="### DatePicker 日期选择组件\n\n* `区分好受控和非受控区域`。DatePicker 组件中, 日期滑动区域对用户来说是希望是非受控的。但是点击确定按钮回显到界面上是受控逻辑。\n\n### 核心逻辑复用\n\n同 Picker 组件"}}]);
