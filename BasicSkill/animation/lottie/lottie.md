@@ -45,7 +45,7 @@ lottie-web gzip 压缩后大小有 40kb 的大小。如果使用 npm 包的形�
 
 通过 bodymovin 插件导出的动画 JSON 文件大小也可能比较大(复杂的动画达到上百 kb)，所以不建议将 JSON 数据内联到页面中，而最好是当做一个 JSON 文件来进行下载。
 
-#### lottie-web的基本用法
+#### lottie-web 的基本用法
 
 ```js
 const animation = bodymovin.loadAnimation({
@@ -60,7 +60,7 @@ const animation = bodymovin.loadAnimation({
 
 #### lottie-web 常用方法
 
-lottie-web提供了很多的控制动画播放的方法，下面是一些常用的方法。animation等于上面代码中的animation。
+lottie-web 提供了很多的控制动画播放的方法，下面是一些常用的方法。animation 等于上面代码中的 animation。
 
 ```js
 animation.play(); // 播放该动画，从目前停止的帧开始播放
@@ -88,7 +88,7 @@ animation.addEventListener('data_ready', () => {
 });
 ```
 
-除了data_ready事件，下面还有一些其他常用的事件可以监听：
+除了 `data_ready` 事件，下面还有一些其他常用的事件可以监听:
 
 * complete: 播放完成（循环播放下不会触发）
 * loopComplete: 当前循环下播放（循环播放/非循环播放）结束时触发
@@ -99,7 +99,7 @@ animation.addEventListener('data_ready', () => {
 * DOMLoaded: 动画相关的 dom 已经被添加到 html 后触发
 * destroy: 将在动画删除时触发
 
-#### lottie-web部分高阶用法
+#### lottie-web 部分高阶用法
 
 1. 在制作 AE 动画时, 将图层命名为 #svgId 格式，前端加载该动画后，相应的图层的 id 会被设置为 svgId，可以通过 dom 方法获取该元素并做相应的操作;
 2. 在制作 AE 动画时，将图层命名为 .svgClass 格式，前端加载该动画后，相应的图层的 class 会被设置为 svgClass，可以通过 dom 方法获取这些元素并做相应的操作;
@@ -111,4 +111,4 @@ animation.addEventListener('data_ready', () => {
 
 其它
 
-- [ ] [Web 帧动画解决方案 - APNG原理与实现](https://juejin.cn/post/6914846392808636429)
+- [ ] [Web 帧动画解决方案 - APNG 原理与实现](https://juejin.cn/post/6914846392808636429)

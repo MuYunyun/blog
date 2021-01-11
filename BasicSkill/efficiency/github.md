@@ -18,3 +18,7 @@ This page will collect some useful websets.
     * ![](http://with.muyunyun.cn/a6745efdee034049cea71c2b2d52b998.jpg)
   * [delete-merged-branch](https://github.com/svanboxel/delete-merged-branch)
   * [stale](https://probot.github.io/apps/stale/): use
+
+### github index
+
+- [ ] [metrics](https://github.com/lowlighter/metrics)
