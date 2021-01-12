@@ -21,13 +21,13 @@
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 10,
-    "uniques": 5
+    "count": 12,
+    "uniques": 7
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 8,
-    "uniques": 7
+    "count": 9,
+    "uniques": 8
   },
   {
     "referrer": "Google",
@@ -41,11 +41,11 @@
   },
   {
     "referrer": "zhihu.com",
-    "count": 1,
+    "count": 2,
     "uniques": 1
   },
   {
-    "referrer": "awesomeopensource.com",
+    "referrer": "mail.qq.com",
     "count": 1,
     "uniques": 1
   }
