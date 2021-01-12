@@ -109,4 +109,7 @@ try [yalc](https://github.com/whitecolor/yalc)
 
 * dependencies: 业务依赖
 * devDependencies: 开发依赖
-* pureDependencies: 在 dependencies 的基础上加上 warning, @桃夭表示使用 pureDependencies 业务只会打出一份包。而使用 dependencies 业务中如果有不同版本的依赖, 会打出多份包。
+* pureDependencies:
+  * a 依赖了 b 包, b 包的 pureDependencies 字段含有 c 包。
+    * b 包执行 yarn 此时并不会安装上 c 包。
+    * 如果 a 包中未执行安装 c 包, 则会报错。

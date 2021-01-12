@@ -1,6 +1,7 @@
 ### 安装的坑
 
 * 在 macOS Big Sur 中需要使用 2020 版本。
+* 安装 bodyMovin
 
 ### Make A Lottie
 
@@ -17,6 +18,4 @@
   * Toolbar: 各种工具的集合, 如文字工具、图形工具等
   * Props: 在这里编辑元素的属性
 
-### 相关链接
-
-- [ ] [面向前端的 Lottie AE 动画手把手入门教学](https://cloud.tencent.com/developer/article/1547683)
+> 小作业: [面向前端的 Lottie AE 动画手把手入门教学](https://zhuanlan.zhihu.com/p/35540035)

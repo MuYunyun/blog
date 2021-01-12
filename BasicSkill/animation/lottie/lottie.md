@@ -106,9 +106,8 @@ animation.addEventListener('data_ready', () => {
 
 ### 相关链接
 
+* [lottie 动效社区资源](https://lottiefiles.com/featured)
+* [现在你可以把 Lottie 动画导回 AE 了](https://zhuanlan.zhihu.com/p/104751997)
+  * 经验证, 简单的动效可以, 复杂的不行。
 - [ ] [剖析 lottie-web 动画实现原理](https://juejin.cn/post/6914835547588395022)
 - [ ] [使用 Lottie 快速开发动画](https://jelly.jd.com/article/5fcf44b5a1c4e30142d0a472)
-
-其它
-
-- [ ] [Web 帧动画解决方案 - APNG 原理与实现](https://juejin.cn/post/6914846392808636429)
