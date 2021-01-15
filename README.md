@@ -99,8 +99,7 @@ This section will introduce the world of React progressively. It'll tell the pri
 * [React Suspense 解决了什么](https://github.com/MuYunyun/blog/blob/master/React/suspense解决了什么.md)
 * [React Hooks 深入系列](https://github.com/MuYunyun/blog/blob/master/React/React_Hooks深入系列.md)
 * [React Hooks 设计模式](https://github.com/MuYunyun/blog/blob/master/React/React_Hooks设计模式.md)
-
-- [ ] [React 暗器百解](https://github.com/MuYunyun/blog/blob/master/React/React暗器百解.md)
+* [React 暗器百解](https://github.com/MuYunyun/blog/blob/master/React/React暗器百解.md)
 
 #### Component Design
 
@@ -193,8 +192,7 @@ This section will talk about colorful frontend world.
 
 * [水平布局解决方案](https://github.com/MuYunyun/blog/blob/master/BasicSkill/basis/水平布局解决方案.md)
 * [聊聊 BFC](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/聊聊BFC.md)
-
-- [ ] [过渡与动画](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/css小书/过渡与动画.md)
+* [过渡与动画](https://github.com/MuYunyun/blog/blob/master/BasicSkill/css/css小书/过渡与动画.md)
 
 </details>
 
@@ -220,7 +218,7 @@ This section will talk about colorful frontend world.
 <sub>[(相关项目)](https://github.com/MuYunyun/TypeScript)
 * [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/fe_cloud/探寻webpack插件机制.md)<sub>[(相关项目)](https://github.com/MuYunyun/analyze-webpack-plugin)
 * [Babel 执行机制](https://github.com/MuYunyun/blog/blob/master/BasicSkill/fe_cloud/babel执行机制.md)
-* [npm 与 yarn](https://github.com/MuYunyun/blog/blob/master/BasicSkill/fe_cloud/npm和yarn的区别.md)
+* [npm 与 yarn](https://github.com/MuYunyun/blog/tree/main/BasicSkill/fe_cloud/yarn)
 * [移动端场景知识](https://github.com/MuYunyun/blog/blob/master/BasicSkill/basis/移动端场景知识.md)
 * [原生 JS 实现一个瀑布流插件](https://github.com/MuYunyun/fe_cloud/issues/12) <sub>[(相关项目)](https://github.com/MuYunyun/waterfall)
 * [实现一个自定义工具类库](https://github.com/MuYunyun/blog/issues/9) <sub>[(相关项目)](https://github.com/MuYunyun/diana)

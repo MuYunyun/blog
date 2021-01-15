@@ -1,4 +1,4 @@
-### yarn 使用心得
+### Usage
 
 ```js
 yarn add xx -D
