@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[133],{823:function(n,e){n.exports="### The annual summary of 2020\n\n* 工作\n  * 方法论\n  * 脑图\n* 开源\n  * create-react-doc\n    * RFC: album photo\n* 去过的路\n  * 难进\n* 爱在黎明破晓前\n* 新年展望\n  * 数据结构跟进\n  * 数据库\n  * Deep Learning"}}]);

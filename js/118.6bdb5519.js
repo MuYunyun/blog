@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[118],{808:function(n,a){n.exports="### Alexa 相关资源\n\n* [Alexa 站点](https://pitangui.amazon.com/)\n* [Alexa 使用](https://www.jianshu.com/p/a04fb4c4ac62)"}}]);

@@ -1,0 +1,1 @@
+(self.webpackChunkblog=self.webpackChunkblog||[]).push([[5444],{65444:b=>{b.exports="### 易读错音的前端英文词汇\n\n* cache: [美: kæʃ]\n* babel: [美: 'beibəl]\n"}}]);

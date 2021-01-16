@@ -1,0 +1,1 @@
+(self.webpackChunkblog=self.webpackChunkblog||[]).push([[3945],{53945:n=>{n.exports="### Process\n\nProcess 模块继承自 eventEmitter 模块。\n\n#### Event: exit\n\n监听:\n\n```js\nprocess.on('exit', (code) => {\n  ...\n})\n```\n\n> 注意的是 process.on() 中第二个参数必须是同步函数;\n\n触发时机:\n\n1. 调用 `process.exit()`;\n2. Node.js 事件循环中不再有额外的工作要执行;\n\n\nto read: Signal Events"}}]);

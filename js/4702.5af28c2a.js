@@ -1,0 +1,1 @@
+(self.webpackChunkblog=self.webpackChunkblog||[]).push([[4702],{14702:n=>{n.exports="### Apple Id\n\n账号名(美区): muyy95@gmail.com\n账户名(国区): 328375795@qq.com\n\n> [注册美区 Apple ID](https://zhuanlan.zhihu.com/p/36574047)\n"}}]);

@@ -1,0 +1,1 @@
+(self.webpackChunkblog=self.webpackChunkblog||[]).push([[2342],{2342:e=>{e.exports="### 在线编译 markdown\n\n- [mdx](https://github.com/mdx-js/mdx)\n- [react-live](https://github.com/FormidableLabs/react-live): 不支持 import\n- [react-code-view](https://github.com/simonguo/react-code-view)"}}]);

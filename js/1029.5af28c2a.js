@@ -1,0 +1,1 @@
+(self.webpackChunkblog=self.webpackChunkblog||[]).push([[1029],{61029:n=>{n.exports='### Api\n\n* promisify: callback promise 化\n\n```js\nconst { promisify } = require("util");\n```'}}]);

@@ -1,0 +1,1 @@
+(self.webpackChunkblog=self.webpackChunkblog||[]).push([[8011],{58011:e=>{e.exports="如果想让程序更加健壮, 那就必须让它经过更加系统/全面的测试。\n\n### ssr 测试\n\n1. @testing-library 是不能用于在 server 端渲染的, 所以服务端渲染要用 enzyme 的 render 方法;\n2. ant-design 所有组件都会跑一份共同的服务端测试文件;https://github.com/ant-design/ant-design/blob/a754d9f60a565acf73c05a2ce78ecb827f621366/tests/shared/demoTest.ts;\n"}}]);
