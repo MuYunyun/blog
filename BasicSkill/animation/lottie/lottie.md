@@ -31,14 +31,14 @@
     * 图层、粒子、拖尾、模型、交互
     * WebGl
   * Oasis 3d(蚂蚁): https://oasis-engine.github.io/ 动画引擎、Hilo 3d(淘宝 开源)
-  * 小程序、H5、Web3D游戏
+  * 小程序、H5、Web3D 游戏
 * 稳定性
 
 ### Lottie 库使用
 
-lottie-web gzip 压缩后大小有 40kb 的大小。如果使用 npm 包的形式进行加载, 那么vendor.js 会增加 40kb 的大小, 这样会使页面性能下降。
+lottie-web gzip 压缩后大小有 40kb 的大小。如果使用 npm 包的形式进行加载, 那么 vendor.js 会增加 40kb 的大小, 这样会使页面性能下降。
 
-* 方案一: 采用 script 标签的形式来加载 lottie 文件, 并且使用 defer 或 async 属性来进行异步加载。一般情况下, 我们只需要 svg 格式的动画, 所以可以使用 lottie_light版本（仅支持svg渲染）。
+* 方案一: 采用 script 标签的形式来加载 lottie 文件, 并且使用 defer 或 async 属性来进行异步加载。一般情况下, 我们只需要 svg 格式的动画, 所以可以使用 lottie_light 版本（仅支持 svg 渲染）。
 * 方案二: 因为 lottie 目前只在商家年度之夜中使用, 因此在特定路由中进行按需引入加载。
 
 #### JSON 文件
@@ -78,7 +78,7 @@ animation.setDirection(direction); // 设置播放方向, 1 表示正向播放, 
 animation.destroy(); // 删除该动画, 移除相应的元素标签等。在unmount的时候, 需要调用该方法
 ```
 
-#### lottie-web常用的事件
+#### lottie-web 常用的事件
 
 lottie-web 中可能也需要监听一些事件, 比如加载完动画 JSON 文件时的 data_ready 事件。监听方法如下:
 

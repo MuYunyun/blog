@@ -126,7 +126,7 @@ Math.pow(2, 53) === Math.pow(2, 53) + 1 // true
 
 * [代码之谜系列](http://justjavac.com/codepuzzle/2012/11/11/codepuzzle-float-who-stole-your-accuracy.html)
 * [JavaScript 浮点数陷阱及解法](https://github.com/camsong/blog/issues/9): 推荐阅读
-* [javascript 里最大的安全的整数为什么是2的53次方减一](https://www.zhihu.com/question/29010688)
+* [javascript 里最大的安全的整数为什么是 2 的 53 次方减一](https://www.zhihu.com/question/29010688)
 * [IEEE-754 进制转换图生成](http://www.binaryconvert.com/convert_double.html): 工具
 * [在线进制转换工具](https://www.sojson.com/hexconvert.html): 工具
 

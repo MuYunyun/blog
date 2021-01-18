@@ -54,7 +54,7 @@
 
 ```css
 .demo {
-  border-radios:100px/10px  (水平100，垂直10)
+  border-radios: 100px/10px (水平100，垂直10)
 }
 ```
 
@@ -70,11 +70,11 @@
 
 It's a css property that can be eaqual to the background-size, it has five types:
 
-* fill: default
-* contain
-* cover: used in imagePicker
-* none
-* scale-down: if the image's size is imaller than box, it'll keep the image's size, otherwise it'll equal to contain. You can look for it [here](https://codepen.io/chrisnager/pen/XJgJqN)
+* `fill`: default
+* `contain`
+* `cover`: used in imagePicker
+* `none`
+* `scale-down`: if the image's size is imaller than box, it'll keep the image's size, otherwise it'll equal to contain. You can look for it [here](https://codepen.io/chrisnager/pen/XJgJqN)
 
 ### style 里的样式过长该怎么办
 

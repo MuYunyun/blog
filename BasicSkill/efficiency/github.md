@@ -19,6 +19,11 @@ This page will collect some useful websets.
   * [delete-merged-branch](https://github.com/svanboxel/delete-merged-branch)
   * [stale](https://probot.github.io/apps/stale/): use
 
+### skils
+
+* [GithubHost](https://github.com/ButterAndButterfly/GithubHost)
+  * 原理: [解决 Github 网页上图片显示失败的问题](https://blog.csdn.net/qq_38232598/article/details/91346392)
+
 ### github index
 
 - [ ] [metrics](https://github.com/lowlighter/metrics)

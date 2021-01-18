@@ -32,4 +32,4 @@ CAS Server: 处理账号、密码的认证, 需要独立部署 (部署在后端�
 
 ### 相关链接
 
-* [CAS实现SSO单点登录原理](https://blog.csdn.net/cruise_h/article/details/51013597)
+* [CAS 实现 SSO 单点登录原理](https://blog.csdn.net/cruise_h/article/details/51013597)
