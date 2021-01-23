@@ -30,14 +30,14 @@
     "uniques": 1
   },
   {
-    "referrer": "Google",
-    "count": 7,
-    "uniques": 7
-  },
-  {
     "referrer": "leetcode-cn.com",
     "count": 7,
     "uniques": 5
+  },
+  {
+    "referrer": "Google",
+    "count": 6,
+    "uniques": 6
   },
   {
     "referrer": "cnblogs.com",
