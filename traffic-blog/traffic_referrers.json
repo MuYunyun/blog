@@ -1,23 +1,23 @@
 [
   {
     "referrer": "github.com",
-    "count": 98,
-    "uniques": 53
+    "count": 102,
+    "uniques": 56
   },
   {
     "referrer": "segmentfault.com",
-    "count": 37,
-    "uniques": 10
+    "count": 41,
+    "uniques": 11
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 35,
-    "uniques": 30
+    "count": 33,
+    "uniques": 28
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 13,
-    "uniques": 6
+    "count": 12,
+    "uniques": 5
   },
   {
     "referrer": "v2ex.com",
@@ -46,7 +46,7 @@
   },
   {
     "referrer": "mail.qq.com",
-    "count": 4,
+    "count": 3,
     "uniques": 1
   }
 ]
