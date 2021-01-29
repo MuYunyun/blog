@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "commitlint": "^11.0.0",
-    "create-react-doc": "^0.2.21",
+    "create-react-doc": "^0.2.26",
     "husky": "^4.3.8",
     "lint-md": "^0.2.0",
     "lint-md-cli": "^0.1.1",
