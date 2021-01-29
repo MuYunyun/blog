@@ -203,8 +203,8 @@ This section will talk about colorful frontend world.
 
 #### Node.js
 
-* [简版 express.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node/%E7%AE%80%E7%89%88%20express.js%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
-* [简版 koa.js 的实现](https://github.com/MuYunyun/blog/blob/master/BasicSkill/node/%E7%AE%80%E7%89%88%20koa%20%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
+* [简版 express.js 的实现](http://muyunyun.cn/blog/#/BasicSkill/node/implement_express.js)
+* [简版 koa.js 的实现](http://muyunyun.cn/blog/#/BasicSkill/node/implement_koa.js)
 * [Node.js 异步异闻录](https://github.com/MuYunyun/blog/issues/7)
 <sub>[(相关项目)](https://github.com/MuYunyun/demos-of-node.js)
 * [用 Node.js 把玩一番 Alfred Workflow](https://github.com/MuYunyun/blog/issues/6) <sub>[(相关项目)](https://github.com/MuYunyun/commonSearch)
