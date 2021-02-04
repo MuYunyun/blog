@@ -2672,10 +2672,10 @@ crd-seed@^0.2.32:
     react-router-dom "^4.2.2"
     react-switch "^5.0.1"
 
-crd-templates@^0.2.28:
-  version "0.2.28"
-  resolved "https://registry.npmjs.org/crd-templates/-/crd-templates-0.2.28.tgz#3290129a9136d09d59ef9c6fb2e4c4ccd6163b83"
-  integrity sha512-oYazRud6fAPoSKzQWjxDQJxG1G2dOgNTZsxrDZW9pKwiqlRhMHcBF99BvR072Iz2jBCwkXGfb6hBOu53zFzswg==
+crd-templates@^0.2.31:
+  version "0.2.31"
+  resolved "https://registry.npmjs.org/crd-templates/-/crd-templates-0.2.31.tgz#6d889575898b4cc7a7576cc3eb5092aa2f95da9e"
+  integrity sha512-TyhEsMi6unxbSupCKuX0KdMa8QJS2EEzqeF1ZOd/uB0/qv+k26ALIZtlwlWYKqOp5pxv4k/59lTRUXtnRJ/FUg==
 
 crd-theme@^0.2.28:
   version "0.2.28"
@@ -2695,15 +2695,15 @@ crd-utils@^0.2.22:
   resolved "https://registry.npmjs.org/crd-utils/-/crd-utils-0.2.22.tgz#66014136d66eeaf0acaa2448fa7ab7b30bfe8c4f"
   integrity sha512-2wqppH+nUAF8saL4HM5n0dx7QIAwZP5TqGAIB7n23hwc67FgJMtAlXDTGqTle0VFr5wgMWxTkfzcLF0J5Xjn+Q==
 
-create-react-doc@^0.2.28:
-  version "0.2.28"
-  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-0.2.28.tgz#ad32beffdb158ac00b065e79321d7b2da6747630"
-  integrity sha512-Va0yjJA5EN75ynT5ANqAKsZe/YBpfNlBi2MMbtuuZxjEZk2pkGk6gD3e9RUGNQelu33t0QiwE3HDKAoJJDgvTQ==
+create-react-doc@^0.2.31:
+  version "0.2.31"
+  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-0.2.31.tgz#345214ede193ed48bf9e361ca7dc52b3bce6f7b9"
+  integrity sha512-A2z24gkp/foTQnckfqFjl0Qb3+0KUGwNeKApGKKUHXXo21J0OM9S+KEHFj+z7kAVBuQEniVWVNG6bXcT9PCcpA==
   dependencies:
     "@inquirer/input" "^0.0.13-alpha.0"
     commander "^2.12.2"
     crd-scripts "^0.2.28"
-    crd-templates "^0.2.28"
+    crd-templates "^0.2.31"
     crd-theme "^0.2.28"
     fs-extra "^5.0.0"
 
