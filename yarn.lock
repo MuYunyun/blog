@@ -909,10 +909,10 @@
     "@babel/plugin-transform-react-jsx-development" "^7.12.7"
     "@babel/plugin-transform-react-pure-annotations" "^7.12.1"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.8.4":
-  version "7.12.5"
-  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
-  integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
+"@babel/runtime@^7.1.2":
+  version "7.12.13"
+  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.12.13.tgz#0a21452352b02542db0ffb928ac2d3ca7cb6d66d"
+  integrity sha512-8+3UMPBrjFa/6TtKi/7sehPKqfAm4g6K+YQjyyFOLUTxzOngcRZTlAVY8sc2CORJYqdHQY8gRPHmn+qo15rCBw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -920,6 +920,13 @@
   version "7.12.1"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.12.1.tgz#b4116a6b6711d010b2dad3b7b6e43bf1b9954740"
   integrity sha512-J5AIf3vPj3UwXaAzb5j1xM4WAQDX3EMgemF8rjCP3SoW09LfRKAXQKt6CoVYl230P6iWdRcBbnLDDdnqWxZSCA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.3.4", "@babel/runtime@^7.8.4":
+  version "7.12.5"
+  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
+  integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -2657,10 +2664,10 @@ crd-scripts@^0.2.28:
     write "^1.0.3"
     yamljs "^0.3.0"
 
-crd-seed@^0.2.25:
-  version "0.2.27"
-  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-0.2.27.tgz#aad071192006c371c8f58f64f126d6c759e31d71"
-  integrity sha512-Cz6a33gD5otBNa3FJlzlZtkNH7jJSHNm9S5SBCRx7apX7V0hwrbYD4n+3iRMif2WrsVNm21JTUftDmcdfRsRIg==
+crd-seed@^0.2.32:
+  version "0.2.32"
+  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-0.2.32.tgz#4cc502e135d573fec4b69df209a0c4bdd7853b13"
+  integrity sha512-f1g2M+6uSQDEeLK3AxCrOY0GzI+SXYnT+VUoK4Cw6bbJKxvHdiqSuxNaSraTFWYporkob9JOSRBIGVG7DEnBmg==
   dependencies:
     react-router-dom "^4.2.2"
     react-switch "^5.0.1"

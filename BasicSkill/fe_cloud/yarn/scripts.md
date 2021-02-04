@@ -10,7 +10,8 @@ yarn add xx -D
 
 ### 配置 yarn 全局路径
 
-* 1. `yarn global dir` 得到 /Users/mac/.config/yarn/global
+* 1. `yarn global dir` 得到 `/Users/mac/.config/yarn/global`
+  * 这个路径也是 yarn 全局包安装的文件目录
 * 2. vim .zshrc
   * 2.1 加上 export NODE_PATH=/Users/mac/.config/yarn/global/node_modules/
 * yarn add puppeteer -g
