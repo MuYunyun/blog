@@ -1,6 +1,6 @@
 ### router 的简易实现
 
-#### 基于 hash 的实现
+### 基于 hash 的实现
 
 以下为 `hashChange` 的简版实现
 
@@ -36,7 +36,7 @@ router.route('blue', () => { changeColor('blue') })
 </ul>
 ```
 
-#### 基于 history 的实现
+### 基于 history 的实现
 
 > 以下代码需要运行在 http 端口。
 
@@ -79,6 +79,14 @@ document.getElementsByTagName('ul')[0].addEventListener('click', (e) => {
   <li href="blue">blue</li>
 </ul>
 ```
+
+### 路由的监听
+
+* hash 路由
+
+window.addEventListener('hashchange')
+
+* history 路由
 
 ### 参考
 
