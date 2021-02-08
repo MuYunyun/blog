@@ -2604,10 +2604,10 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
-crd-scripts@^0.2.28:
-  version "0.2.28"
-  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-0.2.28.tgz#1a0cb4a08e0695cce89adfc372decee5c3ebdb73"
-  integrity sha512-DwP7Grvbsq+u0xBikNSjiK+3PTIZmAe88XTFyf51UTSuZIwAP856MBcvFIVNZr57YUppTp6+A+IA3eoqumXG5w==
+crd-scripts@^0.2.33:
+  version "0.2.33"
+  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-0.2.33.tgz#244a1d4647ebb273b09e56d5fbfbb8ed48e24b7e"
+  integrity sha512-DYpwN2haxSN+y0mbjV7/piaT27S10ZniXO8ZuaerFtnFT8w3kuL/q1Ia8BnOTM+5KkRBY1VFbSfhFQ7fEUWHqQ==
   dependencies:
     "@babel/cli" "^7.2.3"
     "@babel/core" "^7.3.4"
@@ -2627,7 +2627,7 @@ crd-scripts@^0.2.28:
     colors-cli "^1.0.13"
     copy-markdown-image-webpack-plugin "^2.0.0"
     copy-template-dir "^1.3.0"
-    crd-theme "^0.2.28"
+    crd-theme "^0.2.33"
     crd-utils "^0.2.22"
     css-loader "^0.28.7"
     css-minimizer-webpack-plugin "^1.2.0"
@@ -2637,7 +2637,7 @@ crd-scripts@^0.2.28:
     file-loader "^1.1.11"
     fs-extra "^5.0.0"
     gh-pages "^1.2.0"
-    highlight.js "^9.12.0"
+    highlight.js "^10.5.0"
     html-webpack-plugin "^4.5.1"
     js-yaml "^3.14.0"
     less-loader "^7.2.1"
@@ -2647,7 +2647,7 @@ crd-scripts@^0.2.28:
     mini-css-extract-plugin "^0.4.0"
     open-browsers "^1.1.1"
     path-browserify "^1.0.1"
-    postcss-flexbugs-fixes "^3.2.0"
+    postcss-flexbugs-fixes "^3.3.1"
     postcss-loader "^2.0.9"
     process "^0.11.10"
     raw-content-replace-loader "^1.0.1"
@@ -2672,15 +2672,15 @@ crd-seed@^0.2.32:
     react-router-dom "^4.2.2"
     react-switch "^5.0.1"
 
-crd-templates@^0.2.28:
-  version "0.2.28"
-  resolved "https://registry.npmjs.org/crd-templates/-/crd-templates-0.2.28.tgz#3290129a9136d09d59ef9c6fb2e4c4ccd6163b83"
-  integrity sha512-oYazRud6fAPoSKzQWjxDQJxG1G2dOgNTZsxrDZW9pKwiqlRhMHcBF99BvR072Iz2jBCwkXGfb6hBOu53zFzswg==
+crd-templates@^0.2.31:
+  version "0.2.31"
+  resolved "https://registry.npmjs.org/crd-templates/-/crd-templates-0.2.31.tgz#6d889575898b4cc7a7576cc3eb5092aa2f95da9e"
+  integrity sha512-TyhEsMi6unxbSupCKuX0KdMa8QJS2EEzqeF1ZOd/uB0/qv+k26ALIZtlwlWYKqOp5pxv4k/59lTRUXtnRJ/FUg==
 
-crd-theme@^0.2.28:
-  version "0.2.28"
-  resolved "https://registry.npmjs.org/crd-theme/-/crd-theme-0.2.28.tgz#a496c8f4bfb7daf631d81833ebfe53d5609bf146"
-  integrity sha512-t7pYJ3b8km7kguAWgFcQv2h7Znv4klhpGP/sR3ivITW0+ZWu30/kBT3pX8WjqJZsVMzLhwbcL2RtUUcdd9F9aw==
+crd-theme@^0.2.33:
+  version "0.2.33"
+  resolved "https://registry.npmjs.org/crd-theme/-/crd-theme-0.2.33.tgz#755970ae7255d78dfc54b7ecdaa20126909ba2a9"
+  integrity sha512-01icojzCCFtRPlopNRXPOD35slQb27Iu+tC1dU3p6j4uSkrFlFnnBR1aklWrJwVQ/HnSvQRnG6AwNSgifdvDHw==
   dependencies:
     classnames "^2.2.6"
     diana "^1.0.2"
@@ -2695,16 +2695,16 @@ crd-utils@^0.2.22:
   resolved "https://registry.npmjs.org/crd-utils/-/crd-utils-0.2.22.tgz#66014136d66eeaf0acaa2448fa7ab7b30bfe8c4f"
   integrity sha512-2wqppH+nUAF8saL4HM5n0dx7QIAwZP5TqGAIB7n23hwc67FgJMtAlXDTGqTle0VFr5wgMWxTkfzcLF0J5Xjn+Q==
 
-create-react-doc@^0.2.28:
-  version "0.2.28"
-  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-0.2.28.tgz#ad32beffdb158ac00b065e79321d7b2da6747630"
-  integrity sha512-Va0yjJA5EN75ynT5ANqAKsZe/YBpfNlBi2MMbtuuZxjEZk2pkGk6gD3e9RUGNQelu33t0QiwE3HDKAoJJDgvTQ==
+create-react-doc@^0.2.33:
+  version "0.2.33"
+  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-0.2.33.tgz#a59d22e1b82fb6c07d9928d5d0c44e7ac2bcfa1a"
+  integrity sha512-7ZIMP2Ja/JfffTCGtcpBxNAHSHcrbBGYHXJ6ZvLFkbAGVh7DTNB56JeA76TuKnf567FxERkg3RtrfPumLraE1A==
   dependencies:
     "@inquirer/input" "^0.0.13-alpha.0"
     commander "^2.12.2"
-    crd-scripts "^0.2.28"
-    crd-templates "^0.2.28"
-    crd-theme "^0.2.28"
+    crd-scripts "^0.2.33"
+    crd-templates "^0.2.31"
+    crd-theme "^0.2.33"
     fs-extra "^5.0.0"
 
 cross-spawn@^6.0.0, cross-spawn@^6.0.5:
@@ -4098,10 +4098,10 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.npmjs.org/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
-highlight.js@^9.12.0:
-  version "9.18.5"
-  resolved "https://registry.npmjs.org/highlight.js/-/highlight.js-9.18.5.tgz#d18a359867f378c138d6819edfc2a8acd5f29825"
-  integrity sha512-a5bFyofd/BHCX52/8i8uJkjr9DYwXIPnM/plwI6W7ezItLGqzt7X2G2nXuYSfsIJdkwwj/g9DG1LkcGJI/dDoA==
+highlight.js@^10.5.0:
+  version "10.5.0"
+  resolved "https://registry.npmjs.org/highlight.js/-/highlight.js-10.5.0.tgz#3f09fede6a865757378f2d9ebdcbc15ba268f98f"
+  integrity sha512-xTmvd9HiIHR6L53TMC7TKolEj65zG1XU+Onr8oi86mYa+nLcIbxTTWkpW7CsEwv/vK7u1zb8alZIMLDqqN6KTw==
 
 history@^4.7.2:
   version "4.10.1"
@@ -6192,7 +6192,7 @@ postcss-filter-plugins@^2.0.0:
   dependencies:
     postcss "^5.0.4"
 
-postcss-flexbugs-fixes@^3.2.0:
+postcss-flexbugs-fixes@^3.3.1:
   version "3.3.1"
   resolved "https://registry.npmjs.org/postcss-flexbugs-fixes/-/postcss-flexbugs-fixes-3.3.1.tgz#0783cc7212850ef707f97f8bc8b6fb624e00c75d"
   integrity sha512-9y9kDDf2F9EjKX6x9ueNa5GARvsUbXw4ezH8vXItXHwKzljbu8awP7t5dCaabKYm18Vs1lo5bKQcnc0HkISt+w==
