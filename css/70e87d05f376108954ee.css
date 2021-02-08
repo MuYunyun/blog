@@ -448,8 +448,18 @@ a:hover {
 .footer-3bMnZ a:hover {
   color: #0800ff;
 }
+.footer-3bMnZ .powered_by-3uku2 {
+  margin-bottom: 8px;
+}
 .footer-inlineCollapsed-36FSg {
   margin: 50px 0 0 0;
+}
+.footer-3bMnZ .uv_count-2H9jX,
+.footer-3bMnZ .pv_count-2aT8U {
+  margin-left: 5px;
+}
+.footer-3bMnZ .split-1Av76 {
+  margin: 0 5px;
 }
 
 .wrapper-3YekU::after {
