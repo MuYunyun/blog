@@ -8,4 +8,3 @@
 * 可视化
 
 * [创建可视化视图](https://www.elastic.co/guide/cn/kibana/current/createvis.html)
-  * read to 指定一个查询，为视图获取数据。
