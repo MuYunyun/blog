@@ -1,23 +1,23 @@
 [
   {
     "referrer": "github.com",
-    "count": 70,
-    "uniques": 51
+    "count": 64,
+    "uniques": 46
   },
   {
     "referrer": "segmentfault.com",
-    "count": 61,
-    "uniques": 22
+    "count": 53,
+    "uniques": 18
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 15,
-    "uniques": 12
+    "count": 13,
+    "uniques": 10
   },
   {
     "referrer": "leetcode-cn.com",
-    "count": 12,
-    "uniques": 11
+    "count": 10,
+    "uniques": 9
   },
   {
     "referrer": "Google",
