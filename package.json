@@ -37,7 +37,7 @@
     "commitlint": "^11.0.0",
     "crd-seed": "^0.2.33",
     "create-react-doc": "^0.2.33",
-    "husky": "^4.3.8",
+    "husky": "^5.1.0",
     "lint-md": "^0.2.0",
     "lint-md-cli": "^0.1.1",
     "lint-staged": "^10.4.2"
