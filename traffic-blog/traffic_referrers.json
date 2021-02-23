@@ -1,13 +1,18 @@
 [
   {
     "referrer": "github.com",
-    "count": 74,
-    "uniques": 47
+    "count": 76,
+    "uniques": 49
   },
   {
     "referrer": "segmentfault.com",
-    "count": 38,
-    "uniques": 13
+    "count": 44,
+    "uniques": 12
+  },
+  {
+    "referrer": "link.zhihu.com",
+    "count": 13,
+    "uniques": 7
   },
   {
     "referrer": "link.juejin.im",
@@ -15,19 +20,14 @@
     "uniques": 3
   },
   {
-    "referrer": "muyunyun.cn",
+    "referrer": "Google",
     "count": 6,
     "uniques": 5
   },
   {
-    "referrer": "link.zhihu.com",
-    "count": 4,
-    "uniques": 4
-  },
-  {
-    "referrer": "Google",
-    "count": 3,
-    "uniques": 3
+    "referrer": "muyunyun.cn",
+    "count": 6,
+    "uniques": 5
   },
   {
     "referrer": "leetcode-cn.com",
@@ -35,12 +35,12 @@
     "uniques": 2
   },
   {
-    "referrer": "v2ex.com",
+    "referrer": "wiki.intra.xiaojukeji.com",
     "count": 1,
     "uniques": 1
   },
   {
-    "referrer": "wiki.intra.xiaojukeji.com",
+    "referrer": "v2ex.com",
     "count": 1,
     "uniques": 1
   },
