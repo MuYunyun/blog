@@ -59,7 +59,7 @@
 * `npm` 通过 `package-lock.json` 推断出 `node_modules` 目录
 * `yarn` 也能通过 `yarn.lock` 文件推断出 `node_modules` 顶层目录的。就是要通过稍微计算, 比如下方:
 
-```
+```js
 // yarn 的 yarn.lock 类似如下
 - a
 - b
@@ -71,7 +71,7 @@
 
 这个例子中, 我们能得出顶层目录如下:
 
-```
+```js
 // node_modules
 - a
 - b
@@ -113,3 +113,9 @@ try [yalc](https://github.com/whitecolor/yalc)
   * a 依赖了 b 包, b 包的 pureDependencies 字段含有 c 包。
     * b 包执行 yarn 此时并不会安装上 c 包。
     * 如果 a 包中未执行安装 c 包, 则会报错。
+
+### resolutions in package.json
+
+背景: 在项目中的 package.json 字段里 dependencies 字段有较新版本的 beast-mobile(带主题包), resolutions 指向了较低版本的 beast-mobile(不带主题包)。此时验证项目中包含主题包。
+
+查找 yarn 的 [rfc](https://github.com/yarnpkg/rfcs/blob/master/implemented/0000-selective-versions-resolutions.md#package-designation), resolutions 指定的目录只针对「嵌套」依赖的包版本生效。

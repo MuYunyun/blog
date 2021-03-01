@@ -291,6 +291,25 @@ test("sum adds numbers", async () => {
 })
 ```
 
+### 不得不测实例上的方法?
+
+如果在 '@testing-library/react' 中测试某些组件暴露给业务方的钩子, 记录了下可以这样子测试
+
+```js
+it('test instance exist', () => {
+  let instance
+  render(
+    <Component
+      ref={node => {
+        instance = node
+      }}
+    />
+  )
+  expect(Object.prototype.toString.call(instance.A)).toBe('[object Function]')
+  expect(Object.prototype.toString.call(instance.B)).toBe('[object Function]')
+})
+```
+
 ### link
 
 * [react-testing-3-jest-and-react-testing-library/](https://blog.sapegin.me/all/react-testing-3-jest-and-react-testing-library/)

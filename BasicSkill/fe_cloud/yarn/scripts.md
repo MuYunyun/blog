@@ -28,3 +28,9 @@ yarn link xx, 就是将 bin 的命令挂载到 global 上。
 ```js
 yarn link xx
 ```
+
+### remove
+
+```js
+yarn remove xx
+```

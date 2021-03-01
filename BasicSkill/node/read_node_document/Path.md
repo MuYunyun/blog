@@ -63,3 +63,6 @@ path.resolve('wwwroot', 'static_files/png/', '../gif/image.gif');
 path.relative('/data/orandea/test/aaa', '/data/orandea/impl/bbb')
 // Returns: '../../impl/bbb'
 ```
+
+* `path.normalize`
+  * 使用场景: 兼容跨平台路径
