@@ -5,7 +5,12 @@ title: Time Flying
 
 # Menu dir
 ## you can also set detailed dir, such as BasicSkill/css
-menu: React,BasicSkill,Algorithm,LeetCode
+menu: [
+  'React',
+  'BasicSkill',
+  'Algorithm',
+  'LeetCode'
+]
 ## set init open menu keys
 menuOpenKeys: /BasicSkill
 
