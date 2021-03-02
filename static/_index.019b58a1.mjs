@@ -1,1 +1,0 @@
-export default function r(){return(r=Object.assign||function(r){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var e in n)Object.prototype.hasOwnProperty.call(n,e)&&(r[e]=n[e])}return r}).apply(this,arguments)}
