@@ -35,8 +35,8 @@
   },
   "devDependencies": {
     "commitlint": "^11.0.0",
-    "crd-seed": "^0.2.34-alpha.0",
-    "create-react-doc": "^0.2.34-alpha.0",
+    "crd-seed": "^1.0.0",
+    "create-react-doc": "^1.0.0",
     "husky": "^4.3.8",
     "lint-md": "^0.2.0",
     "lint-md-cli": "^0.1.1",
