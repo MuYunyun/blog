@@ -9,18 +9,27 @@ menu: [
   'React',
   'BasicSkill',
   'Algorithm',
-  'LeetCode'
+  'FeCloud',
+  'LeetCode',
+  'Product'
 ]
 ## set init open menu keys
 menuOpenKeys: /BasicSkill
+
+# used theme
+theme: crd-seed
 
 # Github
 ## if you want to editing pages on github, you should config these arguments.
 user: MuYunyun
 repo: blog
-branch: master            # the default value of branch is master
+branch: main              # the default value of branch is main
 deploy_branch: gh-pages   # which branch to deploy.(default: gh-pages)
 # publish:                # if you want upload to gitlab or other git platform, you can set full git url in it
+github-ribbons: true
+domain: https://muyunyun.cn
+seo:
+  google: true
 
 # use search plugin: provide ability for searching site globally in the site.
 # default value: true
@@ -36,5 +45,5 @@ deploy_branch: gh-pages   # which branch to deploy.(default: gh-pages)
 # Available values: en | zh-cn
 language: en
 
-# used theme
-theme: crd-seed
+# Inject Custom Logic
+inject: injectLogic.js
