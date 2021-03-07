@@ -72,7 +72,7 @@ SSG 方案全称为 static site generator, 中文可译为`路由静态化方案
 
 经过上文对 SSG 方案的分析, 此时 SPA 站点的优化关键已经跃然纸上 —— `静态化路由`。相较于 nuxt、Gatsby 等框架存在约定式路由的限制, [create-react-doc](https://github.com/MuYunyun/create-react-doc) 在目录结构上的组织灵活自由。它的建站理念是`文件即站点`, 同时它对存量 markdown 文档的迁移也十分便捷。
 
-以 [blog](https://github.com/MuYunyun/blog) 项目结构为例:
+以 [blog](https://github.com/MuYunyun/blog) 项目结构为例, 其文档结构如下:
 
 ```bash
 -| BasicSkill/
@@ -135,6 +135,10 @@ const ifProd = env === 'prod'
 * 兼容 prerender-spa-plugin 在 webpack 5 的使用。
 
 官方版本当前未支持 webpack 5, 详见 [issue](https://github.com/chrisvfritz/prerender-spa-plugin/issues/414), 同时笔者存在对预渲染后执行回调的需求。因此当前 fork 了一份[版本](https://github.com/create-react-doc/prerender-spa-plugin) 出来, 解决了以上问题。
+
+经过上述步骤的实践, 终于在 SPA 站点中实现了[静态化路由](https://github.com/MuYunyun/blog/tree/gh-pages)。
+
+![](http://with.muyunyun.cn/bf01633af158d460ca2830ed640e07cb.jpg)
 
 ### SEO 优化附加 buff, 站点秒开?
 
@@ -210,4 +214,9 @@ seo:
 
 ### 相关链接
 
-- [google:how-to-create-a-sitemap](https://ahrefs.com/blog/zh/how-to-create-a-sitemap/)
+* [create-react-doc](https://github.com/MuYunyun/create-react-doc)
+* [why-is-my-website-not-showing-up-on-google/](https://ahrefs.com/blog/zh/why-is-my-website-not-showing-up-on-google/)
+* [A Technical Guide to SEO With Gatsby.js](https://medium.com/frontend-digest/a-technical-guide-to-seo-with-gatsby-js-e88a7dac80f0)
+* [优化向：单页应用多路由预渲染指南](https://juejin.cn/post/6844903503362523143)
+* [除了 SSR，就没有别的办法了吗？](https://zhuanlan.zhihu.com/p/57375824)
+* [基于 SSR/SSG 的前端 SEO 优化](https://segmentfault.com/a/1190000023792497)
