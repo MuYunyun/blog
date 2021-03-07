@@ -1,23 +1,23 @@
 [
   {
     "referrer": "github.com",
-    "count": 86,
-    "uniques": 48
+    "count": 88,
+    "uniques": 47
   },
   {
     "referrer": "segmentfault.com",
-    "count": 52,
+    "count": 46,
     "uniques": 12
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 26,
-    "uniques": 18
+    "count": 18,
+    "uniques": 16
   },
   {
     "referrer": "leetcode-cn.com",
-    "count": 11,
-    "uniques": 11
+    "count": 13,
+    "uniques": 12
   },
   {
     "referrer": "cnblogs.com",
@@ -25,14 +25,19 @@
     "uniques": 5
   },
   {
-    "referrer": "Google",
-    "count": 6,
+    "referrer": "muyunyun.cn",
+    "count": 7,
     "uniques": 5
   },
   {
-    "referrer": "muyunyun.cn",
-    "count": 6,
-    "uniques": 4
+    "referrer": "Google",
+    "count": 5,
+    "uniques": 5
+  },
+  {
+    "referrer": "v2ex.com",
+    "count": 2,
+    "uniques": 2
   },
   {
     "referrer": "pianshen.com",
@@ -42,11 +47,6 @@
   {
     "referrer": "wiki.baidu.com",
     "count": 2,
-    "uniques": 1
-  },
-  {
-    "referrer": "v2ex.com",
-    "count": 1,
     "uniques": 1
   }
 ]
