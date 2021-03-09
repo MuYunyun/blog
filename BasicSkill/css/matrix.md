@@ -1,6 +1,6 @@
 ### transform-function
 
-A linear transformation function is described as a 2 x 2 matrix, like this:
+A linear transformation function is described as a `2 x 2` matrix, like this:
 
 ![](http://with.muyunyun.cn/32d9ec359e0199ddbb0741b0b79bc1a9.jpg)
 
