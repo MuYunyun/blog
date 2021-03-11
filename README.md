@@ -211,6 +211,7 @@ This section will talk about colorful frontend world.
 
 #### FE CLOUD
 
+* [SEO 在 SPA 站点中的实践](https://github.com/MuYunyun/blog/blob/main/FeCloud/seo_in_spa_site.md)
 * [Talk about TC39](https://github.com/MuYunyun/blog/blob/master/BasicSkill/fe_cloud/tc39.md)
 * [跨域二三事](https://github.com/MuYunyun/blog/issues/13)<sub>[(相关项目)](https://github.com/MuYunyun/cross-domain)
 * [HTTP 小册](https://github.com/MuYunyun/blog/blob/master/BasicSkill/http/http.md)

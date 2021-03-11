@@ -9,7 +9,7 @@
     * 2035 年: 2500 万人左右
 
 * 了解自己的需求
-  * 刚需or改善: 刚需
+  * 刚需 or 改善: 刚需
   * 居住需求 or 投资保值需求: 居住需求的话就会对于`地段`, `小区`, `户型`等`整体居住条件的考虑和权衡`; 如果是投资需求的话, 可以看最近几年来年化的投资回报, 在过去的 15 年间, 从这个时间尺度看, 差不多投资回报在年化 `7% - 10%` 左右。
   * 学区房: no
   * 新房 or 二手房: todo
@@ -25,6 +25,9 @@
     * 小胖看房：微信号 xiaopangkf, 上海新房&二手房权威资讯平台, 小胖君（xpkf039）为您提供前滩, 内环, 中环等热门板块*新房快捷信息, 解答您限购, 二套, 学区房, 地铁房, 房贷月供, 公积金等购房知识问题
     * 魔都房房房：微信号 modufff, 楼市谈经论道 买房大家来说
 * 地段位置
+
+* qustion:
+  * 问题: 确立恋爱关系不过尚未结婚。若单方为沪户籍, 此时买房是否可以将非沪户籍一方挂在房产名下?
 ### link
 
-* [shanghai_house_knowledge](https://github.com/ayuer/shanghai_house_knowledge)
+* [shanghai_house_knowledge](https://github.com/ayuer/shanghai_house_knowledge#321-%E6%9F%A5%E8%AF%A2%E8%87%AA%E5%B7%B1%E7%A4%BE%E4%BF%9D%E7%BC%B4%E7%BA%B3%E6%83%85%E5%86%B5)
