@@ -29,15 +29,29 @@ board =
   [<span class="string">"9"</span>,<span class="string">"6"</span>,<span class="string">"1"</span>,<span class="string">"5"</span>,<span class="string">"3"</span>,<span class="string">"7"</span>,<span class="string">"2"</span>,<span class="string">"8"</span>,<span class="string">"4"</span>],
   [<span class="string">"2"</span>,<span class="string">"8"</span>,<span class="string">"7"</span>,<span class="string">"4"</span>,<span class="string">"1"</span>,<span class="string">"9"</span>,<span class="string">"6"</span>,<span class="string">"3"</span>,<span class="string">"5"</span>],
   [<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"2"</span>,<span class="string">"8"</span>,<span class="string">"6"</span>,<span class="string">"1"</span>,<span class="string">"7"</span>,<span class="string">"9"</span>]
-]</code></pre><blockquote><p>Explanation:&nbsp;The input board is shown above and the only valid solution is shown below:</p></blockquote><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png"></p><p>Constraints:</p><ul><li>board.length == 9</li><li>board<a href="">i</a>.length == 9</li><li>board<a href="">i</a> is a digit or '.'.</li></ul><p>It is guaranteed that the input board has only one solution.</p><h3>Analyze</h3><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
+]</code></pre><blockquote><p>Explanation:&nbsp;The input board is shown above and the only valid solution is shown below:</p></blockquote><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png"></p><p>Constraints:</p><ul><li>board.length == 9</li><li>board<a href="">i</a>.length == 9</li><li>board<a href="">i</a> is a digit or '.'.</li></ul><p>It is guaranteed that the input board has only one solution.</p><h3>Analyze</h3><pre class="highlight-3v67_"><code class="hljs language-js javascript">[
+  [<span class="string">"5"</span>,<span class="string">"3"</span>,<span class="string">"1"</span>,<span class="string">"."</span>,<span class="string">"7"</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"."</span>],
+  [<span class="string">"6"</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"1"</span>,<span class="string">"9"</span>,<span class="string">"5"</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"."</span>],
+  [<span class="string">"."</span>,<span class="string">"9"</span>,<span class="string">"8"</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"6"</span>,<span class="string">"."</span>],
+  [<span class="string">"8"</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"6"</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"3"</span>],
+  [<span class="string">"4"</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"8"</span>,<span class="string">"."</span>,<span class="string">"3"</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"1"</span>],
+  [<span class="string">"7"</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"6"</span>],
+  [<span class="string">"."</span>,<span class="string">"6"</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"8"</span>,<span class="string">"."</span>],
+  [<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"4"</span>,<span class="string">"1"</span>,<span class="string">"9"</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"5"</span>],
+  [<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"8"</span>,<span class="string">"."</span>,<span class="string">"."</span>,<span class="string">"7"</span>,<span class="string">"9"</span>]
+]</code></pre><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
  * <span class="doctag">@param <span class="type">{character[][]}</span> <span class="variable">board</span></span>
  * <span class="doctag">@return <span class="type">{void}</span> </span>Do not return anything, modify board in-place instead.
  */</span>
 <span class="keyword">var</span> solveSudoku = <span class="function"><span class="keyword">function</span>(<span class="params">board</span>) </span>{
   <span class="keyword">const</span> obj = {}
+  <span class="keyword">const</span> used = {}
   <span class="keyword">for</span> (<span class="keyword">let</span> x = <span class="number">0</span>; x &lt; <span class="number">9</span>; x++) {
     <span class="keyword">for</span> (<span class="keyword">let</span> y = <span class="number">0</span>; y &lt; <span class="number">9</span>; y++) {
       <span class="keyword">if</span> (board[x][y] !== <span class="string">'.'</span>) {
+        <span class="comment">// init used sudu.</span>
+        used[<span class="string">`<span class="subst">${x}</span>、<span class="subst">${y}</span>`</span>] = <span class="literal">true</span>
+
         <span class="keyword">if</span> (!obj[<span class="string">`rows <span class="subst">${x}</span>`</span>]) obj[<span class="string">`rows <span class="subst">${x}</span>`</span>] = []
         <span class="keyword">if</span> (!obj[<span class="string">`columns <span class="subst">${y}</span>`</span>]) obj[<span class="string">`columns <span class="subst">${y}</span>`</span>] = []
         <span class="keyword">const</span> blockX = <span class="built_in">Math</span>.floor(x / <span class="number">3</span>)
@@ -49,4 +63,14 @@ board =
       }
     }
   }
-};</code></pre></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">6933875</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29092276</span></div></div></div></div></div><script src="/blog/js/main.6294299d.js"></script></body></html>
+
+  <span class="keyword">for</span> (<span class="keyword">let</span> x = <span class="number">0</span>; x &lt; <span class="number">9</span>; x++) {
+    <span class="keyword">for</span> (<span class="keyword">let</span> y = <span class="number">0</span>; y &lt; <span class="number">9</span>; y++) {
+      dfs(board, x, y, obj, used)
+    }
+  }
+};
+
+<span class="keyword">var</span> dfs = <span class="function"><span class="keyword">function</span>(<span class="params">board, x, y, obj, used</span>) </span>{
+
+}</code></pre></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">6946719</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29105176</span></div></div></div></div></div><script src="/blog/js/main.72d33019.js"></script></body></html>
