@@ -1,8 +1,8 @@
 [
   {
     "referrer": "github.com",
-    "count": 137,
-    "uniques": 70
+    "count": 135,
+    "uniques": 69
   },
   {
     "referrer": "segmentfault.com",
@@ -11,13 +11,13 @@
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 25,
+    "count": 24,
     "uniques": 17
   },
   {
     "referrer": "leetcode-cn.com",
-    "count": 16,
-    "uniques": 14
+    "count": 15,
+    "uniques": 13
   },
   {
     "referrer": "muyunyun.cn",
