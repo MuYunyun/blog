@@ -1,0 +1,1 @@
+(self.webpackChunkblog=self.webpackChunkblog||[]).push([[7289],{17289:e=>{e.exports="### link\n\n* [解读新一代 Web 性能体验和质量指标](https://juejin.cn/post/6844904168591736846)"}}]);
