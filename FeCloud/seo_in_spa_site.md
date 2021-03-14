@@ -220,3 +220,225 @@ seo:
 * [优化向：单页应用多路由预渲染指南](https://juejin.cn/post/6844903503362523143)
 * [除了 SSR，就没有别的办法了吗？](https://zhuanlan.zhihu.com/p/57375824)
 * [基于 SSR/SSG 的前端 SEO 优化](https://segmentfault.com/a/1190000023792497)
+
+## translate
+
+## SEO practice in SPA site
+
+### Background
+
+![](http://with.muyunyun.cn/c03d8772da6d57e47c55044aee364103.jpg)
+
+Observe that [document site](http://muyunyun.cn/create-react-doc/) built based on [create-react-doc](https://github.com/MuYunyun/create-react-doc), I found the webpage code is bare(see the picture below). This is obviously a common problem of single-page application (SPA) sites. It is not conducive to be searched by search engines (SEO).
+
+![](http://with.muyunyun.cn/0ba88a7544efe0e1978e6c8d8b7775a6.jpg)
+
+Isn't it possible that SPA sites can't perform SEO, so what about frameworks such as [Gatsby](https://github.com/gatsbyjs/gatsby), [nuxt](https://github.com/nuxt/nuxt.js) It can be used as the first choice for many bloggers to build blogs. What are the technical principles of such frameworks to empower SEO? Driven by curiosity, I start my journey of empowering SEO in [creat-react-doc](https://github.com/MuYunyun/create-react-doc).
+
+### Search Engine Optimization
+
+Before practice, let's analyze why single-page applications cannot be searched by search engines. The core is that `the crawler spider will not execute the JavaScript logic in the webpage during the crawling process`, so `the jump logic hidden in the JavaScript will not be executed either`.
+
+Check the packaged code of the current SPA site. Except for a root directory index.html, everything else is injected with JavaScript logic, so the browser will naturally not perform SEO on it.
+
+![](http://with.muyunyun.cn/0d15d4e3a62516da7c301e8f1c9228d6.jpg)
+
+In addition, detailed search engine optimization is a more complicated subject. If you are new to SEO optimization, it is recommended to read [Search Engine Optimization (SEO) Beginner's Guide](https://developers.google.com/search/docs/beginner/seo-starter-guide) article, given by Google Search Center. There are a comprehensive list of **17** best practices, and **33** practices that should be avoided.
+
+### Practical case of SEO in SPA site
+
+In the context of the light document site, we do not consider the SSR scheme for the time being.
+
+After investigating the SEO schemes of document sites on the market, the author summarizes the following four categories:
+
+* Static template rendering scheme
+* 404 redirection scheme
+* SSG plan
+* Pre-rendering scheme
+
+#### Static template rendering scheme
+
+ [hexo](https://github.com/hexojs/hexo) is the most typical in the static template rendering scheme. Such frameworks need to specify a specific template language (such as [pug](https://github.com/pugjs/pug )) to develop themes, so as to achieve the purpose of direct output of web content.
+
+#### 404 Redirection Scheme
+
+The principle of the 404 redirect solution is mainly to use the 404 mechanism of GitHub Pages for redirection. Typical cases are [spa-github-pages](https://github.com/rafgraph/spa-github-pages), [sghpa](https://github.com/csuwildcat/sghpa).
+
+But unfortunately, in 2019 Google [adjusted crawler algorithm](https://github.com/rafgraph/spa-github-pages#seo), so this kind of redirection scheme is not conducive to SEO at the moment. The author of spa-github-pages also stated that if SEO is required, use the SSG plan or the paid plan [Netlify](https://www.netlify.com/blog/2020/04/07/creating-better-more-predictable-redirect-rules-for-spas/).
+
+![](http://with.muyunyun.cn/bbb5ed8bce1e0c08dae94df98ff33262.jpg)
+
+#### SSG plan
+
+The full name of the SSG scheme is called `static site generator`. In the community, [nuxt](https://github.com/nuxt/nuxt.js), [Gatsby](https://github.com/gatsbyjs/gatsby) and other framework-enabling SEO technologies can be classified without exception such SSG schemes.
+
+Taking the nuxt framework as an example, based on the `conventional routing`, it converts vue files into static web pages by executing the `nuxt generate` command.
+
+example:
+
+```bash
+-| pages/
+---| about.vue/
+---| index.vue/
+```
+
+After being static, it becomes:
+
+```bash
+-| dist/
+---| about/
+-----| index.html
+---| index.html
+```
+
+After the routing is static, the document directory structure at this time can be hosted by any static site service provider.
+
+#### Pre-rendering scheme
+
+After the above analysis of the SSG scheme, at this time the key to optimization of the SPA site is already on paper —— `static routing`. Compared with frameworks such as nuxt and Gatsby, which have the limitation of conventional routing, [create-react-doc](https://github.com/MuYunyun/create-react-doc) has flexible and free organization in the directory structure. Its website building concept is `File is Site`, and it is also very convenient to migrate existing markdown documents.
+
+Take [blog](https://github.com/MuYunyun/blog) project structure as an example, the document structure is as follows:
+
+```bash
+-| BasicSkill/
+---| basic/
+-----| DOM.md
+-----| HTML5.md
+```
+
+It should become:
+
+```bash
+-| BasicSkill/
+---| basic/
+-----| DOM
+-------| index.html
+-----| HTML5
+-------| index.html
+```
+
+After investigation, the idea and the [prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin) pre-rendering solution hit it off. The principle of the pre-rendering scheme can be seen in the following figure:
+
+![](http://with.muyunyun.cn/f3eb18c162a31fb155fd9f4a364f7fb9.jpg)
+
+So far, the technology selection is determined to use the pre-rendering scheme to achieve SSG.
+
+### Pre-rendering program practice
+
+A brief overview of the steps of create-react-doc's practice in the pre-rendering solution is as follows (for complete changes, see [mr](https://github.com/MuYunyun/create-react-doc/pull/95/files)):
+
+* Transform hash routing to history routing. Because the history routing structure naturally matches the document static directory structure.
+
+```diff
+export default function RouterRoot() {
+  return (
+-<HashRouter>
++ <BrowserRouter>
+      <RoutersContainer />
+-</HashRouter>
++ </BrowserRouter>
+  )
+}
+```
+
+* Added `pre-rendering environment` on the basis of development environment and generation environment, and matched the routing environment at the same time. It mainly solves the correspondence between `resource files` and `sub-paths under the main domain name`. The process is tortuous, and interested friends can see [issue](https://github.com/chrisvfritz/prerender-spa-plugin/issues/215#issuecomment-415942268).
+
+```diff
+const ifProd = env ==='prod'
++ const ifPrerender = window.__PRERENDER_INJECTED && window.__PRERENDER_INJECTED.prerender
++ const ifAddPrefix = ifProd && !ifPrerender
+
+<Route
+  key={item.path}
+  exact
+-path={item.path}
++ path={ifAddPrefix? `/${repo}${item.path}`: item.path}
+  render={() => {... }}
+/>
+```
+
+* Compatible with the use of prerender-spa-plugin in webpack 5.
+
+The official version currently does not support webpack 5, see [issue](https://github.com/chrisvfritz/prerender-spa-plugin/issues/414) for details, and I have a need to execute callbacks after pre-rendering. Therefore, a copy of [version](https://github.com/create-react-doc/prerender-spa-plugin) is currently forked, which solves the above problems.
+
+After the practice of the above steps, [static routing](https://github.com/MuYunyun/blog/tree/gh-pages) is finally implemented in the SPA site.
+
+![](http://with.muyunyun.cn/bf01633af158d460ca2830ed640e07cb.jpg)
+
+### SEO optimization with additional buff, the site opens in seconds?
+
+SEO optimization so far, let's look at the changes in `FP`, `FCP`, `LCP` and other indicator data before and after site optimization.
+
+Taking the [blog](https://muyunyun.cn/blog) site as an example, the index data before and after optimization is as follows:
+
+Before optimization: Before accessing the pre-rendering scheme, the time node for the first drawing (FP, FCP) is about `8s`, and the LCP is about 17s.
+
+![](http://with.muyunyun.cn/23d56cc42fd778c23d8ed80331334343.jpg)
+
+After optimization: After accessing the pre-rendering scheme, the first drawing time node starts within `1s`, and the LCP is within 1.5s.
+
+![](http://with.muyunyun.cn/9c551d29943c3d76700782374d86c37b.jpg)
+
+Comparing the optimization between before and after: the first screen drawing speed has been increased by `8` times, and the maximum content drawing speed has been increased by `11` times. I wanted to optimize SEO, but I got another way to optimize site performance.
+
+### Generate Sitemap Sitemap
+
+After finishing the pre-rendering and realizing the static routing of the site, it is one step closer to the goal of SEO. Putting aside [SEO optimization details](https://developers.google.com/search/docs/beginner/seo-starter-guide) for the time being, go straight to the core hinterland of SEO [site map](https://developers.google.com/search/docs/advanced/sitemaps/overview).
+
+The format of Sitemap and the meaning of each field are briefly explained as follows:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<urlset>
+  <!-- Required tag, this is the definition entry of a specific link, each piece of data must be included with <url> and </url>, this is required -->
+  <url>
+    <!-- Required, URL link address, length must not exceed 256 bytes -->
+    <loc>http://www.yoursite.com/yoursite.html</loc>
+    <!-- You don't need to submit the tag, which is used to specify the last update time of the link -->
+    <lastmod>2021-03-06</lastmod>
+    <!-- You don't need to submit the tag, use this tag to tell the update frequency of this link -->
+    <changefreq>daily</changefreq>
+    <!-- You don’t need to submit the tag, which is used to specify the priority ratio of this link to other links. This value is set between 0.0-1.0 -->
+    <priority>0.8</priority>
+  </url>
+</urlset>
+```
+
+> In the above sitemap, the lastmod, changefreq, and priority fields are not so important for SEO, see [how-to-create-a-sitemap](https://ahrefs.com/blog/zh/how-to-create-a -sitemap/)
+
+According to the above structure, I developed the sitemap generation package [crd-generator-sitemap](https://github.com/MuYunyun/create-react-doc/tree/main/packages/crd-generator-sitemap), the logic is to splice the pre-rendered routing path into the above format.
+
+The user only needs to add the following parameters in the site root directory `config.yml` to automatically generate [sitemap](http://muyunyun.cn/create-react-doc/sitemap.xml) during the automatic release process.
+
+```bash
+seo:
+  google: true
+```
+
+Submit the generated sitemap to [Google Search Console](https://search.google.com/search-console/sitemaps) for a try,
+
+![](http://with.muyunyun.cn/97c21838a1e3310b3c1259e30ab85f3b.jpg)
+
+Finally, verify the before and after optimization of Google search [site](https://www.google.com/search?q=site%3Amuyunyun.cn%2Fcreate-react-doc&ie=UTF-8).
+
+Before optimization: Only one piece of data is found.
+
+![](http://with.muyunyun.cn/aea3401e5a31587deb8d93a14f32b011.jpg)
+
+After optimization: Search the location data declared in the site map.
+
+![](http://with.muyunyun.cn/6df1536366c7d45e0f6418af03a7d948.jpg)
+
+So far, the complete process of using SSG to optimize SPA sites to achieve SEO has been fully realized. Follow-up is left to refer to the [Search Engine Optimization (SEO) Beginner's Guide](https://developers.google.com/search/docs/beginner/seo-starter-guide) to optimize some SEO details and support more searches The engine is up.
+
+### Summary
+
+This article starts with the realization of SEO on the SPA site, and successively introduces the basic principles of SEO, four practical cases of SEO in the SPA site, combined with [create-react-doc](https://github.com/MuYunyun/create-react-doc) SPA framework for complete SEO practice.
+
+If this article is helpful to you, welcome [star](https://github.com/MuYunyun/create-react-doc), [feedback](https://github.com/MuYunyun/create-react-doc/issues/new).
+
+### Related Links
+
+* [create-react-doc](https://github.com/MuYunyun/create-react-doc)
+* [why-is-my-website-not-showing-up-on-google/](https://ahrefs.com/blog/zh/why-is-my-website-not-showing-up-on- google/)
+* [A Technical Guide to SEO With Gatsby.js](https://medium.com/frontend-digest/a-technical-guide-to-seo-with-gatsby-js-e88a7dac80f0)
