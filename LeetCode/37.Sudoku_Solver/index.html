@@ -45,12 +45,14 @@ board =
  */</span>
 <span class="keyword">var</span> solveSudoku = <span class="function"><span class="keyword">function</span>(<span class="params">board</span>) </span>{
   <span class="keyword">const</span> obj = {}
-  <span class="keyword">const</span> used = {}
+  <span class="keyword">const</span> used = []
   <span class="keyword">for</span> (<span class="keyword">let</span> x = <span class="number">0</span>; x &lt; <span class="number">9</span>; x++) {
     <span class="keyword">for</span> (<span class="keyword">let</span> y = <span class="number">0</span>; y &lt; <span class="number">9</span>; y++) {
       <span class="keyword">if</span> (board[x][y] !== <span class="string">'.'</span>) {
-        <span class="comment">// init used sudu.</span>
-        used[<span class="string">`<span class="subst">${x}</span>、<span class="subst">${y}</span>`</span>] = <span class="literal">true</span>
+        used.push({
+          <span class="attr">x</span>: <span class="literal">false</span>,
+          <span class="attr">y</span>: <span class="literal">false</span>
+        })
 
         <span class="keyword">if</span> (!obj[<span class="string">`rows <span class="subst">${x}</span>`</span>]) obj[<span class="string">`rows <span class="subst">${x}</span>`</span>] = []
         <span class="keyword">if</span> (!obj[<span class="string">`columns <span class="subst">${y}</span>`</span>]) obj[<span class="string">`columns <span class="subst">${y}</span>`</span>] = []
@@ -60,42 +62,39 @@ board =
         obj[<span class="string">`rows <span class="subst">${x}</span>`</span>].push(board[x][y])
         obj[<span class="string">`columns <span class="subst">${y}</span>`</span>].push(board[x][y])
         obj[<span class="string">`block <span class="subst">${blockX}</span><span class="subst">${blockY}</span>`</span>].push(board[x][y])
+      } <span class="keyword">else</span> {
+        used.push({
+          x,
+          y
+        })
       }
     }
   }
 
-  <span class="keyword">for</span> (<span class="keyword">let</span> x = <span class="number">0</span>; x &lt; <span class="number">9</span>; x++) {
-    <span class="keyword">for</span> (<span class="keyword">let</span> y = <span class="number">0</span>; y &lt; <span class="number">9</span>; y++) {
-      dfs(board, x, y, obj, used)
-    }
-  }
+  dfs(board, <span class="number">0</span>, obj, used)
 };
 
-<span class="keyword">var</span> directions = [[<span class="number">1</span>, <span class="number">0</span>], [<span class="number">0</span>, <span class="number">1</span>], [-<span class="number">1</span>, <span class="number">0</span>], [<span class="number">0</span>, -<span class="number">1</span>]]
+<span class="keyword">var</span> dfs = <span class="function"><span class="keyword">function</span>(<span class="params">board, pos, obj, used</span>) </span>{
+  <span class="keyword">const</span> [x, y] = used[pos]
+  <span class="keyword">if</span> (pos === used.length - <span class="number">1</span>) {
 
-<span class="keyword">var</span> dfs = <span class="function"><span class="keyword">function</span>(<span class="params">board, x, y, obj, used</span>) </span>{
-  <span class="keyword">if</span> (used[<span class="string">`<span class="subst">${x}</span>、<span class="subst">${y}</span>`</span>]) {
-    <span class="keyword">return</span>
-  } <span class="keyword">else</span> {
-    <span class="comment">// data source</span>
-    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt;= <span class="number">9</span>; i++) {
-      <span class="keyword">const</span> blockX = <span class="built_in">Math</span>.floor(x / <span class="number">3</span>)
-      <span class="keyword">const</span> blockY = <span class="built_in">Math</span>.floor(y / <span class="number">3</span>)
-      <span class="keyword">if</span> (
-        obj[<span class="string">`rows <span class="subst">${x}</span>`</span>].indexOf(i) &gt; -<span class="number">1</span>
-        || obj[<span class="string">`columns <span class="subst">${y}</span>`</span>].indexOf(i) &gt; -<span class="number">1</span>
-        || obj[<span class="string">`block <span class="subst">${blockX}</span><span class="subst">${blockY}</span>`</span>].indexOf(i) &gt; -<span class="number">1</span>
-      ) {
-        <span class="keyword">continue</span>
-      } <span class="keyword">else</span> {
-        used[<span class="string">`<span class="subst">${x}</span>、<span class="subst">${y}</span>`</span>] = <span class="literal">true</span>
-        obj[<span class="string">`rows <span class="subst">${x}</span>`</span>].push(i)
-        obj[<span class="string">`columns <span class="subst">${y}</span>`</span>].push(i)
-        obj[<span class="string">`block <span class="subst">${blockX}</span><span class="subst">${blockY}</span>`</span>].push(i)
-        <span class="keyword">for</span> (<span class="keyword">let</span> m = <span class="number">0</span>; m &lt; directions.length; m++) {
-          dfs(board, directions[m][<span class="number">0</span>], directions[m][<span class="number">1</span>], obj, used)
-        }
-      }
+  }
+  <span class="comment">// data source</span>
+  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt;= <span class="number">9</span>; i++) {
+    <span class="keyword">const</span> blockX = <span class="built_in">Math</span>.floor(x / <span class="number">3</span>)
+    <span class="keyword">const</span> blockY = <span class="built_in">Math</span>.floor(y / <span class="number">3</span>)
+    <span class="keyword">if</span> (
+      obj[<span class="string">`rows <span class="subst">${x}</span>`</span>].indexOf(i) === -<span class="number">1</span>
+      &amp;&amp; obj[<span class="string">`columns <span class="subst">${y}</span>`</span>].indexOf(i) === -<span class="number">1</span>
+      &amp;&amp; obj[<span class="string">`block <span class="subst">${blockX}</span><span class="subst">${blockY}</span>`</span>].indexOf(i) === -<span class="number">1</span>
+    ) {
+      obj[<span class="string">`rows <span class="subst">${x}</span>`</span>].push(i)
+      obj[<span class="string">`columns <span class="subst">${y}</span>`</span>].push(i)
+      obj[<span class="string">`block <span class="subst">${blockX}</span><span class="subst">${blockY}</span>`</span>].push(i)
+      dfs(board, pos + <span class="number">1</span>, obj, used)
+      obj[<span class="string">`rows <span class="subst">${x}</span>`</span>].pop()
+      obj[<span class="string">`columns <span class="subst">${y}</span>`</span>].pop()
+      obj[<span class="string">`block <span class="subst">${blockX}</span><span class="subst">${blockY}</span>`</span>].pop()
     }
   }
-}</code></pre></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7060946</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29220535</span></div></div></div></div></div><script src="/blog/js/main.569db2f8.js"></script></body></html>
+}</code></pre></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7079421</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29239147</span></div></div></div></div></div><script src="/blog/js/main.4e6de4a0.js"></script></body></html>
