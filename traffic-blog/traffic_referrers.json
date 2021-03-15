@@ -1,13 +1,13 @@
 [
   {
     "referrer": "github.com",
-    "count": 141,
-    "uniques": 71
+    "count": 138,
+    "uniques": 68
   },
   {
     "referrer": "segmentfault.com",
-    "count": 75,
-    "uniques": 17
+    "count": 72,
+    "uniques": 15
   },
   {
     "referrer": "link.zhihu.com",
@@ -16,8 +16,8 @@
   },
   {
     "referrer": "leetcode-cn.com",
-    "count": 16,
-    "uniques": 14
+    "count": 15,
+    "uniques": 13
   },
   {
     "referrer": "muyunyun.cn",
@@ -31,8 +31,8 @@
   },
   {
     "referrer": "cnblogs.com",
-    "count": 4,
-    "uniques": 4
+    "count": 3,
+    "uniques": 3
   },
   {
     "referrer": "jianshu.com",
@@ -40,12 +40,12 @@
     "uniques": 2
   },
   {
-    "referrer": "t.co",
+    "referrer": "one-tab.com",
     "count": 2,
     "uniques": 2
   },
   {
-    "referrer": "one-tab.com",
+    "referrer": "t.co",
     "count": 2,
     "uniques": 2
   }
