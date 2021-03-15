@@ -1,17 +1,17 @@
 [
   {
     "referrer": "github.com",
-    "count": 138,
-    "uniques": 68
+    "count": 147,
+    "uniques": 72
   },
   {
     "referrer": "segmentfault.com",
-    "count": 72,
-    "uniques": 15
+    "count": 77,
+    "uniques": 17
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 32,
+    "count": 33,
     "uniques": 22
   },
   {
@@ -35,17 +35,17 @@
     "uniques": 3
   },
   {
-    "referrer": "jianshu.com",
-    "count": 2,
-    "uniques": 2
-  },
-  {
     "referrer": "one-tab.com",
     "count": 2,
     "uniques": 2
   },
   {
     "referrer": "t.co",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "referrer": "jianshu.com",
     "count": 2,
     "uniques": 2
   }
