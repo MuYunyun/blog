@@ -1,1 +1,0 @@
-(self.webpackChunkblog=self.webpackChunkblog||[]).push([[9622],{19622:e=>{e.exports="### 关键沟通\n\n* 原则一: 拿出勇气, 拷问现实"}}]);
