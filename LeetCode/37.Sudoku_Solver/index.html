@@ -29,30 +29,21 @@ board =
   [<span class="string">"9"</span>,<span class="string">"6"</span>,<span class="string">"1"</span>,<span class="string">"5"</span>,<span class="string">"3"</span>,<span class="string">"7"</span>,<span class="string">"2"</span>,<span class="string">"8"</span>,<span class="string">"4"</span>],
   [<span class="string">"2"</span>,<span class="string">"8"</span>,<span class="string">"7"</span>,<span class="string">"4"</span>,<span class="string">"1"</span>,<span class="string">"9"</span>,<span class="string">"6"</span>,<span class="string">"3"</span>,<span class="string">"5"</span>],
   [<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"2"</span>,<span class="string">"8"</span>,<span class="string">"6"</span>,<span class="string">"1"</span>,<span class="string">"7"</span>,<span class="string">"9"</span>]
-]</code></pre><blockquote><p>Explanation:&nbsp;The input board is shown above and the only valid solution is shown below:</p></blockquote><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png"></p><p>Constraints:</p><ul><li>board.length == 9</li><li>board<a href="">i</a>.length == 9</li><li>board<a href="">i</a> is a digit or '.'.</li></ul><p>It is guaranteed that the input board has only one solution.</p><h3>Analyze</h3><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="number">0</span>: (<span class="number">9</span>) [<span class="string">"5"</span>, <span class="string">"3"</span>, <span class="string">"7"</span>, <span class="string">"4"</span>, <span class="string">"6"</span>, <span class="string">"8"</span>, <span class="string">"9"</span>, <span class="string">"1"</span>, <span class="string">"2"</span>]
-<span class="number">1</span>: (<span class="number">9</span>) [<span class="string">"6"</span>, <span class="string">"1"</span>, <span class="string">"9"</span>, <span class="string">"5"</span>, <span class="string">"7"</span>, <span class="string">"2"</span>, <span class="string">"3"</span>, <span class="string">"4"</span>, <span class="string">"8"</span>]
-<span class="number">2</span>: (<span class="number">9</span>) [<span class="string">"9"</span>, <span class="string">"8"</span>, <span class="string">"6"</span>, <span class="string">"1"</span>, <span class="string">"3"</span>, <span class="string">"4"</span>, <span class="string">"2"</span>, <span class="string">"5"</span>, <span class="string">"7"</span>]
-<span class="number">3</span>: (<span class="number">9</span>) [<span class="string">"8"</span>, <span class="string">"6"</span>, <span class="string">"3"</span>, <span class="string">"5"</span>, <span class="string">"9"</span>, <span class="string">"7"</span>, <span class="string">"1"</span>, <span class="string">"4"</span>, <span class="string">"2"</span>]
-<span class="number">4</span>: (<span class="number">9</span>) [<span class="string">"4"</span>, <span class="string">"8"</span>, <span class="string">"3"</span>, <span class="string">"1"</span>, <span class="string">"2"</span>, <span class="string">"6"</span>, <span class="string">"5"</span>, <span class="string">"7"</span>, <span class="string">"9"</span>]
-<span class="number">5</span>: (<span class="number">9</span>) [<span class="string">"7"</span>, <span class="string">"2"</span>, <span class="string">"6"</span>, <span class="string">"1"</span>, <span class="string">"3"</span>, <span class="string">"9"</span>, <span class="string">"4"</span>, <span class="string">"8"</span>, <span class="string">"5"</span>]
-<span class="number">6</span>: (<span class="number">9</span>) [<span class="string">"6"</span>, <span class="string">"2"</span>, <span class="string">"8"</span>, <span class="string">"9"</span>, <span class="string">"1"</span>, <span class="string">"5"</span>, <span class="string">"3"</span>, <span class="string">"7"</span>, <span class="string">"4"</span>]
-<span class="number">7</span>: (<span class="number">9</span>) [<span class="string">"4"</span>, <span class="string">"1"</span>, <span class="string">"9"</span>, <span class="string">"5"</span>, <span class="string">"2"</span>, <span class="string">"8"</span>, <span class="string">"7"</span>, <span class="string">"6"</span>, <span class="string">"3"</span>]
-<span class="number">8</span>: (<span class="number">9</span>) [<span class="string">"8"</span>, <span class="string">"7"</span>, <span class="string">"9"</span>, <span class="string">"3"</span>, <span class="string">"4"</span>, <span class="string">"5"</span>, <span class="string">"2"</span>, <span class="string">"6"</span>, <span class="string">"1"</span>]</code></pre><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
+]</code></pre><blockquote><p>Explanation:&nbsp;The input board is shown above and the only valid solution is shown below:</p></blockquote><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png"></p><p>Constraints:</p><ul><li>board.length == 9</li><li>board<a href="">i</a>.length == 9</li><li>board<a href="">i</a> is a digit or '.'.</li></ul><p>It is guaranteed that the input board has only one solution.</p><h3>Analyze</h3><p>该题有一个难点: 需要明确递归的队列是啥。</p><ol><li>在这里递归队列是数独中的 <code>.</code> 的下标。</li><li>接着根据该队列进行递归操作, 对横向、竖向、3 x 3 内的位置信息作记录。</li></ol><ul><li>若横向、纵向、3 x 3 的位置没有使用过, 则将相应位置标记为已使用(true)</li><li>若横向、纵向、3 x 3 的位置已经使用过, 则进入下一个递归</li></ul><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
  * <span class="doctag">@param <span class="type">{character[][]}</span> <span class="variable">board</span></span>
  * <span class="doctag">@return <span class="type">{void}</span> </span>Do not return anything, modify board in-place instead.
  */</span>
 <span class="keyword">var</span> solveSudoku = <span class="function"><span class="keyword">function</span>(<span class="params">board</span>) </span>{
   <span class="keyword">const</span> obj = {}
   <span class="keyword">const</span> used = []
-  <span class="keyword">const</span> result = []
   <span class="keyword">for</span> (<span class="keyword">let</span> x = <span class="number">0</span>; x &lt; <span class="number">9</span>; x++) {
     <span class="keyword">for</span> (<span class="keyword">let</span> y = <span class="number">0</span>; y &lt; <span class="number">9</span>; y++) {
+      <span class="keyword">if</span> (!obj[<span class="string">`rows <span class="subst">${x}</span>`</span>]) obj[<span class="string">`rows <span class="subst">${x}</span>`</span>] = {}
+      <span class="keyword">if</span> (!obj[<span class="string">`columns <span class="subst">${y}</span>`</span>]) obj[<span class="string">`columns <span class="subst">${y}</span>`</span>] = {}
+      <span class="keyword">const</span> blockX = <span class="built_in">Math</span>.floor(x / <span class="number">3</span>)
+      <span class="keyword">const</span> blockY = <span class="built_in">Math</span>.floor(y / <span class="number">3</span>)
+      <span class="keyword">if</span> (!obj[<span class="string">`block <span class="subst">${blockX}</span><span class="subst">${blockY}</span>`</span>]) obj[<span class="string">`block <span class="subst">${blockX}</span><span class="subst">${blockY}</span>`</span>] = {}
       <span class="keyword">if</span> (board[x][y] !== <span class="string">'.'</span>) {
-        <span class="keyword">if</span> (!obj[<span class="string">`rows <span class="subst">${x}</span>`</span>]) obj[<span class="string">`rows <span class="subst">${x}</span>`</span>] = {}
-        <span class="keyword">if</span> (!obj[<span class="string">`columns <span class="subst">${y}</span>`</span>]) obj[<span class="string">`columns <span class="subst">${y}</span>`</span>] = {}
-        <span class="keyword">const</span> blockX = <span class="built_in">Math</span>.floor(x / <span class="number">3</span>)
-        <span class="keyword">const</span> blockY = <span class="built_in">Math</span>.floor(y / <span class="number">3</span>)
-        <span class="keyword">if</span> (!obj[<span class="string">`block <span class="subst">${blockX}</span><span class="subst">${blockY}</span>`</span>]) obj[<span class="string">`block <span class="subst">${blockX}</span><span class="subst">${blockY}</span>`</span>] = {}
         obj[<span class="string">`rows <span class="subst">${x}</span>`</span>][board[x][y]] = <span class="literal">true</span>
         obj[<span class="string">`columns <span class="subst">${y}</span>`</span>][board[x][y]] = <span class="literal">true</span>
         obj[<span class="string">`block <span class="subst">${blockX}</span><span class="subst">${blockY}</span>`</span>][board[x][y]] = <span class="literal">true</span>
@@ -65,17 +56,20 @@ board =
     }
   }
 
-  dfs(board, <span class="number">0</span>, obj, used, result)
+  dfs(board, <span class="number">0</span>, obj, used)
 
-  <span class="keyword">return</span> result
+  <span class="keyword">return</span> board
 };
 
-<span class="keyword">var</span> dfs = <span class="function"><span class="keyword">function</span>(<span class="params">board, pos, obj, used, result</span>) </span>{
+<span class="keyword">var</span> dfs = <span class="function"><span class="keyword">function</span>(<span class="params">board, pos, obj, used</span>) </span>{
   <span class="keyword">if</span> (pos === used.length) {
-    <span class="keyword">debugger</span>
-    <span class="comment">// for (let m = 0; m &lt; 9; m++) {</span>
-    <span class="comment">//   result.push([...obj[`rows ${m}`]])</span>
-    <span class="comment">// }</span>
+    <span class="keyword">for</span> (<span class="keyword">let</span> m = <span class="number">0</span>; m &lt; <span class="number">9</span>; m++) {
+      <span class="keyword">for</span> (<span class="keyword">let</span> n = <span class="number">1</span>; n &lt;= <span class="number">9</span>; n++) {
+        <span class="keyword">if</span> (<span class="keyword">typeof</span> obj[<span class="string">`rows <span class="subst">${m}</span>`</span>][n] === <span class="string">'number'</span>) {
+          board[m][obj[<span class="string">`rows <span class="subst">${m}</span>`</span>][n]] = <span class="built_in">String</span>(n)
+        }
+      }
+    }
     <span class="keyword">return</span>
   }
   <span class="keyword">const</span> { x, y } = used[pos]
@@ -84,17 +78,17 @@ board =
     <span class="keyword">const</span> blockX = <span class="built_in">Math</span>.floor(x / <span class="number">3</span>)
     <span class="keyword">const</span> blockY = <span class="built_in">Math</span>.floor(y / <span class="number">3</span>)
     <span class="keyword">if</span> (
-      !obj[<span class="string">`rows <span class="subst">${x}</span>`</span>][<span class="built_in">String</span>(i)]
+      (obj[<span class="string">`rows <span class="subst">${x}</span>`</span>][<span class="built_in">String</span>(i)] === <span class="literal">undefined</span> || obj[<span class="string">`rows <span class="subst">${x}</span>`</span>][<span class="built_in">String</span>(i)] === <span class="literal">false</span>)
       &amp;&amp; !obj[<span class="string">`columns <span class="subst">${y}</span>`</span>][<span class="built_in">String</span>(i)]
       &amp;&amp; !obj[<span class="string">`block <span class="subst">${blockX}</span><span class="subst">${blockY}</span>`</span>][<span class="built_in">String</span>(i)]
     ) {
       obj[<span class="string">`rows <span class="subst">${x}</span>`</span>][<span class="built_in">String</span>(i)] = y
       obj[<span class="string">`columns <span class="subst">${y}</span>`</span>][<span class="built_in">String</span>(i)] = <span class="literal">true</span>
       obj[<span class="string">`block <span class="subst">${blockX}</span><span class="subst">${blockY}</span>`</span>][<span class="built_in">String</span>(i)] = <span class="literal">true</span>
-      dfs(board, pos + <span class="number">1</span>, obj, used, result)
+      dfs(board, pos + <span class="number">1</span>, obj, used)
       obj[<span class="string">`rows <span class="subst">${x}</span>`</span>][<span class="built_in">String</span>(i)] = <span class="literal">false</span>
       obj[<span class="string">`columns <span class="subst">${y}</span>`</span>][<span class="built_in">String</span>(i)] = <span class="literal">false</span>
       obj[<span class="string">`block <span class="subst">${blockX}</span><span class="subst">${blockY}</span>`</span>][<span class="built_in">String</span>(i)] = <span class="literal">false</span>
     }
   }
-}</code></pre></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7156617</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29316959</span></div></div></div></div></div><script src="/blog/js/main.611eebaf.js"></script></body></html>
+}</code></pre></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7213865</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29374873</span></div></div></div></div></div><script src="/blog/js/main.fd781bac.js"></script></body></html>

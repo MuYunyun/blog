@@ -55,4 +55,14 @@ console.log(Popup, List) // undefined undefined</code></pre><p>原因是因为�
     bottom: <span class="number">10px</span>;
     <span class="attribute">top</span>: <span class="number">2px</span>;
   }
-}</code></pre></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7156185</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29316527</span></div></div></div></div></div><script src="/blog/js/main.611eebaf.js"></script></body></html>
+}</code></pre><h3>组件属性间尽量减少耦合关系</h3><p>比如添加了 A 属性 B 属性在某些情况会失效。又或者 C 属性必须在 D 属性存在的时候才生效。</p><p>比如以 Upload 组件为例: 背景逻辑是: 最大上传图片数量是 2, 当上传了 2 张图片以后就不显示继续上传了。</p><pre class="highlight-3v67_"><code class="hljs language-js javascript">showAdd = <span class="function">() =&gt;</span> {
+  <span class="keyword">const</span> { selectable, maxLength, files } = <span class="built_in">this</span>.props
+  <span class="keyword">if</span> (maxLength !== <span class="literal">undefined</span>) {
+    <span class="keyword">if</span> (files.length &gt;= maxLength) {
+      <span class="keyword">return</span> <span class="literal">false</span>
+    }
+    <span class="keyword">return</span> <span class="literal">true</span>
+  }
+  <span class="keyword">return</span> selectable
+}</code></pre><p>业务方举了反例: 例如有些商品图片是标品，图片是平台自己控制的，也许不满足最大数，但是不允许商家去修改的。
+配置了 maxLength={10}, 图片数量只有 3 张时, 不显示增加按钮的需求当前就不能实现。</p></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7213411</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29374419</span></div></div></div></div></div><script src="/blog/js/main.fd781bac.js"></script></body></html>
