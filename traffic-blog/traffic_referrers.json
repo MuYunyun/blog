@@ -1,18 +1,18 @@
 [
   {
     "referrer": "github.com",
-    "count": 149,
-    "uniques": 77
+    "count": 129,
+    "uniques": 71
   },
   {
     "referrer": "segmentfault.com",
-    "count": 68,
-    "uniques": 17
+    "count": 56,
+    "uniques": 14
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 33,
-    "uniques": 20
+    "count": 30,
+    "uniques": 19
   },
   {
     "referrer": "juejin.cn",
@@ -21,13 +21,13 @@
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 14,
-    "uniques": 9
+    "count": 12,
+    "uniques": 8
   },
   {
     "referrer": "leetcode-cn.com",
-    "count": 10,
-    "uniques": 9
+    "count": 9,
+    "uniques": 8
   },
   {
     "referrer": "Google",
