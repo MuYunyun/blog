@@ -30,4 +30,4 @@ This page will collect some useful websets.
 sudo vi /etc/hosts
 ```
 
-> github 访问慢一般可以修改该目录。[方法](https://zhuanlan.zhihu.com/p/94521827)
+> github 访问慢一般可以修改该目录。[方法](https://zhuanlan.zhihu.com/p/94521827), 经验证该方法同样适用于 git push 推不上的 case

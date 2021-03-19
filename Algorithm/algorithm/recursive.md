@@ -1,12 +1,12 @@
 ### Optimize fibonacci sequence
 
-> 题目: 求斐波那契数列（兔子数列） 1,1,2,3,5,8,13,21,34,55,89...中的第 n 项
+> 题目: 求斐波那契数列 1,1,2,3,5,8,13,21,34,55,89...中的第 n 项
 
-斐波那契数列考察的是递归算法, 但是要注意优化哦, 探寻下面优化前后的代码片段
+斐波那契数列考察的是递归算法, 但是要注意优化, 探寻下面优化前后的代码片段。
+
+优化前:
 
 ```js
-优化前
-
 let count1 = 0
 function fn(n) {
   count1++
@@ -19,28 +19,29 @@ function fn(n) {
 console.log(fn(20), count1) // 6765 13529
 ```
 
+优化后:
+
 ```js
-优化后
+function _fn(n) {
+  if (cache[n]) {
+    return cache[n]
+  }
+  count2++
+  if (n === 1 || n === 2) {
+    return 1
+  }
+  cache[n - 1] = _fn(n - 1)
+  cache[n - 2] = _fn(n - 2)
+  return cache[n - 1] + cache[n - 2]
+}
 
 let count2 = 0
 function fn(n) {
   const cache = {}
-  function _fn(n) {
-    if (cache[n]) {
-      return cache[n]
-    }
-    count2++
-    if (n === 1 || n === 2) {
-      return 1
-    }
-    cache[n - 1] = _fn(n - 1)
-    cache[n - 2] = _fn(n - 2)
-    return cache[n - 1] + cache[n - 2]
-  }
   return _fn(n)
 }
 
 console.log(fn(20), count2) // 6765 20
 ```
 
-小结: 通过创建闭包进行缓存数据, 可以看到大大提高了运行性能。
+小结: 通过`记忆化缓存数据`, 可以看到大大提高了运行性能。
