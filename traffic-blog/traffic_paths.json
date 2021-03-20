@@ -2,20 +2,20 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 230,
-    "uniques": 127
+    "count": 237,
+    "uniques": 133
   },
   {
     "path": "/MuYunyun/blog/tree/main/LeetCode",
     "title": "blog/LeetCode at main · MuYunyun/blog · GitHub",
-    "count": 104,
-    "uniques": 64
+    "count": 105,
+    "uniques": 65
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/单例模式.md at main · MuYunyun/blog · GitHub",
-    "count": 37,
-    "uniques": 28
+    "count": 38,
+    "uniques": 29
   },
   {
     "path": "/MuYunyun/blog/tree/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F",
@@ -30,6 +30,12 @@
     "uniques": 18
   },
   {
+    "path": "/MuYunyun/blog/issues",
+    "title": "MuYunyun/blog: Life is a moment",
+    "count": 20,
+    "uniques": 14
+  },
+  {
     "path": "/MuYunyun/blog/blob/38a3beb003/BasicSkill/readES6/%E7%BB%A7%E6%89%BF.md",
     "title": "blog/继承.md at 38a3beb003b1e7a0957f82aad8aecce4c06a53b5 · MuYunyun/blog · GitHub",
     "count": 20,
@@ -40,12 +46,6 @@
     "title": "站点 SEO 优化 · Issue #84 · MuYunyun/blog",
     "count": 19,
     "uniques": 9
-  },
-  {
-    "path": "/MuYunyun/blog/issues",
-    "title": "MuYunyun/blog: Life is a moment",
-    "count": 18,
-    "uniques": 13
   },
   {
     "path": "/MuYunyun/blog/tree/main/React",
