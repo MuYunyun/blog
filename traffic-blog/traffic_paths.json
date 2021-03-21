@@ -2,32 +2,38 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 221,
-    "uniques": 128
+    "count": 230,
+    "uniques": 134
   },
   {
     "path": "/MuYunyun/blog/tree/main/LeetCode",
     "title": "blog/LeetCode at main · MuYunyun/blog · GitHub",
-    "count": 105,
-    "uniques": 65
+    "count": 106,
+    "uniques": 66
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/单例模式.md at main · MuYunyun/blog · GitHub",
-    "count": 36,
-    "uniques": 27
+    "count": 38,
+    "uniques": 29
   },
   {
     "path": "/MuYunyun/blog/tree/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F",
     "title": "blog/BasicSkill/设计模式 at main · MuYunyun/blog · GitHub",
-    "count": 26,
-    "uniques": 10
+    "count": 27,
+    "uniques": 11
   },
   {
     "path": "/MuYunyun/blog/blob/main/LeetCode/1.Two_Sum.md",
     "title": "blog/1.Two_Sum.md at main · MuYunyun/blog · GitHub",
+    "count": 21,
+    "uniques": 19
+  },
+  {
+    "path": "/MuYunyun/blog/issues/84",
+    "title": "SEO 在 SPA 站点中的实践 · Issue #84 · MuYunyun/blog · GitHub",
     "count": 20,
-    "uniques": 18
+    "uniques": 11
   },
   {
     "path": "/MuYunyun/blog/blob/38a3beb003/BasicSkill/readES6/%E7%BB%A7%E6%89%BF.md",
@@ -48,15 +54,9 @@
     "uniques": 11
   },
   {
-    "path": "/MuYunyun/blog/issues/84",
-    "title": "SEO 在 SPA 站点中的实践 · Issue #84 · MuYunyun/blog · GitHub",
-    "count": 17,
-    "uniques": 9
-  },
-  {
     "path": "/MuYunyun/blog/blob/main/LeetCode/README.md",
     "title": "blog/README.md at main · MuYunyun/blog · GitHub",
-    "count": 15,
+    "count": 16,
     "uniques": 12
   }
 ]
