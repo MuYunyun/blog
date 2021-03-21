@@ -14,7 +14,7 @@ if (foo && foo.bar && foo.bar.baz) {
   // ...
 }
 
-// After-ish
+// After
 if (foo?.bar?.baz) {
   // ...
 }
@@ -49,6 +49,20 @@ undefined ?? 1 // 1
 null ?? 1      // 1
 0 ?? 1         // 0
 '' ?? 1        // ''
+```
+
+usage case such as
+
+```js
+// Before
+if (foo === undefined || foo === null) {
+  // doSomething()
+} else {
+  return foo
+}
+
+// After
+foo ?? doSomething()
 ```
 
 > `||` has different behaviour. Not only `undefined` and `null`, but `falsy value` will be also checked. eg:
