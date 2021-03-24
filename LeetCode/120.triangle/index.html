@@ -14,32 +14,9 @@
  <span class="number">6</span> <span class="number">5</span> <span class="number">7</span>
 <span class="number">4</span> <span class="number">1</span> <span class="number">8</span> <span class="number">3</span>
 The minimum path sum <span class="keyword">from</span> top to bottom is <span class="number">2</span> + <span class="number">3</span> + <span class="number">5</span> + <span class="number">1</span> = <span class="number">11</span> (underlined above).</code></pre><p>Example 2:</p><pre class="highlight-3v67_"><code class="hljs language-js javascript">Input: triangle = [[-<span class="number">10</span>]]
-<span class="attr">Output</span>: -<span class="number">10</span></code></pre><ul><li>Constraints:<ul><li>1 &lt;= triangle.length &lt;= 200</li><li>triangle<a href="">0</a>.length == 1</li><li>triangle<a href="">i</a>.length == triangle<a href="">i - 1</a>.length + 1</li><li>-104 &lt;= triangle<a href="">i</a> &lt;= 104</li></ul></li></ul><p>Follow up: Could you&nbsp;do this using only O(n) extra space, where n is the total number of rows in the triangle?</p><h3>Analyze</h3><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span>
-  <span class="number">1</span> <span class="number">1</span> <span class="number">1</span>
-    <span class="number">2</span> <span class="number">2</span>
-      <span class="number">3</span>
-
-<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span>
-<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span>
-<span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span>
-<span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">2</span>
-<span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span>
-<span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">2</span>
-<span class="number">0</span> <span class="number">1</span> <span class="number">2</span> <span class="number">2</span>
-<span class="number">0</span> <span class="number">1</span> <span class="number">2</span> <span class="number">3</span>
-
-<span class="number">0</span> <span class="number">0</span> <span class="number">0</span>
-  <span class="number">1</span> <span class="number">1</span>
-    <span class="number">2</span>
-
-<span class="number">0</span> <span class="number">0</span> <span class="number">0</span>
-<span class="number">0</span> <span class="number">0</span> <span class="number">1</span>
-<span class="number">0</span> <span class="number">1</span> <span class="number">1</span>
-<span class="number">0</span> <span class="number">1</span> <span class="number">2</span>
-
-
-   <span class="number">2</span>
-  <span class="number">3</span> <span class="number">4</span></code></pre><p>递归: 根据题意当前值的下标为 m, 则其上一个数的下标为 m - 1 或者 m。</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
+<span class="attr">Output</span>: -<span class="number">10</span></code></pre><ul><li>Constraints:<ul><li>1 &lt;= triangle.length &lt;= 200</li><li>triangle<a href="">0</a>.length == 1</li><li>triangle<a href="">i</a>.length == triangle<a href="">i - 1</a>.length + 1</li><li>-104 &lt;= triangle<a href="">i</a> &lt;= 104</li></ul></li></ul><p>Follow up: Could you&nbsp;do this using only O(n) extra space, where n is the total number of rows in the triangle?</p><h3>Analyze</h3><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="number">2</span>
+<span class="number">3</span> <span class="number">4</span>
+<span class="number">6</span> <span class="number">5</span> <span class="number">7</span></code></pre><p>根据题意如果当前值的下标为 <code>(m, n)</code>, 则其下一个数的下标为 <code>(m + 1， n)</code> 或者 <code>(m + 1, n + 1)</code>。</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
  * <span class="doctag">@param <span class="type">{number[][]}</span> <span class="variable">triangle</span></span>
  * <span class="doctag">@return <span class="type">{number}</span></span>
  */</span>
@@ -61,31 +38,47 @@ The minimum path sum <span class="keyword">from</span> top to bottom is <span cl
 
   getSmaller(triangle, m + <span class="number">1</span>, n, sum, cache)
   getSmaller(triangle, m + <span class="number">1</span>, n + <span class="number">1</span>, sum, cache)
-}</code></pre><p>以 <code>triangle = [[2], [3,4], [6,5,7], [4,1,8,3]]</code> 为例, <code>getSmaller</code> 函数执行次数为 15。</p><p>首先使用 <code>f(m, n) = Math.min(f(m + 1, n), f(m + 1, n + 1)) + triangle[m][n]</code> 优化代码精简代码如下</p><p>todo:</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
+}</code></pre><p>此时提交的时候执行时间超时, 开始优化!</p><p>首先使用 <code>f(m, n) = Math.min(f(m + 1, n), f(m + 1, n + 1)) + triangle[m][n]</code> 优化代码精简代码如下:</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
  * <span class="doctag">@param <span class="type">{number[][]}</span> <span class="variable">triangle</span></span>
  * <span class="doctag">@return <span class="type">{number}</span></span>
  */</span>
 <span class="keyword">var</span> minimumTotal = <span class="function"><span class="keyword">function</span>(<span class="params">triangle</span>) </span>{
-  <span class="comment">// const cache = { smallest: Infinity }</span>
-  <span class="comment">// getSmaller(triangle, 0, 0, 0, cache)</span>
-  <span class="comment">// return cache.smallest</span>
-  <span class="keyword">return</span> getSmaller(triangle, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>)
+  <span class="keyword">return</span> getSmaller(triangle, <span class="number">0</span>, <span class="number">0</span>)
 }
 
 <span class="comment">// m: witch row</span>
 <span class="comment">// n: witch column</span>
-<span class="comment">// result: current min value</span>
-<span class="keyword">var</span> getSmaller = <span class="function"><span class="keyword">function</span>(<span class="params">triangle, m, n, prefix</span>) </span>{
-  <span class="comment">// const sum = result + (triangle[m][n] ? triangle[m][n] : 0)</span>
+<span class="keyword">var</span> getSmaller = <span class="function"><span class="keyword">function</span>(<span class="params">triangle, m, n</span>) </span>{
   <span class="keyword">if</span> (m === triangle.length - <span class="number">1</span>) {
-    <span class="comment">// cache.smallest = Math.min(cache.smallest, sum)</span>
     <span class="keyword">return</span> triangle[m][n]
   }
-
-  <span class="keyword">const</span> a = getSmaller(triangle, m + <span class="number">1</span>, n, sum, cache)
-  <span class="keyword">const</span> b = getSmaller(triangle, m + <span class="number">1</span>, n + <span class="number">1</span>, sum, cache)
+  <span class="keyword">const</span> a = getSmaller(triangle, m + <span class="number">1</span>, n)
+  <span class="keyword">const</span> b = getSmaller(triangle, m + <span class="number">1</span>, n + <span class="number">1</span>)
   <span class="keyword">return</span> (a &lt; b ? a : b) + triangle[m][n]
-}</code></pre><p>此时还是存在调用次数过多问题(待验证), 同时使用记忆化缓存</p><p>todo: 从底向上</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
+}</code></pre><p>以 <code>triangle = [[2], [3,4], [6,5,7]]</code> 为例, 当前 <code>getSmaller</code> 函数执行次数为 7。调用栈如下:</p><pre class="highlight-3v67_"><code class="hljs language-js javascript">value <span class="number">2</span>
+value <span class="number">3</span>
+value <span class="number">6</span>
+value <span class="number">5</span> &lt;-
+value <span class="number">4</span>
+value <span class="number">5</span> &lt;-
+value <span class="number">7</span></code></pre><p>此时可以发现箭头处有两处相同的调用, 故而可以使用缓存减少调用栈的次数。缓存优化如下:</p><p>todo:</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
+ * <span class="doctag">@param <span class="type">{number[][]}</span> <span class="variable">triangle</span></span>
+ * <span class="doctag">@return <span class="type">{number}</span></span>
+ */</span>
+<span class="keyword">var</span> minimumTotal = <span class="function"><span class="keyword">function</span>(<span class="params">triangle</span>) </span>{
+  <span class="keyword">return</span> getSmaller(triangle, <span class="number">0</span>, <span class="number">0</span>)
+}
+
+<span class="comment">// m: witch row</span>
+<span class="comment">// n: witch column</span>
+<span class="keyword">var</span> getSmaller = <span class="function"><span class="keyword">function</span>(<span class="params">triangle, m, n</span>) </span>{
+  <span class="keyword">if</span> (m === triangle.length - <span class="number">1</span>) {
+    <span class="keyword">return</span> triangle[m][n]
+  }
+  <span class="keyword">const</span> a = getSmaller(triangle, m + <span class="number">1</span>, n)
+  <span class="keyword">const</span> b = getSmaller(triangle, m + <span class="number">1</span>, n + <span class="number">1</span>)
+  <span class="keyword">return</span> (a &lt; b ? a : b) + triangle[m][n]
+}</code></pre><p>todo: 从底向上</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
  * <span class="doctag">@param <span class="type">{number[][]}</span> <span class="variable">triangle</span></span>
  * <span class="doctag">@return <span class="type">{number}</span></span>
  */</span>
@@ -96,4 +89,4 @@ The minimum path sum <span class="keyword">from</span> top to bottom is <span cl
 输出：
 <span class="number">0</span>
 预期：
--<span class="number">1</span></code></pre></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7351946</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29515179</span></div></div></div></div></div><script src="/blog/js/main.faac26bf.js"></script></body></html>
+-<span class="number">1</span></code></pre></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7370749</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29534252</span></div></div></div></div></div><script src="/blog/js/main.00522f17.js"></script></body></html>

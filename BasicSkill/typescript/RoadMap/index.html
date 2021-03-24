@@ -23,15 +23,12 @@
 <span class="literal">NaN</span> &amp;&amp; <span class="number">1</span>       <span class="comment">// NaN</span></code></pre><h4>Nullish Coalescing Operator(空值合并操作符)</h4><p><code>??</code> means you can take the value that isn't <code>undefined</code> or <code>null</code>.</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="literal">undefined</span> ?? <span class="number">1</span> <span class="comment">// 1</span>
 <span class="literal">null</span> ?? <span class="number">1</span>      <span class="comment">// 1</span>
 <span class="number">0</span> ?? <span class="number">1</span>         <span class="comment">// 0</span>
-<span class="string">''</span> ?? <span class="number">1</span>        <span class="comment">// ''</span></code></pre><p>usage case such as</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">// Before</span>
-<span class="keyword">if</span> (foo === <span class="literal">undefined</span> || foo === <span class="literal">null</span>) {
-  <span class="comment">// doSomething()</span>
-} <span class="keyword">else</span> {
-  <span class="keyword">return</span> foo
-}
+<span class="string">''</span> ?? <span class="number">1</span>        <span class="comment">// ''</span></code></pre><p>You can use it when using <code>0</code> as true such as:</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="keyword">if</span> (<span class="keyword">typeof</span> value !== <span class="string">'number'</span>) <span class="keyword">return</span>
+<span class="comment">// before</span>
+<span class="keyword">let</span> valueStash = value === <span class="number">0</span> || value ? value : defaultValue
 
-<span class="comment">// After</span>
-foo ?? doSomething()</code></pre><blockquote><p><code>||</code> has different behaviour. Not only <code>undefined</code> and <code>null</code>, but <code>falsy value</code> will be also checked. eg:</p></blockquote><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="literal">undefined</span> || <span class="number">1</span> <span class="comment">// 1</span>
+<span class="comment">// after</span>
+<span class="keyword">let</span> valueStash = value ?? defaultValue</code></pre><blockquote><p><code>||</code> has different behaviour. Not only <code>undefined</code> and <code>null</code>, but <code>falsy value</code> will be also checked. eg:</p></blockquote><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="literal">undefined</span> || <span class="number">1</span> <span class="comment">// 1</span>
 <span class="literal">null</span> || <span class="number">1</span>      <span class="comment">// 1</span>
 <span class="number">0</span> || <span class="number">1</span>         <span class="comment">// 1</span>
-<span class="string">''</span> || <span class="number">1</span>        <span class="comment">// 1</span></code></pre></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7351827</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29515060</span></div></div></div></div></div><script src="/blog/js/main.faac26bf.js"></script></body></html>
+<span class="string">''</span> || <span class="number">1</span>        <span class="comment">// 1</span></code></pre></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7370615</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29534115</span></div></div></div></div></div><script src="/blog/js/main.00522f17.js"></script></body></html>
