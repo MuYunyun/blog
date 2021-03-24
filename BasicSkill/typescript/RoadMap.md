@@ -51,18 +51,15 @@ null ?? 1      // 1
 '' ?? 1        // ''
 ```
 
-usage case such as
+You can use it when using `0` as true such as:
 
 ```js
-// Before
-if (foo === undefined || foo === null) {
-  // doSomething()
-} else {
-  return foo
-}
+if (typeof value !== 'number') return
+// before
+let valueStash = value === 0 || value ? value : defaultValue
 
-// After
-foo ?? doSomething()
+// after
+let valueStash = value ?? defaultValue
 ```
 
 > `||` has different behaviour. Not only `undefined` and `null`, but `falsy value` will be also checked. eg:
