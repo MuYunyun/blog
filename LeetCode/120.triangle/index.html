@@ -111,10 +111,7 @@ m <span class="number">3</span> n <span class="number">2</span> triangle <span c
 m <span class="number">1</span> n <span class="number">1</span> triangle <span class="number">4</span>
 m <span class="number">2</span> n <span class="number">2</span> triangle <span class="number">7</span>
 m <span class="number">3</span> n <span class="number">2</span> triangle <span class="number">8</span>
-m <span class="number">3</span> n <span class="number">3</span> triangle <span class="number">3</span></code></pre><p>接着使用动态规划的思路来解题, 因为其递归方向为至底向上, 因此可以减少缓存记忆化的环节。</p><p>大体思路是遍历 <code>triangle</code> 最后一行数据, 向上查找数据。取和为最小的那次数据。</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="number">2</span>
-<span class="number">3</span> <span class="number">4</span>
-<span class="number">6</span> <span class="number">5</span> <span class="number">7</span>
-<span class="number">4</span> <span class="number">1</span> <span class="number">6</span> <span class="number">8</span></code></pre><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
+m <span class="number">3</span> n <span class="number">3</span> triangle <span class="number">3</span></code></pre><p>接着使用动态规划的思路来解题, 因为其递归方向为至底向上, 因此可以减少缓存记忆化的环节。</p><p>思路为遍历 <code>triangle</code> 最后一行数据, 向上查找数据。取和为最小的那次数据。</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
  * <span class="doctag">@param <span class="type">{number[][]}</span> <span class="variable">triangle</span></span>
  * <span class="doctag">@return <span class="type">{number}</span></span>
  */</span>
@@ -123,45 +120,20 @@ m <span class="number">3</span> n <span class="number">3</span> triangle <span c
   <span class="keyword">for</span> (<span class="keyword">let</span> n = <span class="number">0</span>; n &lt; triangle[triangle.length - <span class="number">1</span>].length; n++) {
     <span class="keyword">const</span> value = getSmaller(triangle, triangle.length - <span class="number">1</span>, n)
     result = <span class="built_in">Math</span>.min(value, result)
-    <span class="built_in">console</span>.log(<span class="string">`start<span class="subst">${n}</span>`</span>)
-    <span class="built_in">console</span>.log(<span class="string">'result'</span>, value, n)
   }
   <span class="keyword">return</span> result
 }
 
 <span class="keyword">var</span> getSmaller = <span class="function"><span class="keyword">function</span>(<span class="params">triangle, m, n</span>) </span>{
-  <span class="built_in">console</span>.log(<span class="string">'triangle[m][n]'</span>, triangle[m][n], <span class="string">'m'</span>, m, <span class="string">'n'</span>, n)
   <span class="keyword">if</span> (m === <span class="number">0</span>) {
     <span class="keyword">return</span> triangle[m][n]
   }
 
+  <span class="keyword">const</span> a = getSmaller(triangle, m - <span class="number">1</span>, n)
   <span class="keyword">if</span> (triangle[m - <span class="number">1</span>][n - <span class="number">1</span>] === <span class="literal">undefined</span>) {
-    <span class="keyword">return</span> getSmaller(triangle, m - <span class="number">1</span>, n) + triangle[m][n]
+    <span class="keyword">return</span> a + triangle[m][n]
   }
 
-  <span class="keyword">const</span> a = getSmaller(triangle, m - <span class="number">1</span>, n) + triangle[m][n]
-  <span class="keyword">const</span> b = getSmaller(triangle, m - <span class="number">1</span>, n - <span class="number">1</span>) + triangle[m][n]
-  <span class="comment">// console.log('value', a &lt; b ? a : b)</span>
+  <span class="keyword">const</span> b = getSmaller(triangle, m - <span class="number">1</span>, n - <span class="number">1</span>)
   <span class="keyword">return</span> (a &lt; b ? a : b) + triangle[m][n]
-}</code></pre><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="number">33</span>
-输入：
-<span class="keyword">var</span> triangle =
-[
-  [-<span class="number">3</span>],
-  [-<span class="number">9</span>,<span class="number">7</span>],
-  [<span class="number">3</span>,<span class="number">2</span>,-<span class="number">4</span>],
-  [<span class="number">4</span>,<span class="number">6</span>,-<span class="number">1</span>,<span class="number">9</span>],
-  [<span class="number">8</span>,<span class="number">1</span>,<span class="number">6</span>,<span class="number">6</span>,-<span class="number">4</span>],
-  [<span class="number">5</span>,-<span class="number">5</span>,<span class="number">5</span>,<span class="number">7</span>,-<span class="number">7</span>,<span class="number">5</span>],
-  [-<span class="number">2</span>,<span class="number">8</span>,-<span class="number">5</span>,<span class="number">1</span>,<span class="number">0</span>,-<span class="number">9</span>,-<span class="number">9</span>],
-  [<span class="number">9</span>,-<span class="number">5</span>,<span class="number">0</span>,-<span class="number">4</span>,-<span class="number">5</span>,-<span class="number">3</span>,<span class="number">5</span>,<span class="number">6</span>],
-  [-<span class="number">1</span>,-<span class="number">1</span>,-<span class="number">1</span>,<span class="number">4</span>,-<span class="number">2</span>,-<span class="number">3</span>,-<span class="number">4</span>,-<span class="number">8</span>,-<span class="number">7</span>],
-  [-<span class="number">2</span>,<span class="number">3</span>,-<span class="number">5</span>,-<span class="number">6</span>,-<span class="number">3</span>,-<span class="number">6</span>,<span class="number">5</span>,<span class="number">4</span>,-<span class="number">8</span>,-<span class="number">9</span>],
-  [-<span class="number">8</span>,-<span class="number">1</span>,<span class="number">7</span>,<span class="number">9</span>,-<span class="number">2</span>,-<span class="number">8</span>,-<span class="number">1</span>,<span class="number">3</span>,-<span class="number">4</span>,<span class="number">5</span>,-<span class="number">5</span>]
-]
-
-<span class="number">4</span>
-输出：
--<span class="number">26</span>
-预期：
--<span class="number">41</span></code></pre></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7561675</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29727850</span></div></div></div></div></div><script src="/blog/js/main.99eb410d.js"></script></body></html>
+}</code></pre><p>此时提交报<code>超时</code>, 如上解法已然是从下往上递归了呀, 难道这样子仍然没有满足动态规划思路么? 问题出在哪呢?</p><p>todo:</p></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7565348</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29731604</span></div></div></div></div></div><script src="/blog/js/main.716b182b.js"></script></body></html>
