@@ -136,4 +136,21 @@ m <span class="number">3</span> n <span class="number">3</span> triangle <span c
 
   <span class="keyword">const</span> b = getSmaller(triangle, m - <span class="number">1</span>, n - <span class="number">1</span>)
   <span class="keyword">return</span> (a &lt; b ? a : b) + triangle[m][n]
-}</code></pre><p>此时提交报<code>超时</code>, 如上解法已然是从下往上递归了呀, 难道这样子仍然没有满足动态规划思路么? 问题出在哪呢?</p><p>todo:</p></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7565348</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29731604</span></div></div></div></div></div><script src="/blog/js/main.716b182b.js"></script></body></html>
+}</code></pre><p>此时提交报<code>超时</code>, 如上解法已然是从下往上递归了呀, 难道这样子仍然没有满足动态规划思路么? 问题出在哪呢?</p><p>参考社区上同学的题解, 动态规划本质是从下往上的递归, 相比从上往下的递归, 它节省的是重复函数栈调用的开销。值得注意的是, 它也<code>需要记忆化</code>, 故而上述代码会超时, 下面给出记忆化的代码片段:</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
+ * <span class="doctag">@param <span class="type">{number[][]}</span> <span class="variable">triangle</span></span>
+ * <span class="doctag">@return <span class="type">{number}</span></span>
+ */</span>
+<span class="keyword">var</span> minimumTotal = <span class="function"><span class="keyword">function</span>(<span class="params">triangle</span>) </span>{
+  <span class="keyword">const</span> arr = []
+  <span class="keyword">for</span> (<span class="keyword">let</span> m = triangle.length - <span class="number">1</span>; m &gt;= <span class="number">0</span>; m--) {
+    <span class="keyword">for</span> (<span class="keyword">let</span> n = <span class="number">0</span>; n &lt;= m; n++) {
+      <span class="keyword">if</span> (!arr[m]) arr[m] = []
+      <span class="keyword">if</span> (!arr[m + <span class="number">1</span>]) {
+        arr[m][n] = triangle[m][n]
+      } <span class="keyword">else</span> {
+        arr[m][n] = <span class="built_in">Math</span>.min(arr[m + <span class="number">1</span>][n], arr[m + <span class="number">1</span>][n + <span class="number">1</span>]) + triangle[m][n]
+      }
+    }
+  }
+  <span class="keyword">return</span> arr[<span class="number">0</span>][<span class="number">0</span>]
+}</code></pre><h3>其它</h3><p>值得二刷</p></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7614324</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">29781588</span></div></div></div></div></div><script src="/blog/js/main.7420a6a7.js"></script></body></html>
