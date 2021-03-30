@@ -25,3 +25,7 @@
 * 本地开发调试
   * 打包：`vsce package`
   * 扩展视图命令下拉菜单中使用 `Install from VSIX` 命令安装
+
+### 其它
+
+files to exclude: 用多个 , 作为分隔符隔开, 每个 , 间可以用正则。
