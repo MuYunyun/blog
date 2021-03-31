@@ -1,13 +1,13 @@
 [
   {
     "referrer": "juejin.cn",
-    "count": 193,
-    "uniques": 66
+    "count": 189,
+    "uniques": 63
   },
   {
     "referrer": "github.com",
-    "count": 98,
-    "uniques": 66
+    "count": 91,
+    "uniques": 60
   },
   {
     "referrer": "link.zhihu.com",
@@ -21,13 +21,13 @@
   },
   {
     "referrer": "Google",
-    "count": 14,
-    "uniques": 12
+    "count": 13,
+    "uniques": 11
   },
   {
     "referrer": "leetcode-cn.com",
-    "count": 10,
-    "uniques": 7
+    "count": 9,
+    "uniques": 6
   },
   {
     "referrer": "v2ex.com",
