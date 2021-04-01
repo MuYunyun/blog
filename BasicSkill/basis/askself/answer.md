@@ -16,14 +16,14 @@
 
 * CSS 如何设置这两种模型
 
-```
+```css
 box-sizing: content-box; // 标准模型(默认)
 box-sizing: border-box;  // IE模型
 ```
 
 * JS 如何设置获取盒模型对应的宽和高
 
-```
+```js
 dom.style.width             // 只支持内联样式
 dom.currentStyle.width      // 只有 IE 支持
 window.getComputedStyle
@@ -36,7 +36,7 @@ dom.getBoundingClientRect
 
 * Flex 布局居中
 
-```
+```css
 justify-content: center； // 水平居中
 align-item: center;       // 垂直居中
 ```
