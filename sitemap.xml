@@ -187,6 +187,9 @@
     <loc>https://muyunyun.cn/blog/React/流畅性</loc>
   </url>
   <url>
+    <loc>https://muyunyun.cn/blog/React/测试/AB测试</loc>
+  </url>
+  <url>
     <loc>https://muyunyun.cn/blog/React/测试/JEST</loc>
   </url>
   <url>
@@ -1094,6 +1097,9 @@
   </url>
   <url>
     <loc>https://muyunyun.cn/blog/LeetCode/341.Flatten_Nested_List_Iterator</loc>
+  </url>
+  <url>
+    <loc>https://muyunyun.cn/blog/LeetCode/343.Integer_Break</loc>
   </url>
   <url>
     <loc>https://muyunyun.cn/blog/LeetCode/344.Reverse_String</loc>
