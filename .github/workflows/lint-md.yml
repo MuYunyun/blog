@@ -1,0 +1,13 @@
+name: Lint Markdown By Lint Markdown
+
+on: [ pull_request, push ]
+
+jobs:
+  lint-markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: lint-md-github-action
+        uses: lint-md/github-action@v0.0.2
