@@ -43,8 +43,10 @@
   * 口语中, gonna 常常用于代替 going to
     * Nothing's gonna change my love for you.
     * I'm not gonna miss you.
+* `gotta`
+  * 口语中，got to 常常缩写为 gotta, 和 have/has to 意思接近; 表示不得不、必须。
 
-- [ ] [learning English through listening to music](https://mp.weixin.qq.com/mp/homepage?__biz=MzI5ODE3NDQ0OQ%3D%3D&hid=2&sn=9b6dd88b8303196473c2a6c28b995c42): 当前看到第 9 节
+- [ ] [learning English through listening to music](https://mp.weixin.qq.com/s?__biz=MzI5ODE3NDQ0OQ==&mid=2247483980&idx=1&sn=eedc169e92d7a3aba3300956db0e2de9&scene=19#wechat_redirect): 当前看到第 10 节
 
 ### resource
 
