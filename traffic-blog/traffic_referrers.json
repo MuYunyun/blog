@@ -1,18 +1,18 @@
 [
   {
     "referrer": "juejin.cn",
-    "count": 220,
-    "uniques": 77
+    "count": 207,
+    "uniques": 73
   },
   {
     "referrer": "github.com",
-    "count": 102,
-    "uniques": 63
+    "count": 95,
+    "uniques": 58
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 27,
-    "uniques": 22
+    "count": 25,
+    "uniques": 20
   },
   {
     "referrer": "segmentfault.com",
@@ -21,8 +21,8 @@
   },
   {
     "referrer": "leetcode-cn.com",
-    "count": 20,
-    "uniques": 15
+    "count": 19,
+    "uniques": 14
   },
   {
     "referrer": "Google",
