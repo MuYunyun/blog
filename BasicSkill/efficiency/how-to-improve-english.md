@@ -45,8 +45,10 @@
     * I'm not gonna miss you.
 * `gotta`
   * 口语中，got to 常常缩写为 gotta, 和 have/has to 意思接近; 表示不得不、必须。
+* `kinda`
+  * 在非正式情景中, kind of 可以用 `kinda` 代替。
 
-- [ ] [learning English through listening to music](https://mp.weixin.qq.com/s?__biz=MzI5ODE3NDQ0OQ==&mid=2247483980&idx=1&sn=eedc169e92d7a3aba3300956db0e2de9&scene=19#wechat_redirect): 当前看到第 10 节
+- [ ] [learning English through listening to music](https://mp.weixin.qq.com/s?__biz=MzI5ODE3NDQ0OQ==&mid=2247483980&idx=1&sn=eedc169e92d7a3aba3300956db0e2de9&scene=19#wechat_redirect): 当前看到第 11 节
 
 ### resource
 
