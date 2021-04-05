@@ -27,7 +27,6 @@
       * [Disney UK](https://www.youtube.com/channel/UCQphRgAhj5UxktrQNP3WF5g): 冰雪奇缘主题曲 FROZEN 的播放量高达 10 亿!
       * [SiaVEVO](https://www.youtube.com/channel/UCmKdSrwf1e8coqAzUsrVHZw): 个人非常喜欢，视频质量感人，引人深思
 
-
 ### 连读技巧
 
 * [元音连读](https://mp.weixin.qq.com/s?__biz=MzI5ODE3NDQ0OQ==&mid=100000160&idx=1&sn=c7247b9fadb68c91d6338200d13c08d3&scene=19#wechat_redirect), 若单词末和单词头是元音标相邻, 则再其间加上 `/y/` 或者 `/w/`(哪个顺畅读哪个)
@@ -47,8 +46,10 @@
   * 口语中，got to 常常缩写为 gotta, 和 have/has to 意思接近; 表示不得不、必须。
 * `kinda`
   * 在非正式情景中, kind of 可以用 `kinda` 代替。
+* `'cause/'cos`
+  * 在口语中, because 常常简略为 'cause/'cos。
 
-- [ ] [learning English through listening to music](https://mp.weixin.qq.com/s?__biz=MzI5ODE3NDQ0OQ==&mid=2247483980&idx=1&sn=eedc169e92d7a3aba3300956db0e2de9&scene=19#wechat_redirect): 当前看到第 11 节
+- [ ] [learning English through listening to music](http://mp.weixin.qq.com/mp/homepage?__biz=MzI5ODE3NDQ0OQ==&hid=2&sn=9b6dd88b8303196473c2a6c28b995c42&scene=25#wechat_redirect): 当前看到第 12 节
 
 ### resource
 
