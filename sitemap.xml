@@ -100,6 +100,9 @@
     <loc>https://muyunyun.cn/blog/React/Fiber数据结构</loc>
   </url>
   <url>
+    <loc>https://muyunyun.cn/blog/React/Profiler</loc>
+  </url>
+  <url>
     <loc>https://muyunyun.cn/blog/React/React-DevTools</loc>
   </url>
   <url>
@@ -122,6 +125,9 @@
   </url>
   <url>
     <loc>https://muyunyun.cn/blog/React/React设计模式/setState回调替代方案</loc>
+  </url>
+  <url>
+    <loc>https://muyunyun.cn/blog/React/SSR</loc>
   </url>
   <url>
     <loc>https://muyunyun.cn/blog/React/Server_Component</loc>
