@@ -48,8 +48,10 @@
   * 在非正式情景中, kind of 可以用 `kinda` 代替。
 * `'cause/'cos`
   * 在口语中, because 常常简略为 `'cause/'cos`。
+* `ain’t`
+  * 口语中, 是 am not/is not/are not/have not/has not/will not 的缩写。
 
-- [ ] [learning English through listening to music](http://mp.weixin.qq.com/mp/homepage?__biz=MzI5ODE3NDQ0OQ==&hid=2&sn=9b6dd88b8303196473c2a6c28b995c42&scene=25#wechat_redirect): 当前看到第 13 节
+- [ ] [learning English through listening to music](http://mp.weixin.qq.com/mp/homepage?__biz=MzI5ODE3NDQ0OQ==&hid=2&sn=9b6dd88b8303196473c2a6c28b995c42&scene=25#wechat_redirect): 当前看到第 14 节
 
 ### resource
 
