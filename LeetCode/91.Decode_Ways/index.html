@@ -17,33 +17,38 @@
 The only valid mappings <span class="keyword">with</span> <span class="number">0</span> are <span class="string">'J'</span> -&gt; <span class="string">"10"</span> and <span class="string">'T'</span> -&gt; <span class="string">"20"</span>, neither <span class="keyword">of</span> which start <span class="keyword">with</span> <span class="number">0.</span>
 Hence, there are no valid ways to decode <span class="built_in">this</span> since all digits need to be mapped.</code></pre><p>Example 4:</p><pre class="highlight-3v67_"><code class="hljs language-js javascript">Input: s = <span class="string">"06"</span>
 <span class="attr">Output</span>: <span class="number">0</span>
-<span class="attr">Explanation</span>: <span class="string">"06"</span> cannot be mapped to <span class="string">"F"</span> because <span class="keyword">of</span> the leading zero (<span class="string">"6"</span> is different <span class="keyword">from</span> <span class="string">"06"</span>).</code></pre><p>Constraints:</p><ul><li>1 &lt;= s.length &lt;= 100</li><li>s contains only digits and may contain leading zero(s).</li></ul><h3>Analyze</h3><ul><li>567<ul><li>5 6 7</li><li>56 不满足</li><li>5 67 不满足</li></ul></li></ul><p>思路:</p><ul><li>'226' 拆解<ul><li>2 + '26' 的拆解之和</li><li>22 + '6' 的拆解之和</li></ul></li></ul><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
+<span class="attr">Explanation</span>: <span class="string">"06"</span> cannot be mapped to <span class="string">"F"</span> because <span class="keyword">of</span> the leading zero (<span class="string">"6"</span> is different <span class="keyword">from</span> <span class="string">"06"</span>).</code></pre><p>Constraints:</p><ul><li>1 &lt;= s.length &lt;= 100</li><li>s contains only digits and may contain leading zero(s).</li></ul><h3>Analyze</h3><p>该题拆分子问题较为不易, 题目思路可以转化为:</p><ul><li>下标为 start 的拆解之和等于<ul><li>下标为 start + 1 的拆解之和</li><li>下标为 start + 2 的拆解之和(前提: [start, start + 2) 值合理)</li></ul></li></ul><p>解法一: 记忆化递归</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
  * <span class="doctag">@param <span class="type">{string}</span> <span class="variable">s</span></span>
  * <span class="doctag">@return <span class="type">{number}</span></span>
  */</span>
 <span class="keyword">var</span> numDecodings = <span class="function"><span class="keyword">function</span>(<span class="params">s</span>) </span>{
-  <span class="keyword">return</span> judge(s, <span class="number">0</span>)
+  <span class="keyword">const</span> cache = {}
+  <span class="keyword">return</span> judge(s, <span class="number">0</span>, cache)
 }
 
-<span class="keyword">var</span> judge = <span class="function"><span class="keyword">function</span>(<span class="params">s, start</span>) </span>{
+<span class="keyword">var</span> judge = <span class="function"><span class="keyword">function</span>(<span class="params">s, start, cache</span>) </span>{
   <span class="keyword">const</span> length = s.length
+  <span class="keyword">if</span> (s[start] === <span class="string">'0'</span>) <span class="keyword">return</span> <span class="number">0</span>
   <span class="keyword">if</span> (start === s.length) {
-    <span class="keyword">return</span> <span class="number">0</span>
+    <span class="keyword">return</span> <span class="number">1</span>
   }
-  <span class="keyword">let</span> count = <span class="number">0</span>
-  <span class="keyword">if</span> (s[start] &amp;&amp; isValidValue(s[start])) {
-    count++
-  }
-  <span class="keyword">if</span> (s[start + <span class="number">1</span>] &amp;&amp; isValidValue(s.slice(start, start + <span class="number">1</span>))) {
-    count++
-  }
+  <span class="keyword">if</span> (cache[start]) <span class="keyword">return</span> cache[start]
 
-  <span class="keyword">return</span> count + judge(s, start + <span class="number">1</span>)
+  <span class="keyword">let</span> res = judge(s, start + <span class="number">1</span>, cache)
+  <span class="keyword">if</span> (isValidValue(s.slice(start, start + <span class="number">2</span>))) {
+    res += judge(s, start + <span class="number">2</span>, cache)
+  }
+  <span class="keyword">return</span> cache[start] = res
 }
 
 <span class="keyword">var</span> isValidValue = <span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>{
+  <span class="keyword">if</span> (!value || value.length &lt; <span class="number">2</span>) <span class="keyword">return</span> <span class="literal">false</span>
   <span class="keyword">const</span> valueToNum = <span class="built_in">Number</span>(value)
-  <span class="keyword">return</span> valueToNum !== <span class="number">0</span>
-    &amp;&amp; (value.length === <span class="built_in">String</span>(valueToNum).length)
-    &amp;&amp; valueToNum &lt;= <span class="number">26</span>
-}</code></pre></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7980383</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">30150774</span></div></div></div></div></div><script src="/blog/js/main.9201c1c9.js"></script></body></html>
+  <span class="keyword">return</span> valueToNum &lt;= <span class="number">26</span>
+}</code></pre><p>解法二: 动态规划</p><pre class="highlight-3v67_"><code class="hljs language-js javascript"><span class="comment">/**
+ * <span class="doctag">@param <span class="type">{string}</span> <span class="variable">s</span></span>
+ * <span class="doctag">@return <span class="type">{number}</span></span>
+ */</span>
+<span class="keyword">var</span> numDecodings = <span class="function"><span class="keyword">function</span>(<span class="params">s</span>) </span>{
+
+}</code></pre></div></div><div class="pageFooter-1sm0M"></div></div><div class="footer-3bMnZ"><div class="powered_by-3uku2">Powered by <a target="_blank" rel="noopener noreferrer" href="https://github.com/MuYunyun/create-react-doc">Create React Doc</a>.</div><div><i class="fa fa-user"></i><span class="uv_count-2H9jX" id="busuanzi_value_site_uv">7994194</span><span class="split-1Av76">|</span><i class="fa fa-eye"></i><span class="pv_count-2aT8U" id="busuanzi_value_site_pv">30164993</span></div></div></div></div></div><script src="/blog/js/main.b9807c79.js"></script></body></html>
