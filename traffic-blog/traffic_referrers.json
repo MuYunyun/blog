@@ -6,8 +6,8 @@
   },
   {
     "referrer": "github.com",
-    "count": 119,
-    "uniques": 64
+    "count": 115,
+    "uniques": 60
   },
   {
     "referrer": "segmentfault.com",
@@ -26,18 +26,18 @@
   },
   {
     "referrer": "Google",
-    "count": 13,
-    "uniques": 7
-  },
-  {
-    "referrer": "jianshu.com",
-    "count": 9,
-    "uniques": 3
+    "count": 12,
+    "uniques": 6
   },
   {
     "referrer": "leetcode-cn.com",
     "count": 8,
     "uniques": 7
+  },
+  {
+    "referrer": "jianshu.com",
+    "count": 8,
+    "uniques": 3
   },
   {
     "referrer": "cnblogs.com",
