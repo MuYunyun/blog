@@ -1,0 +1,1 @@
+(self.webpackChunkblog=self.webpackChunkblog||[]).push([[290],{70290:n=>{n.exports="### 4 大基本原则\n\n* `亲密性`\n  * 目的: 实现组织性;\n  * 实现方式: 将相关联的元素分在一组以建立更近的亲密性。\n* `对比`\n* `重复`\n* `对齐`\n"}}]);
