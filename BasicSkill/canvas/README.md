@@ -9,5 +9,22 @@
   * addColorStop(offset: number, color: string): void
 * `径向渐变`
   * createRadialGradient(x0: number, y0: number, r0: number, x1: number, y1: number, r1: number)
+* `路径`
+  * context.beginPath(): 开始一段新路径
+  * context.moveTo(x, y): 开始
+  * context.lineTo(x, y): 经过
+  * context.stroke(): 路径为线
+  * context.strokeStyle = gradient: 设置线的颜色
+* `画布的变换`
+  * `画布平移`: context.translate(x, y)
+  * `画布旋转`: context.rotate(Math.PI / 180 * 10): 旋转 10°
+  * `画布缩放`: context.scale(x, y)
+    * 沿原点镜像: context.scale(-1, -1)
+    * 沿 x 轴镜像: context.scale(1, -1)
+    * 沿 y 轴镜像: context.scale(-1, 1)
 
-> read: https://juejin.cn/post/6950684708443258894#heading-10
+### 图表案例
+
+#### 折线图
+
+> read: https://juejin.cn/post/6950684708443258894#heading-18
