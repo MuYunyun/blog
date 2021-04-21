@@ -27,4 +27,12 @@
 
 #### 折线图
 
-> read: https://juejin.cn/post/6950684708443258894#heading-18
+* 绘制坐标轴
+* 绘制平行 X 轴的线条
+* 绘制刻度
+* 绘制折线与圆
+
+
+### link
+
+> read: https://juejin.cn/post/6950684708443258894#heading-19
