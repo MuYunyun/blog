@@ -198,10 +198,8 @@ fetch('/post.json')
 
 * session 与 token 有什么区别
 
-```
-session(会话) 存放在服务端, 每次打开网站就产生一个 session, 注销网站, session 就会销毁
-token(令牌) 通常是由密码、时间戳混合盐算法一起生成
-```
+* session(会话) 存放在服务端, 每次打开网站就产生一个 session, 注销网站, session 就会销毁
+* token(令牌) 通常是由`密码`、`时间戳`混合盐算法一起生成
 
 > 既然聊到了 cookie 的大小, 另外两个相关的
 

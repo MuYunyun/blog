@@ -268,8 +268,18 @@ React.useMemo((props) => {
 useMemo(() => <component />) 等价于 useCallback(<component />)
 ```
 
-* useCallback: 一般用于缓存函数
-* useMemo: 一般用于缓存组件
+* useCallback
+  * 缓存函数
+
+```js
+const fn = React.useCallback(() => {
+  setOut(true)
+}, [])
+```
+
+* useMemo
+  * 一般用于缓存组件
+  * 缓存值: `const demo = React.useMemo(() => [...], [])`
 
 ### 是否能使用 React Hooks 替代 Redux
 
