@@ -1,6 +1,6 @@
 ### Canvas
 
-市面上 Web 端图表库基本都是基于 Canvas 进行绘制的原因是: Canvas 相对更加底层, 针对图像上的处理效果会更加友好。
+市面上 Web 端图表库基本都是基于 Canvas 进行绘制的, 究其原因: Canvas 相对更加底层, 在处理图像交互上更具优势。
 
 ### API
 
@@ -10,11 +10,14 @@
 * `径向渐变`
   * createRadialGradient(x0: number, y0: number, r0: number, x1: number, y1: number, r1: number)
 * `路径`
-  * ctx.beginPath(): 开始一段新路径
-  * ctx.moveTo(x, y): 开始
-  * ctx.lineTo(x, y): 经过
-  * ctx.stroke(): 路径为线
-  * ctx.strokeStyle = gradient: 设置线的颜色
+  * 开始一段新路径: ctx.beginPath()
+  * 开始: ctx.moveTo(x, y)
+  * 经过: ctx.lineTo(x, y)
+  * 路径为线: ctx.stroke()
+  * 设置线的颜色: ctx.strokeStyle = gradient
+  * `曲线`: ctx.bezierCurveTo(cplx, cp1y, cp2x, cp2y, x, y)
+* `圆`
+  * ctx.arc(x, y, radius, startAngle, endAngle [, counterclockwise])
 * `画布的变换`
   * 注意: 画布变换的操作需要前置。
   * `画布平移`: ctx.translate(x, y)

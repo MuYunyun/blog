@@ -79,4 +79,4 @@ ctx.restore()
 
 ```
 
-> todo: 平滑的折线图: https://juejin.cn/post/6950684708443258894#heading-19
+> todo: 平滑的折线图: https://juejin.cn/post/6950684708443258894#heading-23
