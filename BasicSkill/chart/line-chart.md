@@ -76,7 +76,29 @@ ctx.restore()
 * 绘制折线与圆
 
 ```js
+// 绘制折线
+ctx.save()
+for (let i = 0; i < xArr.length - 1; i++) {
+  ctx.fillStyle = '#000'
+  const curPointX = (1 / 2 + i) * perXLength
+  const curPointY = valueArr[i]
+  const nextPointX = (1 / 2 + i + 1) * perXLength
+  const nextPointY = valueArr[i + 1]
+  this.drawLine({ ctx: ctx, x0: curPointX, y0: curPointY, x1: nextPointX, y1: nextPointY })
+}
+ctx.restore()
 
+// 绘制圆
+ctx.save()
+for (let i = 0; i < xArr.length - 1; i++) {
+  ctx.fillStyle = '#000'
+  const pointX = (1 / 2 + i + 1) * perXLength
+  const pointY = valueArr[i + 1]
+  ctx.beginPath()
+  ctx.arc(pointX, pointY, 2, 0, Math.PI * 2, true)
+  ctx.stroke()
+}
+ctx.restore()
 ```
 
 > todo: 平滑的折线图: https://juejin.cn/post/6950684708443258894#heading-23
