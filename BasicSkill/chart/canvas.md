@@ -18,6 +18,8 @@
   * `曲线`: ctx.bezierCurveTo(cplx, cp1y, cp2x, cp2y, x, y)
 * `圆`
   * ctx.arc(x, y, radius, startAngle, endAngle [, counterclockwise])
+* `方形`
+  * ctx.fillRect(x, y, width, height)
 * `画布的变换`
   * 注意: 画布变换的操作需要前置。
   * `画布平移`: ctx.translate(x, y)
