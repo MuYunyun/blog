@@ -1,0 +1,1 @@
+(self.webpackChunkblog=self.webpackChunkblog||[]).push([[2939],{12939:n=>{n.exports="### link\n\n[什么是技术一号位](https://mp.weixin.qq.com/s/8d0AOo9-yhlUkJYb3NLGMQ)\n\n分析你所在环境的局势"}}]);
