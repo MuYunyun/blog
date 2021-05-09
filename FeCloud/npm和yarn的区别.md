@@ -109,8 +109,8 @@ try [yalc](https://github.com/whitecolor/yalc)
 
 * dependencies: 业务依赖
 * devDependencies: 开发依赖
-* pureDependencies:
-  * a 依赖了 b 包, b 包的 pureDependencies 字段含有 c 包。
+* peerDependencies:
+  * a 依赖了 b 包, b 包的 peerDependencies 字段含有 c 包。
     * b 包执行 yarn 此时并不会安装上 c 包。
     * 如果 a 包中未执行安装 c 包, 则会报错。
 
