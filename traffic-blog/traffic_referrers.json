@@ -1,18 +1,18 @@
 [
   {
     "referrer": "juejin.cn",
-    "count": 227,
-    "uniques": 72
+    "count": 237,
+    "uniques": 75
   },
   {
     "referrer": "github.com",
-    "count": 187,
-    "uniques": 91
+    "count": 191,
+    "uniques": 93
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 14,
-    "uniques": 12
+    "count": 15,
+    "uniques": 13
   },
   {
     "referrer": "muyunyun.cn",
@@ -45,7 +45,7 @@
     "uniques": 2
   },
   {
-    "referrer": "v2ex.com",
+    "referrer": "t.co",
     "count": 2,
     "uniques": 2
   }
