@@ -1,0 +1,1 @@
+(self.webpackChunkblog=self.webpackChunkblog||[]).push([[8837],{48837:n=>{n.exports="### 人月神话\n\n* 焦油坑\n  * 程序 -> 编程系统产品 `成本 x 9`\n    * 编程产品(通用化、测试、文档、维护) `成本 x 3`\n    * 编程系统(接口系统集成) `成本 x 3`\n"}}]);
