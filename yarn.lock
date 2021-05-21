@@ -910,9 +910,9 @@
     "@babel/plugin-transform-react-pure-annotations" "^7.12.1"
 
 "@babel/runtime@^7.1.2":
-  version "7.13.8"
-  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.13.8.tgz#cc886a85c072df1de23670dc1aa59fc116c4017c"
-  integrity sha512-CwQljpw6qSayc0fRG1soxHAKs1CnQMOChm4mlQP6My0kf9upVGizj/KhlTTgyUnETmHpcUXjaluNAkteRFuafg==
+  version "7.14.0"
+  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.14.0.tgz#46794bc20b612c5f75e62dd071e24dfd95f1cbe6"
+  integrity sha512-JELkvo/DlpNdJ7dlyw/eY7E0suy5i5GQH+Vlxaq1nsNJ+H7f4Vtv3jMeCEgRhZZQFXTjldYfQgv2qmM6M1v5wA==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -2649,9 +2649,9 @@ crd-scripts@^1.1.3:
     yamljs "^0.3.0"
 
 crd-seed@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.1.3.tgz#38d1fb42cef24def6bcb28df675bef0488c91c7d"
-  integrity sha512-BrSFNqBdZMTh1EFLu8uOsC65yJVOG1cMjoGObppknJp4z9vq4/0zZ7w/72gFSpS76HcEaRtbqzlusS4MBat/UQ==
+  version "1.1.5"
+  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.1.5.tgz#dcbddeb6e08ce607cfd1c5f170655dd78c980f30"
+  integrity sha512-VHJj/BB75sShLWdTkwsrN1Yoh4jPC0LjsR496WcVo5iUgDqR3H9vRyIcODkFkSW0yicem7vGfNWzipTi0BL+/Q==
   dependencies:
     react-router-dom "^4.2.2"
     react-switch "^5.0.1"
