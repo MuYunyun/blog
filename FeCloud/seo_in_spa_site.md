@@ -45,7 +45,7 @@
 
 #### SSG 方案
 
-SSG 方案全称为 static site generator, 中文可译为`路由静态化方案`。社区上 [nuxt](https://github.com/nuxt/nuxt.js)、[Gatsby](https://github.com/gatsbyjs/gatsby) 等框架赋能 SEO 的技术无一例外可以归类此类 SSG 方案。
+SSG 方案全称为 static site generator, 中文可译为`路由静态化方案`。社区上 [nuxt](https://github.com/nuxt/nuxt.js)、[Gatsby](https://github.com/gatsbyjs/gatsby)、[docusaurus](https://github.com/facebook/docusaurus) 等框架赋能 SEO 的技术无一例外可以归类此类 SSG 方案。
 
 以 nuxt 框架为例, 在`约定式路由`的基础上, 其通过执行 `nuxt generate` 命令将 vue 文件转化为静态网页。
 
