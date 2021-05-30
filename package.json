@@ -25,6 +25,6 @@
   "devDependencies": {
     "commitlint": "^11.0.0",
     "crd-seed": "^1.1.3",
-    "create-react-doc": "^1.1.3"
+    "create-react-doc": "^1.2.0"
   }
 }
