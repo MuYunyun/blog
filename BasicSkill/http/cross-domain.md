@@ -113,7 +113,7 @@ http.createServer((req, res) => {
 
 CORS 分为简单请求以及非简单请求。可以这么区分，如果请求方法为 `POST`、`GET`、`HEAD` 时为简单请求，其它方法如 `PUT`、`DELETE` 等为非简单请求，如果是非简单请求的话，可以在 chrome 的 Network 中看到多了一次 `Request Method` 为 `OPTIONS` 的请求。如下图:
 
-![](http://oqhtscus0.bkt.clouddn.com/f397ac2c565828f38516c8be2ebc1b4b.jpg-400)
+![](http://with.muyunyun.cn/f397ac2c565828f38516c8be2ebc1b4b.jpg-400)
 
 可以把这个请求称为预请求，用白话文翻译下，浏览器询问服务器，'服务器大哥，我这次要进行 PUT 请求，你给我发张通行证呗'，服务器大哥见浏览器小弟这么殷勤，于是给了它发了张通行证，叫作 `Access-Control-Allow-Methods:PUT`，接着浏览器就能愉快地进行 PUT 请求了。服务端代码示例如下：
 
