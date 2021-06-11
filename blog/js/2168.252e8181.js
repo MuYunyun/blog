@@ -1,1 +1,0 @@
-(self.webpackChunkblog=self.webpackChunkblog||[]).push([[2168],{32168:n=>{n.exports="### React 17\n\n* ![](http://with.muyunyun.cn/1b3163fff33edde81761d580e40f0725.jpg)\n  * 17 版本之后支持多版本共存。mark, 后续跟进。\n* 冒泡机制更改: 向原生靠拢;\n* 降低开发心智;\n\n### link\n\n* [react-v17](https://reactjs.org/blog/2020/08/10/react-v17-rc.html)c"}}]);
