@@ -17,7 +17,6 @@
 
 > In a typical React app, most updates are conceptually transition updates. But for backwards compatibility reasons, transitions are opt-in. By default, React 18 still handles updates as urgent, and you can mark an update as a transition by wrapping it into startTransition.
 
-
 #### New Suspense SSR Architecture in React 18
 
 - [ ] [New Suspense SSR Architecture in React 18](https://github.com/reactwg/react-18/discussions/37)
