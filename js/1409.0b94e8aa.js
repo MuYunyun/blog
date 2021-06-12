@@ -1,1 +1,0 @@
-(self.webpackChunkblog=self.webpackChunkblog||[]).push([[1409],{91409:l=>{l.exports="### small skill\n\n* 将手掌覆盖在 Apple Watch 的屏幕上时, 屏幕会被熄灭。\n* (todo)找手机\n* (todo)拍照\n* (todo)乘坐地铁\n* 开车接电话"}}]);

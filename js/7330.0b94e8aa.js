@@ -1,1 +1,0 @@
-(self.webpackChunkblog=self.webpackChunkblog||[]).push([[7330],{47330:a=>{a.exports="### Alexa 相关资源\n\n* [Alexa 站点](https://pitangui.amazon.com/)\n* [Alexa 使用](https://www.jianshu.com/p/a04fb4c4ac62)"}}]);

@@ -1,1 +1,0 @@
-(self.webpackChunkblog=self.webpackChunkblog||[]).push([[8324],{68324:h=>{h.exports="### 修改 host 文件\n\n```\nsudo vi /etc/hosts\n```\n\n> github 访问慢一般可以修改该目录。[方法](https://zhuanlan.zhihu.com/p/94521827)"}}]);

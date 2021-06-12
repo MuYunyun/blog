@@ -1,1 +1,0 @@
-(self.webpackChunkblog=self.webpackChunkblog||[]).push([[8828],{8828:n=>{n.exports="### Drawer 组件\n\n### 两种模式\n\n* 挂载到全局\n* 挂载到具体节点"}}]);

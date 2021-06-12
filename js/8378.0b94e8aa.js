@@ -1,1 +1,0 @@
-(self.webpackChunkblog=self.webpackChunkblog||[]).push([[8378],{38378:e=>{e.exports="### W3C\n\nSome CSS guideness can be found there.\n\n* [w3c](https://github.com/w3c/csswg-drafts)"}}]);

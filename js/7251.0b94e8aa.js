@@ -1,1 +1,0 @@
-(self.webpackChunkblog=self.webpackChunkblog||[]).push([[7251],{67251:n=>{n.exports="### 评分组件\n\n1. 能否纯用 css 实现评分组件, 思路是怎么样的?\n\n借助 input 和相应的 input:checked 可以实现。(思考这种方式实现的评分组件有什么缺陷?)\n\n2. 如何实现半星的效果?"}}]);

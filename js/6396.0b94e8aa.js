@@ -1,1 +1,0 @@
-(self.webpackChunkblog=self.webpackChunkblog||[]).push([[6396],{6396:e=>{e.exports="### Inspiration\n\n可以取的项目名: 百灵鸟、合欢树、seed、扑克牌回忆录、daphne\n"}}]);

@@ -1,1 +1,0 @@
-(self.webpackChunkblog=self.webpackChunkblog||[]).push([[5759],{95759:e=>{e.exports="```js\nconst url = require('url')\n\nmodule.exports = {\n  get query() {\n    return url.parse(this.req.url, true).query\n  }\n}\n```"}}]);

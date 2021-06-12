@@ -1,1 +1,0 @@
-(self.webpackChunkblog=self.webpackChunkblog||[]).push([[9113],{39113:e=>{e.exports="### The Little Prince\n\nI `ask the indulgence of the children` who may read this book for `dedicating it to` a grownup.\n\n* dedicate: GIVE TIME/ENERGY\n\n### I\n\n\n\n### 译文链接\n\n* [小王子](https://www.zhihu.com/pub/reader/119964114/chapter/1288857467019948032)"}}]);

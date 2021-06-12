@@ -1,1 +1,0 @@
-(self.webpackChunkblog=self.webpackChunkblog||[]).push([[1946],{11946:n=>{n.exports="### 问题\n\n在传统的大型前端项目开发中遇到的 CSS 问题有以下几点:\n\n* CSS 全局命名空间\n* 删除不必要的代码不容易\n* 不支持动态计算\n* 压缩\n\n"}}]);
