@@ -19,7 +19,10 @@
 
 #### New Suspense SSR Architecture in React 18
 
-- [ ] [New Suspense SSR Architecture in React 18](https://github.com/reactwg/react-18/discussions/37)
+* [New Suspense SSR Architecture in React 18](https://github.com/reactwg/react-18/discussions/37)
+  * React 18: Streaming HTML and Selective Hydration
+
+- [ ] [marko](https://tech.ebayinc.com/engineering/async-fragments-rediscovering-progressive-html-rendering-with-marko/)
 
 ### link
 
