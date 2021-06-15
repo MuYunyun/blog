@@ -30,7 +30,7 @@ fs.readFile('./node.gyp', {encoding: 'utf-8'}, function (e, content) {
 
 ![](http://with.muyunyun.cn/747aa17d5be5e261b7a580c10880365f.jpg-400)
 
-5. 点击 OK 按钮即完成配置, 在 src/node_file.cc 的 1592 行 static void Read(const FunctionCallbackInfo<Value>& args) 增加断点, 此时 Run -> Debug 'node' 即可进入调试界面
+5. 点击 OK 按钮即完成配置, 在 src/node_file.cc 的 1592 行 `static void Read(const FunctionCallbackInfo<Value>& args)` 增加断点, 此时 Run -> Debug 'node' 即可进入调试界面
 
 ### 编译步骤
 

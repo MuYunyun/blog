@@ -1,10 +1,11 @@
 ### vscode 快捷键
 
-* Command + Shift + H: 全局替换
-* Command + option + F: 当前页面全局替换
-* shift + option + F: 格式化
-* command + shift + V: 实时预览 md 文件
-* alt + shift + F: 格式化表格
+* 全局替换: Command + Shift + H
+* 当前页面全局替换: Command + option + F
+* 格式化: shift + option + F
+* 实时预览 md 文件: command + shift + V
+* 格式化表格: alt + shift + F
+* 向下复制当前行: shift + alt + ↓
 
 ### 左侧栏
 

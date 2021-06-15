@@ -196,10 +196,12 @@ git rebase -i HEAD~4
 
 ### How do you make changes on a specific commit
 
+```bash
 1. git rebase -i <Earlier Commit>
 2. edit the commit info you want change from `pick` to `edit`
 3. git commit --amend --author="MuYunyun <328375795@qq.com>"
 4. git rebase --continue
+```
 
 ### Setting your Git username
 
