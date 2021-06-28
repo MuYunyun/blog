@@ -19,6 +19,11 @@
 
 阅读到 Class Types
 
+### [type-challenges](https://github.com/type-challenges/type-challenges)
+
+* easy
+  * Pick
+
 ### More
 
 * [5-typescript-tips-to-improve-your-architecture](https://nehalist.io/5-typescript-tips-to-improve-your-architecture/?utm_source=typescript-weekly.com&utm_campaign=typescript_weekly_106&utm_medium=email): TypeScript 的使用技巧
