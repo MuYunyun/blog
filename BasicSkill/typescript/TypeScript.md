@@ -1,9 +1,6 @@
 ### TypeScript 相关资料 To Read
 
 - [x] [basic-types](https://www.typescriptlang.org/docs/handbook/basic-types.html)
-- [ ] [interface](https://www.typescriptlang.org/docs/handbook/interfaces.html)
-- [ ] [generics](https://www.typescriptlang.org/docs/handbook/generics.html)
-- [ ] [enums](https://www.typescriptlang.org/docs/handbook/enums.html)
 - [ ] [Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)
 - [ ] [Type Compatibility](https://www.typescriptlang.org/docs/handbook/type-compatibility.html)
 - [ ] [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html)
@@ -16,8 +13,6 @@
 ### Readonly vs Const
 
 `Readonly` 与 `Const` 都有不可让值修改的作用。区别在于 Readonly 作用于属性, Const 作用于变量。
-
-阅读到 Class Types
 
 ### [type-challenges](https://github.com/type-challenges/type-challenges)
 
