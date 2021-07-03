@@ -1,23 +1,23 @@
 [
   {
     "referrer": "juejin.cn",
-    "count": 219,
-    "uniques": 80
+    "count": 214,
+    "uniques": 79
   },
   {
     "referrer": "github.com",
-    "count": 72,
-    "uniques": 54
-  },
-  {
-    "referrer": "link.zhihu.com",
-    "count": 15,
-    "uniques": 11
+    "count": 58,
+    "uniques": 44
   },
   {
     "referrer": "segmentfault.com",
     "count": 14,
     "uniques": 9
+  },
+  {
+    "referrer": "link.zhihu.com",
+    "count": 13,
+    "uniques": 10
   },
   {
     "referrer": "jianshu.com",
@@ -26,23 +26,23 @@
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 12,
-    "uniques": 11
-  },
-  {
-    "referrer": "v2ex.com",
-    "count": 4,
-    "uniques": 4
-  },
-  {
-    "referrer": "Google",
-    "count": 4,
-    "uniques": 4
+    "count": 11,
+    "uniques": 10
   },
   {
     "referrer": "leetcode-cn.com",
     "count": 3,
     "uniques": 3
+  },
+  {
+    "referrer": "Google",
+    "count": 3,
+    "uniques": 3
+  },
+  {
+    "referrer": "v2ex.com",
+    "count": 2,
+    "uniques": 2
   },
   {
     "referrer": "carrotwu.com",
