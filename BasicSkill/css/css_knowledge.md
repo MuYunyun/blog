@@ -54,7 +54,7 @@
 
 ```css
 .demo {
-  border-radios: 100px/10px (水平100，垂直10)
+  border-radios: 100px / 10px (水平半径 100, 垂直半径 10)
 }
 ```
 
