@@ -1,17 +1,17 @@
 [
   {
     "referrer": "juejin.cn",
-    "count": 233,
-    "uniques": 80
+    "count": 199,
+    "uniques": 70
   },
   {
     "referrer": "github.com",
-    "count": 70,
-    "uniques": 53
+    "count": 66,
+    "uniques": 50
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 17,
+    "count": 16,
     "uniques": 14
   },
   {
@@ -26,13 +26,8 @@
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 7,
-    "uniques": 6
-  },
-  {
-    "referrer": "Google",
-    "count": 3,
-    "uniques": 3
+    "count": 6,
+    "uniques": 5
   },
   {
     "referrer": "v2ex.com",
@@ -40,13 +35,18 @@
     "uniques": 3
   },
   {
-    "referrer": "carrotwu.com",
-    "count": 2,
-    "uniques": 2
+    "referrer": "Google",
+    "count": 3,
+    "uniques": 3
   },
   {
     "referrer": "cache.baiducontent.com",
     "count": 2,
+    "uniques": 1
+  },
+  {
+    "referrer": "Bing",
+    "count": 1,
     "uniques": 1
   }
 ]
