@@ -80,3 +80,5 @@ It's a css property that can be eaqual to the background-size, it has five types
 
 * 第一步: `$0.innerText`;
 * 第二步: 点击 `Show more(221 kB)`;
+
+### 如何覆盖伪元素的样式(可作面试题)
