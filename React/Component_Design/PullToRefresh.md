@@ -1,3 +1,5 @@
+## PullToRefresh
+
 ### 与位置相关的 api
 
 ```js
@@ -122,9 +124,13 @@ export default function PullToRefreshDemo() {
     </div>
   )
 }
-
 ```
 
 ### 组件测试
 
 见 JEST 测试一节。
+
+### 上拉刷新结合虚拟列表
+
+* 到临界点
+  * 等数据加载
