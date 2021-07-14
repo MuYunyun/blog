@@ -44,11 +44,11 @@ let number: number = 10;
 数组是 Array 类型。然而，因为数组是一个集合，我们还需要指定在数组中的元素的类型。我们通过 `Array<type>` or `type[]` 语法为数组内的元素指定类型
 
 ```ts
-let arr:number[] = [1, 2, 3, 4, 5];
-let arr2:Array<number> = [1, 2, 3, 4, 5];
+let arr: number[] = [1, 2, 3, 4, 5]
+let arr2: Array<number> = [1, 2, 3, 4, 5]
 
-let arr3:string[] = ["1","2"];
-let arr4:Array<string> = ["1","2"];
+let arr3: string[] = ["1","2"]
+let arr4: Array<string> = ["1","2"]
 ```
 
 ### Tuple 类型
@@ -74,14 +74,16 @@ console.log(Role[4]) // Manager
 ### Any 类型
 
 any 是默认的类型，其类型的变量允许任何类型的值：
+
 ```ts
-let notSure:any = 10;
-let notSure2:any[] = [1,"2",false];
+let notSure:any = 10
+let notSure2:any[] = [1,"2",false]
 ```
 
 ### Void 类型
 
 JavaScript 没有空值 Void 的概念，在 TypeScirpt 中，可以用 void 表示没有任何返回值的函数：
+
 ```ts
 function alertName(): void {
   console.log('My name is muyy')
@@ -94,6 +96,8 @@ function alertName(): void {
 
 > [new-unknown-top-type](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#new-unknown-top-type), 比 any 更加安全的类型
 
+todo: read // Homomorphic mapped type over unknown
+
 ### Never 类型
 
 当函数 throw 或者返回错误, 循环永远为 true 时可以声明为 never 类型。
@@ -101,18 +105,17 @@ function alertName(): void {
 ```js
 // Function returning never must have unreachable end point
 function error(message: string): never {
-  throw new Error(message);
+  throw new Error(message)
 }
 
 // Inferred return type is never
 function fail() {
-  return error("Something failed");
+  return error("Something failed")
 }
 
 // Function returning never must have unreachable end point
 function infiniteLoop(): never {
-  while (true) {
-  }
+  while (true) { ... }
 }
 
 ```
@@ -125,15 +128,15 @@ function infiniteLoop(): never {
 
 ```ts
 function add(x: string, y: string): string{
-  return "Hello TypeScript";
+  return "Hello TypeScript"
 }
 
 let add2 = function(x: string, y: string): string{
-  return "Hello TypeScript";
+  return "Hello TypeScript"
 }
 
 let add3: (x: string, y: string) => string = function(x: string, y: string): string{
-  return "Hello TypeScript";
+  return "Hello TypeScript"
 }
 ```
 
@@ -146,9 +149,9 @@ function buildName(firstName: string, lastname?: string){
   console.log(lastname ? firstName + "" + lastname : firstName)
 }
 
-let res1 = buildName("鸣","人"); // 鸣人
-let res2 = buildName("鸣"); // 鸣
-let res3 = buildName("鸣", "人", "君"); // Supplied parameters do not match any signature of call target.
+let res1 = buildName("鸣","人") // 鸣人
+let res2 = buildName("鸣") // 鸣
+let res3 = buildName("鸣", "人", "君") // Supplied parameters do not match any signature of call target.
 ```
 如果带默认值的参数出现在必须参数前面，用户必须明确的传入 undefined 值来获得默认值。 例如，我们重写上例子，让 firstName 是带默认值的参数：
 ```ts
@@ -156,8 +159,8 @@ function buildName2(firstName = "鸣", lastName?: string){
   console.log(firstName + "" + lastName)
 }
 
-let res4 = buildName2("人"); // undefined人
-let res5 = buildName2(undefined, "人"); // 鸣人
+let res4 = buildName2("人") // undefined人
+let res5 = buildName2(undefined, "人") // 鸣人
 ```
 
 ## 类
@@ -168,14 +171,14 @@ let res5 = buildName2(undefined, "人"); // 鸣人
 
 ```ts
 class Person{
-  name:string; // 这个是对后文this.name类型的定义
-  age:number;
+  name:string // 这个是对后文this.name类型的定义
+  age:number
   constructor(name:string,age:number){
-    this.name = name;
-    this.age = age;
+    this.name = name
+    this.age = age
   }
   print(){
-    return this.name + this.age;
+    return this.name + this.age
   }
 }
 
@@ -187,30 +190,30 @@ console.log(person.print()) // muyy23
 ### 继承
 ```ts
 class Person{
-  public name:string;  // public、private、static 是 typescript 中的类访问修饰符
-  age:number;
+  public name:string  // public、private、static 是 typescript 中的类访问修饰符
+  age:number
   constructor(name:string,age:number){
-    this.name = name;
-    this.age = age;
+    this.name = name
+    this.age = age
   }
   tell(){
-    console.log(this.name + this.age);
+    console.log(this.name + this.age)
   }
 }
 
 class Student extends Person{
-  gender:string;
+  gender:string
   constructor(gender:string){
-    super("muyy",23);
-    this.gender = gender;
+    super("muyy",23)
+    this.gender = gender
   }
   tell(){
-    console.log(this.name + this.age + this.gender);
+    console.log(this.name + this.age + this.gender)
   }
 }
 
-var student = new Student("male");
-student.tell();  // muyy23male
+var student = new Student("male")
+student.tell()  // muyy23male
 ```
 
 这个例子展示了 TypeScript 中继承的一些特征，可以看到其实也是 ES6 的知识上加上类型声明。不过这里多了一个知识点 —— 公共，私有，以及受保护的修饰符。TypeScript 里，成员默认为 public ；当成员被标记成 private 时，它就不能在声明它的类的外部访问；protected 修饰符与 private 修饰符的行为很相似，但有一点不同，protected 成员在派生类中仍然可以访问。
@@ -223,30 +226,30 @@ TypeScript 支持通过 getters/setters 来截取对对象成员的访问。 它
 首先，存取器要求你将编译器设置为输出 ECMAScript 5 或更高。 不支持降级到 ECMAScript 3。 其次，只带有 get 不带有 set 的存取器自动被推断为 readonly。 这在从代码生成 .d.ts 文件时是有帮助的，因为利用这个属性的用户会看到不允许够改变它的值。
 ```ts
 class Hello{
-  private _name: string;
-  private _age: number;
+  private _name: string
+  private _age: number
   get name(): string {
-    return this._name;
+    return this._name
   }
   set name(value: string) {
-    this._name = value;
+    this._name = value
   }
   get age(): number{
-    return this._age;
+    return this._age
   }
   set age(age: number) {
     if(age>0 && age<100){
-      console.log("年龄在0-100之间"); // 年龄在0-100之间
-      return;
+      console.log("年龄在0-100之间") // 年龄在0-100之间
+      return
     }
-    this._age = age;
+    this._age = age
   }
 }
 
-let hello = new Hello();
-hello.name = "muyy";
+let hello = new Hello()
+hello.name = "muyy"
 hello.age = 23
-console.log(hello.name); // muyy
+console.log(hello.name) // muyy
 ```
 
 ## 接口
@@ -254,17 +257,17 @@ console.log(hello.name); // muyy
 TypeScript 的核心原则之一是对值所具有的结构进行类型检查。在 TypeScript 里，接口的作用就是为这些类型命名和为你的代码或第三方代码定义契约。
 ```ts
 interface LabelValue{
-    label: string;
+  label: string
 }
 
 function printLabel(labelObj: LabelValue){
-    console.log(labelObj.label);
+  console.log(labelObj.label)
 }
 
 let myObj = {
-    "label":"hello Interface"
-};
-printLabel(myObj);
+  "label":"hello Interface"
+}
+printLabel(myObj)
 ```
 LabelledValue 接口就好比一个名字，它代表了有一个 label 属性且类型为 string 的对象。只要传入的对象满足上述必要条件，那么它就是被允许的。
 
@@ -275,26 +278,26 @@ LabelledValue 接口就好比一个名字，它代表了有一个 label 属性�
 带有可选属性的接口与普通的接口定义差不多，只是在可选属性名字定义的后面加一个 ? 符号。可选属性的好处之一是可以对可能存在的属性进行预定义，好处之二是可以捕获引用了不存在的属性时的错误。
 ```ts
 interface Person{
-  name?:string;
-  age?:number;
+  name?:string
+  age?:number
 }
 
 function printInfo(info:Person){
-  console.log(info);
+  console.log(info)
 }
 
 let info = {
   "name":"muyy",
   "age":23
-};
+}
 
-printInfo(info); // {"name": "muyy", "age": 23}
+printInfo(info) // {"name": "muyy", "age": 23}
 
 let info2 = {
   "name":"muyy"
-};
+}
 
-printInfo(info2); // {"name": "muyy"}
+printInfo(info2) // {"name": "muyy"}
 ```
 
 ### 函数类型
@@ -302,28 +305,28 @@ printInfo(info2); // {"name": "muyy"}
 
 ```ts
 interface SearchFunc{
-    (source: string, subString: string): boolean;
+  (source: string, subString: string): boolean
 }
 
-let mySearch: SearchFunc;
+let mySearch: SearchFunc
 mySearch = function(source: string,subString: string){
-    return source.search(subString) !== -1;
-};
+  return source.search(subString) !== -1
+}
 
-console.log(mySearch("鸣人","鸣")); // true
-console.log(mySearch("鸣人","缨")); // false
+console.log(mySearch("鸣人","鸣")) // true
+console.log(mySearch("鸣人","缨")) // false
 ```
 
 ### 可索引类型
 与使用接口描述函数类型差不多，我们也可以描述那些能够“通过索引得到”的类型，比如 `a[10]` 或 `ageMap["daniel"]`。 可索引类型具有一个索引签名，它描述了对象索引的类型，还有相应的索引返回值类型。 让我们看如下例子：
 ```ts
 interface StringArray{
-    [index: number]: string;
+  [index: number]: string
 }
 
-let MyArray: StringArray;
-MyArray = ["是","云","随","风"];
-console.log(MyArray[2]); // 随
+let MyArray: StringArray
+MyArray = ["是","云","随","风"]
+console.log(MyArray[2]) // 随
 ```
 
 ### 类类型
@@ -332,14 +335,14 @@ console.log(MyArray[2]); // 随
 我们可以在接口中描述一个方法，在类里实现它，如同下面的 `setTime` 方法一样：
 ```ts
 interface ClockInterface{
-  currentTime: Date;
-  setTime(d: Date);
+  currentTime: Date
+  setTime(d: Date)
 }
 
 class Clock implements ClockInterface{
-  currentTime: Date;
+  currentTime: Date
   setTime(d: Date){
-    this.currentTime = d;
+    this.currentTime = d
   }
   constructor(h: number, m: number) {}
 }
@@ -349,42 +352,42 @@ class Clock implements ClockInterface{
 和类一样，接口也可以相互继承。 这让我们能够从一个接口里复制成员到另一个接口里，可以更灵活地将接口分割到可重用的模块里。
 ```ts
 interface Shape{
-  color: string;
+  color: string
 }
 
 interface PenStroke{
-  penWidth: number;
+  penWidth: number
 }
 
 interface Square extends Shape,PenStroke{
-  sideLength: number;
+  sideLength: number
 }
 
-let s = <Square>{};
-s.color = "blue";
-s.penWidth = 100;
-s.sideLength = 10;
+let s = <Square>{}
+s.color = "blue"
+s.penWidth = 100
+s.sideLength = 10
 ```
 
 ## 模块
 TypeScript 与 ECMAScript 2015 一样，任何包含顶级 import 或者 export 的文件都被当成一个模块。
 ```ts
 export interface StringValidator{
-  isAcceptable(s:string): boolean;
+  isAcceptable(s:string): boolean
 }
 
-var strReg = /^[A-Za-z]+$/;
-var numReg = /^[0-9]+$/;
+var strReg = /^[A-Za-z]+$/
+var numReg = /^[0-9]+$/
 
 export class letterValidator implements StringValidator{
   isAcceptable(s:string): boolean{
-    return strReg.test(s);
+    return strReg.test(s)
   }
 }
 
 export class zipCode implements StringValidator{
   isAcceptable(s: string): boolean{
-    return s.length == 5 && numReg.test(s);
+    return s.length == 5 && numReg.test(s)
   }
 }
 ```
