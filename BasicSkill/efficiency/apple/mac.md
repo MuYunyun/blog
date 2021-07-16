@@ -66,3 +66,11 @@ source ~/.zshrc
 ### 软件
 
 * [timetreeapp.com](https://timetreeapp.com/): 多人共享日历
+
+### 外接显示屏变卡
+
+* [mac 外接显示器卡成狗](https://www.v2ex.com/t/359003)
+
+* 方案
+  * 重置 SMC
+  * 换线

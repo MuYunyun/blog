@@ -96,8 +96,6 @@ function alertName(): void {
 
 > [new-unknown-top-type](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#new-unknown-top-type), 比 any 更加安全的类型
 
-todo: read // Homomorphic mapped type over unknown
-
 ### Never 类型
 
 当函数 throw 或者返回错误, 循环永远为 true 时可以声明为 never 类型。
