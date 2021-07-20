@@ -23,5 +23,4 @@
 
 * [5-typescript-tips-to-improve-your-architecture](https://nehalist.io/5-typescript-tips-to-improve-your-architecture/?utm_source=typescript-weekly.com&utm_campaign=typescript_weekly_106&utm_medium=email): TypeScript 的使用技巧
 
-
-curry: https://hackernoon.com/learn-advanced-typescript-4yl727e6 read: function consumes arguments
+curry: https://hackernoon.com/learn-advanced-typescript-4yl727e6 read: But we made a horrible mistake
