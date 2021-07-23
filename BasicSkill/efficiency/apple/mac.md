@@ -74,3 +74,7 @@ source ~/.zshrc
 * 方案
   * 重置 SMC
   * 换线
+
+### 移动硬盘
+
+* [Mac 分区](https://www.zhihu.com/question/37544123/answer/125566154)
