@@ -199,6 +199,7 @@ This section will talk about colorful frontend world.
 #### TypeScript
 
 * [TypeScript 基础篇](https://github.com/MuYunyun/blog/blob/main/BasicSkill/typescript/TypeScript基础篇.md)
+* [Types vs Interfaces](https://github.com/MuYunyun/blog/blob/main/BasicSkill/typescript/Types_vs_Interfaces.md)
 * [工具类型](https://github.com/MuYunyun/blog/blob/main/BasicSkill/typescript/Utility_Types.md)
 
 #### Node.js
