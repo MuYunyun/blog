@@ -1,23 +1,18 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 267,
-    "uniques": 107
+    "count": 256,
+    "uniques": 100
   },
   {
     "referrer": "github.com",
-    "count": 132,
-    "uniques": 77
+    "count": 131,
+    "uniques": 76
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 27,
-    "uniques": 23
-  },
-  {
-    "referrer": "juejin.cn",
-    "count": 23,
-    "uniques": 7
+    "count": 25,
+    "uniques": 21
   },
   {
     "referrer": "muyunyun.cn",
@@ -25,14 +20,19 @@
     "uniques": 12
   },
   {
+    "referrer": "juejin.cn",
+    "count": 21,
+    "uniques": 7
+  },
+  {
     "referrer": "Google",
-    "count": 8,
-    "uniques": 8
+    "count": 7,
+    "uniques": 7
   },
   {
     "referrer": "cnblogs.com",
-    "count": 4,
-    "uniques": 3
+    "count": 3,
+    "uniques": 2
   },
   {
     "referrer": "v2ex.com",
@@ -40,12 +40,12 @@
     "uniques": 2
   },
   {
-    "referrer": "cn.bing.com",
+    "referrer": "link.segmentfault.com",
     "count": 2,
     "uniques": 2
   },
   {
-    "referrer": "blog.csdn.net",
+    "referrer": "cn.bing.com",
     "count": 2,
     "uniques": 2
   }
