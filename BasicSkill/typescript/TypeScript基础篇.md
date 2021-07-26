@@ -222,6 +222,7 @@ TypeScript 支持通过 getters/setters 来截取对对象成员的访问。 它
 
 对于存取器有下面几点需要注意的：
 首先，存取器要求你将编译器设置为输出 ECMAScript 5 或更高。 不支持降级到 ECMAScript 3。 其次，只带有 get 不带有 set 的存取器自动被推断为 readonly。 这在从代码生成 .d.ts 文件时是有帮助的，因为利用这个属性的用户会看到不允许够改变它的值。
+
 ```ts
 class Hello{
   private _name: string

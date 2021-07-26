@@ -26,8 +26,6 @@
     * 魔都房房房：微信号 modufff, 楼市谈经论道 买房大家来说
 * 地段位置
 
-* qustion:
-  * 问题: 确立恋爱关系不过尚未结婚。若单方为沪户籍, 此时买房是否可以将非沪户籍一方挂在房产名下?
 ### link
 
 * [shanghai_house_knowledge](https://github.com/ayuer/shanghai_house_knowledge#321-%E6%9F%A5%E8%AF%A2%E8%87%AA%E5%B7%B1%E7%A4%BE%E4%BF%9D%E7%BC%B4%E7%BA%B3%E6%83%85%E5%86%B5)
