@@ -1,6 +1,34 @@
 ### Roadmap
 
-[roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap)
+* [roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap)
+* [overview](https://www.typescriptlang.org/docs/handbook/release-notes/overview.html)
+
+### 1.3
+
+* [Tuple types](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-3.html#tuple-types)
+
+### 1.4
+
+enum
+
+```ts
+enum MyFlags {
+  None = 0,
+  Neat = 1,
+  Cool = 2,
+  Awesome = 4,
+  Best = Neat | Cool | Awesome
+}
+var b = MyFlags.Best; // emits var b = 7;
+```
+
+why b is 7?
+
+todo: look for [Enums](https://www.typescriptlang.org/docs/handbook/enums.html#numeric-enums)
+
+### 1.5
+
+todo: read https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-5.html
 
 ### 3.7
 
