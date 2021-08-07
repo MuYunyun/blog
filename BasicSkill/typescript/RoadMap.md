@@ -11,24 +11,13 @@
 
 enum
 
-```ts
-enum MyFlags {
-  None = 0,
-  Neat = 1,
-  Cool = 2,
-  Awesome = 4,
-  Best = Neat | Cool | Awesome
-}
-var b = MyFlags.Best; // emits var b = 7;
-```
+### 2.8
 
-why b is 7?
+* [Conditional Types](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html#conditional-types)
 
-todo: look for [Enums](https://www.typescriptlang.org/docs/handbook/enums.html#numeric-enums)
+### 3.2
 
-### 1.5
-
-todo: read https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-5.html
+todo: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-2.html
 
 ### 3.7
 

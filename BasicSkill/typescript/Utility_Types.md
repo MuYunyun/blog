@@ -58,7 +58,8 @@ const todo: TodoPreview = {
 
 ### `Exclude<T, U>`
 
-`Exclude<T, U>`: 申明一个类型其在 T 类型中`移除 U 中所包含的类型`;
+* `Exclude<T, U>`: 申明一个类型其在 T 类型中`移除 U 中所包含的类型`;
+* 版本: 2.8
 
 ```js
 type T0 = Exclude<"a" | "b" | "c", "a">; // "b" | "c"
@@ -66,13 +67,25 @@ type T1 = Exclude<"a" | "b" | "c", "a" | "b">; // "c"
 type T2 = Exclude<string | number | (() => void), Function>; // string | number
 ```
 
+### `Extract<T, U>`
+
+* `Extract<T, U>` — Extract from T those types that are assignable to U.
+* 版本: 2.8
+
 ### `NonNullable<T>`
 
-`NonNullable<T>`: 申明一个类型其将 T 类型中的 null 与 undefined 移除;
+* `NonNullable<T>`: 申明一个类型其将 T 类型中的 null 与 undefined 移除;
+* 版本: 2.8
+
+### `ReturnType<T>`
+
+* `ReturnType<T>` — Obtain the return type of a function type.
+* 版本: 2.8
 
 ### `InstanceType<T>`
 
-`InstanceType<T>`: 申明一个由构造函数实例类型组合而成的类型;
+* `InstanceType<T>`: 申明一个由构造函数实例类型组合而成的类型;
+* 版本: 2.8
 
 ```js
 class C {
@@ -85,7 +98,3 @@ type T2 = InstanceType<never>; // any
 type T3 = InstanceType<string>; // Error
 type T4 = InstanceType<Function>; // Error
 ```
-
-### link
-
-* [utility-types](https://www.elsewebdevelopment.com/wp-content/uploads/typescript-3.7-utility-types-printable-cheatsheet.pdf)
