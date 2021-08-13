@@ -51,9 +51,3 @@ const MyArray = [
 // }
 type Person = typeof MyArray[number];
 ```
-
-### template-literal-types
-
-todo: read https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html
-
-Inference with Template Literals
