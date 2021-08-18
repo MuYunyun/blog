@@ -98,7 +98,7 @@ function alertName(): void {
 
 ### Never 类型
 
-当函数 throw 或者返回错误, 循环永远为 true 时可以声明为 never 类型。
+当函数 throw 或者返回错误, 循环永远为 true 时可以声明为 [never 类型](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#the-never-type)。
 
 ```js
 // Function returning never must have unreachable end point

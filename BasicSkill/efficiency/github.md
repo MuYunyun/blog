@@ -31,3 +31,9 @@ sudo vi /etc/hosts
 ```
 
 > github 访问慢一般可以修改该目录。[方法](https://zhuanlan.zhihu.com/p/94521827), 经验证该方法同样适用于 git push 推不上的 case
+
+### FAQ
+
+Q: remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+
+A: https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to
