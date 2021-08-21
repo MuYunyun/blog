@@ -16,7 +16,7 @@ type M = keyof Mapish; // string | number
 
 需要注意「类型空间」与实际值的区别。
 
-以 ReturnType<T> 为例:
+以 `ReturnType<T>` 为例:
 
 ```ts
 function f() {
