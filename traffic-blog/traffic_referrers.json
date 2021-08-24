@@ -1,18 +1,18 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 313,
-    "uniques": 108
+    "count": 278,
+    "uniques": 97
   },
   {
     "referrer": "github.com",
-    "count": 106,
-    "uniques": 67
+    "count": 96,
+    "uniques": 60
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 14,
-    "uniques": 10
+    "count": 13,
+    "uniques": 9
   },
   {
     "referrer": "yuque.com",
@@ -35,17 +35,17 @@
     "uniques": 2
   },
   {
+    "referrer": "v2ex.com",
+    "count": 2,
+    "uniques": 2
+  },
+  {
     "referrer": "jianshu.com",
     "count": 2,
     "uniques": 1
   },
   {
     "referrer": "leetcode-cn.com",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "referrer": "v2ex.com",
     "count": 1,
     "uniques": 1
   }
