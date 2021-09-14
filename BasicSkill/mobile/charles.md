@@ -24,7 +24,7 @@
   * 菜单栏点击 `Tools` -> `Map Remote`
   * 配置测试环境与本地域名
 
-> 此时需要注意将系统设置中的网络代理一栏, 取消勾选。然后重启 Charles。
+> 此时需要将系统设置中的网络代理一栏，全部取消勾选。然后重启 Charles。
 
 ![](http://with.muyunyun.cn/863fdb087e9b32eabf0c4b3a607235f8.jpg)
 

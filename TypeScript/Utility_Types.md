@@ -98,3 +98,7 @@ type T2 = InstanceType<never>; // any
 type T3 = InstanceType<string>; // Error
 type T4 = InstanceType<Function>; // Error
 ```
+
+### Link
+
+- [x] [Utility Types](https://www.typescriptlang.org/docs/handbook/utility-types.html)
