@@ -1638,6 +1638,16 @@
       "uniques": 12
     },
     {
+      "timestamp": "2021-09-16T00:00:00Z",
+      "count": 51,
+      "uniques": 22
+    },
+    {
+      "timestamp": "2021-09-17T00:00:00Z",
+      "count": 44,
+      "uniques": 21
+    },
+    {
       "timestamp": "2021-09-05T00:00:00Z",
       "count": 20,
       "uniques": 10
@@ -1691,16 +1701,6 @@
       "timestamp": "2021-09-15T00:00:00Z",
       "count": 79,
       "uniques": 37
-    },
-    {
-      "timestamp": "2021-09-16T00:00:00Z",
-      "count": 51,
-      "uniques": 22
-    },
-    {
-      "timestamp": "2021-09-17T00:00:00Z",
-      "count": 44,
-      "uniques": 21
     }
   ]
 }
