@@ -6,7 +6,6 @@
 - [ ] [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html)
 - [ ] [Triple-Slash Directives](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html)
 - [ ] [Type Checking JavaScript Files](https://www.typescriptlang.org/docs/handbook/type-checking-javascript-files.html)
-- [ ] [Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
 
 ### Readonly vs Const
 
