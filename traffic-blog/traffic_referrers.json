@@ -1,17 +1,17 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 318,
-    "uniques": 113
+    "count": 279,
+    "uniques": 104
   },
   {
     "referrer": "github.com",
     "count": 79,
-    "uniques": 46
+    "uniques": 49
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 16,
+    "count": 18,
     "uniques": 14
   },
   {
@@ -26,12 +26,12 @@
   },
   {
     "referrer": "link.segmentfault.com",
-    "count": 10,
-    "uniques": 6
+    "count": 11,
+    "uniques": 7
   },
   {
     "referrer": "Google",
-    "count": 4,
+    "count": 3,
     "uniques": 1
   },
   {
@@ -40,12 +40,12 @@
     "uniques": 2
   },
   {
-    "referrer": "link.csdn.net",
+    "referrer": "url.qmail.com",
     "count": 1,
     "uniques": 1
   },
   {
-    "referrer": "cn.bing.com",
+    "referrer": "mail.qq.com",
     "count": 1,
     "uniques": 1
   }
