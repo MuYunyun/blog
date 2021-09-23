@@ -96,6 +96,23 @@ function alertName(): void {
 
 > [new-unknown-top-type](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#new-unknown-top-type), 比 any 更加安全的类型
 
+如果没有断言或缩小到更具体的类型，则不允许对 unknow 类型做任何操作。比如下方例子:
+
+```ts
+function f(x: unknown) {
+  x == 5;
+  x !== 10;
+  x >= 0; // Error
+  x + 1; // Error
+  x * 2; // Error
+  -x; // Error
+  +x; // Error
+  x.foo; // Error
+  x[5]; // Error
+  x(); // Error
+}
+```
+
 ### Never 类型
 
 当函数 throw 或者返回错误, 循环永远为 true 时可以声明为 [never 类型](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#the-never-type)。

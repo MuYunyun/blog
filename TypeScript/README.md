@@ -10,7 +10,7 @@
 - [ ] [Type Compatibility](https://www.typescriptlang.org/docs/handbook/type-compatibility.html)
 - [ ] [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html)
 - [x] [Triple-Slash Directives](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html)
-- [ ] [Type Checking JavaScript Files](https://www.typescriptlang.org/docs/handbook/type-checking-javascript-files.html)
+- [ ] [Type Checking JavaScript Files](httpas://www.typescriptlang.org/docs/handbook/type-checking-javascript-files.html)
 
 * [type-challenges](https://github.com/type-challenges/type-challenges): typescript 体操
 * Typescript 工具库
