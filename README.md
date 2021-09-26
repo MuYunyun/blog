@@ -17,10 +17,10 @@ This is my persinal blog created with <a href="https://github.com/MuYunyun/creat
   - [React Stack](#react-stack)
   - [Build React from scratch](#build-react-from-scratch)
   - [Modern Testing](#modern-testing)
+- [TypeScript](#typescript)
 - [FE Cloud](#fe-cloud)
   - [JavaScript](#javascript)
   - [CSS](#css)
-  - [TypeScript](#typescript)
   - [Node.js](#nodejs)
   - [FE CLOUD](#fe-cloud-1)
   - [Project Framework](#project-framework)
@@ -161,6 +161,13 @@ This section will introduce the world of React progressively. It'll tell the pri
 * [React 现代化测试](https://github.com/MuYunyun/blog/blob/main/React/测试/React现代化测试.md)
 * [Jest 与 react-testing-Library](https://github.com/MuYunyun/blog/blob/main/React/测试/Jest与ReactTestingLibrary.md)
 
+### TypeScript
+
+* [TypeScript 基础篇](https://github.com/MuYunyun/blog/blob/main/TypeScript/TypeScript_Basic.md)
+* [Types vs Interfaces](https://github.com/MuYunyun/blog/blob/main/TypeScript/Types_vs_Interfaces.md)
+* [Utility Types](https://github.com/MuYunyun/blog/blob/main/TypeScript/Utility_Types.md)
+* [More On Functions](https://github.com/MuYunyun/blog/blob/main/TypeScript/More_On_Functions.md)
+
 ### FE Cloud
 
 This section will talk about colorful frontend world.
@@ -195,12 +202,6 @@ This section will talk about colorful frontend world.
 * [过渡与动画](https://github.com/MuYunyun/blog/blob/main/BasicSkill/css/css小书/过渡与动画.md)
 
 </details>
-
-#### TypeScript
-
-* [TypeScript 基础篇](https://github.com/MuYunyun/blog/blob/main/TypeScript/TypeScript_Basic.md)
-* [Types vs Interfaces](https://github.com/MuYunyun/blog/blob/main/TypeScript/Types_vs_Interfaces.md)
-* [工具类型](https://github.com/MuYunyun/blog/blob/main/TypeScript/Utility_Types.md)
 
 #### Node.js
 

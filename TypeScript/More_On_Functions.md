@@ -39,7 +39,24 @@ const b = firstElement2([1, 2, 3]);
 
 ### 不要在 CallBacks 中使用可选参数表达式
 
-xxx: to write https://www.typescriptlang.org/docs/handbook/2/functions.html#optional-parameters-in-callbacks
+若需要在回调函数中定义参数的类型，尽量不使用可选参数表达式，除非消费该函数时能保证处理好可选参数，这样子或多或少会增加代码的理解成本。
+
+```ts
+// 定义侧
+function myForEach(arr: any[], callback: (arg: any, index?: number) => void) {
+  for (let i = 0; i < arr.length; i++) {
+    callback(arr[i]);
+  }
+}
+
+// 消费侧
+myForEach([1, 2, 3], (a, i) => {
+  // ❎ Object is possibly 'undefined'.
+  console.log(i.toFixed());
+})
+```
+
+上述代码中，在定义侧对回调函数中的 index 参数作了可选表达式的声明，xxx
 
 ### link
 
