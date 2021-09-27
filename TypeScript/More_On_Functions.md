@@ -39,24 +39,70 @@ const b = firstElement2([1, 2, 3]);
 
 ### 不要在 CallBacks 中使用可选参数表达式
 
-若需要在回调函数中定义参数的类型，尽量不使用可选参数表达式，除非消费该函数时能保证处理好可选参数，这样子或多或少会增加代码的理解成本。
+在以下代码中，在定义侧对回调函数中的参数作了可选表达式的声明，且在定义侧调用的 callback 函数未传入可选参数，因此在消费者调用可选参数值时报了错误。
 
 ```ts
-// 定义侧
+// ❎ 定义侧错误示范
 function myForEach(arr: any[], callback: (arg: any, index?: number) => void) {
   for (let i = 0; i < arr.length; i++) {
-    callback(arr[i]);
+    callback(arr[i])
   }
 }
 
 // 消费侧
 myForEach([1, 2, 3], (a, i) => {
-  // ❎ Object is possibly 'undefined'.
-  console.log(i.toFixed());
+  // Object is possibly 'undefined'.
+  console.log(i.toFixed())
 })
 ```
 
-上述代码中，在定义侧对回调函数中的 index 参数作了可选表达式的声明，xxx
+与之对应的，若需要在回调函数中定义参数的类型，尽量不使用可选参数表达式，除非消费该函数时能保证处理好可选参数。
+
+```ts
+// ✅ 定义侧正确示范
+function myForEach(arr: any[], callback: (arg: any, index: number) => void) {
+  for (let i = 0; i < arr.length; i++) {
+    callback(arr[i], i)
+  }
+}
+
+// 消费侧
+myForEach([1, 2, 3], (a, i) => {
+  console.log(i.toFixed())
+})
+```
+
+### 书写优雅的函数重载
+
+函数实现侧必须与定义重载侧对应。
+
+* 例子一: 参数类型不正确
+
+```ts
+// 定义侧
+function fn(x: boolean): void;
+function fn(x: string): void;
+
+// 实现侧
+function fn(x: boolean) { }          // ❎
+function fn(x: boolean | string) { } // ✅
+```
+
+* 例子二: 返回结果不正确
+
+```ts
+// 定义侧
+function fn(x: string): string;
+function fn(x: number): boolean;
+
+// 实现侧
+// ❎
+function fn(x: string | number) {
+  return "oops"
+}
+
+// ✅
+```
 
 ### link
 
