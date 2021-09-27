@@ -370,9 +370,6 @@
     <loc>https://muyunyun.cn/blog/BasicSkill/basis/正则表达式</loc>
   </url>
   <url>
-    <loc>https://muyunyun.cn/blog/BasicSkill/basis/移动端场景知识</loc>
-  </url>
-  <url>
     <loc>https://muyunyun.cn/blog/BasicSkill/basis/类型</loc>
   </url>
   <url>
@@ -611,6 +608,9 @@
   </url>
   <url>
     <loc>https://muyunyun.cn/blog/BasicSkill/mobile/charles</loc>
+  </url>
+  <url>
+    <loc>https://muyunyun.cn/blog/BasicSkill/mobile/mobile_scene</loc>
   </url>
   <url>
     <loc>https://muyunyun.cn/blog/BasicSkill/node/how_node.js_resource_code_execute</loc>
