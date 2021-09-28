@@ -16,7 +16,7 @@ JavaScript 是一门弱类型语言，变量的数据类型具有动态性，只
 
 ## 数据类型
 
-### String 类型
+### 字符串类型
 
 一个保存字符串的文本，类型声明为 string。可以发现类型声明可大写也可小写，后文同理。
 
@@ -25,7 +25,7 @@ let name: string = 'muyy'
 let name2: String = 'muyy'
 ```
 
-### Boolen 类型
+### 布尔值类型
 
 boolean 是 true 或 false 的值，所以 `let isBool3: boolean = new Boolean(1)` 就会编译报错，因为 new Boolean(1) 生成的是一个 Bool 对象。
 
@@ -33,13 +33,13 @@ boolean 是 true 或 false 的值，所以 `let isBool3: boolean = new Boolean(1
 let isBool1: boolean = false
 ```
 
-### Number 类型
+### 数字类型
 
 ```ts
 let number: number = 10;
 ```
 
-### Array 类型
+### 数组类型
 
 数组是 Array 类型。然而，因为数组是一个集合，我们还需要指定在数组中的元素的类型。我们通过 `Array<type>` or `type[]` 语法为数组内的元素指定类型
 
@@ -60,7 +60,7 @@ let x: [string, number]
 x = ['a', 1]
 ```
 
-### Enums 类型
+### enums 类型
 
 列出所有可用值，一个枚举的默认初始值是 0。一开始的范围可以作如下调整:
 
@@ -71,7 +71,7 @@ console.log(role) // 3
 console.log(Role[4]) // Manager
 ```
 
-### Any 类型
+### any 类型
 
 any 是默认的类型，其类型的变量允许任何类型的值：
 
@@ -80,9 +80,9 @@ let notSure:any = 10
 let notSure2:any[] = [1,"2",false]
 ```
 
-### Void 类型
+### void 类型
 
-JavaScript 没有空值 Void 的概念，在 TypeScirpt 中，可以用 void 表示没有任何返回值的函数：
+JavaScript 没有空值 void 的概念，在 TypeScirpt 中，可以用 void 表示没有任何返回值的函数：
 
 ```ts
 function alertName(): void {
@@ -90,7 +90,7 @@ function alertName(): void {
 }
 ```
 
-### Unknow 类型
+### unknow 类型
 
 任何使用 any 类型的地方推荐使用 unknow 类型代替它。
 
@@ -113,7 +113,7 @@ function f(x: unknown) {
 }
 ```
 
-### Never 类型
+### never 类型
 
 当函数 throw 或者返回错误, 循环永远为 true 时可以声明为 [never 类型](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#the-never-type)。
 
@@ -449,8 +449,6 @@ console.log(outPut2);
 
 ## 参考资料
 
-* [TypeScript 中文文档](https://www.gitbook.com/book/zhongsp/typescript-handbook/details)
-* [TypeScript](http://pinggod.com/2016/Typescript/)
-* [TypeScript for Angular 2 - Part 1 (An Introduction)](http://naywinmyint.com/typescript-for-angular-2-part-1/)
+* [TypeScript 官网](https://www.typescriptlang.org/)
 
 > 文章起笔于 2017-07-02

@@ -72,7 +72,7 @@ myForEach([1, 2, 3], (a, i) => {
 })
 ```
 
-### 书写优雅的函数重载
+### 函数重载
 
 函数实现侧必须与定义重载侧对应。
 
@@ -102,7 +102,20 @@ function fn(x: string | number) {
 }
 
 // ✅
+function fn(x: string | number): string | boolean {
+  if (typeof x === 'string') {
+    return 'hhh'
+  } else if (typeof x === 'number') {
+    return true
+  }
+}
 ```
+
+### 类型定义
+
+* 尽量不要使用大写来类型声明
+
+to write: https://www.typescriptlang.org/docs/handbook/2/functions.html#other-types-to-know-about
 
 ### link
 
