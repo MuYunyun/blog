@@ -111,11 +111,24 @@ function fn(x: string | number): string | boolean {
 }
 ```
 
-### 类型定义
+### 剩余参数
 
-* 尽量不要使用大写来类型声明
+在 TypeScript 中，数组被认为是可变的，因而会导致一些奇怪的问题。
 
-to write: https://www.typescriptlang.org/docs/handbook/2/functions.html#other-types-to-know-about
+```ts
+const args = [8, 5]
+// ❎ A spread argument must either have a tuple type or be passed to a rest parameter.
+const angle = Math.atan2(...args)
+```
+
+此时，通常最为直接的解决方式是使用 `const` 来约束目标为不可变对象。
+
+> `Readonly` 与 `Const` 都有不可让值修改的作用。区别在于 Readonly 作用于属性, Const 作用于变量。
+
+```ts
+const args = [8, 5] as const
+const angle = Math.atan2(...args)
+```
 
 ### link
 

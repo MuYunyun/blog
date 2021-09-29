@@ -163,7 +163,8 @@ This section will introduce the world of React progressively. It'll tell the pri
 
 ### TypeScript
 
-* [TypeScript 基础篇](https://github.com/MuYunyun/blog/blob/main/TypeScript/TypeScript_Basic.md)
+* [README](https://github.com/MuYunyun/blog/blob/main/TypeScript/README.md)
+  * [数据类型](https://github.com/MuYunyun/blog/blob/main/TypeScript/Types.md)
 * [Types vs Interfaces](https://github.com/MuYunyun/blog/blob/main/TypeScript/Types_vs_Interfaces.md)
 * [Utility Types](https://github.com/MuYunyun/blog/blob/main/TypeScript/Utility_Types.md)
 * [More On Functions](https://github.com/MuYunyun/blog/blob/main/TypeScript/More_On_Functions.md)
