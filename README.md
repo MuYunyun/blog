@@ -163,11 +163,11 @@ This section will introduce the world of React progressively. It'll tell the pri
 
 ### TypeScript
 
-* [README](https://github.com/MuYunyun/blog/blob/main/TypeScript/README.md)
-  * [数据类型](https://github.com/MuYunyun/blog/blob/main/TypeScript/Types.md)
+* [TypeScript 基础篇](https://github.com/MuYunyun/blog/blob/main/TypeScript/README.md)
+* [TypeScript 中的类型](https://github.com/MuYunyun/blog/blob/main/TypeScript/Types.md)
+* [TypeScript 中的函数使用](https://github.com/MuYunyun/blog/blob/main/TypeScript/More_On_Functions.md)
+* [TypeScript 中的工具类型](https://github.com/MuYunyun/blog/blob/main/TypeScript/Utility_Types.md)
 * [Types vs Interfaces](https://github.com/MuYunyun/blog/blob/main/TypeScript/Types_vs_Interfaces.md)
-* [Utility Types](https://github.com/MuYunyun/blog/blob/main/TypeScript/Utility_Types.md)
-* [More On Functions](https://github.com/MuYunyun/blog/blob/main/TypeScript/More_On_Functions.md)
 
 ### FE Cloud
 
@@ -188,8 +188,6 @@ This section will talk about colorful frontend world.
 * [扩展运算符](https://github.com/MuYunyun/blog/blob/main/BasicSkill/readES6/扩展运算符.md)
 * [箭头函数](https://github.com/MuYunyun/blog/blob/main/BasicSkill/readES6/箭头函数.md)
 * [Reflect](https://github.com/MuYunyun/blog/blob/main/BasicSkill/readES6/Reflect.md)
-
-- [ ] [重构笔记](https://github.com/MuYunyun/blog/blob/main/BasicSkill/效率篇/重构改善既有代码的设计.md)
 
 #### CSS
 
