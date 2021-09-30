@@ -865,7 +865,7 @@
     <loc>https://muyunyun.cn/blog/TypeScript/RoadMap</loc>
   </url>
   <url>
-    <loc>https://muyunyun.cn/blog/TypeScript/TypeScript模块导入</loc>
+    <loc>https://muyunyun.cn/blog/TypeScript/TypeScript_Module</loc>
   </url>
   <url>
     <loc>https://muyunyun.cn/blog/TypeScript/Type_Manipulation</loc>
@@ -878,6 +878,9 @@
   </url>
   <url>
     <loc>https://muyunyun.cn/blog/TypeScript/Utility_Types</loc>
+  </url>
+  <url>
+    <loc>https://muyunyun.cn/blog/TypeScript/extends</loc>
   </url>
   <url>
     <loc>https://muyunyun.cn/blog/Algorithm/README</loc>
