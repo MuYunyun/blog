@@ -1,4 +1,4 @@
-## 精读 extends
+# TypeScript extends 精读与实践
 
 ## 用于条件判断时的 extends
 
@@ -59,10 +59,10 @@ Demo(['a', 'b', 'c'], 'a') // ['never', 'b', 'c']
 心细的读者可能已经发现了 Demo 类型的声明过程其实就是 TypeScript 官方提供的工具类型中 [Exclude<Type, ExcludedUnion>](https://www.typescriptlang.org/docs/handbook/utility-types.html#excludetype-excludedunion) 的实现原理，其用于将联合类型 ExcludedUnion 排除在 Type 类型之外。
 
 ```ts
-type T0 = Demo<'a' | 'b' | 'c', 'a'> // T0: 'b' | 'c'
+type T = Demo<'a' | 'b' | 'c', 'a'> // T: 'b' | 'c'
 ```
 
-基于 Demo 类型定义，进一步地还可以动手实现官方工具类型中的 [Omit<Type, Keys>](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys)，其用于移除对象 Type
+基于 Demo 类型定义，进一步地还可以实现官方工具类型中的 [Omit<Type, Keys>](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys)，其用于移除对象 Type
 中满足 keys 类型的属性值。
 
 ```ts
@@ -76,7 +76,7 @@ interface Todo {
   completed: boolean;
 }
 
-Omit<Todo, 'description'> // { title: string; completed: boolean }
+type T = Omit<Todo, 'description'> // T: { title: string; completed: boolean }
 ```
 
 ### 逃离舱
@@ -100,13 +100,13 @@ type result = Demo<'a' | 'b' | 'c', 'a'>
 
 ```js
 // The intent is not clear.
-var x = a => 1 ? true : false;
+var x = a => 1 ? true : false
 ```
 
 在 eslint 规则 [no-confusing-arrow](https://eslint.org/docs/rules/no-confusing-arrow) 中，推荐如下写法：
 
 ```js
-var x = a => (1 ? true : false);
+var x = a => (1 ? true : false)
 ```
 
 在 TypeScript 的类型定义中，若在箭头函数中使用 extends 也是同理，由于从左向右的阅读习惯，也会导致阅读者对类型代码的执行顺序感到困惑。
@@ -125,7 +125,7 @@ type Curry<P extends any[], R> =
 
 ## 结合类型推导使用 extends
 
-在 TypeScript 中，一般会结合 extends 来使用 [infer](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types)。使用它可以实现类型自动推导的目的。比如用其来实现工具类型 [ReturnType<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#returntypetype)，其用于返回函数 Type 的返回类型。
+在 TypeScript 中，一般会结合 extends 来使用类型推导 [infer](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types) 语法。使用它可以实现自动推导类型的目的。比如用其来实现工具类型 [ReturnType<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#returntypetype)，该工具类型用于返回函数 Type 的返回类型。
 
 ```ts
 type ReturnType<T extends Function> = T extends (...args: any) => infer U ? U : never
@@ -134,15 +134,65 @@ MyReturnType<() => string>          // string
 MyReturnType<() => Promise<boolean> // Promise<boolean>
 ```
 
-结合类型推导使用 extends 还可以实现 `Push`、`Shift`
+结合 extends 与类型推导还可以实现与数组相关的 `Pop<T>`、`Shift<T>`、`Reverse<T>` 工具类型。
 
-todo:
+* Pop<T>
+
+```ts
+type Pop<T extends any[]> = T extends [...infer ExceptLast, any] ? ExceptLast : never
+
+type T = Pop<[3, 2, 1]> // T: [3, 2]
+```
+
+* Shift<T>
+
+```ts
+type Shift<T extends any[]> = T extends [infer _, ...infer O] ? O : never
+
+type T = Shift<[3, 2, 1]> // T: [2, 1]
+```
+
+* Reverse<T>
+
+```ts
+type Reverse<T> = T extends [infer F, ...infer Others]
+  ? [...Reverse<Others>, F]
+  : []
+
+type T = Reverse<['a', 'b']> // T: ['b', 'a']
+```
 
 ### 使用 extends 来判断两个类型完全相等
 
+我们也可以使用 extends 来判断 A、B 两个类型是否完全相等。当前社区上主要有两种方案:
+
+**方案一**: 参考 [issue](https://github.com/Microsoft/TypeScript/issues/27024#issuecomment-420227672)。
+
 ```ts
-// https://github.com/Microsoft/TypeScript/issues/27024#issuecomment-421529650. understanding it is difficult.
-export type Equal<X, Y> =
+export type Equal1<T, S> =
+	[T] extends [S] ? (
+		[S] extends [T] ? true : false
+	) : false
+```
+
+目前该方案的唯一缺点是会将 any 类型与其它任何类型判为相等。
+
+```ts
+type T = Equal1<{x:any}, {x:number}> // T: true
+```
+
+**方案二**: 参考 [issue](https://github.com/microsoft/TypeScript/issues/27024#issuecomment-421529650)。
+
+```ts
+export type Equal2<X, Y> =
   (<T>() => T extends X ? 1 : 2) extends
   (<U>() => U extends Y ? 1 : 2) ? true : false
 ```
+
+目前该方案的唯一缺点是在对交叉类型的处理上有一点瑕疵。
+
+```ts
+type T = Equal2<{x:1} & {y:2}, {x:1, y:2}> // false
+```
+
+以上两种判断类型相等的方法见仁见智，笔者在此抛砖引玉。

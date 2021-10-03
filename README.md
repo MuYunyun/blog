@@ -168,6 +168,7 @@ This section will introduce the world of React progressively. It'll tell the pri
 * [TypeScript 中的函数使用](https://github.com/MuYunyun/blog/blob/main/TypeScript/More_On_Functions.md)
 * [TypeScript 中的工具类型](https://github.com/MuYunyun/blog/blob/main/TypeScript/Utility_Types.md)
 * [Types vs Interfaces](https://github.com/MuYunyun/blog/blob/main/TypeScript/Types_vs_Interfaces.md)
+* [TypeScript extends 精读与实践](https://github.com/MuYunyun/blog/blob/main/TypeScript/extends.md)
 
 ### FE Cloud
 
