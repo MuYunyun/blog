@@ -2,28 +2,28 @@
 
 ## 用于条件判断时的 extends
 
-当 extends 用于表示条件判断时，可以总结出以下规律
+当 extends 表示条件判断时，可以总结出以下规律
 
-1. A extends B，若 A 与 B 类型相同，则 extends 在语义上可理解为 `===`。
+1. 若位于 extends 两侧的类型相同，则 extends 在语义上可理解为 `===`，可以参考如下例子:
 
 ```ts
 type result1 = 'a' extends 'abc' ? true : false // false
 type result2 = 123 extends 1 ? true : false     // false
 ```
 
-2. `狭窄类型 extends 宽泛类型`且`宽泛类型中包含狭窄类型`时结果为 true，反之为 false。
+2. 若位于 extends 右侧的类型包含位于 extends 左侧的类型(即狭窄类型 extends 宽泛类型)时，结果为 true，反之为 false。可以参考如下例子:
 
 ```ts
 type result3 = string extends string | number ? true : false // true
 ```
 
-3. 当 extends 作用于对象时，若在对象中指定的 key 越多，则其类型定义的范围越狭窄，可以参考如下例子。
+3. 当 extends 作用于对象时，若在对象中指定的 key 越多，则其类型定义的范围越狭窄。可以参考如下例子:
 
 ```ts
 type result4 = { a: true, b: false } extends { a: true } ? true : false // true
 ```
 
-## 泛型类型中的 extends
+## 在泛型类型中使用 extends
 
 考虑如下 Demo 类型定义:
 
@@ -31,13 +31,13 @@ type result4 = { a: true, b: false } extends { a: true } ? true : false // true
 type Demo<T, U> = T extends U ? never : T
 ```
 
-因为 `'a' | 'b' | 'c' extends 'a'` 是 false, 所以 `Demo<'a' | 'b' | 'c', 'a'>` 结果是 `'a' | 'b' | 'c'` 么?
+结合[用于条件判断时的 extends](#用于条件判断时的-extends)，可知 `'a' | 'b' | 'c' extends 'a'` 是 false, 因此 `Demo<'a' | 'b' | 'c', 'a'>` 结果是 `'a' | 'b' | 'c'` 么?
 
 查阅[官网](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html)，其中有提到:
 
 > When conditional types act on a generic type, they become distributive when given a union type.
 
-即当条件类型作用于泛型类型时，它们在给定联合类型时成为分配类型。用 JavaScript 来表达 `'a' | 'b' | 'c' extends 'a'` 的结果类似于:
+即当条件类型作用于泛型类型时，联合类型会被拆分使用。即 `Demo<'a' | 'b' | 'c', 'a'>` 会被拆分为 `'a' extends 'a'`、`'b' extends 'a'`、`'c' extends 'a'`。其运行伪代码类似于:
 
 ```js
 function Demo(T, U) {
@@ -50,9 +50,9 @@ function Demo(T, U) {
 Demo(['a', 'b', 'c'], 'a') // ['never', 'b', 'c']
 ```
 
-此外根据 [never 类型](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#the-never-type)的定义 —— never 类型可分配给每种类型，但是没有类型可以分配给 never（除了 never 本身）。即 `never | 'b' | 'c'` 等价于 `'b' | 'c'`。
+此外根据 [never 类型](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#the-never-type)的定义 —— never 类型可分配给每种类型，但是没有类型可以分配给 never(除了 never 本身)。即 `never | 'b' | 'c'` 等价于 `'b' | 'c'`。
 
-因此 `Demo<'a' | 'b' | 'c', 'a'>` 结果并不是 `'a' | 'b' | 'c'` 而是 `'b' | 'c'`。而 Demo 类型的声明其实就是 TS 官方提供的 `Exclude<Type, ExcludedUnion>`。
+因此 `Demo<'a' | 'b' | 'c', 'a'>` 的结果并不是 `'a' | 'b' | 'c'` 而是 `'b' | 'c'`。而 Demo 类型的声明过程其实就是 TypeScript 官方提供的工具类型中 [`Exclude<Type, ExcludedUnion>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#excludetype-excludedunion) 的实现原理。
 
 ### 逃离舱
 
