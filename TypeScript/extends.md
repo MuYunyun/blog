@@ -37,7 +37,7 @@ type Demo<T, U> = T extends U ? never : T
 
 > When conditional types act on a generic type, they become distributive when given a union type.
 
-即当条件类型作用于泛型类型时，联合类型会被拆分使用。即 `Demo<'a' | 'b' | 'c', 'a'>` 会被拆分为 `'a' extends 'a'`、`'b' extends 'a'`、`'c' extends 'a'`。其运行伪代码类似于:
+即当条件类型作用于泛型类型时，联合类型会被拆分使用。即 `Demo<'a' | 'b' | 'c', 'a'>` 会被拆分为 `'a' extends 'a'`、`'b' extends 'a'`、`'c' extends 'a'`。用伪代码表示类似于:
 
 ```js
 function Demo(T, U) {
@@ -52,7 +52,32 @@ Demo(['a', 'b', 'c'], 'a') // ['never', 'b', 'c']
 
 此外根据 [never 类型](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#the-never-type)的定义 —— never 类型可分配给每种类型，但是没有类型可以分配给 never(除了 never 本身)。即 `never | 'b' | 'c'` 等价于 `'b' | 'c'`。
 
-因此 `Demo<'a' | 'b' | 'c', 'a'>` 的结果并不是 `'a' | 'b' | 'c'` 而是 `'b' | 'c'`。而 Demo 类型的声明过程其实就是 TypeScript 官方提供的工具类型中 [`Exclude<Type, ExcludedUnion>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#excludetype-excludedunion) 的实现原理。
+因此 `Demo<'a' | 'b' | 'c', 'a'>` 的结果并不是 `'a' | 'b' | 'c'` 而是 `'b' | 'c'`。
+
+### 工具类型
+
+心细的读者可能已经发现了 Demo 类型的声明过程其实就是 TypeScript 官方提供的工具类型中 [Exclude<Type, ExcludedUnion>](https://www.typescriptlang.org/docs/handbook/utility-types.html#excludetype-excludedunion) 的实现原理，其用于将联合类型 ExcludedUnion 排除在 Type 类型之外。
+
+```ts
+type T0 = Demo<'a' | 'b' | 'c', 'a'> // T0: 'b' | 'c'
+```
+
+基于 Demo 类型定义，进一步地还可以动手实现官方工具类型中的 [Omit<Type, Keys>](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys)，其用于移除对象 Type
+中满足 keys 类型的属性值。
+
+```ts
+type Omit<Type, Keys> = {
+  [P in Demo<keyof Type, Keys>]: Type<P>
+}
+
+interface Todo {
+  title: string;
+  description: string;
+  completed: boolean;
+}
+
+Omit<Todo, 'description'> // { title: string; completed: boolean }
+```
 
 ### 逃离舱
 
@@ -60,7 +85,7 @@ Demo(['a', 'b', 'c'], 'a') // ['never', 'b', 'c']
 
 > Typically, distributivity is the desired behavior. To avoid that behavior, you can surround each side of the extends keyword with square brackets.
 
-如果不想遍历泛型中的每一个类型，可以用方括号将 extends 关键字的每一侧括起来。
+如果不想遍历泛型中的每一个类型，可以用方括号将泛型给括起来以表示使用该泛型的整体部分。
 
 ```ts
 type Demo<T, U> = [T] extends [U] ? never : T
@@ -84,25 +109,32 @@ var x = a => 1 ? true : false;
 var x = a => (1 ? true : false);
 ```
 
-在 TypeScript 的类型定义中若在箭头函数中使用 extends 也是同理，一眼看如下代码也是比较绕，
-
-Todo: 换一个 Demo
+在 TypeScript 的类型定义中，若在箭头函数中使用 extends 也是同理，由于从左向右的阅读习惯，也会导致阅读者对类型代码的执行顺序感到困惑。
 
 ```ts
-type CurryV0<P extends any[], R> =
-  (arg0: Head<P>) => HasTail<P> extends true ? CurryV0<Tail<P>, R> : R
+type Curry<P extends any[], R> =
+  (arg: Head<P>) => HasTail<P> extends true ? Curry<Tail<P>, R> : R
 ```
 
-因此在箭头函数中使用 extends 建议加上括号，对 code review 很有帮助。
+因此在箭头函数中使用 extends 建议加上括号，对于进行 code review 有很大的帮助。
 
 ```ts
-type CurryV0<P extends any[], R> =
-  (arg0: Head<P>) => (HasTail<P> extends true ? CurryV0<Tail<P>, R> : R)
+type Curry<P extends any[], R> =
+  (arg: Head<P>) => (HasTail<P> extends true ? Curry<Tail<P>, R> : R)
 ```
 
 ## 结合类型推导使用 extends
 
-TypeScript 中有一个语法 [infer]()，使用它可以实现推导类型的目的。一般会结合 extends 来使用 infer。比如：
+在 TypeScript 中，一般会结合 extends 来使用 [infer](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types)。使用它可以实现类型自动推导的目的。比如用其来实现工具类型 [ReturnType<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#returntypetype)，其用于返回函数 Type 的返回类型。
+
+```ts
+type ReturnType<T extends Function> = T extends (...args: any) => infer U ? U : never
+
+MyReturnType<() => string>          // string
+MyReturnType<() => Promise<boolean> // Promise<boolean>
+```
+
+结合类型推导使用 extends 还可以实现 `Push`、`Shift`
 
 todo:
 
