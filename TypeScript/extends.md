@@ -56,13 +56,13 @@ Demo(['a', 'b', 'c'], 'a') // ['never', 'b', 'c']
 
 ### 工具类型
 
-心细的读者可能已经发现了 Demo 类型的声明过程其实就是 TypeScript 官方提供的工具类型中 [Exclude<Type, ExcludedUnion>](https://www.typescriptlang.org/docs/handbook/utility-types.html#excludetype-excludedunion) 的实现原理，其用于将联合类型 ExcludedUnion 排除在 Type 类型之外。
+心细的读者可能已经发现了 Demo 类型的声明过程其实就是 TypeScript 官方提供的工具类型中 [`Exclude<Type, ExcludedUnion>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#excludetype-excludedunion) 的实现原理，其用于将联合类型 ExcludedUnion 排除在 Type 类型之外。
 
 ```ts
 type T = Demo<'a' | 'b' | 'c', 'a'> // T: 'b' | 'c'
 ```
 
-基于 Demo 类型定义，进一步地还可以实现官方工具类型中的 [Omit<Type, Keys>](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys)，其用于移除对象 Type
+基于 Demo 类型定义，进一步地还可以实现官方工具类型中的 [`Omit<Type, Keys>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys)，其用于移除对象 Type
 中满足 keys 类型的属性值。
 
 ```ts
@@ -125,7 +125,7 @@ type Curry<P extends any[], R> =
 
 ## 结合类型推导使用 extends
 
-在 TypeScript 中，一般会结合 extends 来使用类型推导 [infer](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types) 语法。使用它可以实现自动推导类型的目的。比如用其来实现工具类型 [ReturnType<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#returntypetype)，该工具类型用于返回函数 Type 的返回类型。
+在 TypeScript 中，一般会结合 extends 来使用类型推导 [infer](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types) 语法。使用它可以实现自动推导类型的目的。比如用其来实现工具类型 [`ReturnType<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#returntypetype)，该工具类型用于返回函数 Type 的返回类型。
 
 ```ts
 type ReturnType<T extends Function> = T extends (...args: any) => infer U ? U : never
@@ -136,7 +136,7 @@ MyReturnType<() => Promise<boolean> // Promise<boolean>
 
 结合 extends 与类型推导还可以实现与数组相关的 `Pop<T>`、`Shift<T>`、`Reverse<T>` 工具类型。
 
-* Pop<T>
+**`Pop<T>`**:
 
 ```ts
 type Pop<T extends any[]> = T extends [...infer ExceptLast, any] ? ExceptLast : never
@@ -144,7 +144,7 @@ type Pop<T extends any[]> = T extends [...infer ExceptLast, any] ? ExceptLast : 
 type T = Pop<[3, 2, 1]> // T: [3, 2]
 ```
 
-* Shift<T>
+**`Shift<T>`**:
 
 ```ts
 type Shift<T extends any[]> = T extends [infer _, ...infer O] ? O : never
@@ -152,7 +152,7 @@ type Shift<T extends any[]> = T extends [infer _, ...infer O] ? O : never
 type T = Shift<[3, 2, 1]> // T: [2, 1]
 ```
 
-* Reverse<T>
+**`Reverse<T>`**
 
 ```ts
 type Reverse<T> = T extends [infer F, ...infer Others]
@@ -170,9 +170,9 @@ type T = Reverse<['a', 'b']> // T: ['b', 'a']
 
 ```ts
 export type Equal1<T, S> =
-	[T] extends [S] ? (
-		[S] extends [T] ? true : false
-	) : false
+  [T] extends [S] ? (
+    [S] extends [T] ? true : false
+  ) : false
 ```
 
 目前该方案的唯一缺点是会将 any 类型与其它任何类型判为相等。
