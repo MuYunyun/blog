@@ -1,13 +1,13 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 205,
-    "uniques": 77
+    "count": 204,
+    "uniques": 79
   },
   {
     "referrer": "github.com",
-    "count": 97,
-    "uniques": 52
+    "count": 99,
+    "uniques": 50
   },
   {
     "referrer": "m.html.cn",
@@ -26,8 +26,8 @@
   },
   {
     "referrer": "Google",
-    "count": 6,
-    "uniques": 3
+    "count": 7,
+    "uniques": 4
   },
   {
     "referrer": "link.segmentfault.com",
