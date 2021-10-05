@@ -1,8 +1,12 @@
-# TypeScript extends 精读与实践
+# TypeScript 条件类型精读与实践
+
+在大多数程序中，我们必须根据输入做出决策。TypeScript 也不例外，使用条件类型可以描述输入类型与输出类型之间的关系。
+
+> 本文同步首发在[个人博客](https://github.com/MuYunyun/blog/issues/140)中，欢迎订阅、交流。
 
 ## 用于条件判断时的 extends
 
-当 extends 表示条件判断时，可以总结出以下规律
+当 extends 用于表示条件判断时，可以总结出以下规律
 
 1. 若位于 extends 两侧的类型相同，则 extends 在语义上可理解为 `===`，可以参考如下例子:
 
@@ -23,7 +27,7 @@ type result3 = string extends string | number ? true : false // true
 type result4 = { a: true, b: false } extends { a: true } ? true : false // true
 ```
 
-## 在泛型类型中使用 extends
+## 在泛型类型中使用条件类型
 
 考虑如下 Demo 类型定义:
 
@@ -94,7 +98,7 @@ type Demo<T, U> = [T] extends [U] ? never : T
 type result = Demo<'a' | 'b' | 'c', 'a'>
 ```
 
-## 在箭头函数中使用 extends
+## 在箭头函数中使用条件类型
 
 在箭头函数中使用三元表达式时，从左向右的阅读习惯导致函数内容区若不加括号则会让使用方感到困惑。比如下方代码中 x 是函数类型还是布尔类型呢？
 
@@ -123,7 +127,7 @@ type Curry<P extends any[], R> =
   (arg: Head<P>) => (HasTail<P> extends true ? Curry<Tail<P>, R> : R)
 ```
 
-## 结合类型推导使用 extends
+## 结合类型推导使用条件类型
 
 在 TypeScript 中，一般会结合 extends 来使用类型推导 [infer](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types) 语法。使用它可以实现自动推导类型的目的。比如用其来实现工具类型 [`ReturnType<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#returntypetype)，该工具类型用于返回函数 Type 的返回类型。
 
@@ -162,9 +166,9 @@ type Reverse<T> = T extends [infer F, ...infer Others]
 type T = Reverse<['a', 'b']> // T: ['b', 'a']
 ```
 
-### 使用 extends 来判断两个类型完全相等
+## 使用条件类型来判断两个类型完全相等
 
-我们也可以使用 extends 来判断 A、B 两个类型是否完全相等。当前社区上主要有两种方案:
+我们也可以使用条件类型来判断 A、B 两个类型是否完全相等。当前社区上主要有两种方案:
 
 **方案一**: 参考 [issue](https://github.com/Microsoft/TypeScript/issues/27024#issuecomment-420227672)。
 
