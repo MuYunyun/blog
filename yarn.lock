@@ -2814,10 +2814,10 @@ crd-prerender-spa-plugin@^0.2.0:
     "@prerenderer/renderer-puppeteer" "^0.2.0"
     html-minifier "^4.0.0"
 
-crd-scripts@^1.3.5:
-  version "1.3.5"
-  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-1.3.5.tgz#79e9ba5447660f4e935b244e9c21c89ba3238d8d"
-  integrity sha512-+b9imIj0MdhVmgXH41DUIxYscBG+XvG8P6v+IMnvBprBtQQD3+tp0xdud/XyraiWS+0vGUZyem9mnb3S1MV1Hg==
+crd-scripts@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-1.4.0.tgz#84c42c017e013f5d60b8fe737d9eb55d7d66ec3b"
+  integrity sha512-ILsRMOSh8vflf5pFTvoHki9sNxvnFmkXOToP79xbpBHmdT0/uZoqK8VvOry1iqUfIDNJPakbfwChk7Pd0LvBtQ==
   dependencies:
     "@babel/cli" "^7.2.3"
     "@babel/core" "^7.3.4"
@@ -2875,10 +2875,10 @@ crd-scripts@^1.3.5:
     write "^1.0.3"
     yamljs "^0.3.0"
 
-crd-seed@^1.1.3:
-  version "1.1.5"
-  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.1.5.tgz#dcbddeb6e08ce607cfd1c5f170655dd78c980f30"
-  integrity sha512-VHJj/BB75sShLWdTkwsrN1Yoh4jPC0LjsR496WcVo5iUgDqR3H9vRyIcODkFkSW0yicem7vGfNWzipTi0BL+/Q==
+crd-seed@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.4.0.tgz#9cf832c5a666887d0181659a61e2fdfe59f6e518"
+  integrity sha512-NkwWCPsvuSDBqnC0ByGc3miMpHNSxcwuuhi5cj8+c7mcI/wwbu7HkWzshnJqlvuBpDcDBGtNvOPXV4z+aPTaYg==
   dependencies:
     react-router-dom "^4.2.2"
     react-switch "^5.0.1"
@@ -2910,14 +2910,14 @@ crd-utils@^1.1.3:
   dependencies:
     js-yaml "^3.14.0"
 
-create-react-doc@^1.3.5:
-  version "1.3.5"
-  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-1.3.5.tgz#a392227fb94a4ee9af8001b4ca9d557d2a009e05"
-  integrity sha512-Nu2UYU4EKM/5GPKgd9vg4f1Gi6FK2nB1rCw2x2xifwmyp17L3h9gmi6hLU4eHz7GQB3ONGHcD/Cicxf7C1/JAw==
+create-react-doc@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-1.4.0.tgz#00cfaa86aed9fc5a40bb29de8811ee184a34cb6c"
+  integrity sha512-xAGzczkc33eJt3cbEye+Q+E/+nNt44FT8MS5i83KEt82fTrJnDrW2/4zS6TWFC6MiczkXX/u7bpVBVMb4vULdg==
   dependencies:
     "@inquirer/input" "^0.0.13-alpha.0"
     commander "^2.12.2"
-    crd-scripts "^1.3.5"
+    crd-scripts "^1.4.0"
     crd-templates "^1.3.5"
     crd-theme "^1.3.2"
     fs-extra "^5.0.0"

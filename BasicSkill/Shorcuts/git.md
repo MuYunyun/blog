@@ -111,12 +111,20 @@ git reflog 可以查看所有分支的所有操作记录
 
 参考此脚本, 后续跟进。
 
-### 打 tag
+### 操作 tag
+
+添加 tag:
 
 ```bash
-git tag v0.1
-git tag -d v0.1         // 删标签
-git push orgin v0.1 // 推标签
+git tag v0.1         // 本地推标签
+git push orgin v0.1  // 远端推标签
+```
+
+删除 tag:
+
+```bash
+git tag -d v0.1                  // 删除本地标签
+git push origin :refs/tags/v0.1  // 删除远端标签
 ```
 
 ### git 项目大小写
