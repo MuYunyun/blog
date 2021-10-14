@@ -1,3 +1,7 @@
+<!--
+abbrlink: ca2yliw2
+-->
+
 ### MindNode 快捷键整理
 
 `shift` + `enter`: 创建新节点

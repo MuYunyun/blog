@@ -1,3 +1,7 @@
+<!--
+abbrlink: 91evrivd
+-->
+
 ### CheckBox 组件
 
 * 勾的定制化: 首先使用 `appearance: none` 去掉原生自带的勾。接着创建一个矩形, 保留 `border-left` 与 `border-bottom` 的边, 进行旋转得到勾。

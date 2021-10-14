@@ -1,3 +1,7 @@
+<!--
+abbrlink: oerb6f1d
+-->
+
 ### nginx
 
 node 与 nginx 搭配使用, 是因为 nginx 具有更加强大的静态文件处理能力, 以及反向代理负载均衡(Load Balance)。

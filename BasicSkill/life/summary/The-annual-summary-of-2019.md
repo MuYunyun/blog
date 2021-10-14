@@ -1,3 +1,7 @@
+<!--
+abbrlink: 5rbl6qc5
+-->
+
 Time is flying, it arrives at the end of year again. This is my first year working in PinDuoDuo inc and it seems I arrive in the company yesterday. This point is a good chance to talk with(recognize) myself again. I try to conclude from `work`, `output`, `life` and `destination`.
 
 ### Learn from work

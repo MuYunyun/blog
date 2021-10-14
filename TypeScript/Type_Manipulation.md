@@ -1,3 +1,7 @@
+<!--
+abbrlink: 6r8w8t5n
+-->
+
 本文档为 TypeScript 的[类型系统](https://www.typescriptlang.org/docs/handbook/2/types-from-types.html)阅读笔记。
 
 ### Keyof

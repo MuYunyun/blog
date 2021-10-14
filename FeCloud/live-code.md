@@ -1,3 +1,7 @@
+<!--
+abbrlink: p172zc4o
+-->
+
 ### 在线编译 markdown
 
 - [mdx](https://github.com/mdx-js/mdx)

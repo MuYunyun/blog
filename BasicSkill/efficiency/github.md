@@ -1,3 +1,7 @@
+<!--
+abbrlink: zi379j1j
+-->
+
 ### chrome plugin
 
 * [git zip](https://chrome.google.com/webstore/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn): quick download one detailed file

@@ -1,3 +1,7 @@
+<!--
+abbrlink: nibxlyza
+-->
+
 ### partition 划分算法
 
 算法思路:

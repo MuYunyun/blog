@@ -1,3 +1,7 @@
+<!--
+abbrlink: mmet39py
+-->
+
 ```js
 // ---- some useful fn to do with linked_list ----
 

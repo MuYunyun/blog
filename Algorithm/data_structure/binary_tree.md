@@ -1,3 +1,7 @@
+<!--
+abbrlink: qykpal2y
+-->
+
 ### 二叉树
 
 ![](http://with.muyunyun.cn/c3bc86f87907fedaeba86b0f5b96a71a.jpg-300)

@@ -1,3 +1,7 @@
+<!--
+abbrlink: hieljug1
+-->
+
 ### Lottie
 
 * 针对营销动画场景, 业界用的较多的是使用 Lottie 来开发。

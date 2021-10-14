@@ -1,3 +1,7 @@
+<!--
+abbrlink: jgd6ij6z
+-->
+
 ### vim 配置
 
 #### 配置

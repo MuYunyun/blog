@@ -1,3 +1,7 @@
+<!--
+abbrlink: 8lf1n2j9
+-->
+
 ### 事件类型
 
 * load: window/img/script

@@ -1,3 +1,7 @@
+<!--
+abbrlink: 2emgfv8w
+-->
+
 ### Picker 组件
 
 #### 视觉兜底

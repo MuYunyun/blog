@@ -1,3 +1,7 @@
+<!--
+abbrlink: r5u2z2vr
+-->
+
 ### Modal
 
 值得学习的是在 Modal 系列组件中 Alert/Promt 组件采用函数式进行弹框的调用。

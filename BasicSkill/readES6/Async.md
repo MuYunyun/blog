@@ -1,3 +1,7 @@
+<!--
+abbrlink: y1nlgvkb
+-->
+
 [Async function](https://github.com/tc39/proposals/blob/master/finished-proposals.md) 在 2017 年已到达了 stage 4。
 
 ### async/await 使用注意点

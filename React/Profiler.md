@@ -1,3 +1,7 @@
+<!--
+abbrlink: 93kcvu18
+-->
+
 ### what's means for 0.6ms of 2.6ms
 
 ![](http://with.muyunyun.cn/78812d5ed8f8bc0860f13d644f03cadb.jpg)

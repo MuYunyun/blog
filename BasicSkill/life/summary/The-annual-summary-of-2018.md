@@ -1,3 +1,7 @@
+<!--
+abbrlink: 9z6vq8ax
+-->
+
 ![](http://with.muyunyun.cn/19d9a998a632b464fed6d929326b0271.jpg-muyy)
 
 > 度过在点我达两年欢快的时光，开启在拼多多的新的旅程。

@@ -1,3 +1,7 @@
+<!--
+abbrlink: opv4lnaq
+-->
+
 ### webkit
 
 * [WebKit](https://webkit.org/): 如何下载、编译 webkit

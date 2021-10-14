@@ -1,3 +1,7 @@
+<!--
+abbrlink: fyhtxlx8
+-->
+
 ### Canvas
 
 因为 Canvas 相对更加底层, 在处理图像交互上更具优势, 也因此目前市面上看到的 Web 端图表库基本都是基于 Canvas 进行绘制的。

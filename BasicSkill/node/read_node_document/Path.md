@@ -1,3 +1,7 @@
+<!--
+abbrlink: btqo89gy
+-->
+
 ### path 模块
 
 * `path.basename(path[, ext])`: 返回文件名。

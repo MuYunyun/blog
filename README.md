@@ -1,3 +1,7 @@
+<!--
+abbrlink: z5dbvyod
+-->
+
 <div align="center">
   <a href="http://muyunyun.cn/blog"><img src="http://with.muyunyun.cn/ec330b8ac2175c828be41f446f9f9619.jpg" /></a>
 </div>

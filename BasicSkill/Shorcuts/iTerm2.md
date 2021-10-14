@@ -1,3 +1,7 @@
+<!--
+abbrlink: iw386qpg
+-->
+
 ### iTerm2 快捷键
 
 ```

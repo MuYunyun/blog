@@ -1,3 +1,7 @@
+<!--
+abbrlink: xzgfrc3n
+-->
+
 ### CommonJS modules
 
 * `require.resolve(request[,options])`

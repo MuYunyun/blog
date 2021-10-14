@@ -1,3 +1,7 @@
+<!--
+abbrlink: 94y7xwlv
+-->
+
 ### Suspense 设计模式
 
 * `fetch on render`: 目前一般数据获取写在 componentDidMount 阶段, 其获取数据的过程中, 执行顺序如下所示:

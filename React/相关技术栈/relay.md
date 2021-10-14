@@ -1,3 +1,7 @@
+<!--
+abbrlink: 2bcxyoc2
+-->
+
 ### Relay
 
 It's not just a `GraghQL client` but also a framework for `declarative data-fetching`.

@@ -1,3 +1,7 @@
+<!--
+abbrlink: gzbn6qx6
+-->
+
 ### 修改 host 文件
 
 ```

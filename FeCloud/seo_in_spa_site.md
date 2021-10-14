@@ -1,3 +1,7 @@
+<!--
+abbrlink: ettzfags
+-->
+
 ## SEO 在 SPA 站点中的实践
 
 ### 背景

@@ -1,3 +1,7 @@
+<!--
+abbrlink: 1ng1nt4v
+-->
+
 ### 第一版测试: 封装 http
 
 ```js

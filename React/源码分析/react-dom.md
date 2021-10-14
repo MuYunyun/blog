@@ -1,3 +1,7 @@
+<!--
+abbrlink: rfxe2tr7
+-->
+
 ### react-dom
 
 本章目的梳理 `react-dom` 模块做了的事情。验证以下几件事。

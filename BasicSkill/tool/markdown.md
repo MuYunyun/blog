@@ -1,3 +1,7 @@
+<!--
+abbrlink: akdysy4n
+-->
+
 ## Markdown 语法
 
 ### 脚注

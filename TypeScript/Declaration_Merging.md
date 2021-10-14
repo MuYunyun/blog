@@ -1,3 +1,7 @@
+<!--
+abbrlink: 1xo8g32v
+-->
+
 ### Merge Interface
 
 ```ts

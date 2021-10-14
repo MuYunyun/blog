@@ -1,3 +1,7 @@
+<!--
+abbrlink: ymisqdg2
+-->
+
 ### 基于 create-react-app 的改动
 
 基于 `create-react-app` fork 的脚手架有以下两点好处:

@@ -1,3 +1,7 @@
+<!--
+abbrlink: ffmuj7el
+-->
+
 ```js
 // ---- some useful fn to do with linked_list ----
 

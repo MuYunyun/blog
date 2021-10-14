@@ -1,3 +1,7 @@
+<!--
+abbrlink: e4hdjbea
+-->
+
 ## 使用 declare 声明
 
 [使用 declare 声明](https://github.com/MuYunyun/advanced-typescript#%E4%BD%BF%E7%94%A8-declare-%E5%A3%B0%E6%98%8E)

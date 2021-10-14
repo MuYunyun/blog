@@ -1,3 +1,7 @@
+<!--
+abbrlink: mqae338m
+-->
+
 ### OS API
 
 * `os.hostname()`

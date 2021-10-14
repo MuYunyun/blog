@@ -1,3 +1,7 @@
+<!--
+abbrlink: zennyqde
+-->
+
 ### SearchBar
 
 在使用 css 的动画属性 `transition` 时, 如果变化前后以下属性改变会使动画失效。`display/text-align`; 所以要维持动画的生效, 保留了 `text-align: center` 属性, 让搜索字样居中。如下图是动画前后的效果。

@@ -1,3 +1,7 @@
+<!--
+abbrlink: fkr4qedq
+-->
+
 ### Heap Sort
 
 > prefix knowlege: [heap](https://github.com/MuYunyun/blog/blob/master/Algorithm/data_structure/heap.md)

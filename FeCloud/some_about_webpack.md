@@ -1,3 +1,7 @@
+<!--
+abbrlink: l7g5qivt
+-->
+
 ### resolve.mainFields
 
 在引用模块时，指明使用 package.json 中哪个字段指定的文件，默认是 main

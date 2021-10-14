@@ -1,3 +1,7 @@
+<!--
+abbrlink: j7uygw6y
+-->
+
 ### 跨域二三事
 
 ![](http://oqhtscus0.bkt.clouddn.com/62b89b89373dc86916a60efc28bdd15e.jpg-muyy)

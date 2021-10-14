@@ -1,3 +1,7 @@
+<!--
+abbrlink: 9ajh17y7
+-->
+
 ### Code Spliting
 
 在 16.6 版本之前，`code-spliting` 通常是由第三方库来完成的，比如 [react-loadble](https://github.com/jamiebuilds/react-loadable)(核心思路为: 高阶组件 + webpack dynamic import), 在 16.6 版本中提供了 `Suspense` 和 `lazy` 这两个钩子, 因此在之后的版本中便可以使用其来实现 `Code Spliting`。

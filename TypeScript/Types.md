@@ -1,3 +1,7 @@
+<!--
+abbrlink: a3a3qa6u
+-->
+
 ## 数据类型
 
 在 TypeScript 进行类型定义的时候尽量不使用 Object、Boolean、Array、Function 等大写开头的标识来定义类型，因为它们在 JavaScript 中都是具体的函数对象，取而代之地应该使用 object、boolean、[]、() => void。

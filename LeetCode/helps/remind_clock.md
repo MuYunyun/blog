@@ -1,3 +1,7 @@
+<!--
+abbrlink: cb3y1wyp
+-->
+
 ```js
 /** remind to clock */
 (function remindClock (arr) {

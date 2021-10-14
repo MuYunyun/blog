@@ -1,3 +1,7 @@
+<!--
+abbrlink: oizmpcx4
+-->
+
 ### HTML5 DOM
 
 1. getElementsByClassName

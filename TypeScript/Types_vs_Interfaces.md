@@ -1,3 +1,7 @@
+<!--
+abbrlink: z9tf63bq
+-->
+
 ## Types vs Interfaces
 
 ### 相同点

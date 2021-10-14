@@ -48,3 +48,6 @@ language: en
 
 # Inject Custom Logic
 inject: injectLogic.js
+
+# Use abbrlink
+abbrlink: true

@@ -1,3 +1,7 @@
+<!--
+abbrlink: vns5shb6
+-->
+
 ### 商家端模块职责
 
 * 创建店铺: [官网](https://www.pinduoduo.com/) -> 商家入驻

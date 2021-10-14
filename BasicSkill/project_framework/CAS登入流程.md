@@ -1,3 +1,7 @@
+<!--
+abbrlink: p7j9m7jg
+-->
+
 本文对 CAS(Central Authentication Service) 流程作个梳理。
 
 ### 什么是 CAS

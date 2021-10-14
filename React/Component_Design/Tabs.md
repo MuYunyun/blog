@@ -1,3 +1,7 @@
+<!--
+abbrlink: sic5ph49
+-->
+
 ### Tabs 组件
 
 Tabs 组件在 Swipe 的组件上开发。

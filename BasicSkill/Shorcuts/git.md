@@ -1,3 +1,7 @@
+<!--
+abbrlink: 8pf6qkue
+-->
+
 ### 操作远程文件
 
 ```bash

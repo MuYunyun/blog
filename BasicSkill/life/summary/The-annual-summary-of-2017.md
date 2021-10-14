@@ -1,3 +1,7 @@
+<!--
+abbrlink: f3dh3zah
+-->
+
 ![](http://with.muyunyun.cn/6114931ddce0b5e56ade13b45e2b3ec6.jpg-muyy)
 
 > 不久前年会主题征集活动中，我提交的主题是《在路上》，和骑手们一样，我们亦不是在路上呢？

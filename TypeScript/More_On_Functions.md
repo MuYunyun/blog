@@ -1,3 +1,7 @@
+<!--
+abbrlink: gqpyuise
+-->
+
 ## TypeScript 中使用函数
 
 ### Call Signatures

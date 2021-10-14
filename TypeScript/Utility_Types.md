@@ -1,3 +1,7 @@
+<!--
+abbrlink: fvrpelzp
+-->
+
 ### `Partial<T>`
 
 `Partial<T>`: 意味 T 集合的子集;

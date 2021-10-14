@@ -1,3 +1,7 @@
+<!--
+abbrlink: be6usutl
+-->
+
 ## Mac 快速迁移方案
 
 ### 同步 vscode 配置

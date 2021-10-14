@@ -1,3 +1,7 @@
+<!--
+abbrlink: kvnrie57
+-->
+
 ### 边框的选择
 
 border、box-shadow、伪元素都可以实现表格边框, 该如何选择?

@@ -1,3 +1,7 @@
+<!--
+abbrlink: l33pdpxw
+-->
+
 ### Shell 脚本
 
 * 用途:

@@ -1,3 +1,7 @@
+<!--
+abbrlink: xxvfc3g7
+-->
+
 ### How to get an updated time
 
 * GraghQL API

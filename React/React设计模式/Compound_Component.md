@@ -1,3 +1,7 @@
+<!--
+abbrlink: 29dmryva
+-->
+
 ### 复合组件(Compound Component)
 
 #### 使用 static 来复合组件

@@ -1,3 +1,7 @@
+<!--
+abbrlink: mbrsm6kj
+-->
+
 ## 文件操作
 
 ### head

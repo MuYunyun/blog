@@ -1,3 +1,7 @@
+<!--
+abbrlink: e49qogy1
+-->
+
 ## TypeScript 模块篇
 
 ### TypeScript 之模块导入

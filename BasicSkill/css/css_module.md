@@ -1,3 +1,7 @@
+<!--
+abbrlink: a8r369v5
+-->
+
 ### [css-loader](https://github.com/webpack-contrib/css-loader)
 
 来看下面这一组 webpack 的配置项，

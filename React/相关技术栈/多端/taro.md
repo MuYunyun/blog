@@ -1,3 +1,7 @@
+<!--
+abbrlink: 36xsjh9a
+-->
+
 ### @tarojs/components
 
 ```js

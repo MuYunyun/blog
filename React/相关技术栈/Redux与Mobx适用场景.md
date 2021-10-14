@@ -1,3 +1,7 @@
+<!--
+abbrlink: idu7szrn
+-->
+
 ### Redux 的简易实现
 
 ```js

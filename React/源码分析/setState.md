@@ -1,3 +1,7 @@
+<!--
+abbrlink: 55kdze2t
+-->
+
 ### setState 是同步还是异步的?
 
 ```js

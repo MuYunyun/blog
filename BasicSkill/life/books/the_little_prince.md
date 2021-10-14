@@ -1,3 +1,7 @@
+<!--
+abbrlink: h6tirwxs
+-->
+
 ### The Little Prince
 
 I `ask the indulgence of the children` who may read this book for `dedicating it to` a grownup.

@@ -1,3 +1,7 @@
+<!--
+abbrlink: l3p7jbgc
+-->
+
 ### Generator 使用规律
 
 从一道题目开始:

@@ -1,3 +1,7 @@
+<!--
+abbrlink: 9mpxxj5w
+-->
+
 ## bind 函数实现
 
 ### 第一版: 借助 call/apply

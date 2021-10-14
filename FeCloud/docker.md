@@ -1,3 +1,7 @@
+<!--
+abbrlink: t6pnnqir
+-->
+
 ### Docker 是什么？
 
 Docker 属于 Linux 容器的一种封装，提供简单易用的容器使用接口。它是目前最流行的 Linux 容器解决方案。

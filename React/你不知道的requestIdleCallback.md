@@ -1,3 +1,7 @@
+<!--
+abbrlink: lmjv3sgz
+-->
+
 ### 你不知道的 requestIdleCallback
 
 本文副标题是 `Request Schedule 源码解析一`。在本章中会介绍 `requestIdleCallback` 的用法以及其缺陷, 接着对 React 团队对该 api 的 hack 部分的源码进行剖析。在下一篇中会结合优先级对 React 的调度算法进行宏观的解释, 欢迎关注[个人博客](https://github.com/MuYunyun/blog)。

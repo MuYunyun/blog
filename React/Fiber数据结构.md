@@ -1,3 +1,7 @@
+<!--
+abbrlink: f3uuo1ij
+-->
+
 ### Fiber 的数据结构
 
 此小节会通过两个 `demo` 来展示 `Stack Reconciler` 以及 `Fiber Reconciler` 的数据结构。

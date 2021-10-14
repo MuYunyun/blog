@@ -1,3 +1,7 @@
+<!--
+abbrlink: x6rniuyk
+-->
+
 ### 移动端组件库
 
 * [NutUI](https://nutui.jd.com/#/intro)

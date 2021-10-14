@@ -1,3 +1,7 @@
+<!--
+abbrlink: iyizcnh2
+-->
+
 来看为什么有如下 api:
 
 ### call/put

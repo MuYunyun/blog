@@ -1,3 +1,7 @@
+<!--
+abbrlink: lsuxkvce
+-->
+
 ### oh-my-zsh
 
 * [oh-my-zsh 常见快捷键](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet)

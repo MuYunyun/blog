@@ -1,3 +1,7 @@
+<!--
+abbrlink: 4sdxeudx
+-->
+
 ### 疑问
 
 > 在知乎上提了个 [使用 immutable.js 后有什么优势？](https://www.zhihu.com/question/297323663)

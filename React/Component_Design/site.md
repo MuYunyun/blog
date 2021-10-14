@@ -1,3 +1,7 @@
+<!--
+abbrlink: jp8oqdxn
+-->
+
 ### 点击按钮实现复制文字
 
 本质是 `document.execCommand()` api 的使用, 见如下 demo:

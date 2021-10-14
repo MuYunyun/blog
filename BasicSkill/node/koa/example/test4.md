@@ -1,3 +1,7 @@
+<!--
+abbrlink: waf5nnpe
+-->
+
 // 完善的框架都有相应的错误捕获机制
 const Koa = require('../application')
 

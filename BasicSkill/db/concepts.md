@@ -1,3 +1,7 @@
+<!--
+abbrlink: 7xl39wal
+-->
+
 ### DDL 与 DML
 
 * 数据定义语言(DDL): Data Definition Language

@@ -1,3 +1,7 @@
+<!--
+abbrlink: exzzjh9z
+-->
+
 ### RPC 是什么
 
 * RPC(Remote Procedure Call) 译为远端过程调用。即在一台机子上能调用到另外一台机子上的服务;

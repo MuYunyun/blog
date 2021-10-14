@@ -1,3 +1,7 @@
+<!--
+abbrlink: l9w7axkn
+-->
+
 ### Promise/A+ 核心
 
 ![](http://with.muyunyun.cn/e1a0c15c44f9b014aa78d7b7620db474.jpg-200)

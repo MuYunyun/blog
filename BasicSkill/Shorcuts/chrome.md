@@ -1,3 +1,7 @@
+<!--
+abbrlink: 6e5ls1fr
+-->
+
 ### Chrome Skill
 
 ### 快捷键

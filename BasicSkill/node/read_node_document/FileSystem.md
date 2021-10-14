@@ -1,3 +1,7 @@
+<!--
+abbrlink: jwdjdbiz
+-->
+
 ### fs.Stats
 
 ```js

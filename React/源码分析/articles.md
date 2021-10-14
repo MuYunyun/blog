@@ -1,3 +1,7 @@
+<!--
+abbrlink: zxuamh6y
+-->
+
 一些对阅读源码的文章
 
 ### link

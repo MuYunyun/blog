@@ -1,3 +1,7 @@
+<!--
+abbrlink: fieex7n3
+-->
+
 ### xss(cross site script)
 
 * 内容型 xss: 后端返回前端的模板内容里掺杂脚本

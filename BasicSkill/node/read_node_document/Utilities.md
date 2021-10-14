@@ -1,3 +1,7 @@
+<!--
+abbrlink: 73ctc6w6
+-->
+
 ### Api
 
 * promisify: callback promise 化

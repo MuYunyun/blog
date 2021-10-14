@@ -1,3 +1,7 @@
+<!--
+abbrlink: 4id99bn9
+-->
+
 ### Optimize fibonacci sequence
 
 > 题目: 求斐波那契数列 1,1,2,3,5,8,13,21,34,55,89...中的第 n 项

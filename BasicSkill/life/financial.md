@@ -1,3 +1,7 @@
+<!--
+abbrlink: dnvrpdfr
+-->
+
 ### gold price
 
 * 4.14 371

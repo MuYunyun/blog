@@ -1,3 +1,7 @@
+<!--
+abbrlink: qy2pz4hv
+-->
+
 TypeScript 并不是一个完全新的语言, 它是 JavaScript 的超集，为 JavaScript 的生态增加了类型机制，并最终将代码编译为纯粹的 JavaScript 代码。
 
 ## TypeScript 简介

@@ -1,3 +1,7 @@
+<!--
+abbrlink: puqff18q
+-->
+
 ### Service
 
 * laaS(Infrastructure), 基础设施即服务;

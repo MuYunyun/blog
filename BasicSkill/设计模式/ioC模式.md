@@ -1,3 +1,7 @@
+<!--
+abbrlink: j3257g5c
+-->
+
 ### IoC 模式
 
 IoC(Inversion of Control) 译为控制反转, 它包括依赖注入(Dependency Injection) 和依赖查询(Dependency Lookup)。是面向对象编程的一种设计模式。

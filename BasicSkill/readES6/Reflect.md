@@ -1,3 +1,7 @@
+<!--
+abbrlink: lm3wt8vq
+-->
+
 ### Reflect
 
 `Reflect` 是 `ES6` 新引人的特性, 其目的是把一些 `JavaScript` 特有的属性 `api` 抽离出来。其有如下优点:

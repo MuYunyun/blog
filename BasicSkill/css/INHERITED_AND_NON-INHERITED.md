@@ -1,3 +1,7 @@
+<!--
+abbrlink: nehdqz9q
+-->
+
 ### INHERITED AND NON-INHERITED IN CSS
 
 When I look up css properties in MDN's specifications section, there are some properties in it and it seems unfamiliar to me. So I try to find out some of them today.

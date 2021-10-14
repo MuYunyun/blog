@@ -1,3 +1,7 @@
+<!--
+abbrlink: xvy8k5bx
+-->
+
 ### small skill
 
 * 将手掌覆盖在 Apple Watch 的屏幕上时, 屏幕会被熄灭。

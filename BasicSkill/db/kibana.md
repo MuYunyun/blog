@@ -1,3 +1,7 @@
+<!--
+abbrlink: tm5s78cm
+-->
+
 ### Kibana 用户手册
 
 * `搜索数据`

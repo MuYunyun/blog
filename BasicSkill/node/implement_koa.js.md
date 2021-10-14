@@ -1,3 +1,7 @@
+<!--
+abbrlink: pd6i666j
+-->
+
 [项目实现源码](https://github.com/MuYunyun/blog/tree/master/BasicSkill/node/koa)
 
 该简版 koa 的实现包含以下 4 个步骤:

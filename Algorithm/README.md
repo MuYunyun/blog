@@ -1,3 +1,7 @@
+<!--
+abbrlink: qrh61eep
+-->
+
 ### Algorithm
 
 * [Algorithm And Complexy](https://github.com/MuYunyun/blog/blob/master/Algorithm/algorithm/complexy.md)

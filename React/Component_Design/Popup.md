@@ -1,3 +1,7 @@
+<!--
+abbrlink: 7bg23pss
+-->
+
 ### iphone X/XS/XR 适配方案
 
 Popup/ActionSheet 组件在 iphone x/xr/xs 底部存在小黑条会把显示在内容区上面, 适配方案如下:

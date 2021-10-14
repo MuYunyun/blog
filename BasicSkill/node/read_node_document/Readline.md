@@ -1,3 +1,7 @@
+<!--
+abbrlink: ybc4sjim
+-->
+
 ### Usage
 
 ```js

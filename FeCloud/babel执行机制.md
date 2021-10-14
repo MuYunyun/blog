@@ -1,3 +1,7 @@
+<!--
+abbrlink: yb1qmuv1
+-->
+
 Babel 是下一代 JavaScript 编译器。
 
 ### babel 执行机制

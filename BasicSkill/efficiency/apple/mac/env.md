@@ -1,3 +1,7 @@
+<!--
+abbrlink: mddcenfz
+-->
+
 ### 执行 brew install 命令长时间卡在 Updating Homebrew 的解决方法
 
 执行 brew 命令安装软件的时候，跟以下 3 个仓库地址有关：

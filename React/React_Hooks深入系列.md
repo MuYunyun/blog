@@ -1,3 +1,7 @@
+<!--
+abbrlink: t3in9kmo
+-->
+
 ### React Hooks 深入系列
 
 在 class 已经融入 React 生态的节点下, React 推出的 Hooks 具有如下优势:

@@ -1,3 +1,7 @@
+<!--
+abbrlink: qcpplm3x
+-->
+
 ### .gitlab.yml 调试技巧
 
 1. 在 `scripts` 中书写脚本。

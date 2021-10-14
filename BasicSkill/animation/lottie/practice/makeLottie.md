@@ -1,3 +1,7 @@
+<!--
+abbrlink: v6ny9zc6
+-->
+
 ### 安装的坑
 
 * 在 macOS Big Sur 中需要使用 2020 版本。

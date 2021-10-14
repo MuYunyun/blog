@@ -1,3 +1,7 @@
+<!--
+abbrlink: fd4ap89c
+-->
+
 ### Affix 固钉组件
 
 固钉组件实现的效果其实是 CSS 中的 `position: sticky` 属性, `position: sticky` 本质是 `position: relative` 与 `position: absolute` 的结合体。

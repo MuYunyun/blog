@@ -1,3 +1,7 @@
+<!--
+abbrlink: dlr3zqap
+-->
+
 ### Alexa 相关资源
 
 * [Alexa 站点](https://pitangui.amazon.com/)

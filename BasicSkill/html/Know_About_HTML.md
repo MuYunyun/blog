@@ -1,3 +1,7 @@
+<!--
+abbrlink: u873wh2i
+-->
+
 ### Reading the HTML in the MDN
 
 ![](http://with.muyunyun.cn/6ffc01e7309a9456198b4c3336d23fda.jpg)

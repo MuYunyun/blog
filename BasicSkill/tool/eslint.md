@@ -1,3 +1,7 @@
+<!--
+abbrlink: 7ig74low
+-->
+
 ### ways
 
 1. use [AST Explorer](https://astexplorer.net/)

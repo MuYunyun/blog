@@ -1,3 +1,7 @@
+<!--
+abbrlink: bpp6dk6t
+-->
+
 ### Usage
 
 ```js

@@ -1,3 +1,7 @@
+<!--
+abbrlink: waiqiqhz
+-->
+
 ### 计算公式
 
 ```js
