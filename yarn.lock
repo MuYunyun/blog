@@ -2875,10 +2875,10 @@ crd-scripts@^1.5.0:
     write "^1.0.3"
     yamljs "^0.3.0"
 
-crd-seed@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.5.0.tgz#dce0dc9716e766d1eac80c9c633c01a5e32a53ca"
-  integrity sha512-R09Upr5njYtGdvulVfh57aDBJS0J/XUBXD5emlbhuousuxWY0qzU/sC3USPnBudcoJ35300vqBbkNJ9YhbeaOw==
+crd-seed@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.5.1.tgz#0fd0bc87debe18d8bf081d1e691ca034c766ffb9"
+  integrity sha512-m32eOJypUFaGIPmdPeeKMqwYhFsJChINwgMdXAjL+P9HbrmP7uTkGlgL3mmG0r4KVUTzAJZEdSmTkh/tA6j+Yw==
   dependencies:
     react-router-dom "^4.2.2"
     react-switch "^5.0.1"

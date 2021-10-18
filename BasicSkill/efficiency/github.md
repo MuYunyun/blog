@@ -28,6 +28,8 @@ This page will collect some useful websets.
 * [GithubHost](https://github.com/ButterAndButterfly/GithubHost)
   * 原理: [解决 Github 网页上图片显示失败的问题](https://blog.csdn.net/qq_38232598/article/details/91346392)
 
+> 待验证: [GitHub无法访问、443 Operation timed out的解决办法](https://juejin.cn/post/6844904193170341896)
+
 ### 修改 host 文件
 
 ```
