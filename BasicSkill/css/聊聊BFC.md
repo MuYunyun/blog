@@ -85,11 +85,11 @@ abbrlink: 5wjknen4
 </body>
 ```
 
-子节点加上 float: left 后, 其脱离了文档流, 所以只看到一条 1px 的线条, 如下:
+子节点加上 `float: left` 后, 其脱离了文档流, 所以只看到一条 1px 的线条, 如下:
 
 ![](http://with.muyunyun.cn/6b657c7f8d985992c97269fb61bb8678.jpg-300)
 
-此时在父节点中加上 overflow: hidden 使其变为 BFC 元素从而消除浮动, 代码如下:
+此时在父节点中加上 `overflow: hidden` 使其变为 BFC 元素从而消除浮动, 代码如下:
 
 ```html
 <style>
@@ -138,11 +138,11 @@ abbrlink: 5wjknen4
 </body>
 ```
 
-相邻节点中的一个节点使用 float: left, 其脱离文档流, 从而两个 div 标签发生了重叠,
+相邻节点中的一个节点使用 `float: left`, 其脱离文档流, 从而两个 div 标签发生了重叠,
 
 ![](http://with.muyunyun.cn/c7ebcfce5a7c58142fc9004a7d545852.jpg-300)
 
-此时在普通流节点上使用 overflow: hidden 使其变为 BFC 元素从而使 BFC 元素和浮动元素分离:
+此时在普通流节点上使用 `overflow: hidden` 使其变为 BFC 元素从而使 BFC 元素和浮动元素分离:
 
 ```html
 <style>
@@ -177,48 +177,3 @@ abbrlink: 5wjknen4
 * float: 不为 none;
 * display: 为 inline-box、table-ceil、flex;
 ```
-
-### question
-
-Here is my demo,
-
-```html
-<html lang="en">
-  <style>
-    li {
-      display: inline-block;
-      background: red;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      width: 30px
-    }
-
-    .demo {
-      width: 90px;
-    }
-
-    .clearfix {
-      overflow: visible;
-    }
-  </style>
-  <body>
-    <ul class="demo">
-      <li>testtest</li>
-      <li>testtest</li>
-      <li>testtest</li>
-      <li>testtest</li>
-      <li>testtest</li>
-      <li>testtest</li>
-    </ul>
-  </body>
-</html>
-```
-
-I'm confused why is it, I want to use overflow: hidden and not expect the strange gap, how can I do?
-
-![](http://with.muyunyun.cn/79377b5f34efca7b6574fff146c37f56.jpg)
-
-the solve way is to add `line-height: 0` to the class demo and add `line-height: 12px` to the tag li.
-
-> [there-is-an-strange-distance-when-using-overflow-hidden](https://stackoverflow.com/questions/60482616/there-is-an-strange-distance-when-using-overflow-hidden)
