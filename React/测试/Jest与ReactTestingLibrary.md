@@ -150,7 +150,7 @@ test('loads greetings on click', () => {
 
 * Mock react-transition-group in React Component Tests with jest.mock
 
-比如 `react-transition-group` 动画库也是存在异步库, 它会在 1 s 后将 Children 隐藏, 这时候可以使用 `mock` 来处理。
+比如 `react-transition-group` 动画库也是存在异步库, 它会在 1s 后将 Children 隐藏, 这时候可以使用 `mock` 来处理。
 
 ```js
 jest.mock('react-transition-group', () => {
