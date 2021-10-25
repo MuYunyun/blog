@@ -2814,10 +2814,10 @@ crd-prerender-spa-plugin@^0.2.0:
     "@prerenderer/renderer-puppeteer" "^0.2.0"
     html-minifier "^4.0.0"
 
-crd-scripts@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-1.5.0.tgz#bf8080f3866e5b7f0929b2e43170a53fda37af24"
-  integrity sha512-j71ya4hmJLhacXo/lDm8/hXWDQfcNFUBUCJ0R5t0PpFCabOZY1xEA5CyZ2/OFMb6uW4j6kYttOW/dLUAy5PV6A==
+crd-scripts@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-1.5.3.tgz#d4b079210fbb73808d8d0e1d816edd5b6daa27c3"
+  integrity sha512-/UfBCzyx4QA1aeFBTJ46Kl89dx0qmZvKRxi5PiPJraY+sTpvbrCsqDhVyz2QX9MN8E/7VKxp4FdlnUt8Ynw98g==
   dependencies:
     "@babel/cli" "^7.2.3"
     "@babel/core" "^7.3.4"
@@ -2910,14 +2910,14 @@ crd-utils@^1.5.0:
   dependencies:
     js-yaml "^3.14.0"
 
-create-react-doc@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-1.5.0.tgz#67808e44bd6eeffd6d194538451b0cdb42a10895"
-  integrity sha512-9wfx1AVZEAkwCh9lEeT8KsYRVEgQaeOuqmruCtsRRNJ/P4S5lZqCUsuuKTo2lRUlFSfx7Afu6uHttfaDUf8lGA==
+create-react-doc@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-1.5.3.tgz#3af278d4387c2fc618f1da575f446991013fb585"
+  integrity sha512-jVaNMto9aTCruHj+J5ZvUNHnxAg6yG6kRzlEiKlyDDsCcq9H5zW9HQ2P/dPs8Jqw8v6uwqwaGM6AGcHWDjaNqg==
   dependencies:
     "@inquirer/input" "^0.0.13-alpha.0"
     commander "^2.12.2"
-    crd-scripts "^1.5.0"
+    crd-scripts "^1.5.3"
     crd-templates "^1.5.0"
     crd-theme "^1.5.0"
     fs-extra "^5.0.0"
