@@ -2814,10 +2814,10 @@ crd-prerender-spa-plugin@^0.2.0:
     "@prerenderer/renderer-puppeteer" "^0.2.0"
     html-minifier "^4.0.0"
 
-crd-scripts@^1.5.3:
-  version "1.5.3"
-  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-1.5.3.tgz#d4b079210fbb73808d8d0e1d816edd5b6daa27c3"
-  integrity sha512-/UfBCzyx4QA1aeFBTJ46Kl89dx0qmZvKRxi5PiPJraY+sTpvbrCsqDhVyz2QX9MN8E/7VKxp4FdlnUt8Ynw98g==
+crd-scripts@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-1.6.0.tgz#5e1a21b3e9a646b79b1e5aa1d60e75a9611fa13d"
+  integrity sha512-ZLD9ToJ2Kk6aXbIeHoMjV1sSqiaAboxCsl1hSccAkILZZ/NFJJHAT/4K2MRm+/lVl/v0B4HKArQDDu4Rvk3+XQ==
   dependencies:
     "@babel/cli" "^7.2.3"
     "@babel/core" "^7.3.4"
@@ -2840,7 +2840,7 @@ crd-scripts@^1.5.3:
     copy-template-dir "^1.3.0"
     crd-generator-sitemap "^1.3.4"
     crd-prerender-spa-plugin "^0.2.0"
-    crd-theme "^1.5.0"
+    crd-theme "^1.6.0"
     crd-utils "^1.5.0"
     css-loader "^0.28.7"
     css-minimizer-webpack-plugin "^1.2.0"
@@ -2875,10 +2875,10 @@ crd-scripts@^1.5.3:
     write "^1.0.3"
     yamljs "^0.3.0"
 
-crd-seed@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.5.2.tgz#0c6f9480f5163bc0333e1170062e710050ff7e7c"
-  integrity sha512-opG1rOKqedsmlSb9hQDvz4zIRZT0xQMqbtS0BlTGo0dRpgjxSUhMn0Hwl+UhdDP0wVD8Fwi1DiumcLJrOWzhrA==
+crd-seed@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.6.0.tgz#1cb4707ba5f475f0d751d62cf82764b95fc91c2c"
+  integrity sha512-wzCcmcRbNN3DwHxhdpiHKmSsq81lrpJvqMj1IWplymJIh49wRwMQiWUknhRe95bHEPERdj3PCV8t0CWIHMusdQ==
   dependencies:
     react-router-dom "^4.2.2"
     react-switch "^5.0.1"
@@ -2888,10 +2888,10 @@ crd-templates@^1.5.0:
   resolved "https://registry.npmjs.org/crd-templates/-/crd-templates-1.5.0.tgz#d53d023f4a5d477584374aba4559f3da8b6e2b58"
   integrity sha512-6bE82BdInWQUnqK/oa+LgMh0WRWVCk84FWp8ftLlOLsfRAsQKq8KA2Fk9RnCPt6oPz8H5vTmKHezFzgxAkjjgQ==
 
-crd-theme@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/crd-theme/-/crd-theme-1.5.0.tgz#c96bfccde7f511194ce2bed38d46c93682cc0e9d"
-  integrity sha512-O0mARGLShTJ9eb9Bpzhjhjm2pMbUXvMPxVypmeHAu+ePKPzIVxv0B6425KBbApxK8evnGhLPk3XvRhy46YnoSw==
+crd-theme@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/crd-theme/-/crd-theme-1.6.0.tgz#8defa7fdd4073d76260f4a6d537f59051ac72e5c"
+  integrity sha512-EXSm3MVWB7Mdq8OqqOstgs91WKn4qt4vvuU7bsS33oPoW23+F3k0dlR3FPqmmRjFjXRTK498oTZZs4zc7uJOkA==
   dependencies:
     "@mdx-js/react" "^1.6.22"
     classnames "^2.2.6"
@@ -2900,6 +2900,7 @@ crd-theme@^1.5.0:
     prism-react-renderer "^1.2.1"
     react "^17.0.1"
     react-dom "^17.0.1"
+    react-helmet "^6.1.0"
     react-hot-loader "^4.1.1"
     react-markdown "^3.3.0"
 
@@ -2910,16 +2911,16 @@ crd-utils@^1.5.0:
   dependencies:
     js-yaml "^3.14.0"
 
-create-react-doc@^1.5.3:
-  version "1.5.3"
-  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-1.5.3.tgz#3af278d4387c2fc618f1da575f446991013fb585"
-  integrity sha512-jVaNMto9aTCruHj+J5ZvUNHnxAg6yG6kRzlEiKlyDDsCcq9H5zW9HQ2P/dPs8Jqw8v6uwqwaGM6AGcHWDjaNqg==
+create-react-doc@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-1.6.0.tgz#522569af8652481badb4580aca80d885d907d0d4"
+  integrity sha512-BDjYben7TqmM1n0haEiwSYChhbyCebChWKcDtvRP9rmFFMi4vN57RFm45jCFSCTRM9wafiYnrrRfs3+Teutg2Q==
   dependencies:
     "@inquirer/input" "^0.0.13-alpha.0"
     commander "^2.12.2"
-    crd-scripts "^1.5.3"
+    crd-scripts "^1.6.0"
     crd-templates "^1.5.0"
-    crd-theme "^1.5.0"
+    crd-theme "^1.6.0"
     fs-extra "^5.0.0"
 
 cross-spawn@^6.0.0, cross-spawn@^6.0.5:
@@ -6988,7 +6989,7 @@ promise-limit@^2.5.0:
   resolved "https://registry.npmjs.org/promise-limit/-/promise-limit-2.7.0.tgz#eb5737c33342a030eaeaecea9b3d3a93cb592b26"
   integrity sha512-7nJ6v5lnJsXwGprnGXga4wx6d1POjvi5Qmf1ivTRxTjH4Z/9Czja/UCMLVmB9N93GeWOU93XaFaEt6jbuoagNw==
 
-prop-types@^15.6.1, prop-types@^15.6.2:
+prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -7131,6 +7132,21 @@ react-error-overlay@^4.0.0:
   resolved "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-4.0.1.tgz#417addb0814a90f3a7082eacba7cee588d00da89"
   integrity sha512-xXUbDAZkU08aAkjtUvldqbvI04ogv+a1XdHxvYuHPYKIVk/42BIOD0zSKTHAWV4+gDy3yGm283z2072rA2gdtw==
 
+react-fast-compare@^3.1.1:
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
+  integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
+
+react-helmet@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.npmjs.org/react-helmet/-/react-helmet-6.1.0.tgz#a750d5165cb13cf213e44747502652e794468726"
+  integrity sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==
+  dependencies:
+    object-assign "^4.1.1"
+    prop-types "^15.7.2"
+    react-fast-compare "^3.1.1"
+    react-side-effect "^2.1.0"
+
 react-hot-loader@^4.1.1:
   version "4.13.0"
   resolved "https://registry.npmjs.org/react-hot-loader/-/react-hot-loader-4.13.0.tgz#c27e9408581c2a678f5316e69c061b226dc6a202"
@@ -7191,6 +7207,11 @@ react-router@^4.3.1:
     path-to-regexp "^1.7.0"
     prop-types "^15.6.1"
     warning "^4.0.1"
+
+react-side-effect@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/react-side-effect/-/react-side-effect-2.1.1.tgz#66c5701c3e7560ab4822a4ee2742dee215d72eb3"
+  integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
 
 react-switch@^5.0.1:
   version "5.0.1"
