@@ -35,13 +35,15 @@
 
 > If you are using a display with your Raspberry Pi and if you boot to the command line instead of the desktop, your IP address should be shown in the last few messages before the login prompt. Otherwise open a Terminal window and type hostname -I which will reveal your Raspberry Pi’s IP address.
 
+### 树莓派连接显示器不亮屏的解决方案
+
+* [树莓派连接显示器不亮屏的解决方案](https://www.cnblogs.com/wirehome/p/10298395.html)
+
 ### 如何在 Mac 上 SSH 登入树莓派服务器
 
 * SSH 与 VNC 的区别是?
   * SSH(Secure Shell): 安全外壳协议。是一种加密的网络传输协议。
   * VNC: 虚拟网络计算。是一种图形桌面「共享」应用程序，它使用远程帧缓冲协议来远程控制另一台计算机。
-
-### Todo
 
 ### 关机
 
@@ -49,4 +51,45 @@
 sudo shutdown -h now
 或者
 sudo half
+```
+
+### 初始化 config.txt
+
+```bash
+# Please DO NOT modify this file; if you need to modify the boot config, the
+# "usercfg.txt" file is the place to include user changes. Please refer to
+# the README file for a description of the various configuration files on
+# the boot partition.
+
+# The unusual ordering below is deliberate; older firmwares (in particular the
+# version initially shipped with bionic) don't understand the conditional
+# [sections] below and simply ignore them. The Pi4 doesn't boot at all with
+# firmwares this old so it's safe to place at the top. Of the Pi2 and Pi3, the
+# Pi3 uboot happens to work happily on the Pi2, so it needs to go at the bottom
+# to support old firmwares.
+
+[pi4]
+kernel=uboot_rpi_4.bin
+max_framebuffers=2
+
+[pi2]
+kernel=uboot_rpi_2.bin
+
+[pi3]
+kernel=uboot_rpi_3.bin
+
+[all]
+arm_64bit=1
+device_tree_address=0x03000000
+
+# The following settings are "defaults" expected to be overridden by the
+# included configuration. The only reason they are included is, again, to
+# support old firmwares which don't understand the "include" command.
+
+enable_uart=1
+cmdline=cmdline.txt
+
+include syscfg.txt
+include usercfg.txt
+
 ```
