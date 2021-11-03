@@ -29,15 +29,63 @@
   * 使用 balenaEtcher 将镜像烧录到 SD 卡。
     * [balenaEtcher 下载地址](https://www.balena.io/etcher/)
 
+### 树莓派连接显示器不亮屏的解决方案
+
+* [树莓派连接显示器不亮屏的解决方案](https://www.cnblogs.com/wirehome/p/10298395.html)
+
+需要在 config.txt 补充以下内容:
+
+```bash
+hdmi_force_hotplug=1
+config_hdmi_boost=4
+hdmi_group=2
+hdmi_mode=9
+hdmi_drive=2
+hdmi_ignore_edid=0xa5000080
+disable_overscan=1
+```
+
+### 树莓派 ubuntu 系统
+
+* 初始账号: ubuntu
+* 初始密码: ubuntu
+
+首次登入需要修改密码
+
+* To test:
+
+```bash
+sudo apt install net-tools
+```
+
+### 树莓派连接手机热点
+
+* [树莓派连接手机热点](https://blog.csdn.net/weixin_44415549/article/details/105415371)
+* [树莓派没有路由器,连接手机热点使用](https://www.geek-share.com/detail/2809069950.html)
+
+* 步骤一: boot 盘新建一个 ssh 空文件。
+* 步骤二: boot 盘新建一个 wpa_supplicant.conf，里面代码为
+
+```bash
+country=GB
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+ssid="muyunyun"
+psk="ykwky9917"
+priority=99
+}
+
+ssid 写热点名称，psk 写热点密码。
+```
+
+* 步骤三: 手机下载远程服务软件 ``。
+
 ### 如何查找 IP 地址
 
 * [How to Find your IP Address](https://www.raspberrypi.com/documentation/computers/remote-access.html#ip-address)
 
 > If you are using a display with your Raspberry Pi and if you boot to the command line instead of the desktop, your IP address should be shown in the last few messages before the login prompt. Otherwise open a Terminal window and type hostname -I which will reveal your Raspberry Pi’s IP address.
-
-### 树莓派连接显示器不亮屏的解决方案
-
-* [树莓派连接显示器不亮屏的解决方案](https://www.cnblogs.com/wirehome/p/10298395.html)
 
 ### 如何在 Mac 上 SSH 登入树莓派服务器
 
@@ -49,8 +97,6 @@
 
 ```bash
 sudo shutdown -h now
-或者
-sudo half
 ```
 
 ### 初始化 config.txt
