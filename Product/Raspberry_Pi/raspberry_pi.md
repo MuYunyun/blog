@@ -1,5 +1,7 @@
 ### 树莓派
 
+![](http://with.muyunyun.cn/0bb19aa47dec25151a4c7a56524e5d82.jpg-400)
+
 ### 树莓派可以做什么
 
 对于开源极客爱好者，可以把树莓派改造成，家庭影院、服务器、无线路由器、BT 下载服务器、FTP 服务器、智能小车、AI 人工智能、智能家居、3D 打印等等。
@@ -58,6 +60,11 @@ disable_overscan=1
 sudo apt install net-tools
 ```
 
+https://blog.csdn.net/wei_love_2017/article/details/108877102
+
+
+在该目录下，如果是服务器，则会有一个 50-cloud-init.yaml 的文件
+
 ### 树莓派连接手机热点
 
 * [树莓派连接手机热点](https://blog.csdn.net/weixin_44415549/article/details/105415371)
@@ -71,15 +78,15 @@ country=GB
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 network={
-ssid="muyunyun"
-psk="ykwky9917"
-priority=99
+  ssid=""
+  psk=""
+  priority=99
 }
-
-ssid 写热点名称，psk 写热点密码。
 ```
 
-* 步骤三: 手机下载远程服务软件 ``。
+> ssid 写热点名称，psk 写热点密码。
+
+* 步骤三: 手机下载远程服务软件 `Termius`。
 
 ### 如何查找 IP 地址
 
@@ -88,6 +95,8 @@ ssid 写热点名称，psk 写热点密码。
 > If you are using a display with your Raspberry Pi and if you boot to the command line instead of the desktop, your IP address should be shown in the last few messages before the login prompt. Otherwise open a Terminal window and type hostname -I which will reveal your Raspberry Pi’s IP address.
 
 ### 如何在 Mac 上 SSH 登入树莓派服务器
+
+SSH 允许我们安全地远程访问我们的树莓派。
 
 * SSH 与 VNC 的区别是?
   * SSH(Secure Shell): 安全外壳协议。是一种加密的网络传输协议。
