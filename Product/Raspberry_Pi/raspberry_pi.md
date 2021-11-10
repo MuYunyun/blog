@@ -174,7 +174,7 @@ server {
     }
 }
 
-新建 /etc/nginx/conf.d/frp.muyunyun.cn.conf ， 并在/etc/nginx/conf.d/frp.muyunyun.cn.conf 写入一下内容。
+新建 /etc/nginx/conf.d/frp.muyunyun.cn.conf ， 并在 /etc/nginx/conf.d/frp.muyunyun.cn.conf 写入一下内容。
 
 server {
     listen       8080 ssl http2;

@@ -43,7 +43,11 @@ nginx.service - A high performance web server and a reverse proxy server
 ...
 ```
 
-### nginx 配置文件备份
+### nginx 配置文件
+
+nginx 配置文件路径: `/etc/nginx/nginx.conf`。
+
+nginx 配置文件进行初始化备份:
 
 ```bash
 user www-data;
