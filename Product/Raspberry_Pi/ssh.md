@@ -1,5 +1,7 @@
 ### SSH
 
+* [腾讯云服务器地址](https://console.cloud.tencent.com/lighthouse/instance/index)
+
 ```bash
 # 登入服务器
 ssh ubuntu@81.69.252.246

@@ -87,13 +87,15 @@ sudo shutdown -h now
 
 ### 内网穿透
 
-#### 服务端设计
+### 服务端(云主机) nginx 配置
 
 首先将域名(楼主为 frp.muyunyun.cn )解析到你的服务器 ip，接下来的步骤会用到服务器以下四个端口，为了方面后续的调试运行，需放开以下几个端口的安全策略， 80（Nginx 接收 http 请求用）， 443（Nginx 接收 https 请求用）， 6000（转发映射 SSH 服务用），8080（转发映射 http 服务用）端口。
 
 配置 Nginx，转发对 frp.muyunyun.cn 域名请求到 8080 端口。
 
 `/etc/nginx/nginx.conf` 设置如下:
+
+Todo: 需要修改
 
 ```bash
 user www-data;
@@ -208,17 +210,41 @@ server {
 }
 ```
 
-#### 客户端设计
+### frp 配置
 
-在树莓派内执行以下命令，下载frp，并解压。
+### 服务端(云主机)配置
+
+在云主机端执行如下命令:
+
+```bash
+cd /opt/
+sudo wget https://github.com/fatedier/frp/releases/download/v0.37.0/frp_0.37.0_linux_386.tar.gz
+sudo tar zxvf frp_0.37.0_linux_386.tar.gz
+```
+
+进入 `/opt/frp_0.37.0_linux_arm64`
+
+![](http://with.muyunyun.cn/32f4ce6995482f6e086b85d2bdd06a01.jpg)
+
+备份客户端 frpc 的配置文件 frpc.ini
+
+```bash
+sudo cp frps.ini frps.ini_backup
+```
+
+todo:...
+
+### 客户端(树莓派)配置
+
+在树莓派内执行以下命令，下载 frp，并解压。
 
 ```bash
 cd /opt/
 sudo wget https://github.com/fatedier/frp/releases/download/v0.37.0/frp_0.37.0_linux_arm64.tar.gz
-sudo tar zxvf  frp_0.37.0_linux_arm64.tar.gz
+sudo tar zxvf frp_0.37.0_linux_arm64.tar.gz
 ```
 
-进入 /opt/frp_0.37.0_linux_arm64
+进入 `/opt/frp_0.37.0_linux_arm64`
 
 备份客户端 frpc 的配置文件 frpc.ini
 

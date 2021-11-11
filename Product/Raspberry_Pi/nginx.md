@@ -47,7 +47,7 @@ nginx.service - A high performance web server and a reverse proxy server
 
 nginx 配置文件路径: `/etc/nginx/nginx.conf`。
 
-nginx 配置文件进行初始化备份:
+nginx 配置文件初始化备份如下:
 
 ```bash
 user www-data;
@@ -136,7 +136,7 @@ http {
 #}
 ```
 
-### 验证 nginx 有效
+### 配置 Http 域名
 
 以配置域名 frp.muyunyun.cn 为例，新建配置文件 `/etc/nginx/conf.d/frp.muyunyun.cn.conf`
 
@@ -144,12 +144,12 @@ http {
 touch /etc/nginx/conf.d/frp.muyunyun.cn.conf
 ```
 
-在 `/etc/nginx/conf.d/frp.muyunyun.cn` 中添加 http 服务相关内容
+在 `/etc/nginx/conf.d/frp.muyunyun.cn.conf` 中添加 http 服务相关内容
 
 ```
 server {
     server_name      frp.muyunyun.cn;
-    listen           80;
+    listen           90;
     root             /usr/share/nginx/html/frp.muyunyun.cn;
 
     # location / {
@@ -168,6 +168,10 @@ server {
     }
 }
 ```
+
+端口使用 80 页面会提示`网站暂时无法访问，该网站未根据工信部相关法律规则进行备案`，[了解更多备案相关内容](https://icp-faq.dnspod.cn/why)，笔者这里将它修改为 90。
+
+![](http://with.muyunyun.cn/04afbf893d08548ebd06a85488389298.jpg)
 
 新建 frp.muyunyun.cn 对应的网站文件夹
 
@@ -198,17 +202,17 @@ touch /usr/share/nginx/html/frp.muyunyun.cn/index.html
 
 控制台输入 `sudo systemctl restart nginx`。
 
-在浏览器访问 http://frp.muyunyun.cn/ 可以看到目标页面
+在浏览器访问 http://frp.muyunyun.cn:90 可以看到目标页面:
 
 ![](http://with.muyunyun.cn/4373b2aaca032ed2a78fac53279532d2.jpg)
 
-不过过了一段时间后，页面提示`网站暂时无法访问，该网站未根据工信部相关法律规则进行备案`，[了解更多备案相关内容](https://icp-faq.dnspod.cn/why)。
-
-![](http://with.muyunyun.cn/04afbf893d08548ebd06a85488389298.jpg)
-
 下面开始添加 https，尝试解决上述问题。
 
-### 安装 acme.sh
+### 配置 Https 域名
+
+更进一步地，接着配置使访问 https://frp.muyunyun.cn:90 也生效。
+
+* 步骤一: 安装 acme.sh
 
 > https://github.com/acmesh-official/acme.sh/wiki/sudo
 
@@ -230,8 +234,8 @@ source ~/.bashrc
 sudo chmod 777 .bashrc
 ```
 
-### 获取 https 证书
+* 步骤二: 获取 https 证书
 
 ```bash
-acme.sh --issue -d frp.muyunyun.cn --nginx
+acme.sh --issue -d frp.muyunyun.cn:90 --nginx
 ```
