@@ -232,7 +232,40 @@ sudo tar zxvf frp_0.37.0_linux_386.tar.gz
 sudo cp frps.ini frps.ini_backup
 ```
 
-todo:...
+修改服务端配置文件 frps.ini，增加一行 `vhost_http_port = 8080`:
+
+```diff
+[common]
+bind_port = 7000
++ vhost_http_port = 8080
+```
+
+以上配置含义为: 服务端 frps 程序运行在 7000 端口，并将指向 8080 端口的请求转发到客户端。
+
+运行如下命令，开启 frp 的服务端程序
+
+```bash
+./frps -c frps.ini
+```
+
+![](http://with.muyunyun.cn/eb0a4e394f5b656b3e67c13c6ab1eb82.jpg)
+
+#### 进一步地使用 pm2 运行 frps
+
+* 步骤一: 安装 node 环境
+  * [安装 Node.js 多版本](https://cloud.tencent.com/document/product/213/38237#.E6.AD.A5.E9.AA.A43.EF.BC.9A.E5.AE.89.E8.A3.85-node.js-.E5.A4.9A.E7.89.88.E6.9C.AC.EF.BC.88.E5.8F.AF.E9.80.89.EF.BC.89)
+* 步骤二: 全局安装 pm2
+
+```bash
+npm i pm2 -g
+```
+
+* 步骤三 ./frps -c frps.ini 存入名为 start_frps.sh 的文件，运行如下命令即可以守护进程的方式运行 frps。
+
+```bash
+pm2 start  /opt/frp_0.37.0_linux_arm64/start_frps.sh
+pm2 save
+```
 
 ### 客户端(树莓派)配置
 
