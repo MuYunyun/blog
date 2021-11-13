@@ -47,13 +47,29 @@ nginx.service - A high performance web server and a reverse proxy server
 
 nginx 配置文件路径: `/etc/nginx/nginx.conf`。
 
-nginx 配置文件初始化备份如下:
-
 ```bash
 user www-data;
 worker_processes auto;
 pid /run/nginx.pid;
 include /etc/nginx/modules-enabled/*.conf;
+load_module /usr/lib/nginx/modules/ngx_stream_module.so;
+
+stream {
+    map $ssl_preread_server_name $backend_name {
+        frp.muyunyun.cn        frp_muyunyun_cn;
+        default web;
+    }
+
+
+   upstream frp_muyunyun_cn {
+        server 127.0.0.1:8080;
+   }
+
+   upstream web {
+        server 127.0.0.1:80;
+   }
+
+}
 
 events {
         worker_connections 768;
@@ -61,7 +77,6 @@ events {
 }
 
 http {
-
         ##
         # Basic Settings
         ##
@@ -113,27 +128,6 @@ http {
         include /etc/nginx/conf.d/*.conf;
         include /etc/nginx/sites-enabled/*;
 }
-
-#mail {
-#       # See sample authentication script at:
-#       # http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
-#
-#       # auth_http localhost/auth.php;
-#       # pop3_capabilities "TOP" "USER";
-#       # imap_capabilities "IMAP4rev1" "UIDPLUS";
-#
-#       server {
-#               listen     localhost:110;
-#               protocol   pop3;
-#               proxy      on;
-#       }
-#
-#       server {
-#               listen     localhost:143;
-#               protocol   imap;
-#               proxy      on;
-#       }
-#}
 ```
 
 ### 配置 Http 域名
@@ -152,12 +146,12 @@ server {
     listen           90;
     root             /usr/share/nginx/html/frp.muyunyun.cn;
 
-    # location / {
-    #    proxy_pass http://127.0.0.1:8080;
-    #     proxy_set_header Host $host:80;
-    #    proxy_set_header X-Real-IP $remote_addr;
-    #    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    # }
+    location / {
+       proxy_pass http://127.0.0.1:8080;
+       proxy_set_header Host $host:90;
+       proxy_set_header X-Real-IP $remote_addr;
+       proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
 
     error_page 404 /404.html;
         location = /40x.html {

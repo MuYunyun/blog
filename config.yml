@@ -12,7 +12,8 @@ menu: [
   'TypeScript',
   'Algorithm',
   'LeetCode',
-  'Product'
+  'Product',
+  'RaspberryPi'
 ]
 ## set init open menu keys
 menuOpenKeys: /BasicSkill

@@ -89,7 +89,7 @@ sudo shutdown -h now
 
 ### 服务端(云主机) nginx 配置
 
-首先将域名(楼主为 frp.muyunyun.cn )解析到你的服务器 ip，接下来的步骤会用到服务器以下四个端口，为了方面后续的调试运行，需放开以下几个端口的安全策略， 80（Nginx 接收 http 请求用）， 443（Nginx 接收 https 请求用）， 6000（转发映射 SSH 服务用），8080（转发映射 http 服务用）端口。
+首先将域名(楼主为 frp.muyunyun.cn )解析到你的服务器 ip，接下来的步骤会用到服务器以下四个端口，为了方面后续的调试运行，需放开以下几个端口的安全策略， 90（Nginx 接收 http 请求用），6000（转发映射 SSH 服务用），8080（转发映射 http 服务用）端口、7000（	服务器端 frps 运行端口）。
 
 配置 Nginx，转发对 frp.muyunyun.cn 域名请求到 8080 端口。
 
@@ -102,7 +102,7 @@ user www-data;
 worker_processes 1;
 pid /run/nginx.pid;
 include /etc/nginx/modules-enabled/*.conf;
-load_module /usr/lib64/nginx/modules/ngx_stream_module.so;
+load_module /usr/lib/nginx/modules/ngx_stream_module.so;
 error_log  /var/log/nginx/error.log warn;
 pid        /var/run/nginx.pid;
 
@@ -140,7 +140,6 @@ stream {
         default web;
     }
 
-
    upstream frp_muyunyun_cn {
         server 127.0.0.1:8080;
    }
@@ -176,7 +175,7 @@ server {
     }
 }
 
-新建 /etc/nginx/conf.d/frp.muyunyun.cn.conf ， 并在 /etc/nginx/conf.d/frp.muyunyun.cn.conf 写入一下内容。
+新建 /etc/nginx/conf.d/frp.muyunyun.cn.conf ， 并在 /etc/nginx/conf.d/frp.muyunyun.cn.conf 写入以下内容:
 
 server {
     listen       8080 ssl http2;
@@ -252,20 +251,25 @@ bind_port = 7000
 
 #### 进一步地使用 pm2 运行 frps
 
-* 步骤一: 安装 node 环境
-  * [安装 Node.js 多版本](https://cloud.tencent.com/document/product/213/38237#.E6.AD.A5.E9.AA.A43.EF.BC.9A.E5.AE.89.E8.A3.85-node.js-.E5.A4.9A.E7.89.88.E6.9C.AC.EF.BC.88.E5.8F.AF.E9.80.89.EF.BC.89)
-* 步骤二: 全局安装 pm2
+安装 node 环境
+
+> [安装 Node.js 多版本](https://cloud.tencent.com/document/product/213/38237#.E6.AD.A5.E9.AA.A43.EF.BC.9A.E5.AE.89.E8.A3.85-node.js-.E5.A4.9A.E7.89.88.E6.9C.AC.EF.BC.88.E5.8F.AF.E9.80.89.EF.BC.89)
+
+全局安装 pm2
 
 ```bash
 npm i pm2 -g
 ```
 
-* 步骤三 ./frps -c frps.ini 存入名为 start_frps.sh 的文件，运行如下命令即可以守护进程的方式运行 frps。
+使用 pm2 守护运行 frps 服务
 
 ```bash
-pm2 start  /opt/frp_0.37.0_linux_arm64/start_frps.sh
+sudo echo "/opt/frp_0.37.0_linux_386/frps -c /opt/frp_0.37.0_linux_386/frps.ini" > /opt/frp_0.37.0_linux_386/start_frpc.sh
+pm2 start /opt/frp_0.37.0_linux_386/start_frps.sh
 pm2 save
 ```
+
+![](http://with.muyunyun.cn/e52ef19b14366896e5de3c6bf7bce609.jpg)
 
 ### 客户端(树莓派)配置
 
@@ -285,13 +289,152 @@ sudo tar zxvf frp_0.37.0_linux_arm64.tar.gz
 sudo cp frpc.ini frpc.ini_backup
 ```
 
-编辑 frpc.ini
+编辑 frpc.ini，备份如下:
 
-Todo:
+```bash
+[common]
+server_addr = 127.0.0.1
+server_port = 7000
+
+[ssh]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+remiote_port = 6000
+```
 
 ```bash
 sudo vim frpc.ini
 ```
+
+```bash
+[common]
+server_addr = 81.69.252.246
+server_port = 7000
+
+[web]
+type = http
+local_port = 8080
+custom_domains = frp.muyunyun.cn
+```
+
+启动客户端
+
+```bash
+./frpc -c frpc.ini
+```
+
+接着从公网访问 frp.muyunyun.cn:90，验证内网穿透是否成功。
+
+![](http://with.muyunyun.cn/c61981adbdaba27efbc45b26c1921891.jpg)
+
+可以看到来自公网的请求在树莓派的 frp 客户端已经有了反应，接着我们在树莓派搭建一个简单服务。
+
+### 安装 Node.js
+
+使用 ARMv8 版本的稳定版 Node.js。
+
+```bash
+cd /opt/
+sudo wget https://nodejs.org/dist/v14.18.0/node-v14.18.0-linux-arm64.tar.xz
+sudo tar xvf node-v14.18.0-linux-arm64.tar.xz
+```
+
+将 Node.js 添加到系统变量
+
+```bash
+sudo echo "export NODE_HOME=/opt/node-v14.18.0-linux-arm64" >> ~/.bashrc
+sudo echo "export PATH=\$NODE_HOME/bin:\$PATH" >> ~/.bashrc
+source ~/.bashrc
+```
+
+此时在树莓派中输入 node -v，可以看到对应版本如下:
+
+```bash
+ubuntu@ubuntu:~$ node -v
+v14.18.0
+ubuntu@ubuntu:~$ npm -v
+6.14.15
+```
+
+接着安装 http-server 服务
+
+```bash
+npm install http-server -g
+```
+
+在 /opt 文件夹 新建 frp.muyunyun.cn 文件夹, 并创建 hello.txt 文件。
+
+```bash
+sudo mkdir /opt/frp.muyunyun.cn
+sudo chmod 777 -R /opt/frp.muyunyun.cn
+sudo touch /opt/frp.muyunyun.cn/hello.txt
+sudo chmod 777 -R /opt/frp.muyunyun.cn/hello.txt
+sudo echo "Hello World!" > /opt/frp.muyunyun.cn/hello.txt
+```
+
+安装 pm2
+
+```bash
+npm install pm2 -g
+```
+
+使用 pm2 守护运行 http-server 服务
+
+```bash
+cd /opt/frp_0.37.0_linux_arm64
+sudo touch start_http_server.sh
+sudo chmod 777 start_http_server.sh
+sudo echo "http-server /opt/frp.muyunyun.cn -p 8080" > start_http_server.sh
+pm2 start /opt/frp_0.37.0_linux_arm64/start_http_server.sh
+pm2 save
+```
+
+使用 pm2 守护运行 frpc 服务
+
+```bash
+sudo touch /opt/frp_0.37.0_linux_arm64/start_frpc.sh
+sudo chmod 777 /opt/frp_0.37.0_linux_arm64/start_frpc.sh
+sudo echo "/opt/frp_0.37.0_linux_arm64/frpc -c /opt/frp_0.37.0_linux_arm64/frpc.ini" > /opt/frp_0.37.0_linux_arm64/start_frpc.sh
+cd /opt/frp_0.37.0_linux_arm64/
+pm2 start /opt/frp_0.37.0_linux_arm64/start_frpc.sh
+pm2 save
+```
+
+可以使用 `pm2 list` 查看当前树莓派中的服务列表。
+
+![](http://with.muyunyun.cn/442c4a0b41ad3bc6fcbb09f6d162bd06.jpg)
+
+在公网访问 frp.muyunyun.cn:90。💐💐💐至此有了外网可以访问的家庭服务器。
+
+![](http://with.muyunyun.cn/fac7d7c9a8098d72f98cd6f4485347cd.jpg)
+
+### 添加 SSH 服务
+
+```bash
+[ssh]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+remote_port = 6000
+```
+
+如上配置是指将树莓派的默认 ssh 的 22 号端口映射到 frp.muyunyun.cn 的 6000 端口。
+
+重启 frpc 服务:
+
+```bash
+cd /opt/frp_0.37.0_linux_arm64
+pm2 restart start_frpc.sh
+```
+
+通过公网 frp.muyunyun.cn 的 6000 端口进行 ssh 登录。
+
+```bash
+ssh ubuntu@frp.muyunyun.cn -p 6000
+```
+
+![](http://with.muyunyun.cn/43431e73e8a218fb9e0a494f61f8f0df.jpg)
 
 ## 实验过未成功的方案
 
