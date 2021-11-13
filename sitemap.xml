@@ -595,6 +595,9 @@
     <loc>https://muyunyun.cn/blog/59z4kg6p</loc>
   </url>
   <url>
+    <loc>https://muyunyun.cn/blog/BasicSkill/life/widhList</loc>
+  </url>
+  <url>
     <loc>https://muyunyun.cn/blog/9ej9m77m</loc>
   </url>
   <url>
@@ -1378,18 +1381,6 @@
     <loc>https://muyunyun.cn/blog/ffmuj7el</loc>
   </url>
   <url>
-    <loc>https://muyunyun.cn/blog/Product/Raspberry_Pi/draft</loc>
-  </url>
-  <url>
-    <loc>https://muyunyun.cn/blog/Product/Raspberry_Pi/nginx</loc>
-  </url>
-  <url>
-    <loc>https://muyunyun.cn/blog/Product/Raspberry_Pi/raspberry_pi</loc>
-  </url>
-  <url>
-    <loc>https://muyunyun.cn/blog/Product/Raspberry_Pi/ssh</loc>
-  </url>
-  <url>
     <loc>https://muyunyun.cn/blog/vns5shb6</loc>
   </url>
   <url>
@@ -1397,6 +1388,18 @@
   </url>
   <url>
     <loc>https://muyunyun.cn/blog/kb3tez6q</loc>
+  </url>
+  <url>
+    <loc>https://muyunyun.cn/blog/RaspberryPi/nginx</loc>
+  </url>
+  <url>
+    <loc>https://muyunyun.cn/blog/RaspberryPi/nginx_backup</loc>
+  </url>
+  <url>
+    <loc>https://muyunyun.cn/blog/RaspberryPi/raspberry_pi</loc>
+  </url>
+  <url>
+    <loc>https://muyunyun.cn/blog/RaspberryPi/ssh</loc>
   </url>
   <url>
     <loc>https://muyunyun.cn/blog/404</loc>
