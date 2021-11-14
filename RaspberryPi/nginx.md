@@ -1,3 +1,7 @@
+<!--
+abbrlink: yq9jpwrw
+-->
+
 ### nginx 常用命令
 
 ```bash

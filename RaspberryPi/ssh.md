@@ -1,10 +1,15 @@
+<!--
+abbrlink: iti5ty8q
+-->
+
 ### SSH
 
-* [腾讯云服务器地址](https://console.cloud.tencent.com/lighthouse/instance/index)
-
 ```bash
-# 登入服务器
+# 登入腾讯云服务器。[服务器地址](https://console.cloud.tencent.com/lighthouse/instance/index)
 ssh ubuntu@81.69.252.246
+
+# 登入树莓派
+ssh ubuntu@frp.muyunyun.cn -p 6000
 
 # 退出 ssh
 exit + enter

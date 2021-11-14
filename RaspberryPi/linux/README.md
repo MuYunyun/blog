@@ -2,6 +2,46 @@
 abbrlink: mbrsm6kj
 -->
 
+- [文件操作](#文件操作)
+  - [head](#head)
+  - [tail](#tail)
+  - [ls](#ls)
+  - [pwd](#pwd)
+  - [wc](#wc)
+  - [find](#find)
+  - [mkdir](#mkdir)
+  - [more](#more)
+  - [paste](#paste)
+  - [stat](#stat)
+  - [grep](#grep)
+  - [touch](#touch)
+  - [cd](#cd)
+  - [rm](#rm)
+  - [cp](#cp)
+  - [cat](#cat)
+  - [mv](#mv)
+  - [open](#open)
+  - [source](#source)
+  - [tree](#tree)
+  - [ln](#ln)
+  - [file](#file)
+  - [tar](#tar)
+- [系统管理](#系统管理)
+  - [ping](#ping)
+  - [which](#which)
+  - [shutdown](#shutdown)
+  - [uptime](#uptime)
+  - [uname](#uname)
+  - [ifconfig](#ifconfig)
+  - [chmod](#chmod)
+  - [lsof](#lsof)
+  - [alias](#alias)
+- [系统进程](#系统进程)
+  - [ps](#ps)
+- [其它](#其它)
+  - [clear](#clear)
+  - [link](#link)
+
 ## 文件操作
 
 ### head
@@ -458,6 +498,28 @@ which top  # /usr/bin/top
 which ping top
 ```
 
+### shutdown
+
+将系统关机或重启操作。
+
+```bash
+# 什么参数都不加，默认会在 1 分钟后关机
+$ shutdown
+
+# 在将系统的服务停掉之后就重新开机
+$ shutdown -r now
+
+# 关闭系统并切断电源
+$ shutdown -h now # 立即关机, 实际上调用 init 0
+
+# 把前一个关机或重启取消掉
+$ shutdown -c
+
+# 设定一个时间关机，"&" 符号表示后台模式，让出 CLI
+$ shutdown -h 05:33 &
+$ shutdown +5 "5分钟后关机" # 5 分钟后关机，同时送出警告信息给登入用户：
+```
+
 ### uptime
 
 ```bash
@@ -488,6 +550,12 @@ uname -m # x86_64
 # 显示所有网络参数信息
 ifconfig
 ```
+
+### chmod
+
+修改文件或目录权限。
+
+> see https://github.com/xjh22222228/linux-manual#chmod.
 
 ### lsof
 

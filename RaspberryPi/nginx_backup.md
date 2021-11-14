@@ -1,3 +1,7 @@
+<!--
+abbrlink: kl2r1wj2
+-->
+
 ### nginx 配置文件初始化备份
 
 nginx 配置文件路径: `/etc/nginx/nginx.conf`。
