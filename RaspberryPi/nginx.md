@@ -47,7 +47,7 @@ nginx.service - A high performance web server and a reverse proxy server
 ...
 ```
 
-### nginx 配置文件
+### nginx 配置文件初始化备份
 
 nginx 配置文件路径: `/etc/nginx/nginx.conf`。
 
@@ -56,157 +56,90 @@ user www-data;
 worker_processes auto;
 pid /run/nginx.pid;
 include /etc/nginx/modules-enabled/*.conf;
-load_module /usr/lib/nginx/modules/ngx_stream_module.so;
-
-stream {
-    map $ssl_preread_server_name $backend_name {
-        frp.muyunyun.cn        frp_muyunyun_cn;
-        default web;
-    }
-
-
-   upstream frp_muyunyun_cn {
-        server 127.0.0.1:8080;
-   }
-
-   upstream web {
-        server 127.0.0.1:80;
-   }
-
-}
 
 events {
-        worker_connections 768;
-        # multi_accept on;
+	worker_connections 768;
+	# multi_accept on;
 }
 
 http {
-        ##
-        # Basic Settings
-        ##
+	##
+	# Basic Settings
+	##
 
-        sendfile on;
-        tcp_nopush on;
-        tcp_nodelay on;
-        keepalive_timeout 65;
-        types_hash_max_size 2048;
-        # server_tokens off;
+	sendfile on;
+	tcp_nopush on;
+	tcp_nodelay on;
+	keepalive_timeout 65;
+	types_hash_max_size 2048;
+	# server_tokens off;
 
-        # server_names_hash_bucket_size 64;
-        # server_name_in_redirect off;
+	# server_names_hash_bucket_size 64;
+	# server_name_in_redirect off;
 
-        include /etc/nginx/mime.types;
-        default_type application/octet-stream;
+	include /etc/nginx/mime.types;
+	default_type application/octet-stream;
 
-        ##
-        # SSL Settings
-        ##
+	##
+	# SSL Settings
+	##
 
-        ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
-        ssl_prefer_server_ciphers on;
+	ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
+	ssl_prefer_server_ciphers on;
 
-        ##
-        # Logging Settings
-        ##
+	##
+	# Logging Settings
+	##
 
-        access_log /var/log/nginx/access.log;
-        error_log /var/log/nginx/error.log;
+	access_log /var/log/nginx/access.log;
+	error_log /var/log/nginx/error.log;
 
-        ##
-        # Gzip Settings
-        ##
+	##
+	# Gzip Settings
+	##
 
-        gzip on;
+	gzip on;
 
-        # gzip_vary on;
-        # gzip_proxied any;
-        # gzip_comp_level 6;
-        # gzip_buffers 16 8k;
-        # gzip_http_version 1.1;
-        # gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+	# gzip_vary on;
+	# gzip_proxied any;
+	# gzip_comp_level 6;
+	# gzip_buffers 16 8k;
+	# gzip_http_version 1.1;
+	# gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
 
-        ##
-        # Virtual Host Configs
-        ##
+	##
+	# Virtual Host Configs
+	##
 
-        include /etc/nginx/conf.d/*.conf;
-        include /etc/nginx/sites-enabled/*;
+	include /etc/nginx/conf.d/*.conf;
+	include /etc/nginx/sites-enabled/*;
 }
+
+#mail {
+#       # See sample authentication script at:
+#       # http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
+#
+#       # auth_http localhost/auth.php;
+#       # pop3_capabilities "TOP" "USER";
+#       # imap_capabilities "IMAP4rev1" "UIDPLUS";
+#
+#       server {
+#               listen     localhost:110;
+#               protocol   pop3;
+#               proxy      on;
+#       }
+#
+#       server {
+#               listen     localhost:143;
+#               protocol   imap;
+#               proxy      on;
+#       }
+#}
 ```
-
-### 配置 Http 域名
-
-以配置域名 frp.muyunyun.cn 为例，新建配置文件 `/etc/nginx/conf.d/frp.muyunyun.cn.conf`
-
-```bash
-touch /etc/nginx/conf.d/frp.muyunyun.cn.conf
-```
-
-在 `/etc/nginx/conf.d/frp.muyunyun.cn.conf` 中添加 http 服务相关内容
-
-```
-server {
-    server_name      frp.muyunyun.cn;
-    listen           90;
-    root             /usr/share/nginx/html/frp.muyunyun.cn;
-
-    location / {
-       proxy_pass http://127.0.0.1:8080;
-       proxy_set_header Host $host:90;
-       proxy_set_header X-Real-IP $remote_addr;
-       proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    }
-
-    error_page 404 /404.html;
-        location = /40x.html {
-    }
-
-    error_page 500 502 503 504 /50x.html;
-        location = /50x.html {
-    }
-}
-```
-
-端口使用 80 页面会提示`网站暂时无法访问，该网站未根据工信部相关法律规则进行备案`，[了解更多备案相关内容](https://icp-faq.dnspod.cn/why)，笔者这里将它修改为 90。
-
-![](http://with.muyunyun.cn/04afbf893d08548ebd06a85488389298.jpg)
-
-新建 frp.muyunyun.cn 对应的网站文件夹
-
-```bash
-mkdir -p /usr/share/nginx/html/frp.muyunyun.cn
-```
-
-新建文件
-
-```bash
-touch /usr/share/nginx/html/frp.muyunyun.cn/index.html
-```
-
-在 /usr/share/nginx/html/fpr.muyunyun.cn/index.html 中输入
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>云随风</title>
-</head>
-<body>Test</body>
-</html>
-```
-
-控制台输入 `sudo systemctl restart nginx`。
-
-在浏览器访问 http://frp.muyunyun.cn:90 可以看到目标页面:
-
-![](http://with.muyunyun.cn/4373b2aaca032ed2a78fac53279532d2.jpg)
-
-下面开始添加 https，尝试解决上述问题。
 
 ### 配置 Https 域名
+
+> 由于域名并没有备案，因此笔者将域名端口挂在非 80 端口(90)上，非 80 的端口笔者尝试配置 Https 服务并未成功，后续如有需求继续调研。
 
 更进一步地，接着配置使访问 https://frp.muyunyun.cn:90 也生效。
 
