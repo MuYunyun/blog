@@ -38,6 +38,10 @@ abbrlink: mbrsm6kj
   - [alias](#alias)
 - [系统进程](#系统进程)
   - [ps](#ps)
+- [网络](#网络)
+  - [curl](#curl)
+- [包管理](#包管理)
+  - [apt-get](#apt-get)
 - [其它](#其它)
   - [clear](#clear)
   - [link](#link)
@@ -597,6 +601,44 @@ ps 命令涵盖命令参数三大风格
 ```bash
 # 配合 grep 查询指定进程, -a means: all, -f means full
 ps -af | grep nginx
+```
+
+## 网络
+
+### curl
+
+curl 是一个非常强大的网络传输工具，利用 URL 规则在命令行下工作。
+
+|   参数   |        描述        |
+| :------: | :----------------: |
+|    -H    |     设置请求头     |
+|    -X    | 设置 HTTP 请求方法 |
+| --cookie |  指定发送 cookie   |
+| --retry  |      请求重试      |
+
+> curl --help 查询 curl 后可跟随的参数信息。
+
+## 包管理
+
+### apt-get
+
+apt-get 命令是 Debian Linux 发行版中的 APT 软件包管理工具。所有基于 Debian 的发行都使用这个包管理系统。
+
+```bash
+# 安装一个docker软件
+$ apt-get install docker
+
+# 卸载软件，保留配置文件
+$ apt-get remove docker
+
+# 卸载软件并删除配置文件
+$ apt-get –purge remove docker
+
+# 更新所有已安装的软件包
+$ apt-get upgrade
+
+# 删除软件备份，主要用来释放空间
+$ apt-get clean
 ```
 
 ## 其它
