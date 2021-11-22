@@ -6,7 +6,7 @@ abbrlink: be6usutl
 
 ### 同步 vscode 配置
 
-不同电脑同步 Vscode 配置
+多端设备之间同步 Vscode 配置。
 
 token: f1d271d318f839fa858681ec1c18d77642a83e70;
 gist: fc7a4a0269a459785782797ff83e65a1
