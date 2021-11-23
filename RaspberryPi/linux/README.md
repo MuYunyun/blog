@@ -339,6 +339,9 @@ mv README.md ../README.md
 
 # -i 交互式操作，如果目标文件存在则进行询问是否覆盖
 mv -i README.md ../README.md
+
+# -f 如果出现同名直接覆盖
+$ mv -f 1.txt 2.txt
 ```
 
 ### open
