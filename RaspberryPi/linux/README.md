@@ -38,6 +38,11 @@ abbrlink: mbrsm6kj
   - [alias](#alias)
 - [系统进程](#系统进程)
   - [ps](#ps)
+- [用户管理](#用户管理)
+  - [users](#users)
+  - [last](#last)
+  - [su](#su)
+  - [whoami](#whoami)
 - [网络](#网络)
   - [curl](#curl)
 - [包管理](#包管理)
@@ -376,7 +381,7 @@ open -a /Applications/Google\ Chrome.app README.md
 source ~/.bash_profile
 ```
 
-实际上大部分开发者都没搞懂 source 命令。 可以把它理解为编程语言中的 import, java/python/js 都有这个，就是用来导入文件。
+可以把它理解为`编程语言中的 import`, java/python/js 都有这个，就是用来导入文件。
 
 下面演示 source 用于 shell 脚本中
 
@@ -604,6 +609,49 @@ ps 命令涵盖命令参数三大风格
 ```bash
 # 配合 grep 查询指定进程, -a means: all, -f means full
 ps -af | grep nginx
+```
+
+## 用户管理
+
+### users
+
+显示当前登录系统的所有用户的用户列表。
+
+```bash
+ubuntu@ubuntu:~$ users
+ubuntu
+```
+
+### last
+
+显示用户最近登录信息。
+
+```bash
+last
+
+# 指定显示条目数
+last -n 1
+```
+
+### su
+
+切换到其他用户。
+
+```bash
+# 切换到 root 身份
+sudo su
+```
+
+### whoami
+
+显示自身的用户名称
+
+```bash
+ubuntu@ubuntu:~$ whoami
+ubuntu
+
+root@ubuntu:/home/ubuntu# whoami
+root
 ```
 
 ## 网络
