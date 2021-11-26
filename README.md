@@ -244,8 +244,8 @@ This section will talk about colorful frontend world.
 Just for fun! Thanks for project [pi](https://github.com/zhaoolee/pi).
 
 * [树莓派简介&烧录系统](https://muyunyun.cn/blog/rahvuwkb)
+* [HTTPS 域名配置](https://muyunyun.cn/blog/mx5pvgl1)
 * [搭建家庭服务器&内网穿透](https://muyunyun.cn/blog/fes9wogn)
 * [给树莓派安装 Docker 环境](https://muyunyun.cn/blog/2a97pq3a)
 * [给树莓派部署 RSSHub](https://muyunyun.cn/blog/wns8hpzc)
-* [HTTPS 域名配置](https://muyunyun.cn/blog/mx5pvgl1)
 * [树莓派部署 code-server](https://muyunyun.cn/blog/n45adwng)
