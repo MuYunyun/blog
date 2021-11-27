@@ -11,26 +11,18 @@ node 与 nginx 搭配使用, 是因为 nginx 具有更加强大的静态文件�
 
 其它用途: 跨域
 
-### 一些命令
-
-```js
-sudo brew services start nginx // 启动 nginx(8080 端口)
-sudo brew services stop nginx  // 关闭 nginx
-brew services restart nginx    // 重启 nginx
-
-nginx -v                       // 查看版本
-sudo nginx -t                  // 检查配置文件是否正确
-ps -ef | grep nginx            // 查询 nginx 是否启动
-```
-
-> mac 重启后需要重新跑一遍 sudo brew services stop nginx、sudo brew services start nginx
-
 ### 目录
 
 * 配置文件目录 /usr/local/etc/nginx/nginx.conf
 * 默认配置文件目录 /usr/local/etc/nginx/nginx.conf.default
 * 根目录 /usr/local/var/www
 
+### FAQ
+
+* Q: `[::]:443` 中的 `[::]:` 的含义是什么?
+  * A: 用于 IPv6，参考[官网](http://nginx.org/en/docs/http/ngx_http_core_module.html#listen)。
+
 ### 相关文章
 
+* [Nginx 英文文档](https://nginx.org/en/docs/)
 * [Nginx 中文文档](https://www.nginx.cn/doc/index.html)

@@ -241,12 +241,14 @@ This section will talk about colorful frontend world.
 
 ### RaspberryPi
 
-Do it just for fun! Thanks for the [pi](https://github.com/zhaoolee/pi) project.
+Just do it for fun! You can unlock server, linux, nginx skills from the Raspberry Pi travel.
 
-* [1.树莓派简介&烧录系统](https://muyunyun.cn/blog/rahvuwkb)
-* [2.HTTPS 域名配置](https://muyunyun.cn/blog/mx5pvgl1)
-* [3.内网穿透](https://muyunyun.cn/blog/fes9wogn)
-* [4.基于树莓派搭建家庭服务器](https://muyunyun.cn/blog/r4zxdn6n)
-* [5.给树莓派安装 Docker 环境](https://muyunyun.cn/blog/2a97pq3a)
-* [6.给树莓派部署 RSSHub](https://muyunyun.cn/blog/wns8hpzc)
-* [7.树莓派部署 code-server](https://muyunyun.cn/blog/n45adwng)
+> Thanks for the [pi](https://github.com/zhaoolee/pi) project specially.
+
+1. [树莓派简介&烧录系统](https://muyunyun.cn/blog/rahvuwkb)
+2. [内网穿透](https://muyunyun.cn/blog/fes9wogn)
+3. [基于树莓派搭建家庭服务器](https://muyunyun.cn/blog/r4zxdn6n)
+4. [给树莓派安装 Docker 环境](https://muyunyun.cn/blog/2a97pq3a)
+5. [给树莓派部署 RSSHub](https://muyunyun.cn/blog/wns8hpzc)
+6. [HTTPS 协议配置](https://muyunyun.cn/blog/mx5pvgl1)
+7. [树莓派部署 code-server](https://muyunyun.cn/blog/n45adwng)
