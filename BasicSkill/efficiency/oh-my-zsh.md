@@ -16,7 +16,7 @@ cat ~/.oh-my-zsh/plugins/git/git.plugin.zsh
 
 一些常用命令:
 
-```
+```bash
 ga . & gcmsg '..' & gp
 gst === git status
 gco === git checkout

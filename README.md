@@ -241,7 +241,7 @@ This section will talk about colorful frontend world.
 
 ### RaspberryPi
 
-Just do it for fun! You can unlock server, linux, nginx skills from the Raspberry Pi travel.
+Just do it for fun! You will unlock server, linux, nginx skills from this Raspberry Pi travel.
 
 > Thanks for the [pi](https://github.com/zhaoolee/pi) project specially.
 
