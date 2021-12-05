@@ -70,6 +70,12 @@ git cherry-pick 371c2^…971209 // [2,5]
 
 ### git log
 
+美化 git 日志
+
+```bash
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
+
 查看文件修改内容
 
 ```js
