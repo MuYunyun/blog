@@ -131,7 +131,7 @@ This section will introduce the world of React progressively. It'll tell the pri
 * [Modal](https://github.com/MuYunyun/blog/blob/main/React/Component_Design/modal.md)
 * [TextArea](https://github.com/MuYunyun/blog/blob/main/React/Component_Design/TextArea.md)
 * [主题色替换方案](https://github.com/MuYunyun/blog/blob/main/React/Component_Design/主题色替换方案.md)
-* [移动端组件测试指北](https://github.com/MuYunyun/blog/blob/main/React/Component_Design/移动端组件测试指北.md)
+* [移动端测试指北](https://github.com/MuYunyun/blog/blob/main/React/Component_Design/移动端组件测试指北.md)
 
 - [ ] [组件设计实践](https://github.com/MuYunyun/blog/blob/main/React/Component_Design/组件开发实践.md)
 
