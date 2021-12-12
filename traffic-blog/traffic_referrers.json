@@ -1,18 +1,18 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 389,
-    "uniques": 94
+    "count": 372,
+    "uniques": 93
   },
   {
     "referrer": "github.com",
-    "count": 165,
-    "uniques": 56
+    "count": 162,
+    "uniques": 53
   },
   {
     "referrer": "link.segmentfault.com",
-    "count": 35,
-    "uniques": 12
+    "count": 34,
+    "uniques": 11
   },
   {
     "referrer": "muyunyun.cn",
@@ -40,12 +40,12 @@
     "uniques": 3
   },
   {
-    "referrer": "leetcode-cn.com",
-    "count": 2,
-    "uniques": 2
+    "referrer": "dev.to",
+    "count": 1,
+    "uniques": 1
   },
   {
-    "referrer": "dev.to",
+    "referrer": "iwiki.woa.com",
     "count": 1,
     "uniques": 1
   }
