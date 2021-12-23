@@ -24,7 +24,7 @@
   "homepage": "https://github.com/MuYunyun/blog#readme",
   "license": "MIT",
   "devDependencies": {
-    "commitlint": "^11.0.0",
+    "commitlint": "^15.0.0",
     "crd-seed": "^1.6.1-alpha.0",
     "create-react-doc": "^1.6.1-alpha.0"
   }
