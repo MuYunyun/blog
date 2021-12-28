@@ -171,7 +171,7 @@ git push origin --force --all
 
 ask for Contact [GitHub Support](https://support.github.com/contact) or [GitHub Premium Support](https://premium.githubsupport.com/), asking them to remove cached views and references to the sensitive data in pull requests on GitHub.
 
-### clean up git commit
+### 清理 git commit
 
 使用交互式 rebase 则有更多的功能，可以细致的操作每一条 commit，这样我们就能合并，修改 commit
 
@@ -221,7 +221,7 @@ git rebase -i HEAD~4
 4. git rebase --continue
 ```
 
-### Setting your Git username
+### 设置 Git username
 
 * for every repository
 
@@ -239,7 +239,7 @@ $ git config user.email "328375795@qq.com"
 $ git config user.email
 ```
 
-### How to check the conflict of two branch, but not need to merge them?
+### 检测两个分支的冲突，但是不合并它们
 
 [How to check the conflict of two branch, but not need to merge them?](https://stackoverflow.com/questions/10879331/how-to-check-the-conflict-of-two-branch-but-not-need-to-merge-them)
 
