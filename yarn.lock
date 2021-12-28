@@ -2800,10 +2800,10 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
-crd-generator-sitemap@^1.6.1-alpha.0:
-  version "1.6.1-alpha.0"
-  resolved "https://registry.npmjs.org/crd-generator-sitemap/-/crd-generator-sitemap-1.6.1-alpha.0.tgz#9934c855419aee65ce613a1e4fe21076c387c9f1"
-  integrity sha512-xQwWUcHujO2b5Xfc4eWydRC/IJtpLomDpSg2PM6bUww+uA3HvKGNY7CcRd1iyEzZUm4UNg77N86Rq014FYqlpA==
+crd-generator-sitemap@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.npmjs.org/crd-generator-sitemap/-/crd-generator-sitemap-1.3.4.tgz#733cfae7f54e320557cba983c3d5f2f44960697f"
+  integrity sha512-GSRb8yshcY5MjKF01CcGuqieBcvmijrDE66JPVCQoRMcMpQr2GtDJsMf8XWf/zeJB95ZxPnjz7WTN5y+1DWAvA==
 
 crd-prerender-spa-plugin@^0.2.0:
   version "0.2.0"
@@ -2814,10 +2814,10 @@ crd-prerender-spa-plugin@^0.2.0:
     "@prerenderer/renderer-puppeteer" "^0.2.0"
     html-minifier "^4.0.0"
 
-crd-scripts@^1.6.1-alpha.0:
-  version "1.6.1-alpha.0"
-  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-1.6.1-alpha.0.tgz#89ab5d24cc65c6c56c62cbf8688ea5d649d88927"
-  integrity sha512-Y5MjSxDYSL+O8baOM7p33x25kPKPuL48gbXJRrWlAWQubuVoVLr+H4YP9o3qFL0PPFfBC4PaAosI5tkQCN88tQ==
+crd-scripts@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-1.6.0.tgz#5e1a21b3e9a646b79b1e5aa1d60e75a9611fa13d"
+  integrity sha512-ZLD9ToJ2Kk6aXbIeHoMjV1sSqiaAboxCsl1hSccAkILZZ/NFJJHAT/4K2MRm+/lVl/v0B4HKArQDDu4Rvk3+XQ==
   dependencies:
     "@babel/cli" "^7.2.3"
     "@babel/core" "^7.3.4"
@@ -2838,10 +2838,10 @@ crd-scripts@^1.6.1-alpha.0:
     colors-cli "^1.0.13"
     copy-markdown-image-webpack-plugin "^2.0.0"
     copy-template-dir "^1.3.0"
-    crd-generator-sitemap "^1.6.1-alpha.0"
+    crd-generator-sitemap "^1.3.4"
     crd-prerender-spa-plugin "^0.2.0"
-    crd-theme "^1.6.1-alpha.0"
-    crd-utils "^1.6.1-alpha.0"
+    crd-theme "^1.6.0"
+    crd-utils "^1.5.0"
     css-loader "^0.28.7"
     css-minimizer-webpack-plugin "^1.2.0"
     detect-port "^1.2.2"
@@ -2875,23 +2875,23 @@ crd-scripts@^1.6.1-alpha.0:
     write "^1.0.3"
     yamljs "^0.3.0"
 
-crd-seed@^1.6.1-alpha.0:
-  version "1.6.1-alpha.0"
-  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.6.1-alpha.0.tgz#0d05aef75545cdfcd51b5ad35248c56722d3a345"
-  integrity sha512-Ug5c3XOdqgxmGd96dPYrklNN122l6XG0v78qP1jLyCPzizCoSghLqFTECLfXIO/pk5McmOC0RsrKKXVwS5p0kA==
+crd-seed@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.6.1.tgz#2412728f550b18c890955e2a7b5852ffd67b8c47"
+  integrity sha512-mKSQgFHWNSDiJXSCHfSwqniShkCBLAGQRX6omTsZQcSB/zazQIOL+eKQ2PcEyf1grtI4x3X5TnSUWzxS3hp2xw==
   dependencies:
     react-router-dom "^4.2.2"
     react-switch "^5.0.1"
 
-crd-templates@^1.6.1-alpha.0:
-  version "1.6.1-alpha.0"
-  resolved "https://registry.npmjs.org/crd-templates/-/crd-templates-1.6.1-alpha.0.tgz#8a7a3be0e08d5628b6c40c018a7f4cf2aefb20ae"
-  integrity sha512-yTcGjW/MGgfMFC8k053vqq6BT5cnZoLc+2b7Smjb+VXHOcCcZw+oMHN2pI2Q17PJ4DxNC+3k4l1sD288mmSDtg==
+crd-templates@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.npmjs.org/crd-templates/-/crd-templates-1.5.0.tgz#d53d023f4a5d477584374aba4559f3da8b6e2b58"
+  integrity sha512-6bE82BdInWQUnqK/oa+LgMh0WRWVCk84FWp8ftLlOLsfRAsQKq8KA2Fk9RnCPt6oPz8H5vTmKHezFzgxAkjjgQ==
 
-crd-theme@^1.6.1-alpha.0:
-  version "1.6.1-alpha.0"
-  resolved "https://registry.npmjs.org/crd-theme/-/crd-theme-1.6.1-alpha.0.tgz#07ae4d248490b9d7488cf1724f0fa419545cbf02"
-  integrity sha512-RYSzjss891mtCmZare+CGi8Sd1TaGJvghHD/l0dGcPkzGhg6gj8SghZuapidCJjCo1BLw4syPzArPWKU8b3p+w==
+crd-theme@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/crd-theme/-/crd-theme-1.6.0.tgz#8defa7fdd4073d76260f4a6d537f59051ac72e5c"
+  integrity sha512-EXSm3MVWB7Mdq8OqqOstgs91WKn4qt4vvuU7bsS33oPoW23+F3k0dlR3FPqmmRjFjXRTK498oTZZs4zc7uJOkA==
   dependencies:
     "@mdx-js/react" "^1.6.22"
     classnames "^2.2.6"
@@ -2904,23 +2904,23 @@ crd-theme@^1.6.1-alpha.0:
     react-hot-loader "^4.1.1"
     react-markdown "^3.3.0"
 
-crd-utils@^1.6.1-alpha.0:
-  version "1.6.1-alpha.0"
-  resolved "https://registry.npmjs.org/crd-utils/-/crd-utils-1.6.1-alpha.0.tgz#b192dd1b812ccb5ab9a3146fcea63e6763be0fd9"
-  integrity sha512-Sxb+3yFeyWbtqeQpbe4CN9AZNO3OesugjVM2+OztLi+mRcaZvt6EtJ9Nt0BOdSJp5N6BgjmO2yo57iCOPX5huA==
+crd-utils@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.npmjs.org/crd-utils/-/crd-utils-1.5.0.tgz#70e26f4f422ef435c5d476321fd204bdc37fbcc2"
+  integrity sha512-8wTQw3r3ft6p2Hm8Rs8Lp+JGls5bMWxqZz8IfTo8ER4BmMjiT0ysgLUtCzXh2qxNKbHArHIeiOh4104j9DrnUQ==
   dependencies:
     js-yaml "^3.14.0"
 
-create-react-doc@^1.6.1-alpha.0:
-  version "1.6.1-alpha.0"
-  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-1.6.1-alpha.0.tgz#b486f9a774ba0c2b1f9b80a8746a8006de5334d1"
-  integrity sha512-rpehcaBeFswhX+Sd1YQX62kQx13YZfhuKgUD0vPu6a3f+mQzxvOgXp4sS/ziK2xZccljLkYPG/AFCsW/cdt2OA==
+create-react-doc@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-1.6.0.tgz#522569af8652481badb4580aca80d885d907d0d4"
+  integrity sha512-BDjYben7TqmM1n0haEiwSYChhbyCebChWKcDtvRP9rmFFMi4vN57RFm45jCFSCTRM9wafiYnrrRfs3+Teutg2Q==
   dependencies:
     "@inquirer/input" "^0.0.13-alpha.0"
     commander "^2.12.2"
-    crd-scripts "^1.6.1-alpha.0"
-    crd-templates "^1.6.1-alpha.0"
-    crd-theme "^1.6.1-alpha.0"
+    crd-scripts "^1.6.0"
+    crd-templates "^1.5.0"
+    crd-theme "^1.6.0"
     fs-extra "^5.0.0"
 
 cross-spawn@^6.0.0, cross-spawn@^6.0.5:

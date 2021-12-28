@@ -256,3 +256,23 @@ git document:
 
 > --no-commit
 > With --no-commit perform the merge but pretend the merge failed and do not autocommit, to give the user a chance to inspect and further tweak the merge result before committing.
+
+### git 设置 sock5 代理
+
+背景：git push、git pull、lerna publish 卡顿，报类似如下问题。
+
+> lerna ERR! fatal: unable to access 'https://github.com/MuYunyun/create-react-doc.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+
+用 git 内置代理，直接走系统中运行的代理工具中转，比如 SS 本地端口是 1080，那么可以如下方式走代理：
+
+```bash
+git config --global http.proxy socks5://127.0.0.1:1080
+git config --global https.proxy socks5://127.0.0.1:1080
+```
+
+停走代理：
+
+```bash
+git config --global http.proxy ""
+git config --global https.proxy ""
+```
