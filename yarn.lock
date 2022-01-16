@@ -2800,6 +2800,11 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
+crd-client-utils@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.npmjs.org/crd-client-utils/-/crd-client-utils-1.8.0.tgz#28099d91da03efe4353776332ca3c921e5d710ae"
+  integrity sha512-BcFAqApreJO7ZfTeVavYQ6fQTvG8tUlmpxSctSlAzD5FxuTROL9dTitUUZmuj7LxZLVihmaEYHFCwWoBR+JlBA==
+
 crd-generator-sitemap@^1.3.4:
   version "1.3.4"
   resolved "https://registry.npmjs.org/crd-generator-sitemap/-/crd-generator-sitemap-1.3.4.tgz#733cfae7f54e320557cba983c3d5f2f44960697f"
@@ -2814,10 +2819,10 @@ crd-prerender-spa-plugin@^0.2.0:
     "@prerenderer/renderer-puppeteer" "^0.2.0"
     html-minifier "^4.0.0"
 
-crd-scripts@^1.8.0:
-  version "1.8.0"
-  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-1.8.0.tgz#cf10f95387051561a03845af75f9626d02f74e06"
-  integrity sha512-OEVfy01U8TIIxfyE/NIxAxVs/PwkB/E0Iwf6zMZAe2+BidL1eH2wf7k9xuY7kgkvMrdrs1RxiGKggqJ6HYIfuA==
+crd-scripts@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-1.8.1.tgz#f7167eee3d84819c77ec1ee709c227a8856f58d5"
+  integrity sha512-hGhmOv0Pnv+K6JhLr0tsNI7Act1kW78WwlUQDbSl1uzzYG3kSxx7uI5MH+dm7Cso7IohSwAHCYwNpFwbSiI38w==
   dependencies:
     "@babel/cli" "^7.2.3"
     "@babel/core" "^7.3.4"
@@ -2838,6 +2843,7 @@ crd-scripts@^1.8.0:
     colors-cli "^1.0.13"
     copy-markdown-image-webpack-plugin "^2.0.0"
     copy-template-dir "^1.3.0"
+    crd-client-utils "^1.8.0"
     crd-generator-sitemap "^1.3.4"
     crd-prerender-spa-plugin "^0.2.0"
     crd-theme "^1.8.0"
@@ -2875,11 +2881,12 @@ crd-scripts@^1.8.0:
     write "^1.0.3"
     yamljs "^0.3.0"
 
-crd-seed@^1.8.0:
-  version "1.8.0"
-  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.8.0.tgz#2b0e4093d7424f856656ee380623ef43e6a4f456"
-  integrity sha512-+u41cagvsptvomlrP2p/jvma22B5qz2j9y9myes6owztjAQlWY6fsIrcv/veBFowKmFtlYdA3y2BUkIVHGSySA==
+crd-seed@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.8.1.tgz#526dd8dbcf9cdd51616297d784c2695fff1fab21"
+  integrity sha512-WGdbztepB3LhxLeBVXDzAAtqGroHe5ASVd8tV2GM+2mjxUbZamrM+0zWAZCk6xB+weYh0zsjmi083EzLFKFMog==
   dependencies:
+    crd-client-utils "^1.8.0"
     react-router-dom "^4.2.2"
     react-switch "^5.0.1"
 
@@ -2911,14 +2918,14 @@ crd-utils@^1.5.0:
   dependencies:
     js-yaml "^3.14.0"
 
-create-react-doc@^1.8.0:
-  version "1.8.0"
-  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-1.8.0.tgz#00fa6528e38c94696262269e1698c0d32d138f3c"
-  integrity sha512-FiHEfeR2F7JIlJY+FVdtTm9ye5gHPmh3/HXocjsuWsVrIIPP7h7a2QIuBOpS3rufAHufwZ/dXiIvHWag4aJBRg==
+create-react-doc@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-1.8.1.tgz#e607faee6a564b4a82d2ffafc2830b6b4944b17a"
+  integrity sha512-tl1TAwfN5KxOlNLwmu6u8Ugm3nRabYxJEWOZrimiw1AlVniNnIcRr4huGBfQwuMg+vO8Mqa6q5lns/wdLpEAEg==
   dependencies:
     "@inquirer/input" "^0.0.13-alpha.0"
     commander "^2.12.2"
-    crd-scripts "^1.8.0"
+    crd-scripts "^1.8.1"
     crd-templates "^1.5.0"
     crd-theme "^1.8.0"
     fs-extra "^5.0.0"
