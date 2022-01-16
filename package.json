@@ -25,7 +25,7 @@
   "license": "MIT",
   "devDependencies": {
     "commitlint": "^11.0.0",
-    "crd-seed": "^1.7.0",
-    "create-react-doc": "^1.6.0"
+    "crd-seed": "^1.8.0",
+    "create-react-doc": "^1.8.0"
   }
 }
