@@ -220,7 +220,8 @@ This section will talk about colorful frontend world.
 
 #### FE CLOUD
 
-* [SEO 在 SPA 站点中的实践](https://github.com/MuYunyun/blog/blob/main/FeCloud/seo_in_spa_site.md)
+* [基于 SSR 的预渲染首屏直出方案](http://muyunyun.cn/blog/g3v1c5bq)
+* [SEO 在 SPA 站点中的实践](http://muyunyun.cn/blog/ettzfags)
 * [Talk about TC39](https://github.com/MuYunyun/blog/blob/main/FeCloud/tc39.md)
 * [跨域二三事](https://github.com/MuYunyun/blog/blob/main/BasicSkill/http/cross-domain.md) <a href='https://github.com/MuYunyun/cross-domain' target="_blank"><sub>(相关项目)</sub></a>
 * [HTTP 小册](https://github.com/MuYunyun/blog/blob/main/BasicSkill/http/http.md)
