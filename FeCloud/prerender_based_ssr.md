@@ -10,7 +10,7 @@ abbrlink: g3v1c5bq
 
 Create React Doc 使用预渲染技术获取各页面路由对应的 DOM 结构以生成对应的 HTML 文件，并将静态文件存放于 gh-pages 服务中(可自行选择其它存储服务)从而达到加快首屏访问加载以及 SEO。见如下蓝色线框流程图部分：
 
-![](http://with.muyunyun.cn/7f7c6ab865547639df62164f53086c78.jpg)
+![](http://with.muyunyun.cn/4f6fa055a7c5577eee39cafcdb53bfad.jpg-400)
 
 ![](http://with.muyunyun.cn/4eaf5b05769b838bbe470176cf22e246.jpg-400)
 
@@ -20,11 +20,11 @@ Create React Doc 使用预渲染技术获取各页面路由对应的 DOM 结构�
 
 ![](http://with.muyunyun.cn/29a0df7a6788a1781c87d6bf4a35deae.jpg)
 
-`衔接阶段`: 衔接阶段是`首屏渲染阶段`与`页面可交互阶段`的中间态阶段，在该阶段执行 JavaScript 逻辑，从而使页面从无交互到可交互。但是观察发现从预渲染页面到页面可交互，出现了干扰体验的加载，体验十分不好 😭。
+`衔接阶段`: 衔接阶段是`首屏渲染阶段`与`页面可交互阶段`的中间态阶段，在该阶段执行 JavaScript 逻辑，从而使页面从无交互到可交互。但是观察发现从预渲染页面到页面可交互，出现了干扰体验的加载页，体验十分不好 😭。
 
 ![](http://with.muyunyun.cn/56d89fdc818925754251729e0b61ba2c.jpg)
 
-不被期望的中间加载页（见上图）出现的原因为客户端渲染页面与预渲染页面都使用了 `ReactDom.render` 并指定相同根路径节点进行渲染(这里为 root)。在访问首屏预渲染页面之后，执行 JavaScript 逻辑时，`React 会移除存量 Html 结构，并基于 root 节点重新开始渲染`，因而必然会导致页面不被期望的抖动。
+不被期望的中间加载页（见上图）出现的原因为预渲染页面与客户端渲染页面都使用了 `ReactDom.render` 并指定相同根路径节点进行渲染(这里为 root)。在访问首屏预渲染页面之后，执行 JavaScript 逻辑时，`React 会移除存量 HTML 结构，并基于 root 节点重新开始渲染`，因而必然会导致出现不被期望的加载页或者页面抖动。
 
 ```js
 ReactDOM.render(
@@ -37,7 +37,7 @@ ReactDOM.render(
 
 ![](http://with.muyunyun.cn/35a856670eb3f676f37a558e2be0d093.jpg)
 
-### 思路解法
+### 基于 SSR 的预渲染首屏直出方案
 
 基于文档站点大部分为静态内容，少部分为动态可交互内容。抽象出以下几种可行性思路：
 
@@ -63,5 +63,30 @@ if (!ifProdRender) {
 
 基于上述代码，可实现静态页面节点与动态交互节点的分开渲染。但该方案的缺陷是`静态节点与动态交互节点之间的联系被完全割裂开`，衔接阶段渲染的节点不能影响到静态页面节点，比如页面布局、路由跳转等。
 
-* 思路三：`拆分静态节点渲染与动态交互生效的时机，保证静态节点与动态交互节点渲染之间的联系`。在思路二基础上，进一步联想到如果基于服务端渲染（在服务端首屏直出静态页面，在客户端注水交互逻辑）不就可以完美解决我们「既要。。。，同时。。。」。只不过我们这里的服务端可以`使用 github 提供的 gh-pages 服务来存放基于 SSR 提前预渲染好的节点`。相关流程图变更如下：
+* 思路三：`拆分静态节点渲染与动态交互生效的时机，保证静态节点与动态交互节点渲染之间的联系`。在思路二基础上，进一步联想到如果基于服务端渲染（在服务端首屏直出静态页面，在客户端注水交互逻辑）不就可以完美支持`静态节点与动态交互隔离执行，同时保证衔接阶段页面不出现抖动`了么。只不过我们这里的服务端可以使用 gh-pages 服务来存放基于 SSR 提前预渲染好的节点。
 
+![](http://with.muyunyun.cn/b83d4505777794eb21251f15272e8d4b.jpg-400)
+
+根据环境执行不同的渲染逻辑的代码如下示意，完整改动可见 [mr](https://github.com/MuYunyun/create-react-doc/pull/240/files)。
+
+```js
+if (ifDev) {
+  // dev render
+  document.getElementById('root').innerHTML = ReactDOMServer.renderToString(<RouterRoot />)
+  ReactDOM.hydrate(
+    <RouterRoot />,
+    document.getElementById('root'),
+  )
+} else if (ifPrerender) {
+  // prerender
+  document.getElementById('root').innerHTML = ReactDOMServer.renderToString(<RouterRoot />)
+} else {
+  // prod render
+  ReactDOM.hydrate(
+    <RouterRoot />,
+    document.getElementById('root'),
+  )
+}
+```
+
+至此在衔接阶段中页面抖动（不被期望的加载页）得到优化。
