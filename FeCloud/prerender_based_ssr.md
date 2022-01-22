@@ -4,35 +4,27 @@ abbrlink: g3v1c5bq
 
 ## 基于 SSR 的预渲染首屏直出方案
 
-[Create React Doc](https://github.com/MuYunyun/create-react-doc) 是一个使用 React 的 markdown 文档站点生成工具。此前（参考 [SEO 在 SPA 站点中的实践](http://muyunyun.cn/blog/ettzfags/)）为了使基于 React 开发的 SPA 文档站点也能享受到 SEO(Search Engine Optimization) 能力，在 Create React Doc 中引入了**预渲染技术**来实现静态页面预生成的能力。如此一来，便支持了在享受 SEO 的能力的同时，也加快了首屏访问加载速度。
+[Create React Doc](https://github.com/MuYunyun/create-react-doc) 是一个使用 React 的 markdown 文档站点生成工具。[此前](http://muyunyun.cn/blog/ettzfags/)在 Create React Doc 中引入了**预渲染**技术来预先生成对应路由的静态页面，以使基于其搭建的文档站点能享用到 SEO(Search Engine Optimization) 同时加快了首屏访问加载。
 
 ### 新的挑战
 
-在使用 Create React Doc 创建的文档项目中，其渲染周期大致如下所示：
+Create React Doc 使用预渲染技术获取各页面路由对应的 DOM 结构以生成对应的 HTML 文件，并将静态文件存放于 gh-pages 服务中(可自行选择其它存储服务)从而达到加快首屏访问加载以及 SEO。见如下蓝色线框流程图部分：
 
 ![](http://with.muyunyun.cn/7f7c6ab865547639df62164f53086c78.jpg)
 
-以访问章节[快速上手](http://muyunyun.cn/create-react-doc/290a4219/)为例，用户从访问页面到页面可交互，项目会经历如下阶段：
-
-`预渲染阶段`: 如上述蓝色线框流程图部分，根据 React SPA 各路由，使用预渲染技术获取各路由对应的 DOM 结构后，生成 HTML 文件，并将生成文件存放在 gh-pages 服务中(可自行选择其它存储服务)。
-
 ![](http://with.muyunyun.cn/4eaf5b05769b838bbe470176cf22e246.jpg-400)
 
-`首屏渲染阶段`: 当用户访问[快速上手](http://muyunyun.cn/create-react-doc/290a4219/)章节时，gp-pages 服务会推送其对应的预渲染页面，此时用户可以获得友好的首屏体验 😁。值得注意的是，预渲染的页面仅仅只是生成静态的 HTML 页面，因而首屏渲染阶段的页面是无法交互的。
+在访问 Create React Doc 创建的文档时，页面渲染周期可分为`首屏渲染阶段`、`衔接阶段`、`可交互阶段`。
+
+`首屏渲染阶段`: 以访问[快速上手](http://muyunyun.cn/create-react-doc/290a4219/)章节为例，当用户在浏览器输入 http://muyunyun.cn/create-react-doc/290a4219/ 时，gp-pages 服务会推送预先渲染好的页面，此时用户可以获得十分快速的首屏体验 😁。不过需要指出的是，预渲染的页面仅仅只是生成静态的 HTML 页面，因而在首屏渲染阶段的页面时用户是无法交互的。
 
 ![](http://with.muyunyun.cn/29a0df7a6788a1781c87d6bf4a35deae.jpg)
 
 `衔接阶段`: 衔接阶段是`首屏渲染阶段`与`页面可交互阶段`的中间态阶段，在该阶段执行 JavaScript 逻辑，从而使页面从无交互到可交互。但是观察发现从预渲染页面到页面可交互，出现了干扰体验的加载，体验十分不好 😭。
 
-(不被期望的中间加载页展示)
-
 ![](http://with.muyunyun.cn/56d89fdc818925754251729e0b61ba2c.jpg)
 
-`可交互阶段`：该阶段用户可以与页面进行交互。比如点击左侧菜单按钮可以展开、收起等。
-
-![](http://with.muyunyun.cn/35a856670eb3f676f37a558e2be0d093.jpg)
-
-究其原因为客户端渲染页面与预渲染页面都使用了 `ReactDom.render` 并指定相同根路径节点进行渲染(这里为 root)。在访问首屏预渲染页面之后，执行 JavaScript 逻辑时，`React 会移除存量 Html 结构，并基于 root 节点重新开始渲染`，因而必然会导致页面不被期望的抖动。
+不被期望的中间加载页（见上图）出现的原因为客户端渲染页面与预渲染页面都使用了 `ReactDom.render` 并指定相同根路径节点进行渲染(这里为 root)。在访问首屏预渲染页面之后，执行 JavaScript 逻辑时，`React 会移除存量 Html 结构，并基于 root 节点重新开始渲染`，因而必然会导致页面不被期望的抖动。
 
 ```js
 ReactDOM.render(
@@ -40,6 +32,10 @@ ReactDOM.render(
   document.getElementById('root'),
 )
 ```
+
+`可交互阶段`：该阶段用户可以与页面进行交互。比如点击左侧菜单按钮可以展开、收起等。
+
+![](http://with.muyunyun.cn/35a856670eb3f676f37a558e2be0d093.jpg)
 
 ### 思路解法
 
