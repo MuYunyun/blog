@@ -34,6 +34,17 @@ abbrlink: x2orssyg
 
 步骤三: 在 Mac 端的 `Safari -> Developer` 菜单中此时就能看到个人的设备。此时在 IOS 中的 Safari 中访问对应网页，即可在 Mac 中的 Safari 个人开发工具进行调试。
 
+#### 如何在 Mac 安装多个 xcode
+
+> 结论: 当前没有有效方法。
+
+1. 在 [apple 官网](https://developer.apple.com/download/all/) 安装对应的 xcode 版本。
+
+> 也可以参考 [所有Xcode版本的链接](https://stackoverflow.com/a/10335943/6685113)
+
+2. 基于新下载的 Xcode，点击 Preferences -> Components -> 下载对应的 iOS 机型。
+3. 经过多番尝试（下载多个老版本 Xcode、参考 https://hiraku.tw/2021/04/6428/ 更改 iOS 机型限制列表），遗憾的是最后也没能在菜单栏中找到 10.3 版本的模拟器。
+
 #### 兼容性
 
 需注意低版本的 IOS 机型未支持 ES6，因此打包到线上环境的代码应该是编译成 ES5。
