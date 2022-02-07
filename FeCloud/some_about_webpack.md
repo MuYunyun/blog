@@ -17,3 +17,10 @@ resolve: {
 ```
 
 通常情况下，模块的 package 都不会声明 `browser` 或 `module` 字段，所以便是使用 `main` 了。
+
+### sourceMap
+
+* 本地环境：一般使用 `eval-source-map` 或者 `eval-cheap-module-source-map`。
+* 线上环境：一般使用 `source-map`，但要做好 source-map 上传地址的隔离。
+
+* [webpack devtool](https://webpack.js.org/configuration/devtool/)
