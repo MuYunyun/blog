@@ -45,6 +45,13 @@ abbrlink: x2orssyg
 2. 基于新下载的 Xcode，点击 Preferences -> Components -> 下载对应的 iOS 机型。
 3. 经过多番尝试（下载多个老版本 Xcode、参考 https://hiraku.tw/2021/04/6428/ 更改 iOS 机型限制列表），遗憾的是最后也没能在菜单栏中找到 10.3 版本的模拟器。
 
+快捷指令：
+
+```bash
+// 切换 Xcode 版本
+sudo xcode-select -s /Applications/Xcode/Xcode.app/Contents/Developer
+```
+
 #### 兼容性
 
 需注意低版本的 IOS 机型未支持 ES6，因此打包到线上环境的代码应该是编译成 ES5。

@@ -6,8 +6,6 @@ abbrlink: d1jkxo7l
 
 在大多数程序中，我们必须根据输入做出决策。TypeScript 也不例外，使用条件类型可以描述输入类型与输出类型之间的关系。
 
-> 本文同步首发在[个人博客](https://github.com/MuYunyun/blog/issues/140)中，欢迎订阅、交流。
-
 ## 用于条件判断时的 extends
 
 当 extends 用于表示条件判断时，可以总结出以下规律
