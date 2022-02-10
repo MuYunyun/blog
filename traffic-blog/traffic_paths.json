@@ -2,61 +2,61 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 76,
-    "uniques": 59
+    "count": 12,
+    "uniques": 11
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/单例模式.md at main · MuYunyun/blog · GitHub",
-    "count": 20,
-    "uniques": 18
+    "count": 3,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/发布订阅模式.md at main · MuYunyun/blog",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/config.yml",
+    "title": "blog/config.yml at main · MuYunyun/blog",
+    "count": 2,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/blog/tree/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F",
     "title": "blog/BasicSkill/设计模式 at main · MuYunyun/blog · GitHub",
-    "count": 13,
-    "uniques": 6
+    "count": 2,
+    "uniques": 1
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/发布订阅模式.md at main · MuYunyun/blog · GitHub",
-    "count": 9,
-    "uniques": 9
-  },
-  {
-    "path": "/MuYunyun/blog/issues",
-    "title": "Issues · MuYunyun/blog",
-    "count": 9,
-    "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/blog/issues/140",
-    "title": "TypeScript extends 精读与实践 · Issue #140 · MuYunyun/blog",
-    "count": 7,
-    "uniques": 5
-  },
-  {
-    "path": "/MuYunyun/blog/issues/84",
-    "title": "SEO 在 SPA 站点中的实践 · Issue #84 · MuYunyun/blog · GitHub",
-    "count": 7,
-    "uniques": 4
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/组合模式.md at main · MuYunyun/blog · GitHub",
-    "count": 6,
-    "uniques": 6
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/模板方法模式.md at main · MuYunyun/blog · GitHub",
+    "count": 1,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/策略模式.md at main · MuYunyun/blog · GitHub",
-    "count": 5,
-    "uniques": 4
+    "count": 1,
+    "uniques": 1
   },
   {
-    "path": "/MuYunyun/blog/tree/main/BasicSkill",
-    "title": "blog/BasicSkill at main · MuYunyun/blog · GitHub",
-    "count": 5,
-    "uniques": 3
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/组合模式.md at main · MuYunyun/blog · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/观察者模式.md at main · MuYunyun/blog · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/config.js",
+    "title": "blog/config.js at main · MuYunyun/blog",
+    "count": 1,
+    "uniques": 1
   }
 ]
