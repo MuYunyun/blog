@@ -76,9 +76,11 @@ const map2 = new Map([['a', 1]])
 
 Map 和 WeakMap 相差 Weak 这个单词, 本质知识点是对对象的直接引用(WeakMap)。它这个点造成的差异整理如下:
 
-* Map 的 key 范围更广, WeakMap 的 key 只能为对象;
-* Map 的 key 可以枚举, WeakMap 的 key 不能枚举;
-* 垃圾回收相关, 见如下例子;
+1. Map 的 key 范围更广, WeakMap 的 key 只能为对象;
+2. Map 的 key 可以枚举, WeakMap 的 key 不能枚举;
+3. map 中 key 值不会被垃圾回收算法回收，weakMap 会;
+
+针对第三点，举例如下：
 
 ```js
 var map = new Map();
@@ -111,3 +113,10 @@ WeakMap {}
   [[Entries]]: Array(0)
     length: 0
 ```
+
+### Map 与 Object 的区别
+
+1. Map 的 key 可以是任意值，包括对象。Object 的 key 只能是 string;
+2. Map 的数据结构是天然可枚举的，Object 需要借助 Object.keys 等 api 近一步转换;
+
+> 完整差异性见 [Objects vs. Maps](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#objects_vs._maps)
