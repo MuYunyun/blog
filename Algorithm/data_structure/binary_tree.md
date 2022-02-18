@@ -266,7 +266,7 @@ tree.insert(6)
 
 ![](http://with.muyunyun.cn/65df3e9414f594107d95127f8ab5a9a1.jpg-300)
 
-* 后序遍历: 可用于查看文件夹目录
+* 后序遍历: 可用于`查看文件夹目录`
 
 ![](http://with.muyunyun.cn/212607e3b24b52c0df959902ed8e4b1f.jpg-300)
 
