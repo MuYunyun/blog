@@ -198,6 +198,16 @@ jest.spyOn(global, 'fetch').mockImplementation(() => {
 })
 ```
 
+#### mock 浏览器 api
+
+当组件中需要测试浏览器 api 时，同样可以使用 jest.spyon 来达到目的，比如测试 scrollTo。
+
+```js
+jest.spyOn(window, 'scrollTo').mockImplementation(({ top }: any) => {
+  document.documentElement.scrollTop = top
+})
+```
+
 #### mock 浏览器节点信息
 
 在使用 JEST 测试一些需要浏览器位置信息的组件(比如 PullToRefresh、Scrollbar 组件等等)时, 需要将浏览器节点信息给 mock 掉。
@@ -232,6 +242,16 @@ jest.runAllTimers()
 // move ahead in time by 100ms
 act(() => {
   jest.advanceTimersByTime(100)
+})
+```
+
+#### mock 机型信息
+
+```js
+jest.mock('../../utils', () => {
+  return {
+    isIOS: true
+  }
 })
 ```
 
