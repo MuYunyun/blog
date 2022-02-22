@@ -155,6 +155,8 @@ box-shadow: 0px -1px 0px 0px rgba(245, 245, 245, 1);
 
 0 ~ 400 一种粗细, 500 ~ 900 一种粗细。
 
+针对各种机型提供适配字体。
+
 ## IOS && Android
 
 ### scrollTop 区分
@@ -163,5 +165,7 @@ Anchor 组件
 
 ```js
 // document.documentElement.scrollTop do effect in ios, and document.body.scrollTop do effect in android.
-const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+const scrollTop =
+  document.documentElement.scrollTop // iOS
+  || document.body.scrollTop         // android
 ```
