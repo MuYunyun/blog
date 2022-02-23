@@ -18,8 +18,15 @@ abbrlink: 4ocu6ahz
 
 ### 一些移动端上的有用的 css 属性
 
-* 在 IOS 上增加 scroll 的灵敏度(出现滑动条): `-webkit-overflow-scrolling: touch;`
-* 滑动场景下防止用户选中文字: `use-select: none;`
+#### -webkit-overflow-scrolling
+
+[-webkit-overflow-scrolling](http://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling) 属性，一般配合 overflow: 'auto' 一起使用，增加在 IOS 上增加滑动的灵敏度。
+
+在特定场景，比如 PullToRefresh 的下拉场景，`-webkit-overflow-scrolling` 属性要设置为 'auto' 以避免 iOS 下滑刷新时出现的卡顿效果。
+
+#### use-select: none
+
+阻止触摸选中文字
 
 ### scrollTo
 
@@ -37,7 +44,7 @@ abbrlink: 4ocu6ahz
 
 `box-shadow` 这个方案有个缺陷是画上划线容易。方式如下:
 
-```
+```css
 box-shadow: 0px -1px 0px 0px rgba(245, 245, 245, 1);
 ```
 
