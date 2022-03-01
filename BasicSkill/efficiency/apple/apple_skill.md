@@ -83,3 +83,23 @@ tree -L 3 -I "node_modules"
 1. 在 Mac 路径 `System Preferences -> Sharing -> Bluetooth Sharing` 打开蓝牙共享。
 2. Mac 与安卓机互相配对。
 3. 安卓机中选中文件通过蓝牙上传文件。
+
+### Mac 查看/关闭端口占用的方法
+
+1. 查看指定端口号
+
+```bash
+lsof -i :port
+```
+
+2. 执行[1]命令查看占用端口的 PID，显示如下列表
+
+```bash
+COMMAND PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+```
+
+3. 杀死占用端口的进程
+
+```bash
+kill -9 PID
+```
