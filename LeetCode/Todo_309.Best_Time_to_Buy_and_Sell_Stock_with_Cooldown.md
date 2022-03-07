@@ -6,7 +6,7 @@ Find the maximum profit you can achieve. You may complete as many transactions a
 
 * `After you sell your stock, you cannot buy stock on the next day` (i.e., cooldown one day).
 
-Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
+Note: You may not engage in multiple transactions simultaneously (i.e., `you must sell the stock before you buy again`).
 
 Example 1:
 
@@ -30,6 +30,20 @@ Constraints:
 * 0 <= prices[i] <= 1000
 
 ### Analyze
+
+```js
+                                [0, n - 1]
+                            /       |  ...       \             \
+                    [2, n - 1]     [3, n - 1]    [4, n - 1]  ...  [n - 1]
+              /
+      [4, n - 1]: 此时找到了重复子项
+```
+
+* 状态定义：考虑从 `[0, n - 1]` 中获取最大利润。
+* 状态转移
+  * f(n - 1) = 0
+  * f(n - 2) = Math.max(0, -prices[n - 2] + prices[n - 1])
+  * f(n - 3) = Math.max()
 
 ```js
 /**
