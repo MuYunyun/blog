@@ -40,10 +40,13 @@ Constraints:
 ```
 
 * 状态定义：考虑从 `[0, n - 1]` 中获取最大利润。
-* 状态转移
+* 状态转移：
   * f(n - 1) = 0
   * f(n - 2) = Math.max(0, -prices[n - 2] + prices[n - 1])
-  * f(n - 3) = Math.max()
+  * f(n - 3) = Math.max(0, f(n - 2), -prices[n - 3] + prices[n - 1])
+  * f(n - 4) = Math.max(0, f(n - 3), -prices[n - 3] + prices[n - 1])
+
+  * f(0) =
 
 ```js
 /**
