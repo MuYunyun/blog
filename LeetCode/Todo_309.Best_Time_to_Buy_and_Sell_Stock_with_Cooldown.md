@@ -31,25 +31,6 @@ Constraints:
 
 ### Analyze
 
-```js
-                                [0, n - 1]
-                            /       |  ...       \             \
-                    [2, n - 1]     [3, n - 1]    [4, n - 1]  ...  [n - 1]
-              /
-      [4, n - 1]: 此时找到了重复子项
-```
-
-* 状态定义：考虑从 `[0, n - 1]` 中获取最大利润。
-* 状态转移：
-  * f(n - 1) = 0
-  * f(n - 2) = Math.max(0, -prices[n - 2] + prices[n - 1])
-  * f(n - 3) = Math.max(0, f(n - 2), -prices[n - 3] + prices[n - 1])
-  * f(n - 4) = Math.max(0, f(n - 3), -prices[n - 3] + prices[n - 1])
-
-// 第 n 天股票没买：
-// 第 n 天股票购买：
-  * f(n) = Max{f(n + 1), }
-
 转化冷冻期的概念：`当日是否可出售股票取决于上一日是否有出售股票`。因此只需要观察当天与上一天之间的联系即可。
 
 进一步抽象出以下几种状态。
@@ -63,23 +44,24 @@ Constraints:
 
 初始表达式赋值：
 
-1. f[0][0] = 0
-2. f[0][1] = 0
+1. f[0][0] = -prices[0]
+2. f[0][1] = -prices[0]
 3. f[0][2] = 0
 4. f[0][3] = 0
 
 状态转移：
 
-1. xx
-
-2. xx
-
-3. xx
-   1. 上一日无出售，有购买，持有 stock 的最大收益。表达式为：f[n - 1][0]
-   2. 上一日无出售，无购买，持有 stock 的最大收益。表达式为：f[n - 1][1]
-4. 结合下方两种情况，表达式为：Max{f[n - 1][3], f[n - 1][2]}
-   1. 上一日无出售，不持有 stock 的最大收益。表达式为：f[n - 1][3]
-   2. 上一日有出售，不持有 stock 的最大收益。表达式为：f[n - 1][2]
+1. `当日无出售，有购买，持有 stock 的最大收益`。结合下方两种情况，表达式为：`f[i - 1][3] - prices[i]`
+   1. 上一日无出售，不持有 stock 的最大收益。表达式为：f[i - 1][3]
+2. `当日无出售，无购买，持有 stock 的最大收益`。结合下方两种情况，表达式为：`Max{f[i - 1][0], f[i - 1][1]}`
+   1. 上一日无出售，有购买，持有 stock 的最大收益。表达式为：f[i - 1][0]
+   2. 上一日无出售，无购买，持有 stock 的最大收益。表达式为：f[i - 1][1]
+3. `当日有出售，不持有 stock 的最大收益`。结合下方两种情况，表达式为：`Max{f[i - 1][0], f[i - 1][1]} + prices[i]`
+   1. 上一日无出售，有购买，持有 stock 的最大收益。表达式为：f[i - 1][0]
+   2. 上一日无出售，无购买，持有 stock 的最大收益。表达式为：f[i - 1][1]
+4. `当日无出售，不持有 stock 的最大收益`。结合下方两种情况，表达式为：`Max{f[i - 1][3], f[i - 1][2]}`
+   1. 上一日无出售，不持有 stock 的最大收益。表达式为：f[i - 1][3]
+   2. 上一日有出售，不持有 stock 的最大收益。表达式为：f[i - 1][2]
 
 ```js
 /**
@@ -87,6 +69,19 @@ Constraints:
  * @return {number}
  */
 var maxProfit = function(prices) {
+  const arr = [[-prices[0], -prices[0], 0, 0]]
 
+  for (let i = 1; i < prices.length; i++) {
+    arr[i] = [
+      arr[i - 1][3] - prices[i],
+      Math.max(arr[i - 1][0], arr[i - 1][1]),
+      Math.max(arr[i - 1][0], arr[i - 1][1]) + prices[i],
+      Math.max(arr[i - 1][3], arr[i - 1][2]),
+    ]
+    console.log(`arr[${i}]`, arr[i])
+  }
+
+  const lastDay = arr[prices.length - 1]
+  return Math.max(lastDay[1], lastDay[2], lastDay[3])
 }
 ```
