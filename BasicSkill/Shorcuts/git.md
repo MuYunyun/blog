@@ -38,10 +38,13 @@ git merge [name]/master     合并远程分支最新代码到本地
 
 ### git merge 和 git rebase 的区别
 
-* `git merge` 会多产生一次 merge 的 log 记录;
-* `git rebase` 会将主干新增的日志记录前置到当前分支之前;
+* `git merge` 会多产生一次 merge 的 log 记录
+* `git rebase` 会将主干新增的日志记录前置到当前分支之前
 
-> git merge --no-ff 在每次合并都会产生一个新的合并记录; git merge 的话只有解决冲突的时候才会产生一个新的合并记录。
+### git merge 和 git merge --no-ff 的区别
+
+* git merge 的话只有解决冲突的时候才会产生一个新的合并记录;
+* git git merge --no-ff 在每次合并都会产生一个新的合并记录;
 
 ### git reset 和 git revert 的区别
 
