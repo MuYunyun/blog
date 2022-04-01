@@ -52,3 +52,6 @@ inject: injectLogic.js
 
 # Use abbrlink
 abbrlink: true
+
+# show Tags in head
+tags: true
