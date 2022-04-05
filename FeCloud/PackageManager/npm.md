@@ -2,6 +2,8 @@
 abbrlink: baced56a
 -->
 
+- [npm](#npm)
+
 ### npm
 
 `npm` 经历了 3 次升级:

@@ -2,6 +2,8 @@
 abbrlink: cpdijk01
 -->
 
+- [scripts](#scripts)
+
 ## scripts
 
 * 新增一个包

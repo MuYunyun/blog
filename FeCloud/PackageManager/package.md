@@ -2,6 +2,10 @@
 abbrlink: iwwepxpg
 -->
 
+- [包下载的前置知识](#包下载的前置知识)
+- [区分几个 package.json 字段](#区分几个-packagejson-字段)
+- [resolutions in package.json](#resolutions-in-packagejson)
+
 ### 包下载的前置知识
 
 一个包的版本号基本由三位数字构成 `x.x.x`, 它们分别是 `Major`(主版本号), `Minor`(次版本号), `Patch`(修订号)。

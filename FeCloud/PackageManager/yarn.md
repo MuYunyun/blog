@@ -2,6 +2,16 @@
 abbrlink: bpp6dk6t
 -->
 
+- [Usage](#usage)
+- [配置 yarn 全局路径](#配置-yarn-全局路径)
+- [bin](#bin)
+- [remove](#remove)
+- [upgrade](#upgrade)
+- [yarn 和 npm5 的区别](#yarn-和-npm5-的区别)
+  - [同](#同)
+  - [异](#异)
+- [Hooks 踩坑](#hooks-踩坑)
+
 ### Usage
 
 ```js
@@ -37,6 +47,13 @@ yarn link xx
 
 ```js
 yarn remove xx
+```
+
+### upgrade
+
+```js
+// 升级某个包到最新
+yarn upgrade xxx --latest
 ```
 
 ### yarn 和 npm5 的区别
