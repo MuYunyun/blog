@@ -92,12 +92,6 @@ box-shadow: 0px -1px 0px 0px rgba(245, 245, 245, 1);
 
 ## IOS 特有
 
-### 模拟器中隐藏地址栏与工具栏, 便于查看、调试刘海屏样式
-
-结论: 在 IOS 大于 13 版本的机型中，可以点击左上角阅读器图标，选择「隐藏地址栏与工具栏」。
-
-![](http://with.muyunyun.cn/0d488254b20c9ffc2146367f1be7a43f.jpg)
-
 ### IOS 13 机型中在弹框类组件中使用 input 光标会消失
 
 见 [issue](https://github.com/ionic-team/cordova-plugin-ionic-webview/issues/449#issuecomment-541907141)
