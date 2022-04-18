@@ -74,7 +74,7 @@ tree -L 3 -I "node_modules"
 ### 通过蓝牙与安卓手机传递文件
 
 1. 在 Mac 路径 `System Preferences -> Sharing -> Bluetooth Sharing` 打开蓝牙共享。
-2. Mac 与安卓机互相配对。
+2. 在安卓机蓝牙界面与 Mac 互相配对。
 3. 安卓机中选中文件通过蓝牙上传文件。
 
 ### Mac 查看/关闭端口占用的方法
