@@ -134,3 +134,33 @@ var recursive = function(arr, extra, cache, count) {
   return result || -1
 }
 ```
+
+try
+
+```js
+/**
+ * @param {number[]} coins
+ * @param {number} amount
+ * @return {number}
+ */
+var coinChange = function(coins, amount) {
+  const sortedArr = coins.sort((a, b) => b - a)
+  const deDuplicate = Array.from(new Set(sortedArr))
+  if (amount === 0) return 0
+  const cache = {}
+  recursive(deDuplicate, amount, cache, 0)
+  return cache.count ? cache.count : -1
+}
+
+var recursive = function(arr, extra, cache, count) {
+  if (extra < 0) return
+  if (extra === 0) {
+    cache.count = count
+    return
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (cache.count) return
+    recursive(arr, extra - arr[i], cache, count + 1)
+  }
+}
+```
