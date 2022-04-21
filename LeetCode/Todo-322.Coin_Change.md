@@ -102,6 +102,8 @@ var coinChange = function(coins, amount) {
 
 递归
 
+
+
 ```js
 /**
  * @param {number[]} coins
@@ -112,12 +114,17 @@ var coinChange = function(coins, amount) {
   const sortedArr = coins.sort((a, b) => b - a)
   const deDuplicate = Array.from(new Set(sortedArr))
   if (amount === 0) return 0
-  const cache = {}
-  return recursive(deDuplicate, amount, cache, 0)
+  return recursive(deDuplicate, amount, {}, 0)
 }
 
 var recursive = function(arr, extra, cache, count) {
-  if (cache[extra]) return cache[extra]
+  if (count > cache[extra]) return
+
+  if (count <= cache[extra]) {
+    cache[extra] = count
+  }
+
+
   let result
   // the problem is once return then extra loop logic can't be performed.
   for (let i = 0; i < arr.length; i++) {
