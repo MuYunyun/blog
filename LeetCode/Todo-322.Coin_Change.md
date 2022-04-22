@@ -124,19 +124,11 @@ var recursive = function(arr, extra, cache, count) {
     cache[extra] = count
   }
 
-
   let result
   // the problem is once return then extra loop logic can't be performed.
   for (let i = 0; i < arr.length; i++) {
     const extraVal = extra - arr[i]
-    console.log('extraVal', extraVal)
-    if (extraVal === 0) {
-      result = Math.min(result, count + 1)
-    } else if (extraVal > 0) {
-      const recursiveVal = recursive(arr, extraVal, cache, count + 1)
-      // console.log('recursiveVal', recursiveVal)
-      cache[extraVal] = Math.min(cache[extraVal], recursiveVal)
-    }
+    const recursiveVal = recursive(arr, extraVal, cache, count + 1)
   }
   return result || -1
 }
