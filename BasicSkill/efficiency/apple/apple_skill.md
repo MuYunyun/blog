@@ -10,7 +10,6 @@ abbrlink: 1vso6n27
   - [Foreign Books Resource](#foreign-books-resource)
   - [输出当前项目目录结构](#输出当前项目目录结构)
   - [注册美区 Apple ID](#注册美区-apple-id)
-  - [通过蓝牙与安卓手机传递文件](#通过蓝牙与安卓手机传递文件)
   - [Mac 查看/关闭端口占用的方法](#mac-查看关闭端口占用的方法)
 - [iphone](#iphone)
 - [ipad](#ipad)
@@ -70,12 +69,6 @@ tree -L 3 -I "node_modules"
 账户名(国区): 328375795@qq.com
 
 > [注册美区 Apple ID](https://zhuanlan.zhihu.com/p/36574047)
-
-### 通过蓝牙与安卓手机传递文件
-
-1. 在 Mac 路径 `System Preferences -> Sharing -> Bluetooth Sharing` 打开蓝牙共享。
-2. 在安卓机蓝牙界面与 Mac 互相配对。
-3. 安卓机中选中文件通过蓝牙上传文件。
 
 ### Mac 查看/关闭端口占用的方法
 
