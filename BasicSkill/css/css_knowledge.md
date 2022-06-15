@@ -7,7 +7,6 @@ abbrlink: v9b53vi6
 - [超过行内容显示省略号](#超过行内容显示省略号)
 - [verticle-align](#verticle-align)
 - [样式表](#样式表)
-- [边框](#边框)
 - [input 的宽度 —— 并不是给元素设置 display:block 就会自动填充父元素宽度。input 就是个例外，其默认宽度取决于 size 特性的值。](#input-的宽度--并不是给元素设置-displayblock-就会自动填充父元素宽度input-就是个例外其默认宽度取决于-size-特性的值)
 - [object-fit](#object-fit)
 - [style 里的样式过长该怎么办](#style-里的样式过长该怎么办)
@@ -62,20 +61,6 @@ abbrlink: v9b53vi6
 ```css
 <link rel="stylesheet" href="">
 ```
-
-### 边框
-
-* 圆角效果 `border-radius`
-
-```css
-.demo {
-  border-radios: 100px / 10px (水平半径 100, 垂直半径 10)
-}
-```
-
-* 阴影 `box-shadow`: X 轴偏移量 Y 轴偏移量 [阴影模糊半径] [阴影扩展半径] [阴影颜色] [投影方式];（阴影模糊半径：只能是正值；阴影扩展半径：可以是正负值）（自带边框）
-
-> 外阴影 x 和 y(正值)出现在右下；内阴影 x 和 y(正值)出现在左上;
 
 ### input 的宽度 —— 并不是给元素设置 display:block 就会自动填充父元素宽度。input 就是个例外，其默认宽度取决于 size 特性的值。
 

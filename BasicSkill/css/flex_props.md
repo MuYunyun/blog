@@ -47,7 +47,7 @@ The calculate step is a little difficulty, you can see it in the [how-to-calcula
 
 #### flex + height: 100%
 
-在 ios10 以下的 ios 版本中, 在 flex 布局中不推荐与 `height: 100%` 一起连用;
+在 iOS10 以下的 iOS 版本中, 在 flex 布局中不推荐与 `height: 100%` 一起连用;
 
 * 原因一: 父元素为 flex 布局, 若父元素不设置 `height: 100%`, 子元素设置 `height: 100%` 是继承不到父元素的高度的;
 * 原因二: 父元素为 flex 布局, 即使父元素设置了 `height: 100%`, 子元素使用 `height: 100%` 继承的高度也是有偏差的;
