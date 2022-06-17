@@ -9,3 +9,7 @@
 ### 模拟器里唤起键盘
 
 I/O => Keyboard => Toggle Software keyBorad
+
+### 保持 Mac 与 Simulator 张贴面板自动同步
+
+Edit => Automatically Sync Pasteboard
