@@ -2,12 +2,12 @@
   {
     "referrer": "link.juejin.cn",
     "count": 150,
-    "uniques": 47
+    "uniques": 46
   },
   {
     "referrer": "github.com",
-    "count": 104,
-    "uniques": 59
+    "count": 100,
+    "uniques": 57
   },
   {
     "referrer": "muyunyun.cn",
@@ -15,14 +15,14 @@
     "uniques": 7
   },
   {
+    "referrer": "Google",
+    "count": 15,
+    "uniques": 4
+  },
+  {
     "referrer": "link.zhihu.com",
     "count": 14,
     "uniques": 13
-  },
-  {
-    "referrer": "Google",
-    "count": 14,
-    "uniques": 5
   },
   {
     "referrer": "yuque.com",
@@ -30,13 +30,13 @@
     "uniques": 2
   },
   {
-    "referrer": "cnblogs.com",
-    "count": 3,
+    "referrer": "jianshu.com",
+    "count": 2,
     "uniques": 1
   },
   {
-    "referrer": "jianshu.com",
-    "count": 2,
+    "referrer": "cnblogs.com",
+    "count": 1,
     "uniques": 1
   },
   {

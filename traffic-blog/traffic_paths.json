@@ -2,7 +2,7 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 140,
+    "count": 136,
     "uniques": 80
   },
   {
@@ -42,10 +42,10 @@
     "uniques": 5
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/代理模式.md at main · MuYunyun/blog · GitHub",
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/享元模式.md at main · MuYunyun/blog · GitHub",
     "count": 12,
-    "uniques": 12
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/blog/issues/11",
@@ -54,9 +54,9 @@
     "uniques": 6
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/享元模式.md at main · MuYunyun/blog · GitHub",
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/代理模式.md at main · MuYunyun/blog · GitHub",
     "count": 11,
-    "uniques": 5
+    "uniques": 11
   }
 ]
