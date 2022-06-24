@@ -52,3 +52,11 @@ abbrlink: opv4lnaq
 每个进程内部有多个线程。
 
 read page 56
+
+### read more
+
+* [深入理解 WKWebView（基础篇）—— WKWebView 加载生命周期与代理方法剖析](https://mp.weixin.qq.com/s/ZFui9IiMTWyLXGKZlbnzwQ)
+  * 该文提到了「如果返回的 data 是普通文本文字，或返回的数据中包含普通文本文字，那只需要达到非空 200 字节即可以触发上屏渲染」，对应解决商品管理业务在 iOS 机型首屏渲染较慢的问题。
+
+- [ ] [深入理解 WKWebView（入门篇）—— WebKit 源码调试与分析](https://mp.weixin.qq.com/s/VdkVBIQwj7WkAk8-5wppmQ)
+- [ ] [深入理解 WKWebView (渲染篇) —— DOM 树的构建](https://mp.weixin.qq.com/s/9FBKMJo0GaGJ1kEhCiNNZA)

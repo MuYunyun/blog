@@ -204,4 +204,4 @@ JavaScript 是一门单线程的语言, 借助 Web Worker 能在浏览器上模�
 
 ### 浏览器支持 HTML5 情况
 
-可以在 html5test.com 查询浏览器支持 HTML5 情况。
+可以在 [html5test.com](http://html5test.com/) 查询浏览器支持 HTML5 情况。
