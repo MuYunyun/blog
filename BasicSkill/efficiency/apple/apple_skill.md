@@ -78,13 +78,13 @@ tree -L 3 -I "node_modules"
 lsof -i :port
 ```
 
-2. 执行[1]命令查看占用端口的 PID，显示如下列表
+显示查询结果如下：
 
 ```bash
 COMMAND PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
 ```
 
-3. 杀死占用端口的进程
+2. 杀死占用端口的进程(PID 为 [1] 命令查看到的占用端口)
 
 ```bash
 kill -9 PID
