@@ -12,7 +12,8 @@ abbrlink: opv4lnaq
 
 ![](http://with.muyunyun.cn/93c9dbe4d56eb2c5f3be2a14e265ca2b.jpg-muyy)
 
-* JavaScript 引擎: Google 的 Chromium 中, 它被替换为 V8 引擎。
+* JavaScriptCore: JavaScriptCore 引擎是 Webkit 中的默认 JavaScript 引擎。在 Google 的 Chromium 中, 它被替换为 V8 引擎。
+* WebKit Ports: 为 WebKit 中的非共享部分。包括硬件加速架构、网络栈、视频解码、图片解码。
 
 ### webkit 目录
 
@@ -51,12 +52,33 @@ abbrlink: opv4lnaq
 
 每个进程内部有多个线程。
 
-read page 56
+### 深入理解 WKWebView（入门篇）—— WebKit 源码调试与分析
+
+WebKit 项目非常庞大，clone 下来体积有 11.98 GB。
+
+- [ ] [深入理解 WKWebView（入门篇）—— WebKit 源码调试与分析](https://mp.weixin.qq.com/s/VdkVBIQwj7WkAk8-5wppmQ)
+
+源码编译
+
+1. 下载的 WebKit 目录里面有一个Tools/Scripts 目录，这里面有各种脚本，包括使用命令行编译 WebKit 的脚本，其中一个重要的脚本就是 configure-Xcode-for-embedded-development，在 Mac 终端控制台运行如下命令:
+
+```bash
+sudo Tools/Scripts/configure-Xcode-for-embedded-development
+```
+
+之所以需要执行这个脚本，是因为 iOS 属于嵌入式平台，编译嵌入式平台的 WebKit 需要用到一些命令行工具，Xcode 正是利用该脚本构建这些命令行工具。
+
+2.
+
+### Todo
+
+read page 59: 如何在 Mac 中调试线程?
+
+> Linux: 使用 GDB 调试该进程，然后输入 “info threads” 查看结果。
 
 ### read more
 
 * [深入理解 WKWebView（基础篇）—— WKWebView 加载生命周期与代理方法剖析](https://mp.weixin.qq.com/s/ZFui9IiMTWyLXGKZlbnzwQ)
   * 该文提到了「如果返回的 data 是普通文本文字，或返回的数据中包含普通文本文字，那只需要达到非空 200 字节即可以触发上屏渲染」，对应解决商品管理业务在 iOS 机型首屏渲染较慢的问题。
 
-- [ ] [深入理解 WKWebView（入门篇）—— WebKit 源码调试与分析](https://mp.weixin.qq.com/s/VdkVBIQwj7WkAk8-5wppmQ)
 - [ ] [深入理解 WKWebView (渲染篇) —— DOM 树的构建](https://mp.weixin.qq.com/s/9FBKMJo0GaGJ1kEhCiNNZA)
