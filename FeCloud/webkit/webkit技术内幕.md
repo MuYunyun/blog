@@ -72,9 +72,11 @@ sudo Tools/Scripts/configure-Xcode-for-embedded-development
 
 ### Todo
 
-read page 59: 如何在 Mac 中调试线程?
+如何在 Mac 中调试线程?
 
 > Linux: 使用 GDB 调试该进程，然后输入 “info threads” 查看结果。
+
+read page 68:
 
 ### read more
 
