@@ -1,18 +1,18 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 122,
-    "uniques": 40
+    "count": 111,
+    "uniques": 37
   },
   {
     "referrer": "github.com",
-    "count": 109,
-    "uniques": 40
+    "count": 94,
+    "uniques": 34
   },
   {
     "referrer": "Google",
-    "count": 23,
-    "uniques": 12
+    "count": 14,
+    "uniques": 9
   },
   {
     "referrer": "link.segmentfault.com",
@@ -40,12 +40,12 @@
     "uniques": 2
   },
   {
-    "referrer": "yuque.antfin.com",
+    "referrer": "muyunyun.cn",
     "count": 1,
     "uniques": 1
   },
   {
-    "referrer": "zhihu.com",
+    "referrer": "libhunt.com",
     "count": 1,
     "uniques": 1
   }
