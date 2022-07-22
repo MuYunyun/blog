@@ -1,13 +1,13 @@
 [
   {
-    "referrer": "link.juejin.cn",
-    "count": 102,
+    "referrer": "github.com",
+    "count": 105,
     "uniques": 40
   },
   {
-    "referrer": "github.com",
-    "count": 100,
-    "uniques": 36
+    "referrer": "link.juejin.cn",
+    "count": 104,
+    "uniques": 41
   },
   {
     "referrer": "link.segmentfault.com",
@@ -20,14 +20,14 @@
     "uniques": 7
   },
   {
+    "referrer": "link.zhihu.com",
+    "count": 5,
+    "uniques": 5
+  },
+  {
     "referrer": "Bing",
     "count": 5,
     "uniques": 2
-  },
-  {
-    "referrer": "link.zhihu.com",
-    "count": 4,
-    "uniques": 4
   },
   {
     "referrer": "yuque.antfin-inc.com",
@@ -35,17 +35,17 @@
     "uniques": 1
   },
   {
-    "referrer": "libhunt.com",
+    "referrer": "zhihu.com",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "referrer": "yuque.com",
     "count": 1,
     "uniques": 1
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "referrer": "zhihu.com",
     "count": 1,
     "uniques": 1
   }
