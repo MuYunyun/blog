@@ -1,18 +1,23 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 101,
-    "uniques": 41
+    "count": 129,
+    "uniques": 47
   },
   {
     "referrer": "github.com",
-    "count": 99,
-    "uniques": 37
+    "count": 98,
+    "uniques": 38
+  },
+  {
+    "referrer": "link.zhihu.com",
+    "count": 25,
+    "uniques": 9
   },
   {
     "referrer": "Google",
-    "count": 14,
-    "uniques": 10
+    "count": 15,
+    "uniques": 11
   },
   {
     "referrer": "link.segmentfault.com",
@@ -20,9 +25,14 @@
     "uniques": 5
   },
   {
-    "referrer": "link.zhihu.com",
-    "count": 6,
-    "uniques": 6
+    "referrer": "muyunyun.cn",
+    "count": 9,
+    "uniques": 3
+  },
+  {
+    "referrer": "github-com.translate.goog",
+    "count": 7,
+    "uniques": 1
   },
   {
     "referrer": "Bing",
@@ -35,17 +45,7 @@
     "uniques": 3
   },
   {
-    "referrer": "muyunyun.cn",
-    "count": 2,
-    "uniques": 2
-  },
-  {
     "referrer": "yuque.antfin-inc.com",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "referrer": "zhihu.com",
     "count": 1,
     "uniques": 1
   }
