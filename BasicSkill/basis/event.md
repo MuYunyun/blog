@@ -61,4 +61,4 @@ abbrlink: 8lf1n2j9
 ### stopPropagation vs stopImmediatePropagation
 
 * stopPropagation: stop propagation `from child element to parent element`;
-* stopImmediatePropagation: stop propagation `the remaining same event type in one element`;
+* [stopImmediatePropagation](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopImmediatePropagation): stop propagation `the remaining same event type in one element`;
