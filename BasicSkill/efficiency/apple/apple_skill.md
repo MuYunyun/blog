@@ -14,6 +14,7 @@ abbrlink: 1vso6n27
 - [iphone](#iphone)
 - [ipad](#ipad)
 - [apple pencel](#apple-pencel)
+- [快速切换勿扰模式](#快速切换勿扰模式)
 
 ## Mac
 
@@ -98,3 +99,10 @@ kill -9 PID
 ## apple pencel
 
 * Mark up a screenshot
+
+## 快速切换勿扰模式
+
+cmd + shift + q
+
+1. 打开系统设置，搜索 keyboard shortcuts 并进入。
+2. 定位到 「Mission Control」，选中 「Turn Do Not Disturb On/Off」 双击以设置自己的快捷键。

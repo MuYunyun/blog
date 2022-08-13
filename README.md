@@ -7,7 +7,7 @@ abbrlink: z5dbvyod
 ![clones](https://raw.githubusercontent.com/MuYunyun/blog/traffic/traffic-blog/clones.svg)
 ![clones](https://raw.githubusercontent.com/MuYunyun/blog/traffic/traffic-blog/clones_per_week.svg)
 
-This is my persinal blog created with <a href="https://github.com/MuYunyun/create-react-doc" target="_blank">create-react-doc</a> where to write and record some thought daily.
+This is my personal blog created with <a href="https://github.com/MuYunyun/create-react-doc" target="_blank">create-react-doc</a> where to write and record some thought daily.
 
 It's very thankful to point any wrong place from these articles [there](https://github.com/MuYunyun/blog/issues/new) as well. The Articles licensed under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en) Agreement.
 
