@@ -1,17 +1,17 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 119,
-    "uniques": 35
+    "count": 104,
+    "uniques": 30
   },
   {
     "referrer": "github.com",
-    "count": 73,
-    "uniques": 34
+    "count": 68,
+    "uniques": 31
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 30,
+    "count": 25,
     "uniques": 4
   },
   {
@@ -20,14 +20,14 @@
     "uniques": 4
   },
   {
-    "referrer": "Google",
-    "count": 12,
-    "uniques": 12
-  },
-  {
     "referrer": "link.zhihu.com",
     "count": 12,
     "uniques": 10
+  },
+  {
+    "referrer": "Google",
+    "count": 11,
+    "uniques": 11
   },
   {
     "referrer": "wiki.intra.xiaojukeji.com",
