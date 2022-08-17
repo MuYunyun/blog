@@ -1,13 +1,18 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 104,
-    "uniques": 30
+    "count": 96,
+    "uniques": 28
   },
   {
     "referrer": "github.com",
-    "count": 68,
+    "count": 64,
     "uniques": 31
+  },
+  {
+    "referrer": "link.segmentfault.com",
+    "count": 26,
+    "uniques": 5
   },
   {
     "referrer": "muyunyun.cn",
@@ -15,19 +20,14 @@
     "uniques": 4
   },
   {
-    "referrer": "link.segmentfault.com",
-    "count": 25,
-    "uniques": 4
-  },
-  {
     "referrer": "link.zhihu.com",
-    "count": 12,
-    "uniques": 10
+    "count": 11,
+    "uniques": 9
   },
   {
     "referrer": "Google",
-    "count": 11,
-    "uniques": 11
+    "count": 10,
+    "uniques": 10
   },
   {
     "referrer": "wiki.intra.xiaojukeji.com",
