@@ -8,11 +8,8 @@ abbrlink: 1vso6n27
   - [邮箱加密](#邮箱加密)
   - [网易云音乐迁移到 apple music](#网易云音乐迁移到-apple-music)
   - [Foreign Books Resource](#foreign-books-resource)
-  - [输出当前项目目录结构](#输出当前项目目录结构)
   - [注册美区 Apple ID](#注册美区-apple-id)
-  - [Mac 查看/关闭端口占用的方法](#mac-查看关闭端口占用的方法)
-- [iphone](#iphone)
-- [ipad](#ipad)
+  - [美区 Apple Id 账号如何购买付费应用?](#美区-apple-id-账号如何购买付费应用)
 - [apple pencel](#apple-pencel)
 - [快速切换勿扰模式](#快速切换勿扰模式)
 
@@ -58,12 +55,6 @@ echo bXVqdWVAcGluZHVvZHVvLmNvbQo= | base64 -D
 
 首先支持正版图书, 但是在预算有限的情况下安利下 [Library Genesis](https://librarygenesis.net/), 亲测能获取各类外文图书资源。
 
-### 输出当前项目目录结构
-
-```js
-tree -L 3 -I "node_modules"
-```
-
 ### 注册美区 Apple ID
 
 账号名(美区): muyy95@gmail.com
@@ -71,30 +62,9 @@ tree -L 3 -I "node_modules"
 
 > [注册美区 Apple ID](https://zhuanlan.zhihu.com/p/36574047)
 
-### Mac 查看/关闭端口占用的方法
+### 美区 Apple Id 账号如何购买付费应用?
 
-1. 查看指定端口号
-
-```bash
-lsof -i :port
-```
-
-显示查询结果如下：
-
-```bash
-COMMAND PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
-```
-
-2. 杀死占用端口的进程(PID 为 [1] 命令查看到的占用端口)
-
-```bash
-kill -9 PID
-```
-
-## iphone
-
-
-## ipad
+当付款的时候明显钱是够的，但是就是购买不了，会弹框提示你“insufficient remaining store credit tap continue to sign in”。很大可能是存在消费税问题，所以在实际扣款的时候会高于标价，可以切换成免税州再购买就可以了，具体操作可以参考[回答](https://www.zhihu.com/question/266838782/answer/1210827377)。
 
 ## apple pencel
 

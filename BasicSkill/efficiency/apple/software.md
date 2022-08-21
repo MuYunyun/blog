@@ -15,11 +15,11 @@ abbrlink: i3ywrvsg
   * 疑问点: 转换密码项到登录项
   * [1Password for Mac 使用指南](https://sspai.com/post/35195)
 
-### Iphone
+### iPhone
 
 * [苹果手机 fq 软件](https://github.com/Alvin9999/new-pac/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6)
 
-### Ipad
+### iPad
 
 * [duet](https://zh.duetdisplay.com/pro): 分屏, 16 前 mac 使用 SideCar 功能;
 * [Typeeto]: use one keyboard to operate every device(Macbook、ipad、iphone);
