@@ -3,6 +3,7 @@ abbrlink: cpdijk01
 -->
 
 - [scripts](#scripts)
+  - [link](#link)
 
 ## scripts
 
@@ -31,3 +32,7 @@ pnpm update xxx
 ```bash
 pnpm add -g pnpm
 ```
+
+### link
+
+* [精读《pnpm》](https://zhuanlan.zhihu.com/p/553804414)
