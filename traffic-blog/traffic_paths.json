@@ -2,14 +2,14 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 75,
+    "count": 73,
     "uniques": 54
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/单例模式.md at main · MuYunyun/blog · GitHub",
-    "count": 18,
-    "uniques": 17
+    "count": 16,
+    "uniques": 15
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md",
@@ -30,6 +30,12 @@
     "uniques": 4
   },
   {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/观察者模式.md at main · MuYunyun/blog · GitHub",
+    "count": 9,
+    "uniques": 6
+  },
+  {
     "path": "/MuYunyun/blog/tree/main/React",
     "title": "blog/React at main · MuYunyun/blog · GitHub",
     "count": 8,
@@ -40,12 +46,6 @@
     "title": "blog/代理模式.md at main · MuYunyun/blog · GitHub",
     "count": 8,
     "uniques": 7
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/观察者模式.md at main · MuYunyun/blog · GitHub",
-    "count": 8,
-    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/issues",
