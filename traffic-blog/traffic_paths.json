@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 76,
-    "uniques": 56
+    "count": 73,
+    "uniques": 54
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
@@ -19,15 +19,15 @@
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/策略模式.md at main · MuYunyun/blog · GitHub",
-    "count": 10,
-    "uniques": 8
+    "title": "blog/策略模式.md at main · MuYunyun/blog",
+    "count": 9,
+    "uniques": 7
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/享元模式.md at main · MuYunyun/blog · GitHub",
-    "count": 10,
-    "uniques": 6
+    "count": 9,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/blob/main/React/React_Hooks%E6%B7%B1%E5%85%A5%E7%B3%BB%E5%88%97.md",
@@ -38,25 +38,25 @@
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/代理模式.md at main · MuYunyun/blog · GitHub",
-    "count": 8,
-    "uniques": 7
-  },
-  {
-    "path": "/MuYunyun/blog/tree/main/React",
-    "title": "blog/React at main · MuYunyun/blog · GitHub",
-    "count": 7,
-    "uniques": 7
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/观察者模式.md at main · MuYunyun/blog · GitHub",
     "count": 7,
     "uniques": 6
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E9%80%82%E9%85%8D%E8%80%85%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/适配者模式.md at main · MuYunyun/blog · GitHub",
+    "path": "/MuYunyun/blog/issues/140",
+    "title": "TypeScript extends 精读与实践 · Issue #140 · MuYunyun/blog · GitHub",
     "count": 7,
-    "uniques": 5
+    "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/blog/tree/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F",
+    "title": "blog/BasicSkill/设计模式 at main · MuYunyun/blog · GitHub",
+    "count": 7,
+    "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/blog/issues",
+    "title": "Issues · MuYunyun/blog",
+    "count": 7,
+    "uniques": 2
   }
 ]
