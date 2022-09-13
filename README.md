@@ -255,4 +255,5 @@ Just do it for fun! You will unlock server, linux, nginx skills from this Raspbe
 4. [给树莓派安装 Docker 环境](https://muyunyun.cn/blog/2a97pq3a)
 5. [给树莓派部署 RSSHub](https://muyunyun.cn/blog/wns8hpzc)
 6. [HTTPS 协议配置](https://muyunyun.cn/blog/mx5pvgl1)
-7. [树莓派部署 code-server](https://muyunyun.cn/blog/n45adwng)
+7. [基于树莓派部署 code-server](https://muyunyun.cn/blog/n45adwng)
+7. [基于树莓派部署 filebrowser](https://muyunyun.cn/blog/do5qh9dg)

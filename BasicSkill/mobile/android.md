@@ -12,6 +12,8 @@
 2. 在安卓机蓝牙界面与 Mac 互相配对。
 3. 安卓机中选中文件通过蓝牙上传文件。
 
+> 借助第三方网站: [轻松传](https://easychuan.cn/?mode=standalone)
+
 ### 安卓版本列表
 
 [安卓版本列表](https://zh.m.wikipedia.org/zh-sg/Android%E7%89%88%E6%9C%AC%E5%88%97%E8%A1%A8)
