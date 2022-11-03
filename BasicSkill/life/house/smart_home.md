@@ -78,3 +78,7 @@ abbrlink: 7l6yd69v
 ### link
 
 * [智能家居你只知道小米？这份超简单上手指南，省钱还实用](http://www.yidoutang.com/guide-49050.html)
+
+### 智能家居 Plus
+
+Todo: [用树莓派和米家实现HomeKit智能家居](https://zhuanlan.zhihu.com/p/31328106)
