@@ -269,7 +269,7 @@ React.useMemo((props) => {
 #### useMemo 与 useCallback 的区别
 
 ```js
-useMemo(() => <component />) 等价于 useCallback(<component />)
+useMemo(() => <Component />) 等价于 useCallback(<Component />)
 ```
 
 * useCallback
