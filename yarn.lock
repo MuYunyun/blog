@@ -1262,9 +1262,9 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@giscus/react@^2.2.2":
+"@giscus/react@2.2.2":
   version "2.2.2"
-  resolved "https://registry.npmjs.org/@giscus/react/-/react-2.2.2.tgz#3b06c03bea6965ccbc6d26bd3abe038d91fb4cfc"
+  resolved "https://mirrors.cloud.tencent.com/npm/@giscus%2freact/-/react-2.2.2.tgz#3b06c03bea6965ccbc6d26bd3abe038d91fb4cfc"
   integrity sha512-UXU2pzJEnsjEh36//UlqmWd7j3FJTGL7ijZIaijwbrsERtzkPkRhOkJ7eqRytCOdpcJSji3XX07/5rPGknmm3w==
   dependencies:
     giscus "^1.2.2"
@@ -2898,12 +2898,12 @@ crd-scripts@^1.9.2:
     write "^1.0.3"
     yamljs "^0.3.0"
 
-crd-seed@^1.10.0:
-  version "1.10.0"
-  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.10.0.tgz#12628e63b13174ece1a2f5da2d768d9a6195ebbb"
-  integrity sha512-1O2kgOp61d2+QktUiSPPFpW6B1Nom1vSuaGxojbnOFcmCwyDPQwb1VB1u43Qn0ce5wWSs5RF5RfOLrexdZ/GjQ==
+crd-seed@^1.10.1:
+  version "1.10.1"
+  resolved "https://mirrors.cloud.tencent.com/npm/crd-seed/-/crd-seed-1.10.1.tgz#7743a2166a948cc3d6781b248fc90b4fcebe4890"
+  integrity sha512-+DS6MV9CWB6hAZGlKeFOP6EzlzFAT6bXuZqkfGamG6Dvniw4jGaTay/Gj8bQGnoJTPZgKgXefC4defaJyBEgog==
   dependencies:
-    "@giscus/react" "^2.2.2"
+    "@giscus/react" "2.2.2"
     crd-client-utils "^1.8.2"
     react-router-dom "^6.3.0"
     react-switch "^5.0.1"
