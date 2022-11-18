@@ -5,6 +5,7 @@ abbrlink: iwwepxpg
 - [包下载的前置知识](#包下载的前置知识)
 - [区分几个 package.json 字段](#区分几个-packagejson-字段)
 - [resolutions in package.json](#resolutions-in-packagejson)
+- [安装 puppeteer](#安装-puppeteer)
 
 ### 包下载的前置知识
 
@@ -30,3 +31,11 @@ abbrlink: iwwepxpg
 背景: 在项目中的 package.json 字段里 dependencies 字段有较新版本的 beast-mobile(带主题包), resolutions 指向了较低版本的 beast-mobile(不带主题包)。此时验证项目中包含主题包。
 
 查找 yarn 的 [rfc](https://github.com/yarnpkg/rfcs/blob/master/implemented/0000-selective-versions-resolutions.md#package-designation), resolutions 指定的目录只针对「嵌套」依赖的包版本生效。
+
+### 安装 puppeteer
+
+```js
+npm install puppeteer -g --registry https://registry.npm.taobao.org
+
+yarn global add puppeteer --registry https://registry.npm.taobao.org/
+```

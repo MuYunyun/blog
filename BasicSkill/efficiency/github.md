@@ -43,3 +43,5 @@ sudo vi /etc/hosts
 Q: remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
 
 A: https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to
+
+### install

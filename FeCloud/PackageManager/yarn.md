@@ -11,6 +11,7 @@ abbrlink: bpp6dk6t
   - [同](#同)
   - [异](#异)
 - [Hooks 踩坑](#hooks-踩坑)
+- [查看 yarn 全局安装过的包](#查看-yarn-全局安装过的包)
 
 ### Usage
 
@@ -28,7 +29,6 @@ yarn add xx -D
   * 这个路径也是 yarn 全局包安装的文件目录
 * 2. vim .zshrc
   * 2.1 加上 export NODE_PATH=/Users/mac/.config/yarn/global/node_modules/
-* yarn add puppeteer -g
 
 ### bin
 
@@ -108,3 +108,9 @@ npm link ../beast-mobile-demo/node_modules/react from @msfe/beast-mobile
 另一种方法是在业务项目中配置 [resolutions](https://yarnpkg.com/lang/en/docs/selective-version-resolutions/)
 
 try [yalc](https://github.com/whitecolor/yalc)
+
+### 查看 yarn 全局安装过的包
+
+```js
+yarn global list --depth=0
+```

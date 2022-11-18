@@ -6,6 +6,7 @@ abbrlink: baced56a
   - [npm1: 所有包都采用嵌套结构](#npm1-所有包都采用嵌套结构)
   - [npm3: 引入扁平结构](#npm3-引入扁平结构)
   - [npm5: 扁平结构基础上引入 package-lock.json](#npm5-扁平结构基础上引入-package-lockjson)
+- [查看 npm 全局安装过的包](#查看-npm-全局安装过的包)
 
 ### npm 发展
 
@@ -51,3 +52,9 @@ abbrlink: baced56a
 #### npm5: 扁平结构基础上引入 package-lock.json
 
 加上锁文件, 确保在不同电脑上安装的包的版本号相同。
+
+### 查看 npm 全局安装过的包
+
+```js
+npm list -g --depth=0
+```
