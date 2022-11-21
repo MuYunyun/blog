@@ -62,18 +62,6 @@ This section we will start tralvel in the world of data strcture together! There
 * [Greedy Algorithm](https://muyunyun.cn/blog/pkr9cdeo)
 * [Dynamic Programming](https://muyunyun.cn/blog/wjncoyei)
 
-**Sort Algorithm**
-
-* [Selection Sort](https://muyunyun.cn/blog/opuodfap)
-* [Quick Sort](https://muyunyun.cn/blog/t6c2k7h3)
-* [Merge Sort](https://muyunyun.cn/blog/fuj2lhrd)
-* [Heap Sort](https://muyunyun.cn/blog/fkr4qedq)
-
-算法是一种思想! 以排序算法为例, 最常见的是在数组中使用排序算法, 但是相同的思想也能用于数组对象, 甚至链表中, 比如链表中实现排序的两道题。
-
-1. [147.Insertion Sort List](https://muyunyun.cn/blog/s2fvew15): insert sort in list;
-2. [148.Sort List](https://muyunyun.cn/blog/lnvam2ud): merge sort in list;
-
 </details>
 
 ### Design Pattern
