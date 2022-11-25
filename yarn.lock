@@ -2053,10 +2053,10 @@ crd-prerender-spa-plugin@^0.2.0:
     "@prerenderer/renderer-puppeteer" "^0.2.0"
     html-minifier "^4.0.0"
 
-crd-scripts@^1.10.2:
-  version "1.10.2"
-  resolved "https://mirrors.cloud.tencent.com/npm/crd-scripts/-/crd-scripts-1.10.2.tgz#47a89a88210bc601c2423036c5245039a6b049a7"
-  integrity sha512-pTck6OQng1fiozN76yOGi+1puoSTZz3JQh6Wlt3AsmU4yA8U0iz0onuI9GOPfQ1vY+xHhL+tPelt4WdooX02GA==
+crd-scripts@^1.10.3:
+  version "1.10.3"
+  resolved "https://registry.npmjs.org/crd-scripts/-/crd-scripts-1.10.3.tgz#269038184bf719e76f166733bc4895f6915e29e1"
+  integrity sha512-IZqG4FR+cEQx5bbenDKG70DfE5igtQ7AIZ621qFiZdELJHBMq7HVbdD7MZafk1WB+AEc7sy3bqBMPXhBTKQcHA==
   dependencies:
     "@mdx-js/loader" "^1.6.22"
     "@nuxtjs/friendly-errors-webpack-plugin" "^2.0.2"
@@ -2068,7 +2068,7 @@ crd-scripts@^1.10.2:
     crd-client-utils "^1.8.2"
     crd-generator-sitemap "^1.3.4"
     crd-prerender-spa-plugin "^0.2.0"
-    crd-theme "^1.9.1"
+    crd-theme "^1.10.3"
     crd-utils "^1.5.0"
     css-loader "^0.28.7"
     css-minimizer-webpack-plugin "^1.2.0"
@@ -2104,10 +2104,10 @@ crd-scripts@^1.10.2:
     write "^1.0.3"
     yamljs "^0.3.0"
 
-crd-seed@^1.10.1:
-  version "1.10.1"
-  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.10.1.tgz#7743a2166a948cc3d6781b248fc90b4fcebe4890"
-  integrity sha512-+DS6MV9CWB6hAZGlKeFOP6EzlzFAT6bXuZqkfGamG6Dvniw4jGaTay/Gj8bQGnoJTPZgKgXefC4defaJyBEgog==
+crd-seed@^1.10.3:
+  version "1.10.3"
+  resolved "https://registry.npmjs.org/crd-seed/-/crd-seed-1.10.3.tgz#de48694434880b2ff768371193dbbc2b854993a5"
+  integrity sha512-8je02sE9O4pkKzwyRDfJj9qLtFwcOjpbb+iKb6dcRqIeO+PcpGK7xMvMF65Kl7Xs5HPviFskZtae980bo/hbHw==
   dependencies:
     "@giscus/react" "2.2.2"
     crd-client-utils "^1.8.2"
@@ -2119,10 +2119,10 @@ crd-templates@^1.10.0:
   resolved "https://registry.npmjs.org/crd-templates/-/crd-templates-1.10.0.tgz#35dc68a32d5eb04ff03d6b2a972d2b5febdb5c0b"
   integrity sha512-V3ITJVaMrfcN+BcbVauPqeZWCVkSN3G+iAPyquIuE71CKe/l4jg5JfBAGD4m9zjOgjYlMdOiecqdejYJLvKVmg==
 
-crd-theme@^1.9.1:
-  version "1.9.1"
-  resolved "https://registry.npmjs.org/crd-theme/-/crd-theme-1.9.1.tgz#0f7f7d85625f2dc287a3846a6d89168720050119"
-  integrity sha512-uc+AFY21D3d48qQdLof0xot5d1sosX3sIVGktL8mtiJdhFr/WjlIVbGnnVoFi+yjZzmctaKJblpbdzOXKGV5ag==
+crd-theme@^1.10.3:
+  version "1.10.3"
+  resolved "https://registry.npmjs.org/crd-theme/-/crd-theme-1.10.3.tgz#21f8c003e95a211e10b9e2599630835c618a4b9d"
+  integrity sha512-x6fvUpH3aZ5yqVcEbw2MoAPe3hnPPN97d4jwwE4HEJFeWTeBpzdZ3KL4a3a0CSg2KjZIzchZzTEHBMqpsE2Jog==
   dependencies:
     "@mdx-js/react" "^1.6.22"
     classnames "^2.2.6"
@@ -2142,16 +2142,16 @@ crd-utils@^1.5.0:
   dependencies:
     js-yaml "^3.14.0"
 
-create-react-doc@^1.10.2:
-  version "1.10.2"
-  resolved "https://mirrors.cloud.tencent.com/npm/create-react-doc/-/create-react-doc-1.10.2.tgz#b274f2e1e8575525a715945f3c5cfd5f52f324fb"
-  integrity sha512-nhZeHIIYQ0ya0bg7YgznecYBJcJ0BSicehKJ43961hLMrKEa6ICgg4fkNGT7xKNKdfqsHX7w4KM9c9Z0LSXTXw==
+create-react-doc@^1.10.3:
+  version "1.10.3"
+  resolved "https://registry.npmjs.org/create-react-doc/-/create-react-doc-1.10.3.tgz#15c2fe7b0e01b584865fb2509dfaab41f9202af3"
+  integrity sha512-CuPtyMtxRskEWbb1QctdV9iVjvluvusQdIhkbWBn+J7/KTAqry+aufE4Ab2yCnF4JUXpGTH/FEOb2RQpd5dm8g==
   dependencies:
     "@inquirer/input" "^0.0.13-alpha.0"
     commander "^2.12.2"
-    crd-scripts "^1.10.2"
+    crd-scripts "^1.10.3"
     crd-templates "^1.10.0"
-    crd-theme "^1.9.1"
+    crd-theme "^1.10.3"
     fs-extra "^5.0.0"
 
 cross-spawn@^6.0.0, cross-spawn@^6.0.5:
