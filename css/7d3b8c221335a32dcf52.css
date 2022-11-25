@@ -9,7 +9,6 @@
 .markdown-3RaPQ {
   padding: 0 40px 20px 40px;
   margin: 0 auto;
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
   font-size: 14px;
   line-height: 1.5;
   word-wrap: break-word;
@@ -22,7 +21,6 @@
   margin-bottom: 0 !important;
 }
 .markdown-3RaPQ code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   word-wrap: normal;
 }
 .markdown-3RaPQ pre {
@@ -362,12 +360,8 @@
   margin-bottom: 20px;
   margin-top: 8px;
   padding-left: 20px;
-  font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-body {
-  font-family: Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
-}
 body,
 html {
   position: relative;
@@ -411,6 +405,7 @@ a:hover {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  font-weight: 600;
 }
 .menu-item-74Aq4 {
   white-space: nowrap;
@@ -788,7 +783,6 @@ a:hover {
   margin-bottom: 20px;
   margin-top: 8px;
   padding-left: 20px;
-  font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 .darkMode-1k_0o {
   filter: invert(100%) hue-rotate(180deg);
@@ -841,7 +835,6 @@ a:hover {
       flex-direction: column;
 }
 .tags-title-rCbZA {
-  font-family: Palatino, Garamond, Times, Georgia, serif;
   font-size: 24px;
   font-weight: 400;
   text-align: center;
@@ -982,7 +975,7 @@ li {
 }
 
 body {
-  font-family: Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: cursive, sans-serif;
 }
 body,
 html {
