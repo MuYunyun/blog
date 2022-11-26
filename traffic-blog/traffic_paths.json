@@ -2,7 +2,7 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 95,
+    "count": 91,
     "uniques": 52
   },
   {
@@ -26,7 +26,13 @@
   {
     "path": "/MuYunyun/blog/blob/main/React/Component_Design/%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86%E5%8F%97%E6%8E%A7%E4%B8%8E%E9%9D%9E%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6.md",
     "title": "blog/重新认识受控与非受控组件.md at main · MuYunyun/blog · GitHub",
-    "count": 13,
+    "count": 11,
+    "uniques": 7
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/React/%E6%B7%B1%E5%85%A5Fiber%E6%9E%B6%E6%9E%84.md",
+    "title": "blog/深入Fiber架构.md at main · MuYunyun/blog · GitHub",
+    "count": 8,
     "uniques": 8
   },
   {
@@ -52,11 +58,5 @@
     "title": "Actions · MuYunyun/blog",
     "count": 8,
     "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/观察者模式.md at main · MuYunyun/blog · GitHub",
-    "count": 7,
-    "uniques": 7
   }
 ]
