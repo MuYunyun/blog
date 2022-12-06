@@ -20,13 +20,13 @@ abbrlink: 4ocu6ahz
 
 #### -webkit-overflow-scrolling
 
-[-webkit-overflow-scrolling](http://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling) 属性，一般配合 overflow: 'auto' 一起使用，增加在 IOS 上增加滑动的灵敏度。
+[-webkit-overflow-scrolling](http://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling) 属性，一般配合 overflow: 'touch' 一起使用，增加在 IOS 上增加滑动的灵敏度。
 
-在特定场景，比如 PullToRefresh 的下拉场景，`-webkit-overflow-scrolling` 属性要设置为 'auto' 以避免 iOS 下滑刷新时出现的卡顿效果。
+不过在特定场景，比如 PullToRefresh 的下拉场景，`-webkit-overflow-scrolling` 属性要设置为 'auto' 降低滚动的灵敏性，从而确保滑动被 touch 事件监管，以避免 iOS 下滑刷新时出现的卡顿效果。
 
 #### use-select: none
 
-阻止触摸选中文字
+阻止触摸选中文字。
 
 ### scrollTo
 
