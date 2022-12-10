@@ -12,7 +12,7 @@
 2. 在安卓机蓝牙界面与 Mac 互相配对。
 3. 安卓机中选中文件通过蓝牙上传文件。
 
-> 借助第三方网站: [轻松传](https://easychuan.cn/?mode=standalone)
+> 借助第三方网站(敏感消息不建议使用): [轻松传](https://easychuan.cn/?mode=standalone)
 
 ### 安卓版本列表
 
