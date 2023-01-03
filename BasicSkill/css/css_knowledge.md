@@ -11,6 +11,7 @@ abbrlink: v9b53vi6
 - [object-fit](#object-fit)
 - [style 里的样式过长该怎么办](#style-里的样式过长该怎么办)
 - [如何覆盖伪元素的样式(可作面试题)](#如何覆盖伪元素的样式可作面试题)
+- [CSS 中哪些元素可以创建层叠上下文(stacking context)?](#css-中哪些元素可以创建层叠上下文stacking-context)
 
 ### css 是什么
 
@@ -86,3 +87,9 @@ It's a css property that can be eaqual to the background-size, it has five types
 结论：经实践，需要通过 className 定位到伪元素，来书写相关样式以达到覆盖伪元素的目的。
 
 > 无法使用 style 的方式来实现。
+
+### CSS 中哪些元素可以创建层叠上下文(stacking context)?
+
+- z-index + position
+- opacity，[案例](https://codepen.io/devui-design/pen/qRLxEd)
+- transform
