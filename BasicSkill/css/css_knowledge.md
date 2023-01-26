@@ -12,6 +12,7 @@ abbrlink: v9b53vi6
 - [style 里的样式过长该怎么办](#style-里的样式过长该怎么办)
 - [如何覆盖伪元素的样式(可作面试题)](#如何覆盖伪元素的样式可作面试题)
 - [CSS 中哪些元素可以创建层叠上下文(stacking context)?](#css-中哪些元素可以创建层叠上下文stacking-context)
+- [CSS 权重值计算规则](#css-权重值计算规则)
 
 ### css 是什么
 
@@ -93,3 +94,14 @@ It's a css property that can be eaqual to the background-size, it has five types
 - z-index + position
 - opacity，[案例](https://codepen.io/devui-design/pen/qRLxEd)
 - transform
+
+### CSS 权重值计算规则
+
+【待进一步完善】
+
+* 内联样式，如: style="..."，权值为1000。
+* ID选择器，如：#content，权值为0100。
+* 类，伪类、属性选择器，如.content，权值为0010。
+* 类型选择器、伪元素选择器，如div p，权值为0001。
+* 通配符、子选择器、相邻选择器等。如* > +，权值为0000。
+* 继承的样式没有权值
