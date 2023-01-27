@@ -1,18 +1,13 @@
 [
   {
     "referrer": "github.com",
-    "count": 48,
-    "uniques": 39
+    "count": 46,
+    "uniques": 37
   },
   {
     "referrer": "link.juejin.cn",
-    "count": 27,
-    "uniques": 13
-  },
-  {
-    "referrer": "qwraojksdg.feishu.cn",
-    "count": 13,
-    "uniques": 1
+    "count": 23,
+    "uniques": 10
   },
   {
     "referrer": "yuque.com",
@@ -20,23 +15,18 @@
     "uniques": 1
   },
   {
+    "referrer": "qwraojksdg.feishu.cn",
+    "count": 10,
+    "uniques": 1
+  },
+  {
     "referrer": "Google",
-    "count": 8,
-    "uniques": 7
+    "count": 7,
+    "uniques": 6
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 7,
-    "uniques": 4
-  },
-  {
-    "referrer": "link.zhihu.com",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "referrer": "github.trello.services",
-    "count": 1,
-    "uniques": 1
+    "count": 5,
+    "uniques": 3
   }
 ]

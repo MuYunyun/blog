@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 59,
-    "uniques": 46
+    "count": 64,
+    "uniques": 49
   },
   {
     "path": "/MuYunyun/blog/tree/main/BasicSkill",
@@ -32,20 +32,8 @@
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/单例模式.md at main · MuYunyun/blog · GitHub",
-    "count": 4,
-    "uniques": 4
-  },
-  {
-    "path": "/MuYunyun/blog/issues/84",
-    "title": "SEO 在 SPA 站点中的实践 · Issue #84 · MuYunyun/blog · GitHub",
-    "count": 4,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/tree/main/FeCloud",
-    "title": "blog/FeCloud at main · MuYunyun/blog · GitHub",
-    "count": 4,
-    "uniques": 2
+    "count": 3,
+    "uniques": 3
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E9%80%82%E9%85%8D%E8%80%85%E6%A8%A1%E5%BC%8F.md",
@@ -58,5 +46,17 @@
     "title": "blog/深入Fiber架构.md at main · MuYunyun/blog · GitHub",
     "count": 3,
     "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/观察者模式.md at main · MuYunyun/blog · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/issues/210",
+    "title": "添加我阅读过的书/书籍推荐章节 · Issue #210 · MuYunyun/blog",
+    "count": 2,
+    "uniques": 2
   }
 ]
