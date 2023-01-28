@@ -7,14 +7,7 @@ abbrlink: z5dbvyod
 ![clones](https://raw.githubusercontent.com/MuYunyun/blog/traffic/traffic-blog/clones.svg)
 ![clones](https://raw.githubusercontent.com/MuYunyun/blog/traffic/traffic-blog/clones_per_week.svg)
 
-This is my personal blog created with <a href="https://github.com/MuYunyun/create-react-doc" target="_blank">create-react-doc</a> where to write and record some thought daily.
-
-It's very thankful to point any wrong place from these articles [there](https://github.com/MuYunyun/blog/issues/new) as well. The Articles licensed under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en) Agreement.
-
-<h2>Sponsor</h2>
-
-*  If you like this project, welcome watch or star✨.
-*  Or you can [buy me a ☕️](https://muyunyun.cn/sponsor/).
+This is my personal blog created with <a href="https://github.com/MuYunyun/create-react-doc" target="_blank">create-react-doc</a> where to write and record some thought daily. It's very thankful to point any wrong place [there](https://github.com/MuYunyun/blog/issues/new).
 
 <h2>Outline</h2>
 
@@ -34,6 +27,8 @@ It's very thankful to point any wrong place from these articles [there](https://
   - [FE CLOUD](#fe-cloud-1)
   - [Project Framework](#project-framework)
 - [RaspberryPi](#raspberrypi)
+- [Sponsor](#sponsor)
+- [Thanks](#thanks)
 
 ### Data Structure
 
@@ -245,3 +240,12 @@ Just do it for fun! You will unlock server, linux, nginx skills from this Raspbe
 6. [HTTPS 协议配置](https://muyunyun.cn/blog/mx5pvgl1)
 7. [基于树莓派部署 code-server](https://muyunyun.cn/blog/n45adwng)
 7. [基于树莓派部署 filebrowser](https://muyunyun.cn/blog/do5qh9dg)
+
+### Sponsor
+
+*  If you like this project, welcome watch or star✨.
+*  Or you can [buy me a ☕️](https://muyunyun.cn/sponsor/).
+
+### Thanks
+
+Thank my dear [rabbit🐰](https://github.com/DaphneChang) for her support.

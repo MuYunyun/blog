@@ -4,7 +4,9 @@ abbrlink: oe3id29b
 
 ### kindle 支持什么格式
 
-Kindle格式 (.mobi, .azw) – 推荐、PDF (.pdf)、Microsoft Word (.doc, .docx)、HTML (.html, .htm)、RTF (.rtf)、Text (.txt)、JPEG (.jpeg, .jpg)、GIF (.gif)、PNG (.png)
+Kindle 格式
+* 推荐：.mobi, .azw
+* 其它支持文件的格式：PDF (.pdf)、Microsoft Word (.doc, .docx)、HTML (.html, .htm)、RTF (.rtf)、Text (.txt)、JPEG (.jpeg, .jpg)、GIF (.gif)、PNG (.png)
 
 ### Kindle 推送电子书详细步骤
 
@@ -13,7 +15,7 @@ Kindle格式 (.mobi, .azw) – 推荐、PDF (.pdf)、Microsoft Word (.doc, .docx
 
 ![](http://with.muyunyun.cn/64ddf19d3eb4671c467d63f64e21eeb4.jpg-400)
 
-3. 点击「Kindle电子书 - 我的内容和设备 - 首选项」，在底部进行添加认可的电子邮箱。
+3. 点击「Kindle 电子书 - 我的内容和设备 - 首选项」，在底部进行添加认可的电子邮箱。
 
 ![](http://with.muyunyun.cn/f2127a243856e8080f036f18eddb142c.jpg-400)
 
