@@ -4,7 +4,9 @@ abbrlink: k1q2fiqi
 
 - [带着问题去阅读](#带着问题去阅读)
 - [安装](#安装)
-- [相关仓库](#相关仓库)
+- [Cargo](#cargo)
+- [语言比较](#语言比较)
+- [相关仓库\\网站](#相关仓库网站)
 - [参考资料](#参考资料)
 
 ### 带着问题去阅读
@@ -12,8 +14,13 @@ abbrlink: k1q2fiqi
 Rust 几个高频词汇
 
 1. 什么是所有权？
+
+
+
 2. 什么是代数数据类型？
-3. 什么是卫生宏？
+3. 什么是宏，什么是卫生宏？
+4. 什么是 trait(特征)?
+5. 什么是隐藏机制？
 
 ### 安装
 
@@ -41,9 +48,41 @@ rustup self uninstall
 rustup doc
 ```
 
-### 相关仓库
+### Cargo
 
-[wasm-pack](https://rustwasm.github.io/wasm-pack/): 使用其可以快速实现 Rust -> wasm -> npm 包的编译打包。
+Cargo 是 Rust 项目中的构建系统与包依赖管理工具。
+
+```
+// 创建一个新 Rust 项目
+cargo new xx
+
+// 检查是否可以编译通过
+cargo check
+
+// 编译项目，构建产物位于 target/debug 目录下
+cargo build
+// release 模式用更长的编译时间，以优化运行时的性能。构建产物位于 target/release 目录下
+cargo build --release
+
+// 编译并运行项目
+cargo run
+// 运行 target/release 下的二进制文件
+cargo run --release
+
+// 打开文档，查看依赖包文档
+cargo doc --open
+```
+
+### 语言比较
+
+1. Rust 程序需要进行预编译生成一份可执行的二进制文件。JavaScript/Python 不需要。
+
+### 相关仓库\网站
+
+* [rustfmt](https://github.com/rust-lang/rustfmt): Format Rust code
+* [wasm-pack](https://rustwasm.github.io/wasm-pack/): 使用其可以快速实现 Rust -> wasm -> npm 包的编译打包。
+* [rust-analyzer](https://github.com/rust-lang/rust-analyzer): 编辑器加强与 Rust 相关的能力。
+* [crates.io](https://crates.io/) Rust 开源 Rust 项目网站（类似 JavaScript 的 npm 社区）。
 
 ### 参考资料
 
