@@ -6,6 +6,9 @@ abbrlink: k1q2fiqi
 - [安装](#安装)
 - [Cargo](#cargo)
 - [笔记](#笔记)
+  - [常量、变量](#常量变量)
+  - [数据类型](#数据类型)
+  - [控制流](#控制流)
 - [语言比较](#语言比较)
 - [相关仓库\\网站](#相关仓库网站)
 - [参考资料](#参考资料)
@@ -77,6 +80,8 @@ cargo doc --open
 
 ### 笔记
 
+#### 常量、变量
+
 常量
 * 使用 const；
 * 需要显示标注值类型，比如 `const MAX_POINTS: u32 = 100_000`；
@@ -98,6 +103,8 @@ fn main() {
     spaces = spaces.len();
 }
 ```
+
+#### 数据类型
 
 数据类型
 * `标量类型（scalar）`
@@ -135,6 +142,38 @@ let (x, y, z) = tup;
     * 动态数组（vector）
     * 静态数组
   * 函数
+    * 使用 -> 来使用函数返回值
+
+```rust
+fn main() {
+    let x = plus_one(5);
+    println!("The value of x is: {}", x);
+}
+
+fn plus_one(x: i32) -> i32 {
+    // 以下语句不加分号作为表达式表示函数执行返回的值。
+    x + 1
+}
+```
+
+#### 控制流
+
+1. 在 Rust 中，if、loop 均为表达式。因此可以将表达式返回的值作为结果赋值给变量，比如：
+
+```Rust
+fn main() {
+    let condition = false;
+    // 执行代码，此处 x 被赋值为 6。
+    let x = if condition {
+        5
+    } else {
+        6
+    };
+    println!("The value of x is: {}", x);
+}
+```
+
+2. Rust 中支持 loop、while、for 循环语法，Todo 补充使用场景。
 
 ### 语言比较
 

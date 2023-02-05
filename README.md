@@ -239,12 +239,13 @@ Just do it for fun! You will unlock server, linux, nginx skills from this Raspbe
 5. [给树莓派部署 RSSHub](https://muyunyun.cn/blog/wns8hpzc)
 6. [HTTPS 协议配置](https://muyunyun.cn/blog/mx5pvgl1)
 7. [基于树莓派部署 code-server](https://muyunyun.cn/blog/n45adwng)
-7. [基于树莓派部署 filebrowser](https://muyunyun.cn/blog/do5qh9dg)
+8. [基于树莓派部署 filebrowser](https://muyunyun.cn/blog/do5qh9dg)
 
 ### Sponsor
 
-*  If you like this project, welcome watch or star✨.
-*  Or you can [buy me a ☕️](https://muyunyun.cn/sponsor/).
+If you like this project, welcome watch or star✨. Or you can buy me a cup of coffee :)
+
+<a href="https://muyunyun.cn/sponsor"><img src='https://camo.githubusercontent.com/45ce6667a35b63fd6a1ba6978d030a7f52ff5b1b262c5c8aa3ece29afc469ac8/68747470733a2f2f63646e2e6275796d6561636f666665652e636f6d2f627574746f6e732f76322f64656661756c742d7265642e706e67' width='200' /></a>
 
 ### Thanks
 
