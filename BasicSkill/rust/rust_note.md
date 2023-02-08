@@ -10,6 +10,7 @@ abbrlink: 9oeefka1
 - [所有权](#所有权)
   - [所有权规则](#所有权规则)
   - [变量与数据的交互方式](#变量与数据的交互方式)
+  - [引用](#引用)
 
 
 ### 基础语法
@@ -124,7 +125,7 @@ fn main() {
 
 ### 所有权
 
-1. 什么是借用？
+1. 什么是借用，解决什么场景？
 2. 什么是切片？
 3. Rust 在内存中布局方式是怎么样的？
 4. 所有权的工作原理是？
@@ -174,3 +175,49 @@ fn main() {
     println!("s1 = {}, s2 = {}", s1, s2);
 }
 ```
+
+#### 引用
+
+参数传递给函数也会触发移动或者复制。
+
+```rust
+fn main() {
+    let s1 = String::from("hello");
+    // ① s1 变量对应的堆内存所有权移动至 take 函数中
+    take(s1);
+    // ③ s1 变量不再含有有效引用，此处编译报错
+    println!("s1 is {}", s1);
+}
+
+fn take(s: String) {
+    println!("s is {}", s);
+// ② 随着 take 函数执行完后，s 变量对应的堆内存被释放。
+}
+```
+
+想要上述案例在 ③ 处访问 s1 仍然可以生效，可作如下修改：
+
+```rust
+fn main() {
+    let s1 = String::from("hello");
+    let s1 = take_and_gives_back(s1);
+    println!("s1 is {}", s1);
+}
+
+fn take_and_gives_back(s: String) -> String {
+    s
+}
+```
+
+但是如需返回其它参数，每次都要返回所有权，就不是很便利了
+
+```rust
+
+```
+
+* `借用（borrowing）`
+
+
+
+* 可变引用
+* 垂悬引用（Dangling References）
