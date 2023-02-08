@@ -212,8 +212,20 @@ fn take_and_gives_back(s: String) -> String {
 但是如需返回其它参数，每次都要返回所有权，就不是很便利了
 
 ```rust
+fn main() {
+    let s1 = String::from("hello");
+    let (s1, len) = take_and_gives_back(s1);
+    println!("s1 is {}, len is {}", s1, len);
+}
 
+fn take_and_gives_back(s: String) -> (String, usize) {
+    let length = s.len();
+
+    (s, length)
+}
 ```
+
+因此 Rust 提供了借用的能力。
 
 * `借用（borrowing）`
 
