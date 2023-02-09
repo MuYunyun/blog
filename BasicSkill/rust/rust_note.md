@@ -220,7 +220,7 @@ fn main() {
 
 fn take_and_gives_back(s: String) -> (String, usize) {
     let length = s.len();
-
+    // 此处返回 s 变量，以归还所有权
     (s, length)
 }
 ```
@@ -229,7 +229,45 @@ fn take_and_gives_back(s: String) -> (String, usize) {
 
 * `借用（borrowing）`
 
+```rust
+fn main() {
+    let s1 = String::from("hello");
+    let len = take_and_gives_back(&s1);
+    println!("s1 is {}, len is {}", s1, len);
+}
 
+fn take_and_gives_back(s: &String) -> usize {
+    let length = s.len();
+
+    length
+}
+```
 
 * 可变引用
+
+```rust
+fn main() {
+    let mut s1 = String::from("hello");
+    change(&mut s1);
+}
+
+fn change(s: &mut String) {
+    s.push_str(", world.");
+    println!("s1 is {}", s);
+}
+```
+
 * 垂悬引用（Dangling References）
+  * 这是写 Rust 代码时容易碰到的错误，表示指针指向的原有内存地址对应的内存空间已经被释放或者已经另作它用。
+
+```rust
+fn main() {
+    let reference_to_nothing = dangle();
+    println!("reference_to_nothing is {}", reference_to_nothing);
+}
+
+fn dangle() -> &String {
+    let s = String::from("hello");
+    &s
+}
+```
