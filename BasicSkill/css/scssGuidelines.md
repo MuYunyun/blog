@@ -129,6 +129,10 @@ $length: $value + 1px
 }
 ```
 
+### 逻辑表达式（Operator）
+
+[operators](https://sass-lang.com/documentation/operators)
+
 ### 参考文献
 
 * [sassguidelines](https://sass-guidelin.es/)
