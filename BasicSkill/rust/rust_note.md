@@ -131,6 +131,9 @@ fn main() {
 3. Rust 在内存中布局方式是怎么样的？
 4. 所有权的工作原理是？
 
+> ①. 借用、切片是两种不持有所有权的数据类型。
+> ②. 所有权、借用、切片的概念是 Rust 可以在编译时保障内存安全的关键所在。
+
 #### 所有权规则
 
 1. Rust 中的每一个值都有一个对应的变量作为它的所有者。
@@ -274,3 +277,59 @@ fn dangle() -> &String {
 ```
 
 #### 切片
+
+切片允许我们引用集合中某一段连续的元素序列，而不是整个集合。
+
+```rust
+fn main() {
+    let mut word = String::from("Hello World");
+    let first_world_result = first_world(&word);
+    word.clear();
+
+    // 背景一：在调用 word.clear() 后，first_world_result 的结果仍然会是 5，
+    // 但从语义上调用 word.clear() 后得到的第一个单词的长度应该是要发生变化的，
+    // 有没有办法保证 first_world_result 结果的实时性？
+    println!("The first word is {}", first_world_result);
+}
+
+// 该函数的作用是返回第一个单词的长度。
+fn first_world(s: &String) -> usize {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return i;
+        }
+    }
+
+    s.len()
+}
+```
+
+基于背景一，使用切片进行优化。
+
+```rust
+fn main() {
+    let mut word = String::from("Hello World");
+    let first_world_result = first_world(&word);
+    // ❎ 标注二：调用 clear() 表示变量 word 引用可变，与标注一矛盾，因而此处 Rust 编译无法通过。
+    word.clear();
+    println!("The first word is {}", first_world_result);
+}
+
+fn first_world(s: &String) -> &str {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            // 标注一：
+            // ① 切片表示引用不可变。
+            // ② 字符串字面量也是切片。
+            return &s[..i];
+        }
+    }
+
+    // 同标注一
+    &s[..]
+}
+```
