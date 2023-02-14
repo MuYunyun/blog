@@ -13,6 +13,8 @@ abbrlink: 9oeefka1
   - [引用](#引用)
   - [切片](#切片)
 - [结构体](#结构体)
+  - [结构体类型](#结构体类型)
+  - [【标题待定】案例](#标题待定案例)
 
 
 ### 基础语法
@@ -337,7 +339,49 @@ fn first_world(s: &String) -> &str {
 
 ### 结构体
 
-结构体是一种自定义数据类型。
+在 Rust 中，结构体 **struct** 是一种自定义数据类型（对应 JavaScript 中的 Class）。
 
 1. 元组与结构体之间的异同是，为什么要区分元组与结构体？
 2. 如何定义方法和关联函数？
+
+#### 结构体类型
+
+* 一般结构体
+* 元祖结构体
+
+```rust
+struct Color(i32, i32, i32);
+struct Point(i32, i32, i32);
+
+let black = Color(0, 0, 0);
+let origin = Point(0, 0, 0);
+```
+
+* 空结构体
+
+#### 【标题待定】案例
+
+如何从现有实例中复用部分相同的字段
+
+```Rust
+// 补充双点号 .. 的用法，及与 JavaScript 扩展运算符的异同。
+```
+
+调试代码时，通常需要打印值来助于调试，如何打印结构体呢？
+
+```Rust
+// ① 添加注解来派生 Debug trait
+#[derive(Debug)]
+struct User {
+    age: u32,
+}
+
+fn main() {
+    let user1 = User {
+        age: 10
+    };
+
+    // ② 在花括号 { } 中加入 :? 来告知 println! 当前的结构体需要使用名为 Debug 的格式化输出。
+    println!("demo is {:?}", user1);
+}
+```
