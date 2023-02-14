@@ -2,20 +2,20 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 85,
-    "uniques": 59
+    "count": 75,
+    "uniques": 53
   },
   {
     "path": "/MuYunyun/blog/tree/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F",
     "title": "blog/BasicSkill/设计模式 at main · MuYunyun/blog · GitHub",
-    "count": 16,
-    "uniques": 6
+    "count": 14,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/单例模式.md at main · MuYunyun/blog · GitHub",
-    "count": 11,
-    "uniques": 10
+    "count": 10,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/blog/blob/main/React/%E6%B7%B1%E5%85%A5Fiber%E6%9E%B6%E6%9E%84.md",
@@ -32,25 +32,7 @@
   {
     "path": "/MuYunyun/blog/tree/main/BasicSkill",
     "title": "blog/BasicSkill at main · MuYunyun/blog · GitHub",
-    "count": 8,
-    "uniques": 5
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/策略模式.md at main · MuYunyun/blog · GitHub",
     "count": 7,
-    "uniques": 5
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%B8%AD%E4%BB%8B%E8%80%85%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/中介者模式.md at main · MuYunyun/blog · GitHub",
-    "count": 6,
-    "uniques": 5
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/状态模式.md at main · MuYunyun/blog · GitHub",
-    "count": 6,
     "uniques": 4
   },
   {
@@ -58,5 +40,23 @@
     "title": "blog/ssh.md at da993182c4ca24fc12c48384eeff410a50d7f909 · MuYunyun/blog",
     "count": 6,
     "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/策略模式.md at main · MuYunyun/blog · GitHub",
+    "count": 5,
+    "uniques": 5
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%81%8C%E8%B4%A3%E9%93%BE%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/职责链模式.md at main · MuYunyun/blog · GitHub",
+    "count": 5,
+    "uniques": 5
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%B8%AD%E4%BB%8B%E8%80%85%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/中介者模式.md at main · MuYunyun/blog · GitHub",
+    "count": 5,
+    "uniques": 4
   }
 ]
