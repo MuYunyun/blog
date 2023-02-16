@@ -14,7 +14,9 @@ abbrlink: 9oeefka1
   - [切片](#切片)
 - [结构体](#结构体)
   - [结构体类型](#结构体类型)
-  - [【标题待定】案例](#标题待定案例)
+  - [结构体使用案例](#结构体使用案例)
+  - [方法](#方法)
+- [枚举](#枚举)
 
 
 ### 基础语法
@@ -359,13 +361,7 @@ let origin = Point(0, 0, 0);
 
 * 空结构体
 
-#### 【标题待定】案例
-
-如何从现有实例中复用部分相同的字段
-
-```Rust
-// 补充双点号 .. 的用法，及与 JavaScript 扩展运算符的异同。
-```
+#### 结构体使用案例
 
 调试代码时，通常需要打印值来助于调试，如何打印结构体呢？
 
@@ -385,3 +381,58 @@ fn main() {
     println!("demo is {:?}", user1);
 }
 ```
+
+如何从现有实例中复用部分相同的字段。使用双点号 **..** 可以复用已有的实例值。
+
+```Rust
+#[derive(Debug)]
+struct User {
+    age: u32,
+    level: u32
+}
+
+fn main() {
+    let user1 = User {
+        age: 10,
+        level: 2
+    };
+
+    let user2 = User {
+        age: 11,
+        ..user1
+    };
+
+    // demo is User { age: 11, level: 2 }
+    println!("demo is {:?}", user2);
+}
+```
+
+#### 方法
+
+方法可以给结构体指定行为。
+
+```Rust
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32
+}
+
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+}
+
+fn main() {
+    let rectl = Rectangle { width: 30, height: 30 };
+    println!("rectl is {:?}", rectl.area());
+}
+```
+
+### 枚举
+
+* 常见的枚举类型：Option
+* if let
+
+> **枚举**与**结构体**是创建自定义类型的两种方法。
