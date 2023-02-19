@@ -17,6 +17,7 @@ abbrlink: 9oeefka1
   - [结构体使用案例](#结构体使用案例)
   - [方法](#方法)
 - [枚举](#枚举)
+  - [定义枚举](#定义枚举)
 
 
 ### 基础语法
@@ -348,7 +349,15 @@ fn first_world(s: &String) -> &str {
 
 #### 结构体类型
 
-* 一般结构体
+* 结构体
+
+```rust
+struct MoveMessage {
+    x: i32,
+    y: i32,
+}
+```
+
 * 元祖结构体
 
 ```rust
@@ -436,3 +445,32 @@ fn main() {
 * if let
 
 > **枚举**与**结构体**是创建自定义类型的两种方法。
+
+#### 定义枚举
+
+```rust
+#[derive(Debug)]
+// 定义枚举
+enum IpAddr {
+    // ① 使用枚举代替结构体优势一：每个枚举变体可以拥有不同类型和数量的关系关系。
+    V4(u8, u8, u8, u8),
+    V6(String),
+}
+
+// Todo: 后续考虑使用定义 print 方法体，来优化代替 main 函数中的打印。
+// impl IpAddr {
+//     fn print(&self) {
+//         // 方法体可以在这里定义
+//     }
+// }
+
+fn main() {
+    // ② 使用枚举代替结构体优势二：枚举允许直接将其关联的数据嵌入枚举变体内。
+    let home = IpAddr::V4(127, 0, 0, 1);
+    let loopback = IpAddr::V6(String::from("::1"));
+
+    println!("home is {:?}", home);
+    println!("loopback is {:?}", loopback);
+}
+
+```
