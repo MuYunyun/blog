@@ -18,6 +18,8 @@ abbrlink: 9oeefka1
   - [方法](#方法)
 - [枚举](#枚举)
   - [定义枚举](#定义枚举)
+  - [定义方法](#定义方法)
+  - [常见的枚举类似：Option](#常见的枚举类似option)
 
 
 ### 基础语法
@@ -457,13 +459,6 @@ enum IpAddr {
     V6(String),
 }
 
-// Todo: 后续考虑使用定义 print 方法体，来优化代替 main 函数中的打印。
-// impl IpAddr {
-//     fn print(&self) {
-//         // 方法体可以在这里定义
-//     }
-// }
-
 fn main() {
     // ② 使用枚举代替结构体优势二：枚举允许直接将其关联的数据嵌入枚举变体内。
     let home = IpAddr::V4(127, 0, 0, 1);
@@ -472,5 +467,37 @@ fn main() {
     println!("home is {:?}", home);
     println!("loopback is {:?}", loopback);
 }
-
 ```
+
+#### 定义方法
+
+枚举与结构体一样，可以使用 impl 来定义方法
+
+```rust
+#[derive(Debug)]
+enum IpAddr {
+    V4(u8, u8, u8, u8),
+    V6(String),
+}
+
+// 枚举与结构体一样，可以使用 impl 来定义方法。
+impl IpAddr {
+    fn print(&self) {
+        // 此处 &self 打印的是 ②、③ 进行赋予的值。
+        println!("&self is {:?}", &self);
+    }
+}
+
+fn main() {
+    // ②
+    let home = IpAddr::V4(127, 0, 0, 1);
+    // ③
+    let loopback = IpAddr::V6(String::from("::1"));
+
+    home.print();
+    loopback.print();
+}
+```
+
+#### 常见的枚举类似：Option
+

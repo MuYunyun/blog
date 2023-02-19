@@ -76,8 +76,8 @@ cargo doc --open
 
 ### 语言比较
 
-1. Rust 程序需要进行预编译生成一份可执行的二进制文件。JavaScript/Python 不需要。
-2. Rust 区分语句与表达式。
+1. Rust 程序`需要进行预编译`生成一份可执行的二进制文件。JavaScript/Python 不需要。
+2. Rust `区分语句与表达式`。
   a. 语句：Rust 中无返回结果。
   b. 表达式：Rust 中有返回结果。
 
@@ -85,6 +85,8 @@ cargo doc --open
 // Rust 中，let y = 6 无返回结果，因此将其赋值给左侧变量 x 会抛错。
 let x = (let y = 6);
 ```
+
+3. Rust 中不支持 Null 类型。
 
 ### 相关仓库\网站
 
