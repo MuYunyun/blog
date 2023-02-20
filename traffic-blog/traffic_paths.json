@@ -2,14 +2,14 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 96,
-    "uniques": 63
+    "count": 90,
+    "uniques": 59
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/单例模式.md at main · MuYunyun/blog · GitHub",
-    "count": 19,
-    "uniques": 18
+    "count": 18,
+    "uniques": 17
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85%E6%A8%A1%E5%BC%8F.md",
@@ -26,8 +26,8 @@
   {
     "path": "/MuYunyun/blog/blob/main/React/%E6%B7%B1%E5%85%A5Fiber%E6%9E%B6%E6%9E%84.md",
     "title": "blog/深入Fiber架构.md at main · MuYunyun/blog · GitHub",
-    "count": 9,
-    "uniques": 9
+    "count": 8,
+    "uniques": 8
   },
   {
     "path": "/MuYunyun/blog/tree/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F",
@@ -42,9 +42,9 @@
     "uniques": 7
   },
   {
-    "path": "/MuYunyun/blog/tree/main/React",
-    "title": "blog/React at main · MuYunyun/blog · GitHub",
-    "count": 7,
+    "path": "/MuYunyun/blog/tree/main/BasicSkill",
+    "title": "blog/BasicSkill at main · MuYunyun/blog · GitHub",
+    "count": 6,
     "uniques": 6
   },
   {
