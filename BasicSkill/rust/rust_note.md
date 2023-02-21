@@ -19,7 +19,7 @@ abbrlink: 9oeefka1
 - [枚举](#枚举)
   - [定义枚举](#定义枚举)
   - [定义方法](#定义方法)
-  - [常见的枚举类似：Option](#常见的枚举类似option)
+  - [常见的枚举类型：Option](#常见的枚举类型option)
 
 
 ### 基础语法
@@ -499,5 +499,27 @@ fn main() {
 }
 ```
 
-#### 常见的枚举类似：Option
+#### 常见的枚举类型：Option
+
+Rust 语言中没有空值，但是有一个类似空值概念的枚举，可以用其来标识值的缺失。它在 Rust 标准库中定义如下：
+
+```rust
+enum Option<T> {
+    Some(T),
+    None,
+}
+```
+
+```rust
+fn main() {
+    // Some 表示确定值是存在的；
+    let some_number = Some(5);
+    let some_string = Some("a string");
+
+    // None 值表示不存在一个有效的值；
+    let absent_number: Option<i32> = None;
+}
+```
+
+Rust 通过枚举 Option<T> 的设计，可以避免「假设某个值存在，实际却为空」的问题。
 
