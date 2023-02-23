@@ -20,6 +20,9 @@ abbrlink: 9oeefka1
   - [定义枚举](#定义枚举)
   - [定义方法](#定义方法)
   - [常见的枚举类型：Option](#常见的枚举类型option)
+  - [控制流运算符 match](#控制流运算符-match)
+  - [简单控制流 if let](#简单控制流-if-let)
+- [模块系统](#模块系统)
 
 
 ### 基础语法
@@ -444,7 +447,8 @@ fn main() {
 ### 枚举
 
 * 常见的枚举类型：Option
-* if let
+* 控制流运算符：match
+* 简单控制流：if let
 
 > **枚举**与**结构体**是创建自定义类型的两种方法。
 
@@ -523,3 +527,32 @@ fn main() {
 
 Rust 通过枚举 Option<T> 的设计，可以避免「假设某个值存在，实际却为空」的问题。
 
+#### 控制流运算符 match
+
+枚举类型 Option 与控制流运算符 match 常常会保持连用。
+
+```rust
+fn main() {
+    let five = Some(5);
+    // 命中 Some 模式，返回结果为 6 的 Some 值。
+    let six = plus_one(five);
+    // 命中 None 模式。
+    let none = plus_one(None);
+}
+
+fn plus_one(x: Option<i32>) -> Option<i32> {
+    match x {
+        None => None,
+        Some(i) => Some(i + 1),
+    }
+}
+```
+
+#### 简单控制流 if let
+
+if let 是控制流运算符 match 的语法糖，适合处理只关心某一处匹配而忽略其它匹配的情况。
+
+### 模块系统
+
+1. 包（package）与单元包（crate）的区别是？
+2. 什么是路径（path）？
