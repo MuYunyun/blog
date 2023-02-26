@@ -250,3 +250,5 @@ If you like this project, welcome watch or star✨. Or you can buy me a cup of c
 ### Thanks
 
 Thank my dear [rabbit🐰](https://github.com/DaphneChang) for her support.
+
+[![Star History Chart](https://api.star-history.com/svg?repos=MuYunyun/blog&type=Date)](https://star-history.com/#MuYunyun/blog&Date)
