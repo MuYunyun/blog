@@ -118,7 +118,8 @@ test('...', () => {
 * `getByAltText`         (images)
 * `getByTestId`          (use this for things like dynamic text or otherwise odd elements you want to test)
 
-上述每一个方法都有对应的 `queryByFoo` 替代方法。以 `query` 开头的方法找不到的话会返回 null, 以 `get` 开头的方法找不到的话会 throw。
+1. 上述每一个方法都有对应的 `query` 打头的替代方法。以 `query` 开头的方法找不到的话会返回 null, 以 `get` 开头的方法找不到的话会 throw。
+2. 上述每一个方法都有对应的 `findBy` 打头的替代方法，其用于异步场景，是 getBy 与 waitFor 参数的组合用方法。[link](https://testing-library.com/docs/dom-testing-library/api-async/#findby-queries)
 
 如果这些都不会让你确切地知道你在找什么, render 方法也会返回映射到 container 属性的 DOM 元素，所以也可以像 `container.querySelector('body #root')` 一样使用它。
 
@@ -257,7 +258,7 @@ jest.mock('../../utils', () => {
 
 ### act
 
-`act` 确保其函数里跟的单元方法(比如 rendering、用户事件、数据获取)在执行步骤 `make assertions` 之前已经全部执行完。
+act 确保其函数里跟的单元方法（比如 rendering、用户事件、数据获取）在执行步骤 `断言（make assertions）` 之前已经全部执行完。
 
 ```js
 act(() => {
