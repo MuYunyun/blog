@@ -2,6 +2,14 @@
 abbrlink: 42ftlsp4
 -->
 
+### 期望只测试测试文件中某个测试用例
 
+```diff
+describe('Modal Test', () => {
 
-todo: 整理 JEST 与 ReactTestingLibrary
+-  it('xxx', () => {
++  it.only('xxx', () => {
+
+  })
+})
+```
