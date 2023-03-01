@@ -24,7 +24,7 @@ abbrlink: 9oeefka1
   - [简单控制流 if let](#简单控制流-if-let)
 - [模块系统](#模块系统)
   - [路径](#路径)
-- [通用结合类型](#通用结合类型)
+- [通用集合类型](#通用集合类型)
 
 
 ### 基础语法
@@ -569,7 +569,7 @@ if let 是控制流运算符 match 的语法糖，适合处理只关心某一处
 2. 使用 super 关键字或内部标识符从当前模块开始的相对路径；
    a. super 相当于文件系统的 ..；
 
-### 通用结合类型
+### 通用集合类型
 
 * 动态数组 `Vec<T>`
 
@@ -600,3 +600,29 @@ fn main() {
 ```
 
    b. 【Todo】如果类型不可穷举，使用动态 trait 来存储。
+
+* 字符串
+  * 复杂性在于
+    * Rust 倾向暴露可能的错误。
+    * 字符串是一个超乎许多编程者想象的复杂数据结构。（展开的话涉及到字节、标量值、字形簇）
+  * 字节内容无法通过单个数字索引来获取，需要`在索引的 [] 中填写范围`。
+
+```rust
+fn main() {
+    let hello = "Hello";
+    let result = &hello[0..1];
+    println!("The result is {}", result);
+}
+```
+
+  * 复杂字符串拼接场景，建议使用 `format!` 宏。优点是可以避免字符在合并过程中所有权的失效。
+
+```rust
+fn main() {
+    let hello = "Hello";
+    let world = "World";
+
+    let hello_world = format!("{}-{}", hello, world);
+    println!("The result is {}", hello_world);
+}
+```
