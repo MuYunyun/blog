@@ -1,18 +1,18 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 120,
-    "uniques": 35
+    "count": 145,
+    "uniques": 41
   },
   {
     "referrer": "github.com",
-    "count": 57,
-    "uniques": 35
+    "count": 52,
+    "uniques": 31
   },
   {
     "referrer": "Google",
-    "count": 28,
-    "uniques": 24
+    "count": 31,
+    "uniques": 26
   },
   {
     "referrer": "juejin.cn",
@@ -21,18 +21,23 @@
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 8,
-    "uniques": 7
+    "count": 12,
+    "uniques": 10
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 6,
-    "uniques": 3
+    "count": 7,
+    "uniques": 4
   },
   {
     "referrer": "yuque.com",
     "count": 4,
     "uniques": 3
+  },
+  {
+    "referrer": "xiaomi.f.mioffice.cn",
+    "count": 4,
+    "uniques": 1
   },
   {
     "referrer": "one-tab.com",
@@ -41,11 +46,6 @@
   },
   {
     "referrer": "aliyuque.antfin.com",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "referrer": "link.segmentfault.com",
     "count": 1,
     "uniques": 1
   }
