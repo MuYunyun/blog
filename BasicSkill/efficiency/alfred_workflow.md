@@ -26,3 +26,11 @@ abbrlink: 5brmoiek
 [chrome-control](https://github.com/bit2pixel/chrome-control)
 
 阅读该插件的说明文档 [How I Navigate Hundreds of Tabs on Chrome with JXA and Alfred](https://medium.com/@bit2pixel/how-i-navigate-hundreds-of-tabs-on-chrome-with-jxa-and-alfred-9bbf971af02b)，目前控制 Chrome 的能力有限，当前可以使用 JavaScript 控制与 chrome 导航栏相关的部分。
+
+### 七牛云插件调试技巧
+
+该插件脚本使用 AppleScript 进行书写。
+
+排查有如下技巧
+
+1. 在 AppleScript 相关排查代码部分进行 return，可以结合 Copy to Clipboard 查看 log；
