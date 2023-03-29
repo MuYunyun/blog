@@ -53,7 +53,7 @@ rustup doc
 
 Cargo 是 Rust 项目中的构建系统与包依赖管理工具。
 
-```
+```rust
 // 创建一个新 Rust 项目
 cargo new xx
 
@@ -72,6 +72,9 @@ cargo run --release
 
 // 打开文档，查看依赖包文档(经验证，执行以下命令，暂未看到依赖包相关信息，如果后续验证结果有变，再进行修改)
 cargo doc --open
+
+// 运行项目中所有的测试用例
+cargo test
 ```
 
 ### 语言比较
