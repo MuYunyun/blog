@@ -7,7 +7,7 @@ abbrlink: z5dbvyod
 ![clones](https://raw.githubusercontent.com/MuYunyun/blog/traffic/traffic-blog/clones.svg)
 ![clones](https://raw.githubusercontent.com/MuYunyun/blog/traffic/traffic-blog/clones_per_week.svg)
 
-This is my personal blog created with <a href="https://github.com/MuYunyun/create-react-doc" target="_blank">create-react-doc</a> where to write and record some thought daily. It's very thankful to point any wrong place [there](https://github.com/MuYunyun/blog/issues/new).
+This is my personal blog created using <a href='https://github.com/MuYunyun/create-react-doc' target='_blank'>create-react-doc</a> to write and record my daily thoughts. I would be grateful if you could point out any mistakes by clicking on the link [there](https://github.com/MuYunyun/blog/issues/new).
 
 <h2>Outline</h2>
 
@@ -32,10 +32,10 @@ This is my personal blog created with <a href="https://github.com/MuYunyun/creat
 
 ### Data Structure
 
-This section we will start tralvel in the world of data strcture together! There is no doubt the travel is so interestring that you'll enjoy it too! Before your travel of data structure, I want to tell two points it's valueble:
+Let's embark on a journey through the world of data structures together! There's no doubt that this adventure will be incredibly interesting and enjoyable. Before we begin, I want to emphasize two valuable points:
 
-1. Interest and Insist.
-2. Thought is more important than action.
+1. Keep your interest and persistence in learning.
+2. Remember that thoughtful understanding is more important than simply taking action.
 
 > [Travel Of LeetCode](https://github.com/MuYunyun/blog/blob/main/LeetCode/README.md)
 
@@ -79,7 +79,7 @@ This section we will start tralvel in the world of data strcture together! There
 
 ### React Series
 
-This section will introduce the world of React progressively. It'll tell the principle of React, how to design React Component gracefully and how to build a simple React from scratch.
+This section will progressively introduce the world of React. It will cover the principles of React, how to gracefully design React components, and how to build a simple React application from scratch.
 
 #### Deep Into React
 
@@ -165,7 +165,7 @@ This section will introduce the world of React progressively. It'll tell the pri
 
 ### FE Cloud
 
-This section will talk about colorful frontend world.
+This section will explore the colorful world of frontend development.
 
 #### JavaScript
 
@@ -228,7 +228,7 @@ This section will talk about colorful frontend world.
 
 ### RaspberryPi
 
-Just do it for fun! You will unlock server, linux, nginx skills from this Raspberry Pi travel.
+Let's have some fun! This Raspberry Pi journey will unlock your server, Linux, and Nginx skills.
 
 > Thanks for the [pi](https://github.com/zhaoolee/pi) project specially.
 
@@ -243,12 +243,12 @@ Just do it for fun! You will unlock server, linux, nginx skills from this Raspbe
 
 ### Sponsor
 
-If you like this project, welcome watch or star✨. Or you can buy me a cup of coffee :)
+If you enjoy this project, you are welcome to either watch or star it✨. Alternatively, you can show your support by buying me a cup of coffee.
 
 <a href="https://muyunyun.cn/sponsor"><img src='https://camo.githubusercontent.com/45ce6667a35b63fd6a1ba6978d030a7f52ff5b1b262c5c8aa3ece29afc469ac8/68747470733a2f2f63646e2e6275796d6561636f666665652e636f6d2f627574746f6e732f76322f64656661756c742d7265642e706e67' width='200' /></a>
 
 ### Thanks
 
-Thank my dear [rabbit🐰](https://github.com/DaphneChang) for her support.
+I would like to thank my dear [rabbit🐰](https://github.com/DaphneChang) for her support.
 
 [![Star History Chart](https://api.star-history.com/svg?repos=MuYunyun/blog&type=Date)](https://star-history.com/#MuYunyun/blog&Date)

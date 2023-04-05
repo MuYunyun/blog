@@ -550,7 +550,7 @@ fn main() {
     let none = plus_one(None);
 }
 
-fn plus_one(x: Option<i32>) -> Option<i32> {
+fn plus_one(x: Option<i3  2>) -> Option<i32> {
     match x {
         None => None,
         Some(i) => Some(i + 1),
@@ -560,7 +560,26 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
 
 #### 简单控制流 if let
 
-if let 是控制流运算符 match 的语法糖，适合处理只关心某一处匹配而忽略其它匹配的情况。
+1. if let 是控制流运算符 match 的语法糖，适合处理只关心某一处匹配而忽略其它匹配的情况。
+
+```rust
+if let PATS = EXPR {
+    /* body */
+} else {
+    /*else */
+}
+```
+
+等同于
+
+```rust
+match EXPR {
+    PATS => { /* body */ },
+    _ => { /* else */ },    // () if there is no else
+}
+```
+
+2. if 与 if let 可以混合使用。
 
 ### 模块系统
 
@@ -682,6 +701,18 @@ b. 结构体中的引用字段
 // 此处我们告诉 Rust，Foo 实例的存活时间不能超过存储在 x 字段中的引用的存活时间。
 struct Foo<'a> {
     x: &'a i32,
+}
+```
+
+c. 方法定义
+
+结构体字段中的生命周期名字总是需要被声明在 impl 关键字之后。
+
+```rust
+impl<'a> Foo<'a> {
+    fn level(&self) -> i32 {
+        3
+    }
 }
 ```
 
