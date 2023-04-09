@@ -1,23 +1,23 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 93,
-    "uniques": 23
+    "count": 71,
+    "uniques": 22
   },
   {
     "referrer": "github.com",
-    "count": 68,
+    "count": 59,
     "uniques": 39
   },
   {
-    "referrer": "link.segmentfault.com",
-    "count": 60,
-    "uniques": 2
+    "referrer": "Google",
+    "count": 33,
+    "uniques": 23
   },
   {
-    "referrer": "Google",
-    "count": 29,
-    "uniques": 22
+    "referrer": "link.segmentfault.com",
+    "count": 20,
+    "uniques": 2
   },
   {
     "referrer": "cnblogs.com",
