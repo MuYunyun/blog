@@ -1,13 +1,13 @@
 [
   {
     "referrer": "github.com",
-    "count": 60,
-    "uniques": 40
+    "count": 55,
+    "uniques": 35
   },
   {
     "referrer": "link.juejin.cn",
-    "count": 44,
-    "uniques": 18
+    "count": 39,
+    "uniques": 17
   },
   {
     "referrer": "Google",
@@ -32,16 +32,6 @@
   {
     "referrer": "npmjs.com",
     "count": 2,
-    "uniques": 1
-  },
-  {
-    "referrer": "cn.bing.com",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "referrer": "jianshu.com",
-    "count": 1,
     "uniques": 1
   },
   {
