@@ -638,6 +638,7 @@ fn main() {
 fn main() {
     let hello = "Hello";
     let result = &hello[0..1];
+    // 输出 result 的结果为 H，因此类似 JavaScript 中的 slice 语法取值遵循「左闭右开」原则。
     println!("The result is {}", result);
 }
 ```
