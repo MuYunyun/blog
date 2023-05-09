@@ -2,14 +2,14 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 67,
-    "uniques": 55
+    "count": 64,
+    "uniques": 52
   },
   {
     "path": "/MuYunyun/blog/blob/main/React/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84requestIdleCallback.md",
     "title": "blog/你不知道的requestIdleCallback.md at main · MuYunyun/blog · GitHub",
-    "count": 25,
-    "uniques": 10
+    "count": 23,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/blog/tree/main/React",
@@ -20,8 +20,8 @@
   {
     "path": "/MuYunyun/blog/issues",
     "title": "Issues · MuYunyun/blog · GitHub",
-    "count": 8,
-    "uniques": 8
+    "count": 7,
+    "uniques": 7
   },
   {
     "path": "/MuYunyun/blog/blob/main/React/%E6%B7%B1%E5%85%A5Fiber%E6%9E%B6%E6%9E%84.md",
@@ -48,14 +48,14 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/blog/issues/2",
-    "title": "读书笔记-你不知道的 JavaScript (上) · Issue #2 · MuYunyun/blog",
-    "count": 4,
-    "uniques": 4
-  },
-  {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/迭代器模式.md at main · MuYunyun/blog · GitHub",
+    "count": 4,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/React/SSR/SSR.md",
+    "title": "blog/SSR.md at main · MuYunyun/blog · GitHub",
     "count": 4,
     "uniques": 1
   }
