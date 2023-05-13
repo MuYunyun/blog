@@ -1,13 +1,13 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 98,
-    "uniques": 17
+    "count": 100,
+    "uniques": 18
   },
   {
     "referrer": "github.com",
-    "count": 46,
-    "uniques": 34
+    "count": 48,
+    "uniques": 35
   },
   {
     "referrer": "Google",
@@ -16,8 +16,8 @@
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 15,
-    "uniques": 7
+    "count": 14,
+    "uniques": 6
   },
   {
     "referrer": "yuque.com",
@@ -37,11 +37,6 @@
   {
     "referrer": "kgithub.com",
     "count": 2,
-    "uniques": 1
-  },
-  {
-    "referrer": "Bing",
-    "count": 1,
     "uniques": 1
   }
 ]
