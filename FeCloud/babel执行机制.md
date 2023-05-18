@@ -32,5 +32,4 @@ babal.transform(code, {
 * [剖析 Babel —— Babel 总览](http://www.alloyteam.com/2017/04/analysis-of-babel-babel-overview/), 这篇文章讲得比较透彻
 * [babel-handbook](https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/README.md), babel 手册, 推荐
 * [Babel 插件开发一些示例](http://web.jobbole.com/91277/), 这篇文章 bug 比较多, 可以作为上面文章的补充
-* [AST explore](https://astexplorer.net/#/KJ8AjD6maa), 可以在这个网站上看到 JS 代码对应的 AST
 * [@babel/types](https://babeljs.io/docs/en/next/babel-types.html), babel-types 可以用来生成转换相应的 babel 节点, 同时文案可以作为 api 来参考。
