@@ -29,6 +29,7 @@ abbrlink: 9oeefka1
 - [trait 定义共享行为](#trait-定义共享行为)
 - [生命周期及其标注语法](#生命周期及其标注语法)
   - [Rust 内置三条计算生命周期规则](#rust-内置三条计算生命周期规则)
+- [智能指针](#智能指针)
 - [Rust 开发中一些约定俗成原则](#rust-开发中一些约定俗成原则)
 - [释义](#释义)
 
@@ -724,6 +725,48 @@ impl<'a> Foo<'a> {
 3. 规则三：当拥有多个输入生命周期参数，而其中一个是 &self 或 &mut self 时，self 的生命周期会被赋予给所有的输出生命周期参数。
 
 进而回过头去看[切片](#切片)章节中函数 `first_world` 的例子，根据规则一、规则二，因而未显示标注生命周期，也可编译通过。
+
+### 智能指针
+
+智能指针（smart pointer）是一类数据结构。它们的行为类似于指针但拥有额外的元数据和附加功能。Rust 标准库中不同的智能指针提供了比引用更为强大的功能。
+
+Rust 标准库中常见的智能指针比如有：
+
+1. `Box<T>`：可用于在堆上分配值；
+
+```rust
+// 实现一个简版 Box<T>
+use std::ops::Deref;
+
+fn main() {
+    let x = 5;
+    let y = MyBox::new(x);
+
+    assert_eq!(5, x);
+    // 此处 *y 会被 Rust 隐式地展开为：*(y.deref())
+    assert_eq!(5, *y);
+}
+
+struct MyBox<T>(T);
+
+impl<T> MyBox<T> {
+    fn new(x: T) -> MyBox<T> {
+        MyBox(x)
+    }
+}
+
+impl<T> Deref for MyBox<T> {
+    type Target = T;
+
+    // 通过 Deref trait 将智能指针视作常规引用。
+    fn deref(&self) -> &T {
+        &self.0
+    }
+}
+```
+
+2. `Rc<T>`: To learn；
+
 
 ### Rust 开发中一些约定俗成原则
 
