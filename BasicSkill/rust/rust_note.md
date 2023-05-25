@@ -33,7 +33,6 @@ abbrlink: 9oeefka1
 - [Rust 开发中一些约定俗成原则](#rust-开发中一些约定俗成原则)
 - [释义](#释义)
 
-
 ### 基础语法
 
 #### 常量、变量
@@ -765,8 +764,9 @@ impl<T> Deref for MyBox<T> {
 }
 ```
 
-2. `Rc<T>`: To learn；
-
+2. `Rc<T>`: 可用于单个值被多个所有者持有的场景；
+   1. Rc 表示 ‘Reference Counted’；
+   2. (Todo，后续补充)用于单线程场景；
 
 ### Rust 开发中一些约定俗成原则
 
