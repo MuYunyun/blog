@@ -1,13 +1,13 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 197,
-    "uniques": 37
+    "count": 184,
+    "uniques": 35
   },
   {
     "referrer": "github.com",
-    "count": 150,
-    "uniques": 82
+    "count": 139,
+    "uniques": 85
   },
   {
     "referrer": "Google",
@@ -16,8 +16,8 @@
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 12,
-    "uniques": 5
+    "count": 15,
+    "uniques": 7
   },
   {
     "referrer": "link.zhihu.com",
@@ -26,8 +26,13 @@
   },
   {
     "referrer": "yuque.com",
-    "count": 5,
+    "count": 6,
     "uniques": 4
+  },
+  {
+    "referrer": "wiki.zuoyebang.cc",
+    "count": 6,
+    "uniques": 1
   },
   {
     "referrer": "ku.baidu-int.com",
@@ -38,11 +43,6 @@
     "referrer": "jianshu.com",
     "count": 3,
     "uniques": 2
-  },
-  {
-    "referrer": "githubs.cn",
-    "count": 2,
-    "uniques": 1
   },
   {
     "referrer": "bbs.hassbian.com",
