@@ -2,25 +2,25 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment",
-    "count": 89,
-    "uniques": 62
+    "count": 84,
+    "uniques": 59
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/单例模式.md at main · MuYunyun/blog · GitHub",
-    "count": 25,
-    "uniques": 11
+    "count": 30,
+    "uniques": 14
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/观察者模式.md at main · MuYunyun/blog · GitHub",
-    "count": 19,
-    "uniques": 3
+    "count": 28,
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/代理模式.md at main · MuYunyun/blog · GitHub",
-    "count": 14,
+    "count": 15,
     "uniques": 8
   },
   {
@@ -42,21 +42,21 @@
     "uniques": 6
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%81%8C%E8%B4%A3%E9%93%BE%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/职责链模式.md at main · MuYunyun/blog · GitHub",
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/策略模式.md at main · MuYunyun/blog · GitHub",
     "count": 10,
-    "uniques": 5
+    "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/blog/tree/main/BasicSkill",
+    "title": "blog/BasicSkill at main · MuYunyun/blog · GitHub",
+    "count": 10,
+    "uniques": 3
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/css/css_little_book/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C.md",
     "title": "blog/用户体验.md at main · MuYunyun/blog · GitHub",
     "count": 10,
     "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/React/%E6%B5%8B%E8%AF%95/Jest%E4%B8%8EReactTestingLibrary.md",
-    "title": "blog/Jest与ReactTestingLibrary.md at main · MuYunyun/blog · GitHub",
-    "count": 9,
-    "uniques": 1
   }
 ]
