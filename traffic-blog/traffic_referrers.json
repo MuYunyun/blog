@@ -1,18 +1,13 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 275,
-    "uniques": 34
+    "count": 285,
+    "uniques": 32
   },
   {
     "referrer": "github.com",
-    "count": 227,
-    "uniques": 59
-  },
-  {
-    "referrer": "juejin.cn",
-    "count": 73,
-    "uniques": 1
+    "count": 230,
+    "uniques": 61
   },
   {
     "referrer": "link.zhihu.com",
@@ -25,12 +20,22 @@
     "uniques": 18
   },
   {
+    "referrer": "juejin.cn",
+    "count": 18,
+    "uniques": 1
+  },
+  {
+    "referrer": "yuque.com",
+    "count": 8,
+    "uniques": 2
+  },
+  {
     "referrer": "muyunyun.cn",
     "count": 3,
     "uniques": 3
   },
   {
-    "referrer": "yuque.com",
+    "referrer": "link.segmentfault.com",
     "count": 2,
     "uniques": 1
   },
@@ -41,11 +46,6 @@
   },
   {
     "referrer": "v2ex.com",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "referrer": "jianshu.com",
     "count": 1,
     "uniques": 1
   }
