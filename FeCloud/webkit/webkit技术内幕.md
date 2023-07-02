@@ -31,8 +31,8 @@ abbrlink: opv4lnaq
     * page        // 与页面相关的全局对象的实现, 包括 window、navigator 等 DOM 对象, 事件, 动画处理
     * platform    // 各个移植的代码
     * storage     // 存储的共享代码
-  * WebKit        // 绑定和嵌入式接口层)
-  * Webkit2       // 绑定和嵌入式接口层)
+  * WebKit        // 绑定和嵌入式接口层
+  * Webkit2       // 绑定和嵌入式接口层
     * efl             // efl 的主函数, 构建一个简单的浏览器, 还有其它移植的代码
     * NetworkProcess  // 网络进程相关代码
     * UIProcess       // UI 进程相关代码
@@ -60,7 +60,7 @@ WebKit 项目非常庞大，clone 下来体积有 11.98 GB。
 
 源码编译
 
-1. 下载的 WebKit 目录里面有一个Tools/Scripts 目录，这里面有各种脚本，包括使用命令行编译 WebKit 的脚本，其中一个重要的脚本就是 configure-Xcode-for-embedded-development，在 Mac 终端控制台运行如下命令:
+1. 下载的 WebKit 目录里面有一个 Tools/Scripts 目录，这里面有各种脚本，包括使用命令行编译 WebKit 的脚本，其中一个重要的脚本就是 configure-Xcode-for-embedded-development，在 Mac 终端控制台运行如下命令:
 
 ```bash
 sudo Tools/Scripts/configure-Xcode-for-embedded-development

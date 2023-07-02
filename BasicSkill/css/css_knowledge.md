@@ -12,6 +12,7 @@ abbrlink: v9b53vi6
 - [style 里的样式过长该怎么办](#style-里的样式过长该怎么办)
 - [如何覆盖伪元素的样式(可作面试题)](#如何覆盖伪元素的样式可作面试题)
 - [CSS 中哪些元素可以创建层叠上下文(stacking context)?](#css-中哪些元素可以创建层叠上下文stacking-context)
+- [如何使用 CSS 判断横竖屏](#如何使用-css-判断横竖屏)
 - [CSS 权重值计算规则](#css-权重值计算规则)
 
 ### css 是什么
@@ -94,6 +95,13 @@ It's a css property that can be eaqual to the background-size, it has five types
 - z-index + position
 - opacity，[案例](https://codepen.io/devui-design/pen/qRLxEd)
 - transform
+
+### 如何使用 CSS 判断横竖屏
+
+```css
+@media (orientation: portrait) { } 竖屏
+@media (orientation: landscape) { } 横屏
+```
 
 ### CSS 权重值计算规则
 
