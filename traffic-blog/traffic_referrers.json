@@ -1,26 +1,26 @@
 [
   {
     "referrer": "github.com",
-    "count": 250,
-    "uniques": 78
+    "count": 243,
+    "uniques": 73
   },
   {
     "referrer": "link.juejin.cn",
-    "count": 164,
-    "uniques": 31
-  },
-  {
-    "referrer": "link.segmentfault.com",
-    "count": 65,
-    "uniques": 3
+    "count": 138,
+    "uniques": 28
   },
   {
     "referrer": "Google",
-    "count": 41,
-    "uniques": 13
+    "count": 40,
+    "uniques": 12
   },
   {
-    "referrer": "link.zhihu.com",
+    "referrer": "link.segmentfault.com",
+    "count": 36,
+    "uniques": 3
+  },
+  {
+    "referrer": "muyunyun.cn",
     "count": 9,
     "uniques": 5
   },
@@ -30,14 +30,14 @@
     "uniques": 1
   },
   {
-    "referrer": "muyunyun.cn",
-    "count": 7,
-    "uniques": 5
-  },
-  {
     "referrer": "yuque.com",
     "count": 7,
     "uniques": 2
+  },
+  {
+    "referrer": "link.zhihu.com",
+    "count": 5,
+    "uniques": 4
   },
   {
     "referrer": "zhihu.com",
