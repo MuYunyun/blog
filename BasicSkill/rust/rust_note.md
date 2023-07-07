@@ -768,6 +768,8 @@ impl<T> Deref for MyBox<T> {
    1. Rc 表示 ‘Reference Counted’；
    2. (Todo，后续补充)用于单线程场景；
 
+3. `RefCell<T>`: 通过内部可变性模式使我们可以修改一个不可变类型的内部值；它会在运行时而不是编译时承担起维护借用规则的责任。
+
 ### Rust 开发中一些约定俗成原则
 
 1. 将程序拆分为 main.rs 和 lib.rs，main.rs 负责运行程序，lib.rs 处理实际的逻辑。
