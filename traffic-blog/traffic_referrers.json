@@ -1,22 +1,22 @@
 [
   {
     "referrer": "github.com",
-    "count": 273,
-    "uniques": 60
+    "count": 255,
+    "uniques": 51
   },
   {
     "referrer": "link.juejin.cn",
-    "count": 227,
-    "uniques": 21
+    "count": 171,
+    "uniques": 19
   },
   {
     "referrer": "Google",
-    "count": 38,
-    "uniques": 16
+    "count": 30,
+    "uniques": 13
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 10,
+    "count": 11,
     "uniques": 4
   },
   {
@@ -27,11 +27,6 @@
   {
     "referrer": "aliyuque.antfin.com",
     "count": 2,
-    "uniques": 1
-  },
-  {
-    "referrer": "link.zhihu.com",
-    "count": 1,
     "uniques": 1
   }
 ]
