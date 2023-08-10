@@ -1,18 +1,18 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 254,
+    "count": 289,
     "uniques": 23
   },
   {
     "referrer": "Google",
-    "count": 102,
+    "count": 105,
     "uniques": 15
   },
   {
     "referrer": "github.com",
-    "count": 80,
-    "uniques": 38
+    "count": 83,
+    "uniques": 41
   },
   {
     "referrer": "link.zhihu.com",
@@ -35,17 +35,17 @@
     "uniques": 1
   },
   {
+    "referrer": "segmentfault.com",
+    "count": 2,
+    "uniques": 1
+  },
+  {
     "referrer": "muyunyun.cn",
     "count": 2,
     "uniques": 1
   },
   {
     "referrer": "ichat.sanbaofengs.com",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "referrer": "react-shopping-cart-67954.firebaseapp.com",
     "count": 1,
     "uniques": 1
   }
