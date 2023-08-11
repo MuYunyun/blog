@@ -39,3 +39,9 @@ abbrlink: ues1uzcj
 ### VScode 中使用 markdown 不能显示预览图片
 
 按 cmd + shift + p，输入 markdown，搜索 markdown 更改预览安全设置，选择 Allow Insecure Contents 即可。
+
+### 性能报告
+
+>Developer:Startup Performance
+
+可用于查看各插件占用时间。

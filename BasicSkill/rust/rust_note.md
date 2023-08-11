@@ -22,6 +22,7 @@ abbrlink: 9oeefka1
   - [常见的枚举类型：Option](#常见的枚举类型option)
   - [控制流运算符 match](#控制流运算符-match)
   - [简单控制流 if let](#简单控制流-if-let)
+  - [模式](#模式)
 - [模块系统](#模块系统)
   - [路径](#路径)
 - [通用集合类型](#通用集合类型)
@@ -30,6 +31,7 @@ abbrlink: 9oeefka1
 - [生命周期及其标注语法](#生命周期及其标注语法)
   - [Rust 内置三条计算生命周期规则](#rust-内置三条计算生命周期规则)
 - [智能指针](#智能指针)
+- [并发](#并发)
 - [Rust 开发中一些约定俗成原则](#rust-开发中一些约定俗成原则)
 - [释义](#释义)
 
@@ -581,6 +583,12 @@ match EXPR {
 
 2. if 与 if let 可以混合使用。
 
+#### 模式
+
+1. 模式分为不可失败（irrefutable）和可失败（refutable）两种类型。不可失败模式能够匹配任何传入的值，可失败模式则可能因为某些特定的值而匹配失败。
+   1. 函数参数、let 语句以及 for 循环只接收不可失败模式。
+   2. if let 和 while let 表达式则只接收可失败模式。
+
 ### 模块系统
 
 1. 包（package）与单元包（crate）的区别是？
@@ -769,6 +777,68 @@ impl<T> Deref for MyBox<T> {
    2. (Todo，后续补充)用于单线程场景；
 
 3. `RefCell<T>`: 通过内部可变性模式使我们可以修改一个不可变类型的内部值；它会在运行时而不是编译时承担起维护借用规则的责任。
+
+### 并发
+
+1. 创建新线程；
+
+1.1. 使用 spawn 创建新线程；
+
+```rust
+use std::thread;
+use std::time::Duration;
+
+// hi number 1 from the main thread!
+// hi number 1 from the spawned thread!
+// hi number 2 from the main thread!
+// hi number 2 from the spawned thread!
+// hi number 3 from the main thread!
+// hi number 3 from the spawned thread!
+// hi number 4 from the main thread!
+// hi number 4 from the spawned thread!
+fn main() {
+    thread::spawn(|| {
+        for i in 1..10 {
+            println!("hi number {} from the spawned thread!", i);
+            thread::sleep(Duration::from_millis(1));
+        }
+    });
+
+    for i in 1..5 {
+        println!("hi number {} from the main thread!", i);
+        thread::sleep(Duration::from_millis(1));
+    }
+}
+```
+
+1.2. 使用 join 句柄等待所有线程结束；
+
+由于主线程停止，1.1 中案例在大部分情形下都会提前终止新线程，无法保证新线程一定会得到执行。
+
+thread::spawn 的返回值类型是一个自持有所有权的 JoinHandle，调用它的 join 方法可以阻塞当前线程直达对应的新线程运行结束。从而保证新线程能在 main 函数退出前执行完毕。
+
+```diff
+fn main() {
++    let handle = thread::spawn(|| {
+-    thread::spawn(|| {
+        for i in 1..10 {
+            println!("hi number {} from the spawned thread!", i);
+            thread::sleep(Duration::from_millis(1));
+        }
+    });
+
++    handle.join().unwrap();
+
+    for i in 1..5 {
+        println!("hi number {} from the main thread!", i);
+        thread::sleep(Duration::from_millis(1));
+    }
+}
+```
+
+2. 使用通道在线程间发送消息的传递式并发；
+   1. 关键字：`channel`
+3. 允许多个线程访问同一片数据的共享状态式并发；
 
 ### Rust 开发中一些约定俗成原则
 
