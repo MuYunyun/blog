@@ -33,8 +33,14 @@ abbrlink: ues1uzcj
 
 ### 筛选技巧
 
-* files to include/files to exclude: 用多个 `,` 作为分隔符隔开，每个 `,` 间可以使用正则。
-* Search: 可以使用正则，在 Replace 中可以使用 $1、$2 表示括号内匹配到的内容。
+1. files to include/files to exclude: 用多个 `,` 作为分隔符隔开，每个 `,` 间可以使用正则。
+2. Search: 可以使用正则，在 Replace 中可以使用 `$1`、`$2` 表示括号内匹配到的内容。
+
+```js
+案例实践
+目标：将组件 `<Comp />`，批量搜索添加上为参数 demo。
+方法：在 Search 栏输入正则 `(<Comp [^/]+)`，替换栏输入 `$1demo ` 点击替换按钮即可完成批量替换。
+```
 
 ### VScode 中使用 markdown 不能显示预览图片
 
