@@ -1,18 +1,18 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 313,
-    "uniques": 16
+    "count": 294,
+    "uniques": 20
   },
   {
     "referrer": "github.com",
-    "count": 45,
-    "uniques": 21
+    "count": 66,
+    "uniques": 20
   },
   {
     "referrer": "Google",
-    "count": 23,
-    "uniques": 9
+    "count": 42,
+    "uniques": 11
   },
   {
     "referrer": "link.zhihu.com",
@@ -22,6 +22,11 @@
   {
     "referrer": "link.segmentfault.com",
     "count": 8,
+    "uniques": 1
+  },
+  {
+    "referrer": "wiki.zuoyebang.cc",
+    "count": 4,
     "uniques": 1
   },
   {
