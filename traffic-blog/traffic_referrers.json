@@ -1,18 +1,18 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 294,
-    "uniques": 20
+    "count": 342,
+    "uniques": 23
   },
   {
     "referrer": "github.com",
-    "count": 66,
+    "count": 65,
     "uniques": 20
   },
   {
     "referrer": "Google",
-    "count": 42,
-    "uniques": 11
+    "count": 48,
+    "uniques": 14
   },
   {
     "referrer": "link.zhihu.com",
@@ -31,7 +31,7 @@
   },
   {
     "referrer": "yuque.com",
-    "count": 3,
-    "uniques": 2
+    "count": 1,
+    "uniques": 1
   }
 ]
