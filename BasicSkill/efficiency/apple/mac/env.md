@@ -50,3 +50,8 @@ source ~/.zshrc
 ```
 
 > see [执行 brew install 命令长时间卡在 Updating Homebrew 的解决方法](https://learnku.com/articles/18908)
+
+### Macbook 自动设置时间不对，如果调整？
+
+1. 方法一：暂时推荐在设置 -> General -> Date & Time 中，手动调整；
+2. 方法二：可以在 Terminal 中使用 `sudo sntp -sS time.apple.com` 命令来强制更新系统时间；
