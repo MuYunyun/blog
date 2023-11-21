@@ -24,3 +24,7 @@ abbrlink: 6e5ls1fr
 ### 切换
 
 chrome://flags/#enable-force-dark, enabled 启动暗黑
+
+### 录制
+
+可以利用 Record 来快速书写 puputeer 代码；
