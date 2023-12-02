@@ -2,14 +2,20 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 77,
+    "count": 79,
     "uniques": 54
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/BasicSkill/设计模式/单例模式.md at main · MuYunyun/blog · GitHub",
-    "count": 62,
-    "uniques": 17
+    "count": 66,
+    "uniques": 19
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md",
+    "title": "Error · GitHub",
+    "count": 22,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.md",
@@ -18,22 +24,16 @@
     "uniques": 6
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/BasicSkill/设计模式/策略模式.md at main · MuYunyun/blog · GitHub",
-    "count": 21,
-    "uniques": 8
-  },
-  {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/BasicSkill/设计模式/发布订阅模式.md at main · MuYunyun/blog · GitHub",
-    "count": 18,
+    "count": 20,
     "uniques": 8
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/BasicSkill/设计模式/装饰者模式.md at main · MuYunyun/blog · GitHub",
-    "count": 16,
-    "uniques": 4
+    "count": 18,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%81%8C%E8%B4%A3%E9%93%BE%E6%A8%A1%E5%BC%8F.md",
@@ -48,15 +48,15 @@
     "uniques": 4
   },
   {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/ioC%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/BasicSkill/设计模式/ioC模式.md at main · MuYunyun/blog",
+    "count": 14,
+    "uniques": 2
+  },
+  {
     "path": "/MuYunyun/blog/issues",
     "title": "Issues · MuYunyun/blog",
     "count": 13,
     "uniques": 6
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/ioC%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/BasicSkill/设计模式/ioC模式.md at main · MuYunyun/blog",
-    "count": 12,
-    "uniques": 2
   }
 ]
