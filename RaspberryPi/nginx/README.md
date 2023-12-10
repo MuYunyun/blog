@@ -16,6 +16,7 @@ node 与 nginx 搭配使用, 是因为 nginx 具有更加强大的静态文件�
 * 配置文件目录 /usr/local/etc/nginx/nginx.conf
 * 默认配置文件目录 /usr/local/etc/nginx/nginx.conf.default
 * 根目录 /usr/local/var/www
+* 文档根目录：/usr/share/nginx/html/ 或 /var/www/html/
 
 ### FAQ
 

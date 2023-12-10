@@ -55,6 +55,14 @@ set backspace=2                设置退格键可用
 
 ### vim 快捷键
 
+语义
+* d：删除选中内容
+* G：光标移到最后一行
+
+> vim 语义：https://github.com/crazylxr/blog/issues/6
+
 ```js
 dd                             快速删除当前行
+
+按 esc，然后 dG                 全部删除
 ```
