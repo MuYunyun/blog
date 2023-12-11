@@ -1,18 +1,18 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 332,
-    "uniques": 42
+    "count": 330,
+    "uniques": 41
   },
   {
     "referrer": "github.com",
-    "count": 248,
-    "uniques": 54
+    "count": 243,
+    "uniques": 50
   },
   {
     "referrer": "Google",
-    "count": 52,
-    "uniques": 22
+    "count": 50,
+    "uniques": 21
   },
   {
     "referrer": "v2ex.com",
@@ -40,12 +40,12 @@
     "uniques": 1
   },
   {
-    "referrer": "jianshu.com",
+    "referrer": "youtube.com",
     "count": 1,
     "uniques": 1
   },
   {
-    "referrer": "youtube.com",
+    "referrer": "DuckDuckGo",
     "count": 1,
     "uniques": 1
   }
