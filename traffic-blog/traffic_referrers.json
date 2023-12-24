@@ -25,6 +25,11 @@
     "uniques": 2
   },
   {
+    "referrer": "link.segmentfault.com",
+    "count": 2,
+    "uniques": 1
+  },
+  {
     "referrer": "cnblogs.com",
     "count": 1,
     "uniques": 1
