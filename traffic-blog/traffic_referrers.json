@@ -1,18 +1,23 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 169,
-    "uniques": 4
+    "count": 181,
+    "uniques": 6
   },
   {
     "referrer": "github.com",
-    "count": 27,
-    "uniques": 18
+    "count": 36,
+    "uniques": 20
   },
   {
     "referrer": "Google",
-    "count": 6,
-    "uniques": 3
+    "count": 10,
+    "uniques": 4
+  },
+  {
+    "referrer": "muyunyun.cn",
+    "count": 3,
+    "uniques": 2
   },
   {
     "referrer": "juejin.cn",
@@ -20,7 +25,7 @@
     "uniques": 1
   },
   {
-    "referrer": "muyunyun.cn",
+    "referrer": "bearblog.dev",
     "count": 1,
     "uniques": 1
   }
