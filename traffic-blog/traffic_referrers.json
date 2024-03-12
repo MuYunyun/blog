@@ -1,33 +1,28 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 243,
-    "uniques": 30
-  },
-  {
-    "referrer": "github.com",
-    "count": 92,
-    "uniques": 36
+    "count": 222,
+    "uniques": 27
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 49,
-    "uniques": 5
+    "count": 116,
+    "uniques": 6
+  },
+  {
+    "referrer": "github.com",
+    "count": 102,
+    "uniques": 35
   },
   {
     "referrer": "Google",
-    "count": 45,
-    "uniques": 19
+    "count": 37,
+    "uniques": 15
   },
   {
     "referrer": "yuque.com",
     "count": 5,
     "uniques": 2
-  },
-  {
-    "referrer": "csdiy.wiki",
-    "count": 2,
-    "uniques": 1
   },
   {
     "referrer": "leetcode.cn",
@@ -36,6 +31,11 @@
   },
   {
     "referrer": "link.segmentfault.com",
+    "count": 2,
+    "uniques": 1
+  },
+  {
+    "referrer": "csdiy.wiki",
     "count": 2,
     "uniques": 1
   },
