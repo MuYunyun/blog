@@ -6,13 +6,13 @@
   },
   {
     "referrer": "link.juejin.cn",
-    "count": 148,
-    "uniques": 16
+    "count": 150,
+    "uniques": 17
   },
   {
     "referrer": "Google",
-    "count": 100,
-    "uniques": 28
+    "count": 102,
+    "uniques": 29
   },
   {
     "referrer": "yuque.com",
@@ -36,6 +36,11 @@
   },
   {
     "referrer": "Baidu",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "referrer": "v2ex.com",
     "count": 1,
     "uniques": 1
   }
