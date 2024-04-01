@@ -1,18 +1,18 @@
 [
   {
     "referrer": "github.com",
-    "count": 207,
-    "uniques": 37
+    "count": 194,
+    "uniques": 32
   },
   {
     "referrer": "link.juejin.cn",
-    "count": 181,
-    "uniques": 20
+    "count": 165,
+    "uniques": 19
   },
   {
     "referrer": "Google",
-    "count": 98,
-    "uniques": 27
+    "count": 89,
+    "uniques": 25
   },
   {
     "referrer": "yuque.com",
@@ -31,11 +31,6 @@
   },
   {
     "referrer": "kancloud.cn",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "referrer": "Baidu",
     "count": 1,
     "uniques": 1
   },
