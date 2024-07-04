@@ -1,18 +1,18 @@
 [
   {
-    "referrer": "github.com",
-    "count": 81,
-    "uniques": 53
+    "referrer": "link.juejin.cn",
+    "count": 122,
+    "uniques": 17
   },
   {
     "referrer": "Google",
-    "count": 78,
-    "uniques": 25
+    "count": 73,
+    "uniques": 23
   },
   {
-    "referrer": "link.juejin.cn",
-    "count": 74,
-    "uniques": 15
+    "referrer": "github.com",
+    "count": 72,
+    "uniques": 51
   },
   {
     "referrer": "yuque.com",
@@ -25,17 +25,17 @@
     "uniques": 5
   },
   {
-    "referrer": "link.zhihu.com",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "referrer": "Bing",
-    "count": 1,
+    "referrer": "link.segmentfault.com",
+    "count": 6,
     "uniques": 1
   },
   {
     "referrer": "link.csdn.net",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "referrer": "Bing",
     "count": 1,
     "uniques": 1
   }
