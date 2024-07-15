@@ -1,13 +1,13 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 122,
-    "uniques": 13
+    "count": 120,
+    "uniques": 12
   },
   {
     "referrer": "Google",
-    "count": 113,
-    "uniques": 37
+    "count": 89,
+    "uniques": 34
   },
   {
     "referrer": "note.youdao.com",
@@ -16,18 +16,13 @@
   },
   {
     "referrer": "github.com",
-    "count": 78,
-    "uniques": 58
-  },
-  {
-    "referrer": "yuque.com",
-    "count": 15,
-    "uniques": 1
+    "count": 68,
+    "uniques": 51
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 8,
-    "uniques": 6
+    "count": 7,
+    "uniques": 5
   },
   {
     "referrer": "link.segmentfault.com",
@@ -37,6 +32,11 @@
   {
     "referrer": "cloud.tencent.com",
     "count": 4,
+    "uniques": 1
+  },
+  {
+    "referrer": "yuque.com",
+    "count": 2,
     "uniques": 1
   }
 ]
