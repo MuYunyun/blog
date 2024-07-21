@@ -6,13 +6,13 @@
   },
   {
     "referrer": "Google",
-    "count": 88,
-    "uniques": 29
+    "count": 93,
+    "uniques": 32
   },
   {
     "referrer": "github.com",
     "count": 86,
-    "uniques": 57
+    "uniques": 56
   },
   {
     "referrer": "note.youdao.com",
@@ -28,10 +28,5 @@
     "referrer": "link.zhihu.com",
     "count": 5,
     "uniques": 2
-  },
-  {
-    "referrer": "cloud.tencent.com",
-    "count": 2,
-    "uniques": 1
   }
 ]
