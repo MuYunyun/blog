@@ -1,22 +1,27 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 147,
-    "uniques": 14
+    "count": 141,
+    "uniques": 13
   },
   {
     "referrer": "Google",
-    "count": 122,
-    "uniques": 36
+    "count": 101,
+    "uniques": 33
   },
   {
     "referrer": "github.com",
-    "count": 40,
-    "uniques": 29
+    "count": 39,
+    "uniques": 27
   },
   {
     "referrer": "Bing",
     "count": 10,
+    "uniques": 2
+  },
+  {
+    "referrer": "muyunyun.cn",
+    "count": 3,
     "uniques": 2
   },
   {
@@ -31,11 +36,6 @@
   },
   {
     "referrer": "note.youdao.com",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "referrer": "muyunyun.cn",
     "count": 2,
     "uniques": 1
   },
