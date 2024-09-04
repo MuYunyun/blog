@@ -1,28 +1,23 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 192,
-    "uniques": 23
+    "count": 169,
+    "uniques": 21
   },
   {
     "referrer": "github.com",
-    "count": 157,
-    "uniques": 20
+    "count": 160,
+    "uniques": 22
   },
   {
     "referrer": "Google",
-    "count": 76,
-    "uniques": 30
+    "count": 73,
+    "uniques": 28
   },
   {
     "referrer": "muyunyun.cn",
     "count": 8,
     "uniques": 2
-  },
-  {
-    "referrer": "kkgithub.com",
-    "count": 2,
-    "uniques": 1
   },
   {
     "referrer": "soyn.github.io",
