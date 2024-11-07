@@ -1,12 +1,12 @@
 [
   {
     "referrer": "link.juejin.cn",
-    "count": 66,
-    "uniques": 17
+    "count": 71,
+    "uniques": 20
   },
   {
     "referrer": "Google",
-    "count": 31,
+    "count": 30,
     "uniques": 22
   },
   {
@@ -15,17 +15,12 @@
     "uniques": 5
   },
   {
-    "referrer": "docs.qq.com",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "referrer": "jp.v2ex.com",
     "count": 1,
     "uniques": 1
   },
   {
-    "referrer": "link.zhihu.com",
+    "referrer": "docs.qq.com",
     "count": 1,
     "uniques": 1
   },
