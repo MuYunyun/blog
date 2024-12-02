@@ -2,19 +2,19 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 28,
-    "uniques": 18
+    "count": 26,
+    "uniques": 16
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/BasicSkill/设计模式/单例模式.md at main · MuYunyun/blog · GitHub",
-    "count": 18,
-    "uniques": 14
+    "count": 16,
+    "uniques": 12
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/BasicSkill/设计模式/策略模式.md at main · MuYunyun/blog · GitHub",
-    "count": 11,
+    "count": 10,
     "uniques": 4
   },
   {
@@ -48,14 +48,14 @@
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/blog/blob/main/React/Component_Design/%E4%B8%BB%E9%A2%98%E8%89%B2%E6%9B%BF%E6%8D%A2%E6%96%B9%E6%A1%88.md",
-    "title": "blog/React/Component_Design/主题色替换方案.md at main · MuYunyun/blog · GitHub",
-    "count": 4,
-    "uniques": 4
-  },
-  {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/BasicSkill/设计模式/命令模式.md at main · MuYunyun/blog · GitHub",
+    "count": 4,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%81%8C%E8%B4%A3%E9%93%BE%E6%A8%A1%E5%BC%8F.md",
+    "title": "blog/BasicSkill/设计模式/职责链模式.md at main · MuYunyun/blog · GitHub",
     "count": 4,
     "uniques": 3
   }
