@@ -5,14 +5,14 @@
     "uniques": 10
   },
   {
-    "referrer": "Google",
-    "count": 22,
-    "uniques": 15
+    "referrer": "github.com",
+    "count": 27,
+    "uniques": 14
   },
   {
-    "referrer": "github.com",
-    "count": 16,
-    "uniques": 14
+    "referrer": "Google",
+    "count": 25,
+    "uniques": 16
   },
   {
     "referrer": "link.segmentfault.com",
@@ -21,7 +21,7 @@
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 1,
-    "uniques": 1
+    "count": 2,
+    "uniques": 2
   }
 ]
