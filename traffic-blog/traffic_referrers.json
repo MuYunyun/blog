@@ -5,14 +5,14 @@
     "uniques": 6
   },
   {
-    "referrer": "github.com",
-    "count": 12,
-    "uniques": 8
-  },
-  {
     "referrer": "Google",
     "count": 12,
     "uniques": 4
+  },
+  {
+    "referrer": "github.com",
+    "count": 11,
+    "uniques": 7
   },
   {
     "referrer": "muyunyun.cn",
