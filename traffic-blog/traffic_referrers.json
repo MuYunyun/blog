@@ -1,18 +1,18 @@
 [
   {
     "referrer": "Google",
-    "count": 20,
-    "uniques": 14
+    "count": 27,
+    "uniques": 15
   },
   {
     "referrer": "link.juejin.cn",
-    "count": 16,
+    "count": 23,
     "uniques": 7
   },
   {
     "referrer": "github.com",
-    "count": 6,
-    "uniques": 2
+    "count": 12,
+    "uniques": 5
   },
   {
     "referrer": "v2ex.com",
