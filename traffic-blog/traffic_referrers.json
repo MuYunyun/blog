@@ -1,18 +1,18 @@
 [
   {
-    "referrer": "Google",
-    "count": 26,
-    "uniques": 15
-  },
-  {
     "referrer": "link.juejin.cn",
     "count": 26,
     "uniques": 5
   },
   {
+    "referrer": "Google",
+    "count": 23,
+    "uniques": 13
+  },
+  {
     "referrer": "github.com",
-    "count": 10,
-    "uniques": 6
+    "count": 11,
+    "uniques": 7
   },
   {
     "referrer": "imooc.com",
@@ -26,11 +26,6 @@
   },
   {
     "referrer": "cnblogs.com",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "referrer": "leetcode.cn",
     "count": 1,
     "uniques": 1
   }
