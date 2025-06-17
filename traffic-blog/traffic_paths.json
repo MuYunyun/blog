@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 26,
-    "uniques": 20
+    "count": 25,
+    "uniques": 19
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md",
@@ -54,9 +54,9 @@
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/blog/blob/main/React/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84requestIdleCallback.md",
-    "title": "blog/React/你不知道的requestIdleCallback.md at main · MuYunyun/blog · GitHub",
+    "path": "/MuYunyun/blog/pulls",
+    "title": "Pull requests · MuYunyun/blog · GitHub",
     "count": 3,
-    "uniques": 2
+    "uniques": 3
   }
 ]

@@ -6,8 +6,8 @@
   },
   {
     "referrer": "github.com",
-    "count": 16,
-    "uniques": 12
+    "count": 13,
+    "uniques": 10
   },
   {
     "referrer": "Google",
@@ -15,12 +15,12 @@
     "uniques": 3
   },
   {
-    "referrer": "v2ex.com",
+    "referrer": "link.zhihu.com",
     "count": 4,
     "uniques": 2
   },
   {
-    "referrer": "link.zhihu.com",
+    "referrer": "v2ex.com",
     "count": 4,
     "uniques": 2
   },
