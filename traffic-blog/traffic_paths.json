@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 9,
-    "uniques": 9
+    "count": 8,
+    "uniques": 8
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%81%8C%E8%B4%A3%E9%93%BE%E6%A8%A1%E5%BC%8F.md",
@@ -12,14 +12,44 @@
     "uniques": 2
   },
   {
+    "path": "/MuYunyun/blog/issues/84",
+    "title": "SEO 在 SPA 站点中的实践 · Issue #84 · MuYunyun/blog · GitHub",
+    "count": 4,
+    "uniques": 4
+  },
+  {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
     "title": "blog/BasicSkill/设计模式/单例模式.md at main · MuYunyun/blog · GitHub",
     "count": 2,
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/issues/84",
-    "title": "SEO 在 SPA 站点中的实践 · Issue #84 · MuYunyun/blog · GitHub",
+    "path": "/MuYunyun/blog/blob/main/React/%E6%B5%8B%E8%AF%95/Jest%E4%B8%8EReactTestingLibrary.md",
+    "title": "blog/React/测试/Jest与ReactTestingLibrary.md at main · MuYunyun/blog · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/React/%E6%B5%8B%E8%AF%95/React%E7%8E%B0%E4%BB%A3%E5%8C%96%E6%B5%8B%E8%AF%95.md",
+    "title": "blog/React/测试/React现代化测试.md at main · MuYunyun/blog · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/issues",
+    "title": "Issues · MuYunyun/blog",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/issues/24",
+    "title": "1.JSX 和 Virtual DOM · Issue #24 · MuYunyun/blog · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/pulls",
+    "title": "Pull requests · MuYunyun/blog · GitHub",
     "count": 2,
     "uniques": 2
   },
@@ -27,36 +57,6 @@
     "path": "/MuYunyun/blog/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/life/financial.md",
     "title": "blog/BasicSkill/life/financial.md at 2d8ba877749d74010ea1cf12c2e105f4fb47ad29...",
     "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E7%AF%87/%E8%A7%A3%E8%AF%BBIoC%E6%A1%86%E6%9E%B6InversifyJS.md",
-    "title": "File not found · GitHub",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/ioC%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/BasicSkill/设计模式/ioC模式.md at main · MuYunyun/blog · GitHub",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/pull/268/files",
-    "title": "chore(deps): bump actions/first-interaction from 1 to 2 by dependabot[bot] · ...",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/React/%E6%B7%B1%E5%85%A5Fiber%E6%9E%B6%E6%9E%84.md",
-    "title": "blog/React/深入Fiber架构.md at 2d8ba877749d74010ea1cf12c2e105f4fb47ad29 · MuYunyu...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/a5fafcbd2c7d92c4693ca3ff01731f0bbe53eb99/Algorithm/algorithm/complexy.md",
-    "title": "blog/Algorithm/algorithm/complexy.md at a5fafcbd2c7d92c4693ca3ff01731f0bbe53e...",
-    "count": 1,
     "uniques": 1
   }
 ]
