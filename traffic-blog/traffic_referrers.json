@@ -1,10 +1,5 @@
 [
   {
-    "referrer": "Google",
-    "count": 17,
-    "uniques": 8
-  },
-  {
     "referrer": "link.juejin.cn",
     "count": 16,
     "uniques": 5
@@ -15,8 +10,13 @@
     "uniques": 6
   },
   {
+    "referrer": "Google",
+    "count": 11,
+    "uniques": 8
+  },
+  {
     "referrer": "cloud.tencent.com",
-    "count": 1,
-    "uniques": 1
+    "count": 2,
+    "uniques": 2
   }
 ]
