@@ -2,19 +2,13 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 8,
-    "uniques": 8
+    "count": 7,
+    "uniques": 7
   },
   {
     "path": "/MuYunyun/blog/blob/main/FeCloud/%E5%BE%AE%E5%89%8D%E7%AB%AF.md",
     "title": "blog/FeCloud/微前端.md at main · MuYunyun/blog",
     "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8.md",
-    "title": "blog/BasicSkill/编程范式/函数式编程入门.md at main · MuYunyun/blog",
-    "count": 1,
     "uniques": 1
   },
   {
@@ -24,20 +18,8 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/BasicSkill/设计模式/装饰者模式.md at main · MuYunyun/blog · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/project_framework/CAS%E7%99%BB%E5%85%A5%E6%B5%81%E7%A8%8B.md",
     "title": "blog/BasicSkill/project_framework/CAS登入流程.md at main · MuYunyun/blog",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/readES6/Promise%E6%9C%AD%E8%AE%B0.md",
-    "title": "File not found · GitHub",
     "count": 1,
     "uniques": 1
   },
@@ -56,6 +38,24 @@
   {
     "path": "/MuYunyun/blog/blob/main/FeCloud/lerna.md",
     "title": "blog/FeCloud/lerna.md at main · MuYunyun/blog",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/FeCloud/prerender_based_ssr.md",
+    "title": "blog/FeCloud/prerender_based_ssr.md at main · MuYunyun/blog",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/React/%E6%B7%B1%E5%85%A5Fiber%E6%9E%B6%E6%9E%84.md",
+    "title": "blog/React/深入Fiber架构.md at main · MuYunyun/blog",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/commit/2d8ba877749d74010ea1cf12c2e105f4fb47ad29",
+    "title": "docs: update · MuYunyun/blog@2d8ba87 · GitHub",
     "count": 1,
     "uniques": 1
   }
