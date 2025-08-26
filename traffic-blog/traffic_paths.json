@@ -2,36 +2,12 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 3,
-    "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md",
-    "title": "blog/BasicSkill/设计模式/单例模式.md at main · MuYunyun/blog · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/commit/2d8ba877749d74010ea1cf12c2e105f4fb47ad29",
-    "title": "docs: update · MuYunyun/blog@2d8ba87 · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/issues/1",
-    "title": "hexo 摸爬滚打之进阶教程 · Issue #1 · MuYunyun/blog",
-    "count": 1,
-    "uniques": 1
+    "count": 2,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/blog/issues/27",
     "title": "4.优化setState和ref的实现 · Issue #27 · MuYunyun/blog · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/pull/268",
-    "title": "chore(deps): bump actions/first-interaction from 1 to 2 by dependabot[bot] · ...",
     "count": 1,
     "uniques": 1
   }
