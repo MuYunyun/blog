@@ -2,18 +2,12 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 7,
-    "uniques": 7
+    "count": 6,
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/状态模式.md",
     "title": "blog/BasicSkill/设计模式/状态模式.md at main · MuYunyun/blog · GitHub",
-    "count": 3,
-    "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/组合模式.md",
-    "title": "blog/BasicSkill/设计模式/组合模式.md at main · MuYunyun/blog · GitHub",
     "count": 3,
     "uniques": 3
   },
@@ -36,6 +30,12 @@
     "uniques": 2
   },
   {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/组合模式.md",
+    "title": "blog/BasicSkill/设计模式/组合模式.md at main · MuYunyun/blog · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/观察者模式.md",
     "title": "blog/BasicSkill/设计模式/观察者模式.md at main · MuYunyun/blog · GitHub",
     "count": 2,
@@ -54,9 +54,9 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/actions/runs/14506367619/job/40696436813",
-    "title": "traffic2badge · MuYunyun/blog@2d8ba87 · GitHub",
-    "count": 1,
-    "uniques": 1
+    "path": "/MuYunyun/blog/issues/19",
+    "title": "探寻 webpack 插件机制 · Issue #19 · MuYunyun/blog · GitHub",
+    "count": 2,
+    "uniques": 2
   }
 ]
