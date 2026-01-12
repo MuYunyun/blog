@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 6,
-    "uniques": 5
+    "count": 7,
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/享元模式.md",
@@ -20,6 +20,12 @@
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/单例模式.md",
     "title": "blog/BasicSkill/设计模式/单例模式.md at main · MuYunyun/blog · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/策略模式.md",
+    "title": "blog/BasicSkill/设计模式/策略模式.md at main · MuYunyun/blog · GitHub",
     "count": 2,
     "uniques": 2
   },
@@ -50,12 +56,6 @@
   {
     "path": "/MuYunyun/blog/issues/2",
     "title": "读书笔记-你不知道的 JavaScript (上) · Issue #2 · MuYunyun/blog · GitHub",
-    "count": 2,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/issues/26",
-    "title": "3.生命周期和 diff 算法 · Issue #26 · MuYunyun/blog · GitHub",
     "count": 2,
     "uniques": 2
   }
