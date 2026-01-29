@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 17,
-    "uniques": 12
+    "count": 19,
+    "uniques": 14
   },
   {
     "path": "/MuYunyun/blog/issues",
@@ -24,14 +24,20 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/职责链模式.md",
-    "title": "blog/BasicSkill/设计模式/职责链模式.md at main · MuYunyun/blog · GitHub",
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/单例模式.md",
+    "title": "blog/BasicSkill/设计模式/单例模式.md at main · MuYunyun/blog",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/命令模式.md",
+    "title": "blog/BasicSkill/设计模式/命令模式.md at main · MuYunyun/blog · GitHub",
     "count": 2,
     "uniques": 2
   },
   {
     "path": "/MuYunyun/blog/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
-    "title": "blog/React/Component_Design/重新认识受控与非受控组件.md at main · MuYunyun/blog",
+    "title": "blog/React/Component_Design/重新认识受控与非受控组件.md at main · MuYunyun/blog · GitHub",
     "count": 2,
     "uniques": 2
   },
@@ -52,11 +58,5 @@
     "title": "blog/.commitlintrc.js at main · MuYunyun/blog",
     "count": 2,
     "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/React/Component_Design/Affix.md",
-    "title": "blog/React/Component_Design/AddressPicker.md at main · MuYunyun/blog",
-    "count": 2,
-    "uniques": 1
   }
 ]
