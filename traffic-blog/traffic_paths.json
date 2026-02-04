@@ -2,20 +2,14 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 16,
-    "uniques": 12
-  },
-  {
-    "path": "/MuYunyun/blog/issues",
-    "title": "GitHub · Where software is built",
-    "count": 5,
-    "uniques": 2
+    "count": 10,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/单例模式.md",
     "title": "blog/BasicSkill/设计模式/单例模式.md at main · MuYunyun/blog · GitHub",
-    "count": 3,
-    "uniques": 3
+    "count": 4,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/状态模式.md",
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/blog/actions/runs/12061120679",
     "title": "traffic2badge · MuYunyun/blog@2d8ba87 · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/ioC模式.md",
+    "title": "blog/BasicSkill/设计模式/装饰者模式.md at main · MuYunyun/blog · GitHub",
     "count": 1,
     "uniques": 1
   }
