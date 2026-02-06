@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 9,
-    "uniques": 8
+    "count": 10,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/单例模式.md",
@@ -18,15 +18,15 @@
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/命令模式.md",
-    "title": "blog/BasicSkill/设计模式/命令模式.md at main · MuYunyun/blog · GitHub",
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/代理模式.md",
+    "title": "blog/BasicSkill/设计模式/代理模式.md at main · MuYunyun/blog · GitHub",
     "count": 3,
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/代理模式.md",
-    "title": "blog/BasicSkill/设计模式/代理模式.md at main · MuYunyun/blog · GitHub",
-    "count": 2,
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/命令模式.md",
+    "title": "blog/BasicSkill/设计模式/命令模式.md at main · MuYunyun/blog · GitHub",
+    "count": 3,
     "uniques": 2
   },
   {
@@ -54,8 +54,8 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/actions/runs/12061120679",
-    "title": "traffic2badge · MuYunyun/blog@2d8ba87 · GitHub",
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/中介者模式.md",
+    "title": "blog/BasicSkill/设计模式/中介者模式.md at main · MuYunyun/blog · GitHub",
     "count": 1,
     "uniques": 1
   }
