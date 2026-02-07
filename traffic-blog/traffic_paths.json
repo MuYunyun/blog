@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 10,
-    "uniques": 9
+    "count": 9,
+    "uniques": 8
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/单例模式.md",
@@ -12,27 +12,21 @@
     "uniques": 4
   },
   {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/代理模式.md",
+    "title": "blog/BasicSkill/设计模式/代理模式.md at main · MuYunyun/blog · GitHub",
+    "count": 4,
+    "uniques": 3
+  },
+  {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/状态模式.md",
     "title": "blog/BasicSkill/设计模式/状态模式.md at main · MuYunyun/blog · GitHub",
     "count": 3,
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/代理模式.md",
-    "title": "blog/BasicSkill/设计模式/代理模式.md at main · MuYunyun/blog · GitHub",
-    "count": 3,
-    "uniques": 2
-  },
-  {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/命令模式.md",
     "title": "blog/BasicSkill/设计模式/命令模式.md at main · MuYunyun/blog · GitHub",
     "count": 3,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/组合模式.md",
-    "title": "blog/BasicSkill/设计模式/组合模式.md at main · MuYunyun/blog · GitHub",
-    "count": 2,
     "uniques": 2
   },
   {
@@ -48,10 +42,16 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/issues/7",
-    "title": "Node.js 异步异闻录 · Issue #7 · MuYunyun/blog · GitHub",
-    "count": 2,
-    "uniques": 2
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/basis/移动端场景知识.md",
+    "title": "File not found · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/编程范式/函数式编程入门.md",
+    "title": "blog/BasicSkill/编程范式 at main · MuYunyun/blog · GitHub",
+    "count": 1,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/中介者模式.md",
