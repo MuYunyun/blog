@@ -2,8 +2,14 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 13,
+    "count": 14,
     "uniques": 10
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/编程范式/函数式编程入门.md",
+    "title": "blog/BasicSkill/编程范式/函数式编程入门.md at main · MuYunyun/blog",
+    "count": 5,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/代理模式.md",
@@ -12,14 +18,8 @@
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/编程范式/函数式编程入门.md",
-    "title": "blog/BasicSkill/编程范式/函数式编程入门.md at main · MuYunyun/blog",
-    "count": 4,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/单例模式.md",
-    "title": "blog/BasicSkill/设计模式/单例模式.md at main · MuYunyun/blog · GitHub",
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/发布订阅模式.md",
+    "title": "blog/BasicSkill/设计模式/发布订阅模式.md at main · MuYunyun/blog",
     "count": 2,
     "uniques": 2
   },
