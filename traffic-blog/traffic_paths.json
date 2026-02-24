@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 12,
-    "uniques": 9
+    "count": 13,
+    "uniques": 10
   },
   {
     "path": "/MuYunyun/blog/blob/main/React/Component_Design/CheckBox.md",
@@ -22,18 +22,6 @@
     "title": "GitHub - MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
     "count": 2,
     "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/Algorithm/algorithm/complexy.md",
-    "title": "blog/Algorithm/algorithm/complexy.md at main · MuYunyun/blog · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/Algorithm/algorithm/greedy.md",
-    "title": "blog/Algorithm/algorithm/greedy.md at main · MuYunyun/blog · GitHub",
-    "count": 1,
-    "uniques": 1
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/algorithm/划分算法.md",
@@ -56,6 +44,18 @@
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/project_framework/RPC在点我达网关的实践一.md",
     "title": "blog/BasicSkill/project_framework/RPC在点我达网关的实践一.md at main · MuYunyun/blog",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/基础篇/探寻JavaScript精度问题.md",
+    "title": "File not found · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/基础篇/移动端场景知识.md",
+    "title": "File not found · GitHub",
     "count": 1,
     "uniques": 1
   }
