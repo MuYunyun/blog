@@ -5,12 +5,12 @@
     "uniques": 5
   },
   {
-    "referrer": "Google",
+    "referrer": "link.juejin.cn",
     "count": 3,
     "uniques": 3
   },
   {
-    "referrer": "link.juejin.cn",
+    "referrer": "Google",
     "count": 2,
     "uniques": 2
   }
