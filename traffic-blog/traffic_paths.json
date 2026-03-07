@@ -2,7 +2,7 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 16,
+    "count": 17,
     "uniques": 14
   },
   {
@@ -24,6 +24,12 @@
     "uniques": 2
   },
   {
+    "path": "/MuYunyun/blog/pulls",
+    "title": "Pull requests · MuYunyun/blog · GitHub",
+    "count": 3,
+    "uniques": 2
+  },
+  {
     "path": "/MuYunyun/blog/blob/main/React/Component_Design/Affix.md",
     "title": "blog/React/Component_Design/Affix.md at main · MuYunyun/blog · GitHub",
     "count": 2,
@@ -32,12 +38,6 @@
   {
     "path": "/MuYunyun/blog/blob/main/Algorithm/leetcode/130.Surrounded_Regions.md",
     "title": "blog/Algorithm/leetcode/130.Surrounded_Regions.md at main · MuYunyun/blog · G...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/algorithm/划分算法.md",
-    "title": "File not found · GitHub",
     "count": 1,
     "uniques": 1
   },
