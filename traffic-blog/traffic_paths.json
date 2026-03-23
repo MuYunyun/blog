@@ -2,13 +2,19 @@
   {
     "path": "/MuYunyun/blog",
     "title": "MuYunyun/blog: Life is a moment :notebook_with_decorative_cover:",
-    "count": 14,
-    "uniques": 12
+    "count": 16,
+    "uniques": 13
   },
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "Pull requests · MuYunyun/blog · GitHub",
     "count": 9,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/blog/discussions",
+    "title": "MuYunyun/blog · Discussions · GitHub",
+    "count": 5,
     "uniques": 3
   },
   {
@@ -22,12 +28,6 @@
     "title": "Issues · MuYunyun/blog · GitHub",
     "count": 5,
     "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/discussions",
-    "title": "MuYunyun/blog · Discussions · GitHub",
-    "count": 4,
-    "uniques": 3
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/单例模式.md",
@@ -54,8 +54,8 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/life/house/shanghai_house_knowledge.md",
-    "title": "blog/BasicSkill/life/house/shanghai_house_knowledge.md at 2d8ba877749d74010ea...",
+    "path": "/MuYunyun/blog/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/life/books/the_almanack_of_naval_ravikant.md",
+    "title": "blog/BasicSkill/life/books/the_almanack_of_naval_ravikant.md at 2d8ba877749d7...",
     "count": 2,
     "uniques": 1
   }
