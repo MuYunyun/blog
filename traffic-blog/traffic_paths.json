@@ -2,13 +2,13 @@
   {
     "path": "/MuYunyun/blog",
     "title": "GitHub - MuYunyun/blog: Life is a moment :notebook_with_decorative_cover: · G...",
-    "count": 18,
-    "uniques": 14
+    "count": 19,
+    "uniques": 15
   },
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "MuYunyun/blog · Discussions · GitHub",
-    "count": 8,
+    "count": 7,
     "uniques": 5
   },
   {
@@ -28,12 +28,6 @@
     "title": "blog/React/Component_Design/重新认识受控与非受控组件.md at main · MuYunyun/blog",
     "count": 3,
     "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/discussions/categories/general",
-    "title": "MuYunyun/blog General · Discussions · GitHub",
-    "count": 2,
-    "uniques": 2
   },
   {
     "path": "/MuYunyun/blog/issues/15",
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/blog/commit/2aa3addfa7af39039d80e02c539b190d60064976",
     "title": "docs: update logo · MuYunyun/blog@2aa3add · GitHub",
+    "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/commit/e932afc3a6761db3c78539c57ba3b1a953242d78",
+    "title": "life: nanjin travel · MuYunyun/blog@e932afc · GitHub",
     "count": 2,
     "uniques": 1
   }
