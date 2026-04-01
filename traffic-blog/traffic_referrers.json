@@ -8,5 +8,10 @@
     "referrer": "Google",
     "count": 4,
     "uniques": 2
+  },
+  {
+    "referrer": "link.zhihu.com",
+    "count": 1,
+    "uniques": 1
   }
 ]
