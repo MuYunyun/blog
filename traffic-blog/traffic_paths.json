@@ -2,13 +2,13 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 20,
-    "uniques": 11
+    "count": 18,
+    "uniques": 10
   },
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 15,
+    "count": 12,
     "uniques": 4
   },
   {
@@ -20,8 +20,8 @@
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 4,
-    "uniques": 2
+    "count": 5,
+    "uniques": 3
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/代理模式.md",
