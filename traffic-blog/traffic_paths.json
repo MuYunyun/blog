@@ -3,25 +3,25 @@
     "path": "/MuYunyun/blog",
     "title": "Overview",
     "count": 16,
-    "uniques": 9
+    "uniques": 10
   },
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 12,
+    "count": 11,
     "uniques": 4
   },
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 7,
-    "uniques": 3
+    "count": 8,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 5,
-    "uniques": 4
+    "count": 6,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/职责链模式.md",
