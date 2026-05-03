@@ -2,26 +2,26 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 22,
+    "count": 24,
     "uniques": 16
   },
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 19,
-    "uniques": 17
+    "count": 21,
+    "uniques": 19
   },
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
     "count": 9,
-    "uniques": 7
+    "uniques": 8
   },
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 5,
-    "uniques": 4
+    "count": 6,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/commit/7a55c4f0cab4698d4efdc086184d53a50c8f883b",
@@ -42,6 +42,12 @@
     "uniques": 2
   },
   {
+    "path": "/MuYunyun/blog/issues/255",
+    "title": "/issues/255",
+    "count": 2,
+    "uniques": 2
+  },
+  {
     "path": "/MuYunyun/blog/blob/main/React/你不知道的requestIdleCallback.md",
     "title": "/blob/main/React/你不知道的requestIdleCallback.md",
     "count": 2,
@@ -50,12 +56,6 @@
   {
     "path": "/MuYunyun/blog/blob/main/package.json",
     "title": "/blob/main/package.json",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/yarn.lock",
-    "title": "/blob/main/yarn.lock",
     "count": 2,
     "uniques": 1
   }
