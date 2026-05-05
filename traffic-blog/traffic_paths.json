@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 28,
-    "uniques": 26
+    "count": 27,
+    "uniques": 25
   },
   {
     "path": "/MuYunyun/blog",
@@ -14,26 +14,20 @@
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 8,
-    "uniques": 8
+    "count": 11,
+    "uniques": 11
   },
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 7,
-    "uniques": 6
+    "count": 6,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/commit/7a55c4f0cab4698d4efdc086184d53a50c8f883b",
     "title": "/commit/7a55c4f0cab4698d4efdc086184d53a50c8f883b",
     "count": 4,
     "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/.npmrc",
-    "title": "/blob/main/.npmrc",
-    "count": 2,
-    "uniques": 2
   },
   {
     "path": "/MuYunyun/blog/issues/14",
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/blog/blob/main/package.json",
     "title": "/blob/main/package.json",
+    "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/yarn.lock",
+    "title": "/blob/main/yarn.lock",
     "count": 2,
     "uniques": 1
   }
