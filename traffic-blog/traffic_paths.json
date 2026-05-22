@@ -12,16 +12,16 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/blog/discussions",
-    "title": "/discussions",
-    "count": 4,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/blog/issues/19",
     "title": "/issues/19",
     "count": 3,
     "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/discussions",
+    "title": "/discussions",
+    "count": 3,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/观察者模式.md",
