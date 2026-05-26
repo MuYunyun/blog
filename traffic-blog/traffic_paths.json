@@ -6,6 +6,12 @@
     "uniques": 7
   },
   {
+    "path": "/MuYunyun/blog/pulls",
+    "title": "/pulls",
+    "count": 4,
+    "uniques": 2
+  },
+  {
     "path": "/MuYunyun/blog/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/life/financial.md",
     "title": "/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/life/financial.md",
     "count": 4,
@@ -14,20 +20,14 @@
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 2,
-    "uniques": 2
+    "count": 3,
+    "uniques": 3
   },
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
     "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/pulls",
-    "title": "/pulls",
-    "count": 2,
-    "uniques": 1
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/blog/blame/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/life/financial.md",
