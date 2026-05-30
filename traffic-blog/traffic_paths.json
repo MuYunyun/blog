@@ -2,14 +2,20 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 8,
-    "uniques": 7
+    "count": 9,
+    "uniques": 8
   },
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 5,
-    "uniques": 3
+    "count": 6,
+    "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/blog/issues",
+    "title": "/issues",
+    "count": 4,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/blog/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/life/financial.md",
@@ -20,12 +26,6 @@
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 3,
-    "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/blog/issues",
-    "title": "/issues",
     "count": 3,
     "uniques": 3
   },
@@ -42,12 +42,6 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/blog/blob/main/.gitignore",
-    "title": "/blob/main/.gitignore",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/blog/blob/main/React/从0到1实现React/8.HOC探索.md",
     "title": "/blob/main/React/从0到1实现React/8.HOC探索.md",
     "count": 1,
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/blog/blob/main/React/测试/Jest与ReactTestingLibrary.md",
     "title": "/blob/main/React/测试/Jest与ReactTestingLibrary.md",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/issues/133",
+    "title": "/issues/133",
     "count": 1,
     "uniques": 1
   }
