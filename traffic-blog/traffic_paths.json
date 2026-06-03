@@ -20,7 +20,7 @@
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 3,
+    "count": 4,
     "uniques": 3
   },
   {
@@ -28,12 +28,6 @@
     "title": "/issues/133",
     "count": 2,
     "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/FeCloud/PackageManager/yarn.md",
-    "title": "/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/FeCloud/PackageManager/yarn.md",
-    "count": 1,
-    "uniques": 1
   },
   {
     "path": "/MuYunyun/blog/blob/main/React/%E6%B7%B1%E5%85%A5Fiber%E6%9E%B6%E6%9E%84.md",
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/blog/blob/main/roadmap.png",
     "title": "/blob/main/roadmap.png",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/从0到1实现React/3.生命周期.md",
+    "title": "/blob/main/从0到1实现React/3.生命周期.md",
     "count": 1,
     "uniques": 1
   }
