@@ -6,22 +6,22 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog",
-    "title": "Overview",
-    "count": 11,
-    "uniques": 10
-  },
-  {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 10,
+    "count": 9,
     "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/blog",
+    "title": "Overview",
+    "count": 8,
+    "uniques": 7
   },
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 4,
-    "uniques": 4
+    "count": 5,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/LeetCode/149.Max_Points_on_a_Line/README.md",
