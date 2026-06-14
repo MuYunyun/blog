@@ -2,14 +2,8 @@
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 12,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/pulls",
-    "title": "/pulls",
-    "count": 9,
-    "uniques": 4
+    "count": 15,
+    "uniques": 3
   },
   {
     "path": "/MuYunyun/blog",
@@ -18,10 +12,22 @@
     "uniques": 7
   },
   {
+    "path": "/MuYunyun/blog/pulls",
+    "title": "/pulls",
+    "count": 6,
+    "uniques": 2
+  },
+  {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
     "count": 5,
     "uniques": 5
+  },
+  {
+    "path": "/MuYunyun/blog/actions",
+    "title": "/actions",
+    "count": 1,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/LeetCode/149.Max_Points_on_a_Line/README.md",
@@ -50,12 +56,6 @@
   {
     "path": "/MuYunyun/blog/blob/main/LeetCode/86.Partition_List.md",
     "title": "/blob/main/LeetCode/86.Partition_List.md",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/React/%E6%B7%B1%E5%85%A5Fiber%E6%9E%B6%E6%9E%84.md",
-    "title": "/blob/main/React/%E6%B7%B1%E5%85%A5Fiber%E6%9E%B6%E6%9E%84.md",
     "count": 1,
     "uniques": 1
   }
