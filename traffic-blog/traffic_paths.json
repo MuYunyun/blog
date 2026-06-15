@@ -2,26 +2,32 @@
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 15,
-    "uniques": 3
+    "count": 17,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 8,
-    "uniques": 7
-  },
-  {
-    "path": "/MuYunyun/blog/pulls",
-    "title": "/pulls",
     "count": 6,
-    "uniques": 2
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
     "count": 5,
     "uniques": 5
+  },
+  {
+    "path": "/MuYunyun/blog/pulls",
+    "title": "/pulls",
+    "count": 4,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/discussions/categories/show-and-tell",
+    "title": "/discussions/categories/show-and-tell",
+    "count": 2,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/blog/actions",
@@ -50,12 +56,6 @@
   {
     "path": "/MuYunyun/blog/blob/main/LeetCode/67.Add_Binary/README.md",
     "title": "/blob/main/LeetCode/67.Add_Binary/README.md",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/LeetCode/86.Partition_List.md",
-    "title": "/blob/main/LeetCode/86.Partition_List.md",
     "count": 1,
     "uniques": 1
   }
