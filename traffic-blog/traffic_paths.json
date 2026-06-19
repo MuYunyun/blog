@@ -8,8 +8,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 7,
-    "uniques": 6
+    "count": 8,
+    "uniques": 7
   },
   {
     "path": "/MuYunyun/blog/issues",
@@ -36,6 +36,12 @@
     "uniques": 1
   },
   {
+    "path": "/MuYunyun/blog/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
+    "title": "/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
+    "count": 2,
+    "uniques": 1
+  },
+  {
     "path": "/MuYunyun/blog/actions",
     "title": "/actions",
     "count": 1,
@@ -48,14 +54,8 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/LeetCode/149.Max_Points_on_a_Line/README.md",
-    "title": "/blob/main/BasicSkill/LeetCode/149.Max_Points_on_a_Line/README.md",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/LeetCode/92.Reverse_Linked_List_II/README.md",
-    "title": "/blob/main/BasicSkill/LeetCode/92.Reverse_Linked_List_II/README.md",
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/代理模式.md",
+    "title": "/blob/main/BasicSkill/设计模式/代理模式.md",
     "count": 1,
     "uniques": 1
   }
