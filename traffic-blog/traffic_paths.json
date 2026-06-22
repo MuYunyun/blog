@@ -2,26 +2,20 @@
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 14,
+    "count": 11,
     "uniques": 4
   },
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 6,
-    "uniques": 6
+    "count": 5,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 6,
-    "uniques": 6
-  },
-  {
-    "path": "/MuYunyun/blog/pulls",
-    "title": "/pulls",
     "count": 4,
-    "uniques": 3
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/blog/discussions/categories/show-and-tell",
@@ -30,14 +24,14 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/模板方法模式.md",
-    "title": "/blob/main/BasicSkill/设计模式/模板方法模式.md",
+    "path": "/MuYunyun/blog/pulls",
+    "title": "/pulls",
     "count": 2,
-    "uniques": 1
+    "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
-    "title": "/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/模板方法模式.md",
+    "title": "/blob/main/BasicSkill/设计模式/模板方法模式.md",
     "count": 2,
     "uniques": 1
   },
@@ -50,6 +44,12 @@
   {
     "path": "/MuYunyun/blog/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/efficiency/apple/apple_skill.md",
     "title": "/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/efficiency/apple/apple_skill.md",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/efficiency/chatgpt.md",
+    "title": "/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/efficiency/chatgpt.md",
     "count": 1,
     "uniques": 1
   },
