@@ -2,26 +2,20 @@
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 12,
-    "uniques": 4
+    "count": 13,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 7,
-    "uniques": 7
+    "count": 8,
+    "uniques": 8
   },
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 3,
-    "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/blog/discussions/categories/show-and-tell",
-    "title": "/discussions/categories/show-and-tell",
-    "count": 2,
-    "uniques": 2
+    "count": 4,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/blog/pulls",
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/blog/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/efficiency/chatgpt.md",
     "title": "/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/efficiency/chatgpt.md",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/efficiency/omniGraffle流程图.md",
+    "title": "/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/efficiency/omniGraffle流程图.md",
     "count": 1,
     "uniques": 1
   }
