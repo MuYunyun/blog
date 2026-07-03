@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 9,
-    "uniques": 9
+    "count": 8,
+    "uniques": 8
   },
   {
     "path": "/MuYunyun/blog/discussions",
@@ -12,8 +12,8 @@
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/blog/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
-    "title": "/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
+    "path": "/MuYunyun/blog/issues",
+    "title": "/issues",
     "count": 3,
     "uniques": 3
   },
@@ -24,8 +24,8 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/issues",
-    "title": "/issues",
+    "path": "/MuYunyun/blog/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
+    "title": "/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
     "count": 2,
     "uniques": 2
   },
