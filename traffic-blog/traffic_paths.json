@@ -2,20 +2,26 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 8,
-    "uniques": 8
+    "count": 9,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 6,
+    "count": 8,
     "uniques": 4
   },
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 3,
+    "count": 4,
     "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/职责链模式.md",
+    "title": "/blob/main/BasicSkill/设计模式/职责链模式.md",
+    "count": 2,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/blog/blob/main/README.md",
@@ -50,12 +56,6 @@
   {
     "path": "/MuYunyun/blog/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/efficiency/omniGraffle流程图.md",
     "title": "/blob/2d8ba877749d74010ea1cf12c2e105f4fb47ad29/BasicSkill/efficiency/omniGraffle流程图.md",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/7bdad6158a6d49bc3a99123a054b0934034cc598/BasicSkill/node/koa/application.js",
-    "title": "/blob/7bdad6158a6d49bc3a99123a054b0934034cc598/BasicSkill/node/koa/application.js",
     "count": 1,
     "uniques": 1
   }
