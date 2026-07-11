@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 11,
-    "uniques": 11
+    "count": 10,
+    "uniques": 10
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/策略模式.md",
@@ -12,9 +12,15 @@
     "uniques": 1
   },
   {
+    "path": "/MuYunyun/blog/issues",
+    "title": "/issues",
+    "count": 4,
+    "uniques": 3
+  },
+  {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 5,
+    "count": 4,
     "uniques": 2
   },
   {
@@ -24,10 +30,10 @@
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/blog/issues",
-    "title": "/issues",
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/发布订阅模式.md",
+    "title": "/blob/main/BasicSkill/设计模式/发布订阅模式.md",
     "count": 3,
-    "uniques": 2
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/职责链模式.md",
@@ -50,12 +56,6 @@
   {
     "path": "/MuYunyun/blog/issues/2",
     "title": "/issues/2",
-    "count": 2,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/pulls",
-    "title": "/pulls",
     "count": 2,
     "uniques": 2
   }
