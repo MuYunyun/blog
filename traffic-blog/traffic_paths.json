@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 10,
-    "uniques": 10
+    "count": 9,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/策略模式.md",
@@ -24,22 +24,10 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
-    "title": "/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
-    "count": 3,
-    "uniques": 3
-  },
-  {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/发布订阅模式.md",
     "title": "/blob/main/BasicSkill/设计模式/发布订阅模式.md",
     "count": 3,
     "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/职责链模式.md",
-    "title": "/blob/main/BasicSkill/设计模式/职责链模式.md",
-    "count": 2,
-    "uniques": 2
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/迭代器模式.md",
@@ -58,5 +46,17 @@
     "title": "/issues/2",
     "count": 2,
     "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/pulls",
+    "title": "/pulls",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/代理模式.md",
+    "title": "/blob/main/BasicSkill/设计模式/代理模式.md",
+    "count": 2,
+    "uniques": 1
   }
 ]
