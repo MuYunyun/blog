@@ -8,5 +8,10 @@
     "referrer": "github.com",
     "count": 6,
     "uniques": 6
+  },
+  {
+    "referrer": "Google",
+    "count": 1,
+    "uniques": 1
   }
 ]
