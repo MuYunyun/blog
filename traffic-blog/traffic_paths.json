@@ -2,7 +2,7 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 7,
+    "count": 8,
     "uniques": 7
   },
   {
@@ -12,15 +12,15 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/blog/issues",
-    "title": "/issues",
-    "count": 4,
-    "uniques": 3
-  },
-  {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
     "count": 4,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/issues",
+    "title": "/issues",
+    "count": 3,
     "uniques": 2
   },
   {
