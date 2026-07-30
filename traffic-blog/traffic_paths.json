@@ -8,7 +8,7 @@
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 5,
+    "count": 4,
     "uniques": 3
   },
   {
@@ -24,38 +24,38 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/issues/11",
-    "title": "/issues/11",
-    "count": 2,
-    "uniques": 2
+    "path": "/MuYunyun/blog/actions/runs/21696740899",
+    "title": "/actions/runs/21696740899",
+    "count": 1,
+    "uniques": 1
   },
   {
-    "path": "/MuYunyun/blog/issues/24",
-    "title": "/issues/24",
-    "count": 2,
-    "uniques": 2
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/algorithm",
+    "title": "/blob/main/BasicSkill/algorithm",
+    "count": 1,
+    "uniques": 1
   },
   {
-    "path": "/MuYunyun/blog/issues/25",
-    "title": "/issues/25",
-    "count": 2,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/issues/26",
-    "title": "/issues/26",
-    "count": 2,
-    "uniques": 2
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/发布订阅模式.md",
+    "title": "/blob/main/BasicSkill/设计模式/发布订阅模式.md",
+    "count": 1,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/命令模式.md",
     "title": "/blob/main/BasicSkill/设计模式/命令模式.md",
-    "count": 2,
+    "count": 1,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/blog/actions/runs/21696740899",
-    "title": "/actions/runs/21696740899",
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/装饰者模式.md",
+    "title": "/blob/main/BasicSkill/设计模式/装饰者模式.md",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/观察者模式.md",
+    "title": "/blob/main/BasicSkill/设计模式/观察者模式.md",
     "count": 1,
     "uniques": 1
   }
