@@ -2,7 +2,7 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 10,
+    "count": 9,
     "uniques": 7
   },
   {
@@ -10,6 +10,18 @@
     "title": "/pulls",
     "count": 7,
     "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/系统架构篇/解读IoC框架InversifyJS.md",
+    "title": "/blob/main/BasicSkill/系统架构篇/解读IoC框架InversifyJS.md",
+    "count": 3,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/系统篇/RPC在点我达网关的实践一.md",
+    "title": "/blob/main/BasicSkill/系统篇/RPC在点我达网关的实践一.md",
+    "count": 2,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/命令模式.md",
@@ -45,18 +57,6 @@
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/策略模式.md",
     "title": "/blob/main/BasicSkill/设计模式/策略模式.md",
     "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/issues",
-    "title": "/issues",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/actions/runs/21696740899",
-    "title": "/actions/runs/21696740899",
-    "count": 1,
     "uniques": 1
   }
 ]
