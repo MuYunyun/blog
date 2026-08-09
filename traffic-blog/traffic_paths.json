@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 11,
-    "uniques": 9
+    "count": 10,
+    "uniques": 8
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/系统架构篇/解读IoC框架InversifyJS.md",
@@ -24,6 +24,12 @@
     "uniques": 3
   },
   {
+    "path": "/MuYunyun/blog/issues",
+    "title": "/issues",
+    "count": 3,
+    "uniques": 2
+  },
+  {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/命令模式.md",
     "title": "/blob/main/BasicSkill/设计模式/命令模式.md",
     "count": 2,
@@ -36,8 +42,8 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/issues",
-    "title": "/issues",
+    "path": "/MuYunyun/blog/discussions",
+    "title": "/discussions",
     "count": 2,
     "uniques": 2
   },
@@ -52,11 +58,5 @@
     "title": "/issues/84",
     "count": 2,
     "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/typescript/TypeScript基础篇.md",
-    "title": "/blob/main/BasicSkill/typescript/TypeScript基础篇.md",
-    "count": 2,
-    "uniques": 1
   }
 ]
