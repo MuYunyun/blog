@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 10,
-    "uniques": 8
+    "count": 11,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/系统架构篇/解读IoC框架InversifyJS.md",
@@ -20,20 +20,20 @@
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 6,
-    "uniques": 5
+    "count": 8,
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 5,
+    "count": 6,
     "uniques": 2
   },
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 3,
-    "uniques": 3
+    "count": 4,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/命令模式.md",
