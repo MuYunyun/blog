@@ -2,14 +2,14 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 33,
-    "uniques": 11
+    "count": 32,
+    "uniques": 10
   },
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 23,
-    "uniques": 5
+    "count": 25,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/blog/pulls",
@@ -26,13 +26,25 @@
   {
     "path": "/MuYunyun/blog/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
     "title": "/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
-    "count": 4,
-    "uniques": 4
+    "count": 6,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/tree/main/BasicSkill",
     "title": "/tree/main/BasicSkill",
-    "count": 3,
+    "count": 4,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/单例模式.md",
+    "title": "/blob/main/BasicSkill/设计模式/单例模式.md",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/tree/main/React",
+    "title": "/tree/main/React",
+    "count": 2,
     "uniques": 2
   },
   {
@@ -44,18 +56,6 @@
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/中介者模式.md",
     "title": "/blob/main/BasicSkill/设计模式/中介者模式.md",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/享元模式.md",
-    "title": "/blob/main/BasicSkill/设计模式/享元模式.md",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/blog/issues/35",
-    "title": "/issues/35",
     "count": 2,
     "uniques": 1
   }
