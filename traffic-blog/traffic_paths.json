@@ -2,38 +2,26 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 40,
-    "uniques": 10
+    "count": 34,
+    "uniques": 8
   },
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 29,
+    "count": 30,
     "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 23,
+    "count": 22,
     "uniques": 6
   },
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 19,
+    "count": 17,
     "uniques": 6
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
-    "title": "/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
-    "count": 4,
-    "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/blog/tree/main/BasicSkill",
-    "title": "/tree/main/BasicSkill",
-    "count": 4,
-    "uniques": 3
   },
   {
     "path": "/MuYunyun/blog/blob/main/React/你不知道的requestIdleCallback.md",
@@ -42,8 +30,20 @@
     "uniques": 3
   },
   {
+    "path": "/MuYunyun/blog/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
+    "title": "/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
+    "count": 3,
+    "uniques": 2
+  },
+  {
     "path": "/MuYunyun/blog/blob/main/injectLogic.js",
     "title": "/blob/main/injectLogic.js",
+    "count": 3,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/commit/fa4fd45b3d47cee39079e171c7f413bd6e6ce2df",
+    "title": "/commit/fa4fd45b3d47cee39079e171c7f413bd6e6ce2df",
     "count": 3,
     "uniques": 2
   },
