@@ -2,13 +2,13 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 34,
-    "uniques": 8
+    "count": 39,
+    "uniques": 10
   },
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 30,
+    "count": 32,
     "uniques": 5
   },
   {
@@ -20,7 +20,7 @@
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 17,
+    "count": 16,
     "uniques": 6
   },
   {
@@ -54,8 +54,8 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/tree/main/React",
-    "title": "/tree/main/React",
+    "path": "/MuYunyun/blog/tree/main/BasicSkill",
+    "title": "/tree/main/BasicSkill",
     "count": 2,
     "uniques": 2
   }
