@@ -2,7 +2,7 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 42,
+    "count": 39,
     "uniques": 8
   },
   {
@@ -14,7 +14,7 @@
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 19,
+    "count": 18,
     "uniques": 5
   },
   {
@@ -30,21 +30,21 @@
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/blog/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
-    "title": "/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
-    "count": 3,
-    "uniques": 3
-  },
-  {
     "path": "/MuYunyun/blog/issues/14",
     "title": "/issues/14",
     "count": 3,
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/blog/discussions/categories/q-a",
-    "title": "/discussions/categories/q-a",
+    "path": "/MuYunyun/blog/blob/main/.npmrc",
+    "title": "/blob/main/.npmrc",
     "count": 3,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
+    "title": "/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
+    "count": 2,
     "uniques": 2
   },
   {
