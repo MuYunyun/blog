@@ -2,19 +2,19 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 35,
+    "count": 31,
     "uniques": 8
   },
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 25,
+    "count": 24,
     "uniques": 6
   },
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 20,
+    "count": 19,
     "uniques": 6
   },
   {
@@ -24,14 +24,8 @@
     "uniques": 7
   },
   {
-    "path": "/MuYunyun/blog/actions",
-    "title": "/actions",
-    "count": 4,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/commit/44a9b1d9104ac305d3b134fe8b5a1616d688024e",
-    "title": "/commit/44a9b1d9104ac305d3b134fe8b5a1616d688024e",
+    "path": "/MuYunyun/blog/issues/4",
+    "title": "/issues/4",
     "count": 4,
     "uniques": 2
   },
@@ -42,8 +36,14 @@
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/blog/discussions/209",
-    "title": "/discussions/209",
+    "path": "/MuYunyun/blog/actions",
+    "title": "/actions",
+    "count": 3,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/commit/44a9b1d9104ac305d3b134fe8b5a1616d688024e",
+    "title": "/commit/44a9b1d9104ac305d3b134fe8b5a1616d688024e",
     "count": 3,
     "uniques": 2
   },
@@ -54,8 +54,8 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/issues/4",
-    "title": "/issues/4",
+    "path": "/MuYunyun/blog/labels",
+    "title": "/labels",
     "count": 3,
     "uniques": 2
   }
