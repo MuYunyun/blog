@@ -2,25 +2,25 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 36,
-    "uniques": 12
+    "count": 34,
+    "uniques": 13
   },
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 32,
+    "count": 34,
     "uniques": 6
   },
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 19,
-    "uniques": 8
+    "count": 18,
+    "uniques": 7
   },
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 13,
+    "count": 15,
     "uniques": 6
   },
   {
@@ -48,15 +48,15 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/blog/issues/4",
-    "title": "/issues/4",
+    "path": "/MuYunyun/blog/blob/main/config.yml",
+    "title": "/blob/main/config.yml",
     "count": 3,
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/blog/actions",
-    "title": "/actions",
+    "path": "/MuYunyun/blog/issues/4",
+    "title": "/issues/4",
     "count": 3,
-    "uniques": 2
+    "uniques": 3
   }
 ]
