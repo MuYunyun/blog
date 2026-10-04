@@ -1,15 +1,15 @@
 [
   {
-    "path": "/MuYunyun/blog",
-    "title": "Overview",
-    "count": 34,
-    "uniques": 13
-  },
-  {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 34,
-    "uniques": 6
+    "count": 41,
+    "uniques": 8
+  },
+  {
+    "path": "/MuYunyun/blog",
+    "title": "Overview",
+    "count": 31,
+    "uniques": 13
   },
   {
     "path": "/MuYunyun/blog/issues",
@@ -42,21 +42,21 @@
     "uniques": 4
   },
   {
+    "path": "/MuYunyun/blog/actions",
+    "title": "/actions",
+    "count": 4,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/blog/issues/7",
+    "title": "/issues/7",
+    "count": 4,
+    "uniques": 3
+  },
+  {
     "path": "/MuYunyun/blog/blob/main/.commitlintrc.js",
     "title": "/blob/main/.commitlintrc.js",
     "count": 4,
     "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/config.yml",
-    "title": "/blob/main/config.yml",
-    "count": 3,
-    "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/blog/issues/4",
-    "title": "/issues/4",
-    "count": 3,
-    "uniques": 3
   }
 ]

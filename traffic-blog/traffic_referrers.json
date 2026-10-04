@@ -5,12 +5,12 @@
     "uniques": 15
   },
   {
-    "referrer": "github.com",
-    "count": 3,
-    "uniques": 2
+    "referrer": "Google",
+    "count": 1,
+    "uniques": 1
   },
   {
-    "referrer": "Google",
+    "referrer": "github.com",
     "count": 1,
     "uniques": 1
   }
