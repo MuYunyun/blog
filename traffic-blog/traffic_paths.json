@@ -2,26 +2,26 @@
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 41,
+    "count": 39,
     "uniques": 8
   },
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 31,
-    "uniques": 13
+    "count": 32,
+    "uniques": 14
   },
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 18,
+    "count": 17,
     "uniques": 7
   },
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 15,
-    "uniques": 6
+    "count": 12,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/blob/main/LeetCode/206.Reverse_Linked_List/README.md",
@@ -42,10 +42,10 @@
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/blog/actions",
-    "title": "/actions",
+    "path": "/MuYunyun/blog/issues/4",
+    "title": "/issues/4",
     "count": 4,
-    "uniques": 3
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/blog/issues/7",
