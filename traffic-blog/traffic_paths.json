@@ -2,19 +2,19 @@
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 41,
+    "count": 42,
     "uniques": 7
   },
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 31,
-    "uniques": 12
+    "count": 27,
+    "uniques": 10
   },
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 13,
+    "count": 15,
     "uniques": 4
   },
   {
@@ -36,26 +36,26 @@
     "uniques": 5
   },
   {
-    "path": "/MuYunyun/blog/issues/7",
-    "title": "/issues/7",
-    "count": 5,
-    "uniques": 5
-  },
-  {
     "path": "/MuYunyun/blog/blob/main/LeetCode/148.Sort_List/README.md",
     "title": "/blob/main/LeetCode/148.Sort_List/README.md",
     "count": 4,
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/blog/actions",
-    "title": "/actions",
-    "count": 3,
-    "uniques": 3
+    "path": "/MuYunyun/blog/blob/main/config.yml",
+    "title": "/blob/main/config.yml",
+    "count": 4,
+    "uniques": 4
   },
   {
-    "path": "/MuYunyun/blog/blob/main/Algorithm/leetcode/450.Delete_Node_in_a_BST.md",
-    "title": "/blob/main/Algorithm/leetcode/450.Delete_Node_in_a_BST.md",
+    "path": "/MuYunyun/blog/issues/7",
+    "title": "/issues/7",
+    "count": 4,
+    "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/blog/actions",
+    "title": "/actions",
     "count": 3,
     "uniques": 3
   }
