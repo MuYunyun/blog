@@ -2,25 +2,25 @@
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 42,
+    "count": 41,
     "uniques": 7
   },
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 27,
+    "count": 28,
     "uniques": 10
   },
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 15,
+    "count": 16,
     "uniques": 4
   },
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 12,
+    "count": 13,
     "uniques": 5
   },
   {
@@ -56,7 +56,7 @@
   {
     "path": "/MuYunyun/blog/actions",
     "title": "/actions",
-    "count": 3,
+    "count": 4,
     "uniques": 3
   }
 ]
