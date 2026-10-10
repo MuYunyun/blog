@@ -2,19 +2,19 @@
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 41,
+    "count": 44,
     "uniques": 7
   },
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 28,
-    "uniques": 10
+    "count": 32,
+    "uniques": 11
   },
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 16,
+    "count": 17,
     "uniques": 4
   },
   {
@@ -54,8 +54,8 @@
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/blog/actions",
-    "title": "/actions",
+    "path": "/MuYunyun/blog/blob/main/.yarnrc",
+    "title": "/blob/main/.yarnrc",
     "count": 4,
     "uniques": 3
   }
