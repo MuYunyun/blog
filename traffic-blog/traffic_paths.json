@@ -20,8 +20,8 @@
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 14,
-    "uniques": 5
+    "count": 13,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/blog/blob/main/LeetCode/206.Reverse_Linked_List/README.md",
@@ -36,6 +36,12 @@
     "uniques": 5
   },
   {
+    "path": "/MuYunyun/blog/issues/7",
+    "title": "/issues/7",
+    "count": 5,
+    "uniques": 5
+  },
+  {
     "path": "/MuYunyun/blog/blob/main/LeetCode/148.Sort_List/README.md",
     "title": "/blob/main/LeetCode/148.Sort_List/README.md",
     "count": 4,
@@ -44,12 +50,6 @@
   {
     "path": "/MuYunyun/blog/blob/main/config.yml",
     "title": "/blob/main/config.yml",
-    "count": 4,
-    "uniques": 4
-  },
-  {
-    "path": "/MuYunyun/blog/issues/7",
-    "title": "/issues/7",
     "count": 4,
     "uniques": 4
   },
