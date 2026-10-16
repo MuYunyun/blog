@@ -2,26 +2,26 @@
   {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
-    "count": 34,
+    "count": 32,
     "uniques": 5
   },
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 24,
+    "count": 26,
     "uniques": 12
   },
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
-    "count": 17,
+    "count": 16,
     "uniques": 4
   },
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 9,
-    "uniques": 5
+    "count": 8,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/blog/issues/7",
@@ -30,10 +30,10 @@
     "uniques": 5
   },
   {
-    "path": "/MuYunyun/blog/blob/main/config.yml",
-    "title": "/blob/main/config.yml",
+    "path": "/MuYunyun/blog/issues/4",
+    "title": "/issues/4",
     "count": 4,
-    "uniques": 4
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/blog/blob/main/Algorithm/leetcode/450.Delete_Node_in_a_BST.md",
