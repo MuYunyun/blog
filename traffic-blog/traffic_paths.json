@@ -6,16 +6,22 @@
     "uniques": 21
   },
   {
-    "path": "/MuYunyun/blog",
-    "title": "Overview",
-    "count": 8,
-    "uniques": 5
-  },
-  {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
     "count": 8,
     "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/blog/pulls",
+    "title": "/pulls",
+    "count": 7,
+    "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/blog",
+    "title": "Overview",
+    "count": 6,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/issues",
@@ -24,22 +30,16 @@
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/blog/pulls",
-    "title": "/pulls",
-    "count": 6,
-    "uniques": 3
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/algorithm/动态规划.md",
+    "title": "/blob/main/BasicSkill/algorithm/动态规划.md",
+    "count": 2,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/blog/commit/7a55c4f0cab4698d4efdc086184d53a50c8f883b",
     "title": "/commit/7a55c4f0cab4698d4efdc086184d53a50c8f883b",
     "count": 2,
     "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/issues/4",
-    "title": "/issues/4",
-    "count": 2,
-    "uniques": 1
   },
   {
     "path": "/MuYunyun/blog/milestones",
