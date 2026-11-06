@@ -8,8 +8,14 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 11,
-    "uniques": 8
+    "count": 20,
+    "uniques": 16
+  },
+  {
+    "path": "/MuYunyun/blog/issues",
+    "title": "/issues",
+    "count": 8,
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/blog/pulls",
@@ -18,44 +24,38 @@
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/blog/issues",
-    "title": "/issues",
-    "count": 7,
-    "uniques": 6
-  },
-  {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
+    "count": 7,
+    "uniques": 5
+  },
+  {
+    "path": "/MuYunyun/blog/issues/140",
+    "title": "/issues/140",
     "count": 5,
+    "uniques": 5
+  },
+  {
+    "path": "/MuYunyun/blog/issues/27",
+    "title": "/issues/27",
+    "count": 4,
     "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/typescript/TypeScript基础篇.md",
+    "title": "/blob/main/BasicSkill/typescript/TypeScript基础篇.md",
+    "count": 3,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/blog/issues/26",
+    "title": "/issues/26",
+    "count": 3,
+    "uniques": 3
   },
   {
     "path": "/MuYunyun/blog/blob/main/Algorithm/leetcode/51.N-Queens.md",
     "title": "/blob/main/Algorithm/leetcode/51.N-Queens.md",
-    "count": 2,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/algorithm/动态规划.md",
-    "title": "/blob/main/BasicSkill/algorithm/动态规划.md",
-    "count": 2,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/fe_cloud/探寻webpack插件机制.md",
-    "title": "/blob/main/BasicSkill/fe_cloud/探寻webpack插件机制.md",
-    "count": 2,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/typescript/Utility_Types.md",
-    "title": "/blob/main/BasicSkill/typescript/Utility_Types.md",
-    "count": 2,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/从0到1实现React/0.前置准备.md",
-    "title": "/blob/main/BasicSkill/从0到1实现React/0.前置准备.md",
     "count": 2,
     "uniques": 2
   }
