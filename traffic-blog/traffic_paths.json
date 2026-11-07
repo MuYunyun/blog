@@ -36,6 +36,12 @@
     "uniques": 5
   },
   {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/typescript/Utility_Types.md",
+    "title": "/blob/main/BasicSkill/typescript/Utility_Types.md",
+    "count": 4,
+    "uniques": 4
+  },
+  {
     "path": "/MuYunyun/blog/issues/27",
     "title": "/issues/27",
     "count": 4,
@@ -52,11 +58,5 @@
     "title": "/issues/26",
     "count": 3,
     "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/Algorithm/leetcode/51.N-Queens.md",
-    "title": "/blob/main/Algorithm/leetcode/51.N-Queens.md",
-    "count": 2,
-    "uniques": 2
   }
 ]
