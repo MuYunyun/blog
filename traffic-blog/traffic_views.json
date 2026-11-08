@@ -10898,14 +10898,14 @@
       "uniques": 1
     },
     {
-      "timestamp": "2026-10-24T00:00:00Z",
-      "count": 27,
-      "uniques": 26
-    },
-    {
       "timestamp": "2026-10-25T00:00:00Z",
       "count": 4,
       "uniques": 3
+    },
+    {
+      "timestamp": "2026-10-24T00:00:00Z",
+      "count": 27,
+      "uniques": 26
     },
     {
       "timestamp": "2026-10-26T00:00:00Z",
