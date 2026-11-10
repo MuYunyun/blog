@@ -8,20 +8,20 @@
   {
     "path": "/MuYunyun/blog/issues",
     "title": "/issues",
-    "count": 8,
-    "uniques": 6
-  },
-  {
-    "path": "/MuYunyun/blog/discussions",
-    "title": "/discussions",
     "count": 7,
-    "uniques": 5
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/blog/pulls",
     "title": "/pulls",
     "count": 7,
     "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/blog/discussions",
+    "title": "/discussions",
+    "count": 6,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/issues/140",
