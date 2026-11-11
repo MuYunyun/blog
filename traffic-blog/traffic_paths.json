@@ -12,12 +12,6 @@
     "uniques": 6
   },
   {
-    "path": "/MuYunyun/blog/pulls",
-    "title": "/pulls",
-    "count": 7,
-    "uniques": 4
-  },
-  {
     "path": "/MuYunyun/blog/discussions",
     "title": "/discussions",
     "count": 6,
@@ -30,14 +24,14 @@
     "uniques": 5
   },
   {
-    "path": "/MuYunyun/blog/blob/main/BasicSkill/typescript/Utility_Types.md",
-    "title": "/blob/main/BasicSkill/typescript/Utility_Types.md",
-    "count": 4,
+    "path": "/MuYunyun/blog/pulls",
+    "title": "/pulls",
+    "count": 5,
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/blog/issues/27",
-    "title": "/issues/27",
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/typescript/Utility_Types.md",
+    "title": "/blob/main/BasicSkill/typescript/Utility_Types.md",
     "count": 4,
     "uniques": 4
   },
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/blog/issues/26",
     "title": "/issues/26",
+    "count": 3,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/blog/issues/27",
+    "title": "/issues/27",
     "count": 3,
     "uniques": 3
   }
