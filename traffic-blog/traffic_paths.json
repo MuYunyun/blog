@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 19,
-    "uniques": 16
+    "count": 17,
+    "uniques": 15
   },
   {
     "path": "/MuYunyun/blog/discussions",
@@ -16,12 +16,6 @@
     "title": "/issues",
     "count": 7,
     "uniques": 6
-  },
-  {
-    "path": "/MuYunyun/blog/issues/140",
-    "title": "/issues/140",
-    "count": 5,
-    "uniques": 5
   },
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/typescript/Utility_Types.md",
@@ -42,8 +36,8 @@
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/blog/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
-    "title": "/blob/main/React/Component_Design/重新认识受控与非受控组件.md",
+    "path": "/MuYunyun/blog/issues/140",
+    "title": "/issues/140",
     "count": 3,
     "uniques": 3
   },
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/blog/blob/main/Algorithm/leetcode/51.N-Queens.md",
     "title": "/blob/main/Algorithm/leetcode/51.N-Queens.md",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/blog/blob/main/BasicSkill/algorithm/链表.md",
+    "title": "/blob/main/BasicSkill/algorithm/链表.md",
     "count": 2,
     "uniques": 2
   }
