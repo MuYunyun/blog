@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 17,
-    "uniques": 15
+    "count": 18,
+    "uniques": 16
   },
   {
     "path": "/MuYunyun/blog/issues",
@@ -24,6 +24,12 @@
     "uniques": 4
   },
   {
+    "path": "/MuYunyun/blog/pulls",
+    "title": "/pulls",
+    "count": 4,
+    "uniques": 2
+  },
+  {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/typescript/TypeScript基础篇.md",
     "title": "/blob/main/BasicSkill/typescript/TypeScript基础篇.md",
     "count": 3,
@@ -34,12 +40,6 @@
     "title": "/issues/140",
     "count": 3,
     "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/blog/pulls",
-    "title": "/pulls",
-    "count": 3,
-    "uniques": 1
   },
   {
     "path": "/MuYunyun/blog/blob/main/Algorithm/leetcode/51.N-Queens.md",
