@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/blog",
     "title": "Overview",
-    "count": 9,
-    "uniques": 8
+    "count": 11,
+    "uniques": 10
   },
   {
     "path": "/MuYunyun/blog/issues",
@@ -30,6 +30,12 @@
     "uniques": 2
   },
   {
+    "path": "/MuYunyun/blog/pulls",
+    "title": "/pulls",
+    "count": 3,
+    "uniques": 2
+  },
+  {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/algorithm/README.md",
     "title": "/blob/main/BasicSkill/algorithm/README.md",
     "count": 2,
@@ -44,12 +50,6 @@
   {
     "path": "/MuYunyun/blog/blob/main/BasicSkill/设计模式/中介者模式.md",
     "title": "/blob/main/BasicSkill/设计模式/中介者模式.md",
-    "count": 2,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/blog/blob/main/LeetCode/120.Triangle.md",
-    "title": "/blob/main/LeetCode/120.Triangle.md",
     "count": 2,
     "uniques": 2
   },
